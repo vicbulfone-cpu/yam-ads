@@ -1,0 +1,594 @@
+{
+  "path": "/accountant/payroll-compliance",
+  "extractedAt": "2026-10-02T09:00:59.997Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/accountant/payroll-compliance",
+  "title": "Payroll & Compliance Matching — STP2 & Super Guarantee Support | Your Accountant Match",
+  "metaDescription": "Payroll compliance accountant matching — free. Get a local firm handling super guarantee, STP2 and Fair Work obligations. Avoid costly mistakes.",
+  "canonical": "http://localhost:4173/accountant/payroll-compliance",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Payroll & Compliance Matching — STP2 & Super Guarantee Support | Your Accountant Match",
+    "og:description": "Payroll compliance accountant matching — free. Get a local firm handling super guarantee, STP2 and Fair Work obligations. Avoid costly mistakes.",
+    "og:url": "http://localhost:4173/accountant/payroll-compliance",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c693d246-e356-47ab-9f77-30c7fb660606.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Payroll & Compliance Matching — STP2 & Super Guarantee Support | Your Accountant Match",
+    "twitter:description": "Payroll compliance accountant matching — free. Get a local firm handling super guarantee, STP2 and Fair Work obligations. Avoid costly mistakes.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Payroll & Compliance Matching Service",
+      "description": "Payroll compliance accountant matching — free. Get a local firm handling super guarantee, STP2 and Fair Work obligations. Avoid costly mistakes.",
+      "serviceType": "Payroll & Compliance",
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Payroll & Compliance",
+          "item": "/accountant/payroll-compliance"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Payday Super and when does it start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Late payment triggers the Super Guarantee Charge and ATO scrutiny. Our matched firms implement Payday Super-compliant payroll so you meet the deadline each pay cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I get contractor classification wrong?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Misclassifying an employee as a contractor can trigger back-paid PAYG, super guarantee, leave entitlements, and penalties — potentially years of exposure. The ATO and Fair Work use specific tests (not just the contract). The matched firm assesses your arrangements and confirms the correct classification, or restructures the engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need STP2 even for one or two employees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "STP2 is mandatory for almost all employers regardless of headcount — there are very limited exemptions. If you pay wages, you almost certainly need STP2 reporting each pay run. The matched bookkeeper or accountant sets this up in your payroll software and keeps it compliant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does payroll compliance support cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ongoing payroll processing is typically $200–$600 per month depending on headcount and complexity. Setup and compliance reviews are usually quoted as a fixed fee. The matched firm gives you a clear quote after reviewing your situation — the matching is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched payroll specialist contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your payroll needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a payroll specialist help with salary packaging and FBT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched firm advises on salary packaging structures, FBT implications, and reportable fringe benefits — ensuring your arrangements are compliant and tax-effective for both employer and employee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is payroll compliance matching free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free for businesses. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm, and the matched firm gives you a clear quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a payroll specialist help with year-end payment summaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched firm reconciles year-end payment summaries, ensures STP2 finalisation declarations are lodged correctly, and manages any adjustments — so your employees' income statements are accurate and ready for their tax returns."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find Payroll and Compliance Support Near You"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Payroll & Compliance — what we can help with"
+    },
+    {
+      "level": 3,
+      "text": "Super guarantee and the 'Payday Super' shift"
+    },
+    {
+      "level": 3,
+      "text": "Single Touch Reporting (STP2)"
+    },
+    {
+      "level": 3,
+      "text": "Contractor vs employee — the grey zone"
+    },
+    {
+      "level": 2,
+      "text": "Payroll & Compliance services we match"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Payroll & Compliance Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Other Matching Services"
+    },
+    {
+      "level": 4,
+      "text": "Payroll & Compliance matching across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find Payroll and Compliance Support Near You",
+      "images": 15,
+      "text": "Find Payroll and Compliance Support Near YouFree matching serviceVetted accountantsNo obligationPayroll, superannuation guarantee, single-touch reporting and Fair Work obligations are easy to get wrong and expensive if you do. Your Accountant Match matches you with a local firm that handles payroll processing, STP compliance and employee entitlements so you can stay on the right side of the regulators. Share your needs and postcode, and we will find your best match. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Payroll & Compliance — what we can help with",
+      "images": 0,
+      "text": "SPECIALIST NETWORKPayroll & Compliance — what we can help withSuper guarantee and the 'Payday Super' shiftFrom 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Missing the deadline triggers the Super Guarantee Charge, employee complaints, and ATO scrutiny. Our matched firms implement Payday Super reporting and ensure contributions are calculated and paid correctly — before the deadline becomes a problem.Single Touch Reporting (STP2)STP2 is mandatory for most employers and requires payroll data to be reported to the ATO each pay run. The data must be accurate, timely, and correctly coded — errors create reconciliation problems at year-end. Our matched bookkeepers and accountants set up STP2 correctly in your payroll software and keep it compliant each pay cycle.Contractor vs employee — the grey zoneMisclassifying a worker as a contractor when they are legally an employee triggers back-paid super, PAYG, and penalties — sometimes years later. With the $190,100 high-income contractor threshold under Fair Work's Closing Loopholes legislation and the ATO's own contractor tests for super and PAYG purposes, getting classification right is essential. Our matched firms assess your arrangements and recommend the correct structure."
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOSuper Guarantee ChargeATOSTP2 is mandatory for most employersFair WorkClosing Loopholes legislation"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "id": null,
+      "heading": "Payroll & Compliance services we match",
+      "images": 0,
+      "text": "WHAT WE MATCHPayroll & Compliance services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Payroll processing & STP2 reportingSuper guarantee & Payday Super implementationContractor vs employee classificationFair Work & entitlement compliancePayroll-tax threshold monitoringEmployee onboarding & offboardingSalary packaging & FBTYear-end payment-summary reconciliation"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Vetted, Registered AgentsFree, No ObligationAustralia-Wide"
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "id": null,
+      "heading": "Trust and vetting standards for Payroll & Compliance Partners",
+      "images": 0,
+      "text": "TRUST & VETTINGTrust and vetting standards for Payroll & Compliance PartnersEntrusting someone with your payroll & compliance needs means putting your finances in their hands. At Your Accountant Match, we hold every payroll & compliance specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll payroll & compliance professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery payroll & compliance partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPE"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "id": null,
+      "heading": "Frequently Asked Questions",
+      "images": 0,
+      "text": "COMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What is Payday Super and when does it start?From 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Late payment triggers the Super Guarantee Charge and ATO scrutiny. Our matched firms implement Payday Super-compliant payroll so you meet the deadline each pay cycle.What happens if I get contractor classification wrong?Do I need STP2 even for one or two employees?How much does payroll compliance support cost?How quickly will a matched payroll specialist contact me?Can a payroll specialist help with salary packaging and FBT?Is payroll compliance matching free?Can a payroll specialist help with year-end payment summaries?"
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": null,
+      "heading": "Other Matching Services",
+      "images": 0,
+      "text": "EXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BAS"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Payroll & Compliance matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)"
+    },
+    {
+      "index": 12,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 13,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "Super Guarantee Charge"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/expansion-of-stp-phase-2",
+      "text": "STP2 is mandatory for most employers"
+    },
+    {
+      "href": "https://www.fairwork.gov.au/about-us/workplace-laws/legislation-changes/closing-loopholes",
+      "text": "Closing Loopholes legislation"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "ATOSuper Guarantee Charge"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/expansion-of-stp-phase-2",
+      "text": "ATOSTP2 is mandatory for most employers"
+    },
+    {
+      "href": "https://www.fairwork.gov.au/about-us/workplace-laws/legislation-changes/closing-loopholes",
+      "text": "Fair WorkClosing Loopholes legislation"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "Super Guarantee Charge"
+    },
+    {
+      "href": "/accountant/tax-accountant",
+      "text": "Tax Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeper",
+      "text": "Bookkeeper"
+    },
+    {
+      "href": "/accountant/personal-tax-support",
+      "text": "Personal Tax Return"
+    },
+    {
+      "href": "/accountant/tax-deduction-expert",
+      "text": "Tax Deduction Expert"
+    },
+    {
+      "href": "/accountant/small-business-accountant",
+      "text": "Small Business Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeping-bas",
+      "text": "Bookkeeping & BAS"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Payroll & ComplianceFind Payroll and Compliance Support Near YouFree matching serviceVetted accountantsNo obligationPayroll, superannuation guarantee, single-touch reporting and Fair Work obligations are easy to get wrong and expensive if you do. Your Accountant Match matches you with a local firm that handles payroll processing, STP compliance and employee entitlements so you can stay on the right side of the regulators. Share your needs and postcode, and we will find your best match. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.SPECIALIST NETWORKPayroll & Compliance — what we can help withSuper guarantee and the 'Payday Super' shiftFrom 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Missing the deadline triggers the Super Guarantee Charge, employee complaints, and ATO scrutiny. Our matched firms implement Payday Super reporting and ensure contributions are calculated and paid correctly — before the deadline becomes a problem.Single Touch Reporting (STP2)STP2 is mandatory for most employers and requires payroll data to be reported to the ATO each pay run. The data must be accurate, timely, and correctly coded — errors create reconciliation problems at year-end. Our matched bookkeepers and accountants set up STP2 correctly in your payroll software and keep it compliant each pay cycle.Contractor vs employee — the grey zoneMisclassifying a worker as a contractor when they are legally an employee triggers back-paid super, PAYG, and penalties — sometimes years later. With the $190,100 high-income contractor threshold under Fair Work's Closing Loopholes legislation and the ATO's own contractor tests for super and PAYG purposes, getting classification right is essential. Our matched firms assess your arrangements and recommend the correct structure.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOSuper Guarantee ChargeATOSTP2 is mandatory for most employersFair WorkClosing Loopholes legislationWHAT WE MATCHPayroll & Compliance services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Payroll processing & STP2 reportingSuper guarantee & Payday Super implementationContractor vs employee classificationFair Work & entitlement compliancePayroll-tax threshold monitoringEmployee onboarding & offboardingSalary packaging & FBTYear-end payment-summary reconciliationVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGTrust and vetting standards for Payroll & Compliance PartnersEntrusting someone with your payroll & compliance needs means putting your finances in their hands. At Your Accountant Match, we hold every payroll & compliance specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll payroll & compliance professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery payroll & compliance partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What is Payday Super and when does it start?From 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Late payment triggers the Super Guarantee Charge and ATO scrutiny. Our matched firms implement Payday Super-compliant payroll so you meet the deadline each pay cycle.What happens if I get contractor classification wrong?Do I need STP2 even for one or two employees?How much does payroll compliance support cost?How quickly will a matched payroll specialist contact me?Can a payroll specialist help with salary packaging and FBT?Is payroll compliance matching free?Can a payroll specialist help with year-end payment summaries?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BASPayroll & Compliance matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Payroll & Compliance Find Payroll and Compliance Support Near You Free matching service Vetted accountants No obligation Payroll, superannuation guarantee, single-touch reporting and Fair Work obligations are easy to get wrong and expensive if you do. Your Accountant Match matches you with a local firm that handles payroll processing, STP compliance and employee entitlements so you can stay on the right side of the regulators. Share your needs and postcode, and we will find your best match. Free and no obligation. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. SPECIALIST NETWORK Payroll & Compliance — what we can help with Super guarantee and the 'Payday Super' shift From 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Missing the deadline triggers the Super Guarantee Charge, employee complaints, and ATO scrutiny. Our matched firms implement Payday Super reporting and ensure contributions are calculated and paid correctly — before the deadline becomes a problem. Single Touch Reporting (STP2) STP2 is mandatory for most employers and requires payroll data to be reported to the ATO each pay run. The data must be accurate, timely, and correctly coded — errors create reconciliation problems at year-end. Our matched bookkeepers and accountants set up STP2 correctly in your payroll software and keep it compliant each pay cycle. Contractor vs employee — the grey zone Misclassifying a worker as a contractor when they are legally an employee triggers back-paid super, PAYG, and penalties — sometimes years later. With the $190,100 high-income contractor threshold under Fair Work's Closing Loopholes legislation and the ATO's own contractor tests for super and PAYG purposes, getting classification right is essential. Our matched firms assess your arrangements and recommend the correct structure. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO Super Guarantee Charge ATO STP2 is mandatory for most employers FAIR WORK Closing Loopholes legislation WHAT WE MATCH Payroll & Compliance services we match Our vetted network covers the full range of accounting, tax and bookkeeping services. Payroll processing & STP2 reporting Super guarantee & Payday Super implementation Contractor vs employee classification Fair Work & entitlement compliance Payroll-tax threshold monitoring Employee onboarding & offboarding Salary packaging & FBT Year-end payment-summary reconciliation Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING Trust and vetting standards for Payroll & Compliance Partners Entrusting someone with your payroll & compliance needs means putting your finances in their hands. At Your Accountant Match, we hold every payroll & compliance specialist we refer to the highest professional and ethical standards in the industry. Verified professional memberships All payroll & compliance professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Every payroll & compliance partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. What is Payday Super and when does it start? From 1 July 2026, under 'Payday Super', employers must pay superannuation guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. Late payment triggers the Super Guarantee Charge and ATO scrutiny. Our matched firms implement Payday Super-compliant payroll so you meet the deadline each pay cycle. What happens if I get contractor classification wrong? Do I need STP2 even for one or two employees? How much does payroll compliance support cost? How quickly will a matched payroll specialist contact me? Can a payroll specialist help with salary packaging and FBT? Is payroll compliance matching free? Can a payroll specialist help with year-end payment summaries? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Other Matching Services Here are some other specialist services you may find useful Tax Accountant Bookkeeper Personal Tax Return Tax Deduction Expert Small Business Accountant Bookkeeping & BAS Payroll & Compliance matching across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2960,
+  "inSitemap": true
+}

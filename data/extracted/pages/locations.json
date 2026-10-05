@@ -1,0 +1,375 @@
+{
+  "path": "/locations",
+  "extractedAt": "2026-10-02T09:00:47.284Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/locations",
+  "title": "Locations We Service — Find an Accountant Near You | Your Accountant Match",
+  "metaDescription": "Browse every city and region we service across Australia. Find a vetted local accountant in Sydney, Melbourne, Brisbane, Perth, Adelaide and regional locations.",
+  "canonical": "http://localhost:4173/locations",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Locations We Service — Find an Accountant Near You | Your Accountant Match",
+    "og:description": "Browse every city and region we service across Australia. Find a vetted local accountant in Sydney, Melbourne, Brisbane, Perth, Adelaide and regional locations.",
+    "og:url": "http://localhost:4173/locations",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Locations We Service — Find an Accountant Near You | Your Accountant Match",
+    "twitter:description": "Browse every city and region we service across Australia. Find a vetted local accountant in Sydney, Melbourne, Brisbane, Perth, Adelaide and regional locations.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Accountant Matching Locations Across Australia",
+      "description": "Directory of every city and region where Your Accountant Match connects clients with vetted local accountants.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Melbourne (VIC)",
+          "url": "https://youraccountantmatch.com.au/locations/melbourne"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sydney (NSW)",
+          "url": "https://youraccountantmatch.com.au/locations/sydney"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Brisbane (QLD)",
+          "url": "https://youraccountantmatch.com.au/locations/brisbane"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Perth (WA)",
+          "url": "https://youraccountantmatch.com.au/locations/perth"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Adelaide (SA)",
+          "url": "https://youraccountantmatch.com.au/locations/adelaide"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Gold Coast (QLD)",
+          "url": "https://youraccountantmatch.com.au/locations/gold-coast"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Newcastle - Maitland (NSW)",
+          "url": "https://youraccountantmatch.com.au/locations/newcastle-maitland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Canberra - Queanbeyan (ACT)",
+          "url": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Sunshine Coast (QLD)",
+          "url": "https://youraccountantmatch.com.au/locations/sunshine-coast"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Geelong (VIC)",
+          "url": "https://youraccountantmatch.com.au/locations/geelong"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Hobart (TAS)",
+          "url": "https://youraccountantmatch.com.au/locations/hobart"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Launceston (TAS)",
+          "url": "https://youraccountantmatch.com.au/locations/launceston"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Darwin (NT)",
+          "url": "https://youraccountantmatch.com.au/locations/darwin"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "/locations"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find an AccountantNear You"
+    },
+    {
+      "level": 2,
+      "text": "All Cities & Regions We Service"
+    },
+    {
+      "level": 3,
+      "text": "NSW"
+    },
+    {
+      "level": 3,
+      "text": "VIC"
+    },
+    {
+      "level": 3,
+      "text": "QLD"
+    },
+    {
+      "level": 3,
+      "text": "WA"
+    },
+    {
+      "level": 3,
+      "text": "SA"
+    },
+    {
+      "level": 3,
+      "text": "TAS"
+    },
+    {
+      "level": 3,
+      "text": "ACT"
+    },
+    {
+      "level": 3,
+      "text": "NT"
+    },
+    {
+      "level": 2,
+      "text": "Not sure which city page to view?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find an AccountantNear You",
+      "images": 0,
+      "text": "Find an AccountantNear YouWe match individuals and businesses with vetted local accountants across Australia. Select your city or region below to find a trusted accountant in your area — free matching, no obligation.All Cities & Regions We ServiceNSWSydneyNewcastle - MaitlandVICMelbourneGeelongQLDBrisbaneGold CoastSunshine CoastWAPerthSAAdelaideTASHobartLauncestonACTCanberra - QueanbeyanNTDarwin"
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Not sure which city page to view?",
+      "images": 0,
+      "text": "Not sure which city page to view?Enter your postcode and we'll match you with a vetted accountant in your area.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 4,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.LocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/LocationsFind an AccountantNear YouWe match individuals and businesses with vetted local accountants across Australia. Select your city or region below to find a trusted accountant in your area — free matching, no obligation.All Cities & Regions We ServiceNSWSydneyNewcastle - MaitlandVICMelbourneGeelongQLDBrisbaneGold CoastSunshine CoastWAPerthSAAdelaideTASHobartLauncestonACTCanberra - QueanbeyanNTDarwinNot sure which city page to view?Enter your postcode and we'll match you with a vetted accountant in your area.Find My AccountantFree matching service · No obligationYour Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.LocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home/Locations Find an Accountant Near You We match individuals and businesses with vetted local accountants across Australia. Select your city or region below to find a trusted accountant in your area — free matching, no obligation. All Cities & Regions We Service NSW Sydney Newcastle - Maitland VIC Melbourne Geelong QLD Brisbane Gold Coast Sunshine Coast WA Perth SA Adelaide TAS Hobart Launceston ACT Canberra - Queanbeyan NT Darwin Not sure which city page to view? Enter your postcode and we'll match you with a vetted accountant in your area. Find My Accountant Free matching service · No obligation Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 5691,
+  "inSitemap": true
+}

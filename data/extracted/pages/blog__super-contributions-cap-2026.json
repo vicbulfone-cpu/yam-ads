@@ -1,0 +1,513 @@
+{
+  "path": "/blog/super-contributions-cap-2026",
+  "extractedAt": "2026-10-02T09:03:05.437Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/super-contributions-cap-2026",
+  "title": "Super Contributions & Caps 2026 — Concessional & Non-Concessional Limits | Your Accountant Match",
+  "metaDescription": "Super contribution caps for 2025-26 explained — the $30,000 concessional cap, non-concessional caps, carry-forward and how to claim a personal deduction.",
+  "canonical": "http://localhost:4173/blog/super-contributions-cap-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Super Contributions & Caps 2026 — Concessional & Non-Concessional Limits | Your Accountant Match",
+    "og:description": "Super contribution caps for 2025-26 explained — the $30,000 concessional cap, non-concessional caps, carry-forward and how to claim a personal deduction.",
+    "og:url": "http://localhost:4173/blog/super-contributions-cap-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Super Contributions & Caps 2026 — Concessional & Non-Concessional Limits | Your Accountant Match",
+    "twitter:description": "Super contribution caps for 2025-26 explained — the $30,000 concessional cap, non-concessional caps, carry-forward and how to claim a personal deduction.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the concessional super cap for 2025-26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The concessional (before-tax) contribution cap is $30,000 for 2025-26. This includes employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I contribute to super after tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The non-concessional cap is $120,000 per year, or up to $360,000 under the bring-forward rule if you're under 75 and your total super balance is under the threshold. For 2025-26, the full $360,000 bring-forward cap requires a total super balance under $1.76 million at 30 June 2025; if your balance is $2.0 million or higher, the non-concessional cap is nil. These are subject to your total super balance at the start of the year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim a tax deduction for personal super contributions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — if you're self-employed or not supported by an employer, you can make a personal contribution and claim a deduction up to your concessional cap. You must give your fund a valid notice of intent to claim and have it acknowledged before lodging your tax return."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is carry-forward of unused concessional cap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your total super balance was under $500,000 at the start of the financial year, you can carry forward unused concessional cap amounts from up to the previous five years. This allows a larger contribution in a high-income year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Division 293 tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your income plus concessional contributions exceeds $250,000, Division 293 applies an additional 15% tax on some concessional contributions, taking the total to 30%. It doesn't stop you contributing but reduces the tax benefit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a super specialist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and super planning needs. We match you with a vetted local adviser who can model your contribution strategy. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Planning",
+          "item": "/blog/super-contributions-cap-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Super Contributions & Caps 2026: How Much Can You Contribute?",
+      "description": "Super contribution caps for 2025-26 explained — the $30,000 concessional cap, non-concessional caps, carry-forward and how to claim a personal deduction.",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/super-contributions-cap-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Superannuation contribution caps",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Super Contributions & Caps 2026: How Much Can You Contribute?"
+    },
+    {
+      "level": 2,
+      "text": "Super Contributions & Caps 2026: How Much Can You Contribute?"
+    },
+    {
+      "level": 3,
+      "text": "The concessional (before-tax) cap"
+    },
+    {
+      "level": 3,
+      "text": "Claiming a personal deduction"
+    },
+    {
+      "level": 3,
+      "text": "The non-concessional (after-tax) cap"
+    },
+    {
+      "level": 3,
+      "text": "Carry-forward unused concessional cap"
+    },
+    {
+      "level": 3,
+      "text": "Division 293 for high-income earners"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Super Contributions & Caps 2026: How Much Can You Contribute?",
+      "images": 0,
+      "text": "Home/Blog/Tax PlanningTax Planning6 min readSuper Contributions & Caps 2026: How Much Can You Contribute?Superannuation remains one of the most tax-effective ways to build wealth and reduce your current tax bill. But contribution caps limit how much you can put in each year, and breaching them triggers extra tax. For the 2025-26 year, the concessional cap is $30,000 and non-concessional caps depend on your total super balance. This guide explains the caps, carry-forward rules, and how to claim a personal deduction so you make the most of super without breaching the limits.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLESuper Contributions & Caps 2026: How Much Can You Contribute?The concessional (before-tax) capConcessional contributions include employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for. The combined cap is $30,000 for 2025-26. Contributions within the cap are taxed at 15% inside the fund (or 30% if your income exceeds $250,000, under Division 293). Contributing to your cap reduces your taxable income and is often the biggest legitimate tax saving available.Claiming a personal deductionIf you're self-employed or not supported by an employer, you can make a personal contribution and claim a tax deduction for it, up to your concessional cap. You must give your fund a valid notice of intent to claim a deduction and have it acknowledged before you lodge your tax return. This puts self-employed individuals on a similar footing to employees receiving super guarantee.The non-concessional (after-tax) capNon-concessional contributions are made from your own after-tax money and aren't taxed inside the fund. The cap is $120,000 per year, or up to $360,000 under the bring-forward rule if you're under 75 and your total super balance is under the threshold. For 2025-26, the full $360,000 bring-forward cap requires a total super balance under $1.76 million at 30 June 2025; if your balance is $2.0 million or higher, the non-concessional cap is nil. These caps are subject to your total super balance at the start of the financial year, so high-balance members may not be able to contribute.Carry-forward unused concessional capIf your total super balance was under $500,000 at the start of the financial year, you can carry forward unused concessional cap amounts from up to the previous five years. This allows a larger contribution in a high-income year — useful for sole traders or business owners with fluctuating income. The unused amounts expire after five years, so it pays to track them.Division 293 for high-income earnersIf your income plus concessional contributions exceeds $250,000, Division 293 applies an additional 15% tax on some concessional contributions (taking the total to 30%). It doesn't stop you contributing, but it reduces the tax benefit. For very high super balances, Division 296 taxes earnings above $3m at an additional 15% from 1 July 2026 (the 2026-27 financial year) — an additional layer to plan around.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOThe combined cap is $30,000 for 2025-26ATO$120,000 per year, or up to $360,000 under the bring-forward ruleATOnon-concessional contributionsATODivision 293ATODivision 296 taxes earnings above $3m at an additional 15% from 1 July 2026ATOcarry forward unused concessional cap amounts from up to the previous five yearsThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the concessional super cap for 2025-26?The concessional (before-tax) contribution cap is $30,000 for 2025-26. This includes employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for.How much can I contribute to super after tax?Can I claim a tax deduction for personal super contributions?What is carry-forward of unused concessional cap?What is Division 293 tax?How do I get matched with a super specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "The combined cap is $30,000 for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "give your fund a valid notice of intent to claim a deduction and have it acknowledged before you lodge your tax return"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap",
+      "text": "$120,000 per year, or up to $360,000 under the bring-forward rule"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap",
+      "text": "the full $360,000 bring-forward cap requires a total super balance under $1.76 million at 30 June 2025"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap",
+      "text": "carry forward unused concessional cap amounts"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners",
+      "text": "Division 293"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+      "text": "Division 296 taxes earnings above $3m at an additional 15% from 1 July 2026"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "ATOThe combined cap is $30,000 for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap",
+      "text": "ATO$120,000 per year, or up to $360,000 under the bring-forward rule"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap",
+      "text": "ATOnon-concessional contributions"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners",
+      "text": "ATODivision 293"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+      "text": "ATODivision 296 taxes earnings above $3m at an additional 15% from 1 July 2026"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions",
+      "text": "ATOcarry forward unused concessional cap amounts from up to the previous five years"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "$30,000 for 2025-26"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax PlanningTax Planning6 min readSuper Contributions & Caps 2026: How Much Can You Contribute?Superannuation remains one of the most tax-effective ways to build wealth and reduce your current tax bill. But contribution caps limit how much you can put in each year, and breaching them triggers extra tax. For the 2025-26 year, the concessional cap is $30,000 and non-concessional caps depend on your total super balance. This guide explains the caps, carry-forward rules, and how to claim a personal deduction so you make the most of super without breaching the limits.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLESuper Contributions & Caps 2026: How Much Can You Contribute?The concessional (before-tax) capConcessional contributions include employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for. The combined cap is $30,000 for 2025-26. Contributions within the cap are taxed at 15% inside the fund (or 30% if your income exceeds $250,000, under Division 293). Contributing to your cap reduces your taxable income and is often the biggest legitimate tax saving available.Claiming a personal deductionIf you're self-employed or not supported by an employer, you can make a personal contribution and claim a tax deduction for it, up to your concessional cap. You must give your fund a valid notice of intent to claim a deduction and have it acknowledged before you lodge your tax return. This puts self-employed individuals on a similar footing to employees receiving super guarantee.The non-concessional (after-tax) capNon-concessional contributions are made from your own after-tax money and aren't taxed inside the fund. The cap is $120,000 per year, or up to $360,000 under the bring-forward rule if you're under 75 and your total super balance is under the threshold. For 2025-26, the full $360,000 bring-forward cap requires a total super balance under $1.76 million at 30 June 2025; if your balance is $2.0 million or higher, the non-concessional cap is nil. These caps are subject to your total super balance at the start of the financial year, so high-balance members may not be able to contribute.Carry-forward unused concessional capIf your total super balance was under $500,000 at the start of the financial year, you can carry forward unused concessional cap amounts from up to the previous five years. This allows a larger contribution in a high-income year — useful for sole traders or business owners with fluctuating income. The unused amounts expire after five years, so it pays to track them.Division 293 for high-income earnersIf your income plus concessional contributions exceeds $250,000, Division 293 applies an additional 15% tax on some concessional contributions (taking the total to 30%). It doesn't stop you contributing, but it reduces the tax benefit. For very high super balances, Division 296 taxes earnings above $3m at an additional 15% from 1 July 2026 (the 2026-27 financial year) — an additional layer to plan around.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOThe combined cap is $30,000 for 2025-26ATO$120,000 per year, or up to $360,000 under the bring-forward ruleATOnon-concessional contributionsATODivision 293ATODivision 296 taxes earnings above $3m at an additional 15% from 1 July 2026ATOcarry forward unused concessional cap amounts from up to the previous five yearsThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the concessional super cap for 2025-26?The concessional (before-tax) contribution cap is $30,000 for 2025-26. This includes employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for.How much can I contribute to super after tax?Can I claim a tax deduction for personal super contributions?What is carry-forward of unused concessional cap?What is Division 293 tax?How do I get matched with a super specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Planning TAX PLANNING 6 min read Super Contributions & Caps 2026: How Much Can You Contribute? Superannuation remains one of the most tax-effective ways to build wealth and reduce your current tax bill. But contribution caps limit how much you can put in each year, and breaching them triggers extra tax. For the 2025-26 year, the concessional cap is $30,000 and non-concessional caps depend on your total super balance. This guide explains the caps, carry-forward rules, and how to claim a personal deduction so you make the most of super without breaching the limits. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Super Contributions & Caps 2026: How Much Can You Contribute? The concessional (before-tax) cap Concessional contributions include employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for. The combined cap is $30,000 for 2025-26. Contributions within the cap are taxed at 15% inside the fund (or 30% if your income exceeds $250,000, under Division 293). Contributing to your cap reduces your taxable income and is often the biggest legitimate tax saving available. Claiming a personal deduction If you're self-employed or not supported by an employer, you can make a personal contribution and claim a tax deduction for it, up to your concessional cap. You must give your fund a valid notice of intent to claim a deduction and have it acknowledged before you lodge your tax return. This puts self-employed individuals on a similar footing to employees receiving super guarantee. The non-concessional (after-tax) cap Non-concessional contributions are made from your own after-tax money and aren't taxed inside the fund. The cap is $120,000 per year, or up to $360,000 under the bring-forward rule if you're under 75 and your total super balance is under the threshold. For 2025-26, the full $360,000 bring-forward cap requires a total super balance under $1.76 million at 30 June 2025; if your balance is $2.0 million or higher, the non-concessional cap is nil. These caps are subject to your total super balance at the start of the financial year, so high-balance members may not be able to contribute. Carry-forward unused concessional cap If your total super balance was under $500,000 at the start of the financial year, you can carry forward unused concessional cap amounts from up to the previous five years. This allows a larger contribution in a high-income year — useful for sole traders or business owners with fluctuating income. The unused amounts expire after five years, so it pays to track them. Division 293 for high-income earners If your income plus concessional contributions exceeds $250,000, Division 293 applies an additional 15% tax on some concessional contributions (taking the total to 30%). It doesn't stop you contributing, but it reduces the tax benefit. For very high super balances, Division 296 taxes earnings above $3m at an additional 15% from 1 July 2026 (the 2026-27 financial year) — an additional layer to plan around. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO The combined cap is $30,000 for 2025-26 ATO $120,000 per year, or up to $360,000 under the bring-forward rule ATO non-concessional contributions ATO Division 293 ATO Division 296 taxes earnings above $3m at an additional 15% from 1 July 2026 ATO carry forward unused concessional cap amounts from up to the previous five years This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions What is the concessional super cap for 2025-26? The concessional (before-tax) contribution cap is $30,000 for 2025-26. This includes employer super guarantee, salary sacrifice, and personal contributions you claim a deduction for. How much can I contribute to super after tax? Can I claim a tax deduction for personal super contributions? What is carry-forward of unused concessional cap? What is Division 293 tax? How do I get matched with a super specialist? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2872,
+  "inSitemap": true
+}

@@ -1,0 +1,428 @@
+{
+  "path": "/guide/accountant-vs-bookkeeper",
+  "extractedAt": "2026-10-02T09:02:54.347Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/accountant-vs-bookkeeper",
+  "title": "Accountant vs Bookkeeper: What's the Difference & Which Do You Need? | Your Accountant Match",
+  "metaDescription": "Accountant vs bookkeeper explained: who lodges returns, who does BAS, who gives strategic advice. Work out which you need & get matched free in 60 seconds.",
+  "canonical": "http://localhost:4173/guide/accountant-vs-bookkeeper",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Accountant vs Bookkeeper: What's the Difference & Which Do You Need? | Your Accountant Match",
+    "og:description": "Accountant vs bookkeeper explained: who lodges returns, who does BAS, who gives strategic advice. Work out which you need & get matched free in 60 seconds.",
+    "og:url": "http://localhost:4173/guide/accountant-vs-bookkeeper",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Accountant vs Bookkeeper: What's the Difference & Which Do You Need? | Your Accountant Match",
+    "twitter:description": "Accountant vs bookkeeper explained: who lodges returns, who does BAS, who gives strategic advice. Work out which you need & get matched free in 60 seconds.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is a bookkeeper cheaper than an accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally yes — bookkeeping rates are lower than accountant rates because the work is transactional rather than strategic. But the two are complementary, not substitutes. Most businesses need both, and many firms offer both under one roof."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a bookkeeper lodge my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — only a registered tax agent can charge a fee to lodge a tax return. A registered BAS Agent can lodge your BAS, but not your income tax return. If you need a return lodged, we match you with a registered tax agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I hire a bookkeeper or an accountant first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your records are messy or you have regular transactions to process, a bookkeeper first makes sense — clean books make the accountant's work faster and cheaper. If your records are simple and you mainly need a return lodged, an accountant may be enough. The questionnaire helps you decide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can one person be both my bookkeeper and accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes — many firms offer both services. But for larger or more complex businesses, separating the roles (or using a firm with dedicated bookkeepers and accountants) often delivers better results. Matching identifies the right setup for your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a bookkeeper need to be registered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To charge a fee for BAS preparation and lodgement, yes — they must be a registered BAS Agent under the Tax Agent Services Act 2009. All matched bookkeepers providing BAS services in our network have verified, current TPB registration. A bookkeeper who only records transactions does not need registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my accountant also do my bookkeeping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes — many firms offer both bookkeeping and accounting under one roof. In the questionnaire, tell us what you already have and what you need added, and we will match you with a firm that provides both where that suits your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will my matched accountant or bookkeeper contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is matching free whether I need a bookkeeper, an accountant, or both?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free regardless of which service you need. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Comparison Guide",
+          "item": "/guide/accountant-vs-bookkeeper"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Accountant vs Bookkeeper",
+      "description": "Accountant vs bookkeeper explained: who lodges returns, who does BAS, who gives strategic advice. Work out which you need & get matched free in 60 seconds.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/accountant-vs-bookkeeper"
+      }
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Accountant vs Bookkeeper“What’s the Difference”"
+    },
+    {
+      "level": 2,
+      "text": "Accountant vs Bookkeeper Explained"
+    },
+    {
+      "level": 3,
+      "text": "What a bookkeeper does"
+    },
+    {
+      "level": 3,
+      "text": "What an accountant does"
+    },
+    {
+      "level": 3,
+      "text": "Do you need both?"
+    },
+    {
+      "level": 3,
+      "text": "How matching decides for you"
+    },
+    {
+      "level": 2,
+      "text": "Accounting and Bookkeeping Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet Our Accounting and Bookkeeping Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Accountant vs Bookkeeper“What’s the Difference”",
+      "images": 0,
+      "text": "Home/Guides/Comparison GuideAccountant vs Bookkeeper“What’s the Difference”Not sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantCOMPARISON GUIDEAccountant vs Bookkeeper ExplainedWhat a bookkeeper doesA bookkeeper handles the day-to-day recording of transactions — invoices, bills, bank reconciliation, payroll and BAS preparation. A registered BAS Agent can also lodge your BAS. Bookkeeping is about keeping accurate, up-to-date records that form the foundation for everything else. Good bookkeeping makes the accountant's job faster and cheaper.What an accountant doesAn accountant takes those records and lodges returns, gives structural and tax advice, manages ATO strategy, and provides forward-looking guidance like forecasting and growth advisory. A registered tax agent can lodge returns and represent you to the ATO. Accounting is about strategy, compliance and planning — building on the bookkeeper's foundation.Do you need both?Most growing businesses benefit from both — and many firms offer both under one roof. A bookkeeper keeps the monthly records current; an accountant handles the annual return, structure decisions and tax planning. If your books are simple, a single accountant-bookkeeper may suffice. If you have payroll, inventory or multiple entities, separating the roles (or using a firm with dedicated bookkeepers) often works better.How matching decides for youIn our questionnaire, tell us what you already have and what you need added. If you have a bookkeeper but need a tax agent, we match the gap. If you need both, we connect you with a firm that offers both. If you are not sure, the questionnaire walks you through it — you do not need to know the answer in advance.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHAccounting and Bookkeeping Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Bookkeeping & bank reconciliationBAS preparation & lodgement (registered BAS Agent)Tax return preparation & lodgement (registered tax agent)Tax planning & structural advicePayroll & STP2 reportingManagement accounts & forecastingVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet Our Accounting and Bookkeeping PartnersBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Is a bookkeeper cheaper than an accountant?Generally yes — bookkeeping rates are lower than accountant rates because the work is transactional rather than strategic. But the two are complementary, not substitutes. Most businesses need both, and many firms offer both under one roof.Can a bookkeeper lodge my tax return?Should I hire a bookkeeper or an accountant first?Can one person be both my bookkeeper and accountant?Does a bookkeeper need to be registered?Can my accountant also do my bookkeeping?How quickly will my matched accountant or bookkeeper contact me?Is matching free whether I need a bookkeeper, an accountant, or both?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/overdue-tax-return-help",
+      "text": "Overdue Tax Return Help"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Comparison GuideAccountant vs Bookkeeper“What’s the Difference”Not sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantCOMPARISON GUIDEAccountant vs Bookkeeper ExplainedWhat a bookkeeper doesA bookkeeper handles the day-to-day recording of transactions — invoices, bills, bank reconciliation, payroll and BAS preparation. A registered BAS Agent can also lodge your BAS. Bookkeeping is about keeping accurate, up-to-date records that form the foundation for everything else. Good bookkeeping makes the accountant's job faster and cheaper.What an accountant doesAn accountant takes those records and lodges returns, gives structural and tax advice, manages ATO strategy, and provides forward-looking guidance like forecasting and growth advisory. A registered tax agent can lodge returns and represent you to the ATO. Accounting is about strategy, compliance and planning — building on the bookkeeper's foundation.Do you need both?Most growing businesses benefit from both — and many firms offer both under one roof. A bookkeeper keeps the monthly records current; an accountant handles the annual return, structure decisions and tax planning. If your books are simple, a single accountant-bookkeeper may suffice. If you have payroll, inventory or multiple entities, separating the roles (or using a firm with dedicated bookkeepers) often works better.How matching decides for youIn our questionnaire, tell us what you already have and what you need added. If you have a bookkeeper but need a tax agent, we match the gap. If you need both, we connect you with a firm that offers both. If you are not sure, the questionnaire walks you through it — you do not need to know the answer in advance.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHAccounting and Bookkeeping Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Bookkeeping & bank reconciliationBAS preparation & lodgement (registered BAS Agent)Tax return preparation & lodgement (registered tax agent)Tax planning & structural advicePayroll & STP2 reportingManagement accounts & forecastingVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet Our Accounting and Bookkeeping PartnersBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Is a bookkeeper cheaper than an accountant?Generally yes — bookkeeping rates are lower than accountant rates because the work is transactional rather than strategic. But the two are complementary, not substitutes. Most businesses need both, and many firms offer both under one roof.Can a bookkeeper lodge my tax return?Should I hire a bookkeeper or an accountant first?Can one person be both my bookkeeper and accountant?Does a bookkeeper need to be registered?Can my accountant also do my bookkeeping?How quickly will my matched accountant or bookkeeper contact me?Is matching free whether I need a bookkeeper, an accountant, or both?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Comparison Guide Accountant vs Bookkeeper “What’s the Difference” Not sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 COMPARISON GUIDE Accountant vs Bookkeeper Explained What a bookkeeper does A bookkeeper handles the day-to-day recording of transactions — invoices, bills, bank reconciliation, payroll and BAS preparation. A registered BAS Agent can also lodge your BAS. Bookkeeping is about keeping accurate, up-to-date records that form the foundation for everything else. Good bookkeeping makes the accountant's job faster and cheaper. What an accountant does An accountant takes those records and lodges returns, gives structural and tax advice, manages ATO strategy, and provides forward-looking guidance like forecasting and growth advisory. A registered tax agent can lodge returns and represent you to the ATO. Accounting is about strategy, compliance and planning — building on the bookkeeper's foundation. Do you need both? Most growing businesses benefit from both — and many firms offer both under one roof. A bookkeeper keeps the monthly records current; an accountant handles the annual return, structure decisions and tax planning. If your books are simple, a single accountant-bookkeeper may suffice. If you have payroll, inventory or multiple entities, separating the roles (or using a firm with dedicated bookkeepers) often works better. How matching decides for you In our questionnaire, tell us what you already have and what you need added. If you have a bookkeeper but need a tax agent, we match the gap. If you need both, we connect you with a firm that offers both. If you are not sure, the questionnaire walks you through it — you do not need to know the answer in advance. This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Accounting and Bookkeeping Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. Bookkeeping & bank reconciliation BAS preparation & lodgement (registered BAS Agent) Tax return preparation & lodgement (registered tax agent) Tax planning & structural advice Payroll & STP2 reporting Management accounts & forecasting Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet Our Accounting and Bookkeeping Partners Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. Is a bookkeeper cheaper than an accountant? Generally yes — bookkeeping rates are lower than accountant rates because the work is transactional rather than strategic. But the two are complementary, not substitutes. Most businesses need both, and many firms offer both under one roof. Can a bookkeeper lodge my tax return? Should I hire a bookkeeper or an accountant first? Can one person be both my bookkeeper and accountant? Does a bookkeeper need to be registered? Can my accountant also do my bookkeeping? How quickly will my matched accountant or bookkeeper contact me? Is matching free whether I need a bookkeeper, an accountant, or both? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Overdue Tax Return Help Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2714,
+  "inSitemap": true
+}

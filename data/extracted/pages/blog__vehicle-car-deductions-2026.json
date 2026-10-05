@@ -1,0 +1,493 @@
+{
+  "path": "/blog/vehicle-car-deductions-2026",
+  "extractedAt": "2026-10-02T09:03:08.398Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/vehicle-car-deductions-2026",
+  "title": "Vehicle & Car Tax Deductions 2026 — Cents-per-KM vs Logbook Method | Your Accountant Match",
+  "metaDescription": "How to claim vehicle and car deductions in 2025-26 — the cents-per-km rate, the logbook method, what counts as a car, and the records you must keep.",
+  "canonical": "http://localhost:4173/blog/vehicle-car-deductions-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Vehicle & Car Tax Deductions 2026 — Cents-per-KM vs Logbook Method | Your Accountant Match",
+    "og:description": "How to claim vehicle and car deductions in 2025-26 — the cents-per-km rate, the logbook method, what counts as a car, and the records you must keep.",
+    "og:url": "http://localhost:4173/blog/vehicle-car-deductions-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Vehicle & Car Tax Deductions 2026 — Cents-per-KM vs Logbook Method | Your Accountant Match",
+    "twitter:description": "How to claim vehicle and car deductions in 2025-26 — the cents-per-km rate, the logbook method, what counts as a car, and the records you must keep.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the cents-per-km rate for 2025-26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cents-per-kilometre rate is 88 cents per km for 2025-26. You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. The rate covers all running costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use the logbook or cents-per-km method?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use cents-per-km if you drive fewer than 5,000 business kilometres and want simplicity. Use the logbook method if you drive a lot for work or have an expensive vehicle, as it can yield a larger claim. A registered tax agent can calculate both for your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do I keep a logbook for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You keep a logbook for 12 continuous weeks, recording every trip (business and private). This establishes your business-use percentage, which you then apply to all car running costs each year. A logbook is valid for five years if your usage doesn't change materially."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim travel between home and work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — travel between home and your normal workplace is private and not deductible. You can claim travel between workplaces, to client sites, or to an alternative workplace. Toll and parking fees for work trips are separately deductible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my ute count as a car for deductions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly — a 'car' is a vehicle designed to carry a load of less than one tonne and fewer than nine passengers, which includes some utes and vans. Larger vehicles are treated differently. If you're unsure whether your vehicle qualifies, check with a registered tax agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a tax agent for car deductions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and vehicle deduction needs. We match you with a vetted local tax agent who can calculate the best method for your situation. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Deductions",
+          "item": "/blog/vehicle-car-deductions-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook",
+      "description": "How to claim vehicle and car deductions in 2025-26 — the cents-per-km rate, the logbook method, what counts as a car, and the records you must keep.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/vehicle-car-deductions-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-motor-vehicle-expenses/logbook-method"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/trips-you-can-and-can-t-claim"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/api/public/content/bc562d4d-fcaf-4e15-b595-cca75e30f8bc_Taxtimetoolkit_Keepingrecordsforworkrelatedexpenses_pdf"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Motor vehicle and car expense deductions",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook"
+    },
+    {
+      "level": 2,
+      "text": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook"
+    },
+    {
+      "level": 3,
+      "text": "The cents-per-kilometre method"
+    },
+    {
+      "level": 3,
+      "text": "The logbook method"
+    },
+    {
+      "level": 3,
+      "text": "What counts as a car"
+    },
+    {
+      "level": 3,
+      "text": "What you can and can't claim"
+    },
+    {
+      "level": 3,
+      "text": "Which method should you use?"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook",
+      "images": 0,
+      "text": "Home/Blog/DeductionsDeductions6 min readVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookIf you use your car for work — visiting clients, travelling between job sites, or carrying tools — you may be able to claim a deduction. The ATO offers two methods: the cents-per-kilometre method (simple but capped) and the logbook method (more work but potentially a larger claim). Choosing the right method depends on your work use and vehicle costs. This guide explains both for the 2025-26 year so you claim correctly and keep the records the ATO expects.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookThe cents-per-kilometre methodUnder the cents-per-km method, you claim a set rate per business kilometre — 88 cents per km for 2025-26. This rate covers all running costs (fuel, servicing, depreciation, registration, insurance). You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. You need a reasonable basis for the kilometres claimed (a diary or record), but you don't need written receipts for expenses.The logbook methodThe logbook method lets you claim the actual business-use percentage of all your car expenses. You keep a logbook for 12 continuous weeks recording every trip (business and private), which establishes your business-use percentage. You then apply that percentage to all car running costs each year. This can yield a much larger claim if your work use is high or your vehicle is expensive to run, but it requires detailed record-keeping.What counts as a carFor car deduction purposes, a 'car' is a vehicle designed to carry a load of less than one tonne and fewer than nine passengers — including utes and vans under that threshold. Motorcycles and vehicles over one tonne (like larger trucks) are treated differently, and their deductions are generally based on actual costs rather than the cents-per-km or logbook methods. If you're unsure whether your vehicle qualifies, check with a registered tax agent.What you can and can't claimYou can claim fuel, servicing, depreciation, registration, insurance, and interest on a loan used to buy the car (under the logbook method). You can't claim the cost of travelling between home and your normal workplace — that's private. You can claim travel between workplaces, to client sites, or to an alternative workplace. Toll and parking fees for work trips are separately deductible.Which method should you use?If you drive fewer than 5,000 business kilometres and want simplicity, the cents-per-km method is usually best. If you drive a lot for work or have an expensive vehicle, the logbook method may give a larger deduction. Many people use cents-per-km for years and switch to logbook when their work use rises. A registered tax agent can calculate both for your situation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO88 cents per km for 2025-26ATOYou keep a logbook for 12 continuous weeksATOtravel between workplacesATOYou keep a logbook for 12 continuous weeksThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the cents-per-km rate for 2025-26?The cents-per-kilometre rate is 88 cents per km for 2025-26. You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. The rate covers all running costs.Should I use the logbook or cents-per-km method?How long do I keep a logbook for?Can I claim travel between home and work?Does my ute count as a car for deductions?How do I get matched with a tax agent for car deductions?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "88 cents per km for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-motor-vehicle-expenses/logbook-method",
+      "text": "You keep a logbook for 12 continuous weeks"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/trips-you-can-and-can-t-claim",
+      "text": "travel between workplaces"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "If you drive fewer than 5,000 business kilometres"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "ATO88 cents per km for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-motor-vehicle-expenses/logbook-method",
+      "text": "ATOYou keep a logbook for 12 continuous weeks"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/trips-you-can-and-can-t-claim",
+      "text": "ATOtravel between workplaces"
+    },
+    {
+      "href": "https://www.ato.gov.au/api/public/content/bc562d4d-fcaf-4e15-b595-cca75e30f8bc_Taxtimetoolkit_Keepingrecordsforworkrelatedexpenses_pdf",
+      "text": "ATOYou keep a logbook for 12 continuous weeks"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "88 cents per km for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method",
+      "text": "You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/DeductionsDeductions6 min readVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookIf you use your car for work — visiting clients, travelling between job sites, or carrying tools — you may be able to claim a deduction. The ATO offers two methods: the cents-per-kilometre method (simple but capped) and the logbook method (more work but potentially a larger claim). Choosing the right method depends on your work use and vehicle costs. This guide explains both for the 2025-26 year so you claim correctly and keep the records the ATO expects.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookThe cents-per-kilometre methodUnder the cents-per-km method, you claim a set rate per business kilometre — 88 cents per km for 2025-26. This rate covers all running costs (fuel, servicing, depreciation, registration, insurance). You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. You need a reasonable basis for the kilometres claimed (a diary or record), but you don't need written receipts for expenses.The logbook methodThe logbook method lets you claim the actual business-use percentage of all your car expenses. You keep a logbook for 12 continuous weeks recording every trip (business and private), which establishes your business-use percentage. You then apply that percentage to all car running costs each year. This can yield a much larger claim if your work use is high or your vehicle is expensive to run, but it requires detailed record-keeping.What counts as a carFor car deduction purposes, a 'car' is a vehicle designed to carry a load of less than one tonne and fewer than nine passengers — including utes and vans under that threshold. Motorcycles and vehicles over one tonne (like larger trucks) are treated differently, and their deductions are generally based on actual costs rather than the cents-per-km or logbook methods. If you're unsure whether your vehicle qualifies, check with a registered tax agent.What you can and can't claimYou can claim fuel, servicing, depreciation, registration, insurance, and interest on a loan used to buy the car (under the logbook method). You can't claim the cost of travelling between home and your normal workplace — that's private. You can claim travel between workplaces, to client sites, or to an alternative workplace. Toll and parking fees for work trips are separately deductible.Which method should you use?If you drive fewer than 5,000 business kilometres and want simplicity, the cents-per-km method is usually best. If you drive a lot for work or have an expensive vehicle, the logbook method may give a larger deduction. Many people use cents-per-km for years and switch to logbook when their work use rises. A registered tax agent can calculate both for your situation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO88 cents per km for 2025-26ATOYou keep a logbook for 12 continuous weeksATOtravel between workplacesATOYou keep a logbook for 12 continuous weeksThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the cents-per-km rate for 2025-26?The cents-per-kilometre rate is 88 cents per km for 2025-26. You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. The rate covers all running costs.Should I use the logbook or cents-per-km method?How long do I keep a logbook for?Can I claim travel between home and work?Does my ute count as a car for deductions?How do I get matched with a tax agent for car deductions?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Deductions DEDUCTIONS 6 min read Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook If you use your car for work — visiting clients, travelling between job sites, or carrying tools — you may be able to claim a deduction. The ATO offers two methods: the cents-per-kilometre method (simple but capped) and the logbook method (more work but potentially a larger claim). Choosing the right method depends on your work use and vehicle costs. This guide explains both for the 2025-26 year so you claim correctly and keep the records the ATO expects. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook The cents-per-kilometre method Under the cents-per-km method, you claim a set rate per business kilometre — 88 cents per km for 2025-26. This rate covers all running costs (fuel, servicing, depreciation, registration, insurance). You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. You need a reasonable basis for the kilometres claimed (a diary or record), but you don't need written receipts for expenses. The logbook method The logbook method lets you claim the actual business-use percentage of all your car expenses. You keep a logbook for 12 continuous weeks recording every trip (business and private), which establishes your business-use percentage. You then apply that percentage to all car running costs each year. This can yield a much larger claim if your work use is high or your vehicle is expensive to run, but it requires detailed record-keeping. What counts as a car For car deduction purposes, a 'car' is a vehicle designed to carry a load of less than one tonne and fewer than nine passengers — including utes and vans under that threshold. Motorcycles and vehicles over one tonne (like larger trucks) are treated differently, and their deductions are generally based on actual costs rather than the cents-per-km or logbook methods. If you're unsure whether your vehicle qualifies, check with a registered tax agent. What you can and can't claim You can claim fuel, servicing, depreciation, registration, insurance, and interest on a loan used to buy the car (under the logbook method). You can't claim the cost of travelling between home and your normal workplace — that's private. You can claim travel between workplaces, to client sites, or to an alternative workplace. Toll and parking fees for work trips are separately deductible. Which method should you use? If you drive fewer than 5,000 business kilometres and want simplicity, the cents-per-km method is usually best. If you drive a lot for work or have an expensive vehicle, the logbook method may give a larger deduction. Many people use cents-per-km for years and switch to logbook when their work use rises. A registered tax agent can calculate both for your situation. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO 88 cents per km for 2025-26 ATO You keep a logbook for 12 continuous weeks ATO travel between workplaces ATO You keep a logbook for 12 continuous weeks This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions What is the cents-per-km rate for 2025-26? The cents-per-kilometre rate is 88 cents per km for 2025-26. You can claim up to a maximum of 5,000 business kilometres per car per year, which caps the claim at $4,400. The rate covers all running costs. Should I use the logbook or cents-per-km method? How long do I keep a logbook for? Can I claim travel between home and work? Does my ute count as a car for deductions? How do I get matched with a tax agent for car deductions? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2957,
+  "inSitemap": true
+}

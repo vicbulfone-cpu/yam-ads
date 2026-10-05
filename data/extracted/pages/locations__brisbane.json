@@ -1,0 +1,887 @@
+{
+  "path": "/locations/brisbane",
+  "extractedAt": "2026-10-02T09:01:13.266Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/locations/brisbane",
+  "title": "Specialist Accountant Brisbane | Your Accountant Match",
+  "metaDescription": "Find a specialist accountant in Brisbane. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+  "canonical": "http://localhost:4173/locations/brisbane",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Specialist Accountant Brisbane | Your Accountant Match",
+    "og:description": "Find a specialist accountant in Brisbane. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+    "og:url": "http://localhost:4173/locations/brisbane",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/beffc102-5555-4f21-8b12-aa59cd9fa194.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Specialist Accountant Brisbane | Your Accountant Match",
+    "twitter:description": "Find a specialist accountant in Brisbane. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "City",
+          "@id": "https://youraccountantmatch.com.au/locations/brisbane#city",
+          "name": "Brisbane",
+          "sameAs": "https://en.wikipedia.org/wiki/Brisbane"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://youraccountantmatch.com.au/locations/brisbane#service",
+          "name": "Accountant Matching in Brisbane",
+          "serviceType": "Accountant Matching & Referral",
+          "url": "https://youraccountantmatch.com.au/locations/brisbane",
+          "description": "Free matching service connecting people and businesses in Brisbane, QLD, and surrounding suburbs with vetted, TPB-registered accountants.",
+          "areaServed": [
+            {
+              "@id": "https://youraccountantmatch.com.au/locations/brisbane#city"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Brisbane CBD",
+              "postalCode": "4000"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Fortitude Valley",
+              "postalCode": "4006"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Farm",
+              "postalCode": "4005"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Teneriffe",
+              "postalCode": "4005"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Kangaroo Point",
+              "postalCode": "4169"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "South Brisbane",
+              "postalCode": "4101"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "West End",
+              "postalCode": "4101"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Toowong",
+              "postalCode": "4066"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Indooroopilly",
+              "postalCode": "4068"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Chermside",
+              "postalCode": "4032"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Carindale",
+              "postalCode": "4152"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Mount Gravatt",
+              "postalCode": "4122"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Sunnybank",
+              "postalCode": "4109"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Eight Mile Plains",
+              "postalCode": "4113"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Springwood",
+              "postalCode": "4127"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Logan",
+              "postalCode": "4114"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "North Lakes",
+              "postalCode": "4509"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Redcliffe",
+              "postalCode": "4020"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Capalaba",
+              "postalCode": "4157"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Wynnum",
+              "postalCode": "4178"
+            }
+          ],
+          "knowsAbout": [
+            "Business Accounting",
+            "Individual Tax Returns",
+            "BAS & Bookkeeping",
+            "Single Touch Payroll (STP Phase 2)",
+            "Taxable Payments Annual Reports (TPAR)",
+            "Capital Gains Tax (CGT)",
+            "Family Trusts",
+            "Self-Managed Super Funds (SMSF)",
+            "GST Registration",
+            "Small Business Tax Planning"
+          ],
+          "provider": {
+            "@id": "https://youraccountantmatch.com.au/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://youraccountantmatch.com.au/locations/brisbane#webpage",
+          "url": "https://youraccountantmatch.com.au/locations/brisbane",
+          "name": "Specialist Accountant Brisbane | Your Accountant Match",
+          "description": "Find a specialist accountant in Brisbane. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+          "isPartOf": {
+            "@id": "https://youraccountantmatch.com.au/#website"
+          },
+          "about": {
+            "@id": "https://youraccountantmatch.com.au/locations/brisbane#city"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://youraccountantmatch.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://youraccountantmatch.com.au/locations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Brisbane",
+                "item": "https://youraccountantmatch.com.au/locations/brisbane"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Accountant matching in Brisbane",
+      "description": "From the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades.",
+      "areaServed": [
+        "Brisbane CBD",
+        "Fortitude Valley & New Farm",
+        "South Brisbane & West End",
+        "Toowong & Indooroopilly",
+        "Chermside & North Brisbane",
+        "Mount Gravatt & Southside"
+      ],
+      "knowsAbout": [
+        "Queensland Payroll Tax",
+        "Land Tax & Foreign Surcharge",
+        "The 2032 Olympics Pipeline",
+        "BAS & GST for the Subtropical Economy",
+        "Construction & Development",
+        "Tech & Innovation",
+        "Healthcare & Medical",
+        "Hospitality & Tourism",
+        "Payroll tax",
+        "Land tax",
+        "Stamp duty",
+        "Workers' compensation"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Brisbane"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find a registered accountant in Brisbane through your service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all the Brisbane accountants in your network registered tax agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every accounting firm in our Brisbane network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Queensland and Australian Tax Office (ATO) standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a Brisbane accountant help with both my personal tax return and my small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many Brisbane firms handle both individual returns and business accounting. Whether you need a personal tax return in New Farm, company tax structuring in Fortitude Valley, or SMSF advice in Toowong, we match you with a Brisbane specialist suited to your exact requirements across the CBD and surrounding suburbs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need an accountant who understands Brisbane's property market and Queensland tax rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brisbane's property landscape and Queensland state taxes — stamp duty, land tax assessed by the Queensland Revenue Office on freehold land owned at midnight on 30 June (with a $600,000 threshold for individuals), and payroll tax above $1.3 million in annual wages — interact with federal tax in complex ways. We match you with a Brisbane accountant who understands Queensland's rules and how they apply to investment property, negative gearing changes and capital gains across the Brisbane market."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a Brisbane accountant contact me after I complete the questionnaire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Brisbane firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Brisbane office or by phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Brisbane matching service really free with no obligation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Brisbane accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many firms in our Brisbane network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Brisbane CBD or online service during your questionnaire — whichever suits your schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover all of Brisbane or just the CBD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover all of Brisbane — from the CBD and inner suburbs like West End and Kangaroo Point to Chermside, Carindale, Springwood and North Lakes. Enter your postcode in the questionnaire and we will match you with a vetted Brisbane accountant whose services fit your area, whether you are in the city centre or the outer suburbs."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find a SpecialistAccountant in BrisbaneWe’ll find your match"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Accounting help across Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "Queensland Payroll Tax"
+    },
+    {
+      "level": 3,
+      "text": "Land Tax & Foreign Surcharge"
+    },
+    {
+      "level": 3,
+      "text": "The 2032 Olympics Pipeline"
+    },
+    {
+      "level": 3,
+      "text": "BAS & GST for the Subtropical Economy"
+    },
+    {
+      "level": 2,
+      "text": "Brisbane's commercial landscape"
+    },
+    {
+      "level": 2,
+      "text": "Sunshine metropolis: riverfront vibrancy, growth and subtropical appeal"
+    },
+    {
+      "level": 2,
+      "text": "A thriving commercial landscape: from infrastructure trades to tech startups"
+    },
+    {
+      "level": 2,
+      "text": "Queensland tax & duties at a glance"
+    },
+    {
+      "level": 2,
+      "text": "Accounting needs across Brisbane's districts"
+    },
+    {
+      "level": 3,
+      "text": "Brisbane CBD"
+    },
+    {
+      "level": 3,
+      "text": "Fortitude Valley & New Farm"
+    },
+    {
+      "level": 3,
+      "text": "South Brisbane & West End"
+    },
+    {
+      "level": 3,
+      "text": "Toowong & Indooroopilly"
+    },
+    {
+      "level": 3,
+      "text": "Chermside & North Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "Mount Gravatt & Southside"
+    },
+    {
+      "level": 2,
+      "text": "The Springfield, Logan & growth corridor"
+    },
+    {
+      "level": 3,
+      "text": "Springfield & Springfield Lakes"
+    },
+    {
+      "level": 3,
+      "text": "Logan & Springwood"
+    },
+    {
+      "level": 3,
+      "text": "Eight Mile Plains & Technology Park"
+    },
+    {
+      "level": 3,
+      "text": "North Lakes & Redcliffe"
+    },
+    {
+      "level": 2,
+      "text": "Why a Brisbane accountant matters"
+    },
+    {
+      "level": 3,
+      "text": "Accounting across Brisbane"
+    },
+    {
+      "level": 2,
+      "text": "Real situations we help resolve across Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "A Springfield builder managing Olympics-pipeline progress payments"
+    },
+    {
+      "level": 3,
+      "text": "A Fortitude Valley startup raising capital and issuing shares"
+    },
+    {
+      "level": 3,
+      "text": "A Toowong medical specialist restructuring into a service trust"
+    },
+    {
+      "level": 3,
+      "text": "A Fortitude Valley venue managing seasonal hospitality GST"
+    },
+    {
+      "level": 2,
+      "text": "Key industries across Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Development"
+    },
+    {
+      "level": 3,
+      "text": "Tech & Innovation"
+    },
+    {
+      "level": 3,
+      "text": "Healthcare & Medical"
+    },
+    {
+      "level": 3,
+      "text": "Hospitality & Tourism"
+    },
+    {
+      "level": 2,
+      "text": "Key tax dates & deadlines for Brisbane"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "Your accountant match, made simple"
+    },
+    {
+      "level": 3,
+      "text": "Answer a short sixty second questionnaire"
+    },
+    {
+      "level": 3,
+      "text": "We match you with an accountant that fits your needs"
+    },
+    {
+      "level": 3,
+      "text": "A callback from your matched accountant"
+    },
+    {
+      "level": 2,
+      "text": "The right accountant makes a real difference"
+    },
+    {
+      "level": 2,
+      "text": "Choosing the right accountant saves you — here's why"
+    },
+    {
+      "level": 2,
+      "text": "Matching accountants to every kind of client"
+    },
+    {
+      "level": 2,
+      "text": "Industries We Match in Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "Real Estate & Property"
+    },
+    {
+      "level": 3,
+      "text": "SMSF & Family Trusts"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Tradies"
+    },
+    {
+      "level": 3,
+      "text": "Transport & Logistics"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Brisbane Accountants"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 2,
+      "text": "Suburbs Serviced in Brisbane"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions — Brisbane"
+    },
+    {
+      "level": 3,
+      "text": "Other Capital Cities We Service"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Find a SpecialistAccountant in BrisbaneWe’ll find your match",
+      "images": 21,
+      "text": "Home/Locations/BrisbaneLOCAL. VETTED. MATCHED TO YOU.Find a SpecialistAccountant in BrisbaneWe’ll find your matchConnect with TPB-registered tax professionals across Brisbane who understand local business, property, and complex tax requirements.Falling behind on BAS lodgments or personal tax returns in Brisbane can quickly accumulate unwanted penalties and stress. Whether you are a sole trader in South Brisbane or running a company in Fortitude Valley, our network connects you with qualified Brisbane accountants who specialise in ATO negotiations and lodging backlogged returns smoothly.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Brisbane\",\"description\":\"From the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades.\",\"areaServed\":[\"Brisbane CBD\",\"Fortitude Valley & New Farm\",\"South Brisbane & West End\",\"Toowong & Indooroopilly\",\"Chermside & North Brisbane\",\"Mount Gravatt & Southside\"],\"knowsAbout\":[\"Queensland Payroll Tax\",\"Land Tax & Foreign Surcharge\",\"The 2032 Olympics Pipeline\",\"BAS & GST for the Subtropical Economy\",\"Construction & Development\",\"Tech & Innovation\",\"Healthcare & Medical\",\"Hospitality & Tourism\",\"Payroll tax\",\"Land tax\",\"Stamp duty\",\"Workers' compensation\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Brisbane\"]}BRISBANEAccounting help across BrisbaneFrom the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades.Queensland Payroll TaxQLD payroll tax applies once annual Australian wages exceed the threshold, with a regional discount available for employers outside the southeast corner. Brisbane businesses with multiple entities commonly need grouping advice as they scale, particularly across hospitality and construction.Land Tax & Foreign SurchargeQueensland land tax applies to freehold land above the threshold, with a surcharge for foreign owners. Brisbane investors holding multiple properties across the inner and western suburbs frequently need land-tax aggregation advice.The 2032 Olympics PipelineThe Brisbane 2032 Olympics is driving sustained infrastructure and construction investment across the southeast. Builders, contractors and service businesses feeding the pipeline need progress-payment GST, capital allowances and the right structure from day one.BAS & GST for the Subtropical EconomyBrisbane's economy runs on construction, hospitality, retail and professional services. Quarterly or monthly BAS, GST on mixed-supply sales and contractor ABN checks are everyday needs for small businesses across the inner city and growth corridors.BRISBANE COMMERCEBrisbane's commercial landscapeA closer look at the riverfront precincts, growth corridors and industries driving Brisbane's subtropical economy — and the tax realities that come with operating here.Sunshine metropolis: riverfront vibrancy, growth and subtropical appealWinding along the riverfront from South Bank and Howard Smith Wharves to New Farm and Fortitude Valley, Brisbane blends subtropical charm with rapid urban expansion. Strolling through the Queen Street Mall or along the riverwalks fills you with a sense of momentum: alfresco dining, leafy plazas and warm sunshine set the stage where locals gather to talk commerce, property development and regional enterprise.Beyond the downtown core, inner suburbs like Paddington, West End and Milton feature a mix of classic Queenslander homes, boutique office conversions and lively retail strips. Proximity to major infrastructure developments and Olympic preparation zones brings immense investment straight to the doorstep. It is a welcoming, energetic region where multi-generational trade families and modern service firms thrive together in a relaxed yet ambitious market.A thriving commercial landscape: from infrastructure trades to tech startupsBrisbane's economic engine extends far beyond its lifestyle appeal, driving major activity across construction, logistics, healthcare and tourism. Bustling dining precincts and retail hubs require streamlined financial accounting, where venue managers handle high-turnover casual rosters, cloud POS integrations and quarterly BAS lodgments under Single Touch Payroll (STP Phase 2).In the industrial corridors of Eagle Farm, Rocklea and Acacia Ridge, commercial enterprises oversee heavy transport fleets, trade subcontractors and equipment investments. These businesses depend on specialised accounting for Taxable Payments Annual Reports (TPAR), Fuel Tax Credits (FTC) and asset depreciation schedules. At the same time, expanding suburban corridors drive strong property investment, requiring clear strategies for Capital Gains Tax (CGT), family trust distributions and land tax threshold management. Brisbane represents a booming landscape where local businesses build sustainable growth.QUEENSLAND TAX SNAPSHOTQueensland tax & duties at a glanceBrisbane businesses and investors work within Queensland's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in QueenslandAdministered byPayroll taxApplies once annual Australian wages exceed the threshold; a regional discount is available for employers outside the southeast corner.Queensland Revenue OfficeLand taxLevied on freehold land above the threshold; a surcharge applies to foreign owners.Queensland Revenue OfficeStamp dutyPayable on property transfers; first-home-owner concessions may apply.Queensland Revenue OfficeWorkers' compensationEmployer premium based on wages and industry rate; most employers must insure with WorkCover Queensland.WorkCover QueenslandRates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.BRISBANE DISTRICTSAccounting needs across Brisbane's districtsBrisbane is a city of distinct districts — the CBD financial core, the inner-city creative and hospitality precincts, the western professional corridor and the booming southeast. We match you to an accountant who works in the part of Brisbane that aligns with what you do.4000Brisbane CBDThe commercial heart of the city with a dense cluster of financial-services, legal and professional firms. Accountants here handle corporate tax, FBT and cross-border structuring for CBD-based businesses.4006 / 4005Fortitude Valley & New FarmThe creative, hospitality and startup precinct. Firms work with agencies, venues and founders — handling sole-trader-to-company transitions, GST registration and project-based cash flow.4101South Brisbane & West EndThe cultural and education hub around South Bank and QPAC. A mix of creative businesses, cafes and professional services serving the dense residential and student population.4066Toowong & IndooroopillyThe western professional corridor anchored by the University of Queensland. Accountants serve medical specialists, academics and the established professional-services base of the western suburbs.4032Chermside & North BrisbaneA major northern hub with a strong retail, medical and small-business base. BAS cycles, payroll and investment-property advice are common needs for the established northern suburbs.4122Mount Gravatt & SouthsideA diverse southern region with a mix of trades, retail and professional services. Accountants handle contractor compliance, vehicle deductions and small-business structuring.SOUTHEAST GROWTH CORRIDORThe Springfield, Logan & growth corridorBrisbane's southeast is one of Australia's fastest-growing regions, anchored by Greater Springfield, the Logan corridor and Olympics-driven development. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and fleet structuring.4300Springfield & Springfield LakesA master-planned city in the southeast growth corridor with a growing business, education and technology base. New-business setup, GST registration and STP2 onboarding are everyday needs.4114 / 4127Logan & SpringwoodA large, diverse region with a strong trades, manufacturing and small-business base. BAS cycles, contractor compliance and vehicle and tool deductions are common.4113Eight Mile Plains & Technology ParkHome to the Brisbane Technology Park and a cluster of tech, research and professional-services firms. R&D incentives, employee share schemes and scale-up compliance are specialist needs.4509 / 4020North Lakes & RedcliffeA fast-growing northern residential and retail corridor. New businesses and franchises here need GST registration, structure advice and payroll setup from day one.LOCAL KNOWLEDGEWhy a Brisbane accountant mattersBrisbane is more than a postcode. From the CBD finance sector to the Olympics-driven construction boom and the southeast growth corridor, local tax knowledge matters. A Brisbane accountant understands the Queensland economy, payroll and land tax rules, and the mix of construction, tech, hospitality and professional services that make this city unique.Accounting across BrisbaneWe match you with a vetted local accountant serving Brisbane and surrounding suburbs — from the CBD and Fortitude Valley to Toowong, Chermside, Springfield and Logan.LOCAL SCENARIOSReal situations we help resolve across BrisbanePractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A Springfield builder managing Olympics-pipeline progress paymentsProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the southeast growth corridor expands.A Fortitude Valley startup raising capital and issuing sharesEmployee share schemes, R&D incentives and cap-table management help a tech founder handle the tax events of raising capital.A Toowong medical specialist restructuring into a service trustPractice structuring, service-trust arrangements and medical-billing nuances help a western-suburbs specialist manage income and protect assets.A Fortitude Valley venue managing seasonal hospitality GSTSeasonal cash flows, GST on mixed supplies and FBT on employee benefits keep a hospitality business reconciling point-of-sale records after the peak season.BRISBANE INDUSTRIESKey industries across BrisbaneBrisbane's economy is anchored by construction, professional services, technology and healthcare — each with tax rules that reward specialist knowledge.Construction & DevelopmentSpringfield, Logan, CBDThe Olympics pipeline and southeast growth corridor are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning.Tech & InnovationFortitude Valley, Eight Mile PlainsBrisbane's tech ecosystem draws on R&D incentives, employee share schemes and startup structuring. Specialist accountants help founders manage cap tables and the tax events of raising capital.Healthcare & MedicalChermside, Toowong, HerstonBrisbane's hospital precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Hospitality & TourismFortitude Valley, South BrisbaneBrisbane's subtropical visitor economy supports a dense hospitality sector. Cafes, venues and accommodation providers face seasonal cash flows, GST on mixed supplies and FBT on employee benefits.BRISBANE DEADLINESKey tax dates & deadlines for BrisbaneQueensland-specific obligations sit alongside federal deadlines. A local Brisbane accountant keeps both calendars aligned so nothing slips.QLD businesses on monthly GST must lodge BAS by the 21st of the following month — Brisbane hospitality and retail operators should reconcile point-of-sale data early.QLD payroll tax annual reconciliation is due each July; grouped entities across Brisbane locations must consolidate wages before filing.Brisbane property investors should review their QLD land tax position before 30 June to correctly manage deductions and thresholds.QLD businesses claiming the regional employer payroll-tax discount should confirm their eligibility and regional wage split before the annual return.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in BrisbaneGet paired with an accountant in Brisbane who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.Real Estate & PropertyInvestors riding the 2032 Olympics property wave.View Real Estate & Property in BrisbaneSMSF & Family TrustsSMSF setup & audits for Queensland's growing wealth market.View SMSF & Family Trusts in BrisbaneConstruction & TradiesOlympics infrastructure & Cross River Rail contractors.View Construction & Tradies in BrisbaneTransport & LogisticsPort of Brisbane freight operators & fuel tax credits.View Transport & Logistics in BrisbaneTRUST & VETTINGTrust and vetting standards for Brisbane AccountantsWhen you're looking for an accountant in Brisbane, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Brisbane accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Brisbane and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Brisbane accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Brisbane accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in BrisbaneSearch your suburb or postcode below to confirm our network's local coverage across Brisbane.Brisbane CBD4000Fortitude Valley4006New Farm4005Teneriffe4005Kangaroo Point4169South Brisbane4101West End4101Toowong4066Indooroopilly4068Chermside4032Carindale4152Mount Gravatt4122Sunnybank4109Eight Mile Plains4113Springwood4127Logan4114North Lakes4509Redcliffe4020Capalaba4157Wynnum4178{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Brisbane through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Brisbane accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Brisbane network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Queensland and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Brisbane accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Brisbane firms handle both individual returns and business accounting. Whether you need a personal tax return in New Farm, company tax structuring in Fortitude Valley, or SMSF advice in Toowong, we match you with a Brisbane specialist suited to your exact requirements across the CBD and surrounding suburbs.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Brisbane's property market and Queensland tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Brisbane's property landscape and Queensland state taxes — stamp duty, land tax assessed by the Queensland Revenue Office on freehold land owned at midnight on 30 June (with a $600,000 threshold for individuals), and payroll tax above $1.3 million in annual wages — interact with federal tax in complex ways. We match you with a Brisbane accountant who understands Queensland's rules and how they apply to investment property, negative gearing changes and capital gains across the Brisbane market.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Brisbane accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Brisbane firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Brisbane office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Brisbane matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Brisbane accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Brisbane network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Brisbane CBD or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Brisbane or just the CBD?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Brisbane — from the CBD and inner suburbs like West End and Kangaroo Point to Chermside, Carindale, Springwood and North Lakes. Enter your postcode in the questionnaire and we will match you with a vetted Brisbane accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — BrisbaneEverything you need to know about getting matched with a top accountant in Brisbane, QLD.How do I find a registered accountant in Brisbane through your service?Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Brisbane accountants in your network registered tax agents?Can a Brisbane accountant help with both my personal tax return and my small business?What if I need an accountant who understands Brisbane's property market and Queensland tax rules?How quickly will a Brisbane accountant contact me after I complete the questionnaire?Is the Brisbane matching service really free with no obligation?Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit?Do you cover all of Brisbane or just the CBD?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "Accountant matching services in Brisbane",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/c0bf538d-7952-4809-9d3a-a89fdcd58d7d.png",
+      "alt": "Brisbane cityscape at golden hour showing the Story Bridge over the Brisbane River and the CBD skyline — the subtropical capital anchoring southeast Queensland's economy",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/bf140bc1-1cff-4781-acbf-80bddaafdc84.png",
+      "alt": "Brisbane's South Bank cultural precinct and riverside boardwalks along the Brisbane River — the lifestyle backdrop of the subtropical capital",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/c211dca9-f2cb-4c44-b66b-6092b101aab7.png",
+      "alt": "Our 3 Step Matching Process: 1. Tell us what you need, 2. We find your match, 3. Make contact",
+      "width": "2048",
+      "height": "872"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921bc551-dced-40f8-bb4f-751bf60d2d9f.png",
+      "alt": "Right Support Brighter Tomorrow — Coffee mug on desk",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/9e5f6801-9fe1-47b2-9abe-11f97f0b536e.png",
+      "alt": "The Difference: Better outcomes, Save time, Save money, Peace of mind",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2d1d6291-ddd6-4e8d-9d54-1d991b16c063.png",
+      "alt": "Matching accountants to every kind of client — Families, Small Business, Rural, SMSF, Professionals, Tradies, Property Investors, Start-ups, Charities, Trusts",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/industry/real-estate-property/brisbane",
+      "text": "Real Estate & PropertyInvestors riding the 2032 Olympics property wave.View Real Estate & Property in Brisbane"
+    },
+    {
+      "href": "/industry/smsf-family-trusts/brisbane",
+      "text": "SMSF & Family TrustsSMSF setup & audits for Queensland's growing wealth market.View SMSF & Family Trusts in Brisbane"
+    },
+    {
+      "href": "/industry/construction-tradies/brisbane",
+      "text": "Construction & TradiesOlympics infrastructure & Cross River Rail contractors.View Construction & Tradies in Brisbane"
+    },
+    {
+      "href": "/industry/transport-logistics/brisbane",
+      "text": "Transport & LogisticsPort of Brisbane freight operators & fuel tax credits.View Transport & Logistics in Brisbane"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "tpb.gov.au"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Locations/BrisbaneLOCAL. VETTED. MATCHED TO YOU.Find a SpecialistAccountant in BrisbaneWe’ll find your matchConnect with TPB-registered tax professionals across Brisbane who understand local business, property, and complex tax requirements.Falling behind on BAS lodgments or personal tax returns in Brisbane can quickly accumulate unwanted penalties and stress. Whether you are a sole trader in South Brisbane or running a company in Fortitude Valley, our network connects you with qualified Brisbane accountants who specialise in ATO negotiations and lodging backlogged returns smoothly.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Brisbane\",\"description\":\"From the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades.\",\"areaServed\":[\"Brisbane CBD\",\"Fortitude Valley & New Farm\",\"South Brisbane & West End\",\"Toowong & Indooroopilly\",\"Chermside & North Brisbane\",\"Mount Gravatt & Southside\"],\"knowsAbout\":[\"Queensland Payroll Tax\",\"Land Tax & Foreign Surcharge\",\"The 2032 Olympics Pipeline\",\"BAS & GST for the Subtropical Economy\",\"Construction & Development\",\"Tech & Innovation\",\"Healthcare & Medical\",\"Hospitality & Tourism\",\"Payroll tax\",\"Land tax\",\"Stamp duty\",\"Workers' compensation\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Brisbane\"]}BRISBANEAccounting help across BrisbaneFrom the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades.Queensland Payroll TaxQLD payroll tax applies once annual Australian wages exceed the threshold, with a regional discount available for employers outside the southeast corner. Brisbane businesses with multiple entities commonly need grouping advice as they scale, particularly across hospitality and construction.Land Tax & Foreign SurchargeQueensland land tax applies to freehold land above the threshold, with a surcharge for foreign owners. Brisbane investors holding multiple properties across the inner and western suburbs frequently need land-tax aggregation advice.The 2032 Olympics PipelineThe Brisbane 2032 Olympics is driving sustained infrastructure and construction investment across the southeast. Builders, contractors and service businesses feeding the pipeline need progress-payment GST, capital allowances and the right structure from day one.BAS & GST for the Subtropical EconomyBrisbane's economy runs on construction, hospitality, retail and professional services. Quarterly or monthly BAS, GST on mixed-supply sales and contractor ABN checks are everyday needs for small businesses across the inner city and growth corridors.BRISBANE COMMERCEBrisbane's commercial landscapeA closer look at the riverfront precincts, growth corridors and industries driving Brisbane's subtropical economy — and the tax realities that come with operating here.Sunshine metropolis: riverfront vibrancy, growth and subtropical appealWinding along the riverfront from South Bank and Howard Smith Wharves to New Farm and Fortitude Valley, Brisbane blends subtropical charm with rapid urban expansion. Strolling through the Queen Street Mall or along the riverwalks fills you with a sense of momentum: alfresco dining, leafy plazas and warm sunshine set the stage where locals gather to talk commerce, property development and regional enterprise.Beyond the downtown core, inner suburbs like Paddington, West End and Milton feature a mix of classic Queenslander homes, boutique office conversions and lively retail strips. Proximity to major infrastructure developments and Olympic preparation zones brings immense investment straight to the doorstep. It is a welcoming, energetic region where multi-generational trade families and modern service firms thrive together in a relaxed yet ambitious market.A thriving commercial landscape: from infrastructure trades to tech startupsBrisbane's economic engine extends far beyond its lifestyle appeal, driving major activity across construction, logistics, healthcare and tourism. Bustling dining precincts and retail hubs require streamlined financial accounting, where venue managers handle high-turnover casual rosters, cloud POS integrations and quarterly BAS lodgments under Single Touch Payroll (STP Phase 2).In the industrial corridors of Eagle Farm, Rocklea and Acacia Ridge, commercial enterprises oversee heavy transport fleets, trade subcontractors and equipment investments. These businesses depend on specialised accounting for Taxable Payments Annual Reports (TPAR), Fuel Tax Credits (FTC) and asset depreciation schedules. At the same time, expanding suburban corridors drive strong property investment, requiring clear strategies for Capital Gains Tax (CGT), family trust distributions and land tax threshold management. Brisbane represents a booming landscape where local businesses build sustainable growth.QUEENSLAND TAX SNAPSHOTQueensland tax & duties at a glanceBrisbane businesses and investors work within Queensland's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in QueenslandAdministered byPayroll taxApplies once annual Australian wages exceed the threshold; a regional discount is available for employers outside the southeast corner.Queensland Revenue OfficeLand taxLevied on freehold land above the threshold; a surcharge applies to foreign owners.Queensland Revenue OfficeStamp dutyPayable on property transfers; first-home-owner concessions may apply.Queensland Revenue OfficeWorkers' compensationEmployer premium based on wages and industry rate; most employers must insure with WorkCover Queensland.WorkCover QueenslandRates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.BRISBANE DISTRICTSAccounting needs across Brisbane's districtsBrisbane is a city of distinct districts — the CBD financial core, the inner-city creative and hospitality precincts, the western professional corridor and the booming southeast. We match you to an accountant who works in the part of Brisbane that aligns with what you do.4000Brisbane CBDThe commercial heart of the city with a dense cluster of financial-services, legal and professional firms. Accountants here handle corporate tax, FBT and cross-border structuring for CBD-based businesses.4006 / 4005Fortitude Valley & New FarmThe creative, hospitality and startup precinct. Firms work with agencies, venues and founders — handling sole-trader-to-company transitions, GST registration and project-based cash flow.4101South Brisbane & West EndThe cultural and education hub around South Bank and QPAC. A mix of creative businesses, cafes and professional services serving the dense residential and student population.4066Toowong & IndooroopillyThe western professional corridor anchored by the University of Queensland. Accountants serve medical specialists, academics and the established professional-services base of the western suburbs.4032Chermside & North BrisbaneA major northern hub with a strong retail, medical and small-business base. BAS cycles, payroll and investment-property advice are common needs for the established northern suburbs.4122Mount Gravatt & SouthsideA diverse southern region with a mix of trades, retail and professional services. Accountants handle contractor compliance, vehicle deductions and small-business structuring.SOUTHEAST GROWTH CORRIDORThe Springfield, Logan & growth corridorBrisbane's southeast is one of Australia's fastest-growing regions, anchored by Greater Springfield, the Logan corridor and Olympics-driven development. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and fleet structuring.4300Springfield & Springfield LakesA master-planned city in the southeast growth corridor with a growing business, education and technology base. New-business setup, GST registration and STP2 onboarding are everyday needs.4114 / 4127Logan & SpringwoodA large, diverse region with a strong trades, manufacturing and small-business base. BAS cycles, contractor compliance and vehicle and tool deductions are common.4113Eight Mile Plains & Technology ParkHome to the Brisbane Technology Park and a cluster of tech, research and professional-services firms. R&D incentives, employee share schemes and scale-up compliance are specialist needs.4509 / 4020North Lakes & RedcliffeA fast-growing northern residential and retail corridor. New businesses and franchises here need GST registration, structure advice and payroll setup from day one.LOCAL KNOWLEDGEWhy a Brisbane accountant mattersBrisbane is more than a postcode. From the CBD finance sector to the Olympics-driven construction boom and the southeast growth corridor, local tax knowledge matters. A Brisbane accountant understands the Queensland economy, payroll and land tax rules, and the mix of construction, tech, hospitality and professional services that make this city unique.Accounting across BrisbaneWe match you with a vetted local accountant serving Brisbane and surrounding suburbs — from the CBD and Fortitude Valley to Toowong, Chermside, Springfield and Logan.LOCAL SCENARIOSReal situations we help resolve across BrisbanePractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A Springfield builder managing Olympics-pipeline progress paymentsProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the southeast growth corridor expands.A Fortitude Valley startup raising capital and issuing sharesEmployee share schemes, R&D incentives and cap-table management help a tech founder handle the tax events of raising capital.A Toowong medical specialist restructuring into a service trustPractice structuring, service-trust arrangements and medical-billing nuances help a western-suburbs specialist manage income and protect assets.A Fortitude Valley venue managing seasonal hospitality GSTSeasonal cash flows, GST on mixed supplies and FBT on employee benefits keep a hospitality business reconciling point-of-sale records after the peak season.BRISBANE INDUSTRIESKey industries across BrisbaneBrisbane's economy is anchored by construction, professional services, technology and healthcare — each with tax rules that reward specialist knowledge.Construction & DevelopmentSpringfield, Logan, CBDThe Olympics pipeline and southeast growth corridor are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning.Tech & InnovationFortitude Valley, Eight Mile PlainsBrisbane's tech ecosystem draws on R&D incentives, employee share schemes and startup structuring. Specialist accountants help founders manage cap tables and the tax events of raising capital.Healthcare & MedicalChermside, Toowong, HerstonBrisbane's hospital precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Hospitality & TourismFortitude Valley, South BrisbaneBrisbane's subtropical visitor economy supports a dense hospitality sector. Cafes, venues and accommodation providers face seasonal cash flows, GST on mixed supplies and FBT on employee benefits.BRISBANE DEADLINESKey tax dates & deadlines for BrisbaneQueensland-specific obligations sit alongside federal deadlines. A local Brisbane accountant keeps both calendars aligned so nothing slips.QLD businesses on monthly GST must lodge BAS by the 21st of the following month — Brisbane hospitality and retail operators should reconcile point-of-sale data early.QLD payroll tax annual reconciliation is due each July; grouped entities across Brisbane locations must consolidate wages before filing.Brisbane property investors should review their QLD land tax position before 30 June to correctly manage deductions and thresholds.QLD businesses claiming the regional employer payroll-tax discount should confirm their eligibility and regional wage split before the annual return.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in BrisbaneGet paired with an accountant in Brisbane who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.Real Estate & PropertyInvestors riding the 2032 Olympics property wave.View Real Estate & Property in BrisbaneSMSF & Family TrustsSMSF setup & audits for Queensland's growing wealth market.View SMSF & Family Trusts in BrisbaneConstruction & TradiesOlympics infrastructure & Cross River Rail contractors.View Construction & Tradies in BrisbaneTransport & LogisticsPort of Brisbane freight operators & fuel tax credits.View Transport & Logistics in BrisbaneTRUST & VETTINGTrust and vetting standards for Brisbane AccountantsWhen you're looking for an accountant in Brisbane, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Brisbane accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Brisbane and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Brisbane accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Brisbane accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in BrisbaneSearch your suburb or postcode below to confirm our network's local coverage across Brisbane.Brisbane CBD4000Fortitude Valley4006New Farm4005Teneriffe4005Kangaroo Point4169South Brisbane4101West End4101Toowong4066Indooroopilly4068Chermside4032Carindale4152Mount Gravatt4122Sunnybank4109Eight Mile Plains4113Springwood4127Logan4114North Lakes4509Redcliffe4020Capalaba4157Wynnum4178{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Brisbane through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Brisbane accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Brisbane network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Queensland and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Brisbane accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Brisbane firms handle both individual returns and business accounting. Whether you need a personal tax return in New Farm, company tax structuring in Fortitude Valley, or SMSF advice in Toowong, we match you with a Brisbane specialist suited to your exact requirements across the CBD and surrounding suburbs.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Brisbane's property market and Queensland tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Brisbane's property landscape and Queensland state taxes — stamp duty, land tax assessed by the Queensland Revenue Office on freehold land owned at midnight on 30 June (with a $600,000 threshold for individuals), and payroll tax above $1.3 million in annual wages — interact with federal tax in complex ways. We match you with a Brisbane accountant who understands Queensland's rules and how they apply to investment property, negative gearing changes and capital gains across the Brisbane market.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Brisbane accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Brisbane firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Brisbane office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Brisbane matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Brisbane accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Brisbane network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Brisbane CBD or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Brisbane or just the CBD?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Brisbane — from the CBD and inner suburbs like West End and Kangaroo Point to Chermside, Carindale, Springwood and North Lakes. Enter your postcode in the questionnaire and we will match you with a vetted Brisbane accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — BrisbaneEverything you need to know about getting matched with a top accountant in Brisbane, QLD.How do I find a registered accountant in Brisbane through your service?Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Brisbane accountants in your network registered tax agents?Can a Brisbane accountant help with both my personal tax return and my small business?What if I need an accountant who understands Brisbane's property market and Queensland tax rules?How quickly will a Brisbane accountant contact me after I complete the questionnaire?Is the Brisbane matching service really free with no obligation?Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit?Do you cover all of Brisbane or just the CBD?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Locations / Brisbane LOCAL. VETTED. MATCHED TO YOU. Find a Specialist Accountant in Brisbane We’ll find your match Connect with TPB-registered tax professionals across Brisbane who understand local business, property, and complex tax requirements. Falling behind on BAS lodgments or personal tax returns in Brisbane can quickly accumulate unwanted penalties and stress. Whether you are a sole trader in South Brisbane or running a company in Fortitude Valley, our network connects you with qualified Brisbane accountants who specialise in ATO negotiations and lodging backlogged returns smoothly. Free matching service Vetted accountants No obligation Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. BRISBANE Accounting help across Brisbane From the CBD and Fortitude Valley to Toowong, Indooroopilly and the booming Springfield growth corridor, Brisbane is a fast-growing subtropical capital. We match you with a vetted local accountant who knows your part of the city — from CBD professionals to Springfield small businesses and Logan trades. Queensland Payroll Tax QLD payroll tax applies once annual Australian wages exceed the threshold, with a regional discount available for employers outside the southeast corner. Brisbane businesses with multiple entities commonly need grouping advice as they scale, particularly across hospitality and construction. Land Tax & Foreign Surcharge Queensland land tax applies to freehold land above the threshold, with a surcharge for foreign owners. Brisbane investors holding multiple properties across the inner and western suburbs frequently need land-tax aggregation advice. The 2032 Olympics Pipeline The Brisbane 2032 Olympics is driving sustained infrastructure and construction investment across the southeast. Builders, contractors and service businesses feeding the pipeline need progress-payment GST, capital allowances and the right structure from day one. BAS & GST for the Subtropical Economy Brisbane's economy runs on construction, hospitality, retail and professional services. Quarterly or monthly BAS, GST on mixed-supply sales and contractor ABN checks are everyday needs for small businesses across the inner city and growth corridors. BRISBANE COMMERCE Brisbane's commercial landscape A closer look at the riverfront precincts, growth corridors and industries driving Brisbane's subtropical economy — and the tax realities that come with operating here. Sunshine metropolis: riverfront vibrancy, growth and subtropical appeal Winding along the riverfront from South Bank and Howard Smith Wharves to New Farm and Fortitude Valley, Brisbane blends subtropical charm with rapid urban expansion. Strolling through the Queen Street Mall or along the riverwalks fills you with a sense of momentum: alfresco dining, leafy plazas and warm sunshine set the stage where locals gather to talk commerce, property development and regional enterprise. Beyond the downtown core, inner suburbs like Paddington, West End and Milton feature a mix of classic Queenslander homes, boutique office conversions and lively retail strips. Proximity to major infrastructure developments and Olympic preparation zones brings immense investment straight to the doorstep. It is a welcoming, energetic region where multi-generational trade families and modern service firms thrive together in a relaxed yet ambitious market. A thriving commercial landscape: from infrastructure trades to tech startups Brisbane's economic engine extends far beyond its lifestyle appeal, driving major activity across construction, logistics, healthcare and tourism. Bustling dining precincts and retail hubs require streamlined financial accounting, where venue managers handle high-turnover casual rosters, cloud POS integrations and quarterly BAS lodgments under Single Touch Payroll (STP Phase 2). In the industrial corridors of Eagle Farm, Rocklea and Acacia Ridge, commercial enterprises oversee heavy transport fleets, trade subcontractors and equipment investments. These businesses depend on specialised accounting for Taxable Payments Annual Reports (TPAR), Fuel Tax Credits (FTC) and asset depreciation schedules. At the same time, expanding suburban corridors drive strong property investment, requiring clear strategies for Capital Gains Tax (CGT), family trust distributions and land tax threshold management. Brisbane represents a booming landscape where local businesses build sustainable growth. QUEENSLAND TAX SNAPSHOT Queensland tax & duties at a glance Brisbane businesses and investors work within Queensland's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority. OBLIGATION HOW IT WORKS IN QUEENSLAND ADMINISTERED BY Payroll tax Applies once annual Australian wages exceed the threshold; a regional discount is available for employers outside the southeast corner. Queensland Revenue Office Land tax Levied on freehold land above the threshold; a surcharge applies to foreign owners. Queensland Revenue Office Stamp duty Payable on property transfers; first-home-owner concessions may apply. Queensland Revenue Office Workers' compensation Employer premium based on wages and industry rate; most employers must insure with WorkCover Queensland. WorkCover Queensland Rates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting. BRISBANE DISTRICTS Accounting needs across Brisbane's districts Brisbane is a city of distinct districts — the CBD financial core, the inner-city creative and hospitality precincts, the western professional corridor and the booming southeast. We match you to an accountant who works in the part of Brisbane that aligns with what you do. 4000 Brisbane CBD The commercial heart of the city with a dense cluster of financial-services, legal and professional firms. Accountants here handle corporate tax, FBT and cross-border structuring for CBD-based businesses. 4006 / 4005 Fortitude Valley & New Farm The creative, hospitality and startup precinct. Firms work with agencies, venues and founders — handling sole-trader-to-company transitions, GST registration and project-based cash flow. 4101 South Brisbane & West End The cultural and education hub around South Bank and QPAC. A mix of creative businesses, cafes and professional services serving the dense residential and student population. 4066 Toowong & Indooroopilly The western professional corridor anchored by the University of Queensland. Accountants serve medical specialists, academics and the established professional-services base of the western suburbs. 4032 Chermside & North Brisbane A major northern hub with a strong retail, medical and small-business base. BAS cycles, payroll and investment-property advice are common needs for the established northern suburbs. 4122 Mount Gravatt & Southside A diverse southern region with a mix of trades, retail and professional services. Accountants handle contractor compliance, vehicle deductions and small-business structuring. SOUTHEAST GROWTH CORRIDOR The Springfield, Logan & growth corridor Brisbane's southeast is one of Australia's fastest-growing regions, anchored by Greater Springfield, the Logan corridor and Olympics-driven development. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and fleet structuring. 4300 Springfield & Springfield Lakes A master-planned city in the southeast growth corridor with a growing business, education and technology base. New-business setup, GST registration and STP2 onboarding are everyday needs. 4114 / 4127 Logan & Springwood A large, diverse region with a strong trades, manufacturing and small-business base. BAS cycles, contractor compliance and vehicle and tool deductions are common. 4113 Eight Mile Plains & Technology Park Home to the Brisbane Technology Park and a cluster of tech, research and professional-services firms. R&D incentives, employee share schemes and scale-up compliance are specialist needs. 4509 / 4020 North Lakes & Redcliffe A fast-growing northern residential and retail corridor. New businesses and franchises here need GST registration, structure advice and payroll setup from day one. LOCAL KNOWLEDGE Why a Brisbane accountant matters Brisbane is more than a postcode. From the CBD finance sector to the Olympics-driven construction boom and the southeast growth corridor, local tax knowledge matters. A Brisbane accountant understands the Queensland economy, payroll and land tax rules, and the mix of construction, tech, hospitality and professional services that make this city unique. Accounting across Brisbane We match you with a vetted local accountant serving Brisbane and surrounding suburbs — from the CBD and Fortitude Valley to Toowong, Chermside, Springfield and Logan. LOCAL SCENARIOS Real situations we help resolve across Brisbane Practical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead. A Springfield builder managing Olympics-pipeline progress payments Progress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the southeast growth corridor expands. A Fortitude Valley startup raising capital and issuing shares Employee share schemes, R&D incentives and cap-table management help a tech founder handle the tax events of raising capital. A Toowong medical specialist restructuring into a service trust Practice structuring, service-trust arrangements and medical-billing nuances help a western-suburbs specialist manage income and protect assets. A Fortitude Valley venue managing seasonal hospitality GST Seasonal cash flows, GST on mixed supplies and FBT on employee benefits keep a hospitality business reconciling point-of-sale records after the peak season. BRISBANE INDUSTRIES Key industries across Brisbane Brisbane's economy is anchored by construction, professional services, technology and healthcare — each with tax rules that reward specialist knowledge. Construction & Development Springfield, Logan, CBD The Olympics pipeline and southeast growth corridor are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning. Tech & Innovation Fortitude Valley, Eight Mile Plains Brisbane's tech ecosystem draws on R&D incentives, employee share schemes and startup structuring. Specialist accountants help founders manage cap tables and the tax events of raising capital. Healthcare & Medical Chermside, Toowong, Herston Brisbane's hospital precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances. Hospitality & Tourism Fortitude Valley, South Brisbane Brisbane's subtropical visitor economy supports a dense hospitality sector. Cafes, venues and accommodation providers face seasonal cash flows, GST on mixed supplies and FBT on employee benefits. BRISBANE DEADLINES Key tax dates & deadlines for Brisbane Queensland-specific obligations sit alongside federal deadlines. A local Brisbane accountant keeps both calendars aligned so nothing slips. QLD businesses on monthly GST must lodge BAS by the 21st of the following month — Brisbane hospitality and retail operators should reconcile point-of-sale data early. QLD payroll tax annual reconciliation is due each July; grouped entities across Brisbane locations must consolidate wages before filing. Brisbane property investors should review their QLD land tax position before 30 June to correctly manage deductions and thresholds. QLD businesses claiming the regional employer payroll-tax discount should confirm their eligibility and regional wage split before the annual return. A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. HOW DOES IT WORK Your accountant match, made simple Our quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Trusted accountants near you Matched, to your needs Takes 60 seconds WHY THE RIGHT MATCH MATTERS The right accountant makes a real difference Finding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs. The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change. That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for. Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. THE DIFFERENCE Choosing the right accountant saves you — here's why WHO WE HELP Matching accountants to every kind of client From sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation. SPECIALISED EXPERTISE Industries We Match in Brisbane Get paired with an accountant in Brisbane who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news. Real Estate & Property Investors riding the 2032 Olympics property wave. View Real Estate & Property in Brisbane SMSF & Family Trusts SMSF setup & audits for Queensland's growing wealth market. View SMSF & Family Trusts in Brisbane Construction & Tradies Olympics infrastructure & Cross River Rail contractors. View Construction & Tradies in Brisbane Transport & Logistics Port of Brisbane freight operators & fuel tax credits. View Transport & Logistics in Brisbane TRUST & VETTING Trust and vetting standards for Brisbane Accountants When you're looking for an accountant in Brisbane, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Brisbane accountant in our network to the highest professional and ethical standards in the industry. Verified professional memberships Every practising accountant we match across Brisbane and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Each Brisbane accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE Ready to find your accountant? Your needs. Your area. Your Brisbane accountant. Find My Accountant Free matching service · No obligation LOCAL COVERAGE Suburbs Serviced in Brisbane Search your suburb or postcode below to confirm our network's local coverage across Brisbane. Brisbane CBD 4000 Fortitude Valley 4006 New Farm 4005 Teneriffe 4005 Kangaroo Point 4169 South Brisbane 4101 West End 4101 Toowong 4066 Indooroopilly 4068 Chermside 4032 Carindale 4152 Mount Gravatt 4122 Sunnybank 4109 Eight Mile Plains 4113 Springwood 4127 Logan 4114 North Lakes 4509 Redcliffe 4020 Capalaba 4157 Wynnum 4178 COMMON QUESTIONS Frequently Asked Questions — Brisbane Everything you need to know about getting matched with a top accountant in Brisbane, QLD. How do I find a registered accountant in Brisbane through your service? Enter your Brisbane postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Brisbane accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au. Are all the Brisbane accountants in your network registered tax agents? Can a Brisbane accountant help with both my personal tax return and my small business? What if I need an accountant who understands Brisbane's property market and Queensland tax rules? How quickly will a Brisbane accountant contact me after I complete the questionnaire? Is the Brisbane matching service really free with no obligation? Can I get a Brisbane accountant who offers phone or video consultations instead of an office visit? Do you cover all of Brisbane or just the CBD? Other Capital Cities We Service Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. About Contact Locations Guides Privacy Terms ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2791,
+  "inSitemap": true
+}

@@ -1,0 +1,485 @@
+{
+  "path": "/blog/tax-return-deadlines-2026",
+  "extractedAt": "2026-10-02T09:03:02.418Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/tax-return-deadlines-2026",
+  "title": "Tax Return Deadlines 2026 — When to Lodge & Agent Extensions | Your Accountant Match",
+  "metaDescription": "2026 individual tax return deadlines explained. The 31 October cut-off, how registered tax agents get extensions to May, and penalties for late lodgement.",
+  "canonical": "http://localhost:4173/blog/tax-return-deadlines-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Tax Return Deadlines 2026 — When to Lodge & Agent Extensions | Your Accountant Match",
+    "og:description": "2026 individual tax return deadlines explained. The 31 October cut-off, how registered tax agents get extensions to May, and penalties for late lodgement.",
+    "og:url": "http://localhost:4173/blog/tax-return-deadlines-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Tax Return Deadlines 2026 — When to Lodge & Agent Extensions | Your Accountant Match",
+    "twitter:description": "2026 individual tax return deadlines explained. The 31 October cut-off, how registered tax agents get extensions to May, and penalties for late lodgement.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the deadline to lodge my own tax return in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you lodge yourself (without a registered agent), the deadline is 31 October. For the 2025-26 financial year, that means 31 October 2026. Using a registered tax agent generally extends the deadline — often to May the following year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How late can a tax agent lodge my return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registered tax agents typically have until around 15 May the following year to lodge, provided you're on their lodgement program before 31 October. The exact date can vary depending on your circumstances and the agent's program."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I lodge my tax return late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO may apply a failure-to-lodge penalty and general interest charge on any tax payable. For most people the best move is to engage a registered agent and lodge voluntarily as soon as possible, rather than waiting for the ATO to follow up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get an extension if I missed 31 October?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly — if you engage a registered tax agent after 31 October, they may still be able to use their extended lodgement program depending on your circumstances. The sooner you engage one, the more options you have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the extension apply automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You must be registered with a tax agent before 31 October to access their extended deadline. If you self-lodge after that date, you're treated as late regardless."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a tax agent before the deadline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and needs. We match you with a vetted local tax agent who can add you to their lodgement program. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Deadlines",
+          "item": "/blog/tax-return-deadlines-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Individual Tax Return Deadlines 2026: Don't Miss 31 October",
+      "description": "2026 individual tax return deadlines explained. The 31 October cut-off, how registered tax agents get extensions to May, and penalties for late lodgement.",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/tax-return-deadlines-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Individual tax return deadlines",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 2,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 3,
+      "text": "The 31 October deadline for self-lodgers"
+    },
+    {
+      "level": 3,
+      "text": "How registered tax agents get extensions"
+    },
+    {
+      "level": 3,
+      "text": "What if I've already missed the deadline?"
+    },
+    {
+      "level": 3,
+      "text": "Penalties and general interest charge"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Individual Tax Return Deadlines 2026: Don't Miss 31 October",
+      "images": 0,
+      "text": "Home/Blog/Tax DeadlinesTax Deadlines5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe individual tax return deadline is one of the most misunderstood dates in the Australian tax calendar. Self-lodgers must submit by 31 October or risk failure-to-lodge penalties. But if you use a registered tax agent, you can get an extension — often to May the following year — provided you're on their lodgement program before 31 October. This guide explains the 2026 deadlines, how extensions work, and what to do if you've already missed the cut-off.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgersIf you lodge your own individual tax return (without a registered tax agent), the deadline is 31 October each year. This applies to returns for the most recent financial year — so for the 2025-26 year, the deadline is 31 October 2026. Lodging after this date without an agent means you're late and the ATO can apply a failure-to-lodge (FTL) penalty plus general interest charge on any tax payable.How registered tax agents get extensionsRegistered tax agents operate on a lodgement program that allows them to lodge client returns well after 31 October — often as late as 15 May the following year. The key condition is that you must be registered with the agent before 31 October. The agent then lodges on your behalf within their extended window. This is one of the clearest practical reasons to engage an agent rather than self-lodge.What if I've already missed the deadline?If you've missed 31 October, you can still engage a registered tax agent to lodge — they may still be able to use their extended deadline depending on your circumstances. The most important step is to lodge voluntarily before the ATO issues a default assessment or takes recovery action. Catching up late is almost always cheaper than waiting to be chased, because the ATO generally treats voluntary lodgement more favourably than enforced lodgement.Penalties and general interest chargeLodging late can trigger a failure-to-lodge (FTL) penalty, which scales with how late you are and your entity size. Where tax is payable, general interest charge (GIC) accrues on the outstanding amount from the original due date until paid. For multi-year backlogs, these charges compound quickly — which is why catching up as early as possible matters.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOthe deadline is 31 OctoberATOlodge client returns well after 31 OctoberATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the deadline to lodge my own tax return in 2026?If you lodge yourself (without a registered agent), the deadline is 31 October. For the 2025-26 financial year, that means 31 October 2026. Using a registered tax agent generally extends the deadline — often to May the following year.How late can a tax agent lodge my return?What happens if I lodge my tax return late?Can I get an extension if I missed 31 October?Does the extension apply automatically?How do I get matched with a tax agent before the deadline?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "the deadline is 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts",
+      "text": "lodge client returns well after 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts",
+      "text": "If you've missed 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "ATOthe deadline is 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts",
+      "text": "ATOlodge client returns well after 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOfailure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "ATOgeneral interest charge (GIC)"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "the deadline is 31 October"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/tax-planning-strategies-2026",
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax DeadlinesTax Deadlines5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe individual tax return deadline is one of the most misunderstood dates in the Australian tax calendar. Self-lodgers must submit by 31 October or risk failure-to-lodge penalties. But if you use a registered tax agent, you can get an extension — often to May the following year — provided you're on their lodgement program before 31 October. This guide explains the 2026 deadlines, how extensions work, and what to do if you've already missed the cut-off.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgersIf you lodge your own individual tax return (without a registered tax agent), the deadline is 31 October each year. This applies to returns for the most recent financial year — so for the 2025-26 year, the deadline is 31 October 2026. Lodging after this date without an agent means you're late and the ATO can apply a failure-to-lodge (FTL) penalty plus general interest charge on any tax payable.How registered tax agents get extensionsRegistered tax agents operate on a lodgement program that allows them to lodge client returns well after 31 October — often as late as 15 May the following year. The key condition is that you must be registered with the agent before 31 October. The agent then lodges on your behalf within their extended window. This is one of the clearest practical reasons to engage an agent rather than self-lodge.What if I've already missed the deadline?If you've missed 31 October, you can still engage a registered tax agent to lodge — they may still be able to use their extended deadline depending on your circumstances. The most important step is to lodge voluntarily before the ATO issues a default assessment or takes recovery action. Catching up late is almost always cheaper than waiting to be chased, because the ATO generally treats voluntary lodgement more favourably than enforced lodgement.Penalties and general interest chargeLodging late can trigger a failure-to-lodge (FTL) penalty, which scales with how late you are and your entity size. Where tax is payable, general interest charge (GIC) accrues on the outstanding amount from the original due date until paid. For multi-year backlogs, these charges compound quickly — which is why catching up as early as possible matters.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOthe deadline is 31 OctoberATOlodge client returns well after 31 OctoberATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the deadline to lodge my own tax return in 2026?If you lodge yourself (without a registered agent), the deadline is 31 October. For the 2025-26 financial year, that means 31 October 2026. Using a registered tax agent generally extends the deadline — often to May the following year.How late can a tax agent lodge my return?What happens if I lodge my tax return late?Can I get an extension if I missed 31 October?Does the extension apply automatically?How do I get matched with a tax agent before the deadline?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Deadlines TAX DEADLINES 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The individual tax return deadline is one of the most misunderstood dates in the Australian tax calendar. Self-lodgers must submit by 31 October or risk failure-to-lodge penalties. But if you use a registered tax agent, you can get an extension — often to May the following year — provided you're on their lodgement program before 31 October. This guide explains the 2026 deadlines, how extensions work, and what to do if you've already missed the cut-off. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers If you lodge your own individual tax return (without a registered tax agent), the deadline is 31 October each year. This applies to returns for the most recent financial year — so for the 2025-26 year, the deadline is 31 October 2026. Lodging after this date without an agent means you're late and the ATO can apply a failure-to-lodge (FTL) penalty plus general interest charge on any tax payable. How registered tax agents get extensions Registered tax agents operate on a lodgement program that allows them to lodge client returns well after 31 October — often as late as 15 May the following year. The key condition is that you must be registered with the agent before 31 October. The agent then lodges on your behalf within their extended window. This is one of the clearest practical reasons to engage an agent rather than self-lodge. What if I've already missed the deadline? If you've missed 31 October, you can still engage a registered tax agent to lodge — they may still be able to use their extended deadline depending on your circumstances. The most important step is to lodge voluntarily before the ATO issues a default assessment or takes recovery action. Catching up late is almost always cheaper than waiting to be chased, because the ATO generally treats voluntary lodgement more favourably than enforced lodgement. Penalties and general interest charge Lodging late can trigger a failure-to-lodge (FTL) penalty, which scales with how late you are and your entity size. Where tax is payable, general interest charge (GIC) accrues on the outstanding amount from the original due date until paid. For multi-year backlogs, these charges compound quickly — which is why catching up as early as possible matters. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO the deadline is 31 October ATO lodge client returns well after 31 October ATO failure-to-lodge (FTL) penalty ATO general interest charge (GIC) This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions What is the deadline to lodge my own tax return in 2026? If you lodge yourself (without a registered agent), the deadline is 31 October. For the 2025-26 financial year, that means 31 October 2026. Using a registered tax agent generally extends the deadline — often to May the following year. How late can a tax agent lodge my return? What happens if I lodge my tax return late? Can I get an extension if I missed 31 October? Does the extension apply automatically? How do I get matched with a tax agent before the deadline? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax Eight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line. 6 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2898,
+  "inSitemap": true
+}

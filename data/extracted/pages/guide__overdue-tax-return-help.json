@@ -1,0 +1,545 @@
+{
+  "path": "/guide/overdue-tax-return-help",
+  "extractedAt": "2026-10-02T09:02:54.364Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/overdue-tax-return-help",
+  "title": "Overdue Tax Return Help — Catch Up on Late Returns Australia | Your Accountant Match",
+  "metaDescription": "Behind on your tax return? Get matched free with a local agent who handles overdue returns, ATO penalties & payment plans. Catch up fast. No obligation.",
+  "canonical": "http://localhost:4173/guide/overdue-tax-return-help",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Overdue Tax Return Help — Catch Up on Late Returns Australia | Your Accountant Match",
+    "og:description": "Behind on your tax return? Get matched free with a local agent who handles overdue returns, ATO penalties & payment plans. Catch up fast. No obligation.",
+    "og:url": "http://localhost:4173/guide/overdue-tax-return-help",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Overdue Tax Return Help — Catch Up on Late Returns Australia | Your Accountant Match",
+    "twitter:description": "Behind on your tax return? Get matched free with a local agent who handles overdue returns, ATO penalties & payment plans. Catch up fast. No obligation.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens if I don't lodge my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO may apply a failure-to-lodge (FTL) penalty when a return is not lodged by the due date, and general interest charge (GIC) may apply to any overdue tax debt. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. For businesses, unresolved tax and super obligations can lead to stronger recovery action, including garnishee notices and, for certain company liabilities, director penalty notices. Engaging a registered agent early minimises the damage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I lodge multiple overdue tax returns at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched agent works through the backlog year by year, reconstructing income where records are missing and lodging each return in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent is far better than continuing to delay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can penalties be reduced or waived?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Potentially. A registered agent can request remission of failure-to-lodge penalties where mitigating circumstances exist (illness, disaster, family crisis). Remission is not guaranteed, but a well-prepared request improves the chances. The matched agent assesses your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I owe tax I can't pay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you cannot pay an assessed tax debt in full, you may be eligible for an ATO payment plan. A registered tax agent can help you understand your options and deal with the ATO on your behalf. GIC generally continues to accrue on the outstanding balance during a payment arrangement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if I'm several years behind?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check myGov for individual returns, or your accounting software for business lodgements. If you are unsure which years are outstanding, tell us in the questionnaire and the matched agent will confirm your lodgement status with the ATO before preparing any catch-up returns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the ATO know I've come forward voluntarily?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and voluntary catch-up is viewed far more favourably than waiting for the ATO to chase you. Engaging a registered agent to lodge overdue returns signals good faith and often leads to better outcomes on penalty remission and payment-plan terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can a registered agent start on my overdue returns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours to review your situation and begin the catch-up process, or you can call for immediate assistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can overdue returns affect my credit or business loans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unresolved tax debts can lead to ATO recovery action that appears on credit reports, and outstanding director penalty notices can affect personal credit. Lodging overdue returns and arranging payment plans proactively with a registered agent helps protect your credit position."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Urgent Help",
+          "item": "/guide/overdue-tax-return-help"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Overdue Tax Return Help — Catch Up on Late Returns",
+      "description": "Behind on your tax return? Get matched free with a local agent who handles overdue returns, ATO penalties & payment plans. Catch up fast. No obligation.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/overdue-tax-return-help"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Overdue tax return help",
+          "sameAs": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Help With Overdue andLate tax returns"
+    },
+    {
+      "level": 2,
+      "text": "Catching Up on Overdue Tax Returns"
+    },
+    {
+      "level": 3,
+      "text": "What happens when a return is overdue"
+    },
+    {
+      "level": 3,
+      "text": "How a registered agent helps"
+    },
+    {
+      "level": 3,
+      "text": "Multiple years behind"
+    },
+    {
+      "level": 3,
+      "text": "ATO debt and payment plans"
+    },
+    {
+      "level": 2,
+      "text": "Overdue Tax Return Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Help With Overdue andLate tax returns",
+      "images": 0,
+      "text": "Home/Guides/Urgent HelpHelp With Overdue andLate tax returnsHave one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPCatching Up on Overdue Tax ReturnsWhat happens when a return is overdueThe ATO may apply a failure-to-lodge (FTL) penalty when a required tax return or statement is not lodged by the due date. The amount can depend on how late the lodgment is and the size of the entity. If lodging results in tax being payable and the amount is overdue, general interest charge (GIC) may apply to the outstanding debt. For businesses, unresolved tax and super obligations can lead to stronger ATO recovery action in some circumstances, including garnishee notices and, for certain company liabilities, director penalty notices. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. Acting early minimises the damage.How a registered agent helpsA registered tax agent can lodge overdue returns, request remission of FTL penalties where there are mitigating circumstances, negotiate payment plans for any debt, and communicate with the ATO on your behalf. Agents often have extended lodgement deadlines, which can buy time. The key is to engage before the ATO escalates to enforcement.Multiple years behindIf you are several years behind, the matched agent works through the backlog methodically — reconstructing income where records are missing, reconciling bank data, and lodging each year in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent is almost always better than continuing to delay. Tell us how many years you are behind in the questionnaire.ATO debt and payment plansIf you cannot pay an assessed tax debt in full, you may be eligible for an ATO payment plan. A registered tax agent can help you understand your options and deal with the ATO on your behalf. GIC generally continues to accrue on the outstanding balance during a payment arrangement. The matched agent helps you structure a plan suited to your circumstances.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)ATOgarnishee noticesATOdirector penalty noticesATOdefault assessmentATOextended lodgement deadlinesATOATO payment planThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHOverdue Tax Return Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Overdue individual & business tax returnsFailure-to-lodge penalty remission requestsATO debt negotiation & payment plansDefault assessment disputesRecord reconstruction for missing yearsDirector penalty notice supportVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What happens if I don't lodge my tax return?The ATO may apply a failure-to-lodge (FTL) penalty when a return is not lodged by the due date, and general interest charge (GIC) may apply to any overdue tax debt. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. For businesses, unresolved tax and super obligations can lead to stronger recovery action, including garnishee notices and, for certain company liabilities, director penalty notices. Engaging a registered agent early minimises the damage.Can I lodge multiple overdue tax returns at once?Can penalties be reduced or waived?What if I owe tax I can't pay?How do I know if I'm several years behind?Will the ATO know I've come forward voluntarily?How quickly can a registered agent start on my overdue returns?Can overdue returns affect my credit or business loans?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "garnishee notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalty notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "default assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns",
+      "text": "extended lodgement deadlines"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans",
+      "text": "ATO payment plan"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "GIC"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOfailure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "ATOgeneral interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "ATOgarnishee notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "ATOdirector penalty notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "ATOdefault assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns",
+      "text": "ATOextended lodgement deadlines"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans",
+      "text": "ATOATO payment plan"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/default-assessments",
+      "text": "default assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notices",
+      "text": "garnishee notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalty notices"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Urgent HelpHelp With Overdue andLate tax returnsHave one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPCatching Up on Overdue Tax ReturnsWhat happens when a return is overdueThe ATO may apply a failure-to-lodge (FTL) penalty when a required tax return or statement is not lodged by the due date. The amount can depend on how late the lodgment is and the size of the entity. If lodging results in tax being payable and the amount is overdue, general interest charge (GIC) may apply to the outstanding debt. For businesses, unresolved tax and super obligations can lead to stronger ATO recovery action in some circumstances, including garnishee notices and, for certain company liabilities, director penalty notices. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. Acting early minimises the damage.How a registered agent helpsA registered tax agent can lodge overdue returns, request remission of FTL penalties where there are mitigating circumstances, negotiate payment plans for any debt, and communicate with the ATO on your behalf. Agents often have extended lodgement deadlines, which can buy time. The key is to engage before the ATO escalates to enforcement.Multiple years behindIf you are several years behind, the matched agent works through the backlog methodically — reconstructing income where records are missing, reconciling bank data, and lodging each year in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent is almost always better than continuing to delay. Tell us how many years you are behind in the questionnaire.ATO debt and payment plansIf you cannot pay an assessed tax debt in full, you may be eligible for an ATO payment plan. A registered tax agent can help you understand your options and deal with the ATO on your behalf. GIC generally continues to accrue on the outstanding balance during a payment arrangement. The matched agent helps you structure a plan suited to your circumstances.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)ATOgarnishee noticesATOdirector penalty noticesATOdefault assessmentATOextended lodgement deadlinesATOATO payment planThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHOverdue Tax Return Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Overdue individual & business tax returnsFailure-to-lodge penalty remission requestsATO debt negotiation & payment plansDefault assessment disputesRecord reconstruction for missing yearsDirector penalty notice supportVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What happens if I don't lodge my tax return?The ATO may apply a failure-to-lodge (FTL) penalty when a return is not lodged by the due date, and general interest charge (GIC) may apply to any overdue tax debt. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. For businesses, unresolved tax and super obligations can lead to stronger recovery action, including garnishee notices and, for certain company liabilities, director penalty notices. Engaging a registered agent early minimises the damage.Can I lodge multiple overdue tax returns at once?Can penalties be reduced or waived?What if I owe tax I can't pay?How do I know if I'm several years behind?Will the ATO know I've come forward voluntarily?How quickly can a registered agent start on my overdue returns?Can overdue returns affect my credit or business loans?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Urgent Help Help With Overdue and Late tax returns Have one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 URGENT HELP Catching Up on Overdue Tax Returns What happens when a return is overdue The ATO may apply a failure-to-lodge (FTL) penalty when a required tax return or statement is not lodged by the due date. The amount can depend on how late the lodgment is and the size of the entity. If lodging results in tax being payable and the amount is overdue, general interest charge (GIC) may apply to the outstanding debt. For businesses, unresolved tax and super obligations can lead to stronger ATO recovery action in some circumstances, including garnishee notices and, for certain company liabilities, director penalty notices. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. Acting early minimises the damage. How a registered agent helps A registered tax agent can lodge overdue returns, request remission of FTL penalties where there are mitigating circumstances, negotiate payment plans for any debt, and communicate with the ATO on your behalf. Agents often have extended lodgement deadlines, which can buy time. The key is to engage before the ATO escalates to enforcement. Multiple years behind If you are several years behind, the matched agent works through the backlog methodically — reconstructing income where records are missing, reconciling bank data, and lodging each year in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent is almost always better than continuing to delay. Tell us how many years you are behind in the questionnaire. ATO debt and payment plans If you cannot pay an assessed tax debt in full, you may be eligible for an ATO payment plan. A registered tax agent can help you understand your options and deal with the ATO on your behalf. GIC generally continues to accrue on the outstanding balance during a payment arrangement. The matched agent helps you structure a plan suited to your circumstances. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO failure-to-lodge (FTL) penalty ATO general interest charge (GIC) ATO garnishee notices ATO director penalty notices ATO default assessment ATO extended lodgement deadlines ATO ATO payment plan This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Overdue Tax Return Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. Overdue individual & business tax returns Failure-to-lodge penalty remission requests ATO debt negotiation & payment plans Default assessment disputes Record reconstruction for missing years Director penalty notice support Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. What happens if I don't lodge my tax return? The ATO may apply a failure-to-lodge (FTL) penalty when a return is not lodged by the due date, and general interest charge (GIC) may apply to any overdue tax debt. If overdue lodgments remain unresolved, the ATO can issue a default assessment using the information available to it. For businesses, unresolved tax and super obligations can lead to stronger recovery action, including garnishee notices and, for certain company liabilities, director penalty notices. Engaging a registered agent early minimises the damage. Can I lodge multiple overdue tax returns at once? Can penalties be reduced or waived? What if I owe tax I can't pay? How do I know if I'm several years behind? Will the ATO know I've come forward voluntarily? How quickly can a registered agent start on my overdue returns? Can overdue returns affect my credit or business loans? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2697,
+  "inSitemap": true
+}

@@ -1,0 +1,466 @@
+{
+  "path": "/guide/smsf-accountant-near-me",
+  "extractedAt": "2026-10-02T09:02:57.163Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/smsf-accountant-near-me",
+  "title": "SMSF Accountant Near Me — Find a Local SMSF Specialist | Your Accountant Match",
+  "metaDescription": "Searching 'SMSF accountant near me'? Get matched free with a vetted local SMSF specialist for fund setup, annual returns, audit & compliance.",
+  "canonical": "http://localhost:4173/guide/smsf-accountant-near-me",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "SMSF Accountant Near Me — Find a Local SMSF Specialist | Your Accountant Match",
+    "og:description": "Searching 'SMSF accountant near me'? Get matched free with a vetted local SMSF specialist for fund setup, annual returns, audit & compliance.",
+    "og:url": "http://localhost:4173/guide/smsf-accountant-near-me",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "SMSF Accountant Near Me — Find a Local SMSF Specialist | Your Accountant Match",
+    "twitter:description": "Searching 'SMSF accountant near me'? Get matched free with a vetted local SMSF specialist for fund setup, annual returns, audit & compliance.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find an SMSF accountant near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your postcode and fund details in our 60-second questionnaire. We match you with a vetted SMSF specialist whose services fit your fund — setup, annual compliance, audit, or strategy. The matching is free with no obligation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my SMSF need an independent audit every year?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Under the SIS Act, every SMSF must have an annual audit by an approved independent SMSF auditor. The auditor must be separate from the accountant who prepared the financial statements. The matched SMSF accountant coordinates this for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an SMSF accountant cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annual SMSF accounting and audit typically ranges from $1,500 to $3,500 depending on complexity — more if the fund holds property, has borrowings (LRBA) or needs Division 296 modelling. The matched specialist gives you a clear quote after reviewing your fund. The matching itself is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an SMSF accountant help with Division 296?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. From 1 July 2026, funds with member balances above $3 million face additional tax on earnings under Division 296. A specialist SMSF accountant models the impact and advises on contribution timing, pension strategies and restructuring options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my SMSF accountant also handle my personal tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes — many SMSF specialists also handle the personal tax of fund members. In the questionnaire, tell us if you want a firm that handles both your SMSF and personal return and we will match accordingly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my SMSF is behind on its annual return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us in the questionnaire. Our network includes SMSF specialists experienced in bringing overdue fund returns and audits current — preparing the financial statements, coordinating the independent audit, and lodging outstanding years in sequence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched SMSF specialist contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched SMSF specialist will typically reach out within 2 hours, or you can call for immediate assistance to discuss your fund."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an SMSF accountant help if my fund holds property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If your fund holds property through a Limited Recourse Borrowing Arrangement (LRBA), the matched specialist ensures the bare-trust structure, sole-purpose compliance and contribution management are all correct — and models any Division 296 impact."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Local Matching",
+          "item": "/guide/smsf-accountant-near-me"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Find an SMSF Accountant Near You",
+      "description": "Searching 'SMSF accountant near me'? Get matched free with a vetted local SMSF specialist for fund setup, annual returns, audit & compliance.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/smsf-accountant-near-me"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/api/public/content/0-9fe4c830-57a3-4e97-bf54-ed598167319c"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-independent-auditor-s-report"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find an SMSF AccountantNear You"
+    },
+    {
+      "level": 2,
+      "text": "Finding the Right Local SMSF Accountant"
+    },
+    {
+      "level": 3,
+      "text": "Specialist, not generalist"
+    },
+    {
+      "level": 3,
+      "text": "The independent audit is non-negotiable"
+    },
+    {
+      "level": 3,
+      "text": "Division 296 and strategy"
+    },
+    {
+      "level": 3,
+      "text": "How our SMSF matching works"
+    },
+    {
+      "level": 2,
+      "text": "SMSF Accounting and Audit Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Find an SMSF AccountantNear You",
+      "images": 0,
+      "text": "Home/Guides/Local MatchingFind an SMSF AccountantNear YouAn 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGFinding the Right Local SMSF AccountantSpecialist, not generalistSMSF accounting is a regulated specialism. A specialist SMSF accountant knows the SIS Act compliance rules, contribution caps, pension phases, in-house asset limits and the LRBA borrowing rules. Matching to a genuine specialist means your fund stays compliant and your strategy is sound — not corrected years later at audit time.The independent audit is non-negotiableEvery SMSF must have an annual audit performed by an approved independent SMSF auditor, separate from the accountant who prepared the financials. The matched SMSF accountant coordinates this for you — preparing the financial statements and tax return, then engaging a qualified independent auditor to complete the compliance and financial audit.Division 296 and strategyFrom 1 July 2026, funds with member balances above $3 million face additional tax on earnings under Division 296. A specialist SMSF accountant models the impact, advises on contribution timing, pension strategies and whether restructuring makes sense. This is forward planning that a generalist tax agent is unlikely to offer.How our SMSF matching worksEnter your postcode and tell us about your fund — balance, members, whether it holds property or has borrowings, and what you need (setup, annual compliance, strategy, audit). We match you with a vetted SMSF specialist whose services fit your needs. The match is free, confidential and carries no obligation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOSIS Act compliance rulesATOannual audit performed by an approved independent SMSF auditorATODivision 296This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHSMSF Accounting and Audit Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.SMSF setup & trust deed establishmentAnnual SMSF accounting & tax returnIndependent SMSF audit coordinationContribution & pension strategyDivision 296 modelling & planningLRBA & property-in-SMSF supportFund wind-up & compliance remediationATO SMSF correspondence & disputesVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I find an SMSF accountant near me?Enter your postcode and fund details in our 60-second questionnaire. We match you with a vetted SMSF specialist whose services fit your fund — setup, annual compliance, audit, or strategy. The matching is free with no obligation.Does my SMSF need an independent audit every year?How much does an SMSF accountant cost?Can an SMSF accountant help with Division 296?Can my SMSF accountant also handle my personal tax?What if my SMSF is behind on its annual return?How quickly will a matched SMSF specialist contact me?Can an SMSF accountant help if my fund holds property?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/api/public/content/0-9fe4c830-57a3-4e97-bf54-ed598167319c",
+      "text": "SIS Act compliance rules"
+    },
+    {
+      "href": "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-independent-auditor-s-report",
+      "text": "annual audit performed by an approved independent SMSF auditor"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+      "text": "Division 296"
+    },
+    {
+      "href": "https://www.ato.gov.au/api/public/content/0-9fe4c830-57a3-4e97-bf54-ed598167319c",
+      "text": "ATOSIS Act compliance rules"
+    },
+    {
+      "href": "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-independent-auditor-s-report",
+      "text": "ATOannual audit performed by an approved independent SMSF auditor"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+      "text": "ATODivision 296"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Local MatchingFind an SMSF AccountantNear YouAn 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGFinding the Right Local SMSF AccountantSpecialist, not generalistSMSF accounting is a regulated specialism. A specialist SMSF accountant knows the SIS Act compliance rules, contribution caps, pension phases, in-house asset limits and the LRBA borrowing rules. Matching to a genuine specialist means your fund stays compliant and your strategy is sound — not corrected years later at audit time.The independent audit is non-negotiableEvery SMSF must have an annual audit performed by an approved independent SMSF auditor, separate from the accountant who prepared the financials. The matched SMSF accountant coordinates this for you — preparing the financial statements and tax return, then engaging a qualified independent auditor to complete the compliance and financial audit.Division 296 and strategyFrom 1 July 2026, funds with member balances above $3 million face additional tax on earnings under Division 296. A specialist SMSF accountant models the impact, advises on contribution timing, pension strategies and whether restructuring makes sense. This is forward planning that a generalist tax agent is unlikely to offer.How our SMSF matching worksEnter your postcode and tell us about your fund — balance, members, whether it holds property or has borrowings, and what you need (setup, annual compliance, strategy, audit). We match you with a vetted SMSF specialist whose services fit your needs. The match is free, confidential and carries no obligation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOSIS Act compliance rulesATOannual audit performed by an approved independent SMSF auditorATODivision 296This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHSMSF Accounting and Audit Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.SMSF setup & trust deed establishmentAnnual SMSF accounting & tax returnIndependent SMSF audit coordinationContribution & pension strategyDivision 296 modelling & planningLRBA & property-in-SMSF supportFund wind-up & compliance remediationATO SMSF correspondence & disputesVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I find an SMSF accountant near me?Enter your postcode and fund details in our 60-second questionnaire. We match you with a vetted SMSF specialist whose services fit your fund — setup, annual compliance, audit, or strategy. The matching is free with no obligation.Does my SMSF need an independent audit every year?How much does an SMSF accountant cost?Can an SMSF accountant help with Division 296?Can my SMSF accountant also handle my personal tax?What if my SMSF is behind on its annual return?How quickly will a matched SMSF specialist contact me?Can an SMSF accountant help if my fund holds property?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Local Matching Find an SMSF Accountant Near You An 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 LOCAL MATCHING Finding the Right Local SMSF Accountant Specialist, not generalist SMSF accounting is a regulated specialism. A specialist SMSF accountant knows the SIS Act compliance rules, contribution caps, pension phases, in-house asset limits and the LRBA borrowing rules. Matching to a genuine specialist means your fund stays compliant and your strategy is sound — not corrected years later at audit time. The independent audit is non-negotiable Every SMSF must have an annual audit performed by an approved independent SMSF auditor, separate from the accountant who prepared the financials. The matched SMSF accountant coordinates this for you — preparing the financial statements and tax return, then engaging a qualified independent auditor to complete the compliance and financial audit. Division 296 and strategy From 1 July 2026, funds with member balances above $3 million face additional tax on earnings under Division 296. A specialist SMSF accountant models the impact, advises on contribution timing, pension strategies and whether restructuring makes sense. This is forward planning that a generalist tax agent is unlikely to offer. How our SMSF matching works Enter your postcode and tell us about your fund — balance, members, whether it holds property or has borrowings, and what you need (setup, annual compliance, strategy, audit). We match you with a vetted SMSF specialist whose services fit your needs. The match is free, confidential and carries no obligation. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO SIS Act compliance rules ATO annual audit performed by an approved independent SMSF auditor ATO Division 296 This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH SMSF Accounting and Audit Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. SMSF setup & trust deed establishment Annual SMSF accounting & tax return Independent SMSF audit coordination Contribution & pension strategy Division 296 modelling & planning LRBA & property-in-SMSF support Fund wind-up & compliance remediation ATO SMSF correspondence & disputes Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. How do I find an SMSF accountant near me? Enter your postcode and fund details in our 60-second questionnaire. We match you with a vetted SMSF specialist whose services fit your fund — setup, annual compliance, audit, or strategy. The matching is free with no obligation. Does my SMSF need an independent audit every year? How much does an SMSF accountant cost? Can an SMSF accountant help with Division 296? Can my SMSF accountant also handle my personal tax? What if my SMSF is behind on its annual return? How quickly will a matched SMSF specialist contact me? Can an SMSF accountant help if my fund holds property? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2303,
+  "inSitemap": true
+}

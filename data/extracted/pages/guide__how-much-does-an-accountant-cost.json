@@ -1,0 +1,428 @@
+{
+  "path": "/guide/how-much-does-an-accountant-cost",
+  "extractedAt": "2026-10-02T09:02:51.617Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/how-much-does-an-accountant-cost",
+  "title": "How Much Does an Accountant Cost in Australia? 2026 Pricing Guide | Your Accountant Match",
+  "metaDescription": "Accountant costs in Australia explained: individual returns $200–$400, BAS $250–$400/quarter, SMSF $1,500–$3,500. See real 2026 pricing & get matched free.",
+  "canonical": "http://localhost:4173/guide/how-much-does-an-accountant-cost",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "How Much Does an Accountant Cost in Australia? 2026 Pricing Guide | Your Accountant Match",
+    "og:description": "Accountant costs in Australia explained: individual returns $200–$400, BAS $250–$400/quarter, SMSF $1,500–$3,500. See real 2026 pricing & get matched free.",
+    "og:url": "http://localhost:4173/guide/how-much-does-an-accountant-cost",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "How Much Does an Accountant Cost in Australia? 2026 Pricing Guide | Your Accountant Match",
+    "twitter:description": "Accountant costs in Australia explained: individual returns $200–$400, BAS $250–$400/quarter, SMSF $1,500–$3,500. See real 2026 pricing & get matched free.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a tax return cost in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A simple individual return typically costs $200–$400. Add a rental property ($350–$550), a CGT event ($300–$800) or trust distributions ($600–$1,200). The matched agent quotes after reviewing your situation — the matching is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a bookkeeper cost per month?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most small businesses spend $400–$1,200 per month for ongoing bookkeeping, though catch-up work or payroll-heavy businesses can be more. BAS-only engagements are usually $250-$400 per quarter. The matched bookkeeper gives you a clear quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an SMSF accountant cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annual SMSF accounting and audit typically ranges from $1,500 to $3,500 depending on complexity — more if the fund holds property or has borrowings. The matched specialist gives you a clear quote after reviewing your fund."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the matching service free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Your Accountant Match is free for individuals and businesses. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a company tax return cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A company or trust tax return typically costs $500–$1,500 depending on entity count, complexity and the state of the books. Ongoing accounting is usually $400–$1,000 per month. The matched accountant gives you a clear quote — the matching is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a small business accountant cost per month?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most small businesses spend $400–$1,000 per month for ongoing accounting and compliance. Project work like structuring or forecasting is quoted separately. The matched firm gives you a clear quote after reviewing your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a more expensive accountant mean a better result?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The right match is about finding a firm whose expertise fits your needs — not over-buying credentials. A straightforward return does not need a CPA-signed audit report. Matching to the right credential keeps costs down while ensuring the work is done correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched accountant contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and get a quote."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pricing Guide",
+          "item": "/guide/how-much-does-an-accountant-cost"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How Much Does an Accountant Cost in Australia? 2026 Fee Guide",
+      "description": "Accountant costs in Australia explained: individual returns $200–$400, BAS $250–$400/quarter, SMSF $1,500–$3,500. See real 2026 pricing & get matched free.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/how-much-does-an-accountant-cost"
+      }
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "How Much Does an Accountantcost in 2026? - fee guide"
+    },
+    {
+      "level": 2,
+      "text": "Understanding Accountant Costs in Australia"
+    },
+    {
+      "level": 3,
+      "text": "Individual tax return costs"
+    },
+    {
+      "level": 3,
+      "text": "Business accounting & BAS costs"
+    },
+    {
+      "level": 3,
+      "text": "SMSF & specialist costs"
+    },
+    {
+      "level": 3,
+      "text": "What drives the price — and how to control it"
+    },
+    {
+      "level": 2,
+      "text": "Accountant Services and Typical Costs"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "How Much Does an Accountantcost in 2026? - fee guide",
+      "images": 0,
+      "text": "Home/Guides/Pricing GuideHow Much Does an Accountantcost in 2026? - fee guideAccountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantPRICING GUIDEUnderstanding Accountant Costs in AustraliaIndividual tax return costsA straightforward individual return (one employer, no investments) typically costs $200–$400. Complexity pushes the price up: a rental property adds depreciation-schedule work ($350–$550), a CGT event from selling shares or property adds $300–$800, and trust distributions or foreign income can take a return to $600–$1,200. The matched agent quotes after reviewing your situation — the matching itself is free.Business accounting & BAS costsOngoing small-business accounting typically runs $400–$1,000 per month for compliance. BAS preparation alone is usually $250–$400 per quarter depending on transaction volume. Catch-up work (overdue BAS or multiple years behind) is quoted separately and can be higher. Payroll-heavy businesses and those with inventory tend toward the top of the range.SMSF & specialist costsAnnual SMSF accounting and audit typically ranges from $1,500 to $3,500 — more if the fund holds property, has borrowings (LRBA) or needs Division 296 modelling. Specialist work like audit & assurance, business valuation or growth advisory is usually quoted as a fixed fee or monthly retainer ($500–$3,000+/month for advisory).What drives the price — and how to control itThree things move the price: complexity (entities, investments, structures), the state of your records (clean books cost less to process), and the credential required (a CPA-signed audit report costs more than a routine return). The biggest lever you control is record-keeping — tidy, reconciled books mean a faster, cheaper engagement. Matching to the right credential (not over-buying) is the second.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHAccountant Services and Typical CostsOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual tax returns ($200–$400)BAS preparation & lodgement ($250–$400/quarter)Small business accounting ($400–$1,000/month)SMSF accounting & audit ($1,500–$3,500/year)CGT & investment property adviceGrowth advisory ($500–$3,000+/month)Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How much does a tax return cost in Australia?A simple individual return typically costs $200–$400. Add a rental property ($350–$550), a CGT event ($300–$800) or trust distributions ($600–$1,200). The matched agent quotes after reviewing your situation — the matching is free.How much does a bookkeeper cost per month?How much does an SMSF accountant cost?Is the matching service free?How much does a company tax return cost?How much does a small business accountant cost per month?Does a more expensive accountant mean a better result?How quickly will a matched accountant contact me?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeAccountant vs BookkeeperOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guide/overdue-tax-return-help",
+      "text": "Overdue Tax Return Help"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Pricing GuideHow Much Does an Accountantcost in 2026? - fee guideAccountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantPRICING GUIDEUnderstanding Accountant Costs in AustraliaIndividual tax return costsA straightforward individual return (one employer, no investments) typically costs $200–$400. Complexity pushes the price up: a rental property adds depreciation-schedule work ($350–$550), a CGT event from selling shares or property adds $300–$800, and trust distributions or foreign income can take a return to $600–$1,200. The matched agent quotes after reviewing your situation — the matching itself is free.Business accounting & BAS costsOngoing small-business accounting typically runs $400–$1,000 per month for compliance. BAS preparation alone is usually $250–$400 per quarter depending on transaction volume. Catch-up work (overdue BAS or multiple years behind) is quoted separately and can be higher. Payroll-heavy businesses and those with inventory tend toward the top of the range.SMSF & specialist costsAnnual SMSF accounting and audit typically ranges from $1,500 to $3,500 — more if the fund holds property, has borrowings (LRBA) or needs Division 296 modelling. Specialist work like audit & assurance, business valuation or growth advisory is usually quoted as a fixed fee or monthly retainer ($500–$3,000+/month for advisory).What drives the price — and how to control itThree things move the price: complexity (entities, investments, structures), the state of your records (clean books cost less to process), and the credential required (a CPA-signed audit report costs more than a routine return). The biggest lever you control is record-keeping — tidy, reconciled books mean a faster, cheaper engagement. Matching to the right credential (not over-buying) is the second.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHAccountant Services and Typical CostsOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual tax returns ($200–$400)BAS preparation & lodgement ($250–$400/quarter)Small business accounting ($400–$1,000/month)SMSF accounting & audit ($1,500–$3,500/year)CGT & investment property adviceGrowth advisory ($500–$3,000+/month)Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How much does a tax return cost in Australia?A simple individual return typically costs $200–$400. Add a rental property ($350–$550), a CGT event ($300–$800) or trust distributions ($600–$1,200). The matched agent quotes after reviewing your situation — the matching is free.How much does a bookkeeper cost per month?How much does an SMSF accountant cost?Is the matching service free?How much does a company tax return cost?How much does a small business accountant cost per month?Does a more expensive accountant mean a better result?How quickly will a matched accountant contact me?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeAccountant vs BookkeeperOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Pricing Guide How Much Does an Accountant cost in 2026? - fee guide Accountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 PRICING GUIDE Understanding Accountant Costs in Australia Individual tax return costs A straightforward individual return (one employer, no investments) typically costs $200–$400. Complexity pushes the price up: a rental property adds depreciation-schedule work ($350–$550), a CGT event from selling shares or property adds $300–$800, and trust distributions or foreign income can take a return to $600–$1,200. The matched agent quotes after reviewing your situation — the matching itself is free. Business accounting & BAS costs Ongoing small-business accounting typically runs $400–$1,000 per month for compliance. BAS preparation alone is usually $250–$400 per quarter depending on transaction volume. Catch-up work (overdue BAS or multiple years behind) is quoted separately and can be higher. Payroll-heavy businesses and those with inventory tend toward the top of the range. SMSF & specialist costs Annual SMSF accounting and audit typically ranges from $1,500 to $3,500 — more if the fund holds property, has borrowings (LRBA) or needs Division 296 modelling. Specialist work like audit & assurance, business valuation or growth advisory is usually quoted as a fixed fee or monthly retainer ($500–$3,000+/month for advisory). What drives the price — and how to control it Three things move the price: complexity (entities, investments, structures), the state of your records (clean books cost less to process), and the credential required (a CPA-signed audit report costs more than a routine return). The biggest lever you control is record-keeping — tidy, reconciled books mean a faster, cheaper engagement. Matching to the right credential (not over-buying) is the second. This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Accountant Services and Typical Costs Our vetted network covers the full range of accounting, tax and bookkeeping services. Individual tax returns ($200–$400) BAS preparation & lodgement ($250–$400/quarter) Small business accounting ($400–$1,000/month) SMSF accounting & audit ($1,500–$3,500/year) CGT & investment property advice Growth advisory ($500–$3,000+/month) Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. How much does a tax return cost in Australia? A simple individual return typically costs $200–$400. Add a rental property ($350–$550), a CGT event ($300–$800) or trust distributions ($600–$1,200). The matched agent quotes after reviewing your situation — the matching is free. How much does a bookkeeper cost per month? How much does an SMSF accountant cost? Is the matching service free? How much does a company tax return cost? How much does a small business accountant cost per month? Does a more expensive accountant mean a better result? How quickly will a matched accountant contact me? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me Accountant vs Bookkeeper Overdue Tax Return Help Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2643,
+  "inSitemap": true
+}

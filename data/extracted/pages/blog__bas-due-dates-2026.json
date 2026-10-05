@@ -1,0 +1,521 @@
+{
+  "path": "/blog/bas-due-dates-2026",
+  "extractedAt": "2026-10-02T09:02:59.720Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/bas-due-dates-2026",
+  "title": "BAS Due Dates 2026 — Monthly & Quarterly Lodgement Dates | Your Accountant Match",
+  "metaDescription": "Complete 2026 BAS due dates for monthly and quarterly lodgers. When your BAS is due, how registered agents get extra time, and avoiding FTL penalties.",
+  "canonical": "http://localhost:4173/blog/bas-due-dates-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "BAS Due Dates 2026 — Monthly & Quarterly Lodgement Dates | Your Accountant Match",
+    "og:description": "Complete 2026 BAS due dates for monthly and quarterly lodgers. When your BAS is due, how registered agents get extra time, and avoiding FTL penalties.",
+    "og:url": "http://localhost:4173/blog/bas-due-dates-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "BAS Due Dates 2026 — Monthly & Quarterly Lodgement Dates | Your Accountant Match",
+    "twitter:description": "Complete 2026 BAS due dates for monthly and quarterly lodgers. When your BAS is due, how registered agents get extra time, and avoiding FTL penalties.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is the BAS due for the March quarter 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The January-March 2026 quarter BAS is due 28 April 2026. If a registered agent lodges electronically for you, the due date is typically extended by around 25 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I lodge BAS monthly or quarterly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most small businesses lodge quarterly. Monthly lodgement is required if your GST turnover is $20 million or more, or in some cases if you have a history of late lodgement. If you're unsure which cycle you're on, check your ATO business profile or ask a registered agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a bookkeeper lodge my BAS for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — but only if they are a registered BAS Agent (or tax agent) under the Tax Agent Services Act 2009. A bookkeeper who is not registered cannot legally charge a fee to lodge your BAS. All matched bookkeepers providing BAS services in our network have verified, current TPB registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the penalty for lodging BAS late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO applies a failure-to-lodge penalty that increases with how late the BAS is and your entity size, plus general interest charge on any net amount payable. Engaging a registered agent to catch up voluntarily usually results in better outcomes than waiting for enforcement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get the extra time to lodge my BAS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The lodgement concession applies when a registered BAS agent or tax agent lodges your BAS electronically on your behalf — typically giving around 25 extra days for quarterly lodgements. It does not apply if you lodge yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get matched with a BAS agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and needs. We match you with a registered BAS Agent in your area who uses your software. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Deadlines",
+          "item": "/blog/bas-due-dates-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "BAS Due Dates 2026: When to Lodge and How to Prepare",
+      "description": "Complete 2026 BAS due dates for monthly and quarterly lodgers. When your BAS is due, how registered agents get extra time, and avoiding FTL penalties.",
+      "datePublished": "2026-02-10",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/bas-due-dates-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/when-and-how-to-report-and-pay-gst/monthly-gst-reporting"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/bas-agent-lodgment-program-2026-27"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Business Activity Statement due dates",
+          "sameAs": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 2,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 3,
+      "text": "Quarterly BAS due dates for 2026"
+    },
+    {
+      "level": 3,
+      "text": "Monthly BAS due dates for 2026"
+    },
+    {
+      "level": 3,
+      "text": "How registered agents get extra lodgement time"
+    },
+    {
+      "level": 3,
+      "text": "What happens if you lodge late"
+    },
+    {
+      "level": 3,
+      "text": "How to prepare so you never miss a deadline"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "BAS Due Dates 2026: When to Lodge and How to Prepare",
+      "images": 0,
+      "text": "Home/Blog/Tax DeadlinesTax Deadlines5 min readBAS Due Dates 2026: When to Lodge and How to PrepareIf you're registered for GST, lodging your Business Activity Statement (BAS) on time is one of the most important compliance habits for your business. Miss a due date and the ATO can apply failure-to-lodge penalties plus general interest charge on any net amount payable. This guide sets out every BAS due date for 2026, explains the difference between monthly and quarterly cycles, and shows how a registered BAS agent can buy you extra time.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEBAS Due Dates 2026: When to Lodge and How to PrepareQuarterly BAS due dates for 2026Most small businesses lodge quarterly. The standard due date is the 28th of the month following the end of each quarter. For the 2025-26 financial year the quarterly BAS due dates are: 1st quarter (Jul-Sep) due 28 October 2025, 2nd quarter (Oct-Dec) due 28 February 2026, 3rd quarter (Jan-Mar) due 28 April 2026, and 4th quarter (Apr-Jun) due 28 July 2026. Note the December quarter gets two extra months because of the holiday period.Monthly BAS due dates for 2026Businesses with a GST turnover of $20 million or more must lodge monthly. Monthly BAS is due by the 21st day of the following month. So your January 2026 activity statement is due 21 February 2026, February due 21 March 2026, and so on through the year. If the 21st falls on a weekend or public holiday, the due date moves to the next business day.How registered agents get extra lodgement timeIf a registered BAS agent or tax agent lodges your BAS electronically, you typically receive a concession — usually an extra 25 days for quarterly lodgements. That pushes a 28 October due date out to late November, for example. This concession only applies when a registered agent lodges on your behalf; it does not apply if you lodge yourself through the Business Portal. It's one of the practical reasons businesses engage a registered bookkeeper or BAS agent.What happens if you lodge lateThe ATO applies a failure-to-lodge (FTL) penalty that scales with how late the BAS is and the size of your entity. General interest charge (GIC) also accrues on any net amount payable from the original due date. Persistent non-lodgement can lead to default assessments and stronger recovery action. Catching up voluntarily — even late — is almost always cheaper and less disruptive than waiting for the ATO to chase you.How to prepare so you never miss a deadlineMost late-BAS problems are record-keeping problems, not tax problems. Keep your bank accounts reconciled monthly, ensure GST is coded correctly as you go, and confirm your PAYG withholding and instalment cycles are set up in your software. A registered BAS agent can set up automated reminders, review your coding, and lodge within the extended agent deadlines so you always have a buffer.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOquarterly BAS due datesATO$20 millionATOan extra 25 days for quarterly lodgementsATOfailure-to-lodge (FTL) penaltyATOGeneral interest charge (GIC)ATOdefault assessmentsAustLIITax Agent Services Act 2009This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhen is the BAS due for the March quarter 2026?The January-March 2026 quarter BAS is due 28 April 2026. If a registered agent lodges electronically for you, the due date is typically extended by around 25 days.Do I lodge BAS monthly or quarterly?Can a bookkeeper lodge my BAS for me?What is the penalty for lodging BAS late?How do I get the extra time to lodge my BAS?How can I get matched with a BAS agent?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "quarterly BAS due dates"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/when-and-how-to-report-and-pay-gst/monthly-gst-reporting",
+      "text": "$20 million"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "Monthly BAS is due by the 21st day of the following month"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/bas-agent-lodgment-program-2026-27",
+      "text": "an extra 25 days for quarterly lodgements"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "General interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "default assessments"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "ATOquarterly BAS due dates"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/when-and-how-to-report-and-pay-gst/monthly-gst-reporting",
+      "text": "ATO$20 million"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/bas-agent-lodgment-program-2026-27",
+      "text": "ATOan extra 25 days for quarterly lodgements"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOfailure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "ATOGeneral interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "ATOdefault assessments"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "AustLIITax Agent Services Act 2009"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "The January-March 2026 quarter BAS is due 28 April 2026"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/tax-planning-strategies-2026",
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax DeadlinesTax Deadlines5 min readBAS Due Dates 2026: When to Lodge and How to PrepareIf you're registered for GST, lodging your Business Activity Statement (BAS) on time is one of the most important compliance habits for your business. Miss a due date and the ATO can apply failure-to-lodge penalties plus general interest charge on any net amount payable. This guide sets out every BAS due date for 2026, explains the difference between monthly and quarterly cycles, and shows how a registered BAS agent can buy you extra time.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEBAS Due Dates 2026: When to Lodge and How to PrepareQuarterly BAS due dates for 2026Most small businesses lodge quarterly. The standard due date is the 28th of the month following the end of each quarter. For the 2025-26 financial year the quarterly BAS due dates are: 1st quarter (Jul-Sep) due 28 October 2025, 2nd quarter (Oct-Dec) due 28 February 2026, 3rd quarter (Jan-Mar) due 28 April 2026, and 4th quarter (Apr-Jun) due 28 July 2026. Note the December quarter gets two extra months because of the holiday period.Monthly BAS due dates for 2026Businesses with a GST turnover of $20 million or more must lodge monthly. Monthly BAS is due by the 21st day of the following month. So your January 2026 activity statement is due 21 February 2026, February due 21 March 2026, and so on through the year. If the 21st falls on a weekend or public holiday, the due date moves to the next business day.How registered agents get extra lodgement timeIf a registered BAS agent or tax agent lodges your BAS electronically, you typically receive a concession — usually an extra 25 days for quarterly lodgements. That pushes a 28 October due date out to late November, for example. This concession only applies when a registered agent lodges on your behalf; it does not apply if you lodge yourself through the Business Portal. It's one of the practical reasons businesses engage a registered bookkeeper or BAS agent.What happens if you lodge lateThe ATO applies a failure-to-lodge (FTL) penalty that scales with how late the BAS is and the size of your entity. General interest charge (GIC) also accrues on any net amount payable from the original due date. Persistent non-lodgement can lead to default assessments and stronger recovery action. Catching up voluntarily — even late — is almost always cheaper and less disruptive than waiting for the ATO to chase you.How to prepare so you never miss a deadlineMost late-BAS problems are record-keeping problems, not tax problems. Keep your bank accounts reconciled monthly, ensure GST is coded correctly as you go, and confirm your PAYG withholding and instalment cycles are set up in your software. A registered BAS agent can set up automated reminders, review your coding, and lodge within the extended agent deadlines so you always have a buffer.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOquarterly BAS due datesATO$20 millionATOan extra 25 days for quarterly lodgementsATOfailure-to-lodge (FTL) penaltyATOGeneral interest charge (GIC)ATOdefault assessmentsAustLIITax Agent Services Act 2009This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhen is the BAS due for the March quarter 2026?The January-March 2026 quarter BAS is due 28 April 2026. If a registered agent lodges electronically for you, the due date is typically extended by around 25 days.Do I lodge BAS monthly or quarterly?Can a bookkeeper lodge my BAS for me?What is the penalty for lodging BAS late?How do I get the extra time to lodge my BAS?How can I get matched with a BAS agent?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Deadlines TAX DEADLINES 5 min read BAS Due Dates 2026: When to Lodge and How to Prepare If you're registered for GST, lodging your Business Activity Statement (BAS) on time is one of the most important compliance habits for your business. Miss a due date and the ATO can apply failure-to-lodge penalties plus general interest charge on any net amount payable. This guide sets out every BAS due date for 2026, explains the difference between monthly and quarterly cycles, and shows how a registered BAS agent can buy you extra time. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE BAS Due Dates 2026: When to Lodge and How to Prepare Quarterly BAS due dates for 2026 Most small businesses lodge quarterly. The standard due date is the 28th of the month following the end of each quarter. For the 2025-26 financial year the quarterly BAS due dates are: 1st quarter (Jul-Sep) due 28 October 2025, 2nd quarter (Oct-Dec) due 28 February 2026, 3rd quarter (Jan-Mar) due 28 April 2026, and 4th quarter (Apr-Jun) due 28 July 2026. Note the December quarter gets two extra months because of the holiday period. Monthly BAS due dates for 2026 Businesses with a GST turnover of $20 million or more must lodge monthly. Monthly BAS is due by the 21st day of the following month. So your January 2026 activity statement is due 21 February 2026, February due 21 March 2026, and so on through the year. If the 21st falls on a weekend or public holiday, the due date moves to the next business day. How registered agents get extra lodgement time If a registered BAS agent or tax agent lodges your BAS electronically, you typically receive a concession — usually an extra 25 days for quarterly lodgements. That pushes a 28 October due date out to late November, for example. This concession only applies when a registered agent lodges on your behalf; it does not apply if you lodge yourself through the Business Portal. It's one of the practical reasons businesses engage a registered bookkeeper or BAS agent. What happens if you lodge late The ATO applies a failure-to-lodge (FTL) penalty that scales with how late the BAS is and the size of your entity. General interest charge (GIC) also accrues on any net amount payable from the original due date. Persistent non-lodgement can lead to default assessments and stronger recovery action. Catching up voluntarily — even late — is almost always cheaper and less disruptive than waiting for the ATO to chase you. How to prepare so you never miss a deadline Most late-BAS problems are record-keeping problems, not tax problems. Keep your bank accounts reconciled monthly, ensure GST is coded correctly as you go, and confirm your PAYG withholding and instalment cycles are set up in your software. A registered BAS agent can set up automated reminders, review your coding, and lodge within the extended agent deadlines so you always have a buffer. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO quarterly BAS due dates ATO $20 million ATO an extra 25 days for quarterly lodgements ATO failure-to-lodge (FTL) penalty ATO General interest charge (GIC) ATO default assessments AUSTLII Tax Agent Services Act 2009 This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions When is the BAS due for the March quarter 2026? The January-March 2026 quarter BAS is due 28 April 2026. If a registered agent lodges electronically for you, the due date is typically extended by around 25 days. Do I lodge BAS monthly or quarterly? Can a bookkeeper lodge my BAS for me? What is the penalty for lodging BAS late? How do I get the extra time to lodge my BAS? How can I get matched with a BAS agent? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax Eight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line. 6 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2605,
+  "inSitemap": true
+}

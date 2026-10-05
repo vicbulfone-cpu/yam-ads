@@ -1,0 +1,245 @@
+{
+  "path": "/contact",
+  "extractedAt": "2026-10-02T09:00:53.092Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/contact",
+  "title": "Contact Your Accountant Match | Free Accountant Matching",
+  "metaDescription": "Contact Your Accountant Match. Email or call our Melbourne-based team, or start matching now to find a vetted local accountant in your area.",
+  "canonical": "http://localhost:4173/contact",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Contact Your Accountant Match | Free Accountant Matching",
+    "og:description": "Contact Your Accountant Match. Email or call our Melbourne-based team, or start matching now to find a vetted local accountant in your area.",
+    "og:url": "http://localhost:4173/contact",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Contact Your Accountant Match | Free Accountant Matching",
+    "twitter:description": "Contact Your Accountant Match. Email or call our Melbourne-based team, or start matching now to find a vetted local accountant in your area.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Your Accountant Match",
+      "description": "Contact details for Your Accountant Match, a free accountant matching service based in Chadstone, Melbourne."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "/contact"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Contact Us"
+    },
+    {
+      "level": 2,
+      "text": "Get in touch"
+    },
+    {
+      "level": 2,
+      "text": "What we can help with"
+    },
+    {
+      "level": 2,
+      "text": "Please note"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Contact Us",
+      "images": 0,
+      "text": "Contact UsWe are here to help you find the right accountantGet in touchYour Accountant Match is a Melbourne-based matching service. The fastest way to find an accountant is to use our free matching questionnaire — it takes about 60 seconds and we will connect you with a vetted local accountant who can help.Email: hello@youraccountantmatch.com.auPrivacy enquiries: privacy@youraccountantmatch.com.auPostal address: 18 Savannah Place, Chadstone, Victoria 3148, AustraliaHours: Monday to Friday, 9:00am – 5:00pm AESTWhat we can help withQuestions about how the matching service worksFeedback on your matching experiencePrivacy or data enquiriesPartner or accountant network enquiriesPlease noteWe are a matching and referral service — we are not an accounting firm and cannot provide tax, accounting, or financial advice directly. If you need advice, please use the questionnaire below and we will connect you with a qualified accountant who can help.Start Matching Now"
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "What is Your Accountant Match?",
+      "images": 0,
+      "text": "A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match."
+    },
+    {
+      "index": 4,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaAboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "mailto:hello@youraccountantmatch.com.au",
+      "text": "hello@youraccountantmatch.com.au"
+    },
+    {
+      "href": "mailto:privacy@youraccountantmatch.com.au",
+      "text": "privacy@youraccountantmatch.com.au"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/ContactContact UsWe are here to help you find the right accountantGet in touchYour Accountant Match is a Melbourne-based matching service. The fastest way to find an accountant is to use our free matching questionnaire — it takes about 60 seconds and we will connect you with a vetted local accountant who can help.Email: hello@youraccountantmatch.com.auPrivacy enquiries: privacy@youraccountantmatch.com.auPostal address: 18 Savannah Place, Chadstone, Victoria 3148, AustraliaHours: Monday to Friday, 9:00am – 5:00pm AESTWhat we can help withQuestions about how the matching service worksFeedback on your matching experiencePrivacy or data enquiriesPartner or accountant network enquiriesPlease noteWe are a matching and referral service — we are not an accounting firm and cannot provide tax, accounting, or financial advice directly. If you need advice, please use the questionnaire below and we will connect you with a qualified accountant who can help.Start Matching NowA BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaAboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Contact Contact Us We are here to help you find the right accountant Get in touch Your Accountant Match is a Melbourne-based matching service. The fastest way to find an accountant is to use our free matching questionnaire — it takes about 60 seconds and we will connect you with a vetted local accountant who can help. Email: hello@youraccountantmatch.com.au Privacy enquiries: privacy@youraccountantmatch.com.au Postal address: 18 Savannah Place, Chadstone, Victoria 3148, Australia Hours: Monday to Friday, 9:00am – 5:00pm AEST What we can help with Questions about how the matching service works Feedback on your matching experience Privacy or data enquiries Partner or accountant network enquiries Please note We are a matching and referral service — we are not an accounting firm and cannot provide tax, accounting, or financial advice directly. If you need advice, please use the questionnaire below and we will connect you with a qualified accountant who can help. Start Matching Now A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia About Contact Locations Guides Privacy Terms ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2676,
+  "inSitemap": true
+}

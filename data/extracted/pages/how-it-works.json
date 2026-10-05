@@ -1,0 +1,257 @@
+{
+  "path": "/how-it-works",
+  "extractedAt": "2026-10-02T09:00:54.849Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/how-it-works",
+  "title": "How It Works — 3 Step Accountant Matching | Your Accountant Match",
+  "metaDescription": "How Your Accountant Match works: tell us your area and needs in 60 seconds, we match you by postcode to one vetted local accountant partner, and they contact you directly. Free, no obligation.",
+  "canonical": "http://localhost:4173/how-it-works",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "How It Works — 3 Step Accountant Matching | Your Accountant Match",
+    "og:description": "How Your Accountant Match works: tell us your area and needs in 60 seconds, we match you by postcode to one vetted local accountant partner, and they contact you directly. Free, no obligation.",
+    "og:url": "http://localhost:4173/how-it-works",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "How It Works — 3 Step Accountant Matching | Your Accountant Match",
+    "twitter:description": "How Your Accountant Match works: tell us your area and needs in 60 seconds, we match you by postcode to one vetted local accountant partner, and they contact you directly. Free, no obligation.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How Your Accountant Match Works",
+      "description": "A free 3-step matching process that connects you with one vetted local accountant partner based on your postcode and accounting needs.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Tell us what you need",
+          "text": "Share your postcode or area and the accounting help you're looking for — whether that's a personal tax return, business accounting, bookkeeping and BAS, SMSF services, or a new business registration. It takes about 60 seconds and there's no obligation."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "We match you by area",
+          "text": "Your postcode determines your match. Each area is covered by one participating, vetted accountant partner who owns that territory. The services you select are passed along as enquiry details — they never change which accountant you're matched with."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Your matched accountant contacts you",
+          "text": "Your enquiry is sent directly and exclusively to the accountant partner who covers your area. They receive your contact details, location and the services you selected, then reach out to discuss your needs, fees and engagement terms directly with you."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How It Works",
+          "item": "/how-it-works"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "How It Works"
+    },
+    {
+      "level": 2,
+      "text": "Tell us what you need"
+    },
+    {
+      "level": 2,
+      "text": "We match you by area"
+    },
+    {
+      "level": 2,
+      "text": "Your matched accountant contacts you"
+    },
+    {
+      "level": 2,
+      "text": "One match, by postcode"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "How It Works",
+      "images": 0,
+      "text": "THE PROCESSHow It WorksOur quick 60-second, 3-step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Here's exactly what happens from the moment you start to the moment your matched accountant gets in touch.1Tell us what you needShare your postcode or area and the accounting help you're looking for — whether that's a personal tax return, business accounting, bookkeeping and BAS, SMSF services, or a new business registration. It takes about 60 seconds and there's no obligation.2We match you by areaYour postcode determines your match. Each area is covered by one participating, vetted accountant partner who owns that territory. The services you select are passed along as enquiry details — they never change which accountant you're matched with.3Your matched accountant contacts youYour enquiry is sent directly and exclusively to the accountant partner who covers your area. They receive your contact details, location and the services you selected, then reach out to discuss your needs, fees and engagement terms directly with you.One match, by postcodeYour Accountant Match is a free matching and referral service. We match you with one participating accountant from our vetted partner network based on your postcode. The matched accounting firm provides all accounting and taxation services directly. Your enquiry is never sent to multiple providers, and the services you select are passed to your matched accountant as enquiry information only — they do not change which accountant covers your area.Find My Accountant"
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "AboutContactLocationsGuidesBlogPrivacyTermsHow We Select AccountantsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "How We Select Accountants"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/How It WorksTHE PROCESSHow It WorksOur quick 60-second, 3-step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Here's exactly what happens from the moment you start to the moment your matched accountant gets in touch.1Tell us what you needShare your postcode or area and the accounting help you're looking for — whether that's a personal tax return, business accounting, bookkeeping and BAS, SMSF services, or a new business registration. It takes about 60 seconds and there's no obligation.2We match you by areaYour postcode determines your match. Each area is covered by one participating, vetted accountant partner who owns that territory. The services you select are passed along as enquiry details — they never change which accountant you're matched with.3Your matched accountant contacts youYour enquiry is sent directly and exclusively to the accountant partner who covers your area. They receive your contact details, location and the services you selected, then reach out to discuss your needs, fees and engagement terms directly with you.One match, by postcodeYour Accountant Match is a free matching and referral service. We match you with one participating accountant from our vetted partner network based on your postcode. The matched accounting firm provides all accounting and taxation services directly. Your enquiry is never sent to multiple providers, and the services you select are passed to your matched accountant as enquiry information only — they do not change which accountant covers your area.Find My AccountantAboutContactLocationsGuidesBlogPrivacyTermsHow We Select AccountantsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / How It Works THE PROCESS How It Works Our quick 60-second, 3-step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Here's exactly what happens from the moment you start to the moment your matched accountant gets in touch. 1 Tell us what you need Share your postcode or area and the accounting help you're looking for — whether that's a personal tax return, business accounting, bookkeeping and BAS, SMSF services, or a new business registration. It takes about 60 seconds and there's no obligation. 2 We match you by area Your postcode determines your match. Each area is covered by one participating, vetted accountant partner who owns that territory. The services you select are passed along as enquiry details — they never change which accountant you're matched with. 3 Your matched accountant contacts you Your enquiry is sent directly and exclusively to the accountant partner who covers your area. They receive your contact details, location and the services you selected, then reach out to discuss your needs, fees and engagement terms directly with you. One match, by postcode Your Accountant Match is a free matching and referral service. We match you with one participating accountant from our vetted partner network based on your postcode. The matched accounting firm provides all accounting and taxation services directly. Your enquiry is never sent to multiple providers, and the services you select are passed to your matched accountant as enquiry information only — they do not change which accountant covers your area. Find My Accountant About Contact Locations Guides Blog Privacy Terms How We Select Accountants ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2928,
+  "inSitemap": true
+}

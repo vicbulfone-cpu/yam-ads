@@ -1,0 +1,485 @@
+{
+  "path": "/blog/work-related-deductions-2026",
+  "extractedAt": "2026-10-02T09:03:08.429Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/work-related-deductions-2026",
+  "title": "Work-Related Deductions 2026 — Common Claims & ATO Review Triggers | Your Accountant Match",
+  "metaDescription": "A guide to work-related deductions for 2025-26 — union fees, self-education, tools, clothing, and the patterns that trigger ATO review letters.",
+  "canonical": "http://localhost:4173/blog/work-related-deductions-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Work-Related Deductions 2026 — Common Claims & ATO Review Triggers | Your Accountant Match",
+    "og:description": "A guide to work-related deductions for 2025-26 — union fees, self-education, tools, clothing, and the patterns that trigger ATO review letters.",
+    "og:url": "http://localhost:4173/blog/work-related-deductions-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Work-Related Deductions 2026 — Common Claims & ATO Review Triggers | Your Accountant Match",
+    "twitter:description": "A guide to work-related deductions for 2025-26 — union fees, self-education, tools, clothing, and the patterns that trigger ATO review letters.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I claim union fees on my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — union fees and subscriptions to professional associations related to your work are generally deductible, provided they relate to earning your current income. Keep your receipts even if fees appear on your payment summary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are self-education expenses deductible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if the study is directly related to your current work — improving skills you need for your present job. Course fees, textbooks and travel to the course are deductible. You can claim 100% of eligible self-education expenses (the ATO repealed the $250 reduction rule). Study to get a new job or new income stream is not deductible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim the cost of work tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — tools and equipment for work are deductible, either as an outright deduction (under the threshold and used mostly for work) or as depreciation over their useful life. You can also claim repair costs. Keep receipts and a record of your work-use percentage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim my work clothes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only compulsory work uniforms (with a logo), protective clothing (like hi-vis or steel-capped boots), and occupation-specific clothing are deductible. Plain business clothes — even if required by your employer — are not. Laundry of deductible clothing can be claimed at a set rate per wash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What triggers an ATO review of my deductions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO flags claims that are unusually high for your occupation, don't match your income, or are inconsistent with your job. Common triggers include non-uniform clothing claims, unrelated tools, or self-education without a clear link to your current role. Keeping records is your best protection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a tax agent for my deductions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and occupation. We match you with a vetted local tax agent who can identify every legitimate claim. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Deductions",
+          "item": "/blog/work-related-deductions-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews",
+      "description": "A guide to work-related deductions for 2025-26 — union fees, self-education, tools, clothing, and the patterns that trigger ATO review letters.",
+      "datePublished": "2026-09-05",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/work-related-deductions-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/memberships-accreditations-fees-and-commissions/union-fees-subscriptions-to-associations-and-bargaining-agents-fees"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/tools-computers-and-items-you-use-for-work/tools-and-equipment-to-perform-your-work"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/clothes-and-items-you-wear-at-work/clothing-laundry-and-dry-cleaning-expenses"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Work-related tax deductions",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews"
+    },
+    {
+      "level": 2,
+      "text": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews"
+    },
+    {
+      "level": 3,
+      "text": "Union and professional association fees"
+    },
+    {
+      "level": 3,
+      "text": "Self-education expenses"
+    },
+    {
+      "level": 3,
+      "text": "Tools and equipment"
+    },
+    {
+      "level": 3,
+      "text": "Clothing and laundry"
+    },
+    {
+      "level": 3,
+      "text": "What triggers an ATO review"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews",
+      "images": 0,
+      "text": "Home/Blog/DeductionsDeductions6 min readWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsWork-related deductions are the most common claims on individual tax returns — and the area the ATO scrutinises most. Union fees, self-education, tools, protective clothing, and home office costs are all potentially deductible, but each has rules about what qualifies and the records you must keep. This guide explains the common claims for 2025-26, the records the ATO expects, and the patterns that trigger review letters.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsUnion and professional association feesUnion fees and subscriptions to professional associations related to your work are generally deductible. The fees must relate to earning your current income — a subscription to a body linked to a future or unrelated job is not deductible. Most employers record union fees on your payment summary, but you should also keep your own receipts.Self-education expensesSelf-education expenses are deductible if the study is directly related to your current work — improving the skills or knowledge you need to do your present job. Course fees, textbooks, stationery, and travel to and from the course can be claimed. The study can't be to get a new job or open up new income streams. You can claim 100% of your eligible self-education expenses (the old requirement to reduce your claim by $250 was repealed by the ATO).Tools and equipmentIf you buy tools or equipment for work, you can claim the cost — either as an outright deduction (if the item costs under the threshold and is used mostly for work) or as depreciation over its useful life. You can also claim the cost of repairing work tools. Keep receipts and a record of your work-use percentage, as the ATO often asks how an item relates to your job.Clothing and laundryYou can claim the cost of buying and cleaning compulsory work uniforms (with a logo), protective clothing (like hi-vis or steel-capped boots), and occupation-specific clothing (like a chef's uniform). You can't claim the cost of a plain business suit or everyday clothes — even if your employer requires them. Laundry of deductible clothing can be claimed at a set rate per wash or based on actual costs.What triggers an ATO reviewThe ATO compares your claims to others in your occupation and flags outliers — unusually high deductions, claims that don't match your income, or patterns inconsistent with your job. Common triggers include claiming for clothing that's not uniform or protective, claiming tools unrelated to your trade, or high self-education claims without a clear link to your current role. Keeping records and ensuring each claim genuinely relates to your work is the best protection.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOUnion fees and subscriptions to professional associations related to your work are generally deductibleATOSelf-education expensesATOIf you buy tools or equipment for work, you can claim the costATOYou can claim the cost of buying and cleaning compulsory work uniformsThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsCan I claim union fees on my tax return?Yes — union fees and subscriptions to professional associations related to your work are generally deductible, provided they relate to earning your current income. Keep your receipts even if fees appear on your payment summary.Are self-education expenses deductible?Can I claim the cost of work tools?Can I claim my work clothes?What triggers an ATO review of my deductions?How do I get matched with a tax agent for my deductions?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/memberships-accreditations-fees-and-commissions/union-fees-subscriptions-to-associations-and-bargaining-agents-fees",
+      "text": "Union fees and subscriptions to professional associations related to your work are generally deductible"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses",
+      "text": "Self-education expenses"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/tools-computers-and-items-you-use-for-work/tools-and-equipment-to-perform-your-work",
+      "text": "If you buy tools or equipment for work, you can claim the cost"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/clothes-and-items-you-wear-at-work/clothing-laundry-and-dry-cleaning-expenses",
+      "text": "You can claim the cost of buying and cleaning compulsory work uniforms"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/memberships-accreditations-fees-and-commissions/union-fees-subscriptions-to-associations-and-bargaining-agents-fees",
+      "text": "ATOUnion fees and subscriptions to professional associations related to your work are generally deductible"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses",
+      "text": "ATOSelf-education expenses"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/tools-computers-and-items-you-use-for-work/tools-and-equipment-to-perform-your-work",
+      "text": "ATOIf you buy tools or equipment for work, you can claim the cost"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/clothes-and-items-you-wear-at-work/clothing-laundry-and-dry-cleaning-expenses",
+      "text": "ATOYou can claim the cost of buying and cleaning compulsory work uniforms"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/memberships-accreditations-fees-and-commissions/union-fees-subscriptions-to-associations-and-bargaining-agents-fees",
+      "text": "union fees and subscriptions to professional associations related to your work are generally deductible"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/DeductionsDeductions6 min readWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsWork-related deductions are the most common claims on individual tax returns — and the area the ATO scrutinises most. Union fees, self-education, tools, protective clothing, and home office costs are all potentially deductible, but each has rules about what qualifies and the records you must keep. This guide explains the common claims for 2025-26, the records the ATO expects, and the patterns that trigger review letters.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsUnion and professional association feesUnion fees and subscriptions to professional associations related to your work are generally deductible. The fees must relate to earning your current income — a subscription to a body linked to a future or unrelated job is not deductible. Most employers record union fees on your payment summary, but you should also keep your own receipts.Self-education expensesSelf-education expenses are deductible if the study is directly related to your current work — improving the skills or knowledge you need to do your present job. Course fees, textbooks, stationery, and travel to and from the course can be claimed. The study can't be to get a new job or open up new income streams. You can claim 100% of your eligible self-education expenses (the old requirement to reduce your claim by $250 was repealed by the ATO).Tools and equipmentIf you buy tools or equipment for work, you can claim the cost — either as an outright deduction (if the item costs under the threshold and is used mostly for work) or as depreciation over its useful life. You can also claim the cost of repairing work tools. Keep receipts and a record of your work-use percentage, as the ATO often asks how an item relates to your job.Clothing and laundryYou can claim the cost of buying and cleaning compulsory work uniforms (with a logo), protective clothing (like hi-vis or steel-capped boots), and occupation-specific clothing (like a chef's uniform). You can't claim the cost of a plain business suit or everyday clothes — even if your employer requires them. Laundry of deductible clothing can be claimed at a set rate per wash or based on actual costs.What triggers an ATO reviewThe ATO compares your claims to others in your occupation and flags outliers — unusually high deductions, claims that don't match your income, or patterns inconsistent with your job. Common triggers include claiming for clothing that's not uniform or protective, claiming tools unrelated to your trade, or high self-education claims without a clear link to your current role. Keeping records and ensuring each claim genuinely relates to your work is the best protection.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOUnion fees and subscriptions to professional associations related to your work are generally deductibleATOSelf-education expensesATOIf you buy tools or equipment for work, you can claim the costATOYou can claim the cost of buying and cleaning compulsory work uniformsThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsCan I claim union fees on my tax return?Yes — union fees and subscriptions to professional associations related to your work are generally deductible, provided they relate to earning your current income. Keep your receipts even if fees appear on your payment summary.Are self-education expenses deductible?Can I claim the cost of work tools?Can I claim my work clothes?What triggers an ATO review of my deductions?How do I get matched with a tax agent for my deductions?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Deductions DEDUCTIONS 6 min read Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews Work-related deductions are the most common claims on individual tax returns — and the area the ATO scrutinises most. Union fees, self-education, tools, protective clothing, and home office costs are all potentially deductible, but each has rules about what qualifies and the records you must keep. This guide explains the common claims for 2025-26, the records the ATO expects, and the patterns that trigger review letters. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews Union and professional association fees Union fees and subscriptions to professional associations related to your work are generally deductible. The fees must relate to earning your current income — a subscription to a body linked to a future or unrelated job is not deductible. Most employers record union fees on your payment summary, but you should also keep your own receipts. Self-education expenses Self-education expenses are deductible if the study is directly related to your current work — improving the skills or knowledge you need to do your present job. Course fees, textbooks, stationery, and travel to and from the course can be claimed. The study can't be to get a new job or open up new income streams. You can claim 100% of your eligible self-education expenses (the old requirement to reduce your claim by $250 was repealed by the ATO). Tools and equipment If you buy tools or equipment for work, you can claim the cost — either as an outright deduction (if the item costs under the threshold and is used mostly for work) or as depreciation over its useful life. You can also claim the cost of repairing work tools. Keep receipts and a record of your work-use percentage, as the ATO often asks how an item relates to your job. Clothing and laundry You can claim the cost of buying and cleaning compulsory work uniforms (with a logo), protective clothing (like hi-vis or steel-capped boots), and occupation-specific clothing (like a chef's uniform). You can't claim the cost of a plain business suit or everyday clothes — even if your employer requires them. Laundry of deductible clothing can be claimed at a set rate per wash or based on actual costs. What triggers an ATO review The ATO compares your claims to others in your occupation and flags outliers — unusually high deductions, claims that don't match your income, or patterns inconsistent with your job. Common triggers include claiming for clothing that's not uniform or protective, claiming tools unrelated to your trade, or high self-education claims without a clear link to your current role. Keeping records and ensuring each claim genuinely relates to your work is the best protection. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO Union fees and subscriptions to professional associations related to your work are generally deductible ATO Self-education expenses ATO If you buy tools or equipment for work, you can claim the cost ATO You can claim the cost of buying and cleaning compulsory work uniforms This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Can I claim union fees on my tax return? Yes — union fees and subscriptions to professional associations related to your work are generally deductible, provided they relate to earning your current income. Keep your receipts even if fees appear on your payment summary. Are self-education expenses deductible? Can I claim the cost of work tools? Can I claim my work clothes? What triggers an ATO review of my deductions? How do I get matched with a tax agent for my deductions? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2932,
+  "inSitemap": true
+}

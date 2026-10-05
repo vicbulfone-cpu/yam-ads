@@ -1,0 +1,887 @@
+{
+  "path": "/locations/bendigo",
+  "extractedAt": "2026-10-02T09:03:28.515Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/locations/melbourne",
+  "title": "Specialist Accountant Melbourne | Your Accountant Match",
+  "metaDescription": "Find a specialist accountant in Melbourne. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+  "canonical": "http://localhost:4173/locations/melbourne",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "og:description": "Find a specialist accountant in Melbourne. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+    "og:url": "http://localhost:4173/locations/melbourne",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/beffc102-5555-4f21-8b12-aa59cd9fa194.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "twitter:description": "Find a specialist accountant in Melbourne. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "City",
+          "@id": "https://youraccountantmatch.com.au/locations/melbourne#city",
+          "name": "Melbourne",
+          "sameAs": "https://en.wikipedia.org/wiki/Melbourne"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://youraccountantmatch.com.au/locations/melbourne#service",
+          "name": "Accountant Matching in Melbourne",
+          "serviceType": "Accountant Matching & Referral",
+          "url": "https://youraccountantmatch.com.au/locations/melbourne",
+          "description": "Free matching service connecting people and businesses in Melbourne, VIC, and surrounding suburbs with vetted, TPB-registered accountants.",
+          "areaServed": [
+            {
+              "@id": "https://youraccountantmatch.com.au/locations/melbourne#city"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Melbourne CBD",
+              "postalCode": "3000"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "South Melbourne",
+              "postalCode": "3205"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Richmond",
+              "postalCode": "3121"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "South Yarra",
+              "postalCode": "3141"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Prahran",
+              "postalCode": "3181"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Hawthorn",
+              "postalCode": "3122"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Kew",
+              "postalCode": "3101"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Camberwell",
+              "postalCode": "3124"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Brunswick",
+              "postalCode": "3056"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Fitzroy",
+              "postalCode": "3065"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Carlton",
+              "postalCode": "3053"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Port Melbourne",
+              "postalCode": "3207"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "St Kilda",
+              "postalCode": "3182"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Elwood",
+              "postalCode": "3184"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Brighton",
+              "postalCode": "3186"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Malvern",
+              "postalCode": "3144"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Glen Iris",
+              "postalCode": "3146"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Balwyn",
+              "postalCode": "3103"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Doncaster",
+              "postalCode": "3108"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Box Hill",
+              "postalCode": "3128"
+            }
+          ],
+          "knowsAbout": [
+            "Business Accounting",
+            "Individual Tax Returns",
+            "BAS & Bookkeeping",
+            "Single Touch Payroll (STP Phase 2)",
+            "Taxable Payments Annual Reports (TPAR)",
+            "Capital Gains Tax (CGT)",
+            "Family Trusts",
+            "Self-Managed Super Funds (SMSF)",
+            "GST Registration",
+            "Small Business Tax Planning"
+          ],
+          "provider": {
+            "@id": "https://youraccountantmatch.com.au/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://youraccountantmatch.com.au/locations/melbourne#webpage",
+          "url": "https://youraccountantmatch.com.au/locations/melbourne",
+          "name": "Specialist Accountant Melbourne | Your Accountant Match",
+          "description": "Find a specialist accountant in Melbourne. TPB-registered local tax pros for business, property & SMSF. Free matching, one vetted accountant.",
+          "isPartOf": {
+            "@id": "https://youraccountantmatch.com.au/#website"
+          },
+          "about": {
+            "@id": "https://youraccountantmatch.com.au/locations/melbourne#city"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://youraccountantmatch.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://youraccountantmatch.com.au/locations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Melbourne",
+                "item": "https://youraccountantmatch.com.au/locations/melbourne"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Accountant matching in Melbourne",
+      "description": "From the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses.",
+      "areaServed": [
+        "Melbourne CBD & Southbank",
+        "Richmond & South Yarra",
+        "Carlton & Fitzroy",
+        "Glen Waverley & Mount Waverley",
+        "Frankston & Mornington Peninsula",
+        "Werribee & Point Cook"
+      ],
+      "knowsAbout": [
+        "Victorian Payroll Tax",
+        "Victorian Land Tax",
+        "Professional-Services & Finance Economy",
+        "Western Growth & Construction",
+        "Professional Services & Finance",
+        "Healthcare & Medical",
+        "Education & Research",
+        "Construction & Development",
+        "Payroll tax",
+        "Land tax",
+        "Stamp duty",
+        "WorkCover premium"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Melbourne"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find a registered accountant in Melbourne through your service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all the Melbourne accountants in your network registered tax agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every accounting firm in our Melbourne network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Victorian and Australian Tax Office (ATO) standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a Melbourne accountant help with both my personal tax return and my small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many Melbourne firms handle both individual returns and business accounting. Whether you need a personal tax return in Richmond, company tax structuring in South Yarra, or SMSF advice in Box Hill, we match you with a Melbourne specialist suited to your exact requirements across the CBD and surrounding suburbs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need an accountant who understands Melbourne's property market and Victorian tax rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Melbourne's property landscape and Victorian state taxes — stamp duty, land tax assessed by the State Revenue Office on land owned at midnight on 31 December, and the absentee owner surcharge — interact with federal tax in complex ways. We match you with a Melbourne accountant who understands Victoria's rules and how they apply to investment property, negative gearing changes and capital gains across the Melbourne market."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a Melbourne accountant contact me after I complete the questionnaire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Melbourne firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Melbourne office or by phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Melbourne matching service really free with no obligation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Melbourne accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many firms in our Melbourne network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Melbourne CBD or online service during your questionnaire — whichever suits your schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover all of Melbourne or just the CBD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover all of Melbourne — from the CBD and inner suburbs like Fitzroy and Carlton to Box Hill, Brighton, St Kilda and the south-eastern growth corridor. Enter your postcode in the questionnaire and we will match you with a vetted Melbourne accountant whose services fit your area, whether you are in the city centre or the outer suburbs."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find a SpecialistAccountant in MelbourneWe’ll find your match"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Accounting help across Melbourne"
+    },
+    {
+      "level": 3,
+      "text": "Victorian Payroll Tax"
+    },
+    {
+      "level": 3,
+      "text": "Victorian Land Tax"
+    },
+    {
+      "level": 3,
+      "text": "Professional-Services & Finance Economy"
+    },
+    {
+      "level": 3,
+      "text": "Western Growth & Construction"
+    },
+    {
+      "level": 2,
+      "text": "Melbourne's commercial landscape"
+    },
+    {
+      "level": 2,
+      "text": "Heart of Victoria: culture, innovation and urban energy"
+    },
+    {
+      "level": 2,
+      "text": "A thriving commercial landscape: from high-street retail to corporate hubs"
+    },
+    {
+      "level": 2,
+      "text": "Victoria tax & duties at a glance"
+    },
+    {
+      "level": 2,
+      "text": "Accounting needs across Melbourne's districts"
+    },
+    {
+      "level": 3,
+      "text": "Melbourne CBD & Southbank"
+    },
+    {
+      "level": 3,
+      "text": "Richmond & South Yarra"
+    },
+    {
+      "level": 3,
+      "text": "Carlton & Fitzroy"
+    },
+    {
+      "level": 3,
+      "text": "Glen Waverley & Mount Waverley"
+    },
+    {
+      "level": 3,
+      "text": "Frankston & Mornington Peninsula"
+    },
+    {
+      "level": 3,
+      "text": "Werribee & Point Cook"
+    },
+    {
+      "level": 2,
+      "text": "The western & northern growth corridor"
+    },
+    {
+      "level": 3,
+      "text": "Werribee & Wyndham"
+    },
+    {
+      "level": 3,
+      "text": "Craigieburn & Mickleham"
+    },
+    {
+      "level": 3,
+      "text": "Sunshine & Melton"
+    },
+    {
+      "level": 3,
+      "text": "Cranbourne & Clyde"
+    },
+    {
+      "level": 2,
+      "text": "Why a Melbourne accountant matters"
+    },
+    {
+      "level": 3,
+      "text": "Accounting across Melbourne"
+    },
+    {
+      "level": 2,
+      "text": "Real situations we help resolve across Melbourne"
+    },
+    {
+      "level": 3,
+      "text": "A South Yarra specialist moving from sole trader to a company"
+    },
+    {
+      "level": 3,
+      "text": "A Werribee builder managing progress-payment GST"
+    },
+    {
+      "level": 3,
+      "text": "A Richmond hospitality group consolidating payroll"
+    },
+    {
+      "level": 3,
+      "text": "An investor with inner-east and western-growth properties"
+    },
+    {
+      "level": 2,
+      "text": "Key industries across Melbourne"
+    },
+    {
+      "level": 3,
+      "text": "Professional Services & Finance"
+    },
+    {
+      "level": 3,
+      "text": "Healthcare & Medical"
+    },
+    {
+      "level": 3,
+      "text": "Education & Research"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Development"
+    },
+    {
+      "level": 2,
+      "text": "Key tax dates & deadlines for Melbourne"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "Your accountant match, made simple"
+    },
+    {
+      "level": 3,
+      "text": "Answer a short sixty second questionnaire"
+    },
+    {
+      "level": 3,
+      "text": "We match you with an accountant that fits your needs"
+    },
+    {
+      "level": 3,
+      "text": "A callback from your matched accountant"
+    },
+    {
+      "level": 2,
+      "text": "The right accountant makes a real difference"
+    },
+    {
+      "level": 2,
+      "text": "Choosing the right accountant saves you — here's why"
+    },
+    {
+      "level": 2,
+      "text": "Matching accountants to every kind of client"
+    },
+    {
+      "level": 2,
+      "text": "Industries We Match in Melbourne"
+    },
+    {
+      "level": 3,
+      "text": "Real Estate & Property"
+    },
+    {
+      "level": 3,
+      "text": "Retail & E-Commerce"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Tradies"
+    },
+    {
+      "level": 3,
+      "text": "Medical & Healthcare"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Melbourne Accountants"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 2,
+      "text": "Suburbs Serviced in Melbourne"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions — Melbourne"
+    },
+    {
+      "level": 3,
+      "text": "Other Capital Cities We Service"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Find a SpecialistAccountant in MelbourneWe’ll find your match",
+      "images": 21,
+      "text": "Home/Locations/MelbourneLOCAL. VETTED. MATCHED TO YOU.Find a SpecialistAccountant in MelbourneWe’ll find your matchConnect with TPB-registered tax professionals across Melbourne who understand local business, property, and complex tax requirements.Navigating business growth, trust structures, or multi-year tax backlogs in Melbourne requires an accountant who knows local market dynamics. Whether you operate a service business in the CBD, manage property investments across the inner east, or need urgent lodgment help, our network matches you with vetted Melbourne tax specialists tailored to your exact needs.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Melbourne\",\"description\":\"From the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses.\",\"areaServed\":[\"Melbourne CBD & Southbank\",\"Richmond & South Yarra\",\"Carlton & Fitzroy\",\"Glen Waverley & Mount Waverley\",\"Frankston & Mornington Peninsula\",\"Werribee & Point Cook\"],\"knowsAbout\":[\"Victorian Payroll Tax\",\"Victorian Land Tax\",\"Professional-Services & Finance Economy\",\"Western Growth & Construction\",\"Professional Services & Finance\",\"Healthcare & Medical\",\"Education & Research\",\"Construction & Development\",\"Payroll tax\",\"Land tax\",\"Stamp duty\",\"WorkCover premium\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Melbourne\"]}MELBOURNEAccounting help across MelbourneFrom the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses.Victorian Payroll TaxVIC payroll tax applies once annual wages exceed the threshold. Melbourne professional-services groups, construction companies and hospitality operators with multiple entities commonly need grouping advice as they scale across the metropolitan area.Victorian Land TaxVictoria levies land tax on investment property above the threshold, with surcharges for absentee owners. Melbourne investors holding property across the inner east, bayside and growth corridors frequently need aggregation and surcharge advice.Professional-Services & Finance EconomyMelbourne is one of Australia's leading finance and professional-services hubs. Trust and company structuring, PSI rules for consultants, FBT on employee packages and the tax position of service-trust arrangements are everyday needs for CBD firms.Western Growth & ConstructionMelbourne's western and northern growth corridors are among Australia's fastest-developing regions. New-business setup, construction-stage GST, contractor compliance and STP2 onboarding are everyday needs for the expanding residential and commercial base.MELBOURNE COMMERCEMelbourne's commercial landscapeA closer look at the culture, precincts and industries that make Melbourne Australia's economic heartland — and the tax realities that come with operating here.Heart of Victoria: culture, innovation and urban energyStretching from the iconic laneways of the CBD to thriving hubs like Richmond, South Yarra and Carlton, Melbourne is Australia's cultural and economic heartland. Stepping into Bourke Street Mall or winding through Degraves Street feels like an invitation into creativity: the aroma of specialty espresso, boutique retail window displays and world-class dining fill the air while entrepreneurs and professionals gather in heritage arcades and modern co-working spaces to discuss growth, strategy and community.Beyond the inner-city core, Melbourne's surrounding urban pockets capture a unique balance of heritage character and rapid development. Tree-lined avenues in Hawthorn and Brunswick house a mix of Victorian terraces, innovative startups and family-owned enterprises, supported by bustling commercial strips along Chapel Street and Sydney Road. Nearby innovation precincts bring tech and creative opportunities right to the doorstep. It is a metropolis where long-standing commercial legacies thrive alongside tech innovators, creating a distinct regional warmth that makes doing business here deeply collaborative.A thriving commercial landscape: from high-street retail to corporate hubsWhile Melbourne is world-famous for its arts, coffee culture and hospitality, the broader 3000 and inner-postcode ecosystem represents a massive economic driver. The business landscape is incredibly diverse, spanning high-volume dining, professional consultancies, medical practices and specialised tech firms. Busy retail and dining corridors demand agile financial management, where operators manage daily operational needs like point-of-sale integrations, inventory management and casual workforce compliance under Single Touch Payroll (STP Phase 2).Surrounding commercial hubs and nearby light-industrial corridors drive logistics, software development and professional services. Here, firm directors manage contractor workforces, software R&D incentives and corporate structuring, relying heavily on Personal Services Income (PSI) rules, Division 7A director loans and quarterly BAS reporting. Meanwhile, a strong residential and commercial property market sees local property investors and family trusts seeking tailored guidance on Capital Gains Tax (CGT) planning, commercial land tax and wealth protection. Combining commercial power with creative energy, Melbourne remains a premier destination for long-term business success.VICTORIA TAX SNAPSHOTVictoria tax & duties at a glanceMelbourne businesses and investors work within Victoria's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in VictoriaAdministered byPayroll taxApplies once an employer's annual Australian wages exceed the Victorian threshold, set each financial year; grouped entities must consolidate wages.State Revenue Office (SRO) VictoriaLand taxLevied on the unimproved value of taxable land above the threshold; absentee owners pay an additional surcharge.State Revenue Office (SRO) VictoriaStamp dutyPayable on property transfers; first-home-buyer and principal-place-of-residence concessions may apply.State Revenue Office (SRO) VictoriaWorkCover premiumEmployers pay a workers' compensation premium based on remuneration and industry rate, reconciled annually.WorkSafe VictoriaRates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.MELBOURNE DISTRICTSAccounting needs across Melbourne's districtsMelbourne is a city of distinct districts — the CBD and Southbank core, the inner suburbs, the established eastern and bayside corridors, and the fast-growing western and northern fringe. We match you to an accountant who works in the part of Melbourne that aligns with what you do.3000Melbourne CBD & SouthbankThe commercial and finance heart of the city with a dense cluster of banking, legal, consulting and corporate firms. Accountants handle corporate tax, FBT, transfer pricing and group structuring.3121 / 3141Richmond & South YarraAn established professional and hospitality precinct. Accountants serve medical specialists, agency owners and high-income residents with trust structures, CGT planning and investment-property advice.3053 / 3065Carlton & FitzroyThe inner-north creative, education and hospitality strip. Firms work with cafes, agencies, academics and startups — handling GST registration and project-based cash flow.3150 / 3149Glen Waverley & Mount WaverleyA major eastern professional and small-business hub. BAS cycles, payroll and investment-property advice are common needs for the established eastern suburbs.3199Frankston & Mornington PeninsulaA bayside residential and small-business region with a growing tourism and lifestyle base. BAS cycles, contractor compliance and investment-property advice are common.3030Werribee & Point CookA fast-growing western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.WESTERN & NORTHERN GROWTHThe western & northern growth corridorMelbourne's western and northern corridors are among Australia's fastest-growing regions, driven by housing development and infrastructure investment. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and investment-property structuring.3030Werribee & WyndhamThe western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.3064Craigieburn & MicklehamA fast-growing northern residential corridor with new small-business and retail development. BAS cycles, structure advice and payroll setup are common.3020Sunshine & MeltonA western industrial and residential precinct with a growing trades and small-business base. Fleet depreciation, contractor compliance and BAS cycles are everyday needs.3977Cranbourne & ClydeA fast-growing southeastern growth corridor with new residential and commercial development. New-business setup, GST registration and investment-property advice are common.LOCAL KNOWLEDGEWhy a Melbourne accountant mattersMelbourne is more than a postcode. From the finance and consulting core of the CBD to the bayside lifestyle corridor and the fast-growing western and northern fringe, local tax knowledge matters. A Melbourne accountant understands the Victorian economy, payroll and land tax rules, and the mix of professional services, healthcare, education, construction and small business that make this city unique.Accounting across MelbourneWe match you with a vetted local accountant serving Melbourne and surrounding suburbs — from the CBD and Southbank to Richmond, Glen Waverley, Frankston, Werribee and the growth corridors.LOCAL SCENARIOSReal situations we help resolve across MelbournePractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A South Yarra specialist moving from sole trader to a companyTrust and company structuring, GST registration changes and income splitting help a high-earning medical specialist protect assets and manage tax as their practice grows.A Werribee builder managing progress-payment GSTProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the western growth corridor expands.A Richmond hospitality group consolidating payrollThree venues across Richmond and South Yarra can trigger Victorian payroll-tax grouping — a local accountant consolidates wages and advises on FBT for staff meals.An investor with inner-east and western-growth propertiesAggregation advice across multiple investment properties — including the absentee-owner surcharge — keeps SRO land tax correctly managed before 31 December.MELBOURNE INDUSTRIESKey industries across MelbourneMelbourne's economy is anchored by professional services and finance, healthcare, education and construction — each with tax rules that reward specialist knowledge.Professional Services & FinanceCBD, Southbank, South YarraMelbourne is one of Australia's leading finance and consulting hubs. Accountants handle corporate tax, FBT, trust and company structuring, PSI rules for consultants and the tax position of service-trust arrangements.Healthcare & MedicalParkville, Clayton, RichmondMelbourne's hospital and biomedical precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Education & ResearchParkville, Carlton, ClaytonMelbourne's universities and research institutions anchor a knowledge economy. Accountants handle grant accounting, R&D incentives and the structuring of research and consulting businesses.Construction & DevelopmentWerribee, Craigieburn, CranbourneMelbourne's growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance, capital-allowances planning and STP2 onboarding.MELBOURNE DEADLINESKey tax dates & deadlines for MelbourneVictorian-specific obligations sit alongside federal deadlines. A local Melbourne accountant keeps both calendars aligned so nothing slips.VIC businesses on monthly GST must lodge BAS by the 21st of the following month — Melbourne hospitality and retail operators should reconcile point-of-sale data early.VIC payroll tax annual reconciliation is due each July; grouped entities across Melbourne locations must consolidate wages before filing.Melbourne property investors should review their VIC land tax position before 31 December — the SRO assesses land ownership, aggregation and absentee-owner status as of midnight on 31 December each year.Growth-corridor construction businesses should reconcile contractor ABN and progress-payment records before each BAS period to manage GST and payroll obligations.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in MelbourneGet paired with an accountant in Melbourne who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.Real Estate & PropertyInner-city investors, VIC land tax (assessed 31 Dec) & CGT planning.View Real Estate & Property in MelbourneRetail & E-CommerceDTC brands & Brunswick/Chapel Street retailers, multi-channel GST.View Retail & E-Commerce in MelbourneConstruction & TradiesBuilders across Metro Tunnel & suburban infill projects.View Construction & Tradies in MelbourneMedical & HealthcareGPs & allied health in the Parkville biomedical precinct.View Medical & Healthcare in MelbourneTRUST & VETTINGTrust and vetting standards for Melbourne AccountantsWhen you're looking for an accountant in Melbourne, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Melbourne accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Melbourne and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Melbourne accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Melbourne accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in MelbourneSearch your suburb or postcode below to confirm our network's local coverage across Melbourne.Melbourne CBD3000South Melbourne3205Richmond3121South Yarra3141Prahran3181Hawthorn3122Kew3101Camberwell3124Brunswick3056Fitzroy3065Carlton3053Port Melbourne3207St Kilda3182Elwood3184Brighton3186Malvern3144Glen Iris3146Balwyn3103Doncaster3108Box Hill3128{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Melbourne through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Melbourne accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Melbourne network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Victorian and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Melbourne accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Melbourne firms handle both individual returns and business accounting. Whether you need a personal tax return in Richmond, company tax structuring in South Yarra, or SMSF advice in Box Hill, we match you with a Melbourne specialist suited to your exact requirements across the CBD and surrounding suburbs.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Melbourne's property market and Victorian tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Melbourne's property landscape and Victorian state taxes — stamp duty, land tax assessed by the State Revenue Office on land owned at midnight on 31 December, and the absentee owner surcharge — interact with federal tax in complex ways. We match you with a Melbourne accountant who understands Victoria's rules and how they apply to investment property, negative gearing changes and capital gains across the Melbourne market.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Melbourne accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Melbourne firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Melbourne office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Melbourne matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Melbourne accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Melbourne network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Melbourne CBD or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Melbourne or just the CBD?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Melbourne — from the CBD and inner suburbs like Fitzroy and Carlton to Box Hill, Brighton, St Kilda and the south-eastern growth corridor. Enter your postcode in the questionnaire and we will match you with a vetted Melbourne accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — MelbourneEverything you need to know about getting matched with a top accountant in Melbourne, VIC.How do I find a registered accountant in Melbourne through your service?Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Melbourne accountants in your network registered tax agents?Can a Melbourne accountant help with both my personal tax return and my small business?What if I need an accountant who understands Melbourne's property market and Victorian tax rules?How quickly will a Melbourne accountant contact me after I complete the questionnaire?Is the Melbourne matching service really free with no obligation?Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit?Do you cover all of Melbourne or just the CBD?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "Accountant matching services in Melbourne",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/fd260ce9-b10c-438f-a470-f060c770d7b4.png",
+      "alt": "Melbourne cityscape at golden hour showing Flinders Street Station, the Yarra River and the CBD skyline — Australia's finance and professional-services capital",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/24c8da79-5af0-45a8-9a5b-884109b3f2d8.png",
+      "alt": "Melbourne's Southbank promenade along the Yarra River at dusk with the Eureka Tower — the backdrop for the city's finance, healthcare and cultural economy",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/c211dca9-f2cb-4c44-b66b-6092b101aab7.png",
+      "alt": "Our 3 Step Matching Process: 1. Tell us what you need, 2. We find your match, 3. Make contact",
+      "width": "2048",
+      "height": "872"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921bc551-dced-40f8-bb4f-751bf60d2d9f.png",
+      "alt": "Right Support Brighter Tomorrow — Coffee mug on desk",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/9e5f6801-9fe1-47b2-9abe-11f97f0b536e.png",
+      "alt": "The Difference: Better outcomes, Save time, Save money, Peace of mind",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2d1d6291-ddd6-4e8d-9d54-1d991b16c063.png",
+      "alt": "Matching accountants to every kind of client — Families, Small Business, Rural, SMSF, Professionals, Tradies, Property Investors, Start-ups, Charities, Trusts",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/industry/real-estate-property/melbourne",
+      "text": "Real Estate & PropertyInner-city investors, VIC land tax (assessed 31 Dec) & CGT planning.View Real Estate & Property in Melbourne"
+    },
+    {
+      "href": "/industry/retail-ecommerce/melbourne",
+      "text": "Retail & E-CommerceDTC brands & Brunswick/Chapel Street retailers, multi-channel GST.View Retail & E-Commerce in Melbourne"
+    },
+    {
+      "href": "/industry/construction-tradies/melbourne",
+      "text": "Construction & TradiesBuilders across Metro Tunnel & suburban infill projects.View Construction & Tradies in Melbourne"
+    },
+    {
+      "href": "/industry/medical-healthcare/melbourne",
+      "text": "Medical & HealthcareGPs & allied health in the Parkville biomedical precinct.View Medical & Healthcare in Melbourne"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "tpb.gov.au"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Locations/MelbourneLOCAL. VETTED. MATCHED TO YOU.Find a SpecialistAccountant in MelbourneWe’ll find your matchConnect with TPB-registered tax professionals across Melbourne who understand local business, property, and complex tax requirements.Navigating business growth, trust structures, or multi-year tax backlogs in Melbourne requires an accountant who knows local market dynamics. Whether you operate a service business in the CBD, manage property investments across the inner east, or need urgent lodgment help, our network matches you with vetted Melbourne tax specialists tailored to your exact needs.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Melbourne\",\"description\":\"From the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses.\",\"areaServed\":[\"Melbourne CBD & Southbank\",\"Richmond & South Yarra\",\"Carlton & Fitzroy\",\"Glen Waverley & Mount Waverley\",\"Frankston & Mornington Peninsula\",\"Werribee & Point Cook\"],\"knowsAbout\":[\"Victorian Payroll Tax\",\"Victorian Land Tax\",\"Professional-Services & Finance Economy\",\"Western Growth & Construction\",\"Professional Services & Finance\",\"Healthcare & Medical\",\"Education & Research\",\"Construction & Development\",\"Payroll tax\",\"Land tax\",\"Stamp duty\",\"WorkCover premium\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Melbourne\"]}MELBOURNEAccounting help across MelbourneFrom the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses.Victorian Payroll TaxVIC payroll tax applies once annual wages exceed the threshold. Melbourne professional-services groups, construction companies and hospitality operators with multiple entities commonly need grouping advice as they scale across the metropolitan area.Victorian Land TaxVictoria levies land tax on investment property above the threshold, with surcharges for absentee owners. Melbourne investors holding property across the inner east, bayside and growth corridors frequently need aggregation and surcharge advice.Professional-Services & Finance EconomyMelbourne is one of Australia's leading finance and professional-services hubs. Trust and company structuring, PSI rules for consultants, FBT on employee packages and the tax position of service-trust arrangements are everyday needs for CBD firms.Western Growth & ConstructionMelbourne's western and northern growth corridors are among Australia's fastest-developing regions. New-business setup, construction-stage GST, contractor compliance and STP2 onboarding are everyday needs for the expanding residential and commercial base.MELBOURNE COMMERCEMelbourne's commercial landscapeA closer look at the culture, precincts and industries that make Melbourne Australia's economic heartland — and the tax realities that come with operating here.Heart of Victoria: culture, innovation and urban energyStretching from the iconic laneways of the CBD to thriving hubs like Richmond, South Yarra and Carlton, Melbourne is Australia's cultural and economic heartland. Stepping into Bourke Street Mall or winding through Degraves Street feels like an invitation into creativity: the aroma of specialty espresso, boutique retail window displays and world-class dining fill the air while entrepreneurs and professionals gather in heritage arcades and modern co-working spaces to discuss growth, strategy and community.Beyond the inner-city core, Melbourne's surrounding urban pockets capture a unique balance of heritage character and rapid development. Tree-lined avenues in Hawthorn and Brunswick house a mix of Victorian terraces, innovative startups and family-owned enterprises, supported by bustling commercial strips along Chapel Street and Sydney Road. Nearby innovation precincts bring tech and creative opportunities right to the doorstep. It is a metropolis where long-standing commercial legacies thrive alongside tech innovators, creating a distinct regional warmth that makes doing business here deeply collaborative.A thriving commercial landscape: from high-street retail to corporate hubsWhile Melbourne is world-famous for its arts, coffee culture and hospitality, the broader 3000 and inner-postcode ecosystem represents a massive economic driver. The business landscape is incredibly diverse, spanning high-volume dining, professional consultancies, medical practices and specialised tech firms. Busy retail and dining corridors demand agile financial management, where operators manage daily operational needs like point-of-sale integrations, inventory management and casual workforce compliance under Single Touch Payroll (STP Phase 2).Surrounding commercial hubs and nearby light-industrial corridors drive logistics, software development and professional services. Here, firm directors manage contractor workforces, software R&D incentives and corporate structuring, relying heavily on Personal Services Income (PSI) rules, Division 7A director loans and quarterly BAS reporting. Meanwhile, a strong residential and commercial property market sees local property investors and family trusts seeking tailored guidance on Capital Gains Tax (CGT) planning, commercial land tax and wealth protection. Combining commercial power with creative energy, Melbourne remains a premier destination for long-term business success.VICTORIA TAX SNAPSHOTVictoria tax & duties at a glanceMelbourne businesses and investors work within Victoria's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in VictoriaAdministered byPayroll taxApplies once an employer's annual Australian wages exceed the Victorian threshold, set each financial year; grouped entities must consolidate wages.State Revenue Office (SRO) VictoriaLand taxLevied on the unimproved value of taxable land above the threshold; absentee owners pay an additional surcharge.State Revenue Office (SRO) VictoriaStamp dutyPayable on property transfers; first-home-buyer and principal-place-of-residence concessions may apply.State Revenue Office (SRO) VictoriaWorkCover premiumEmployers pay a workers' compensation premium based on remuneration and industry rate, reconciled annually.WorkSafe VictoriaRates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.MELBOURNE DISTRICTSAccounting needs across Melbourne's districtsMelbourne is a city of distinct districts — the CBD and Southbank core, the inner suburbs, the established eastern and bayside corridors, and the fast-growing western and northern fringe. We match you to an accountant who works in the part of Melbourne that aligns with what you do.3000Melbourne CBD & SouthbankThe commercial and finance heart of the city with a dense cluster of banking, legal, consulting and corporate firms. Accountants handle corporate tax, FBT, transfer pricing and group structuring.3121 / 3141Richmond & South YarraAn established professional and hospitality precinct. Accountants serve medical specialists, agency owners and high-income residents with trust structures, CGT planning and investment-property advice.3053 / 3065Carlton & FitzroyThe inner-north creative, education and hospitality strip. Firms work with cafes, agencies, academics and startups — handling GST registration and project-based cash flow.3150 / 3149Glen Waverley & Mount WaverleyA major eastern professional and small-business hub. BAS cycles, payroll and investment-property advice are common needs for the established eastern suburbs.3199Frankston & Mornington PeninsulaA bayside residential and small-business region with a growing tourism and lifestyle base. BAS cycles, contractor compliance and investment-property advice are common.3030Werribee & Point CookA fast-growing western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.WESTERN & NORTHERN GROWTHThe western & northern growth corridorMelbourne's western and northern corridors are among Australia's fastest-growing regions, driven by housing development and infrastructure investment. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and investment-property structuring.3030Werribee & WyndhamThe western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.3064Craigieburn & MicklehamA fast-growing northern residential corridor with new small-business and retail development. BAS cycles, structure advice and payroll setup are common.3020Sunshine & MeltonA western industrial and residential precinct with a growing trades and small-business base. Fleet depreciation, contractor compliance and BAS cycles are everyday needs.3977Cranbourne & ClydeA fast-growing southeastern growth corridor with new residential and commercial development. New-business setup, GST registration and investment-property advice are common.LOCAL KNOWLEDGEWhy a Melbourne accountant mattersMelbourne is more than a postcode. From the finance and consulting core of the CBD to the bayside lifestyle corridor and the fast-growing western and northern fringe, local tax knowledge matters. A Melbourne accountant understands the Victorian economy, payroll and land tax rules, and the mix of professional services, healthcare, education, construction and small business that make this city unique.Accounting across MelbourneWe match you with a vetted local accountant serving Melbourne and surrounding suburbs — from the CBD and Southbank to Richmond, Glen Waverley, Frankston, Werribee and the growth corridors.LOCAL SCENARIOSReal situations we help resolve across MelbournePractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A South Yarra specialist moving from sole trader to a companyTrust and company structuring, GST registration changes and income splitting help a high-earning medical specialist protect assets and manage tax as their practice grows.A Werribee builder managing progress-payment GSTProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the western growth corridor expands.A Richmond hospitality group consolidating payrollThree venues across Richmond and South Yarra can trigger Victorian payroll-tax grouping — a local accountant consolidates wages and advises on FBT for staff meals.An investor with inner-east and western-growth propertiesAggregation advice across multiple investment properties — including the absentee-owner surcharge — keeps SRO land tax correctly managed before 31 December.MELBOURNE INDUSTRIESKey industries across MelbourneMelbourne's economy is anchored by professional services and finance, healthcare, education and construction — each with tax rules that reward specialist knowledge.Professional Services & FinanceCBD, Southbank, South YarraMelbourne is one of Australia's leading finance and consulting hubs. Accountants handle corporate tax, FBT, trust and company structuring, PSI rules for consultants and the tax position of service-trust arrangements.Healthcare & MedicalParkville, Clayton, RichmondMelbourne's hospital and biomedical precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Education & ResearchParkville, Carlton, ClaytonMelbourne's universities and research institutions anchor a knowledge economy. Accountants handle grant accounting, R&D incentives and the structuring of research and consulting businesses.Construction & DevelopmentWerribee, Craigieburn, CranbourneMelbourne's growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance, capital-allowances planning and STP2 onboarding.MELBOURNE DEADLINESKey tax dates & deadlines for MelbourneVictorian-specific obligations sit alongside federal deadlines. A local Melbourne accountant keeps both calendars aligned so nothing slips.VIC businesses on monthly GST must lodge BAS by the 21st of the following month — Melbourne hospitality and retail operators should reconcile point-of-sale data early.VIC payroll tax annual reconciliation is due each July; grouped entities across Melbourne locations must consolidate wages before filing.Melbourne property investors should review their VIC land tax position before 31 December — the SRO assesses land ownership, aggregation and absentee-owner status as of midnight on 31 December each year.Growth-corridor construction businesses should reconcile contractor ABN and progress-payment records before each BAS period to manage GST and payroll obligations.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in MelbourneGet paired with an accountant in Melbourne who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.Real Estate & PropertyInner-city investors, VIC land tax (assessed 31 Dec) & CGT planning.View Real Estate & Property in MelbourneRetail & E-CommerceDTC brands & Brunswick/Chapel Street retailers, multi-channel GST.View Retail & E-Commerce in MelbourneConstruction & TradiesBuilders across Metro Tunnel & suburban infill projects.View Construction & Tradies in MelbourneMedical & HealthcareGPs & allied health in the Parkville biomedical precinct.View Medical & Healthcare in MelbourneTRUST & VETTINGTrust and vetting standards for Melbourne AccountantsWhen you're looking for an accountant in Melbourne, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Melbourne accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Melbourne and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Melbourne accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Melbourne accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in MelbourneSearch your suburb or postcode below to confirm our network's local coverage across Melbourne.Melbourne CBD3000South Melbourne3205Richmond3121South Yarra3141Prahran3181Hawthorn3122Kew3101Camberwell3124Brunswick3056Fitzroy3065Carlton3053Port Melbourne3207St Kilda3182Elwood3184Brighton3186Malvern3144Glen Iris3146Balwyn3103Doncaster3108Box Hill3128{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Melbourne through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Melbourne accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Melbourne network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with Victorian and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Melbourne accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Melbourne firms handle both individual returns and business accounting. Whether you need a personal tax return in Richmond, company tax structuring in South Yarra, or SMSF advice in Box Hill, we match you with a Melbourne specialist suited to your exact requirements across the CBD and surrounding suburbs.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Melbourne's property market and Victorian tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Melbourne's property landscape and Victorian state taxes — stamp duty, land tax assessed by the State Revenue Office on land owned at midnight on 31 December, and the absentee owner surcharge — interact with federal tax in complex ways. We match you with a Melbourne accountant who understands Victoria's rules and how they apply to investment property, negative gearing changes and capital gains across the Melbourne market.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Melbourne accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched Melbourne firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Melbourne office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Melbourne matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched Melbourne accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Melbourne network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in the Melbourne CBD or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Melbourne or just the CBD?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Melbourne — from the CBD and inner suburbs like Fitzroy and Carlton to Box Hill, Brighton, St Kilda and the south-eastern growth corridor. Enter your postcode in the questionnaire and we will match you with a vetted Melbourne accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — MelbourneEverything you need to know about getting matched with a top accountant in Melbourne, VIC.How do I find a registered accountant in Melbourne through your service?Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Melbourne accountants in your network registered tax agents?Can a Melbourne accountant help with both my personal tax return and my small business?What if I need an accountant who understands Melbourne's property market and Victorian tax rules?How quickly will a Melbourne accountant contact me after I complete the questionnaire?Is the Melbourne matching service really free with no obligation?Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit?Do you cover all of Melbourne or just the CBD?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Locations / Melbourne LOCAL. VETTED. MATCHED TO YOU. Find a Specialist Accountant in Melbourne We’ll find your match Connect with TPB-registered tax professionals across Melbourne who understand local business, property, and complex tax requirements. Navigating business growth, trust structures, or multi-year tax backlogs in Melbourne requires an accountant who knows local market dynamics. Whether you operate a service business in the CBD, manage property investments across the inner east, or need urgent lodgment help, our network matches you with vetted Melbourne tax specialists tailored to your exact needs. Free matching service Vetted accountants No obligation Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. MELBOURNE Accounting help across Melbourne From the CBD and Southbank to Richmond, Carlton, the eastern suburbs and the western growth corridor, Melbourne is Australia's second-largest city and a national finance, professional-services and education hub. We match you with a vetted local accountant who knows your part of the city — from CBD consultants to Richmond hospitality and Frankston small businesses. Victorian Payroll Tax VIC payroll tax applies once annual wages exceed the threshold. Melbourne professional-services groups, construction companies and hospitality operators with multiple entities commonly need grouping advice as they scale across the metropolitan area. Victorian Land Tax Victoria levies land tax on investment property above the threshold, with surcharges for absentee owners. Melbourne investors holding property across the inner east, bayside and growth corridors frequently need aggregation and surcharge advice. Professional-Services & Finance Economy Melbourne is one of Australia's leading finance and professional-services hubs. Trust and company structuring, PSI rules for consultants, FBT on employee packages and the tax position of service-trust arrangements are everyday needs for CBD firms. Western Growth & Construction Melbourne's western and northern growth corridors are among Australia's fastest-developing regions. New-business setup, construction-stage GST, contractor compliance and STP2 onboarding are everyday needs for the expanding residential and commercial base. MELBOURNE COMMERCE Melbourne's commercial landscape A closer look at the culture, precincts and industries that make Melbourne Australia's economic heartland — and the tax realities that come with operating here. Heart of Victoria: culture, innovation and urban energy Stretching from the iconic laneways of the CBD to thriving hubs like Richmond, South Yarra and Carlton, Melbourne is Australia's cultural and economic heartland. Stepping into Bourke Street Mall or winding through Degraves Street feels like an invitation into creativity: the aroma of specialty espresso, boutique retail window displays and world-class dining fill the air while entrepreneurs and professionals gather in heritage arcades and modern co-working spaces to discuss growth, strategy and community. Beyond the inner-city core, Melbourne's surrounding urban pockets capture a unique balance of heritage character and rapid development. Tree-lined avenues in Hawthorn and Brunswick house a mix of Victorian terraces, innovative startups and family-owned enterprises, supported by bustling commercial strips along Chapel Street and Sydney Road. Nearby innovation precincts bring tech and creative opportunities right to the doorstep. It is a metropolis where long-standing commercial legacies thrive alongside tech innovators, creating a distinct regional warmth that makes doing business here deeply collaborative. A thriving commercial landscape: from high-street retail to corporate hubs While Melbourne is world-famous for its arts, coffee culture and hospitality, the broader 3000 and inner-postcode ecosystem represents a massive economic driver. The business landscape is incredibly diverse, spanning high-volume dining, professional consultancies, medical practices and specialised tech firms. Busy retail and dining corridors demand agile financial management, where operators manage daily operational needs like point-of-sale integrations, inventory management and casual workforce compliance under Single Touch Payroll (STP Phase 2). Surrounding commercial hubs and nearby light-industrial corridors drive logistics, software development and professional services. Here, firm directors manage contractor workforces, software R&D incentives and corporate structuring, relying heavily on Personal Services Income (PSI) rules, Division 7A director loans and quarterly BAS reporting. Meanwhile, a strong residential and commercial property market sees local property investors and family trusts seeking tailored guidance on Capital Gains Tax (CGT) planning, commercial land tax and wealth protection. Combining commercial power with creative energy, Melbourne remains a premier destination for long-term business success. VICTORIA TAX SNAPSHOT Victoria tax & duties at a glance Melbourne businesses and investors work within Victoria's state tax framework. These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority. OBLIGATION HOW IT WORKS IN VICTORIA ADMINISTERED BY Payroll tax Applies once an employer's annual Australian wages exceed the Victorian threshold, set each financial year; grouped entities must consolidate wages. State Revenue Office (SRO) Victoria Land tax Levied on the unimproved value of taxable land above the threshold; absentee owners pay an additional surcharge. State Revenue Office (SRO) Victoria Stamp duty Payable on property transfers; first-home-buyer and principal-place-of-residence concessions may apply. State Revenue Office (SRO) Victoria WorkCover premium Employers pay a workers' compensation premium based on remuneration and industry rate, reconciled annually. WorkSafe Victoria Rates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting. MELBOURNE DISTRICTS Accounting needs across Melbourne's districts Melbourne is a city of distinct districts — the CBD and Southbank core, the inner suburbs, the established eastern and bayside corridors, and the fast-growing western and northern fringe. We match you to an accountant who works in the part of Melbourne that aligns with what you do. 3000 Melbourne CBD & Southbank The commercial and finance heart of the city with a dense cluster of banking, legal, consulting and corporate firms. Accountants handle corporate tax, FBT, transfer pricing and group structuring. 3121 / 3141 Richmond & South Yarra An established professional and hospitality precinct. Accountants serve medical specialists, agency owners and high-income residents with trust structures, CGT planning and investment-property advice. 3053 / 3065 Carlton & Fitzroy The inner-north creative, education and hospitality strip. Firms work with cafes, agencies, academics and startups — handling GST registration and project-based cash flow. 3150 / 3149 Glen Waverley & Mount Waverley A major eastern professional and small-business hub. BAS cycles, payroll and investment-property advice are common needs for the established eastern suburbs. 3199 Frankston & Mornington Peninsula A bayside residential and small-business region with a growing tourism and lifestyle base. BAS cycles, contractor compliance and investment-property advice are common. 3030 Werribee & Point Cook A fast-growing western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs. WESTERN & NORTHERN GROWTH The western & northern growth corridor Melbourne's western and northern corridors are among Australia's fastest-growing regions, driven by housing development and infrastructure investment. The accounting needs here are distinct: new-business setup, construction-stage GST, payroll onboarding and investment-property structuring. 3030 Werribee & Wyndham The western growth corridor with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs. 3064 Craigieburn & Mickleham A fast-growing northern residential corridor with new small-business and retail development. BAS cycles, structure advice and payroll setup are common. 3020 Sunshine & Melton A western industrial and residential precinct with a growing trades and small-business base. Fleet depreciation, contractor compliance and BAS cycles are everyday needs. 3977 Cranbourne & Clyde A fast-growing southeastern growth corridor with new residential and commercial development. New-business setup, GST registration and investment-property advice are common. LOCAL KNOWLEDGE Why a Melbourne accountant matters Melbourne is more than a postcode. From the finance and consulting core of the CBD to the bayside lifestyle corridor and the fast-growing western and northern fringe, local tax knowledge matters. A Melbourne accountant understands the Victorian economy, payroll and land tax rules, and the mix of professional services, healthcare, education, construction and small business that make this city unique. Accounting across Melbourne We match you with a vetted local accountant serving Melbourne and surrounding suburbs — from the CBD and Southbank to Richmond, Glen Waverley, Frankston, Werribee and the growth corridors. LOCAL SCENARIOS Real situations we help resolve across Melbourne Practical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead. A South Yarra specialist moving from sole trader to a company Trust and company structuring, GST registration changes and income splitting help a high-earning medical specialist protect assets and manage tax as their practice grows. A Werribee builder managing progress-payment GST Progress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the western growth corridor expands. A Richmond hospitality group consolidating payroll Three venues across Richmond and South Yarra can trigger Victorian payroll-tax grouping — a local accountant consolidates wages and advises on FBT for staff meals. An investor with inner-east and western-growth properties Aggregation advice across multiple investment properties — including the absentee-owner surcharge — keeps SRO land tax correctly managed before 31 December. MELBOURNE INDUSTRIES Key industries across Melbourne Melbourne's economy is anchored by professional services and finance, healthcare, education and construction — each with tax rules that reward specialist knowledge. Professional Services & Finance CBD, Southbank, South Yarra Melbourne is one of Australia's leading finance and consulting hubs. Accountants handle corporate tax, FBT, trust and company structuring, PSI rules for consultants and the tax position of service-trust arrangements. Healthcare & Medical Parkville, Clayton, Richmond Melbourne's hospital and biomedical precincts support a large community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances. Education & Research Parkville, Carlton, Clayton Melbourne's universities and research institutions anchor a knowledge economy. Accountants handle grant accounting, R&D incentives and the structuring of research and consulting businesses. Construction & Development Werribee, Craigieburn, Cranbourne Melbourne's growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance, capital-allowances planning and STP2 onboarding. MELBOURNE DEADLINES Key tax dates & deadlines for Melbourne Victorian-specific obligations sit alongside federal deadlines. A local Melbourne accountant keeps both calendars aligned so nothing slips. VIC businesses on monthly GST must lodge BAS by the 21st of the following month — Melbourne hospitality and retail operators should reconcile point-of-sale data early. VIC payroll tax annual reconciliation is due each July; grouped entities across Melbourne locations must consolidate wages before filing. Melbourne property investors should review their VIC land tax position before 31 December — the SRO assesses land ownership, aggregation and absentee-owner status as of midnight on 31 December each year. Growth-corridor construction businesses should reconcile contractor ABN and progress-payment records before each BAS period to manage GST and payroll obligations. A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. HOW DOES IT WORK Your accountant match, made simple Our quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Trusted accountants near you Matched, to your needs Takes 60 seconds WHY THE RIGHT MATCH MATTERS The right accountant makes a real difference Finding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs. The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change. That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for. Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. THE DIFFERENCE Choosing the right accountant saves you — here's why WHO WE HELP Matching accountants to every kind of client From sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation. SPECIALISED EXPERTISE Industries We Match in Melbourne Get paired with an accountant in Melbourne who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news. Real Estate & Property Inner-city investors, VIC land tax (assessed 31 Dec) & CGT planning. View Real Estate & Property in Melbourne Retail & E-Commerce DTC brands & Brunswick/Chapel Street retailers, multi-channel GST. View Retail & E-Commerce in Melbourne Construction & Tradies Builders across Metro Tunnel & suburban infill projects. View Construction & Tradies in Melbourne Medical & Healthcare GPs & allied health in the Parkville biomedical precinct. View Medical & Healthcare in Melbourne TRUST & VETTING Trust and vetting standards for Melbourne Accountants When you're looking for an accountant in Melbourne, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Melbourne accountant in our network to the highest professional and ethical standards in the industry. Verified professional memberships Every practising accountant we match across Melbourne and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Each Melbourne accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE Ready to find your accountant? Your needs. Your area. Your Melbourne accountant. Find My Accountant Free matching service · No obligation LOCAL COVERAGE Suburbs Serviced in Melbourne Search your suburb or postcode below to confirm our network's local coverage across Melbourne. Melbourne CBD 3000 South Melbourne 3205 Richmond 3121 South Yarra 3141 Prahran 3181 Hawthorn 3122 Kew 3101 Camberwell 3124 Brunswick 3056 Fitzroy 3065 Carlton 3053 Port Melbourne 3207 St Kilda 3182 Elwood 3184 Brighton 3186 Malvern 3144 Glen Iris 3146 Balwyn 3103 Doncaster 3108 Box Hill 3128 COMMON QUESTIONS Frequently Asked Questions — Melbourne Everything you need to know about getting matched with a top accountant in Melbourne, VIC. How do I find a registered accountant in Melbourne through your service? Enter your Melbourne postcode and what you need help with in our 60-second questionnaire. We match you with a vetted Melbourne accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au. Are all the Melbourne accountants in your network registered tax agents? Can a Melbourne accountant help with both my personal tax return and my small business? What if I need an accountant who understands Melbourne's property market and Victorian tax rules? How quickly will a Melbourne accountant contact me after I complete the questionnaire? Is the Melbourne matching service really free with no obligation? Can I get a Melbourne accountant who offers phone or video consultations instead of an office visit? Do you cover all of Melbourne or just the CBD? Other Capital Cities We Service Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. About Contact Locations Guides Privacy Terms ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": "/locations/melbourne",
+  "ms": 2807,
+  "inSitemap": false
+}

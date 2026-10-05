@@ -1,0 +1,86 @@
+{
+  "path": "/ghl-redirect",
+  "extractedAt": "2026-10-02T09:03:11.507Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/ghl-redirect",
+  "title": "Find Your Accountant Match — Questionnaire",
+  "metaDescription": "Complete the matching questionnaire to find a vetted local accountant.",
+  "canonical": "http://localhost:4173/ghl-redirect",
+  "robots": [
+    "noindex, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Find Your Accountant Match — Questionnaire",
+    "og:description": "Complete the matching questionnaire to find a vetted local accountant.",
+    "og:url": "http://localhost:4173/ghl-redirect",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Find Your Accountant Match — Questionnaire",
+    "twitter:description": "Complete the matching questionnaire to find a vetted local accountant.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [],
+  "headings": [
+    {
+      "level": 2,
+      "text": "We ask a couple more questions than most."
+    },
+    {
+      "level": 1,
+      "text": "Personal Tax Returns and Planning"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Personal Tax Returns and Planning",
+      "images": 0,
+      "text": "1Category 1 of 4Personal Tax Returns and PlanningSelect all that apply — we’ll use these to match you with an accountant in your area who specialises in personal tax returns and planning.Lodge My Tax ReturnLate or Overdue Tax ReturnsInvestment Property Rental IncomeShares, Crypto or Capital GainsSole Trader / Self-Employed IncomeTax Planning and DeductionsATO Audit AssistanceSomething ElseBackNext"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    }
+  ],
+  "allText": "Your Match in ProgressWe ask a couple more questions than most.That’s how we match you perfectly the first time — so you don’t waste your time starting over with someone who isn’t quite right.Step 1 of 61Category 1 of 4Personal Tax Returns and PlanningSelect all that apply — we’ll use these to match you with an accountant in your area who specialises in personal tax returns and planning.Lodge My Tax ReturnLate or Overdue Tax ReturnsInvestment Property Rental IncomeShares, Crypto or Capital GainsSole Trader / Self-Employed IncomeTax Planning and DeductionsATO Audit AssistanceSomething ElseBackNext",
+  "visibleText": "YOUR MATCH IN PROGRESS We ask a couple more questions than most. That’s how we match you perfectly the first time — so you don’t waste your time starting over with someone who isn’t quite right. Step 1 of 6 1 CATEGORY 1 OF 4 Personal Tax Returns and Planning Select all that apply — we’ll use these to match you with an accountant in your area who specialises in personal tax returns and planning. Lodge My Tax Return Late or Overdue Tax Returns Investment Property Rental Income Shares, Crypto or Capital Gains Sole Trader / Self-Employed Income Tax Planning and Deductions ATO Audit Assistance Something Else Back Next",
+  "redirectedTo": null,
+  "ms": 2722,
+  "inSitemap": false
+}

@@ -1,0 +1,1522 @@
+[
+  {
+    "path": "/",
+    "type": "homepage",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/about",
+    "type": "about",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/advanced-reporting-specialist",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/audit-assurance",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/bookkeeper",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/bookkeeping-bas",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/business-growth-adviser",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/business-structures",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/cloud-accounting",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/cpa-accountant",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/payroll-compliance",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/personal-tax-support",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/property-smsf-specialist",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/registered-tax-agent",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/registration-services",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/small-business-accountant",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/smsf-accountant",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/succession-planning",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/tax-accountant",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/accountant/tax-deduction-expert",
+    "type": "service",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/admin-dashboard",
+    "type": "admin (not rebuilt)",
+    "city": null,
+    "industry": null,
+    "inSitemap": false,
+    "error": "page.waitForFunction: Timeout 15000ms exceeded."
+  },
+  {
+    "path": "/admin-login",
+    "type": "admin (not rebuilt)",
+    "city": null,
+    "industry": null,
+    "inSitemap": false,
+    "error": "page.waitForFunction: Timeout 15000ms exceeded."
+  },
+  {
+    "path": "/blog",
+    "type": "blog-hub",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/bas-due-dates-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/business-records-bookkeeping-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/catch-up-overdue-tax-returns-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/company-trust-return-deadlines-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/company-vs-trust-vs-sole-trader-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/gst-registration-threshold-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/home-office-tax-deductions-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/negative-gearing-explained-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/payday-super-deadlines-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/reduce-tax-sole-trader-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/rental-property-deductions-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/super-contributions-cap-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/tax-planning-strategies-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/tax-return-deadlines-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/vehicle-car-deductions-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/blog/work-related-deductions-2026",
+    "type": "article (blog)",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/contact",
+    "type": "contact",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/ghl-redirect",
+    "type": "questionnaire",
+    "city": null,
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/guide/accountant-for-companies-small-businesses",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/accountant-for-sole-traders",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/accountant-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/accountant-vs-bookkeeper",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/ato-audit-help",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/bas-agent-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/bookkeeper-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/business-accountant-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/how-much-does-an-accountant-cost",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/important-tax-dates",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/late-bas-help",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/overdue-tax-return-help",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/smsf-accountant-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guide/tax-accountant-near-me",
+    "type": "guide",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/guides",
+    "type": "guides-hub",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/how-it-works",
+    "type": "how-it-works",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/how-we-select-accountants",
+    "type": "how-we-select",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/agriculture-primary-production/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "agriculture-primary-production",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/construction-tradies/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "construction-tradies",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/medical-healthcare/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "medical-healthcare",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/professional-services/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "professional-services",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/real-estate-property/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "real-estate-property",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/retail-ecommerce/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "retail-ecommerce",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/smsf-family-trusts/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "smsf-family-trusts",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/adelaide",
+    "type": "industry-city",
+    "city": "adelaide",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/brisbane",
+    "type": "industry-city",
+    "city": "brisbane",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/canberra-queanbeyan",
+    "type": "industry-city",
+    "city": "canberra-queanbeyan",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/darwin",
+    "type": "industry-city",
+    "city": "darwin",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/geelong",
+    "type": "industry-city",
+    "city": "geelong",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/gold-coast",
+    "type": "industry-city",
+    "city": "gold-coast",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/hobart",
+    "type": "industry-city",
+    "city": "hobart",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/launceston",
+    "type": "industry-city",
+    "city": "launceston",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/melbourne",
+    "type": "industry-city",
+    "city": "melbourne",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/newcastle-maitland",
+    "type": "industry-city",
+    "city": "newcastle-maitland",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/perth",
+    "type": "industry-city",
+    "city": "perth",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/sunshine-coast",
+    "type": "industry-city",
+    "city": "sunshine-coast",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/industry/transport-logistics/sydney",
+    "type": "industry-city",
+    "city": "sydney",
+    "industry": "transport-logistics",
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations",
+    "type": "locations-hub",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/adelaide",
+    "type": "city",
+    "city": "adelaide",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/ballarat",
+    "type": "retired location (redirect)",
+    "city": "ballarat",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/bendigo",
+    "type": "retired location (redirect)",
+    "city": "bendigo",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/brisbane",
+    "type": "city",
+    "city": "brisbane",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/canberra-queanbeyan",
+    "type": "city",
+    "city": "canberra-queanbeyan",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/coffs-harbour",
+    "type": "retired location (redirect)",
+    "city": "coffs-harbour",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/darwin",
+    "type": "city",
+    "city": "darwin",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/dubbo",
+    "type": "retired location (redirect)",
+    "city": "dubbo",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/geelong",
+    "type": "city",
+    "city": "geelong",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/gold-coast",
+    "type": "city",
+    "city": "gold-coast",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/hobart",
+    "type": "city",
+    "city": "hobart",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/launceston",
+    "type": "city",
+    "city": "launceston",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/melbourne",
+    "type": "city",
+    "city": "melbourne",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/newcastle-maitland",
+    "type": "city",
+    "city": "newcastle-maitland",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/perth",
+    "type": "city",
+    "city": "perth",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/port-macquarie",
+    "type": "retired location (redirect)",
+    "city": "port-macquarie",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/rockhampton",
+    "type": "retired location (redirect)",
+    "city": "rockhampton",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/shellharbour-area",
+    "type": "retired location (redirect)",
+    "city": "shellharbour-area",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/shepparton-mooroopna",
+    "type": "retired location (redirect)",
+    "city": "shepparton-mooroopna",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/sunshine-coast",
+    "type": "city",
+    "city": "sunshine-coast",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/sydney",
+    "type": "city",
+    "city": "sydney",
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/locations/traralgon-morwell",
+    "type": "retired location (redirect)",
+    "city": "traralgon-morwell",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/wagga-wagga",
+    "type": "retired location (redirect)",
+    "city": "wagga-wagga",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/warragul-drouin",
+    "type": "retired location (redirect)",
+    "city": "warragul-drouin",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/locations/wollongong",
+    "type": "retired location (redirect)",
+    "city": "wollongong",
+    "industry": null,
+    "inSitemap": false,
+    "error": null
+  },
+  {
+    "path": "/privacy",
+    "type": "legal",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  },
+  {
+    "path": "/terms",
+    "type": "legal",
+    "city": null,
+    "industry": null,
+    "inSitemap": true,
+    "error": null
+  }
+]

@@ -1,0 +1,29 @@
+name: Notify IndexNow after production deployment
+
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out deployed revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Submit indexable public URLs to IndexNow
+        env:
+          NEXT_PUBLIC_SITE_URL: https://youraccountantmatch.com.au
+        run: node scripts/indexnow.mjs --force

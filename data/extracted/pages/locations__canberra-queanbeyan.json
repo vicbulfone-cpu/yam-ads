@@ -1,0 +1,887 @@
+{
+  "path": "/locations/canberra-queanbeyan",
+  "extractedAt": "2026-10-02T09:01:16.320Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/locations/canberra-queanbeyan",
+  "title": "Local Tax Accountants Canberra | Your Accountant Match",
+  "metaDescription": "Local tax accountants serving Canberra & ACT. Fast, confidential matching with registered accountants across the Capital Region. Free.",
+  "canonical": "http://localhost:4173/locations/canberra-queanbeyan",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Local Tax Accountants Canberra | Your Accountant Match",
+    "og:description": "Local tax accountants serving Canberra & ACT. Fast, confidential matching with registered accountants across the Capital Region. Free.",
+    "og:url": "http://localhost:4173/locations/canberra-queanbeyan",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/beffc102-5555-4f21-8b12-aa59cd9fa194.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Local Tax Accountants Canberra | Your Accountant Match",
+    "twitter:description": "Local tax accountants serving Canberra & ACT. Fast, confidential matching with registered accountants across the Capital Region. Free.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "City",
+          "@id": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan#city",
+          "name": "Canberra - Queanbeyan",
+          "sameAs": "https://en.wikipedia.org/wiki/Canberra"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan#service",
+          "name": "Accountant Matching in Canberra - Queanbeyan",
+          "serviceType": "Accountant Matching & Referral",
+          "url": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan",
+          "description": "Free matching service connecting people and businesses in Canberra - Queanbeyan, ACT, and surrounding suburbs with vetted, TPB-registered accountants.",
+          "areaServed": [
+            {
+              "@id": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan#city"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Canberra City",
+              "postalCode": "2600"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Braddon",
+              "postalCode": "2612"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Dickson",
+              "postalCode": "2602"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Ainslie",
+              "postalCode": "2602"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Reid",
+              "postalCode": "2601"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Kingston",
+              "postalCode": "2604"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Barton",
+              "postalCode": "2600"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Forrest",
+              "postalCode": "2603"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Red Hill",
+              "postalCode": "2603"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Deakin",
+              "postalCode": "2600"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Yarralumla",
+              "postalCode": "2600"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Woden",
+              "postalCode": "2606"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Belconnen",
+              "postalCode": "2617"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Tuggeranong",
+              "postalCode": "2900"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Gungahlin",
+              "postalCode": "2912"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Queanbeyan",
+              "postalCode": "2620"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Queanbeyan East",
+              "postalCode": "2620"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Jerrabomberra",
+              "postalCode": "2619"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Googong",
+              "postalCode": "2620"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Karabar",
+              "postalCode": "2620"
+            }
+          ],
+          "knowsAbout": [
+            "Business Accounting",
+            "Individual Tax Returns",
+            "BAS & Bookkeeping",
+            "Single Touch Payroll (STP Phase 2)",
+            "Taxable Payments Annual Reports (TPAR)",
+            "Capital Gains Tax (CGT)",
+            "Family Trusts",
+            "Self-Managed Super Funds (SMSF)",
+            "GST Registration",
+            "Small Business Tax Planning"
+          ],
+          "provider": {
+            "@id": "https://youraccountantmatch.com.au/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan#webpage",
+          "url": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan",
+          "name": "Local Tax Accountants Canberra | Your Accountant Match",
+          "description": "Local tax accountants serving Canberra & ACT. Fast, confidential matching with registered accountants across the Capital Region. Free.",
+          "isPartOf": {
+            "@id": "https://youraccountantmatch.com.au/#website"
+          },
+          "about": {
+            "@id": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan#city"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://youraccountantmatch.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://youraccountantmatch.com.au/locations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Canberra - Queanbeyan",
+                "item": "https://youraccountantmatch.com.au/locations/canberra-queanbeyan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Accountant matching in Canberra - Queanbeyan",
+      "description": "From Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators.",
+      "areaServed": [
+        "Civic & Barton",
+        "Braddon & Dickson",
+        "Woden & Phillip",
+        "Belconnen",
+        "Tuggeranong",
+        "Gungahlin"
+      ],
+      "knowsAbout": [
+        "ACT Land Tax",
+        "Cross-Border ACT/NSW Tax",
+        "Government Contractor Compliance",
+        "BAS & GST for the Capital",
+        "Government Consulting & Professional Services",
+        "Defence & Technology",
+        "Healthcare & Medical",
+        "Construction & Development",
+        "Land tax",
+        "Payroll tax",
+        "Stamp duty",
+        "Workers' compensation"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Canberra"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find a registered accountant in Canberra–Queanbeyan through your service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all the Canberra–Queanbeyan accountants in your network registered tax agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every accounting firm in our Canberra–Queanbeyan network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with ACT/NSW and Australian Tax Office (ATO) standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many Canberra firms handle both individual returns and business accounting. Whether you need a personal tax return in Braddon, company tax structuring in Canberra City, or SMSF advice in Queanbeyan, we match you with a specialist suited to your exact requirements across Canberra and Queanbeyan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Canberra–Queanbeyan area spans two jurisdictions. In the ACT, land tax applies to residential properties that are not your principal place of residence — with no tax-free threshold, so it is charged from the first dollar of the average unimproved value. Queanbeyan properties fall under NSW rules, including NSW land tax and stamp duty. ACT payroll tax applied above a $2 million annual wages threshold in 2025–26; from 1 July 2026 the ACT Government lowered the threshold to $1.75 million (with a base rate of 6.75%). We match you with an accountant who understands both the ACT and NSW systems and how they apply to investment property, negative gearing changes and capital gains."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Canberra or Queanbeyan office or by phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Canberra–Queanbeyan matching service really free with no obligation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our matching service is 100% free with zero obligation. You can speak with your matched accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many firms in our Canberra–Queanbeyan network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in Canberra City or online service during your questionnaire — whichever suits your schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover all of Canberra and Queanbeyan or just the city centre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover all of Canberra and Queanbeyan — from Canberra City and Braddon to Belconnen, Tuggeranong, Gungahlin and Queanbeyan. Enter your postcode in the questionnaire and we will match you with a vetted accountant whose services fit your area, whether you are in the city centre or the outer suburbs."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Local Tax AccountantsServing Canberra & ACTWe’ll find your match"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Accounting help across Canberra & Queanbeyan"
+    },
+    {
+      "level": 3,
+      "text": "ACT Land Tax"
+    },
+    {
+      "level": 3,
+      "text": "Cross-Border ACT/NSW Tax"
+    },
+    {
+      "level": 3,
+      "text": "Government Contractor Compliance"
+    },
+    {
+      "level": 3,
+      "text": "BAS & GST for the Capital"
+    },
+    {
+      "level": 2,
+      "text": "Canberra & Queanbeyan's commercial landscape"
+    },
+    {
+      "level": 2,
+      "text": "Capital hub: public purpose, innovation and national vision"
+    },
+    {
+      "level": 2,
+      "text": "A thriving commercial landscape: from government contracting to trade services"
+    },
+    {
+      "level": 2,
+      "text": "ACT tax & duties at a glance"
+    },
+    {
+      "level": 2,
+      "text": "Accounting needs across Canberra's districts"
+    },
+    {
+      "level": 3,
+      "text": "Civic & Barton"
+    },
+    {
+      "level": 3,
+      "text": "Braddon & Dickson"
+    },
+    {
+      "level": 3,
+      "text": "Woden & Phillip"
+    },
+    {
+      "level": 3,
+      "text": "Belconnen"
+    },
+    {
+      "level": 3,
+      "text": "Tuggeranong"
+    },
+    {
+      "level": 3,
+      "text": "Gungahlin"
+    },
+    {
+      "level": 2,
+      "text": "The Queanbeyan & cross-border corridor"
+    },
+    {
+      "level": 3,
+      "text": "Queanbeyan & Queanbeyan East"
+    },
+    {
+      "level": 3,
+      "text": "Jerrabomberra"
+    },
+    {
+      "level": 3,
+      "text": "Googong"
+    },
+    {
+      "level": 3,
+      "text": "Karabar & Queanbeyan South"
+    },
+    {
+      "level": 2,
+      "text": "Why a Canberra accountant matters"
+    },
+    {
+      "level": 3,
+      "text": "Accounting across Canberra & Queanbeyan"
+    },
+    {
+      "level": 2,
+      "text": "Real situations we help resolve across Canberra - Queanbeyan"
+    },
+    {
+      "level": 3,
+      "text": "A Civic government consultant managing PSI rules"
+    },
+    {
+      "level": 3,
+      "text": "A Gungahlin builder managing progress-payment GST"
+    },
+    {
+      "level": 3,
+      "text": "A Queanbeyan operator splitting cross-border payroll and land tax"
+    },
+    {
+      "level": 3,
+      "text": "A Woden medical practice restructuring into a service trust"
+    },
+    {
+      "level": 2,
+      "text": "Key industries across Canberra"
+    },
+    {
+      "level": 3,
+      "text": "Government Consulting & Professional Services"
+    },
+    {
+      "level": 3,
+      "text": "Defence & Technology"
+    },
+    {
+      "level": 3,
+      "text": "Healthcare & Medical"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Development"
+    },
+    {
+      "level": 2,
+      "text": "Key tax dates & deadlines for Canberra"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "Your accountant match, made simple"
+    },
+    {
+      "level": 3,
+      "text": "Answer a short sixty second questionnaire"
+    },
+    {
+      "level": 3,
+      "text": "We match you with an accountant that fits your needs"
+    },
+    {
+      "level": 3,
+      "text": "A callback from your matched accountant"
+    },
+    {
+      "level": 2,
+      "text": "The right accountant makes a real difference"
+    },
+    {
+      "level": 2,
+      "text": "Choosing the right accountant saves you — here's why"
+    },
+    {
+      "level": 2,
+      "text": "Matching accountants to every kind of client"
+    },
+    {
+      "level": 2,
+      "text": "Industries We Match in Canberra - Queanbeyan"
+    },
+    {
+      "level": 3,
+      "text": "SMSF & Family Trusts"
+    },
+    {
+      "level": 3,
+      "text": "Professional Services"
+    },
+    {
+      "level": 3,
+      "text": "Construction & Tradies"
+    },
+    {
+      "level": 3,
+      "text": "Medical & Healthcare"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Canberra - Queanbeyan Accountants"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 2,
+      "text": "Suburbs Serviced in Canberra - Queanbeyan"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions — Canberra - Queanbeyan"
+    },
+    {
+      "level": 3,
+      "text": "Other Capital Cities We Service"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Local Tax AccountantsServing Canberra & ACTWe’ll find your match",
+      "images": 21,
+      "text": "Home/Locations/Canberra - QueanbeyanLOCAL. VETTED. MATCHED TO YOU.Local Tax AccountantsServing Canberra & ACTWe’ll find your matchFast, confidential matching with registered accountants across Canberra and surrounding ACT regions.Navigating public sector superannuation, contractor tax rules, or small business accounting in Canberra requires specialised knowledge. We connect residents and business owners from Belconnen to Tuggeranong, plus the cross-border Queanbeyan corridor, with qualified ACT tax agents tailored to your specific financial setup.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Canberra - Queanbeyan\",\"description\":\"From Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators.\",\"areaServed\":[\"Civic & Barton\",\"Braddon & Dickson\",\"Woden & Phillip\",\"Belconnen\",\"Tuggeranong\",\"Gungahlin\"],\"knowsAbout\":[\"ACT Land Tax\",\"Cross-Border ACT/NSW Tax\",\"Government Contractor Compliance\",\"BAS & GST for the Capital\",\"Government Consulting & Professional Services\",\"Defence & Technology\",\"Healthcare & Medical\",\"Construction & Development\",\"Land tax\",\"Payroll tax\",\"Stamp duty\",\"Workers' compensation\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Canberra\"]}CANBERRAAccounting help across Canberra & QueanbeyanFrom Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators.ACT Land TaxThe ACT levies land tax on residential property that is not your principal place of residence, with no tax-free threshold — so it applies from the first dollar of the property's average unimproved value. Your principal place of residence is exempt. Canberra investors holding rental or vacant property frequently need land-tax advice, particularly those holding property across the ACT and NSW border.Cross-Border ACT/NSW TaxOperating across the ACT and NSW border creates distinct payroll-tax, land-tax and stamp-duty considerations. Queanbeyan-based businesses serving Canberra clients, and vice versa, need an accountant who understands both jurisdictions.Government Contractor ComplianceCanberra's economy is anchored by government, consulting and defence. The PSI rules, contractor classification and the structuring of consultancy businesses are everyday needs for the many professional-services firms serving the public sector.BAS & GST for the CapitalCanberra's professional-services, hospitality and construction sectors run on regular BAS cycles. GST on mixed-supply sales, contractor compliance and vehicle deductions are common needs across Civic and the town centres.CANBERRA COMMERCECanberra & Queanbeyan's commercial landscapeA closer look at the capital's public-purpose economy, innovation precincts and cross-border industries — and the tax realities that come with operating here.Capital hub: public purpose, innovation and national visionSet around Lake Burley Griffin and surrounded by nature reserves, Canberra and neighbouring Queanbeyan form Australia's administrative and diplomatic heart. Walking through Braddon, Manuka or Kingston reveals a sophisticated urban scene: award-winning coffee shops, boutique eateries and legal firms line the avenues, where public sector consultants, tech founders and trade specialists gather to discuss national projects.Just across the border, Queanbeyan adds a grounded regional character, with residential quarters and trade precincts supporting the broader capital territory. Clean master-planned precincts like Civic, the Parliamentary Zone and Belconnen blend public institutions with commercial enterprise. It is an educated, highly stable community where professional service firms and government contractors build lasting success.A thriving commercial landscape: from government contracting to trade servicesCanberra and Queanbeyan feature an economic landscape driven by IT consulting, defence technology, construction and professional services. IT and management consultancies operate under strict Personal Services Income (PSI) rules, requiring specialised advice on company director salary optimisation, corporate tax rates and R&D incentives.In the commercial zones of Fyshwick, Mitchell and Queanbeyan West, trade services, automotive dealers and light manufacturers handle significant commercial fleets and subcontracts. These businesses depend on advice regarding Taxable Payments Annual Reports (TPAR), FBT vehicle exemptions and instant asset write-offs. Meanwhile, local property owners require guidance on ACT land tax, commercial lease GST and trust structures. The capital region provides exceptional stability for commercial operators.ACT TAX SNAPSHOTACT tax & duties at a glanceCanberra businesses and investors work within the ACT's tax framework (and the cross-border NSW rules for Queanbeyan). These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in ACTAdministered byLand taxLevied on residential property that is not your principal place of residence, with no tax-free threshold.ACT Revenue OfficePayroll taxApplies once annual wages exceed the ACT threshold ($2 million in 2025-26, lowered to $1.75 million from 1 July 2026 at a base rate of 6.75%); grouped entities must consolidate wages.ACT Revenue OfficeStamp dutyPayable on property transfers; concessional rates and exemptions may apply for eligible buyers.ACT Revenue OfficeWorkers' compensationEmployer premium based on wages and industry rate, reconciled annually.ACT Government (WorkSafe)Rates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.CANBERRA DISTRICTSAccounting needs across Canberra's districtsCanberra is a city of distinct town centres — Civic, Woden, Belconnen, Tuggeranong and Gungahlin — plus the cross-border Queanbeyan region. We match you to an accountant who works in the part of Canberra that aligns with what you do.2600Civic & BartonThe commercial and government heart of the city with a dense cluster of consulting, legal and professional-services firms. Accountants handle corporate tax, FBT and contractor structuring.2612Braddon & DicksonThe inner-north creative and hospitality precinct. Firms work with cafes, venues, agencies and startups — handling GST registration and project-based cash flow.2606Woden & PhillipA major southern town centre with a strong professional-services, medical and small-business base. BAS cycles, payroll and investment-property advice are common.2617BelconnenA large northwestern town centre with a mix of retail, professional services and small businesses. BAS cycles, contractor compliance and vehicle deductions are common.2900TuggeranongA southern residential and commercial hub with a growing small-business base. Investment-property advice, BAS cycles and payroll are common needs.2912GungahlinA fast-growing northern town centre with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.QUEANBEYAN & CROSS-BORDERThe Queanbeyan & cross-border corridorThe Queanbeyan region sits across the NSW border from Canberra and is a fast-growing part of the broader capital economy. The accounting needs here are distinct: cross-border payroll and land tax, contractor structuring for businesses serving both jurisdictions, and new-business setup in the growing Googong and Jerrabomberra corridors.2620Queanbeyan & Queanbeyan EastThe commercial heart of the NSW cross-border region with a mix of retail, professional services and trades. Cross-border payroll and land tax advice is a common need.2619JerrabomberraA growing residential suburb popular with Canberra commuters. Investment-property advice, BAS cycles and small-business structuring are common.2620GoogongA master-planned cross-border growth community. New-business setup, GST registration and STP2 onboarding are everyday needs for the growing residential base.2620Karabar & Queanbeyan SouthAn established residential region with a growing small-business and trades base. BAS cycles, vehicle deductions and contractor compliance are common.LOCAL KNOWLEDGEWhy a Canberra accountant mattersCanberra is more than a postcode. From the government and consulting core of Civic to the cross-border Queanbeyan corridor and the growing Gungahlin town centre, local tax knowledge matters. A Canberra accountant understands the ACT and NSW economies, the cross-border tax rules, and the mix of government consulting, defence, healthcare and small business that make this region unique.Accounting across Canberra & QueanbeyanWe match you with a vetted local accountant serving Canberra and Queanbeyan — from Civic and Barton to Woden, Belconnen, Gungahlin and the cross-border Queanbeyan corridor.LOCAL SCENARIOSReal situations we help resolve across Canberra - QueanbeyanPractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A Civic government consultant managing PSI rulesPSI rules, contractor classification and trust-and-company structuring help a consultancy founder manage income correctly while serving public-sector clients.A Gungahlin builder managing progress-payment GSTProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the northern growth corridor expands.A Queanbeyan operator splitting cross-border payroll and land taxBusinesses serving both the ACT and NSW need an accountant who understands both jurisdictions to correctly split payroll and land tax.A Woden medical practice restructuring into a service trustPractice structuring, service-trust arrangements and medical-billing nuances help a hospital-precinct practice manage income and protect assets.CANBERRA INDUSTRIESKey industries across CanberraCanberra's economy is anchored by government consulting, defence, healthcare and technology — each with tax rules that reward specialist knowledge.Government Consulting & Professional ServicesCivic, Barton, WodenCanberra is Australia's government consulting capital. Accountants handle PSI rules, contractor classification, trust and company structuring and the FBT nuances of consultancy packages.Defence & TechnologyCivic, Braddon, RussellCanberra's defence and tech sectors draw on R&D incentives, grant accounting and employee share schemes. Specialist accountants help firms structure for government contracting and scale-up.Healthcare & MedicalWoden, Garran, BelconnenCanberra's hospital precincts support a community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Construction & DevelopmentGungahlin, Googong, WhitlamCanberra's northern and cross-border growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning.CANBERRA DEADLINESKey tax dates & deadlines for CanberraACT and NSW-specific obligations sit alongside federal deadlines. A local Canberra accountant keeps both calendars aligned so nothing slips.ACT businesses on monthly GST must lodge BAS by the 21st of the following month — Canberra consulting and hospitality operators should reconcile records early.ACT payroll tax annual reconciliation is due each July; grouped entities across Canberra locations must consolidate wages before filing.Canberra property investors should review their ACT land tax position each quarter — unlike most states, ACT land tax is charged quarterly on residential property that is not your principal place of residence, with no tax-free threshold.Cross-border Queanbeyan businesses should confirm their ACT and NSW payroll and land tax split before each annual reconciliation.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in Canberra - QueanbeyanGet paired with an accountant in Canberra - Queanbeyan who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.SMSF & Family TrustsPublic-sector SMSF & trust structuring for the capital.View SMSF & Family Trusts in Canberra - QueanbeyanProfessional ServicesGov IT contractors — PSI rules & company structuring.View Professional Services in Canberra - QueanbeyanConstruction & TradiesCivic & Belconnen build contractors & FBT on work vehicles.View Construction & Tradies in Canberra - QueanbeyanMedical & HealthcareCanberra practice accounting & payroll tax planning.View Medical & Healthcare in Canberra - QueanbeyanTRUST & VETTINGTrust and vetting standards for Canberra - Queanbeyan AccountantsWhen you're looking for an accountant in Canberra - Queanbeyan, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Canberra - Queanbeyan accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Canberra - Queanbeyan and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Canberra - Queanbeyan accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Canberra - Queanbeyan accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in Canberra - QueanbeyanSearch your suburb or postcode below to confirm our network's local coverage across Canberra - Queanbeyan.Canberra City2600Braddon2612Dickson2602Ainslie2602Reid2601Kingston2604Barton2600Forrest2603Red Hill2603Deakin2600Yarralumla2600Woden2606Belconnen2617Tuggeranong2900Gungahlin2912Queanbeyan2620Queanbeyan East2620Jerrabomberra2619Googong2620Karabar2620{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Canberra–Queanbeyan through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Canberra–Queanbeyan accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Canberra–Queanbeyan network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with ACT/NSW and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Canberra firms handle both individual returns and business accounting. Whether you need a personal tax return in Braddon, company tax structuring in Canberra City, or SMSF advice in Queanbeyan, we match you with a specialist suited to your exact requirements across Canberra and Queanbeyan.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The Canberra–Queanbeyan area spans two jurisdictions. In the ACT, land tax applies to residential properties that are not your principal place of residence — with no tax-free threshold, so it is charged from the first dollar of the average unimproved value. Queanbeyan properties fall under NSW rules, including NSW land tax and stamp duty. ACT payroll tax applied above a $2 million annual wages threshold in 2025–26; from 1 July 2026 the ACT Government lowered the threshold to $1.75 million (with a base rate of 6.75%). We match you with an accountant who understands both the ACT and NSW systems and how they apply to investment property, negative gearing changes and capital gains.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Canberra or Queanbeyan office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Canberra–Queanbeyan matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Canberra–Queanbeyan network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in Canberra City or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Canberra and Queanbeyan or just the city centre?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Canberra and Queanbeyan — from Canberra City and Braddon to Belconnen, Tuggeranong, Gungahlin and Queanbeyan. Enter your postcode in the questionnaire and we will match you with a vetted accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — Canberra - QueanbeyanEverything you need to know about getting matched with a top accountant in Canberra - Queanbeyan, ACT.How do I find a registered accountant in Canberra–Queanbeyan through your service?Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Canberra–Queanbeyan accountants in your network registered tax agents?Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business?What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules?How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire?Is the Canberra–Queanbeyan matching service really free with no obligation?Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit?Do you cover all of Canberra and Queanbeyan or just the city centre?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "Accountant matching services in Canberra - Queanbeyan",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/a835ca9f-a90b-445e-9cc2-90923b1e861f.png",
+      "alt": "Canberra cityscape showing Lake Burley Griffin with the National Carillon and Parliament House — the government and professional-services capital with a distinct cross-border tax landscape",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/assets/b7eedd51-7afa-47d6-a71c-e608ae1071d9.png",
+      "alt": "Canberra's National Carillon across Lake Burley Griffin framed by autumn deciduous trees — the backdrop for the city's government and professional economy",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/c211dca9-f2cb-4c44-b66b-6092b101aab7.png",
+      "alt": "Our 3 Step Matching Process: 1. Tell us what you need, 2. We find your match, 3. Make contact",
+      "width": "2048",
+      "height": "872"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921bc551-dced-40f8-bb4f-751bf60d2d9f.png",
+      "alt": "Right Support Brighter Tomorrow — Coffee mug on desk",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/9e5f6801-9fe1-47b2-9abe-11f97f0b536e.png",
+      "alt": "The Difference: Better outcomes, Save time, Save money, Peace of mind",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2d1d6291-ddd6-4e8d-9d54-1d991b16c063.png",
+      "alt": "Matching accountants to every kind of client — Families, Small Business, Rural, SMSF, Professionals, Tradies, Property Investors, Start-ups, Charities, Trusts",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/privacy",
+      "text": "See our privacy policy"
+    },
+    {
+      "href": "/industry/smsf-family-trusts/canberra-queanbeyan",
+      "text": "SMSF & Family TrustsPublic-sector SMSF & trust structuring for the capital.View SMSF & Family Trusts in Canberra - Queanbeyan"
+    },
+    {
+      "href": "/industry/professional-services/canberra-queanbeyan",
+      "text": "Professional ServicesGov IT contractors — PSI rules & company structuring.View Professional Services in Canberra - Queanbeyan"
+    },
+    {
+      "href": "/industry/construction-tradies/canberra-queanbeyan",
+      "text": "Construction & TradiesCivic & Belconnen build contractors & FBT on work vehicles.View Construction & Tradies in Canberra - Queanbeyan"
+    },
+    {
+      "href": "/industry/medical-healthcare/canberra-queanbeyan",
+      "text": "Medical & HealthcareCanberra practice accounting & payroll tax planning.View Medical & Healthcare in Canberra - Queanbeyan"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "tpb.gov.au"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Locations/Canberra - QueanbeyanLOCAL. VETTED. MATCHED TO YOU.Local Tax AccountantsServing Canberra & ACTWe’ll find your matchFast, confidential matching with registered accountants across Canberra and surrounding ACT regions.Navigating public sector superannuation, contractor tax rules, or small business accounting in Canberra requires specialised knowledge. We connect residents and business owners from Belconnen to Tuggeranong, plus the cross-border Queanbeyan corridor, with qualified ACT tax agents tailored to your specific financial setup.Free matching serviceVetted accountantsNo obligationRest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.Find My AccountantStartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Accountant matching in Canberra - Queanbeyan\",\"description\":\"From Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators.\",\"areaServed\":[\"Civic & Barton\",\"Braddon & Dickson\",\"Woden & Phillip\",\"Belconnen\",\"Tuggeranong\",\"Gungahlin\"],\"knowsAbout\":[\"ACT Land Tax\",\"Cross-Border ACT/NSW Tax\",\"Government Contractor Compliance\",\"BAS & GST for the Capital\",\"Government Consulting & Professional Services\",\"Defence & Technology\",\"Healthcare & Medical\",\"Construction & Development\",\"Land tax\",\"Payroll tax\",\"Stamp duty\",\"Workers' compensation\"],\"provider\":{\"@type\":\"Organization\",\"name\":\"Your Accountant Match\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Australia\"}},\"sameAs\":[\"https://en.wikipedia.org/wiki/Canberra\"]}CANBERRAAccounting help across Canberra & QueanbeyanFrom Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators.ACT Land TaxThe ACT levies land tax on residential property that is not your principal place of residence, with no tax-free threshold — so it applies from the first dollar of the property's average unimproved value. Your principal place of residence is exempt. Canberra investors holding rental or vacant property frequently need land-tax advice, particularly those holding property across the ACT and NSW border.Cross-Border ACT/NSW TaxOperating across the ACT and NSW border creates distinct payroll-tax, land-tax and stamp-duty considerations. Queanbeyan-based businesses serving Canberra clients, and vice versa, need an accountant who understands both jurisdictions.Government Contractor ComplianceCanberra's economy is anchored by government, consulting and defence. The PSI rules, contractor classification and the structuring of consultancy businesses are everyday needs for the many professional-services firms serving the public sector.BAS & GST for the CapitalCanberra's professional-services, hospitality and construction sectors run on regular BAS cycles. GST on mixed-supply sales, contractor compliance and vehicle deductions are common needs across Civic and the town centres.CANBERRA COMMERCECanberra & Queanbeyan's commercial landscapeA closer look at the capital's public-purpose economy, innovation precincts and cross-border industries — and the tax realities that come with operating here.Capital hub: public purpose, innovation and national visionSet around Lake Burley Griffin and surrounded by nature reserves, Canberra and neighbouring Queanbeyan form Australia's administrative and diplomatic heart. Walking through Braddon, Manuka or Kingston reveals a sophisticated urban scene: award-winning coffee shops, boutique eateries and legal firms line the avenues, where public sector consultants, tech founders and trade specialists gather to discuss national projects.Just across the border, Queanbeyan adds a grounded regional character, with residential quarters and trade precincts supporting the broader capital territory. Clean master-planned precincts like Civic, the Parliamentary Zone and Belconnen blend public institutions with commercial enterprise. It is an educated, highly stable community where professional service firms and government contractors build lasting success.A thriving commercial landscape: from government contracting to trade servicesCanberra and Queanbeyan feature an economic landscape driven by IT consulting, defence technology, construction and professional services. IT and management consultancies operate under strict Personal Services Income (PSI) rules, requiring specialised advice on company director salary optimisation, corporate tax rates and R&D incentives.In the commercial zones of Fyshwick, Mitchell and Queanbeyan West, trade services, automotive dealers and light manufacturers handle significant commercial fleets and subcontracts. These businesses depend on advice regarding Taxable Payments Annual Reports (TPAR), FBT vehicle exemptions and instant asset write-offs. Meanwhile, local property owners require guidance on ACT land tax, commercial lease GST and trust structures. The capital region provides exceptional stability for commercial operators.ACT TAX SNAPSHOTACT tax & duties at a glanceCanberra businesses and investors work within the ACT's tax framework (and the cross-border NSW rules for Queanbeyan). These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority.ObligationHow it works in ACTAdministered byLand taxLevied on residential property that is not your principal place of residence, with no tax-free threshold.ACT Revenue OfficePayroll taxApplies once annual wages exceed the ACT threshold ($2 million in 2025-26, lowered to $1.75 million from 1 July 2026 at a base rate of 6.75%); grouped entities must consolidate wages.ACT Revenue OfficeStamp dutyPayable on property transfers; concessional rates and exemptions may apply for eligible buyers.ACT Revenue OfficeWorkers' compensationEmployer premium based on wages and industry rate, reconciled annually.ACT Government (WorkSafe)Rates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting.CANBERRA DISTRICTSAccounting needs across Canberra's districtsCanberra is a city of distinct town centres — Civic, Woden, Belconnen, Tuggeranong and Gungahlin — plus the cross-border Queanbeyan region. We match you to an accountant who works in the part of Canberra that aligns with what you do.2600Civic & BartonThe commercial and government heart of the city with a dense cluster of consulting, legal and professional-services firms. Accountants handle corporate tax, FBT and contractor structuring.2612Braddon & DicksonThe inner-north creative and hospitality precinct. Firms work with cafes, venues, agencies and startups — handling GST registration and project-based cash flow.2606Woden & PhillipA major southern town centre with a strong professional-services, medical and small-business base. BAS cycles, payroll and investment-property advice are common.2617BelconnenA large northwestern town centre with a mix of retail, professional services and small businesses. BAS cycles, contractor compliance and vehicle deductions are common.2900TuggeranongA southern residential and commercial hub with a growing small-business base. Investment-property advice, BAS cycles and payroll are common needs.2912GungahlinA fast-growing northern town centre with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs.QUEANBEYAN & CROSS-BORDERThe Queanbeyan & cross-border corridorThe Queanbeyan region sits across the NSW border from Canberra and is a fast-growing part of the broader capital economy. The accounting needs here are distinct: cross-border payroll and land tax, contractor structuring for businesses serving both jurisdictions, and new-business setup in the growing Googong and Jerrabomberra corridors.2620Queanbeyan & Queanbeyan EastThe commercial heart of the NSW cross-border region with a mix of retail, professional services and trades. Cross-border payroll and land tax advice is a common need.2619JerrabomberraA growing residential suburb popular with Canberra commuters. Investment-property advice, BAS cycles and small-business structuring are common.2620GoogongA master-planned cross-border growth community. New-business setup, GST registration and STP2 onboarding are everyday needs for the growing residential base.2620Karabar & Queanbeyan SouthAn established residential region with a growing small-business and trades base. BAS cycles, vehicle deductions and contractor compliance are common.LOCAL KNOWLEDGEWhy a Canberra accountant mattersCanberra is more than a postcode. From the government and consulting core of Civic to the cross-border Queanbeyan corridor and the growing Gungahlin town centre, local tax knowledge matters. A Canberra accountant understands the ACT and NSW economies, the cross-border tax rules, and the mix of government consulting, defence, healthcare and small business that make this region unique.Accounting across Canberra & QueanbeyanWe match you with a vetted local accountant serving Canberra and Queanbeyan — from Civic and Barton to Woden, Belconnen, Gungahlin and the cross-border Queanbeyan corridor.LOCAL SCENARIOSReal situations we help resolve across Canberra - QueanbeyanPractical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead.A Civic government consultant managing PSI rulesPSI rules, contractor classification and trust-and-company structuring help a consultancy founder manage income correctly while serving public-sector clients.A Gungahlin builder managing progress-payment GSTProgress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the northern growth corridor expands.A Queanbeyan operator splitting cross-border payroll and land taxBusinesses serving both the ACT and NSW need an accountant who understands both jurisdictions to correctly split payroll and land tax.A Woden medical practice restructuring into a service trustPractice structuring, service-trust arrangements and medical-billing nuances help a hospital-precinct practice manage income and protect assets.CANBERRA INDUSTRIESKey industries across CanberraCanberra's economy is anchored by government consulting, defence, healthcare and technology — each with tax rules that reward specialist knowledge.Government Consulting & Professional ServicesCivic, Barton, WodenCanberra is Australia's government consulting capital. Accountants handle PSI rules, contractor classification, trust and company structuring and the FBT nuances of consultancy packages.Defence & TechnologyCivic, Braddon, RussellCanberra's defence and tech sectors draw on R&D incentives, grant accounting and employee share schemes. Specialist accountants help firms structure for government contracting and scale-up.Healthcare & MedicalWoden, Garran, BelconnenCanberra's hospital precincts support a community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances.Construction & DevelopmentGungahlin, Googong, WhitlamCanberra's northern and cross-border growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning.CANBERRA DEADLINESKey tax dates & deadlines for CanberraACT and NSW-specific obligations sit alongside federal deadlines. A local Canberra accountant keeps both calendars aligned so nothing slips.ACT businesses on monthly GST must lodge BAS by the 21st of the following month — Canberra consulting and hospitality operators should reconcile records early.ACT payroll tax annual reconciliation is due each July; grouped entities across Canberra locations must consolidate wages before filing.Canberra property investors should review their ACT land tax position each quarter — unlike most states, ACT land tax is charged quarterly on residential property that is not your principal place of residence, with no tax-free threshold.Cross-border Queanbeyan businesses should confirm their ACT and NSW payroll and land tax split before each annual reconciliation.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.How does it workYour accountant match, made simpleOur quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories.Step 1Tell Us What You NeedAnswer a short sixty second questionnaireTell us what you need, your area, and the expertise you're looking for, this will assist us in finding the right accountant for you.Step 2We Find Your MatchWe match you with an accountant that fits your needsWe compare your answers with our network and identify the right qualified accountant for your exact situation.Step 3Make ContactA callback from your matched accountantMove forward in the way that suits you best, with direct contact details and a clear next step.Trusted accountants near youMatched, to your needsTakes 60 secondsWHY THE RIGHT MATCH MATTERSThe right accountant makes a real differenceFinding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs.The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change.That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for.Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy.The DifferenceChoosing the right accountant saves you — here's whyWHO WE HELPMatching accountants to every kind of clientFrom sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation.SPECIALISED EXPERTISEIndustries We Match in Canberra - QueanbeyanGet paired with an accountant in Canberra - Queanbeyan who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news.SMSF & Family TrustsPublic-sector SMSF & trust structuring for the capital.View SMSF & Family Trusts in Canberra - QueanbeyanProfessional ServicesGov IT contractors — PSI rules & company structuring.View Professional Services in Canberra - QueanbeyanConstruction & TradiesCivic & Belconnen build contractors & FBT on work vehicles.View Construction & Tradies in Canberra - QueanbeyanMedical & HealthcareCanberra practice accounting & payroll tax planning.View Medical & Healthcare in Canberra - QueanbeyanTRUST & VETTINGTrust and vetting standards for Canberra - Queanbeyan AccountantsWhen you're looking for an accountant in Canberra - Queanbeyan, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Canberra - Queanbeyan accountant in our network to the highest professional and ethical standards in the industry.Verified professional membershipsEvery practising accountant we match across Canberra - Queanbeyan and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEach Canberra - Queanbeyan accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPEReady to find your accountant?Your needs. Your area. Your Canberra - Queanbeyan accountant.Find My AccountantFree matching service · No obligationLOCAL COVERAGESuburbs Serviced in Canberra - QueanbeyanSearch your suburb or postcode below to confirm our network's local coverage across Canberra - Queanbeyan.Canberra City2600Braddon2612Dickson2602Ainslie2602Reid2601Kingston2604Barton2600Forrest2603Red Hill2603Deakin2600Yarralumla2600Woden2606Belconnen2617Tuggeranong2900Gungahlin2912Queanbeyan2620Queanbeyan East2620Jerrabomberra2619Googong2620Karabar2620{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I find a registered accountant in Canberra–Queanbeyan through your service?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.\"}},{\"@type\":\"Question\",\"name\":\"Are all the Canberra–Queanbeyan accountants in your network registered tax agents?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Every accounting firm in our Canberra–Queanbeyan network is thoroughly vetted. They are fully qualified Registered Tax Agents, CPAs, or Chartered Accountants — all registered with the Tax Practitioners Board (TPB) and operating in compliance with ACT/NSW and Australian Tax Office (ATO) standards.\"}},{\"@type\":\"Question\",\"name\":\"Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolutely. Many Canberra firms handle both individual returns and business accounting. Whether you need a personal tax return in Braddon, company tax structuring in Canberra City, or SMSF advice in Queanbeyan, we match you with a specialist suited to your exact requirements across Canberra and Queanbeyan.\"}},{\"@type\":\"Question\",\"name\":\"What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The Canberra–Queanbeyan area spans two jurisdictions. In the ACT, land tax applies to residential properties that are not your principal place of residence — with no tax-free threshold, so it is charged from the first dollar of the average unimproved value. Queanbeyan properties fall under NSW rules, including NSW land tax and stamp duty. ACT payroll tax applied above a $2 million annual wages threshold in 2025–26; from 1 July 2026 the ACT Government lowered the threshold to $1.75 million (with a base rate of 6.75%). We match you with an accountant who understands both the ACT and NSW systems and how they apply to investment property, negative gearing changes and capital gains.\"}},{\"@type\":\"Question\",\"name\":\"How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs and schedule a consultation at their Canberra or Queanbeyan office or by phone.\"}},{\"@type\":\"Question\",\"name\":\"Is the Canberra–Queanbeyan matching service really free with no obligation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Our matching service is 100% free with zero obligation. You can speak with your matched accountant, review their initial offer, and decide if you want to proceed — no pressure, no hidden fees. We are engaged by the accounting firms, not by you.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many firms in our Canberra–Queanbeyan network offer fully digital cloud services via Xero, MYOB, and phone or Zoom consultations. You can specify whether you prefer in-person meetings in Canberra City or online service during your questionnaire — whichever suits your schedule.\"}},{\"@type\":\"Question\",\"name\":\"Do you cover all of Canberra and Queanbeyan or just the city centre?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We cover all of Canberra and Queanbeyan — from Canberra City and Braddon to Belconnen, Tuggeranong, Gungahlin and Queanbeyan. Enter your postcode in the questionnaire and we will match you with a vetted accountant whose services fit your area, whether you are in the city centre or the outer suburbs.\"}}]}COMMON QUESTIONSFrequently Asked Questions — Canberra - QueanbeyanEverything you need to know about getting matched with a top accountant in Canberra - Queanbeyan, ACT.How do I find a registered accountant in Canberra–Queanbeyan through your service?Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au.Are all the Canberra–Queanbeyan accountants in your network registered tax agents?Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business?What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules?How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire?Is the Canberra–Queanbeyan matching service really free with no obligation?Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit?Do you cover all of Canberra and Queanbeyan or just the city centre?Other Capital Cities We ServiceSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.AboutContactLocationsGuidesPrivacyTermsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Locations / Canberra - Queanbeyan LOCAL. VETTED. MATCHED TO YOU. Local Tax Accountants Serving Canberra & ACT We’ll find your match Fast, confidential matching with registered accountants across Canberra and surrounding ACT regions. Navigating public sector superannuation, contractor tax rules, or small business accounting in Canberra requires specialised knowledge. We connect residents and business owners from Belconnen to Tuggeranong, plus the cross-border Queanbeyan corridor, with qualified ACT tax agents tailored to your specific financial setup. Free matching service Vetted accountants No obligation Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. CANBERRA Accounting help across Canberra & Queanbeyan From Civic and Barton to Woden, Belconnen and the cross-border Queanbeyan region, Canberra is a government and professional-services capital with a distinct cross-border tax landscape. We match you with a vetted local accountant who knows your part of the region — from Civic consultants to Belconnen small businesses and Queanbeyan operators. ACT Land Tax The ACT levies land tax on residential property that is not your principal place of residence, with no tax-free threshold — so it applies from the first dollar of the property's average unimproved value. Your principal place of residence is exempt. Canberra investors holding rental or vacant property frequently need land-tax advice, particularly those holding property across the ACT and NSW border. Cross-Border ACT/NSW Tax Operating across the ACT and NSW border creates distinct payroll-tax, land-tax and stamp-duty considerations. Queanbeyan-based businesses serving Canberra clients, and vice versa, need an accountant who understands both jurisdictions. Government Contractor Compliance Canberra's economy is anchored by government, consulting and defence. The PSI rules, contractor classification and the structuring of consultancy businesses are everyday needs for the many professional-services firms serving the public sector. BAS & GST for the Capital Canberra's professional-services, hospitality and construction sectors run on regular BAS cycles. GST on mixed-supply sales, contractor compliance and vehicle deductions are common needs across Civic and the town centres. CANBERRA COMMERCE Canberra & Queanbeyan's commercial landscape A closer look at the capital's public-purpose economy, innovation precincts and cross-border industries — and the tax realities that come with operating here. Capital hub: public purpose, innovation and national vision Set around Lake Burley Griffin and surrounded by nature reserves, Canberra and neighbouring Queanbeyan form Australia's administrative and diplomatic heart. Walking through Braddon, Manuka or Kingston reveals a sophisticated urban scene: award-winning coffee shops, boutique eateries and legal firms line the avenues, where public sector consultants, tech founders and trade specialists gather to discuss national projects. Just across the border, Queanbeyan adds a grounded regional character, with residential quarters and trade precincts supporting the broader capital territory. Clean master-planned precincts like Civic, the Parliamentary Zone and Belconnen blend public institutions with commercial enterprise. It is an educated, highly stable community where professional service firms and government contractors build lasting success. A thriving commercial landscape: from government contracting to trade services Canberra and Queanbeyan feature an economic landscape driven by IT consulting, defence technology, construction and professional services. IT and management consultancies operate under strict Personal Services Income (PSI) rules, requiring specialised advice on company director salary optimisation, corporate tax rates and R&D incentives. In the commercial zones of Fyshwick, Mitchell and Queanbeyan West, trade services, automotive dealers and light manufacturers handle significant commercial fleets and subcontracts. These businesses depend on advice regarding Taxable Payments Annual Reports (TPAR), FBT vehicle exemptions and instant asset write-offs. Meanwhile, local property owners require guidance on ACT land tax, commercial lease GST and trust structures. The capital region provides exceptional stability for commercial operators. ACT TAX SNAPSHOT ACT tax & duties at a glance Canberra businesses and investors work within the ACT's tax framework (and the cross-border NSW rules for Queanbeyan). These are the key obligations a local accountant helps you manage — confirm current rates and thresholds with the relevant authority. OBLIGATION HOW IT WORKS IN ACT ADMINISTERED BY Land tax Levied on residential property that is not your principal place of residence, with no tax-free threshold. ACT Revenue Office Payroll tax Applies once annual wages exceed the ACT threshold ($2 million in 2025-26, lowered to $1.75 million from 1 July 2026 at a base rate of 6.75%); grouped entities must consolidate wages. ACT Revenue Office Stamp duty Payable on property transfers; concessional rates and exemptions may apply for eligible buyers. ACT Revenue Office Workers' compensation Employer premium based on wages and industry rate, reconciled annually. ACT Government (WorkSafe) Rates and thresholds are set and reviewed each financial year — always confirm current figures with the relevant state revenue authority before acting. CANBERRA DISTRICTS Accounting needs across Canberra's districts Canberra is a city of distinct town centres — Civic, Woden, Belconnen, Tuggeranong and Gungahlin — plus the cross-border Queanbeyan region. We match you to an accountant who works in the part of Canberra that aligns with what you do. 2600 Civic & Barton The commercial and government heart of the city with a dense cluster of consulting, legal and professional-services firms. Accountants handle corporate tax, FBT and contractor structuring. 2612 Braddon & Dickson The inner-north creative and hospitality precinct. Firms work with cafes, venues, agencies and startups — handling GST registration and project-based cash flow. 2606 Woden & Phillip A major southern town centre with a strong professional-services, medical and small-business base. BAS cycles, payroll and investment-property advice are common. 2617 Belconnen A large northwestern town centre with a mix of retail, professional services and small businesses. BAS cycles, contractor compliance and vehicle deductions are common. 2900 Tuggeranong A southern residential and commercial hub with a growing small-business base. Investment-property advice, BAS cycles and payroll are common needs. 2912 Gungahlin A fast-growing northern town centre with new residential and commercial development. New-business setup, GST registration and STP2 onboarding are everyday needs. QUEANBEYAN & CROSS-BORDER The Queanbeyan & cross-border corridor The Queanbeyan region sits across the NSW border from Canberra and is a fast-growing part of the broader capital economy. The accounting needs here are distinct: cross-border payroll and land tax, contractor structuring for businesses serving both jurisdictions, and new-business setup in the growing Googong and Jerrabomberra corridors. 2620 Queanbeyan & Queanbeyan East The commercial heart of the NSW cross-border region with a mix of retail, professional services and trades. Cross-border payroll and land tax advice is a common need. 2619 Jerrabomberra A growing residential suburb popular with Canberra commuters. Investment-property advice, BAS cycles and small-business structuring are common. 2620 Googong A master-planned cross-border growth community. New-business setup, GST registration and STP2 onboarding are everyday needs for the growing residential base. 2620 Karabar & Queanbeyan South An established residential region with a growing small-business and trades base. BAS cycles, vehicle deductions and contractor compliance are common. LOCAL KNOWLEDGE Why a Canberra accountant matters Canberra is more than a postcode. From the government and consulting core of Civic to the cross-border Queanbeyan corridor and the growing Gungahlin town centre, local tax knowledge matters. A Canberra accountant understands the ACT and NSW economies, the cross-border tax rules, and the mix of government consulting, defence, healthcare and small business that make this region unique. Accounting across Canberra & Queanbeyan We match you with a vetted local accountant serving Canberra and Queanbeyan — from Civic and Barton to Woden, Belconnen, Gungahlin and the cross-border Queanbeyan corridor. LOCAL SCENARIOS Real situations we help resolve across Canberra - Queanbeyan Practical examples of how the right local accountant helps the people and businesses in this region stay compliant and ahead. A Civic government consultant managing PSI rules PSI rules, contractor classification and trust-and-company structuring help a consultancy founder manage income correctly while serving public-sector clients. A Gungahlin builder managing progress-payment GST Progress claims, contractor ABN checks and STP2 onboarding across a residential estate keep GST and payroll compliant as the northern growth corridor expands. A Queanbeyan operator splitting cross-border payroll and land tax Businesses serving both the ACT and NSW need an accountant who understands both jurisdictions to correctly split payroll and land tax. A Woden medical practice restructuring into a service trust Practice structuring, service-trust arrangements and medical-billing nuances help a hospital-precinct practice manage income and protect assets. CANBERRA INDUSTRIES Key industries across Canberra Canberra's economy is anchored by government consulting, defence, healthcare and technology — each with tax rules that reward specialist knowledge. Government Consulting & Professional Services Civic, Barton, Woden Canberra is Australia's government consulting capital. Accountants handle PSI rules, contractor classification, trust and company structuring and the FBT nuances of consultancy packages. Defence & Technology Civic, Braddon, Russell Canberra's defence and tech sectors draw on R&D incentives, grant accounting and employee share schemes. Specialist accountants help firms structure for government contracting and scale-up. Healthcare & Medical Woden, Garran, Belconnen Canberra's hospital precincts support a community of specialists and allied-health practitioners. Accountants handle practice structuring, service-trust arrangements and medical billing nuances. Construction & Development Gungahlin, Googong, Whitlam Canberra's northern and cross-border growth corridors are driving sustained construction. Accountants handle progress-payment GST, contractor ABN compliance and capital-allowances planning. CANBERRA DEADLINES Key tax dates & deadlines for Canberra ACT and NSW-specific obligations sit alongside federal deadlines. A local Canberra accountant keeps both calendars aligned so nothing slips. ACT businesses on monthly GST must lodge BAS by the 21st of the following month — Canberra consulting and hospitality operators should reconcile records early. ACT payroll tax annual reconciliation is due each July; grouped entities across Canberra locations must consolidate wages before filing. Canberra property investors should review their ACT land tax position each quarter — unlike most states, ACT land tax is charged quarterly on residential property that is not your principal place of residence, with no tax-free threshold. Cross-border Queanbeyan businesses should confirm their ACT and NSW payroll and land tax split before each annual reconciliation. A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. HOW DOES IT WORK Your accountant match, made simple Our quick 60 second, 3 step matching process is designed to be fast, specific and local, so you reach the right firm without sifting through generic directories. Trusted accountants near you Matched, to your needs Takes 60 seconds WHY THE RIGHT MATCH MATTERS The right accountant makes a real difference Finding the right accountant can make a real difference. It’s not simply about finding someone who can do the job — it’s about finding an accountant whose experience and expertise are well matched to your needs. The right connection can give you greater confidence in your decisions, help you stay on top of your obligations and provide valuable support as your circumstances change. That’s why Your Accountant Match focuses on connecting you with an accountant in your area whose experience and services align with the help you’re looking for. Rest assured, we’ll match you with only one accountant from our partner network in your area, based on your location and the accounting help you need. Your enquiry won’t be sent to a list of local firms, and your details will never be sold or distributed to multiple accountants. See our privacy policy. THE DIFFERENCE Choosing the right accountant saves you — here's why WHO WE HELP Matching accountants to every kind of client From sole traders to retirees, we connect Australians from all walks of life with an accountant suited to their situation. SPECIALISED EXPERTISE Industries We Match in Canberra - Queanbeyan Get paired with an accountant in Canberra - Queanbeyan who understands the specific tax rules, allowances, and software integrations for your industry. Each industry has its own dedicated page with current, verified news. SMSF & Family Trusts Public-sector SMSF & trust structuring for the capital. View SMSF & Family Trusts in Canberra - Queanbeyan Professional Services Gov IT contractors — PSI rules & company structuring. View Professional Services in Canberra - Queanbeyan Construction & Tradies Civic & Belconnen build contractors & FBT on work vehicles. View Construction & Tradies in Canberra - Queanbeyan Medical & Healthcare Canberra practice accounting & payroll tax planning. View Medical & Healthcare in Canberra - Queanbeyan TRUST & VETTING Trust and vetting standards for Canberra - Queanbeyan Accountants When you're looking for an accountant in Canberra - Queanbeyan, confidence matters. At Your Accountant Match, we don't simply hand you a name — we hold every Canberra - Queanbeyan accountant in our network to the highest professional and ethical standards in the industry. Verified professional memberships Every practising accountant we match across Canberra - Queanbeyan and surrounding suburbs holds active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Each Canberra - Queanbeyan accountant partner passes a rigorous background and qualification review and must satisfy ongoing Continuing Professional Education (CPE) requirements before we introduce them to you. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE Ready to find your accountant? Your needs. Your area. Your Canberra - Queanbeyan accountant. Find My Accountant Free matching service · No obligation LOCAL COVERAGE Suburbs Serviced in Canberra - Queanbeyan Search your suburb or postcode below to confirm our network's local coverage across Canberra - Queanbeyan. Canberra City 2600 Braddon 2612 Dickson 2602 Ainslie 2602 Reid 2601 Kingston 2604 Barton 2600 Forrest 2603 Red Hill 2603 Deakin 2600 Yarralumla 2600 Woden 2606 Belconnen 2617 Tuggeranong 2900 Gungahlin 2912 Queanbeyan 2620 Queanbeyan East 2620 Jerrabomberra 2619 Googong 2620 Karabar 2620 COMMON QUESTIONS Frequently Asked Questions — Canberra - Queanbeyan Everything you need to know about getting matched with a top accountant in Canberra - Queanbeyan, ACT. How do I find a registered accountant in Canberra–Queanbeyan through your service? Enter your Canberra or Queanbeyan postcode and what you need help with in our 60-second questionnaire. We match you with a vetted local accountant whose services fit your situation — not just any firm on a map. You can verify any agent on the public TPB register at tpb.gov.au. Are all the Canberra–Queanbeyan accountants in your network registered tax agents? Can a Canberra–Queanbeyan accountant help with both my personal tax return and my small business? What if I need an accountant who understands Canberra's property market and ACT/NSW tax rules? How quickly will a Canberra–Queanbeyan accountant contact me after I complete the questionnaire? Is the Canberra–Queanbeyan matching service really free with no obligation? Can I get a Canberra–Queanbeyan accountant who offers phone or video consultations instead of an office visit? Do you cover all of Canberra and Queanbeyan or just the city centre? Other Capital Cities We Service Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. About Contact Locations Guides Privacy Terms ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 3002,
+  "inSitemap": true
+}

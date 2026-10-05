@@ -1,0 +1,465 @@
+{
+  "path": "/guides",
+  "extractedAt": "2026-10-02T09:02:59.659Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guides",
+  "title": "Accountant Guides — Find, Compare & Get Matched | Your Accountant Match",
+  "metaDescription": "Browse every guide: find a local tax accountant, bookkeeper, BAS agent or SMSF specialist, catch up on overdue tax and BAS, compare accountant costs, and get matched free with a vetted accountant near you.",
+  "canonical": "http://localhost:4173/guides",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Accountant Guides — Find, Compare & Get Matched | Your Accountant Match",
+    "og:description": "Browse every guide: find a local tax accountant, bookkeeper, BAS agent or SMSF specialist, catch up on overdue tax and BAS, compare accountant costs, and get matched free with a vetted accountant near you.",
+    "og:url": "http://localhost:4173/guides",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Accountant Guides — Find, Compare & Get Matched | Your Accountant Match",
+    "twitter:description": "Browse every guide: find a local tax accountant, bookkeeper, BAS agent or SMSF specialist, catch up on overdue tax and BAS, compare accountant costs, and get matched free with a vetted accountant near you.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Accountant Matching Guides",
+      "description": "Directory of every guide from Your Accountant Match — find a local accountant, bookkeeper, BAS agent or SMSF specialist, catch up on overdue tax, and compare accountant costs.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accountant Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/accountant-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tax Accountant Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/tax-accountant-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bookkeeper Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/bookkeeper-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Business Accountant Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/business-accountant-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "How Much Does an Accountant Cost",
+          "url": "https://youraccountantmatch.com.au/guide/how-much-does-an-accountant-cost"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Accountant vs Bookkeeper",
+          "url": "https://youraccountantmatch.com.au/guide/accountant-vs-bookkeeper"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Overdue Tax Return Help",
+          "url": "https://youraccountantmatch.com.au/guide/overdue-tax-return-help"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "ATO Audit Help",
+          "url": "https://youraccountantmatch.com.au/guide/ato-audit-help"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Late BAS Help",
+          "url": "https://youraccountantmatch.com.au/guide/late-bas-help"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "BAS Agent Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/bas-agent-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "SMSF Accountant Near Me",
+          "url": "https://youraccountantmatch.com.au/guide/smsf-accountant-near-me"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Accountant for Sole Traders",
+          "url": "https://youraccountantmatch.com.au/guide/accountant-for-sole-traders"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Accountant for Companies & Small Businesses",
+          "url": "https://youraccountantmatch.com.au/guide/accountant-for-companies-small-businesses"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Important Tax Dates",
+          "url": "https://youraccountantmatch.com.au/guide/important-tax-dates"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Accountant GuidesFind, Compare & Get Matched"
+    },
+    {
+      "level": 2,
+      "text": "Find the Right Professional"
+    },
+    {
+      "level": 3,
+      "text": "Accountant Near Me"
+    },
+    {
+      "level": 3,
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "level": 3,
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "level": 3,
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "level": 3,
+      "text": "BAS Agent Near Me"
+    },
+    {
+      "level": 3,
+      "text": "SMSF Accountant Near Me"
+    },
+    {
+      "level": 3,
+      "text": "Accountant for Sole Traders"
+    },
+    {
+      "level": 3,
+      "text": "Accountant for Companies & Small Businesses"
+    },
+    {
+      "level": 2,
+      "text": "Catch Up on Overdue Tax & ATO Matters"
+    },
+    {
+      "level": 3,
+      "text": "Overdue Tax Return Help"
+    },
+    {
+      "level": 3,
+      "text": "ATO Audit Help"
+    },
+    {
+      "level": 3,
+      "text": "Late BAS Help"
+    },
+    {
+      "level": 2,
+      "text": "Understand Costs, Compare Options & Key Dates"
+    },
+    {
+      "level": 3,
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "level": 3,
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "level": 3,
+      "text": "Important Tax Dates"
+    },
+    {
+      "level": 2,
+      "text": "Find an Accountant in Your City"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Accountant GuidesFind, Compare & Get Matched",
+      "images": 0,
+      "text": "Accountant GuidesFind, Compare & Get MatchedEvery guide below ends the same way: tell us what you need and your area, and we’ll match you with one suitable vetted accountant. Browse by professional type, urgent problem, or research topic — then start your free match."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Find the Right Professional",
+      "images": 0,
+      "text": "BY PROFESSIONAL TYPEFind the Right ProfessionalLooking for a specific type of accountant or bookkeeper? These guides match you with a vetted local professional whose services fit your exact needs.Accountant Near MeWhen you search 'accountant near me', you want more than the closest pin on a map — you want an accountant who actually does what you need. Your Accountant Match uses your postcode and your specific requirements to connect you with a vetted local firm.Tax Accountant Near MeA 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work.Business Accountant Near MeLooking for a local accountant for your business? Tell us your area, business type and the accounting support you need, and we'll match you with a vetted accountant from our partner network whose services fit your requirements.Bookkeeper Near MeA 'bookkeeper near me' search should return someone who knows your software, your industry and your local compliance cycle. Your Accountant Match connects you with a local registered bookkeeper (BAS Agent) who picks up your books in the platform you already use — no forced migration, no retraining your team.BAS Agent Near MeA 'BAS agent near me' search should return someone who is legally registered to lodge your BAS and who understands your industry's GST and PAYG cycle. Your Accountant Match connects you with a Tax Practitioners Board-registered BAS Agent in your area who prepares and lodges your activity statements accurately and on time — so you avoid penalties and stay current with the ATO.SMSF Accountant Near MeAn 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold.Accountant for Sole TradersRunning a business as a sole trader is simpler than a company — but the tax and compliance decisions still matter. Your Accountant Match connects you with a vetted accountant in your area who understands sole trader needs: ABN and GST registration, sole trader tax returns, BAS if you're registered for GST, and advice on when structuring as a company or trust might save you tax.Accountant for Companies & Small BusinessesA company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow.PROBLEM & URGENT HELPCatch Up on Overdue Tax & ATO MattersBehind on a return, BAS or facing ATO contact? These guides connect you with a registered agent who can bring you current and deal with the ATO on your behalf.Overdue Tax Return HelpHave one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns.ATO Audit HelpAn ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters.Late BAS HelpBehind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping.RESEARCH & GUIDESUnderstand Costs, Compare Options & Key DatesResearching before you engage? Compare real 2026 accountant fees, understand the difference between an accountant and a bookkeeper, and keep track of every important tax deadline — before you decide.How Much Does an Accountant CostAccountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs.Accountant vs BookkeeperNot sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both.Important Tax DatesMissing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time.BY LOCATIONFind an Accountant in Your CityWe match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service.Sydney (NSW)Melbourne (VIC)Brisbane (QLD)Perth (WA)Adelaide (SA)Hobart (TAS)Canberra (ACT)Darwin (NT)Browse all locations"
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 5,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.LocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near MeWhen you search 'accountant near me', you want more than the closest pin on a map — you want an accountant who actually does what you need. Your Accountant Match uses your postcode and your specific requirements to connect you with a vetted local firm."
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near MeA 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work."
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near MeLooking for a local accountant for your business? Tell us your area, business type and the accounting support you need, and we'll match you with a vetted accountant from our partner network whose services fit your requirements."
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near MeA 'bookkeeper near me' search should return someone who knows your software, your industry and your local compliance cycle. Your Accountant Match connects you with a local registered bookkeeper (BAS Agent) who picks up your books in the platform you already use — no forced migration, no retraining your team."
+    },
+    {
+      "href": "/guide/bas-agent-near-me",
+      "text": "BAS Agent Near MeA 'BAS agent near me' search should return someone who is legally registered to lodge your BAS and who understands your industry's GST and PAYG cycle. Your Accountant Match connects you with a Tax Practitioners Board-registered BAS Agent in your area who prepares and lodges your activity statements accurately and on time — so you avoid penalties and stay current with the ATO."
+    },
+    {
+      "href": "/guide/smsf-accountant-near-me",
+      "text": "SMSF Accountant Near MeAn 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold."
+    },
+    {
+      "href": "/guide/accountant-for-sole-traders",
+      "text": "Accountant for Sole TradersRunning a business as a sole trader is simpler than a company — but the tax and compliance decisions still matter. Your Accountant Match connects you with a vetted accountant in your area who understands sole trader needs: ABN and GST registration, sole trader tax returns, BAS if you're registered for GST, and advice on when structuring as a company or trust might save you tax."
+    },
+    {
+      "href": "/guide/accountant-for-companies-small-businesses",
+      "text": "Accountant for Companies & Small BusinessesA company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow."
+    },
+    {
+      "href": "/guide/overdue-tax-return-help",
+      "text": "Overdue Tax Return HelpHave one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns."
+    },
+    {
+      "href": "/guide/ato-audit-help",
+      "text": "ATO Audit HelpAn ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters."
+    },
+    {
+      "href": "/guide/late-bas-help",
+      "text": "Late BAS HelpBehind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping."
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant CostAccountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs."
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs BookkeeperNot sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both."
+    },
+    {
+      "href": "/guide/important-tax-dates",
+      "text": "Important Tax DatesMissing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time."
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Browse all locations"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/GuidesAccountant GuidesFind, Compare & Get MatchedEvery guide below ends the same way: tell us what you need and your area, and we’ll match you with one suitable vetted accountant. Browse by professional type, urgent problem, or research topic — then start your free match.BY PROFESSIONAL TYPEFind the Right ProfessionalLooking for a specific type of accountant or bookkeeper? These guides match you with a vetted local professional whose services fit your exact needs.Accountant Near MeWhen you search 'accountant near me', you want more than the closest pin on a map — you want an accountant who actually does what you need. Your Accountant Match uses your postcode and your specific requirements to connect you with a vetted local firm.Tax Accountant Near MeA 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work.Business Accountant Near MeLooking for a local accountant for your business? Tell us your area, business type and the accounting support you need, and we'll match you with a vetted accountant from our partner network whose services fit your requirements.Bookkeeper Near MeA 'bookkeeper near me' search should return someone who knows your software, your industry and your local compliance cycle. Your Accountant Match connects you with a local registered bookkeeper (BAS Agent) who picks up your books in the platform you already use — no forced migration, no retraining your team.BAS Agent Near MeA 'BAS agent near me' search should return someone who is legally registered to lodge your BAS and who understands your industry's GST and PAYG cycle. Your Accountant Match connects you with a Tax Practitioners Board-registered BAS Agent in your area who prepares and lodges your activity statements accurately and on time — so you avoid penalties and stay current with the ATO.SMSF Accountant Near MeAn 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold.Accountant for Sole TradersRunning a business as a sole trader is simpler than a company — but the tax and compliance decisions still matter. Your Accountant Match connects you with a vetted accountant in your area who understands sole trader needs: ABN and GST registration, sole trader tax returns, BAS if you're registered for GST, and advice on when structuring as a company or trust might save you tax.Accountant for Companies & Small BusinessesA company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow.PROBLEM & URGENT HELPCatch Up on Overdue Tax & ATO MattersBehind on a return, BAS or facing ATO contact? These guides connect you with a registered agent who can bring you current and deal with the ATO on your behalf.Overdue Tax Return HelpHave one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns.ATO Audit HelpAn ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters.Late BAS HelpBehind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping.RESEARCH & GUIDESUnderstand Costs, Compare Options & Key DatesResearching before you engage? Compare real 2026 accountant fees, understand the difference between an accountant and a bookkeeper, and keep track of every important tax deadline — before you decide.How Much Does an Accountant CostAccountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs.Accountant vs BookkeeperNot sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both.Important Tax DatesMissing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time.BY LOCATIONFind an Accountant in Your CityWe match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service.Sydney (NSW)Melbourne (VIC)Brisbane (QLD)Perth (WA)Adelaide (SA)Hobart (TAS)Canberra (ACT)Darwin (NT)Browse all locationsReady to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationYour Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.LocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home/Guides Accountant Guides Find, Compare & Get Matched Every guide below ends the same way: tell us what you need and your area, and we’ll match you with one suitable vetted accountant. Browse by professional type, urgent problem, or research topic — then start your free match. BY PROFESSIONAL TYPE Find the Right Professional Looking for a specific type of accountant or bookkeeper? These guides match you with a vetted local professional whose services fit your exact needs. Accountant Near Me When you search 'accountant near me', you want more than the closest pin on a map — you want an accountant who actually does what you need. Your Accountant Match uses your postcode and your specific requirements to connect you with a vetted local firm. Tax Accountant Near Me A 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work. Business Accountant Near Me Looking for a local accountant for your business? Tell us your area, business type and the accounting support you need, and we'll match you with a vetted accountant from our partner network whose services fit your requirements. Bookkeeper Near Me A 'bookkeeper near me' search should return someone who knows your software, your industry and your local compliance cycle. Your Accountant Match connects you with a local registered bookkeeper (BAS Agent) who picks up your books in the platform you already use — no forced migration, no retraining your team. BAS Agent Near Me A 'BAS agent near me' search should return someone who is legally registered to lodge your BAS and who understands your industry's GST and PAYG cycle. Your Accountant Match connects you with a Tax Practitioners Board-registered BAS Agent in your area who prepares and lodges your activity statements accurately and on time — so you avoid penalties and stay current with the ATO. SMSF Accountant Near Me An 'SMSF accountant near me' search should return a specialist who understands self-managed super compliance, not a generalist who dabbles in it. Your Accountant Match connects you with a vetted SMSF accountant in your area who handles fund setup, annual accounting and tax returns, the independent audit, and strategic advice on contributions, pensions and the Division 296 threshold. Accountant for Sole Traders Running a business as a sole trader is simpler than a company — but the tax and compliance decisions still matter. Your Accountant Match connects you with a vetted accountant in your area who understands sole trader needs: ABN and GST registration, sole trader tax returns, BAS if you're registered for GST, and advice on when structuring as a company or trust might save you tax. Accountant for Companies & Small Businesses A company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow. PROBLEM & URGENT HELP Catch Up on Overdue Tax & ATO Matters Behind on a return, BAS or facing ATO contact? These guides connect you with a registered agent who can bring you current and deal with the ATO on your behalf. Overdue Tax Return Help Have one or more overdue tax returns? A registered tax agent can help bring your lodgements up to date, deal with the ATO on your behalf and, where applicable, request penalty remission or help arrange a payment plan for tax debt. Your Accountant Match connects you with a vetted registered tax agent experienced in overdue and late tax returns. ATO Audit Help An ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters. Late BAS Help Behind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping. RESEARCH & GUIDES Understand Costs, Compare Options & Key Dates Researching before you engage? Compare real 2026 accountant fees, understand the difference between an accountant and a bookkeeper, and keep track of every important tax deadline — before you decide. How Much Does an Accountant Cost Accountant fees in Australia vary depending on the service, complexity and expertise you need. Compare typical 2026 costs for individual tax returns, BAS, small business accounting, SMSF accounting and specialist advice — then get matched with a vetted accountant suited to your needs. Accountant vs Bookkeeper Not sure whether you need an accountant or a bookkeeper? A bookkeeper typically handles your day-to-day financial records, while an accountant focuses on tax, compliance, structure and forward planning. This Australian guide explains the difference, when you may need each, and when one firm can provide both. Important Tax Dates Missing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time. BY LOCATION Find an Accountant in Your City We match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service. Sydney (NSW) Melbourne (VIC) Brisbane (QLD) Perth (WA) Adelaide (SA) Hobart (TAS) Canberra (ACT) Darwin (NT) Browse all locations Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2660,
+  "inSitemap": true
+}

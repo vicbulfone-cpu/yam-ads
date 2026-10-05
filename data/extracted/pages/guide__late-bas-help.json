@@ -1,0 +1,517 @@
+{
+  "path": "/guide/late-bas-help",
+  "extractedAt": "2026-10-02T09:02:54.399Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/late-bas-help",
+  "title": "Late BAS Help — Catch Up on Overdue BAS Lodgements | Your Accountant Match",
+  "metaDescription": "Behind on your BAS? Get matched free with a local registered BAS agent who handles overdue BAS, penalty remission & ATO payment plans. Catch up fast.",
+  "canonical": "http://localhost:4173/guide/late-bas-help",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Late BAS Help — Catch Up on Overdue BAS Lodgements | Your Accountant Match",
+    "og:description": "Behind on your BAS? Get matched free with a local registered BAS agent who handles overdue BAS, penalty remission & ATO payment plans. Catch up fast.",
+    "og:url": "http://localhost:4173/guide/late-bas-help",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Late BAS Help — Catch Up on Overdue BAS Lodgements | Your Accountant Match",
+    "twitter:description": "Behind on your BAS? Get matched free with a local registered BAS agent who handles overdue BAS, penalty remission & ATO payment plans. Catch up fast.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens if I lodge my BAS late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO applies failure-to-lodge penalties (scaling with lateness and entity size), general interest charge (GIC) on any net amount payable, and may issue a default assessment. Persistent non-lodgement can lead to garnishee action. Catching up voluntarily is almost always cheaper than waiting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I lodge multiple overdue BAS periods at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched BAS Agent works through the backlog period by period, reconciling transactions and coding GST correctly for each, then lodging in sequence. The ATO generally prefers voluntary catch-up over enforcement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can BAS late-lodgement penalties be waived?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Potentially. A registered BAS Agent can request remission of failure-to-lodge penalties where mitigating circumstances exist (illness, disaster, family crisis). Remission is not guaranteed but a well-prepared request improves the chances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can lodge my BAS for a fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only a registered BAS Agent (or tax agent) can charge a fee to prepare and lodge a BAS, under the Tax Agent Services Act 2009. All matched bookkeepers providing BAS services in our network have verified, current TPB registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do registered BAS agents get extra time to lodge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes — registered agents typically receive extended lodgement deadlines, which can buy time on current periods. The matched BAS Agent confirms your cycle and lodges within the applicable deadlines to avoid further penalties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prevent falling behind on BAS again?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The matched agent sets up systems to keep you current — regular bank reconciliation, STP2-compliant payroll, automated reminders, and correctly configured software. Most late-BAS problems are record-keeping problems, not tax problems. Fix the process and the lodgements take care of themselves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can a BAS agent start on my overdue periods?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched BAS Agent will typically reach out within 2 hours to begin the catch-up process, or you can call for immediate assistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the ATO charge me interest on overdue BAS amounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "General interest charge (GIC) generally applies to any net amount payable that is overdue. A registered BAS Agent can help arrange a payment plan and request remission of interest where mitigating circumstances exist. Acting early minimises the interest accrued."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Urgent Help",
+          "item": "/guide/late-bas-help"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Late BAS Help — Catch Up on Overdue BAS Lodgements",
+      "description": "Behind on your BAS? Get matched free with a local registered BAS agent who handles overdue BAS, penalty remission & ATO payment plans. Catch up fast.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/late-bas-help"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/stp-phase-2-reporting-quick-reference-guide"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Late Business Activity Statement help",
+          "sameAs": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Late BAS Help — Catch Up onOverdue BAS lodgements"
+    },
+    {
+      "level": 2,
+      "text": "Catching Up on Overdue BAS"
+    },
+    {
+      "level": 3,
+      "text": "What happens when BAS is late"
+    },
+    {
+      "level": 3,
+      "text": "How a registered BAS Agent helps"
+    },
+    {
+      "level": 3,
+      "text": "Multiple periods behind"
+    },
+    {
+      "level": 3,
+      "text": "Preventing it happening again"
+    },
+    {
+      "level": 2,
+      "text": "Overdue BAS Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Late BAS Help — Catch Up onOverdue BAS lodgements",
+      "images": 0,
+      "text": "Home/Guides/Urgent HelpLate BAS Help — Catch Up onOverdue BAS lodgementsBehind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPCatching Up on Overdue BASWhat happens when BAS is lateThe ATO applies failure-to-lodge penalties for late BAS, plus general interest charge (GIC) on any net amount payable. Persistent non-lodgement can lead to the ATO issuing a default assessment (usually higher than reality) or escalating to garnishee action. Catching up voluntarily is almost always cheaper and less painful than waiting for the ATO to act.How a registered BAS Agent helpsA registered BAS Agent can prepare and lodge overdue BAS periods, reconcile bank and GST data for each period, request remission of failure-to-lodge penalties where mitigating circumstances exist, and negotiate payment plans for any resulting debt. Agents often have extended lodgement deadlines, which can buy time on current periods.Multiple periods behindIf you are several quarters (or years) behind, the matched BAS Agent works through the backlog methodically — reconstructing transactions where records are incomplete, coding GST correctly for each period, and lodging in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent early is the right move.Preventing it happening againOnce you are current, the matched agent sets up systems to keep you there — regular bank reconciliation, STP2-compliant payroll, automated reminders, and the right software configured correctly. Most late-BAS problems are record-keeping problems, not tax problems. Fix the process and the lodgements take care of themselves.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOfailure-to-lodge penalties for late BASATOgeneral interest charge (GIC)ATOdefault assessmentATOgarnishee actionATOSTP2-compliant payrollAustLIITax Agent Services Act 2009This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHOverdue BAS Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Overdue BAS preparation & lodgementFailure-to-lodge penalty remission requestsGST reconciliation for prior periodsATO debt & payment plan negotiationCatch-up bookkeeping (multiple periods)Ongoing BAS compliance setupVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What happens if I lodge my BAS late?The ATO applies failure-to-lodge penalties (scaling with lateness and entity size), general interest charge (GIC) on any net amount payable, and may issue a default assessment. Persistent non-lodgement can lead to garnishee action. Catching up voluntarily is almost always cheaper than waiting.Can I lodge multiple overdue BAS periods at once?Can BAS late-lodgement penalties be waived?Who can lodge my BAS for a fee?Do registered BAS agents get extra time to lodge?How do I prevent falling behind on BAS again?How quickly can a BAS agent start on my overdue periods?Will the ATO charge me interest on overdue BAS amounts?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge penalties for late BAS"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "default assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "garnishee action"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/stp-phase-2-reporting-quick-reference-guide",
+      "text": "STP2-compliant payroll"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOfailure-to-lodge penalties for late BAS"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "ATOgeneral interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "ATOdefault assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "ATOgarnishee action"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/stp-phase-2-reporting-quick-reference-guide",
+      "text": "ATOSTP2-compliant payroll"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "AustLIITax Agent Services Act 2009"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/default-assessments",
+      "text": "default assessment"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notices",
+      "text": "garnishee action"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Urgent HelpLate BAS Help — Catch Up onOverdue BAS lodgementsBehind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPCatching Up on Overdue BASWhat happens when BAS is lateThe ATO applies failure-to-lodge penalties for late BAS, plus general interest charge (GIC) on any net amount payable. Persistent non-lodgement can lead to the ATO issuing a default assessment (usually higher than reality) or escalating to garnishee action. Catching up voluntarily is almost always cheaper and less painful than waiting for the ATO to act.How a registered BAS Agent helpsA registered BAS Agent can prepare and lodge overdue BAS periods, reconcile bank and GST data for each period, request remission of failure-to-lodge penalties where mitigating circumstances exist, and negotiate payment plans for any resulting debt. Agents often have extended lodgement deadlines, which can buy time on current periods.Multiple periods behindIf you are several quarters (or years) behind, the matched BAS Agent works through the backlog methodically — reconstructing transactions where records are incomplete, coding GST correctly for each period, and lodging in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent early is the right move.Preventing it happening againOnce you are current, the matched agent sets up systems to keep you there — regular bank reconciliation, STP2-compliant payroll, automated reminders, and the right software configured correctly. Most late-BAS problems are record-keeping problems, not tax problems. Fix the process and the lodgements take care of themselves.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOfailure-to-lodge penalties for late BASATOgeneral interest charge (GIC)ATOdefault assessmentATOgarnishee actionATOSTP2-compliant payrollAustLIITax Agent Services Act 2009This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHOverdue BAS Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Overdue BAS preparation & lodgementFailure-to-lodge penalty remission requestsGST reconciliation for prior periodsATO debt & payment plan negotiationCatch-up bookkeeping (multiple periods)Ongoing BAS compliance setupVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What happens if I lodge my BAS late?The ATO applies failure-to-lodge penalties (scaling with lateness and entity size), general interest charge (GIC) on any net amount payable, and may issue a default assessment. Persistent non-lodgement can lead to garnishee action. Catching up voluntarily is almost always cheaper than waiting.Can I lodge multiple overdue BAS periods at once?Can BAS late-lodgement penalties be waived?Who can lodge my BAS for a fee?Do registered BAS agents get extra time to lodge?How do I prevent falling behind on BAS again?How quickly can a BAS agent start on my overdue periods?Will the ATO charge me interest on overdue BAS amounts?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Urgent Help Late BAS Help — Catch Up on Overdue BAS lodgements Behind on one or more BAS lodgements? A registered BAS agent can help prepare and lodge overdue activity statements, reconcile GST and PAYG information, deal with the ATO, request remission of penalties or interest where appropriate, and help arrange a payment plan if required. Your Accountant Match connects you with a vetted registered agent experienced in overdue BAS and catch-up bookkeeping. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 URGENT HELP Catching Up on Overdue BAS What happens when BAS is late The ATO applies failure-to-lodge penalties for late BAS, plus general interest charge (GIC) on any net amount payable. Persistent non-lodgement can lead to the ATO issuing a default assessment (usually higher than reality) or escalating to garnishee action. Catching up voluntarily is almost always cheaper and less painful than waiting for the ATO to act. How a registered BAS Agent helps A registered BAS Agent can prepare and lodge overdue BAS periods, reconcile bank and GST data for each period, request remission of failure-to-lodge penalties where mitigating circumstances exist, and negotiate payment plans for any resulting debt. Agents often have extended lodgement deadlines, which can buy time on current periods. Multiple periods behind If you are several quarters (or years) behind, the matched BAS Agent works through the backlog methodically — reconstructing transactions where records are incomplete, coding GST correctly for each period, and lodging in sequence. The ATO generally prefers voluntary catch-up over enforcement, so engaging an agent early is the right move. Preventing it happening again Once you are current, the matched agent sets up systems to keep you there — regular bank reconciliation, STP2-compliant payroll, automated reminders, and the right software configured correctly. Most late-BAS problems are record-keeping problems, not tax problems. Fix the process and the lodgements take care of themselves. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO failure-to-lodge penalties for late BAS ATO general interest charge (GIC) ATO default assessment ATO garnishee action ATO STP2-compliant payroll AUSTLII Tax Agent Services Act 2009 This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Overdue BAS Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. Overdue BAS preparation & lodgement Failure-to-lodge penalty remission requests GST reconciliation for prior periods ATO debt & payment plan negotiation Catch-up bookkeeping (multiple periods) Ongoing BAS compliance setup Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. What happens if I lodge my BAS late? The ATO applies failure-to-lodge penalties (scaling with lateness and entity size), general interest charge (GIC) on any net amount payable, and may issue a default assessment. Persistent non-lodgement can lead to garnishee action. Catching up voluntarily is almost always cheaper than waiting. Can I lodge multiple overdue BAS periods at once? Can BAS late-lodgement penalties be waived? Who can lodge my BAS for a fee? Do registered BAS agents get extra time to lodge? How do I prevent falling behind on BAS again? How quickly can a BAS agent start on my overdue periods? Will the ATO charge me interest on overdue BAS amounts? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2659,
+  "inSitemap": true
+}

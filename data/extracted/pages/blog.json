@@ -1,0 +1,501 @@
+{
+  "path": "/blog",
+  "extractedAt": "2026-10-02T09:02:59.706Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog",
+  "title": "Tax & Accounting Blog — Insights for Australians | Your Accountant Match",
+  "metaDescription": "Practical tax and accounting articles for Australian individuals and small businesses — BAS due dates, EOFY planning, working from home deductions, sole trader tax tips and more.",
+  "canonical": "http://localhost:4173/blog",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Tax & Accounting Blog — Insights for Australians | Your Accountant Match",
+    "og:description": "Practical tax and accounting articles for Australian individuals and small businesses — BAS due dates, EOFY planning, working from home deductions, sole trader tax tips and more.",
+    "og:url": "http://localhost:4173/blog",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Tax & Accounting Blog — Insights for Australians | Your Accountant Match",
+    "twitter:description": "Practical tax and accounting articles for Australian individuals and small businesses — BAS due dates, EOFY planning, working from home deductions, sole trader tax tips and more.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Your Accountant Match Blog",
+      "description": "Tax and accounting articles for Australians — BAS due dates, EOFY planning, deductions, sole trader tax tips and more.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "BAS Due Dates 2026: When to Lodge and How to Prepare",
+          "url": "https://youraccountantmatch.com.au/blog/bas-due-dates-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Individual Tax Return Deadlines 2026: Don't Miss 31 October",
+          "url": "https://youraccountantmatch.com.au/blog/tax-return-deadlines-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Payday Super 2026: New Super Guarantee Timing for Employers",
+          "url": "https://youraccountantmatch.com.au/blog/payday-super-deadlines-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Company & Trust Tax Return Deadlines 2026",
+          "url": "https://youraccountantmatch.com.au/blog/company-trust-return-deadlines-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax",
+          "url": "https://youraccountantmatch.com.au/blog/tax-planning-strategies-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Negative Gearing Explained 2026: How Property Losses Reduce Tax",
+          "url": "https://youraccountantmatch.com.au/blog/negative-gearing-explained-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?",
+          "url": "https://youraccountantmatch.com.au/blog/company-vs-trust-vs-sole-trader-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Super Contributions & Caps 2026: How Much Can You Contribute?",
+          "url": "https://youraccountantmatch.com.au/blog/super-contributions-cap-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Working From Home Tax Deductions 2026: What You Can Claim",
+          "url": "https://youraccountantmatch.com.au/blog/home-office-tax-deductions-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook",
+          "url": "https://youraccountantmatch.com.au/blog/vehicle-car-deductions-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Rental Property Deductions 2026: What Investors Can Claim",
+          "url": "https://youraccountantmatch.com.au/blog/rental-property-deductions-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews",
+          "url": "https://youraccountantmatch.com.au/blog/work-related-deductions-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "How to Reduce Tax as a Sole Trader in Australia (2026)",
+          "url": "https://youraccountantmatch.com.au/blog/reduce-tax-sole-trader-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "GST Registration Threshold 2026: When Your Business Must Register",
+          "url": "https://youraccountantmatch.com.au/blog/gst-registration-threshold-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "How to Catch Up on Overdue Tax Returns (Multi-Year Backlog)",
+          "url": "https://youraccountantmatch.com.au/blog/catch-up-overdue-tax-returns-2026"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long",
+          "url": "https://youraccountantmatch.com.au/blog/business-records-bookkeeping-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tax & Accounting BlogInsights for Australians"
+    },
+    {
+      "level": 2,
+      "text": "Tax Deadlines & Due Dates"
+    },
+    {
+      "level": 3,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 3,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 3,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 3,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 2,
+      "text": "Tax Planning & EOFY"
+    },
+    {
+      "level": 3,
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax"
+    },
+    {
+      "level": 3,
+      "text": "Negative Gearing Explained 2026: How Property Losses Reduce Tax"
+    },
+    {
+      "level": 3,
+      "text": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?"
+    },
+    {
+      "level": 3,
+      "text": "Super Contributions & Caps 2026: How Much Can You Contribute?"
+    },
+    {
+      "level": 2,
+      "text": "Deductions & Claims"
+    },
+    {
+      "level": 3,
+      "text": "Working From Home Tax Deductions 2026: What You Can Claim"
+    },
+    {
+      "level": 3,
+      "text": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook"
+    },
+    {
+      "level": 3,
+      "text": "Rental Property Deductions 2026: What Investors Can Claim"
+    },
+    {
+      "level": 3,
+      "text": "Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews"
+    },
+    {
+      "level": 2,
+      "text": "Business & Structuring"
+    },
+    {
+      "level": 3,
+      "text": "How to Reduce Tax as a Sole Trader in Australia (2026)"
+    },
+    {
+      "level": 3,
+      "text": "GST Registration Threshold 2026: When Your Business Must Register"
+    },
+    {
+      "level": 3,
+      "text": "How to Catch Up on Overdue Tax Returns (Multi-Year Backlog)"
+    },
+    {
+      "level": 3,
+      "text": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long"
+    },
+    {
+      "level": 2,
+      "text": "Find an Accountant in Your City"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Tax & Accounting BlogInsights for Australians",
+      "images": 0,
+      "text": "Tax & Accounting BlogInsights for AustraliansPractical, plain-English articles on tax deadlines, EOFY planning, deductions and small business tax — written to help you stay on top of your obligations and make confident decisions. Each article ends the same way: tell us what you need and your area, and we’ll match you with one vetted accountant."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Tax Deadlines & Due Dates",
+      "images": 0,
+      "text": "DEADLINESTax Deadlines & Due DatesNever miss a BAS, super or lodgement deadline. These articles set out the key dates each year and explain how registered agents get extra time.BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readPLANNINGTax Planning & EOFYPractical steps to take before 30 June — super contributions, asset write-offs, prepayments and structuring — to reduce tax legitimately.Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readNegative Gearing Explained 2026: How Property Losses Reduce TaxHow negative gearing works for property investors in 2026 — claiming rental losses against your other income, what expenses are deductible, the enacted 2027 new-build changes and grandfathering, and what happens when you sell.6 min readCompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Sole trader, company or trust in 2026 — tax rates, asset protection, compliance cost and when restructure makes sense, compared side by side so you can choose the right fit.6 min readSuper Contributions & Caps 2026: How Much Can You Contribute?Super contribution caps for 2025-26 — the $30,000 concessional limit, non-concessional caps, carry-forward unused amounts, and how to claim a personal tax deduction.6 min readDEDUCTIONSDeductions & ClaimsWhat you can and can't claim, the records you must keep, and how to make sure every legitimate deduction is captured.Working From Home Tax Deductions 2026: What You Can ClaimHow to claim working from home deductions in 2025-26 — the fixed-rate method vs actual costs, the records you must keep, and the expenses you can't claim.6 min readVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookClaiming car and vehicle deductions in 2025-26 — the cents-per-km rate and 5,000km cap, the logbook method, what's deductible, and the records you need.6 min readRental Property Deductions 2026: What Investors Can ClaimRental property deductions for 2025-26 — what property investors can claim, the difference between repairs and improvements, depreciation, and record-keeping rules.6 min readWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsWork-related deductions for 2025-26 — common claims like union fees, self-education, tools and clothing, the records you need, and what triggers an ATO review.6 min readBUSINESSBusiness & StructuringGuidance for sole traders and small businesses on reducing tax, choosing the right structure, and keeping compliant records.How to Reduce Tax as a Sole Trader in Australia (2026)Legitimate ways for sole traders to reduce tax in 2026 — claiming all deductions, structuring, super contributions, prepaying expenses and keeping clean records.6 min readGST Registration Threshold 2026: When Your Business Must RegisterThe GST registration threshold for 2026 — the $75,000 turnover limit, the ride-share/taxi rule, voluntary registration pros and cons, and the consequences of registering late.5 min readHow to Catch Up on Overdue Tax Returns (Multi-Year Backlog)A practical guide to catching up on overdue tax returns — reconstructing income, lodging years in sequence, reducing failure-to-lodge penalties, and dealing with the ATO.6 min readBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongSmall business record-keeping for 2026 — what records you must keep, the 5-year retention rule, digital records, and how clean bookkeeping reduces tax and audit risk.5 min readBY LOCATIONFind an Accountant in Your CityWe match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service.Sydney (NSW)Melbourne (VIC)Brisbane (QLD)Perth (WA)Adelaide (SA)Hobart (TAS)Canberra (ACT)Darwin (NT)Browse all locations"
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 5,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.BlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/tax-planning-strategies-2026",
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min read"
+    },
+    {
+      "href": "/blog/negative-gearing-explained-2026",
+      "text": "Negative Gearing Explained 2026: How Property Losses Reduce TaxHow negative gearing works for property investors in 2026 — claiming rental losses against your other income, what expenses are deductible, the enacted 2027 new-build changes and grandfathering, and what happens when you sell.6 min read"
+    },
+    {
+      "href": "/blog/company-vs-trust-vs-sole-trader-2026",
+      "text": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Sole trader, company or trust in 2026 — tax rates, asset protection, compliance cost and when restructure makes sense, compared side by side so you can choose the right fit.6 min read"
+    },
+    {
+      "href": "/blog/super-contributions-cap-2026",
+      "text": "Super Contributions & Caps 2026: How Much Can You Contribute?Super contribution caps for 2025-26 — the $30,000 concessional limit, non-concessional caps, carry-forward unused amounts, and how to claim a personal tax deduction.6 min read"
+    },
+    {
+      "href": "/blog/home-office-tax-deductions-2026",
+      "text": "Working From Home Tax Deductions 2026: What You Can ClaimHow to claim working from home deductions in 2025-26 — the fixed-rate method vs actual costs, the records you must keep, and the expenses you can't claim.6 min read"
+    },
+    {
+      "href": "/blog/vehicle-car-deductions-2026",
+      "text": "Vehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookClaiming car and vehicle deductions in 2025-26 — the cents-per-km rate and 5,000km cap, the logbook method, what's deductible, and the records you need.6 min read"
+    },
+    {
+      "href": "/blog/rental-property-deductions-2026",
+      "text": "Rental Property Deductions 2026: What Investors Can ClaimRental property deductions for 2025-26 — what property investors can claim, the difference between repairs and improvements, depreciation, and record-keeping rules.6 min read"
+    },
+    {
+      "href": "/blog/work-related-deductions-2026",
+      "text": "Work-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsWork-related deductions for 2025-26 — common claims like union fees, self-education, tools and clothing, the records you need, and what triggers an ATO review.6 min read"
+    },
+    {
+      "href": "/blog/reduce-tax-sole-trader-2026",
+      "text": "How to Reduce Tax as a Sole Trader in Australia (2026)Legitimate ways for sole traders to reduce tax in 2026 — claiming all deductions, structuring, super contributions, prepaying expenses and keeping clean records.6 min read"
+    },
+    {
+      "href": "/blog/gst-registration-threshold-2026",
+      "text": "GST Registration Threshold 2026: When Your Business Must RegisterThe GST registration threshold for 2026 — the $75,000 turnover limit, the ride-share/taxi rule, voluntary registration pros and cons, and the consequences of registering late.5 min read"
+    },
+    {
+      "href": "/blog/catch-up-overdue-tax-returns-2026",
+      "text": "How to Catch Up on Overdue Tax Returns (Multi-Year Backlog)A practical guide to catching up on overdue tax returns — reconstructing income, lodging years in sequence, reducing failure-to-lodge penalties, and dealing with the ATO.6 min read"
+    },
+    {
+      "href": "/blog/business-records-bookkeeping-2026",
+      "text": "Business Records & Bookkeeping 2026: What You Must Keep and For How LongSmall business record-keeping for 2026 — what records you must keep, the 5-year retention rule, digital records, and how clean bookkeeping reduces tax and audit risk.5 min read"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Browse all locations"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/BlogTax & Accounting BlogInsights for AustraliansPractical, plain-English articles on tax deadlines, EOFY planning, deductions and small business tax — written to help you stay on top of your obligations and make confident decisions. Each article ends the same way: tell us what you need and your area, and we’ll match you with one vetted accountant.DEADLINESTax Deadlines & Due DatesNever miss a BAS, super or lodgement deadline. These articles set out the key dates each year and explain how registered agents get extra time.BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readPLANNINGTax Planning & EOFYPractical steps to take before 30 June — super contributions, asset write-offs, prepayments and structuring — to reduce tax legitimately.Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxEight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line.6 min readNegative Gearing Explained 2026: How Property Losses Reduce TaxHow negative gearing works for property investors in 2026 — claiming rental losses against your other income, what expenses are deductible, the enacted 2027 new-build changes and grandfathering, and what happens when you sell.6 min readCompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Sole trader, company or trust in 2026 — tax rates, asset protection, compliance cost and when restructure makes sense, compared side by side so you can choose the right fit.6 min readSuper Contributions & Caps 2026: How Much Can You Contribute?Super contribution caps for 2025-26 — the $30,000 concessional limit, non-concessional caps, carry-forward unused amounts, and how to claim a personal tax deduction.6 min readDEDUCTIONSDeductions & ClaimsWhat you can and can't claim, the records you must keep, and how to make sure every legitimate deduction is captured.Working From Home Tax Deductions 2026: What You Can ClaimHow to claim working from home deductions in 2025-26 — the fixed-rate method vs actual costs, the records you must keep, and the expenses you can't claim.6 min readVehicle & Car Tax Deductions 2026: Cents-per-KM vs LogbookClaiming car and vehicle deductions in 2025-26 — the cents-per-km rate and 5,000km cap, the logbook method, what's deductible, and the records you need.6 min readRental Property Deductions 2026: What Investors Can ClaimRental property deductions for 2025-26 — what property investors can claim, the difference between repairs and improvements, depreciation, and record-keeping rules.6 min readWork-Related Deductions 2026: Common Claims & What Triggers ATO ReviewsWork-related deductions for 2025-26 — common claims like union fees, self-education, tools and clothing, the records you need, and what triggers an ATO review.6 min readBUSINESSBusiness & StructuringGuidance for sole traders and small businesses on reducing tax, choosing the right structure, and keeping compliant records.How to Reduce Tax as a Sole Trader in Australia (2026)Legitimate ways for sole traders to reduce tax in 2026 — claiming all deductions, structuring, super contributions, prepaying expenses and keeping clean records.6 min readGST Registration Threshold 2026: When Your Business Must RegisterThe GST registration threshold for 2026 — the $75,000 turnover limit, the ride-share/taxi rule, voluntary registration pros and cons, and the consequences of registering late.5 min readHow to Catch Up on Overdue Tax Returns (Multi-Year Backlog)A practical guide to catching up on overdue tax returns — reconstructing income, lodging years in sequence, reducing failure-to-lodge penalties, and dealing with the ATO.6 min readBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongSmall business record-keeping for 2026 — what records you must keep, the 5-year retention rule, digital records, and how clean bookkeeping reduces tax and audit risk.5 min readBY LOCATIONFind an Accountant in Your CityWe match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service.Sydney (NSW)Melbourne (VIC)Brisbane (QLD)Perth (WA)Adelaide (SA)Hobart (TAS)Canberra (ACT)Darwin (NT)Browse all locationsReady to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationYour Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaYour Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider.BlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home/Blog Tax & Accounting Blog Insights for Australians Practical, plain-English articles on tax deadlines, EOFY planning, deductions and small business tax — written to help you stay on top of your obligations and make confident decisions. Each article ends the same way: tell us what you need and your area, and we’ll match you with one vetted accountant. DEADLINES Tax Deadlines & Due Dates Never miss a BAS, super or lodgement deadline. These articles set out the key dates each year and explain how registered agents get extra time. BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read PLANNING Tax Planning & EOFY Practical steps to take before 30 June — super contributions, asset write-offs, prepayments and structuring — to reduce tax legitimately. Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax Eight legitimate tax planning moves for 2026 — super contributions, asset write-offs, timing income and expenses, structuring, and prepayments — that reduce tax without crossing the line. 6 min read Negative Gearing Explained 2026: How Property Losses Reduce Tax How negative gearing works for property investors in 2026 — claiming rental losses against your other income, what expenses are deductible, the enacted 2027 new-build changes and grandfathering, and what happens when you sell. 6 min read Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026? Sole trader, company or trust in 2026 — tax rates, asset protection, compliance cost and when restructure makes sense, compared side by side so you can choose the right fit. 6 min read Super Contributions & Caps 2026: How Much Can You Contribute? Super contribution caps for 2025-26 — the $30,000 concessional limit, non-concessional caps, carry-forward unused amounts, and how to claim a personal tax deduction. 6 min read DEDUCTIONS Deductions & Claims What you can and can't claim, the records you must keep, and how to make sure every legitimate deduction is captured. Working From Home Tax Deductions 2026: What You Can Claim How to claim working from home deductions in 2025-26 — the fixed-rate method vs actual costs, the records you must keep, and the expenses you can't claim. 6 min read Vehicle & Car Tax Deductions 2026: Cents-per-KM vs Logbook Claiming car and vehicle deductions in 2025-26 — the cents-per-km rate and 5,000km cap, the logbook method, what's deductible, and the records you need. 6 min read Rental Property Deductions 2026: What Investors Can Claim Rental property deductions for 2025-26 — what property investors can claim, the difference between repairs and improvements, depreciation, and record-keeping rules. 6 min read Work-Related Deductions 2026: Common Claims & What Triggers ATO Reviews Work-related deductions for 2025-26 — common claims like union fees, self-education, tools and clothing, the records you need, and what triggers an ATO review. 6 min read BUSINESS Business & Structuring Guidance for sole traders and small businesses on reducing tax, choosing the right structure, and keeping compliant records. How to Reduce Tax as a Sole Trader in Australia (2026) Legitimate ways for sole traders to reduce tax in 2026 — claiming all deductions, structuring, super contributions, prepaying expenses and keeping clean records. 6 min read GST Registration Threshold 2026: When Your Business Must Register The GST registration threshold for 2026 — the $75,000 turnover limit, the ride-share/taxi rule, voluntary registration pros and cons, and the consequences of registering late. 5 min read How to Catch Up on Overdue Tax Returns (Multi-Year Backlog) A practical guide to catching up on overdue tax returns — reconstructing income, lodging years in sequence, reducing failure-to-lodge penalties, and dealing with the ATO. 6 min read Business Records & Bookkeeping 2026: What You Must Keep and For How Long Small business record-keeping for 2026 — what records you must keep, the 5-year retention rule, digital records, and how clean bookkeeping reduces tax and audit risk. 5 min read BY LOCATION Find an Accountant in Your City We match individuals and businesses with vetted local accountants across Australia. Select your capital city below, or browse the full directory of every city and region we service. Sydney (NSW) Melbourne (VIC) Brisbane (QLD) Perth (WA) Adelaide (SA) Hobart (TAS) Canberra (ACT) Darwin (NT) Browse all locations Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Your Accountant Match is an independent matching service based in Chadstone, Melbourne, connecting people and businesses with suitable, locally-based accounting firms across Australia. We operate entirely online and by phone and do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting or tax advice provider. Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2626,
+  "inSitemap": true
+}

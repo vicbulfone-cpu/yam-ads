@@ -1,0 +1,226 @@
+{
+  "path": "/privacy",
+  "extractedAt": "2026-10-02T09:00:47.296Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/privacy",
+  "title": "Your Accountant Match — Find a Vetted Local Accountant",
+  "metaDescription": "Get matched free with a vetted local accountant. Answer a few quick questions and we connect you with one suitable accountant partner serving your area and needs.",
+  "canonical": "https://youraccountantmatch.com.au/",
+  "robots": [],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Your Accountant Match — Find a Vetted Local Accountant",
+    "og:description": "Free accountant matching service across Australia. Get matched with one vetted local accountant partner based on your specific needs and area.",
+    "og:url": "https://youraccountantmatch.com.au/",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Your Accountant Match — Free Accountant Matching Service",
+    "twitter:description": "Get matched free with one vetted local accountant. Based in Melbourne, serving all of Australia.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Privacy Statement"
+    },
+    {
+      "level": 2,
+      "text": "1. Who We Are"
+    },
+    {
+      "level": 2,
+      "text": "2. Information We Collect"
+    },
+    {
+      "level": 2,
+      "text": "3. How We Use Your Information"
+    },
+    {
+      "level": 2,
+      "text": "4. Information Sharing"
+    },
+    {
+      "level": 2,
+      "text": "5. Email Verification"
+    },
+    {
+      "level": 2,
+      "text": "6. Data Retention"
+    },
+    {
+      "level": 2,
+      "text": "7. Your Rights"
+    },
+    {
+      "level": 2,
+      "text": "8. Security"
+    },
+    {
+      "level": 2,
+      "text": "9. Complaints"
+    },
+    {
+      "level": 2,
+      "text": "10. Contact"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Privacy Statement",
+      "images": 0,
+      "text": "Privacy StatementLast updated: January 20261. Who We AreYour Accountant Match is a Melbourne-based matching service that connects individuals and businesses with independent accounting firms across Australia. We are not an accounting or tax advice provider; we facilitate introductions between users and accountants in our network. The matching service is free to you — we do not charge you any fee for being matched with an accountant. This Privacy Statement explains how we collect, use, and protect your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).2. Information We CollectWhen you use our questionnaire, we collect:Name – so the matched accountant can address you.Phone number – so the accountant can contact you.Email address – to verify your identity before a match is shown.Postcode – to match you with an accountant in your area.Questionnaire answers – including any \"Other\" notes you provide.We do not collect sensitive information such as health, race, or political opinions unless you voluntarily include it in an \"Other\" field.3. How We Use Your InformationTo verify your email and prevent bots from triggering matches.To match you with an accountant in our network who understands your needs and individual requirements.To send the matched accountant your name, phone number, postcode, and questionnaire answers.To notify the accountant via email and SMS.To maintain records for billing and dispute resolution.4. Information SharingWe share your name, phone number, postcode, and questionnaire answers with your matched accountant. We do not sell your data to marketing databases or pass it to third parties beyond your matched accountant. Your information is never shared with multiple firms simultaneously.5. Email VerificationBefore a match is shown to you, we send a verification link to your email. No lead is created and no accountant is notified until you click that link. This prevents bots from generating false matches.6. Data RetentionWe retain your questionnaire data for as long as needed to provide the matching service and for record-keeping. You may request deletion of your data at any time by emailing privacy@youraccountantmatch.com.au. Leads stored in the accountant's CRM are retained per the accountant's own retention policy.7. Your RightsUnder the Privacy Act, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact privacy@youraccountantmatch.com.au.8. SecurityWe use email verification and secure transmission to protect your data. However, no system is 100% secure; please do not include passwords or financial details in the \"Other\" fields.9. ComplaintsIf you believe we've breached the Privacy Act, contact us first. If unresolved, you may complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.10. ContactEmail: privacy@youraccountantmatch.com.auYour Accountant Match, Melbourne, Victoria, Australia."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "What is Your Accountant Match?",
+      "images": 0,
+      "text": "A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match."
+    },
+    {
+      "index": 4,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "All Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "mailto:privacy@youraccountantmatch.com.au",
+      "text": "privacy@youraccountantmatch.com.au"
+    },
+    {
+      "href": "mailto:privacy@youraccountantmatch.com.au",
+      "text": "privacy@youraccountantmatch.com.au"
+    },
+    {
+      "href": "https://www.oaic.gov.au",
+      "text": "oaic.gov.au"
+    },
+    {
+      "href": "mailto:privacy@youraccountantmatch.com.au",
+      "text": "privacy@youraccountantmatch.com.au"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Privacy StatementLast updated: January 20261. Who We AreYour Accountant Match is a Melbourne-based matching service that connects individuals and businesses with independent accounting firms across Australia. We are not an accounting or tax advice provider; we facilitate introductions between users and accountants in our network. The matching service is free to you — we do not charge you any fee for being matched with an accountant. This Privacy Statement explains how we collect, use, and protect your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).2. Information We CollectWhen you use our questionnaire, we collect:Name – so the matched accountant can address you.Phone number – so the accountant can contact you.Email address – to verify your identity before a match is shown.Postcode – to match you with an accountant in your area.Questionnaire answers – including any \"Other\" notes you provide.We do not collect sensitive information such as health, race, or political opinions unless you voluntarily include it in an \"Other\" field.3. How We Use Your InformationTo verify your email and prevent bots from triggering matches.To match you with an accountant in our network who understands your needs and individual requirements.To send the matched accountant your name, phone number, postcode, and questionnaire answers.To notify the accountant via email and SMS.To maintain records for billing and dispute resolution.4. Information SharingWe share your name, phone number, postcode, and questionnaire answers with your matched accountant. We do not sell your data to marketing databases or pass it to third parties beyond your matched accountant. Your information is never shared with multiple firms simultaneously.5. Email VerificationBefore a match is shown to you, we send a verification link to your email. No lead is created and no accountant is notified until you click that link. This prevents bots from generating false matches.6. Data RetentionWe retain your questionnaire data for as long as needed to provide the matching service and for record-keeping. You may request deletion of your data at any time by emailing privacy@youraccountantmatch.com.au. Leads stored in the accountant's CRM are retained per the accountant's own retention policy.7. Your RightsUnder the Privacy Act, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact privacy@youraccountantmatch.com.au.8. SecurityWe use email verification and secure transmission to protect your data. However, no system is 100% secure; please do not include passwords or financial details in the \"Other\" fields.9. ComplaintsIf you believe we've breached the Privacy Act, contact us first. If unresolved, you may complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.10. ContactEmail: privacy@youraccountantmatch.com.auYour Accountant Match, Melbourne, Victoria, Australia.A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.All Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Privacy Statement Last updated: January 2026 1. Who We Are Your Accountant Match is a Melbourne-based matching service that connects individuals and businesses with independent accounting firms across Australia. We are not an accounting or tax advice provider; we facilitate introductions between users and accountants in our network. The matching service is free to you — we do not charge you any fee for being matched with an accountant. This Privacy Statement explains how we collect, use, and protect your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs). 2. Information We Collect When you use our questionnaire, we collect: Name – so the matched accountant can address you. Phone number – so the accountant can contact you. Email address – to verify your identity before a match is shown. Postcode – to match you with an accountant in your area. Questionnaire answers – including any \"Other\" notes you provide. We do not collect sensitive information such as health, race, or political opinions unless you voluntarily include it in an \"Other\" field. 3. How We Use Your Information To verify your email and prevent bots from triggering matches. To match you with an accountant in our network who understands your needs and individual requirements. To send the matched accountant your name, phone number, postcode, and questionnaire answers. To notify the accountant via email and SMS. To maintain records for billing and dispute resolution. 4. Information Sharing We share your name, phone number, postcode, and questionnaire answers with your matched accountant. We do not sell your data to marketing databases or pass it to third parties beyond your matched accountant. Your information is never shared with multiple firms simultaneously. 5. Email Verification Before a match is shown to you, we send a verification link to your email. No lead is created and no accountant is notified until you click that link. This prevents bots from generating false matches. 6. Data Retention We retain your questionnaire data for as long as needed to provide the matching service and for record-keeping. You may request deletion of your data at any time by emailing privacy@youraccountantmatch.com.au. Leads stored in the accountant's CRM are retained per the accountant's own retention policy. 7. Your Rights Under the Privacy Act, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact privacy@youraccountantmatch.com.au. 8. Security We use email verification and secure transmission to protect your data. However, no system is 100% secure; please do not include passwords or financial details in the \"Other\" fields. 9. Complaints If you believe we've breached the Privacy Act, contact us first. If unresolved, you may complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au. 10. Contact Email: privacy@youraccountantmatch.com.au Your Accountant Match, Melbourne, Victoria, Australia. A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 5669,
+  "inSitemap": true
+}

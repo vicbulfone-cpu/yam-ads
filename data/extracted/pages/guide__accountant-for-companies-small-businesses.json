@@ -1,0 +1,466 @@
+{
+  "path": "/guide/accountant-for-companies-small-businesses",
+  "extractedAt": "2026-10-02T09:02:57.201Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/accountant-for-companies-small-businesses",
+  "title": "Accountant for Companies & Small Businesses — Vetted Local Accountant | Your Accountant Match",
+  "metaDescription": "Need an accountant for your company or small business? Get matched free with a vetted local accountant for company returns, BAS, payroll & advisory.",
+  "canonical": "http://localhost:4173/guide/accountant-for-companies-small-businesses",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Accountant for Companies & Small Businesses — Vetted Local Accountant | Your Accountant Match",
+    "og:description": "Need an accountant for your company or small business? Get matched free with a vetted local accountant for company returns, BAS, payroll & advisory.",
+    "og:url": "http://localhost:4173/guide/accountant-for-companies-small-businesses",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Accountant for Companies & Small Businesses — Vetted Local Accountant | Your Accountant Match",
+    "twitter:description": "Need an accountant for your company or small business? Get matched free with a vetted local accountant for company returns, BAS, payroll & advisory.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does my company need a separate tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A company lodges its own tax return, separate from the directors' personal returns. The matched accountant prepares the financial statements, lodges the company return, and manages franking credits and imputation. Directors still lodge their own individual returns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Payday Super and when does it start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From 1 July 2026, under 'Payday Super', employers must pay super guarantee contributions alongside each payday — with contributions required to reach the employee's fund within 7 business days. The matched accountant ensures your payroll system is ready and compliant, so you avoid director penalty notices for late super."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an accountant help with small business CGT concessions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The 15-year exemption, 50% active asset reduction, retirement exemption and small business roll-over can significantly reduce CGT on selling a business asset. The matched accountant assesses eligibility, structures the sale, and lodges the concessions correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a company accountant cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A company or trust tax return typically costs $500–$1,500 depending on entity count, complexity and the state of the books. Ongoing accounting is usually $400–$1,000 per month. The matched accountant gives you a clear quote. The matching itself is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an accountant handle my ASIC annual review?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched accountant manages ASIC annual review obligations, company updates, and ensures your corporate records stay compliant — avoiding late fees and director penalties for unresolved ASIC lodgements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a company accountant help with cash-flow forecasting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many matched firms offer cash-flow forecasting, budgeting and management reporting alongside compliance. Tell us in the questionnaire whether you want forward-looking advisory as well as returns and BAS, and we will match you with a firm that offers both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched company accountant contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an accountant help if my company is behind on lodgements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tell us in the questionnaire that your company has overdue returns or BAS. The matched accountant works through the backlog, brings your lodgements current, and requests penalty remission where mitigating circumstances apply."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Local Matching",
+          "item": "/guide/accountant-for-companies-small-businesses"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Find an Accountant for Your Company",
+      "description": "Need an accountant for your company or small business? Get matched free with a vetted local accountant for company returns, BAS, payroll & advisory.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/accountant-for-companies-small-businesses"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/expansion-of-stp-phase-2"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-15-year-exemption"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find an Accountant forYour Company"
+    },
+    {
+      "level": 2,
+      "text": "Accounting Support for Companies and Small Businesses"
+    },
+    {
+      "level": 3,
+      "text": "Company tax returns and compliance"
+    },
+    {
+      "level": 3,
+      "text": "Payroll, super and STP2"
+    },
+    {
+      "level": 3,
+      "text": "Structure, growth and tax planning"
+    },
+    {
+      "level": 3,
+      "text": "How our company matching works"
+    },
+    {
+      "level": 2,
+      "text": "Company and Small Business Accounting We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Find an Accountant forYour Company",
+      "images": 0,
+      "text": "Home/Guides/Local MatchingFind an Accountant forYour CompanyA company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGAccounting Support for Companies and Small BusinessesCompany tax returns and complianceA company lodges its own tax return separate from the directors' personal returns. The matched accountant prepares financial statements, lodges the company return, manages franking credits and imputation, and handles ASIC annual review obligations. Getting this right avoids director penalties and ATO scrutiny — getting it wrong can be expensive.Payroll, super and STP2If your company employs staff, you must run STP2-compliant payroll, pay super guarantee on time (moving to Payday Super from 1 July 2026), and manage PAYG withholding. The matched accountant or their bookkeeping team handles this end-to-end, so you meet every deadline and avoid director penalty notices for unpaid super.Structure, growth and tax planningThe right structure affects everything — tax rate, asset protection, ability to bring in investors, and exit options. The matched accountant advises on company vs trust vs partnership, dividend and salary mix, capital gains concessions (SBCGT), and succession planning. This is forward strategy, not just compliance.How our company matching worksEnter your postcode, tell us your entity type (company, trust or partnership), industry and the support you need — returns, BAS, payroll, financials, advisory or all of it. We match you with a vetted accountant with genuine company and small business experience. The match is free, confidential and carries no obligation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOdirector penaltiesATOSTP2-compliant payrollATOThe 15-year exemption, 50% active asset reductionThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHCompany and Small Business Accounting We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Company & corporate tax returnsTrust & partnership tax returnsBAS, GST & PAYG preparation and lodgementPayroll, super & STP2 complianceFinancial statements & management reportsASIC annual review & complianceTax planning, dividends & franking creditsSmall business CGT concessions (SBCGT)Succession & exit planningXero, MYOB & QuickBooks setupVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Does my company need a separate tax return?Yes. A company lodges its own tax return, separate from the directors' personal returns. The matched accountant prepares the financial statements, lodges the company return, and manages franking credits and imputation. Directors still lodge their own individual returns.What is Payday Super and when does it start?Can an accountant help with small business CGT concessions?How much does a company accountant cost?Can an accountant handle my ASIC annual review?Can a company accountant help with cash-flow forecasting?How quickly will a matched company accountant contact me?Can an accountant help if my company is behind on lodgements?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalties"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/expansion-of-stp-phase-2",
+      "text": "STP2-compliant payroll"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalty notices for unpaid super"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "ATOdirector penalties"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines/expansion-of-stp-phase-2",
+      "text": "ATOSTP2-compliant payroll"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-15-year-exemption",
+      "text": "ATOThe 15-year exemption, 50% active asset reduction"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Local MatchingFind an Accountant forYour CompanyA company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGAccounting Support for Companies and Small BusinessesCompany tax returns and complianceA company lodges its own tax return separate from the directors' personal returns. The matched accountant prepares financial statements, lodges the company return, manages franking credits and imputation, and handles ASIC annual review obligations. Getting this right avoids director penalties and ATO scrutiny — getting it wrong can be expensive.Payroll, super and STP2If your company employs staff, you must run STP2-compliant payroll, pay super guarantee on time (moving to Payday Super from 1 July 2026), and manage PAYG withholding. The matched accountant or their bookkeeping team handles this end-to-end, so you meet every deadline and avoid director penalty notices for unpaid super.Structure, growth and tax planningThe right structure affects everything — tax rate, asset protection, ability to bring in investors, and exit options. The matched accountant advises on company vs trust vs partnership, dividend and salary mix, capital gains concessions (SBCGT), and succession planning. This is forward strategy, not just compliance.How our company matching worksEnter your postcode, tell us your entity type (company, trust or partnership), industry and the support you need — returns, BAS, payroll, financials, advisory or all of it. We match you with a vetted accountant with genuine company and small business experience. The match is free, confidential and carries no obligation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOdirector penaltiesATOSTP2-compliant payrollATOThe 15-year exemption, 50% active asset reductionThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHCompany and Small Business Accounting We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Company & corporate tax returnsTrust & partnership tax returnsBAS, GST & PAYG preparation and lodgementPayroll, super & STP2 complianceFinancial statements & management reportsASIC annual review & complianceTax planning, dividends & franking creditsSmall business CGT concessions (SBCGT)Succession & exit planningXero, MYOB & QuickBooks setupVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Does my company need a separate tax return?Yes. A company lodges its own tax return, separate from the directors' personal returns. The matched accountant prepares the financial statements, lodges the company return, and manages franking credits and imputation. Directors still lodge their own individual returns.What is Payday Super and when does it start?Can an accountant help with small business CGT concessions?How much does a company accountant cost?Can an accountant handle my ASIC annual review?Can a company accountant help with cash-flow forecasting?How quickly will a matched company accountant contact me?Can an accountant help if my company is behind on lodgements?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Local Matching Find an Accountant for Your Company A company or small business brings real compliance obligations — corporate tax returns, director duties, payroll and super, financial statements, and ASIC lodgements. Your Accountant Match connects you with a vetted accountant in your area who specialises in company and small business accounting: accurate returns, proactive tax planning, and advice on structure, growth and cash flow. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 LOCAL MATCHING Accounting Support for Companies and Small Businesses Company tax returns and compliance A company lodges its own tax return separate from the directors' personal returns. The matched accountant prepares financial statements, lodges the company return, manages franking credits and imputation, and handles ASIC annual review obligations. Getting this right avoids director penalties and ATO scrutiny — getting it wrong can be expensive. Payroll, super and STP2 If your company employs staff, you must run STP2-compliant payroll, pay super guarantee on time (moving to Payday Super from 1 July 2026), and manage PAYG withholding. The matched accountant or their bookkeeping team handles this end-to-end, so you meet every deadline and avoid director penalty notices for unpaid super. Structure, growth and tax planning The right structure affects everything — tax rate, asset protection, ability to bring in investors, and exit options. The matched accountant advises on company vs trust vs partnership, dividend and salary mix, capital gains concessions (SBCGT), and succession planning. This is forward strategy, not just compliance. How our company matching works Enter your postcode, tell us your entity type (company, trust or partnership), industry and the support you need — returns, BAS, payroll, financials, advisory or all of it. We match you with a vetted accountant with genuine company and small business experience. The match is free, confidential and carries no obligation. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO director penalties ATO STP2-compliant payroll ATO The 15-year exemption, 50% active asset reduction This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Company and Small Business Accounting We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. Company & corporate tax returns Trust & partnership tax returns BAS, GST & PAYG preparation and lodgement Payroll, super & STP2 compliance Financial statements & management reports ASIC annual review & compliance Tax planning, dividends & franking credits Small business CGT concessions (SBCGT) Succession & exit planning Xero, MYOB & QuickBooks setup Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. Does my company need a separate tax return? Yes. A company lodges its own tax return, separate from the directors' personal returns. The matched accountant prepares the financial statements, lodges the company return, and manages franking credits and imputation. Directors still lodge their own individual returns. What is Payday Super and when does it start? Can an accountant help with small business CGT concessions? How much does a company accountant cost? Can an accountant handle my ASIC annual review? Can a company accountant help with cash-flow forecasting? How quickly will a matched company accountant contact me? Can an accountant help if my company is behind on lodgements? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2381,
+  "inSitemap": true
+}

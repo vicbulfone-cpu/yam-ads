@@ -1,0 +1,253 @@
+{
+  "path": "/about",
+  "extractedAt": "2026-10-02T09:00:47.304Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/about",
+  "title": "About Your Accountant Match — Free National Accountant Matching Service",
+  "metaDescription": "Your Accountant Match is a free referral service connecting Australians with vetted local accountants. Learn how our matching process works, our vetting standards, and our one-match model.",
+  "canonical": "http://localhost:4173/about",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "About Your Accountant Match — Free National Accountant Matching Service",
+    "og:description": "Your Accountant Match is a free referral service connecting Australians with vetted local accountants. Learn how our matching process works, our vetting standards, and our one-match model.",
+    "og:url": "http://localhost:4173/about",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "About Your Accountant Match — Free National Accountant Matching Service",
+    "twitter:description": "Your Accountant Match is a free referral service connecting Australians with vetted local accountants. Learn how our matching process works, our vetting standards, and our one-match model.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Your Accountant Match",
+      "description": "Free accountant matching and referral service connecting Australians with vetted local accounting partners."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "/about"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "About Your Accountant Match"
+    },
+    {
+      "level": 2,
+      "text": "What we do"
+    },
+    {
+      "level": 2,
+      "text": "The one-match model"
+    },
+    {
+      "level": 2,
+      "text": "How we vet accountants"
+    },
+    {
+      "level": 2,
+      "text": "How the matching process works"
+    },
+    {
+      "level": 2,
+      "text": "How we are funded"
+    },
+    {
+      "level": 2,
+      "text": "Our commitment"
+    },
+    {
+      "level": 2,
+      "text": "What is Your Accountant Match?"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "About Your Accountant Match",
+      "images": 0,
+      "text": "About Your Accountant MatchFree accountant matching, Australia-wideWhat we doYour Accountant Match is a free matching and referral service based in Chadstone, Melbourne. We connect individuals and businesses with a single, vetted local accountant from our partner network — based on your location and the specific help you need. We are not an accounting firm and we do not provide tax or financial advice directly. The matched accounting firm provides all accounting and taxation services to you directly.The one-match modelUnlike directories that list dozens of firms and leave you to compare, we match you with one accountant. After you complete the short questionnaire, we route your enquiry to a single participating accountant who serves your area and offers the services you selected. You are under no obligation to proceed, and you can decline the match at any time.How we vet accountantsEvery accountant in our network must:Hold current registration with the Tax Practitioners Board (TPB) as a registered tax agent or BAS agent, or hold a recognised professional designation (CPA, CA ANZ, or IPA).Operate an active accounting practice in Australia with a physical service area.Maintain professional indemnity insurance appropriate to their practice.Agree to respond to matched enquiries within an agreed timeframe.Comply with the TPB Code of Professional Conduct and applicable Australian tax and consumer-protection law.We do not compare every accountant in Australia, and we do not guarantee a specific outcome. We match based on the information you provide and the coverage of our partner network at the time.How the matching process worksYou tell us your area and what you need help with — personal tax, business accounting, bookkeeping, SMSF, and more.We identify a participating vetted accountant who serves your location and offers those services.Your enquiry is sent to that one accountant — not to multiple firms.The matched accountant contacts you directly. You decide whether to proceed.How we are fundedThe matching service is free to you. We are engaged by participating accounting firms in our network. We do not charge you any fee for being matched, and you are never under an obligation to proceed with the matched firm.Our commitmentWe operate entirely online and by phone. We do not maintain branch offices or shopfronts outside Melbourne. We are transparent about the fact that we are a matching service — not an accounting practice — and we will always tell you what we can and cannot do.Find My Accountant"
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "What is Your Accountant Match?",
+      "images": 0,
+      "text": "A BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match."
+    },
+    {
+      "index": 4,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaAboutContactLocationsGuidesPrivacyTermsHow We Select AccountantsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "How We Select Accountants"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/AboutAbout Your Accountant MatchFree accountant matching, Australia-wideWhat we doYour Accountant Match is a free matching and referral service based in Chadstone, Melbourne. We connect individuals and businesses with a single, vetted local accountant from our partner network — based on your location and the specific help you need. We are not an accounting firm and we do not provide tax or financial advice directly. The matched accounting firm provides all accounting and taxation services to you directly.The one-match modelUnlike directories that list dozens of firms and leave you to compare, we match you with one accountant. After you complete the short questionnaire, we route your enquiry to a single participating accountant who serves your area and offers the services you selected. You are under no obligation to proceed, and you can decline the match at any time.How we vet accountantsEvery accountant in our network must:Hold current registration with the Tax Practitioners Board (TPB) as a registered tax agent or BAS agent, or hold a recognised professional designation (CPA, CA ANZ, or IPA).Operate an active accounting practice in Australia with a physical service area.Maintain professional indemnity insurance appropriate to their practice.Agree to respond to matched enquiries within an agreed timeframe.Comply with the TPB Code of Professional Conduct and applicable Australian tax and consumer-protection law.We do not compare every accountant in Australia, and we do not guarantee a specific outcome. We match based on the information you provide and the coverage of our partner network at the time.How the matching process worksYou tell us your area and what you need help with — personal tax, business accounting, bookkeeping, SMSF, and more.We identify a participating vetted accountant who serves your location and offers those services.Your enquiry is sent to that one accountant — not to multiple firms.The matched accountant contacts you directly. You decide whether to proceed.How we are fundedThe matching service is free to you. We are engaged by participating accounting firms in our network. We do not charge you any fee for being matched, and you are never under an obligation to proceed with the matched firm.Our commitmentWe operate entirely online and by phone. We do not maintain branch offices or shopfronts outside Melbourne. We are transparent about the fact that we are a matching service — not an accounting practice — and we will always tell you what we can and cannot do.Find My AccountantA BETTER WAY TO FIND YOUR ACCOUNTANTWhat is Your Accountant Match?Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need.Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia.Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaAboutContactLocationsGuidesPrivacyTermsHow We Select AccountantsAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / About About Your Accountant Match Free accountant matching, Australia-wide What we do Your Accountant Match is a free matching and referral service based in Chadstone, Melbourne. We connect individuals and businesses with a single, vetted local accountant from our partner network — based on your location and the specific help you need. We are not an accounting firm and we do not provide tax or financial advice directly. The matched accounting firm provides all accounting and taxation services to you directly. The one-match model Unlike directories that list dozens of firms and leave you to compare, we match you with one accountant. After you complete the short questionnaire, we route your enquiry to a single participating accountant who serves your area and offers the services you selected. You are under no obligation to proceed, and you can decline the match at any time. How we vet accountants Every accountant in our network must: Hold current registration with the Tax Practitioners Board (TPB) as a registered tax agent or BAS agent, or hold a recognised professional designation (CPA, CA ANZ, or IPA). Operate an active accounting practice in Australia with a physical service area. Maintain professional indemnity insurance appropriate to their practice. Agree to respond to matched enquiries within an agreed timeframe. Comply with the TPB Code of Professional Conduct and applicable Australian tax and consumer-protection law. We do not compare every accountant in Australia, and we do not guarantee a specific outcome. We match based on the information you provide and the coverage of our partner network at the time. How the matching process works You tell us your area and what you need help with — personal tax, business accounting, bookkeeping, SMSF, and more. We identify a participating vetted accountant who serves your location and offers those services. Your enquiry is sent to that one accountant — not to multiple firms. The matched accountant contacts you directly. You decide whether to proceed. How we are funded The matching service is free to you. We are engaged by participating accounting firms in our network. We do not charge you any fee for being matched, and you are never under an obligation to proceed with the matched firm. Our commitment We operate entirely online and by phone. We do not maintain branch offices or shopfronts outside Melbourne. We are transparent about the fact that we are a matching service — not an accounting practice — and we will always tell you what we can and cannot do. Find My Accountant A BETTER WAY TO FIND YOUR ACCOUNTANT What is Your Accountant Match? Your Accountant Match is a free matching service that connects Australians with accountants from our network, matched to your area and the accounting help you need. Our founder created Your Accountant Match because he saw a better way to introduce people to a local accountant than leaving them to choose from a directory listing. He brings more than 19 years of experience working closely with members of the National Tax & Accountants’ Association (NTAA) and accounting professionals across Australia. Whether you need a tax accountant, registered tax agent, bookkeeper, CPA or SMSF specialist, simply tell us what you need. We’ll find your match. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia About Contact Locations Guides Privacy Terms How We Select Accountants ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 5667,
+  "inSitemap": true
+}

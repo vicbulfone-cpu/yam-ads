@@ -1,0 +1,598 @@
+{
+  "path": "/accountant/bookkeeping-bas",
+  "extractedAt": "2026-10-02T09:00:59.967Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/accountant/bookkeeping-bas",
+  "title": "Bookkeeping & BAS Matching — BAS Agent Near You | Your Accountant Match",
+  "metaDescription": "Bookkeeping & BAS agent matching — free. Get a local registered BAS agent using Xero, QuickBooks or MYOB. Accurate, on-time lodgement.",
+  "canonical": "http://localhost:4173/accountant/bookkeeping-bas",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Bookkeeping & BAS Matching — BAS Agent Near You | Your Accountant Match",
+    "og:description": "Bookkeeping & BAS agent matching — free. Get a local registered BAS agent using Xero, QuickBooks or MYOB. Accurate, on-time lodgement.",
+    "og:url": "http://localhost:4173/accountant/bookkeeping-bas",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c693d246-e356-47ab-9f77-30c7fb660606.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Bookkeeping & BAS Matching — BAS Agent Near You | Your Accountant Match",
+    "twitter:description": "Bookkeeping & BAS agent matching — free. Get a local registered BAS agent using Xero, QuickBooks or MYOB. Accurate, on-time lodgement.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Bookkeeping & BAS Matching Service",
+      "description": "Bookkeeping & BAS agent matching — free. Get a local registered BAS agent using Xero, QuickBooks or MYOB. Accurate, on-time lodgement.",
+      "serviceType": "Bookkeeping & BAS",
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bookkeeping & BAS",
+          "item": "/accountant/bookkeeping-bas"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can lodge my BAS for a fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only a registered BAS Agent (or tax agent) can charge a fee to prepare and lodge a BAS. The registration is under the Tax Agent Services Act 2009 and is verifiable on the public TPB register. All matched bookkeepers providing BAS services in our network have verified, current TPB registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is BAS due?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most businesses lodge quarterly, but some lodge monthly (large PAYG withholders) or annually (small GST turnover). Your BAS agent confirms your cycle and lodges on time. The ATO publishes due dates for each period, and a registered agent typically receives an extension to lodge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I am several BAS periods behind — can you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — tell us in the questionnaire that you need catch-up work. Our network includes bookkeepers experienced in bringing overdue BAS current, reconciling old periods, and, where relevant, requesting remission of failure-to-lodge penalties. Getting current is one of the most common reasons people use our matching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does BAS preparation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BAS preparation costs vary depending on transaction volume and complexity. The matched BAS Agent gives you a clear quote after reviewing your needs — the matching is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched BAS bookkeeper contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched bookkeeper will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a BAS bookkeeper set up my software correctly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched bookkeeper configures your GST coding, bank feeds, payroll and STP2 reporting in Xero, QuickBooks or MYOB — so your BAS is prepared accurately from the start rather than corrected later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is bookkeeping and BAS matching free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free for businesses. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm, and the matched bookkeeper gives you a clear quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a BAS bookkeeper help with GST reconciliation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched BAS Agent reconciles your GST coding across all transactions, ensures input credits are claimed correctly, and identifies any coding errors before lodgement — so your BAS is accurate and you avoid amending prior periods."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find Bookkeeping and BAS Help Near You"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Bookkeeping & BAS — what we can help with"
+    },
+    {
+      "level": 3,
+      "text": "Why BAS on time matters"
+    },
+    {
+      "level": 3,
+      "text": "Registered BAS Agent — not just a bookkeeper"
+    },
+    {
+      "level": 3,
+      "text": "Catch-up BAS and overdue lodgements"
+    },
+    {
+      "level": 2,
+      "text": "Bookkeeping & BAS services we match"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Bookkeeping & BAS Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Other Matching Services"
+    },
+    {
+      "level": 4,
+      "text": "Bookkeeping & BAS matching across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find Bookkeeping and BAS Help Near You",
+      "images": 15,
+      "text": "Find Bookkeeping and BAS Help Near YouFree matching serviceVetted accountantsNo obligationAccurate bookkeeping and on-time BAS lodgement keep you compliant and in control. Your Accountant Match matches you with a local bookkeeping professional who can take on your day-to-day records, payroll, GST and BAS — in the software you already use. Tell us your needs and postcode, and we will connect you with the right fit. Free, confidential, no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Bookkeeping & BAS — what we can help with",
+      "images": 0,
+      "text": "SPECIALIST NETWORKBookkeeping & BAS — what we can help withWhy BAS on time mattersLate or incorrect BAS lodgement triggers ATO penalties, interest on shortfall amounts, and flags your account for future scrutiny. A registered BAS Agent not only prepares and lodges on time, but also ensures GST coding is correct from the start — so you are not amending prior periods later. Getting the BAS right consistently is the cheapest compliance you will ever buy.Registered BAS Agent — not just a bookkeeperTo charge a fee for BAS preparation and lodgement, a person must be a registered BAS Agent under the Tax Agent Services Act. Our network verifies TPB registration for all matched bookkeepers who provide BAS services. You can confirm any agent's registration on the public TPB register at tpb.gov.au.Catch-up BAS and overdue lodgementsIf you are behind on BAS — one quarter or several years — tell us in the questionnaire. Our network includes bookkeepers who specialise in bringing overdue BAS current, negotiating remission of penalties where possible, and putting systems in place so it does not happen again. Getting current is often the first step to sleeping better at night."
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOATO penaltiesTPBpublic TPB register at tpb.gov.auAustLIITax Agent Services Act"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "id": null,
+      "heading": "Bookkeeping & BAS services we match",
+      "images": 0,
+      "text": "WHAT WE MATCHBookkeeping & BAS services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.BAS preparation & lodgementGST coding & reconciliationBank & credit-card reconciliationPayroll processing & STP2Accounts payable & receivableCatch-up bookkeeping & overdue BASSoftware setup & migrationMonthly management reporting"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Vetted, Registered AgentsFree, No ObligationAustralia-Wide"
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "id": null,
+      "heading": "Trust and vetting standards for Bookkeeping & BAS Partners",
+      "images": 0,
+      "text": "TRUST & VETTINGTrust and vetting standards for Bookkeeping & BAS PartnersEntrusting someone with your bookkeeping & bas needs means putting your finances in their hands. At Your Accountant Match, we hold every bookkeeping & bas specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll bookkeeping & bas professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery bookkeeping & bas partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPE"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "id": null,
+      "heading": "Frequently Asked Questions",
+      "images": 0,
+      "text": "COMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Who can lodge my BAS for a fee?Only a registered BAS Agent (or tax agent) can charge a fee to prepare and lodge a BAS. The registration is under the Tax Agent Services Act 2009 and is verifiable on the public TPB register. All matched bookkeepers providing BAS services in our network have verified, current TPB registration.How often is BAS due?I am several BAS periods behind — can you help?How much does BAS preparation cost?How quickly will a matched BAS bookkeeper contact me?Can a BAS bookkeeper set up my software correctly?Is bookkeeping and BAS matching free?Can a BAS bookkeeper help with GST reconciliation?"
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": null,
+      "heading": "Other Matching Services",
+      "images": 0,
+      "text": "EXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantPayroll & Compliance"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Bookkeeping & BAS matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)"
+    },
+    {
+      "index": 12,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 13,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATO penalties"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "Tax Agent Services Act"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "public TPB register at tpb.gov.au"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOATO penalties"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "TPBpublic TPB register at tpb.gov.au"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "AustLIITax Agent Services Act"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "Tax Agent Services Act 2009"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "public TPB register"
+    },
+    {
+      "href": "/accountant/tax-accountant",
+      "text": "Tax Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeper",
+      "text": "Bookkeeper"
+    },
+    {
+      "href": "/accountant/personal-tax-support",
+      "text": "Personal Tax Return"
+    },
+    {
+      "href": "/accountant/tax-deduction-expert",
+      "text": "Tax Deduction Expert"
+    },
+    {
+      "href": "/accountant/small-business-accountant",
+      "text": "Small Business Accountant"
+    },
+    {
+      "href": "/accountant/payroll-compliance",
+      "text": "Payroll & Compliance"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Bookkeeping & BASFind Bookkeeping and BAS Help Near YouFree matching serviceVetted accountantsNo obligationAccurate bookkeeping and on-time BAS lodgement keep you compliant and in control. Your Accountant Match matches you with a local bookkeeping professional who can take on your day-to-day records, payroll, GST and BAS — in the software you already use. Tell us your needs and postcode, and we will connect you with the right fit. Free, confidential, no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.SPECIALIST NETWORKBookkeeping & BAS — what we can help withWhy BAS on time mattersLate or incorrect BAS lodgement triggers ATO penalties, interest on shortfall amounts, and flags your account for future scrutiny. A registered BAS Agent not only prepares and lodges on time, but also ensures GST coding is correct from the start — so you are not amending prior periods later. Getting the BAS right consistently is the cheapest compliance you will ever buy.Registered BAS Agent — not just a bookkeeperTo charge a fee for BAS preparation and lodgement, a person must be a registered BAS Agent under the Tax Agent Services Act. Our network verifies TPB registration for all matched bookkeepers who provide BAS services. You can confirm any agent's registration on the public TPB register at tpb.gov.au.Catch-up BAS and overdue lodgementsIf you are behind on BAS — one quarter or several years — tell us in the questionnaire. Our network includes bookkeepers who specialise in bringing overdue BAS current, negotiating remission of penalties where possible, and putting systems in place so it does not happen again. Getting current is often the first step to sleeping better at night.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOATO penaltiesTPBpublic TPB register at tpb.gov.auAustLIITax Agent Services ActWHAT WE MATCHBookkeeping & BAS services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.BAS preparation & lodgementGST coding & reconciliationBank & credit-card reconciliationPayroll processing & STP2Accounts payable & receivableCatch-up bookkeeping & overdue BASSoftware setup & migrationMonthly management reportingVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGTrust and vetting standards for Bookkeeping & BAS PartnersEntrusting someone with your bookkeeping & bas needs means putting your finances in their hands. At Your Accountant Match, we hold every bookkeeping & bas specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll bookkeeping & bas professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery bookkeeping & bas partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.Who can lodge my BAS for a fee?Only a registered BAS Agent (or tax agent) can charge a fee to prepare and lodge a BAS. The registration is under the Tax Agent Services Act 2009 and is verifiable on the public TPB register. All matched bookkeepers providing BAS services in our network have verified, current TPB registration.How often is BAS due?I am several BAS periods behind — can you help?How much does BAS preparation cost?How quickly will a matched BAS bookkeeper contact me?Can a BAS bookkeeper set up my software correctly?Is bookkeeping and BAS matching free?Can a BAS bookkeeper help with GST reconciliation?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantPayroll & ComplianceBookkeeping & BAS matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Bookkeeping & BAS Find Bookkeeping and BAS Help Near You Free matching service Vetted accountants No obligation Accurate bookkeeping and on-time BAS lodgement keep you compliant and in control. Your Accountant Match matches you with a local bookkeeping professional who can take on your day-to-day records, payroll, GST and BAS — in the software you already use. Tell us your needs and postcode, and we will connect you with the right fit. Free, confidential, no obligation. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. SPECIALIST NETWORK Bookkeeping & BAS — what we can help with Why BAS on time matters Late or incorrect BAS lodgement triggers ATO penalties, interest on shortfall amounts, and flags your account for future scrutiny. A registered BAS Agent not only prepares and lodges on time, but also ensures GST coding is correct from the start — so you are not amending prior periods later. Getting the BAS right consistently is the cheapest compliance you will ever buy. Registered BAS Agent — not just a bookkeeper To charge a fee for BAS preparation and lodgement, a person must be a registered BAS Agent under the Tax Agent Services Act. Our network verifies TPB registration for all matched bookkeepers who provide BAS services. You can confirm any agent's registration on the public TPB register at tpb.gov.au. Catch-up BAS and overdue lodgements If you are behind on BAS — one quarter or several years — tell us in the questionnaire. Our network includes bookkeepers who specialise in bringing overdue BAS current, negotiating remission of penalties where possible, and putting systems in place so it does not happen again. Getting current is often the first step to sleeping better at night. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO ATO penalties TPB public TPB register at tpb.gov.au AUSTLII Tax Agent Services Act WHAT WE MATCH Bookkeeping & BAS services we match Our vetted network covers the full range of accounting, tax and bookkeeping services. BAS preparation & lodgement GST coding & reconciliation Bank & credit-card reconciliation Payroll processing & STP2 Accounts payable & receivable Catch-up bookkeeping & overdue BAS Software setup & migration Monthly management reporting Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING Trust and vetting standards for Bookkeeping & BAS Partners Entrusting someone with your bookkeeping & bas needs means putting your finances in their hands. At Your Accountant Match, we hold every bookkeeping & bas specialist we refer to the highest professional and ethical standards in the industry. Verified professional memberships All bookkeeping & bas professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Every bookkeeping & bas partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. Who can lodge my BAS for a fee? Only a registered BAS Agent (or tax agent) can charge a fee to prepare and lodge a BAS. The registration is under the Tax Agent Services Act 2009 and is verifiable on the public TPB register. All matched bookkeepers providing BAS services in our network have verified, current TPB registration. How often is BAS due? I am several BAS periods behind — can you help? How much does BAS preparation cost? How quickly will a matched BAS bookkeeper contact me? Can a BAS bookkeeper set up my software correctly? Is bookkeeping and BAS matching free? Can a BAS bookkeeper help with GST reconciliation? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Other Matching Services Here are some other specialist services you may find useful Tax Accountant Bookkeeper Personal Tax Return Tax Deduction Expert Small Business Accountant Payroll & Compliance Bookkeeping & BAS matching across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2984,
+  "inSitemap": true
+}

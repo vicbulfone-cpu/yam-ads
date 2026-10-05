@@ -1,0 +1,450 @@
+{
+  "path": "/guide/tax-accountant-near-me",
+  "extractedAt": "2026-10-02T09:02:51.539Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/tax-accountant-near-me",
+  "title": "Tax Accountant Near Me — Local Registered Tax Agents | Your Accountant Match",
+  "metaDescription": "Need a tax accountant near you? Get matched free with a TPB-registered local tax agent for returns, CGT, investment property & ATO dealings.",
+  "canonical": "http://localhost:4173/guide/tax-accountant-near-me",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Tax Accountant Near Me — Local Registered Tax Agents | Your Accountant Match",
+    "og:description": "Need a tax accountant near you? Get matched free with a TPB-registered local tax agent for returns, CGT, investment property & ATO dealings.",
+    "og:url": "http://localhost:4173/guide/tax-accountant-near-me",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Tax Accountant Near Me — Local Registered Tax Agents | Your Accountant Match",
+    "twitter:description": "Need a tax accountant near you? Get matched free with a TPB-registered local tax agent for returns, CGT, investment property & ATO dealings.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find a registered tax agent near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and needs. We match you with a TPB-registered tax agent whose services fit your needs. You can verify any agent on the public TPB register at tpb.gov.au."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between a tax accountant and a registered tax agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "'Tax accountant' is a job title; 'registered tax agent' is a legal authorisation under the Tax Agent Services Act 2009. Only a registered agent can charge a fee to lodge returns or represent you to the ATO. All matched firms that lodge returns in our network are registered tax agents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a tax accountant near me help with an ATO audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our network includes agents experienced in ATO audits, reviews and disputes. Mention you need audit or dispute support in the questionnaire and we will match you with a firm that handles ATO representation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a tax accountant cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Individual returns typically range from $200 to $400; business and complex returns are higher. The matched agent gives you a clear quote after reviewing your situation. The matching service itself is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a local tax accountant help with investment property and depreciation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our network includes agents who prepare depreciation schedules, handle rental property schedules, and advise on CGT implications when you sell. Mention property or CGT in the questionnaire and we will match you with a firm that specialises in investment property tax."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I have overdue tax returns as well as a tax agent need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us in the questionnaire that you have overdue returns. Our network includes registered agents experienced in catch-up work — lodging multiple overdue years, reconstructing records where needed, and requesting penalty remission where mitigating circumstances apply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched tax agent contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a local tax agent help with tax planning before 30 June?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The best tax advice happens before 30 June — timing a CGT event, structuring a windfall, managing super contributions or pre-paying deductible expenses. Our matched agents offer year-round advice, not just once-a-year filing, so you can structure events tax-effectively."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Local Matching",
+          "item": "/guide/tax-accountant-near-me"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Tax Accountant Near Me",
+      "description": "Need a tax accountant near you? Get matched free with a TPB-registered local tax agent for returns, CGT, investment property & ATO dealings.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/tax-accountant-near-me"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.tpb.gov.au"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find Your LocalAccountant match"
+    },
+    {
+      "level": 2,
+      "text": "Finding the Right Tax Accountant"
+    },
+    {
+      "level": 3,
+      "text": "Registered, not just 'experienced'"
+    },
+    {
+      "level": 3,
+      "text": "Local knowledge that saves you tax"
+    },
+    {
+      "level": 3,
+      "text": "Beyond the once-a-year return"
+    },
+    {
+      "level": 2,
+      "text": "Tax Accountant Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Find Your LocalAccountant match",
+      "images": 0,
+      "text": "Home/Guides/Local MatchingFind Your LocalAccountant matchA 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGFinding the Right Tax AccountantRegistered, not just 'experienced'Under the Tax Agent Services Act 2009, only a registered tax agent can charge a fee to lodge your return or deal with the ATO on your behalf. Every tax accountant in our network has a current TPB registration that we verify. An unregistered 'tax accountant' cannot legally do this — even if they understand the work.Local knowledge that saves you taxState-based land-tax thresholds, stamp-duty concessions, payroll-tax brackets and first-home schemes all affect your tax position. A local tax agent knows your state's rules and how they interact with federal tax — knowledge a remote call-centre accountant simply does not have.Beyond the once-a-year returnThe best tax advice happens before 30 June — timing a CGT event, structuring a windfall, managing super contributions or pre-paying deductible expenses. Our matched agents offer year-round advice, not just once-a-year filing, so you can structure events tax-effectively rather than reacting after the fact.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.AustLIITax Agent Services Act 2009TPBtpb.gov.auThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHTax Accountant Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual & business tax return lodgementCapital Gains Tax (CGT) advice & calculationsInvestment property tax & depreciation schedulesATO representation, debt & dispute supportTax planning & PAYG instalment managementAmended returns & objection lodgementVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I find a registered tax agent near me?Complete our 60-second questionnaire with your postcode and needs. We match you with a TPB-registered tax agent whose services fit your needs. You can verify any agent on the public TPB register at tpb.gov.au.What's the difference between a tax accountant and a registered tax agent?Can a tax accountant near me help with an ATO audit?How much does a tax accountant cost?Can a local tax accountant help with investment property and depreciation?What if I have overdue tax returns as well as a tax agent need?How quickly will a matched tax agent contact me?Can a local tax agent help with tax planning before 30 June?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "Tax Agent Services Act 2009"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "AustLIITax Agent Services Act 2009"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "TPBtpb.gov.au"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "tpb.gov.au"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guide/overdue-tax-return-help",
+      "text": "Overdue Tax Return Help"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Local MatchingFind Your LocalAccountant matchA 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantLOCAL MATCHINGFinding the Right Tax AccountantRegistered, not just 'experienced'Under the Tax Agent Services Act 2009, only a registered tax agent can charge a fee to lodge your return or deal with the ATO on your behalf. Every tax accountant in our network has a current TPB registration that we verify. An unregistered 'tax accountant' cannot legally do this — even if they understand the work.Local knowledge that saves you taxState-based land-tax thresholds, stamp-duty concessions, payroll-tax brackets and first-home schemes all affect your tax position. A local tax agent knows your state's rules and how they interact with federal tax — knowledge a remote call-centre accountant simply does not have.Beyond the once-a-year returnThe best tax advice happens before 30 June — timing a CGT event, structuring a windfall, managing super contributions or pre-paying deductible expenses. Our matched agents offer year-round advice, not just once-a-year filing, so you can structure events tax-effectively rather than reacting after the fact.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.AustLIITax Agent Services Act 2009TPBtpb.gov.auThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHTax Accountant Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual & business tax return lodgementCapital Gains Tax (CGT) advice & calculationsInvestment property tax & depreciation schedulesATO representation, debt & dispute supportTax planning & PAYG instalment managementAmended returns & objection lodgementVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I find a registered tax agent near me?Complete our 60-second questionnaire with your postcode and needs. We match you with a TPB-registered tax agent whose services fit your needs. You can verify any agent on the public TPB register at tpb.gov.au.What's the difference between a tax accountant and a registered tax agent?Can a tax accountant near me help with an ATO audit?How much does a tax accountant cost?Can a local tax accountant help with investment property and depreciation?What if I have overdue tax returns as well as a tax agent need?How quickly will a matched tax agent contact me?Can a local tax agent help with tax planning before 30 June?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperOverdue Tax Return HelpBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Local Matching Find Your Local Accountant match A 'tax accountant near me' search should return someone who can legally lodge your return and who understands your local situation. Your Accountant Match connects you with a Tax Practitioners Board-registered tax agent in your area who specialises in exactly what you need — from a simple individual return to complex CGT, investment property and ATO dispute work. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 LOCAL MATCHING Finding the Right Tax Accountant Registered, not just 'experienced' Under the Tax Agent Services Act 2009, only a registered tax agent can charge a fee to lodge your return or deal with the ATO on your behalf. Every tax accountant in our network has a current TPB registration that we verify. An unregistered 'tax accountant' cannot legally do this — even if they understand the work. Local knowledge that saves you tax State-based land-tax thresholds, stamp-duty concessions, payroll-tax brackets and first-home schemes all affect your tax position. A local tax agent knows your state's rules and how they interact with federal tax — knowledge a remote call-centre accountant simply does not have. Beyond the once-a-year return The best tax advice happens before 30 June — timing a CGT event, structuring a windfall, managing super contributions or pre-paying deductible expenses. Our matched agents offer year-round advice, not just once-a-year filing, so you can structure events tax-effectively rather than reacting after the fact. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. AUSTLII Tax Agent Services Act 2009 TPB tpb.gov.au This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Tax Accountant Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. Individual & business tax return lodgement Capital Gains Tax (CGT) advice & calculations Investment property tax & depreciation schedules ATO representation, debt & dispute support Tax planning & PAYG instalment management Amended returns & objection lodgement Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. How do I find a registered tax agent near me? Complete our 60-second questionnaire with your postcode and needs. We match you with a TPB-registered tax agent whose services fit your needs. You can verify any agent on the public TPB register at tpb.gov.au. What's the difference between a tax accountant and a registered tax agent? Can a tax accountant near me help with an ATO audit? How much does a tax accountant cost? Can a local tax accountant help with investment property and depreciation? What if I have overdue tax returns as well as a tax agent need? How quickly will a matched tax agent contact me? Can a local tax agent help with tax planning before 30 June? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Overdue Tax Return Help Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2722,
+  "inSitemap": true
+}

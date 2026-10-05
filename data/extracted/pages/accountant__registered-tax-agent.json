@@ -1,0 +1,606 @@
+{
+  "path": "/accountant/registered-tax-agent",
+  "extractedAt": "2026-10-02T09:01:06.213Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/accountant/registered-tax-agent",
+  "title": "Registered Tax Agent Matching — Find a TPB-Registered Agent | Your Accountant Match",
+  "metaDescription": "Registered tax agent matching — free. Get a TPB-registered agent in your area to lodge returns and deal with the ATO. Specialist in your needs.",
+  "canonical": "http://localhost:4173/accountant/registered-tax-agent",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Registered Tax Agent Matching — Find a TPB-Registered Agent | Your Accountant Match",
+    "og:description": "Registered tax agent matching — free. Get a TPB-registered agent in your area to lodge returns and deal with the ATO. Specialist in your needs.",
+    "og:url": "http://localhost:4173/accountant/registered-tax-agent",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c693d246-e356-47ab-9f77-30c7fb660606.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Registered Tax Agent Matching — Find a TPB-Registered Agent | Your Accountant Match",
+    "twitter:description": "Registered tax agent matching — free. Get a TPB-registered agent in your area to lodge returns and deal with the ATO. Specialist in your needs.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Registered Tax Agent Matching Service",
+      "description": "Registered tax agent matching — free. Get a TPB-registered agent in your area to lodge returns and deal with the ATO. Specialist in your needs.",
+      "serviceType": "Registered Tax Agent",
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Registered Tax Agent",
+          "item": "/accountant/registered-tax-agent"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I verify a tax agent is registered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every registered tax agent appears on the public Tax Practitioners Board register at tpb.gov.au. Search by name or registration number. All matched firms in our network have verified, current TPB registrations before they are connected with you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a registered tax agent deal with the ATO for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — that is a core right of TPB registration. A registered agent can receive your ATO correspondence, respond to queries, negotiate payment plans, and lodge objections on your behalf. Tell us in the questionnaire if you need dispute or ATO-debt support and we will match accordingly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I already have an ATO debt or overdue return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us in the questionnaire. Our network includes agents experienced in ATO debt negotiation, payment-plan arrangements, and overdue-return lodgement. Getting a registered agent involved early often reduces penalties and stops further enforcement action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched registered tax agent contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched agent will typically reach out within 2 hours, or you can call for immediate assistance to discuss your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a registered tax agent lodge an objection for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If you disagree with an ATO assessment — including an amended assessment — a registered agent can lodge a formal objection on your behalf under Part IVC of the Taxation Administration Act 1953. You generally have 60 days (or up to 2 years for most individuals and small businesses) to lodge. If the ATO disallows the objection, you can seek external merits review — note that on 14 October 2024 the former Administrative Appeals Tribunal (AAT) was replaced by the Administrative Review Tribunal (ART), so applications now go to the ART. There are strict time limits, so act quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a registered tax agent help with FBT and GST advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched agent advises on fringe benefits tax, GST registration and coding, and PAYG withholding — ensuring your obligations are met correctly and efficiently across all tax types."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is registered tax agent matching free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free for individuals and businesses. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm, and the matched agent gives you a clear quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do registered tax agents get extended lodgement deadlines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes — registered agents typically receive extended lodgement deadlines for returns and BAS, which can buy time during busy periods. The matched agent confirms your deadlines and lodges within the applicable timeframe."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find a Registered Tax Agent Near You"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Registered Tax Agent — what we can help with"
+    },
+    {
+      "level": 3,
+      "text": "Why 'registered' is non-negotiable"
+    },
+    {
+      "level": 3,
+      "text": "How to check a tax agent's registration"
+    },
+    {
+      "level": 3,
+      "text": "Tax agents vs tax accountants"
+    },
+    {
+      "level": 3,
+      "text": "Tax objections & appeals"
+    },
+    {
+      "level": 2,
+      "text": "Registered Tax Agent services we match"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Registered Tax Agent Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Other Matching Services"
+    },
+    {
+      "level": 4,
+      "text": "Registered Tax Agent matching across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find a Registered Tax Agent Near You",
+      "images": 15,
+      "text": "Find a Registered Tax Agent Near YouFree matching serviceVetted accountantsNo obligationOnly a registered tax agent can lodge your tax return and represent you to the ATO for a fee — and the right one can save you far more than they cost. Your Accountant Match matches you with a Tax Practitioners Board-registered agent in your area who specialises in exactly the services you need, from personal returns to business compliance and dispute support. Free, confidential, no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Registered Tax Agent — what we can help with",
+      "images": 0,
+      "text": "SPECIALIST NETWORKRegistered Tax Agent — what we can help withWhy 'registered' is non-negotiableUnder the Tax Agent Services Act 2009, only a registered tax (or BAS) agent can charge a fee to lodge returns or deal with the ATO on your behalf. Unregistered operators cannot legally do this — and the ATO will not deal with them. Every accountant in our network has a current TPB registration that we verify. If an agent's registration lapses, they are removed from the network.How to check a tax agent's registrationYou can verify any agent on the Tax Practitioners Board's public register at tpb.gov.au using their name or registration number. When you are matched through our service, we confirm TPB registration before the match is shown to you. You can also ask the matched firm directly for their registration number.Tax agents vs tax accountantsA 'tax accountant' is a job title; 'registered tax agent' is a legal authorisation. All our matched firms that lodge returns are registered tax agents — the registration is what gives them the legal right to lodge and represent you. An unregistered 'tax accountant' cannot legally charge for this, even if they understand the work.Tax objections & appealsIf you disagree with an ATO assessment — including an amended assessment — a registered tax agent can lodge a formal objection on your behalf. Under Part IVC of the Taxation Administration Act 1953, taxpayers generally have 60 days to lodge an objection (extended to up to 2 years for most individuals and small businesses). If the ATO disallows the objection, you can seek external merits review. Note that on 14 October 2024 the former Administrative Appeals Tribunal (AAT) was replaced by the Administrative Review Tribunal (ART) — taxpayers now apply directly to the ART for review of an ATO objection decision. Our matched agents handle objections, ART applications, and appeals end-to-end."
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.AustLIITax Agent Services Act 2009TPBpublic register at tpb.gov.auATOPart IVC of the Taxation Administration Act 1953art.gov.auAdministrative Review Tribunal (ART)"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "id": null,
+      "heading": "Registered Tax Agent services we match",
+      "images": 0,
+      "text": "WHAT WE MATCHRegistered Tax Agent services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Tax return lodgement (personal, company, trust, partnership)ATO representation & correspondenceBAS & IAS preparation & lodgementATO debt negotiation & payment plansAudit & review supportAmended returns & objection lodgementFBT & GST adviceSuper guarantee & SGC disputes"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Vetted, Registered AgentsFree, No ObligationAustralia-Wide"
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "id": null,
+      "heading": "Trust and vetting standards for Registered Tax Agent Partners",
+      "images": 0,
+      "text": "TRUST & VETTINGTrust and vetting standards for Registered Tax Agent PartnersEntrusting someone with your registered tax agent needs means putting your finances in their hands. At Your Accountant Match, we hold every registered tax agent specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll registered tax agent professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery registered tax agent partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPE"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "id": null,
+      "heading": "Frequently Asked Questions",
+      "images": 0,
+      "text": "COMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I verify a tax agent is registered?Every registered tax agent appears on the public Tax Practitioners Board register at tpb.gov.au. Search by name or registration number. All matched firms in our network have verified, current TPB registrations before they are connected with you.Can a registered tax agent deal with the ATO for me?What if I already have an ATO debt or overdue return?How quickly will a matched registered tax agent contact me?Can a registered tax agent lodge an objection for me?Can a registered tax agent help with FBT and GST advice?Is registered tax agent matching free?Do registered tax agents get extended lodgement deadlines?"
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": null,
+      "heading": "Other Matching Services",
+      "images": 0,
+      "text": "EXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BAS"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Registered Tax Agent matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)"
+    },
+    {
+      "index": 12,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 13,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "Tax Agent Services Act 2009"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "public register at tpb.gov.au"
+    },
+    {
+      "href": "https://www.ato.gov.au/law/view/document?DocID=PAC%2F637001%2F1%2F1%2Finstrument%2F1",
+      "text": "Part IVC of the Taxation Administration Act 1953"
+    },
+    {
+      "href": "https://www.art.gov.au",
+      "text": "Administrative Review Tribunal (ART)"
+    },
+    {
+      "href": "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/tasa2009197/",
+      "text": "AustLIITax Agent Services Act 2009"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "TPBpublic register at tpb.gov.au"
+    },
+    {
+      "href": "https://www.ato.gov.au/law/view/document?DocID=PAC%2F637001%2F1%2F1%2Finstrument%2F1",
+      "text": "ATOPart IVC of the Taxation Administration Act 1953"
+    },
+    {
+      "href": "https://www.art.gov.au",
+      "text": "art.gov.auAdministrative Review Tribunal (ART)"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.tpb.gov.au/public-register",
+      "text": "public Tax Practitioners Board register at tpb.gov.au"
+    },
+    {
+      "href": "/accountant/tax-accountant",
+      "text": "Tax Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeper",
+      "text": "Bookkeeper"
+    },
+    {
+      "href": "/accountant/personal-tax-support",
+      "text": "Personal Tax Return"
+    },
+    {
+      "href": "/accountant/tax-deduction-expert",
+      "text": "Tax Deduction Expert"
+    },
+    {
+      "href": "/accountant/small-business-accountant",
+      "text": "Small Business Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeping-bas",
+      "text": "Bookkeeping & BAS"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Registered Tax AgentFind a Registered Tax Agent Near YouFree matching serviceVetted accountantsNo obligationOnly a registered tax agent can lodge your tax return and represent you to the ATO for a fee — and the right one can save you far more than they cost. Your Accountant Match matches you with a Tax Practitioners Board-registered agent in your area who specialises in exactly the services you need, from personal returns to business compliance and dispute support. Free, confidential, no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.SPECIALIST NETWORKRegistered Tax Agent — what we can help withWhy 'registered' is non-negotiableUnder the Tax Agent Services Act 2009, only a registered tax (or BAS) agent can charge a fee to lodge returns or deal with the ATO on your behalf. Unregistered operators cannot legally do this — and the ATO will not deal with them. Every accountant in our network has a current TPB registration that we verify. If an agent's registration lapses, they are removed from the network.How to check a tax agent's registrationYou can verify any agent on the Tax Practitioners Board's public register at tpb.gov.au using their name or registration number. When you are matched through our service, we confirm TPB registration before the match is shown to you. You can also ask the matched firm directly for their registration number.Tax agents vs tax accountantsA 'tax accountant' is a job title; 'registered tax agent' is a legal authorisation. All our matched firms that lodge returns are registered tax agents — the registration is what gives them the legal right to lodge and represent you. An unregistered 'tax accountant' cannot legally charge for this, even if they understand the work.Tax objections & appealsIf you disagree with an ATO assessment — including an amended assessment — a registered tax agent can lodge a formal objection on your behalf. Under Part IVC of the Taxation Administration Act 1953, taxpayers generally have 60 days to lodge an objection (extended to up to 2 years for most individuals and small businesses). If the ATO disallows the objection, you can seek external merits review. Note that on 14 October 2024 the former Administrative Appeals Tribunal (AAT) was replaced by the Administrative Review Tribunal (ART) — taxpayers now apply directly to the ART for review of an ATO objection decision. Our matched agents handle objections, ART applications, and appeals end-to-end.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.AustLIITax Agent Services Act 2009TPBpublic register at tpb.gov.auATOPart IVC of the Taxation Administration Act 1953art.gov.auAdministrative Review Tribunal (ART)WHAT WE MATCHRegistered Tax Agent services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Tax return lodgement (personal, company, trust, partnership)ATO representation & correspondenceBAS & IAS preparation & lodgementATO debt negotiation & payment plansAudit & review supportAmended returns & objection lodgementFBT & GST adviceSuper guarantee & SGC disputesVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGTrust and vetting standards for Registered Tax Agent PartnersEntrusting someone with your registered tax agent needs means putting your finances in their hands. At Your Accountant Match, we hold every registered tax agent specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll registered tax agent professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery registered tax agent partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I verify a tax agent is registered?Every registered tax agent appears on the public Tax Practitioners Board register at tpb.gov.au. Search by name or registration number. All matched firms in our network have verified, current TPB registrations before they are connected with you.Can a registered tax agent deal with the ATO for me?What if I already have an ATO debt or overdue return?How quickly will a matched registered tax agent contact me?Can a registered tax agent lodge an objection for me?Can a registered tax agent help with FBT and GST advice?Is registered tax agent matching free?Do registered tax agents get extended lodgement deadlines?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BASRegistered Tax Agent matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Registered Tax Agent Find a Registered Tax Agent Near You Free matching service Vetted accountants No obligation Only a registered tax agent can lodge your tax return and represent you to the ATO for a fee — and the right one can save you far more than they cost. Your Accountant Match matches you with a Tax Practitioners Board-registered agent in your area who specialises in exactly the services you need, from personal returns to business compliance and dispute support. Free, confidential, no obligation. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. SPECIALIST NETWORK Registered Tax Agent — what we can help with Why 'registered' is non-negotiable Under the Tax Agent Services Act 2009, only a registered tax (or BAS) agent can charge a fee to lodge returns or deal with the ATO on your behalf. Unregistered operators cannot legally do this — and the ATO will not deal with them. Every accountant in our network has a current TPB registration that we verify. If an agent's registration lapses, they are removed from the network. How to check a tax agent's registration You can verify any agent on the Tax Practitioners Board's public register at tpb.gov.au using their name or registration number. When you are matched through our service, we confirm TPB registration before the match is shown to you. You can also ask the matched firm directly for their registration number. Tax agents vs tax accountants A 'tax accountant' is a job title; 'registered tax agent' is a legal authorisation. All our matched firms that lodge returns are registered tax agents — the registration is what gives them the legal right to lodge and represent you. An unregistered 'tax accountant' cannot legally charge for this, even if they understand the work. Tax objections & appeals If you disagree with an ATO assessment — including an amended assessment — a registered tax agent can lodge a formal objection on your behalf. Under Part IVC of the Taxation Administration Act 1953, taxpayers generally have 60 days to lodge an objection (extended to up to 2 years for most individuals and small businesses). If the ATO disallows the objection, you can seek external merits review. Note that on 14 October 2024 the former Administrative Appeals Tribunal (AAT) was replaced by the Administrative Review Tribunal (ART) — taxpayers now apply directly to the ART for review of an ATO objection decision. Our matched agents handle objections, ART applications, and appeals end-to-end. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. AUSTLII Tax Agent Services Act 2009 TPB public register at tpb.gov.au ATO Part IVC of the Taxation Administration Act 1953 ART.GOV.AU Administrative Review Tribunal (ART) WHAT WE MATCH Registered Tax Agent services we match Our vetted network covers the full range of accounting, tax and bookkeeping services. Tax return lodgement (personal, company, trust, partnership) ATO representation & correspondence BAS & IAS preparation & lodgement ATO debt negotiation & payment plans Audit & review support Amended returns & objection lodgement FBT & GST advice Super guarantee & SGC disputes Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING Trust and vetting standards for Registered Tax Agent Partners Entrusting someone with your registered tax agent needs means putting your finances in their hands. At Your Accountant Match, we hold every registered tax agent specialist we refer to the highest professional and ethical standards in the industry. Verified professional memberships All registered tax agent professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Every registered tax agent partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. How do I verify a tax agent is registered? Every registered tax agent appears on the public Tax Practitioners Board register at tpb.gov.au. Search by name or registration number. All matched firms in our network have verified, current TPB registrations before they are connected with you. Can a registered tax agent deal with the ATO for me? What if I already have an ATO debt or overdue return? How quickly will a matched registered tax agent contact me? Can a registered tax agent lodge an objection for me? Can a registered tax agent help with FBT and GST advice? Is registered tax agent matching free? Do registered tax agents get extended lodgement deadlines? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Other Matching Services Here are some other specialist services you may find useful Tax Accountant Bookkeeper Personal Tax Return Tax Deduction Expert Small Business Accountant Bookkeeping & BAS Registered Tax Agent matching across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2946,
+  "inSitemap": true
+}

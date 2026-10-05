@@ -1,0 +1,1712 @@
+[
+  {
+    "path": "/",
+    "slug": "_home",
+    "inSitemap": true,
+    "title": "Your Accountant Match — Find a Vetted Local Accountant",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1320
+  },
+  {
+    "path": "/about",
+    "slug": "about",
+    "inSitemap": true,
+    "title": "About Your Accountant Match — Free National Accountant Matching Service",
+    "redirectedTo": null,
+    "error": null,
+    "words": 621
+  },
+  {
+    "path": "/accountant/advanced-reporting-specialist",
+    "slug": "accountant__advanced-reporting-specialist",
+    "inSitemap": true,
+    "title": "Advanced Reporting Specialist Matching — Management Accounts & Forecasts | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 938
+  },
+  {
+    "path": "/accountant/audit-assurance",
+    "slug": "accountant__audit-assurance",
+    "inSitemap": true,
+    "title": "Audit & Assurance Matching — Statutory & Internal Audit Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 967
+  },
+  {
+    "path": "/accountant/bookkeeper",
+    "slug": "accountant__bookkeeper",
+    "inSitemap": true,
+    "title": "Bookkeeper Matching — Find a Local Bookkeeper Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 964
+  },
+  {
+    "path": "/accountant/bookkeeping-bas",
+    "slug": "accountant__bookkeeping-bas",
+    "inSitemap": true,
+    "title": "Bookkeeping & BAS Matching — BAS Agent Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 963
+  },
+  {
+    "path": "/accountant/business-growth-adviser",
+    "slug": "accountant__business-growth-adviser",
+    "inSitemap": true,
+    "title": "Business Growth Adviser Matching — Growth Advisory Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1055
+  },
+  {
+    "path": "/accountant/business-structures",
+    "slug": "accountant__business-structures",
+    "inSitemap": true,
+    "title": "Business Structuring Advice — Sole Trader, Company, Trust Setup | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 919
+  },
+  {
+    "path": "/accountant/cloud-accounting",
+    "slug": "accountant__cloud-accounting",
+    "inSitemap": true,
+    "title": "Cloud Accounting Matching — Xero, QuickBooks, MYOB Setup Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 895
+  },
+  {
+    "path": "/accountant/cpa-accountant",
+    "slug": "accountant__cpa-accountant",
+    "inSitemap": true,
+    "title": "CPA Accountant Matching — Find a Certified Practising Accountant | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 975
+  },
+  {
+    "path": "/accountant/payroll-compliance",
+    "slug": "accountant__payroll-compliance",
+    "inSitemap": true,
+    "title": "Payroll & Compliance Matching — STP2 & Super Guarantee Support | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 993
+  },
+  {
+    "path": "/accountant/personal-tax-support",
+    "slug": "accountant__personal-tax-support",
+    "inSitemap": true,
+    "title": "Personal Tax Return Accountant Near You — Free Matching | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 962
+  },
+  {
+    "path": "/accountant/property-smsf-specialist",
+    "slug": "accountant__property-smsf-specialist",
+    "inSitemap": true,
+    "title": "Property & SMSF Specialist Matching — SMSF Property Advice Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1117
+  },
+  {
+    "path": "/accountant/registered-tax-agent",
+    "slug": "accountant__registered-tax-agent",
+    "inSitemap": true,
+    "title": "Registered Tax Agent Matching — Find a TPB-Registered Agent | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1107
+  },
+  {
+    "path": "/accountant/registration-services",
+    "slug": "accountant__registration-services",
+    "inSitemap": true,
+    "title": "Registration Services — Company, ABN, GST, BAS & Business Registration | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1083
+  },
+  {
+    "path": "/accountant/small-business-accountant",
+    "slug": "accountant__small-business-accountant",
+    "inSitemap": true,
+    "title": "Small Business Accountant Matching — Find a Local Business Accountant | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 930
+  },
+  {
+    "path": "/accountant/smsf-accountant",
+    "slug": "accountant__smsf-accountant",
+    "inSitemap": true,
+    "title": "SMSF Accountant Matching — Self-Managed Super Fund Specialist Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 957
+  },
+  {
+    "path": "/accountant/succession-planning",
+    "slug": "accountant__succession-planning",
+    "inSitemap": true,
+    "title": "Succession Planning Matching — Business Valuation & Exit Advice Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 893
+  },
+  {
+    "path": "/accountant/tax-accountant",
+    "slug": "accountant__tax-accountant",
+    "inSitemap": true,
+    "title": "Tax Accountant Near Me | Find a Registered Local Tax Agent",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1005
+  },
+  {
+    "path": "/accountant/tax-deduction-expert",
+    "slug": "accountant__tax-deduction-expert",
+    "inSitemap": true,
+    "title": "Tax Deduction Expert Matching — Maximise Legitimate Deductions | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 959
+  },
+  {
+    "path": "/admin-dashboard",
+    "slug": "admin-dashboard",
+    "inSitemap": false,
+    "title": null,
+    "redirectedTo": null,
+    "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+    "words": 0
+  },
+  {
+    "path": "/admin-login",
+    "slug": "admin-login",
+    "inSitemap": false,
+    "title": null,
+    "redirectedTo": null,
+    "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+    "words": 0
+  },
+  {
+    "path": "/blog",
+    "slug": "blog",
+    "inSitemap": true,
+    "title": "Tax & Accounting Blog — Insights for Australians | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 936
+  },
+  {
+    "path": "/blog/bas-due-dates-2026",
+    "slug": "blog__bas-due-dates-2026",
+    "inSitemap": true,
+    "title": "BAS Due Dates 2026 — Monthly & Quarterly Lodgement Dates | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1129
+  },
+  {
+    "path": "/blog/business-records-bookkeeping-2026",
+    "slug": "blog__business-records-bookkeeping-2026",
+    "inSitemap": true,
+    "title": "Business Records & Bookkeeping 2026 — What to Keep & How Long | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1286
+  },
+  {
+    "path": "/blog/catch-up-overdue-tax-returns-2026",
+    "slug": "blog__catch-up-overdue-tax-returns-2026",
+    "inSitemap": true,
+    "title": "How to Catch Up on Overdue Tax Returns — Multi-Year Backlog Help | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1155
+  },
+  {
+    "path": "/blog/company-trust-return-deadlines-2026",
+    "slug": "blog__company-trust-return-deadlines-2026",
+    "inSitemap": true,
+    "title": "Company & Trust Tax Return Deadlines 2026 — Lodgement Dates | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1049
+  },
+  {
+    "path": "/blog/company-vs-trust-vs-sole-trader-2026",
+    "slug": "blog__company-vs-trust-vs-sole-trader-2026",
+    "inSitemap": true,
+    "title": "Company vs Trust vs Sole Trader 2026 — Which Structure Saves Tax | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1165
+  },
+  {
+    "path": "/blog/gst-registration-threshold-2026",
+    "slug": "blog__gst-registration-threshold-2026",
+    "inSitemap": true,
+    "title": "GST Registration Threshold 2026 — When Your Business Must Register | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1109
+  },
+  {
+    "path": "/blog/home-office-tax-deductions-2026",
+    "slug": "blog__home-office-tax-deductions-2026",
+    "inSitemap": true,
+    "title": "Working From Home Tax Deductions 2026 — What You Can Claim | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1245
+  },
+  {
+    "path": "/blog/negative-gearing-explained-2026",
+    "slug": "blog__negative-gearing-explained-2026",
+    "inSitemap": true,
+    "title": "Negative Gearing Explained 2026 — How Property Losses Reduce Tax | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1498
+  },
+  {
+    "path": "/blog/payday-super-deadlines-2026",
+    "slug": "blog__payday-super-deadlines-2026",
+    "inSitemap": true,
+    "title": "Payday Super 2026 — New Super Guarantee Deadlines for Employers | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1035
+  },
+  {
+    "path": "/blog/reduce-tax-sole-trader-2026",
+    "slug": "blog__reduce-tax-sole-trader-2026",
+    "inSitemap": true,
+    "title": "How to Reduce Tax as a Sole Trader in Australia 2026 | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1162
+  },
+  {
+    "path": "/blog/rental-property-deductions-2026",
+    "slug": "blog__rental-property-deductions-2026",
+    "inSitemap": true,
+    "title": "Rental Property Deductions 2026 — What Property Investors Can Claim | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1096
+  },
+  {
+    "path": "/blog/super-contributions-cap-2026",
+    "slug": "blog__super-contributions-cap-2026",
+    "inSitemap": true,
+    "title": "Super Contributions & Caps 2026 — Concessional & Non-Concessional Limits | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1133
+  },
+  {
+    "path": "/blog/tax-planning-strategies-2026",
+    "slug": "blog__tax-planning-strategies-2026",
+    "inSitemap": true,
+    "title": "Tax Planning Strategies 2026 — 8 Legitimate Ways to Reduce Tax | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1322
+  },
+  {
+    "path": "/blog/tax-return-deadlines-2026",
+    "slug": "blog__tax-return-deadlines-2026",
+    "inSitemap": true,
+    "title": "Tax Return Deadlines 2026 — When to Lodge & Agent Extensions | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1051
+  },
+  {
+    "path": "/blog/vehicle-car-deductions-2026",
+    "slug": "blog__vehicle-car-deductions-2026",
+    "inSitemap": true,
+    "title": "Vehicle & Car Tax Deductions 2026 — Cents-per-KM vs Logbook Method | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1114
+  },
+  {
+    "path": "/blog/work-related-deductions-2026",
+    "slug": "blog__work-related-deductions-2026",
+    "inSitemap": true,
+    "title": "Work-Related Deductions 2026 — Common Claims & ATO Review Triggers | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1113
+  },
+  {
+    "path": "/contact",
+    "slug": "contact",
+    "inSitemap": true,
+    "title": "Contact Your Accountant Match | Free Accountant Matching",
+    "redirectedTo": null,
+    "error": null,
+    "words": 361
+  },
+  {
+    "path": "/ghl-redirect",
+    "slug": "ghl-redirect",
+    "inSitemap": false,
+    "title": "Find Your Accountant Match — Questionnaire",
+    "redirectedTo": null,
+    "error": null,
+    "words": 92
+  },
+  {
+    "path": "/guide/accountant-for-companies-small-businesses",
+    "slug": "guide__accountant-for-companies-small-businesses",
+    "inSitemap": true,
+    "title": "Accountant for Companies & Small Businesses — Vetted Local Accountant | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 895
+  },
+  {
+    "path": "/guide/accountant-for-sole-traders",
+    "slug": "guide__accountant-for-sole-traders",
+    "inSitemap": true,
+    "title": "Accountant for Sole Traders — Find a Vetted Local Accountant | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 921
+  },
+  {
+    "path": "/guide/accountant-near-me",
+    "slug": "guide__accountant-near-me",
+    "inSitemap": true,
+    "title": "Accountant Near Me — Find a Vetted Local Accountant | Free Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 834
+  },
+  {
+    "path": "/guide/accountant-vs-bookkeeper",
+    "slug": "guide__accountant-vs-bookkeeper",
+    "inSitemap": true,
+    "title": "Accountant vs Bookkeeper: What's the Difference & Which Do You Need? | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 848
+  },
+  {
+    "path": "/guide/ato-audit-help",
+    "slug": "guide__ato-audit-help",
+    "inSitemap": true,
+    "title": "ATO Audit Help — Registered Tax Agent Representation | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 937
+  },
+  {
+    "path": "/guide/bas-agent-near-me",
+    "slug": "guide__bas-agent-near-me",
+    "inSitemap": true,
+    "title": "BAS Agent Near Me — Find a Registered Local BAS Agent | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 931
+  },
+  {
+    "path": "/guide/bookkeeper-near-me",
+    "slug": "guide__bookkeeper-near-me",
+    "inSitemap": true,
+    "title": "Bookkeeper Near Me — Local Registered BAS Agents | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 804
+  },
+  {
+    "path": "/guide/business-accountant-near-me",
+    "slug": "guide__business-accountant-near-me",
+    "inSitemap": true,
+    "title": "Business Accountant Near Me — Find a Vetted Local Business Accountant | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 930
+  },
+  {
+    "path": "/guide/how-much-does-an-accountant-cost",
+    "slug": "guide__how-much-does-an-accountant-cost",
+    "inSitemap": true,
+    "title": "How Much Does an Accountant Cost in Australia? 2026 Pricing Guide | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 830
+  },
+  {
+    "path": "/guide/important-tax-dates",
+    "slug": "guide__important-tax-dates",
+    "inSitemap": true,
+    "title": "Important Tax Dates & Deadlines in Australia 2026 | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1187
+  },
+  {
+    "path": "/guide/late-bas-help",
+    "slug": "guide__late-bas-help",
+    "inSitemap": true,
+    "title": "Late BAS Help — Catch Up on Overdue BAS Lodgements | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 896
+  },
+  {
+    "path": "/guide/overdue-tax-return-help",
+    "slug": "guide__overdue-tax-return-help",
+    "inSitemap": true,
+    "title": "Overdue Tax Return Help — Catch Up on Late Returns Australia | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1015
+  },
+  {
+    "path": "/guide/smsf-accountant-near-me",
+    "slug": "guide__smsf-accountant-near-me",
+    "inSitemap": true,
+    "title": "SMSF Accountant Near Me — Find a Local SMSF Specialist | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 893
+  },
+  {
+    "path": "/guide/tax-accountant-near-me",
+    "slug": "guide__tax-accountant-near-me",
+    "inSitemap": true,
+    "title": "Tax Accountant Near Me — Local Registered Tax Agents | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 831
+  },
+  {
+    "path": "/guides",
+    "slug": "guides",
+    "inSitemap": true,
+    "title": "Accountant Guides — Find, Compare & Get Matched | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1171
+  },
+  {
+    "path": "/how-it-works",
+    "slug": "how-it-works",
+    "inSitemap": true,
+    "title": "How It Works — 3 Step Accountant Matching | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 354
+  },
+  {
+    "path": "/how-we-select-accountants",
+    "slug": "how-we-select-accountants",
+    "inSitemap": true,
+    "title": "How We Select Accountants — Vetting Process | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 816
+  },
+  {
+    "path": "/industry/agriculture-primary-production/adelaide",
+    "slug": "industry__agriculture-primary-production__adelaide",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1400
+  },
+  {
+    "path": "/industry/agriculture-primary-production/brisbane",
+    "slug": "industry__agriculture-primary-production__brisbane",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1413
+  },
+  {
+    "path": "/industry/agriculture-primary-production/canberra-queanbeyan",
+    "slug": "industry__agriculture-primary-production__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1448
+  },
+  {
+    "path": "/industry/agriculture-primary-production/darwin",
+    "slug": "industry__agriculture-primary-production__darwin",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1408
+  },
+  {
+    "path": "/industry/agriculture-primary-production/geelong",
+    "slug": "industry__agriculture-primary-production__geelong",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1402
+  },
+  {
+    "path": "/industry/agriculture-primary-production/gold-coast",
+    "slug": "industry__agriculture-primary-production__gold-coast",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1421
+  },
+  {
+    "path": "/industry/agriculture-primary-production/hobart",
+    "slug": "industry__agriculture-primary-production__hobart",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1399
+  },
+  {
+    "path": "/industry/agriculture-primary-production/launceston",
+    "slug": "industry__agriculture-primary-production__launceston",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1400
+  },
+  {
+    "path": "/industry/agriculture-primary-production/melbourne",
+    "slug": "industry__agriculture-primary-production__melbourne",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1411
+  },
+  {
+    "path": "/industry/agriculture-primary-production/newcastle-maitland",
+    "slug": "industry__agriculture-primary-production__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1441
+  },
+  {
+    "path": "/industry/agriculture-primary-production/perth",
+    "slug": "industry__agriculture-primary-production__perth",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1400
+  },
+  {
+    "path": "/industry/agriculture-primary-production/sunshine-coast",
+    "slug": "industry__agriculture-primary-production__sunshine-coast",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1411
+  },
+  {
+    "path": "/industry/agriculture-primary-production/sydney",
+    "slug": "industry__agriculture-primary-production__sydney",
+    "inSitemap": true,
+    "title": "Agriculture & Primary Production Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1410
+  },
+  {
+    "path": "/industry/construction-tradies/adelaide",
+    "slug": "industry__construction-tradies__adelaide",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1449
+  },
+  {
+    "path": "/industry/construction-tradies/brisbane",
+    "slug": "industry__construction-tradies__brisbane",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1447
+  },
+  {
+    "path": "/industry/construction-tradies/canberra-queanbeyan",
+    "slug": "industry__construction-tradies__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1475
+  },
+  {
+    "path": "/industry/construction-tradies/darwin",
+    "slug": "industry__construction-tradies__darwin",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1440
+  },
+  {
+    "path": "/industry/construction-tradies/geelong",
+    "slug": "industry__construction-tradies__geelong",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1452
+  },
+  {
+    "path": "/industry/construction-tradies/gold-coast",
+    "slug": "industry__construction-tradies__gold-coast",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1463
+  },
+  {
+    "path": "/industry/construction-tradies/hobart",
+    "slug": "industry__construction-tradies__hobart",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1432
+  },
+  {
+    "path": "/industry/construction-tradies/launceston",
+    "slug": "industry__construction-tradies__launceston",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1439
+  },
+  {
+    "path": "/industry/construction-tradies/melbourne",
+    "slug": "industry__construction-tradies__melbourne",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1469
+  },
+  {
+    "path": "/industry/construction-tradies/newcastle-maitland",
+    "slug": "industry__construction-tradies__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1469
+  },
+  {
+    "path": "/industry/construction-tradies/perth",
+    "slug": "industry__construction-tradies__perth",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1446
+  },
+  {
+    "path": "/industry/construction-tradies/sunshine-coast",
+    "slug": "industry__construction-tradies__sunshine-coast",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1451
+  },
+  {
+    "path": "/industry/construction-tradies/sydney",
+    "slug": "industry__construction-tradies__sydney",
+    "inSitemap": true,
+    "title": "Construction & Tradies Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1455
+  },
+  {
+    "path": "/industry/medical-healthcare/adelaide",
+    "slug": "industry__medical-healthcare__adelaide",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1362
+  },
+  {
+    "path": "/industry/medical-healthcare/brisbane",
+    "slug": "industry__medical-healthcare__brisbane",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1381
+  },
+  {
+    "path": "/industry/medical-healthcare/canberra-queanbeyan",
+    "slug": "industry__medical-healthcare__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1393
+  },
+  {
+    "path": "/industry/medical-healthcare/darwin",
+    "slug": "industry__medical-healthcare__darwin",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1365
+  },
+  {
+    "path": "/industry/medical-healthcare/geelong",
+    "slug": "industry__medical-healthcare__geelong",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1365
+  },
+  {
+    "path": "/industry/medical-healthcare/gold-coast",
+    "slug": "industry__medical-healthcare__gold-coast",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1384
+  },
+  {
+    "path": "/industry/medical-healthcare/hobart",
+    "slug": "industry__medical-healthcare__hobart",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1350
+  },
+  {
+    "path": "/industry/medical-healthcare/launceston",
+    "slug": "industry__medical-healthcare__launceston",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1358
+  },
+  {
+    "path": "/industry/medical-healthcare/melbourne",
+    "slug": "industry__medical-healthcare__melbourne",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1393
+  },
+  {
+    "path": "/industry/medical-healthcare/newcastle-maitland",
+    "slug": "industry__medical-healthcare__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1396
+  },
+  {
+    "path": "/industry/medical-healthcare/perth",
+    "slug": "industry__medical-healthcare__perth",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1353
+  },
+  {
+    "path": "/industry/medical-healthcare/sunshine-coast",
+    "slug": "industry__medical-healthcare__sunshine-coast",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1384
+  },
+  {
+    "path": "/industry/medical-healthcare/sydney",
+    "slug": "industry__medical-healthcare__sydney",
+    "inSitemap": true,
+    "title": "Medical & Healthcare Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1370
+  },
+  {
+    "path": "/industry/professional-services/adelaide",
+    "slug": "industry__professional-services__adelaide",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1381
+  },
+  {
+    "path": "/industry/professional-services/brisbane",
+    "slug": "industry__professional-services__brisbane",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1374
+  },
+  {
+    "path": "/industry/professional-services/canberra-queanbeyan",
+    "slug": "industry__professional-services__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1398
+  },
+  {
+    "path": "/industry/professional-services/darwin",
+    "slug": "industry__professional-services__darwin",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1375
+  },
+  {
+    "path": "/industry/professional-services/geelong",
+    "slug": "industry__professional-services__geelong",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1376
+  },
+  {
+    "path": "/industry/professional-services/gold-coast",
+    "slug": "industry__professional-services__gold-coast",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1404
+  },
+  {
+    "path": "/industry/professional-services/hobart",
+    "slug": "industry__professional-services__hobart",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1380
+  },
+  {
+    "path": "/industry/professional-services/launceston",
+    "slug": "industry__professional-services__launceston",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1381
+  },
+  {
+    "path": "/industry/professional-services/melbourne",
+    "slug": "industry__professional-services__melbourne",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1384
+  },
+  {
+    "path": "/industry/professional-services/newcastle-maitland",
+    "slug": "industry__professional-services__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1410
+  },
+  {
+    "path": "/industry/professional-services/perth",
+    "slug": "industry__professional-services__perth",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1367
+  },
+  {
+    "path": "/industry/professional-services/sunshine-coast",
+    "slug": "industry__professional-services__sunshine-coast",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1394
+  },
+  {
+    "path": "/industry/professional-services/sydney",
+    "slug": "industry__professional-services__sydney",
+    "inSitemap": true,
+    "title": "Professional Services Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1366
+  },
+  {
+    "path": "/industry/real-estate-property/adelaide",
+    "slug": "industry__real-estate-property__adelaide",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1417
+  },
+  {
+    "path": "/industry/real-estate-property/brisbane",
+    "slug": "industry__real-estate-property__brisbane",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1423
+  },
+  {
+    "path": "/industry/real-estate-property/canberra-queanbeyan",
+    "slug": "industry__real-estate-property__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1466
+  },
+  {
+    "path": "/industry/real-estate-property/darwin",
+    "slug": "industry__real-estate-property__darwin",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1431
+  },
+  {
+    "path": "/industry/real-estate-property/geelong",
+    "slug": "industry__real-estate-property__geelong",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1426
+  },
+  {
+    "path": "/industry/real-estate-property/gold-coast",
+    "slug": "industry__real-estate-property__gold-coast",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1449
+  },
+  {
+    "path": "/industry/real-estate-property/hobart",
+    "slug": "industry__real-estate-property__hobart",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1428
+  },
+  {
+    "path": "/industry/real-estate-property/launceston",
+    "slug": "industry__real-estate-property__launceston",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1407
+  },
+  {
+    "path": "/industry/real-estate-property/melbourne",
+    "slug": "industry__real-estate-property__melbourne",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1446
+  },
+  {
+    "path": "/industry/real-estate-property/newcastle-maitland",
+    "slug": "industry__real-estate-property__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1462
+  },
+  {
+    "path": "/industry/real-estate-property/perth",
+    "slug": "industry__real-estate-property__perth",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1425
+  },
+  {
+    "path": "/industry/real-estate-property/sunshine-coast",
+    "slug": "industry__real-estate-property__sunshine-coast",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1433
+  },
+  {
+    "path": "/industry/real-estate-property/sydney",
+    "slug": "industry__real-estate-property__sydney",
+    "inSitemap": true,
+    "title": "Real Estate & Property Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1420
+  },
+  {
+    "path": "/industry/retail-ecommerce/adelaide",
+    "slug": "industry__retail-ecommerce__adelaide",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1431
+  },
+  {
+    "path": "/industry/retail-ecommerce/brisbane",
+    "slug": "industry__retail-ecommerce__brisbane",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1432
+  },
+  {
+    "path": "/industry/retail-ecommerce/canberra-queanbeyan",
+    "slug": "industry__retail-ecommerce__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1461
+  },
+  {
+    "path": "/industry/retail-ecommerce/darwin",
+    "slug": "industry__retail-ecommerce__darwin",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1432
+  },
+  {
+    "path": "/industry/retail-ecommerce/geelong",
+    "slug": "industry__retail-ecommerce__geelong",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1411
+  },
+  {
+    "path": "/industry/retail-ecommerce/gold-coast",
+    "slug": "industry__retail-ecommerce__gold-coast",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1440
+  },
+  {
+    "path": "/industry/retail-ecommerce/hobart",
+    "slug": "industry__retail-ecommerce__hobart",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1428
+  },
+  {
+    "path": "/industry/retail-ecommerce/launceston",
+    "slug": "industry__retail-ecommerce__launceston",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1421
+  },
+  {
+    "path": "/industry/retail-ecommerce/melbourne",
+    "slug": "industry__retail-ecommerce__melbourne",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1428
+  },
+  {
+    "path": "/industry/retail-ecommerce/newcastle-maitland",
+    "slug": "industry__retail-ecommerce__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1452
+  },
+  {
+    "path": "/industry/retail-ecommerce/perth",
+    "slug": "industry__retail-ecommerce__perth",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1427
+  },
+  {
+    "path": "/industry/retail-ecommerce/sunshine-coast",
+    "slug": "industry__retail-ecommerce__sunshine-coast",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1447
+  },
+  {
+    "path": "/industry/retail-ecommerce/sydney",
+    "slug": "industry__retail-ecommerce__sydney",
+    "inSitemap": true,
+    "title": "Retail & E-Commerce Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1427
+  },
+  {
+    "path": "/industry/smsf-family-trusts/adelaide",
+    "slug": "industry__smsf-family-trusts__adelaide",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1429
+  },
+  {
+    "path": "/industry/smsf-family-trusts/brisbane",
+    "slug": "industry__smsf-family-trusts__brisbane",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1433
+  },
+  {
+    "path": "/industry/smsf-family-trusts/canberra-queanbeyan",
+    "slug": "industry__smsf-family-trusts__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1463
+  },
+  {
+    "path": "/industry/smsf-family-trusts/darwin",
+    "slug": "industry__smsf-family-trusts__darwin",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1429
+  },
+  {
+    "path": "/industry/smsf-family-trusts/geelong",
+    "slug": "industry__smsf-family-trusts__geelong",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1439
+  },
+  {
+    "path": "/industry/smsf-family-trusts/gold-coast",
+    "slug": "industry__smsf-family-trusts__gold-coast",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1451
+  },
+  {
+    "path": "/industry/smsf-family-trusts/hobart",
+    "slug": "industry__smsf-family-trusts__hobart",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1441
+  },
+  {
+    "path": "/industry/smsf-family-trusts/launceston",
+    "slug": "industry__smsf-family-trusts__launceston",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1442
+  },
+  {
+    "path": "/industry/smsf-family-trusts/melbourne",
+    "slug": "industry__smsf-family-trusts__melbourne",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1444
+  },
+  {
+    "path": "/industry/smsf-family-trusts/newcastle-maitland",
+    "slug": "industry__smsf-family-trusts__newcastle-maitland",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1474
+  },
+  {
+    "path": "/industry/smsf-family-trusts/perth",
+    "slug": "industry__smsf-family-trusts__perth",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1436
+  },
+  {
+    "path": "/industry/smsf-family-trusts/sunshine-coast",
+    "slug": "industry__smsf-family-trusts__sunshine-coast",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1460
+  },
+  {
+    "path": "/industry/smsf-family-trusts/sydney",
+    "slug": "industry__smsf-family-trusts__sydney",
+    "inSitemap": true,
+    "title": "SMSF & Family Trusts Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1429
+  },
+  {
+    "path": "/industry/transport-logistics/adelaide",
+    "slug": "industry__transport-logistics__adelaide",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Adelaide | Vetted Adelaide Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1385
+  },
+  {
+    "path": "/industry/transport-logistics/brisbane",
+    "slug": "industry__transport-logistics__brisbane",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Brisbane | Vetted Brisbane Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1383
+  },
+  {
+    "path": "/industry/transport-logistics/canberra-queanbeyan",
+    "slug": "industry__transport-logistics__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Canberra - Queanbeyan | Vetted Canberra - Queanbeyan Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1420
+  },
+  {
+    "path": "/industry/transport-logistics/darwin",
+    "slug": "industry__transport-logistics__darwin",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Darwin | Vetted Darwin Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1383
+  },
+  {
+    "path": "/industry/transport-logistics/geelong",
+    "slug": "industry__transport-logistics__geelong",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Geelong | Vetted Geelong Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1379
+  },
+  {
+    "path": "/industry/transport-logistics/gold-coast",
+    "slug": "industry__transport-logistics__gold-coast",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Gold Coast | Vetted Gold Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1399
+  },
+  {
+    "path": "/industry/transport-logistics/hobart",
+    "slug": "industry__transport-logistics__hobart",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Hobart | Vetted Hobart Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1373
+  },
+  {
+    "path": "/industry/transport-logistics/launceston",
+    "slug": "industry__transport-logistics__launceston",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Launceston | Vetted Launceston Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1375
+  },
+  {
+    "path": "/industry/transport-logistics/melbourne",
+    "slug": "industry__transport-logistics__melbourne",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Melbourne | Vetted Melbourne Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1387
+  },
+  {
+    "path": "/industry/transport-logistics/newcastle-maitland",
+    "slug": "industry__transport-logistics__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Newcastle - Maitland | Vetted Newcastle - Maitland Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1417
+  },
+  {
+    "path": "/industry/transport-logistics/perth",
+    "slug": "industry__transport-logistics__perth",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Perth | Vetted Perth Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1372
+  },
+  {
+    "path": "/industry/transport-logistics/sunshine-coast",
+    "slug": "industry__transport-logistics__sunshine-coast",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Sunshine Coast | Vetted Sunshine Coast Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1404
+  },
+  {
+    "path": "/industry/transport-logistics/sydney",
+    "slug": "industry__transport-logistics__sydney",
+    "inSitemap": true,
+    "title": "Transport & Logistics Accountant in Sydney | Vetted Sydney Specialists",
+    "redirectedTo": null,
+    "error": null,
+    "words": 1384
+  },
+  {
+    "path": "/locations",
+    "slug": "locations",
+    "inSitemap": true,
+    "title": "Locations We Service — Find an Accountant Near You | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 232
+  },
+  {
+    "path": "/locations/adelaide",
+    "slug": "locations__adelaide",
+    "inSitemap": true,
+    "title": "Accounting & Tax Matching Adelaide | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3307
+  },
+  {
+    "path": "/locations/ballarat",
+    "slug": "locations__ballarat",
+    "inSitemap": false,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": "/locations/melbourne",
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/bendigo",
+    "slug": "locations__bendigo",
+    "inSitemap": false,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": "/locations/melbourne",
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/brisbane",
+    "slug": "locations__brisbane",
+    "inSitemap": true,
+    "title": "Specialist Accountant Brisbane | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3391
+  },
+  {
+    "path": "/locations/canberra-queanbeyan",
+    "slug": "locations__canberra-queanbeyan",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Canberra | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3398
+  },
+  {
+    "path": "/locations/coffs-harbour",
+    "slug": "locations__coffs-harbour",
+    "inSitemap": false,
+    "title": "Local Tax Accountants Newcastle | Your Accountant Match",
+    "redirectedTo": "/locations/newcastle-maitland",
+    "error": null,
+    "words": 3372
+  },
+  {
+    "path": "/locations/darwin",
+    "slug": "locations__darwin",
+    "inSitemap": true,
+    "title": "Accounting & Tax Matching Darwin | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3287
+  },
+  {
+    "path": "/locations/dubbo",
+    "slug": "locations__dubbo",
+    "inSitemap": false,
+    "title": "Specialist Accountant Sydney | Your Accountant Match",
+    "redirectedTo": "/locations/sydney",
+    "error": null,
+    "words": 2993
+  },
+  {
+    "path": "/locations/geelong",
+    "slug": "locations__geelong",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Geelong | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3307
+  },
+  {
+    "path": "/locations/gold-coast",
+    "slug": "locations__gold-coast",
+    "inSitemap": true,
+    "title": "Accounting & Tax Matching Gold Coast | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3420
+  },
+  {
+    "path": "/locations/hobart",
+    "slug": "locations__hobart",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Hobart | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3262
+  },
+  {
+    "path": "/locations/launceston",
+    "slug": "locations__launceston",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Launceston | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3301
+  },
+  {
+    "path": "/locations/melbourne",
+    "slug": "locations__melbourne",
+    "inSitemap": true,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/newcastle-maitland",
+    "slug": "locations__newcastle-maitland",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Newcastle | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3372
+  },
+  {
+    "path": "/locations/perth",
+    "slug": "locations__perth",
+    "inSitemap": true,
+    "title": "Accounting & Tax Matching Perth | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3295
+  },
+  {
+    "path": "/locations/port-macquarie",
+    "slug": "locations__port-macquarie",
+    "inSitemap": false,
+    "title": "Local Tax Accountants Newcastle | Your Accountant Match",
+    "redirectedTo": "/locations/newcastle-maitland",
+    "error": null,
+    "words": 3372
+  },
+  {
+    "path": "/locations/rockhampton",
+    "slug": "locations__rockhampton",
+    "inSitemap": false,
+    "title": "Accounting & Tax Matching Gold Coast | Your Accountant Match",
+    "redirectedTo": "/locations/gold-coast",
+    "error": null,
+    "words": 3420
+  },
+  {
+    "path": "/locations/shellharbour-area",
+    "slug": "locations__shellharbour-area",
+    "inSitemap": false,
+    "title": "Specialist Accountant Sydney | Your Accountant Match",
+    "redirectedTo": "/locations/sydney",
+    "error": null,
+    "words": 2993
+  },
+  {
+    "path": "/locations/shepparton-mooroopna",
+    "slug": "locations__shepparton-mooroopna",
+    "inSitemap": false,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": "/locations/melbourne",
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/sunshine-coast",
+    "slug": "locations__sunshine-coast",
+    "inSitemap": true,
+    "title": "Local Tax Accountants Sunshine Coast | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 3359
+  },
+  {
+    "path": "/locations/sydney",
+    "slug": "locations__sydney",
+    "inSitemap": true,
+    "title": "Specialist Accountant Sydney | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 2993
+  },
+  {
+    "path": "/locations/traralgon-morwell",
+    "slug": "locations__traralgon-morwell",
+    "inSitemap": false,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": "/locations/melbourne",
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/wagga-wagga",
+    "slug": "locations__wagga-wagga",
+    "inSitemap": false,
+    "title": "Local Tax Accountants Canberra | Your Accountant Match",
+    "redirectedTo": "/locations/canberra-queanbeyan",
+    "error": null,
+    "words": 3398
+  },
+  {
+    "path": "/locations/warragul-drouin",
+    "slug": "locations__warragul-drouin",
+    "inSitemap": false,
+    "title": "Specialist Accountant Melbourne | Your Accountant Match",
+    "redirectedTo": "/locations/melbourne",
+    "error": null,
+    "words": 3455
+  },
+  {
+    "path": "/locations/wollongong",
+    "slug": "locations__wollongong",
+    "inSitemap": false,
+    "title": "Specialist Accountant Sydney | Your Accountant Match",
+    "redirectedTo": "/locations/sydney",
+    "error": null,
+    "words": 2993
+  },
+  {
+    "path": "/privacy",
+    "slug": "privacy",
+    "inSitemap": true,
+    "title": "Your Accountant Match — Find a Vetted Local Accountant",
+    "redirectedTo": null,
+    "error": null,
+    "words": 649
+  },
+  {
+    "path": "/terms",
+    "slug": "terms",
+    "inSitemap": true,
+    "title": "Terms of Use | Your Accountant Match",
+    "redirectedTo": null,
+    "error": null,
+    "words": 687
+  }
+]

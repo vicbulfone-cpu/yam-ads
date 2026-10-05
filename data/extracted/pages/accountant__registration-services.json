@@ -1,0 +1,562 @@
+{
+  "path": "/accountant/registration-services",
+  "extractedAt": "2026-10-02T09:01:03.146Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/accountant/registration-services",
+  "title": "Registration Services — Company, ABN, GST, BAS & Business Registration | Your Accountant Match",
+  "metaDescription": "Registration services matching — free. Get a local accountant to register a company, ABN, GST, business name, trust or SMSF. Done right.",
+  "canonical": "http://localhost:4173/accountant/registration-services",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Registration Services — Company, ABN, GST, BAS & Business Registration | Your Accountant Match",
+    "og:description": "Registration services matching — free. Get a local accountant to register a company, ABN, GST, business name, trust or SMSF. Done right.",
+    "og:url": "http://localhost:4173/accountant/registration-services",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c693d246-e356-47ab-9f77-30c7fb660606.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Registration Services — Company, ABN, GST, BAS & Business Registration | Your Accountant Match",
+    "twitter:description": "Registration services matching — free. Get a local accountant to register a company, ABN, GST, business name, trust or SMSF. Done right.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Registration Services Matching Service",
+      "description": "Registration services matching — free. Get a local accountant to register a company, ABN, GST, business name, trust or SMSF. Done right.",
+      "serviceType": "Registration Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Registration Services",
+          "item": "/accountant/registration-services"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I register a new company in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registering a new company involves lodging an application with ASIC, choosing an available company name, appointing directors and shareholders, issuing shares, and adopting a constitution or replaceable rules. A registered accountant handles the full ASIC company registration, issues your ACN, and arranges the company TFN and ABN. Tell us in the questionnaire that you want to register a new company and we will match you with a firm that does it end-to-end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an ABN and GST registration to start a business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An ABN is required to operate a business, invoice correctly, and avoid no-ABN withholding at the top marginal rate. GST registration is compulsory once your turnover reaches $75,000 (or $150,000 for ride-share and taxi operators). Our matched accountants register your ABN and GST in the correct order so your business is properly set up from day one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a business name and a company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A business name is a trading name registered with ASIC — it does not create a separate legal entity. A company is a separate legal entity registered with ASIC that can own assets, enter contracts, and limit liability. Our matched advisers help you decide which is right for you and handle either registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a matched accountant register a trust or SMSF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Setting up a trust requires a compliant trust deed, a trustee appointment, and an ABN and TFN for the trust. An SMSF must be established with a trust deed, trustee appointments, an ABN, TFN, and an ATO election — plus an independent auditor each year. Our matched specialists prepare the documentation and complete every registration correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does company registration cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASIC charges a set fee for company registration, and accountants typically charge a setup fee on top that includes the ACN, company TFN, ABN, and share structure. The matched firm gives you a clear quote before any work begins — the matching service is free to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched accountant contact me about registration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your registration needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is registration services matching free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free for you. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm, and the matched firm gives you a clear quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What ongoing compliance do I need after registering a company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Companies must lodge an annual review with ASIC, maintain a register of members, and notify ASIC of changes to officeholders or addresses. GST-registered businesses must lodge BAS, and employers must register for STP2 and Payday Super. Our matched firms set up the compliance calendar so you never miss a deadline."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find Registration Services Near You"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Registration Services — what we can help with"
+    },
+    {
+      "level": 3,
+      "text": "Company registration"
+    },
+    {
+      "level": 3,
+      "text": "ABN, GST and business name registration"
+    },
+    {
+      "level": 3,
+      "text": "Trust, partnership and SMSF registration"
+    },
+    {
+      "level": 3,
+      "text": "ASIC and ATO compliance after registration"
+    },
+    {
+      "level": 2,
+      "text": "Registration Services services we match"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Registration Services Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Other Matching Services"
+    },
+    {
+      "level": 4,
+      "text": "Registration Services matching across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find Registration Services Near You",
+      "images": 15,
+      "text": "Find Registration Services Near YouFree matching serviceVetted accountantsNo obligationGetting your registrations right from the start saves time, money and compliance headaches down the track. Whether you are registering a new company, applying for an ABN, registering for GST, setting up a business name, or establishing a trust or SMSF, Your Accountant Match connects you with a local accountant who handles the full range of ASIC and ATO registrations. Tell us what you need to register and your postcode, and we will match you with a qualified firm that fits your needs. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Registration Services — what we can help with",
+      "images": 0,
+      "text": "SPECIALIST NETWORKRegistration Services — what we can help withCompany registrationRegistering a new company involves lodging an application with ASIC, choosing a company name, appointing directors, issuing shares, and adopting a company constitution or replaceable rules. A registered accountant handles the ASIC company registration end-to-end, issues your ACN, and sets up the company tax file number (TFN) and Australian Business Number (ABN). Getting the share structure and officeholder appointments right at registration avoids costly amendments later.ABN, GST and business name registrationAn Australian Business Number (ABN) is required to operate a business, invoice correctly, and avoid withholding at the top marginal rate. GST registration is compulsory once your turnover reaches $75,000 (or $150,000 for ride-share/taxi). Registering a business name with ASIC protects your trading identity. Our matched accountants handle ABN registration, GST registration, PAYG withholding registration, and business name registration in the correct order so your business is properly set up from day one.Trust, partnership and SMSF registrationSetting up a trust requires a compliant trust deed, a trustee appointment, and an ABN and TFN for the trust. A partnership needs a partnership agreement, its own ABN and TFN. An SMSF must be established with a trust deed, trustee appointments, an ABN, TFN, and an election with the ATO — plus an independent auditor engaged each year. Our matched specialists prepare the documentation and complete every registration correctly so your structure is compliant from the outset.ASIC and ATO compliance after registrationRegistration is only the first step. Companies must lodge annual review fees with ASIC, maintain a register of members, and notify ASIC of changes to officeholders or addresses. GST-registered businesses must lodge BAS (monthly or quarterly), and employers must register for STP2 and Payday Super. Our matched firms set up the ongoing compliance calendar so you never miss a deadline after registration."
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": null,
+      "heading": "Registration Services services we match",
+      "images": 0,
+      "text": "WHAT WE MATCHRegistration Services services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Company registration (ASIC) & ACN issuanceABN registrationGST registrationBusiness name registration (ASIC)PAYG withholding registrationTrust establishment & registrationPartnership setup & registrationSMSF establishment & ATO electionTFN registration for entitiesASIC annual review & ongoing compliance"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Vetted, Registered AgentsFree, No ObligationAustralia-Wide"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "id": null,
+      "heading": "Trust and vetting standards for Registration Services Partners",
+      "images": 0,
+      "text": "TRUST & VETTINGTrust and vetting standards for Registration Services PartnersEntrusting someone with your registration services needs means putting your finances in their hands. At Your Accountant Match, we hold every registration services specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll registration services professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery registration services partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPE"
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "id": null,
+      "heading": "Frequently Asked Questions",
+      "images": 0,
+      "text": "COMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I register a new company in Australia?Registering a new company involves lodging an application with ASIC, choosing an available company name, appointing directors and shareholders, issuing shares, and adopting a constitution or replaceable rules. A registered accountant handles the full ASIC company registration, issues your ACN, and arranges the company TFN and ABN. Tell us in the questionnaire that you want to register a new company and we will match you with a firm that does it end-to-end.Do I need an ABN and GST registration to start a business?What is the difference between a business name and a company?Can a matched accountant register a trust or SMSF?How much does company registration cost?How quickly will a matched accountant contact me about registration?Is registration services matching free?What ongoing compliance do I need after registering a company?"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "id": null,
+      "heading": "Other Matching Services",
+      "images": 0,
+      "text": "EXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BAS"
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Registration Services matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 12,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/accountant/tax-accountant",
+      "text": "Tax Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeper",
+      "text": "Bookkeeper"
+    },
+    {
+      "href": "/accountant/personal-tax-support",
+      "text": "Personal Tax Return"
+    },
+    {
+      "href": "/accountant/tax-deduction-expert",
+      "text": "Tax Deduction Expert"
+    },
+    {
+      "href": "/accountant/small-business-accountant",
+      "text": "Small Business Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeping-bas",
+      "text": "Bookkeeping & BAS"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Registration ServicesFind Registration Services Near YouFree matching serviceVetted accountantsNo obligationGetting your registrations right from the start saves time, money and compliance headaches down the track. Whether you are registering a new company, applying for an ABN, registering for GST, setting up a business name, or establishing a trust or SMSF, Your Accountant Match connects you with a local accountant who handles the full range of ASIC and ATO registrations. Tell us what you need to register and your postcode, and we will match you with a qualified firm that fits your needs. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.SPECIALIST NETWORKRegistration Services — what we can help withCompany registrationRegistering a new company involves lodging an application with ASIC, choosing a company name, appointing directors, issuing shares, and adopting a company constitution or replaceable rules. A registered accountant handles the ASIC company registration end-to-end, issues your ACN, and sets up the company tax file number (TFN) and Australian Business Number (ABN). Getting the share structure and officeholder appointments right at registration avoids costly amendments later.ABN, GST and business name registrationAn Australian Business Number (ABN) is required to operate a business, invoice correctly, and avoid withholding at the top marginal rate. GST registration is compulsory once your turnover reaches $75,000 (or $150,000 for ride-share/taxi). Registering a business name with ASIC protects your trading identity. Our matched accountants handle ABN registration, GST registration, PAYG withholding registration, and business name registration in the correct order so your business is properly set up from day one.Trust, partnership and SMSF registrationSetting up a trust requires a compliant trust deed, a trustee appointment, and an ABN and TFN for the trust. A partnership needs a partnership agreement, its own ABN and TFN. An SMSF must be established with a trust deed, trustee appointments, an ABN, TFN, and an election with the ATO — plus an independent auditor engaged each year. Our matched specialists prepare the documentation and complete every registration correctly so your structure is compliant from the outset.ASIC and ATO compliance after registrationRegistration is only the first step. Companies must lodge annual review fees with ASIC, maintain a register of members, and notify ASIC of changes to officeholders or addresses. GST-registered businesses must lodge BAS (monthly or quarterly), and employers must register for STP2 and Payday Super. Our matched firms set up the ongoing compliance calendar so you never miss a deadline after registration.WHAT WE MATCHRegistration Services services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Company registration (ASIC) & ACN issuanceABN registrationGST registrationBusiness name registration (ASIC)PAYG withholding registrationTrust establishment & registrationPartnership setup & registrationSMSF establishment & ATO electionTFN registration for entitiesASIC annual review & ongoing complianceVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGTrust and vetting standards for Registration Services PartnersEntrusting someone with your registration services needs means putting your finances in their hands. At Your Accountant Match, we hold every registration services specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll registration services professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery registration services partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.How do I register a new company in Australia?Registering a new company involves lodging an application with ASIC, choosing an available company name, appointing directors and shareholders, issuing shares, and adopting a constitution or replaceable rules. A registered accountant handles the full ASIC company registration, issues your ACN, and arranges the company TFN and ABN. Tell us in the questionnaire that you want to register a new company and we will match you with a firm that does it end-to-end.Do I need an ABN and GST registration to start a business?What is the difference between a business name and a company?Can a matched accountant register a trust or SMSF?How much does company registration cost?How quickly will a matched accountant contact me about registration?Is registration services matching free?What ongoing compliance do I need after registering a company?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BASRegistration Services matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Registration Services Find Registration Services Near You Free matching service Vetted accountants No obligation Getting your registrations right from the start saves time, money and compliance headaches down the track. Whether you are registering a new company, applying for an ABN, registering for GST, setting up a business name, or establishing a trust or SMSF, Your Accountant Match connects you with a local accountant who handles the full range of ASIC and ATO registrations. Tell us what you need to register and your postcode, and we will match you with a qualified firm that fits your needs. Free and no obligation. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. SPECIALIST NETWORK Registration Services — what we can help with Company registration Registering a new company involves lodging an application with ASIC, choosing a company name, appointing directors, issuing shares, and adopting a company constitution or replaceable rules. A registered accountant handles the ASIC company registration end-to-end, issues your ACN, and sets up the company tax file number (TFN) and Australian Business Number (ABN). Getting the share structure and officeholder appointments right at registration avoids costly amendments later. ABN, GST and business name registration An Australian Business Number (ABN) is required to operate a business, invoice correctly, and avoid withholding at the top marginal rate. GST registration is compulsory once your turnover reaches $75,000 (or $150,000 for ride-share/taxi). Registering a business name with ASIC protects your trading identity. Our matched accountants handle ABN registration, GST registration, PAYG withholding registration, and business name registration in the correct order so your business is properly set up from day one. Trust, partnership and SMSF registration Setting up a trust requires a compliant trust deed, a trustee appointment, and an ABN and TFN for the trust. A partnership needs a partnership agreement, its own ABN and TFN. An SMSF must be established with a trust deed, trustee appointments, an ABN, TFN, and an election with the ATO — plus an independent auditor engaged each year. Our matched specialists prepare the documentation and complete every registration correctly so your structure is compliant from the outset. ASIC and ATO compliance after registration Registration is only the first step. Companies must lodge annual review fees with ASIC, maintain a register of members, and notify ASIC of changes to officeholders or addresses. GST-registered businesses must lodge BAS (monthly or quarterly), and employers must register for STP2 and Payday Super. Our matched firms set up the ongoing compliance calendar so you never miss a deadline after registration. WHAT WE MATCH Registration Services services we match Our vetted network covers the full range of accounting, tax and bookkeeping services. Company registration (ASIC) & ACN issuance ABN registration GST registration Business name registration (ASIC) PAYG withholding registration Trust establishment & registration Partnership setup & registration SMSF establishment & ATO election TFN registration for entities ASIC annual review & ongoing compliance Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING Trust and vetting standards for Registration Services Partners Entrusting someone with your registration services needs means putting your finances in their hands. At Your Accountant Match, we hold every registration services specialist we refer to the highest professional and ethical standards in the industry. Verified professional memberships All registration services professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Every registration services partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. How do I register a new company in Australia? Registering a new company involves lodging an application with ASIC, choosing an available company name, appointing directors and shareholders, issuing shares, and adopting a constitution or replaceable rules. A registered accountant handles the full ASIC company registration, issues your ACN, and arranges the company TFN and ABN. Tell us in the questionnaire that you want to register a new company and we will match you with a firm that does it end-to-end. Do I need an ABN and GST registration to start a business? What is the difference between a business name and a company? Can a matched accountant register a trust or SMSF? How much does company registration cost? How quickly will a matched accountant contact me about registration? Is registration services matching free? What ongoing compliance do I need after registering a company? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Other Matching Services Here are some other specialist services you may find useful Tax Accountant Bookkeeper Personal Tax Return Tax Deduction Expert Small Business Accountant Bookkeeping & BAS Registration Services matching across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2871,
+  "inSitemap": true
+}

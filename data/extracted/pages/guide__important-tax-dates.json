@@ -1,0 +1,569 @@
+{
+  "path": "/guide/important-tax-dates",
+  "extractedAt": "2026-10-02T09:02:59.550Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/important-tax-dates",
+  "title": "Important Tax Dates & Deadlines in Australia 2026 | Your Accountant Match",
+  "metaDescription": "A clear guide to key Australian tax deadlines — individual returns, BAS due dates, super guarantee cutoffs, company & trust deadlines. Updated for 2026.",
+  "canonical": "http://localhost:4173/guide/important-tax-dates",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Important Tax Dates & Deadlines in Australia 2026 | Your Accountant Match",
+    "og:description": "A clear guide to key Australian tax deadlines — individual returns, BAS due dates, super guarantee cutoffs, company & trust deadlines. Updated for 2026.",
+    "og:url": "http://localhost:4173/guide/important-tax-dates",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Important Tax Dates & Deadlines in Australia 2026 | Your Accountant Match",
+    "twitter:description": "A clear guide to key Australian tax deadlines — individual returns, BAS due dates, super guarantee cutoffs, company & trust deadlines. Updated for 2026.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is the individual tax return deadline in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you lodge your own return, the deadline is 31 October each year. Using a registered tax agent generally extends the deadline — often to 15 May the following year — provided you are registered with the agent before 31 October. We match you with a vetted local agent so you get the extended deadline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When are BAS due dates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quarterly BAS is generally due on the 28th of the month after the quarter ends — 28 July, 28 October, 28 January and 28 April. Monthly BAS is due on the 21st of the following month. Registered agents often receive extended lodgement dates. Tell us your BAS cycle and we will match you with a local agent who lodges on time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is super guarantee (SG) due?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With the introduction of Payday Super from 1 July 2026, employers must pay super guarantee each payday. The contributions must reach the employee's super fund within 7 business days of payday. Missing SG deadlines triggers the super guarantee charge and, for company directors, personal director penalty notices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Payday Super and when does it start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From 1 July 2026, employers must pay super guarantee contributions alongside each payday, with contributions required to reach the employee's fund within 7 business days — which replaced the former quarterly cycle. A matched accountant ensures your payroll system is ready so you meet every payday deadline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do company and trust tax returns need to be lodged?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Company and trust returns are generally due by 15 January — or later if a registered agent lodges on your behalf. Trust distribution resolutions should be made by 30 June each year to be valid. Companies also face ASIC annual review deadlines. We match you with a local accountant who manages all of these."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I lodge my tax return or BAS late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ATO may apply a failure-to-lodge (FTL) penalty and, where tax is payable, general interest charge (GIC) on the outstanding amount. Persistent non-lodgement can lead to a default assessment or stronger recovery action. Engaging a registered agent early — and using their extended deadlines — minimises the risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do before 30 June (EOFY)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Super contributions within your cap, pre-paid expenses, stock write-offs, bad-debt settlements and trust distribution resolutions all need to happen before 30 June to count in the current financial year. A matched accountant reviews your position in May or June and flags the actions worth taking — so you reduce tax rather than react after year-end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with an accountant to stay on time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and needs. We match you with a vetted local accountant whose services fit your situation — individual returns, BAS, super, company or trust — so you meet every deadline. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Dates Guide",
+          "item": "/guide/important-tax-dates"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Important Tax Dates & Deadlines in Australia — 2026 Guide",
+      "description": "A clear guide to key Australian tax deadlines — individual returns, BAS due dates, super guarantee cutoffs, company & trust deadlines. Updated for 2026.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/important-tax-dates"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/income-tax"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.asic.gov.au/for-business-and-companies/companies/company-annual-review"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Key Australian tax deadlines",
+          "sameAs": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Important Tax Dates & Deadlinesin Australia — 2026 Guide"
+    },
+    {
+      "level": 2,
+      "text": "Key Tax Deadlines for Australians"
+    },
+    {
+      "level": 3,
+      "text": "Personal tax return deadlines"
+    },
+    {
+      "level": 3,
+      "text": "Business & BAS due dates"
+    },
+    {
+      "level": 3,
+      "text": "Superannuation (SG) cutoffs"
+    },
+    {
+      "level": 3,
+      "text": "Company, trust & partnership deadlines"
+    },
+    {
+      "level": 3,
+      "text": "Key 30 June (EOFY) actions"
+    },
+    {
+      "level": 2,
+      "text": "Deadlines We Help You Meet"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Important Tax Dates & Deadlinesin Australia — 2026 Guide",
+      "images": 0,
+      "text": "Home/Guides/Tax Dates GuideImportant Tax Dates & Deadlinesin Australia — 2026 GuideMissing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantTAX DATES GUIDEKey Tax Deadlines for AustraliansPersonal tax return deadlinesIf you lodge your own individual tax return, the deadline is 31 October each year. If you use a registered tax agent, you generally receive an extended lodgement deadline — often as late as May the following year, provided you are on the agent's lodgement program before 31 October. That extended deadline is one of the clearest reasons to engage an agent rather than self-lodge. Late lodgement can trigger a failure-to-lodge (FTL) penalty and, where tax is payable, general interest charge (GIC) on the outstanding amount.Business & BAS due datesIf you are registered for GST, you lodge a Business Activity Statement (BAS). Quarterly BAS is generally due on the 28th of the month after the quarter ends — so 28 July, 28 October, 28 January and 28 April. Monthly BAS is due on the 21st of the following month. Registered agents often receive extended BAS lodgement dates. PAYG instalments and income tax instalments are reported through the BAS as well. Late BAS attracts FTL penalties and interest on any net amount payable.Superannuation (SG) cutoffsWith the introduction of Payday Super from 1 July 2026, employers must pay super guarantee each payday. The contributions must reach the employee's super fund within 7 business days of payday. For SMSF members, personal contributions must be received by 28 January and 28 July to count toward each half-year's cap. Missing SG deadlines triggers the super guarantee charge (SGC) and, for company directors, personal director penalty notices.Company, trust & partnership deadlinesCompanies, trusts and partnerships lodge their own tax returns, separate from the individuals behind them. Company and trust returns are generally due by 15 January (or later if a registered agent lodges on your behalf). Trust distribution resolutions should be made by 30 June each year — before year-end — to be valid. Companies also face ASIC annual review fees and lodgement deadlines. Directors remain personally liable for unpaid PAYG withholding and super guarantee, so staying on time matters.Key 30 June (EOFY) actionsA number of tax-effective moves must happen before 30 June to count in the current financial year: making super contributions within your cap, pre-paying expenses, writing off obsolete stock, settling bad debts, and documenting trust distribution resolutions. After 30 June those opportunities close for that year. A matched accountant reviews your position in May or June and flags the actions worth taking before year-end — proactive planning that reduces tax rather than reacting after the fact.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOthe deadline is 31 OctoberATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)ATOQuarterly BAS is generally due on the 28th of the month after the quarter endsATOWith the introduction of Payday Super from 1 July 2026ATOThe contributions must reach the employee's super fund within 7 business days of payday.ATOdirector penalty noticesATOCompany and trust returns are generally due by 15 JanuaryASICASIC annual review feesATOdefault assessmentThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHDeadlines We Help You MeetOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual tax return lodgement (before 31 October)Quarterly & monthly BAS preparation and lodgementPAYG withholding & instalment managementSuper guarantee (SG) & Payday Super complianceCompany, trust & partnership tax returnsTrust distribution resolutions (by 30 June)ASIC annual review & corporate complianceEOFY tax planning & pre-30 June actionsVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.When is the individual tax return deadline in Australia?If you lodge your own return, the deadline is 31 October each year. Using a registered tax agent generally extends the deadline — often to 15 May the following year — provided you are registered with the agent before 31 October. We match you with a vetted local agent so you get the extended deadline.When are BAS due dates?When is super guarantee (SG) due?What is Payday Super and when does it start?When do company and trust tax returns need to be lodged?What happens if I lodge my tax return or BAS late?What should I do before 30 June (EOFY)?How do I get matched with an accountant to stay on time?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "the deadline is 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "failure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "general interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "Quarterly BAS is generally due on the 28th of the month after the quarter ends"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "With the introduction of Payday Super from 1 July 2026"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super",
+      "text": "The contributions must reach the employee's super fund within 7 business days of payday."
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "super guarantee charge (SGC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalty notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/income-tax",
+      "text": "Company and trust returns are generally due by 15 January"
+    },
+    {
+      "href": "https://www.asic.gov.au/for-business-and-companies/companies/company-annual-review",
+      "text": "ASIC annual review fees"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "ATOthe deadline is 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty",
+      "text": "ATOfailure-to-lodge (FTL) penalty"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates",
+      "text": "ATOgeneral interest charge (GIC)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "text": "ATOQuarterly BAS is generally due on the 28th of the month after the quarter ends"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/super-guarantee",
+      "text": "ATOWith the introduction of Payday Super from 1 July 2026"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super",
+      "text": "ATOThe contributions must reach the employee's super fund within 7 business days of payday."
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "ATOdirector penalty notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/income-tax",
+      "text": "ATOCompany and trust returns are generally due by 15 January"
+    },
+    {
+      "href": "https://www.asic.gov.au/for-business-and-companies/companies/company-annual-review",
+      "text": "ASICASIC annual review fees"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/taxpayers-with-overdue-tax-returns/default-assessments-for-overdue-lodgment-obligations",
+      "text": "ATOdefault assessment"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return#ato-Duedatesforyourtaxreturn",
+      "text": "the deadline is 31 October"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-professionals/your-role-and-responsibilities/lodgement-program",
+      "text": "15 May the following year"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Tax Dates GuideImportant Tax Dates & Deadlinesin Australia — 2026 GuideMissing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantTAX DATES GUIDEKey Tax Deadlines for AustraliansPersonal tax return deadlinesIf you lodge your own individual tax return, the deadline is 31 October each year. If you use a registered tax agent, you generally receive an extended lodgement deadline — often as late as May the following year, provided you are on the agent's lodgement program before 31 October. That extended deadline is one of the clearest reasons to engage an agent rather than self-lodge. Late lodgement can trigger a failure-to-lodge (FTL) penalty and, where tax is payable, general interest charge (GIC) on the outstanding amount.Business & BAS due datesIf you are registered for GST, you lodge a Business Activity Statement (BAS). Quarterly BAS is generally due on the 28th of the month after the quarter ends — so 28 July, 28 October, 28 January and 28 April. Monthly BAS is due on the 21st of the following month. Registered agents often receive extended BAS lodgement dates. PAYG instalments and income tax instalments are reported through the BAS as well. Late BAS attracts FTL penalties and interest on any net amount payable.Superannuation (SG) cutoffsWith the introduction of Payday Super from 1 July 2026, employers must pay super guarantee each payday. The contributions must reach the employee's super fund within 7 business days of payday. For SMSF members, personal contributions must be received by 28 January and 28 July to count toward each half-year's cap. Missing SG deadlines triggers the super guarantee charge (SGC) and, for company directors, personal director penalty notices.Company, trust & partnership deadlinesCompanies, trusts and partnerships lodge their own tax returns, separate from the individuals behind them. Company and trust returns are generally due by 15 January (or later if a registered agent lodges on your behalf). Trust distribution resolutions should be made by 30 June each year — before year-end — to be valid. Companies also face ASIC annual review fees and lodgement deadlines. Directors remain personally liable for unpaid PAYG withholding and super guarantee, so staying on time matters.Key 30 June (EOFY) actionsA number of tax-effective moves must happen before 30 June to count in the current financial year: making super contributions within your cap, pre-paying expenses, writing off obsolete stock, settling bad debts, and documenting trust distribution resolutions. After 30 June those opportunities close for that year. A matched accountant reviews your position in May or June and flags the actions worth taking before year-end — proactive planning that reduces tax rather than reacting after the fact.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOthe deadline is 31 OctoberATOfailure-to-lodge (FTL) penaltyATOgeneral interest charge (GIC)ATOQuarterly BAS is generally due on the 28th of the month after the quarter endsATOWith the introduction of Payday Super from 1 July 2026ATOThe contributions must reach the employee's super fund within 7 business days of payday.ATOdirector penalty noticesATOCompany and trust returns are generally due by 15 JanuaryASICASIC annual review feesATOdefault assessmentThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHDeadlines We Help You MeetOur vetted network covers the full range of accounting, tax and bookkeeping services.Individual tax return lodgement (before 31 October)Quarterly & monthly BAS preparation and lodgementPAYG withholding & instalment managementSuper guarantee (SG) & Payday Super complianceCompany, trust & partnership tax returnsTrust distribution resolutions (by 30 June)ASIC annual review & corporate complianceEOFY tax planning & pre-30 June actionsVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.When is the individual tax return deadline in Australia?If you lodge your own return, the deadline is 31 October each year. Using a registered tax agent generally extends the deadline — often to 15 May the following year — provided you are registered with the agent before 31 October. We match you with a vetted local agent so you get the extended deadline.When are BAS due dates?When is super guarantee (SG) due?What is Payday Super and when does it start?When do company and trust tax returns need to be lodged?What happens if I lodge my tax return or BAS late?What should I do before 30 June (EOFY)?How do I get matched with an accountant to stay on time?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Tax Dates Guide Important Tax Dates & Deadlines in Australia — 2026 Guide Missing a tax deadline rarely causes an immediate crisis — but the penalties, interest and default assessments that follow are entirely avoidable when you know the dates that apply to you. This guide brings together the key Australian tax deadlines for individuals, businesses, BAS lodgers, superannuation and companies or trusts in one place, updated for the 2026 financial year. Check what applies to you, then get matched with a vetted local accountant who can keep you on time. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 TAX DATES GUIDE Key Tax Deadlines for Australians Personal tax return deadlines If you lodge your own individual tax return, the deadline is 31 October each year. If you use a registered tax agent, you generally receive an extended lodgement deadline — often as late as May the following year, provided you are on the agent's lodgement program before 31 October. That extended deadline is one of the clearest reasons to engage an agent rather than self-lodge. Late lodgement can trigger a failure-to-lodge (FTL) penalty and, where tax is payable, general interest charge (GIC) on the outstanding amount. Business & BAS due dates If you are registered for GST, you lodge a Business Activity Statement (BAS). Quarterly BAS is generally due on the 28th of the month after the quarter ends — so 28 July, 28 October, 28 January and 28 April. Monthly BAS is due on the 21st of the following month. Registered agents often receive extended BAS lodgement dates. PAYG instalments and income tax instalments are reported through the BAS as well. Late BAS attracts FTL penalties and interest on any net amount payable. Superannuation (SG) cutoffs With the introduction of Payday Super from 1 July 2026, employers must pay super guarantee each payday. The contributions must reach the employee's super fund within 7 business days of payday. For SMSF members, personal contributions must be received by 28 January and 28 July to count toward each half-year's cap. Missing SG deadlines triggers the super guarantee charge (SGC) and, for company directors, personal director penalty notices. Company, trust & partnership deadlines Companies, trusts and partnerships lodge their own tax returns, separate from the individuals behind them. Company and trust returns are generally due by 15 January (or later if a registered agent lodges on your behalf). Trust distribution resolutions should be made by 30 June each year — before year-end — to be valid. Companies also face ASIC annual review fees and lodgement deadlines. Directors remain personally liable for unpaid PAYG withholding and super guarantee, so staying on time matters. Key 30 June (EOFY) actions A number of tax-effective moves must happen before 30 June to count in the current financial year: making super contributions within your cap, pre-paying expenses, writing off obsolete stock, settling bad debts, and documenting trust distribution resolutions. After 30 June those opportunities close for that year. A matched accountant reviews your position in May or June and flags the actions worth taking before year-end — proactive planning that reduces tax rather than reacting after the fact. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO the deadline is 31 October ATO failure-to-lodge (FTL) penalty ATO general interest charge (GIC) ATO Quarterly BAS is generally due on the 28th of the month after the quarter ends ATO With the introduction of Payday Super from 1 July 2026 ATO The contributions must reach the employee's super fund within 7 business days of payday. ATO director penalty notices ATO Company and trust returns are generally due by 15 January ASIC ASIC annual review fees ATO default assessment This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH Deadlines We Help You Meet Our vetted network covers the full range of accounting, tax and bookkeeping services. Individual tax return lodgement (before 31 October) Quarterly & monthly BAS preparation and lodgement PAYG withholding & instalment management Super guarantee (SG) & Payday Super compliance Company, trust & partnership tax returns Trust distribution resolutions (by 30 June) ASIC annual review & corporate compliance EOFY tax planning & pre-30 June actions Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. When is the individual tax return deadline in Australia? If you lodge your own return, the deadline is 31 October each year. Using a registered tax agent generally extends the deadline — often to 15 May the following year — provided you are registered with the agent before 31 October. We match you with a vetted local agent so you get the extended deadline. When are BAS due dates? When is super guarantee (SG) due? What is Payday Super and when does it start? When do company and trust tax returns need to be lodged? What happens if I lodge my tax return or BAS late? What should I do before 30 June (EOFY)? How do I get matched with an accountant to stay on time? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2785,
+  "inSitemap": true
+}

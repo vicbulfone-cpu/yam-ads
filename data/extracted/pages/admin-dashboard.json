@@ -1,0 +1,8 @@
+{
+  "path": "/admin-dashboard",
+  "extractedAt": "2026-10-02T09:03:14.345Z",
+  "httpStatusOfShell": 200,
+  "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+  "ms": 16033,
+  "inSitemap": false
+}

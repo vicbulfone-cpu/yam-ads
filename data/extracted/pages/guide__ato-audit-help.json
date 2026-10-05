@@ -1,0 +1,473 @@
+{
+  "path": "/guide/ato-audit-help",
+  "extractedAt": "2026-10-02T09:02:54.380Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/guide/ato-audit-help",
+  "title": "ATO Audit Help — Registered Tax Agent Representation | Your Accountant Match",
+  "metaDescription": "Facing an ATO audit or review? Get matched free with a local registered tax agent experienced in ATO audits, disputes & debt. Representation nationwide.",
+  "canonical": "http://localhost:4173/guide/ato-audit-help",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "ATO Audit Help — Registered Tax Agent Representation | Your Accountant Match",
+    "og:description": "Facing an ATO audit or review? Get matched free with a local registered tax agent experienced in ATO audits, disputes & debt. Representation nationwide.",
+    "og:url": "http://localhost:4173/guide/ato-audit-help",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "ATO Audit Help — Registered Tax Agent Representation | Your Accountant Match",
+    "twitter:description": "Facing an ATO audit or review? Get matched free with a local registered tax agent experienced in ATO audits, disputes & debt. Representation nationwide.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should I do if I get an ATO audit letter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Do not ignore it. Engage a registered tax agent immediately — at the first letter, not the final demand. The agent manages ATO correspondence, prepares the requested information, and negotiates outcomes. Early engagement keeps the matter contained and reduces escalation risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a tax agent represent me to the ATO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — that is a core right of TPB registration. A registered agent can receive your ATO correspondence, respond to queries, negotiate payment plans, lodge objections, and represent you in disputes. Tell us you need audit or dispute support in the questionnaire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does ATO audit help cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on complexity. A simple data-matching query may be a few hundred dollars; a full audit with objections can be several thousand. The matched agent quotes after assessing the scope. The matching service itself is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I dispute an ATO amended assessment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A registered agent can lodge an objection to an amended assessment, and if the objection is disallowed, escalate to the Administrative Review Tribunal (ART) — which replaced the former Administrative Appeals Tribunal (AAT) on 14 October 2024. There are strict time limits (typically 60 days for objections), so act quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between an ATO review and a full audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An ATO review is a narrower check of specific items (often data-matching), while a full audit examines a broader area in depth. Most matters start as a review and escalate only if issues are found. Engaging an agent at the review stage often prevents escalation to a full audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an agent negotiate an ATO payment plan for audit debt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If an audit results in tax debt, a registered agent can negotiate a payment plan, request remission of penalties and interest where grounds exist, and stop enforcement actions like garnishee orders or director penalty notices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can I get an ATO-audit-experienced agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance if your ATO matter is time-sensitive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will engaging an agent make the ATO suspicious?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Using a registered tax agent is entirely normal and expected — it signals you are taking the matter seriously. The ATO deals with agents every day and generally prefers correspondence through a registered representative."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Urgent Help",
+          "item": "/guide/ato-audit-help"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ATO Audit Help — Get a Registered Tax Agent on Your Side",
+      "description": "Facing an ATO audit or review? Get matched free with a local registered tax agent experienced in ATO audits, disputes & debt. Representation nationwide.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/guide/ato-audit-help"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "ATO audit and review help",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Facing an ATO Audit?Get expert help"
+    },
+    {
+      "level": 2,
+      "text": "Getting Help with an ATO Audit"
+    },
+    {
+      "level": 3,
+      "text": "Types of ATO review"
+    },
+    {
+      "level": 3,
+      "text": "What a registered agent does during an audit"
+    },
+    {
+      "level": 3,
+      "text": "ATO debt and payment plans"
+    },
+    {
+      "level": 3,
+      "text": "Don't wait for the final demand"
+    },
+    {
+      "level": 2,
+      "text": "ATO Audit and Dispute Services We Match"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Helpful Guides"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Facing an ATO Audit?Get expert help",
+      "images": 0,
+      "text": "Home/Guides/Urgent HelpFacing an ATO Audit?Get expert helpAn ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPGetting Help with an ATO AuditTypes of ATO reviewATO contact ranges from a simple data-matching query (a letter asking about a discrepancy) through to a full audit of deductions, income, GST or payroll. Most start as a review and escalate only if issues are found. Engaging a registered agent early — at the first letter, not the final demand — keeps the matter contained and reduces the risk of escalation.What a registered agent does during an auditA registered tax agent receives ATO correspondence on your behalf, prepares and reviews the information requested, manages the timeline, explains your position to the ATO, and negotiates outcomes. If the ATO issues an amended assessment you disagree with, the agent can lodge an objection and, if needed, escalate to the Administrative Review Tribunal (ART) — which replaced the former Administrative Appeals Tribunal (AAT) on 14 October 2024. You stay in control of decisions; the agent handles the process.ATO debt and payment plansIf an audit results in a tax debt, a registered agent can negotiate a payment plan that spreads the liability over time, request remission of penalties and interest where grounds exist, and stop enforcement actions like garnishee orders or director penalty notices. The goal is a sustainable arrangement that lets you move forward.Don't wait for the final demandThe single biggest mistake is ignoring ATO correspondence. A letter that is cheap to resolve at week one can become an expensive audit at month six. If you have received any ATO contact — a query, a review notice, or an amended assessment — tell us in the questionnaire and we will match you with an agent who handles ATO representation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOpayment planATOgarnishee ordersATOdirector penalty noticesThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHATO Audit and Dispute Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.ATO audit & review representationObjection lodgement & dispute supportAmended assessment responseATO debt negotiation & payment plansPenalty & interest remission requestsDirector penalty notice supportVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What should I do if I get an ATO audit letter?Do not ignore it. Engage a registered tax agent immediately — at the first letter, not the final demand. The agent manages ATO correspondence, prepares the requested information, and negotiates outcomes. Early engagement keeps the matter contained and reduces escalation risk.Can a tax agent represent me to the ATO?How much does ATO audit help cost?Can I dispute an ATO amended assessment?What's the difference between an ATO review and a full audit?Can an agent negotiate an ATO payment plan for audit debt?How quickly can I get an ATO-audit-experienced agent?Will engaging an agent make the ATO suspicious?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans",
+      "text": "payment plan"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "garnishee orders"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "director penalty notices"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/help-with-paying/payment-plans",
+      "text": "ATOpayment plan"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/garnishee-notice",
+      "text": "ATOgarnishee orders"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime",
+      "text": "ATOdirector penalty notices"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/guide/accountant-near-me",
+      "text": "Accountant Near Me"
+    },
+    {
+      "href": "/guide/tax-accountant-near-me",
+      "text": "Tax Accountant Near Me"
+    },
+    {
+      "href": "/guide/bookkeeper-near-me",
+      "text": "Bookkeeper Near Me"
+    },
+    {
+      "href": "/guide/business-accountant-near-me",
+      "text": "Business Accountant Near Me"
+    },
+    {
+      "href": "/guide/how-much-does-an-accountant-cost",
+      "text": "How Much Does an Accountant Cost"
+    },
+    {
+      "href": "/guide/accountant-vs-bookkeeper",
+      "text": "Accountant vs Bookkeeper"
+    },
+    {
+      "href": "/guides",
+      "text": "Browse all guides by category"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Guides/Urgent HelpFacing an ATO Audit?Get expert helpAn ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantURGENT HELPGetting Help with an ATO AuditTypes of ATO reviewATO contact ranges from a simple data-matching query (a letter asking about a discrepancy) through to a full audit of deductions, income, GST or payroll. Most start as a review and escalate only if issues are found. Engaging a registered agent early — at the first letter, not the final demand — keeps the matter contained and reduces the risk of escalation.What a registered agent does during an auditA registered tax agent receives ATO correspondence on your behalf, prepares and reviews the information requested, manages the timeline, explains your position to the ATO, and negotiates outcomes. If the ATO issues an amended assessment you disagree with, the agent can lodge an objection and, if needed, escalate to the Administrative Review Tribunal (ART) — which replaced the former Administrative Appeals Tribunal (AAT) on 14 October 2024. You stay in control of decisions; the agent handles the process.ATO debt and payment plansIf an audit results in a tax debt, a registered agent can negotiate a payment plan that spreads the liability over time, request remission of penalties and interest where grounds exist, and stop enforcement actions like garnishee orders or director penalty notices. The goal is a sustainable arrangement that lets you move forward.Don't wait for the final demandThe single biggest mistake is ignoring ATO correspondence. A letter that is cheap to resolve at week one can become an expensive audit at month six. If you have received any ATO contact — a query, a review notice, or an amended assessment — tell us in the questionnaire and we will match you with an agent who handles ATO representation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOpayment planATOgarnishee ordersATOdirector penalty noticesThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.WHAT WE MATCHATO Audit and Dispute Services We MatchOur vetted network covers the full range of accounting, tax and bookkeeping services.ATO audit & review representationObjection lodgement & dispute supportAmended assessment responseATO debt negotiation & payment plansPenalty & interest remission requestsDirector penalty notice supportVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What should I do if I get an ATO audit letter?Do not ignore it. Engage a registered tax agent immediately — at the first letter, not the final demand. The agent manages ATO correspondence, prepares the requested information, and negotiates outcomes. Early engagement keeps the matter contained and reduces escalation risk.Can a tax agent represent me to the ATO?How much does ATO audit help cost?Can I dispute an ATO amended assessment?What's the difference between an ATO review and a full audit?Can an agent negotiate an ATO payment plan for audit debt?How quickly can I get an ATO-audit-experienced agent?Will engaging an agent make the ATO suspicious?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREHelpful GuidesHere are some guides you may find usefulAccountant Near MeTax Accountant Near MeBookkeeper Near MeBusiness Accountant Near MeHow Much Does an Accountant CostAccountant vs BookkeeperBrowse all guides by categoryAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Guides / Urgent Help Facing an ATO Audit? Get expert help An ATO audit or review is stressful — but you do not have to face it alone. A registered tax agent can manage the ATO's correspondence, prepare the requested information, negotiate outcomes, and lodge objections on your behalf. Your Accountant Match connects you with a local agent experienced in ATO audits, disputes and debt matters. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 URGENT HELP Getting Help with an ATO Audit Types of ATO review ATO contact ranges from a simple data-matching query (a letter asking about a discrepancy) through to a full audit of deductions, income, GST or payroll. Most start as a review and escalate only if issues are found. Engaging a registered agent early — at the first letter, not the final demand — keeps the matter contained and reduces the risk of escalation. What a registered agent does during an audit A registered tax agent receives ATO correspondence on your behalf, prepares and reviews the information requested, manages the timeline, explains your position to the ATO, and negotiates outcomes. If the ATO issues an amended assessment you disagree with, the agent can lodge an objection and, if needed, escalate to the Administrative Review Tribunal (ART) — which replaced the former Administrative Appeals Tribunal (AAT) on 14 October 2024. You stay in control of decisions; the agent handles the process. ATO debt and payment plans If an audit results in a tax debt, a registered agent can negotiate a payment plan that spreads the liability over time, request remission of penalties and interest where grounds exist, and stop enforcement actions like garnishee orders or director penalty notices. The goal is a sustainable arrangement that lets you move forward. Don't wait for the final demand The single biggest mistake is ignoring ATO correspondence. A letter that is cheap to resolve at week one can become an expensive audit at month six. If you have received any ATO contact — a query, a review notice, or an amended assessment — tell us in the questionnaire and we will match you with an agent who handles ATO representation. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO payment plan ATO garnishee orders ATO director penalty notices This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. WHAT WE MATCH ATO Audit and Dispute Services We Match Our vetted network covers the full range of accounting, tax and bookkeeping services. ATO audit & review representation Objection lodgement & dispute support Amended assessment response ATO debt negotiation & payment plans Penalty & interest remission requests Director penalty notice support Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. What should I do if I get an ATO audit letter? Do not ignore it. Engage a registered tax agent immediately — at the first letter, not the final demand. The agent manages ATO correspondence, prepares the requested information, and negotiates outcomes. Early engagement keeps the matter contained and reduces escalation risk. Can a tax agent represent me to the ATO? How much does ATO audit help cost? Can I dispute an ATO amended assessment? What's the difference between an ATO review and a full audit? Can an agent negotiate an ATO payment plan for audit debt? How quickly can I get an ATO-audit-experienced agent? Will engaging an agent make the ATO suspicious? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Helpful Guides Here are some guides you may find useful Accountant Near Me Tax Accountant Near Me Bookkeeper Near Me Business Accountant Near Me How Much Does an Accountant Cost Accountant vs Bookkeeper Browse all guides by category Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2683,
+  "inSitemap": true
+}

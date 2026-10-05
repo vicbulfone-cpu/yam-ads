@@ -1,0 +1,485 @@
+{
+  "path": "/blog/company-vs-trust-vs-sole-trader-2026",
+  "extractedAt": "2026-10-02T09:03:05.417Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/company-vs-trust-vs-sole-trader-2026",
+  "title": "Company vs Trust vs Sole Trader 2026 — Which Structure Saves Tax | Your Accountant Match",
+  "metaDescription": "Compare sole trader, company and trust structures for 2026 — tax rates, asset protection, compliance costs and when to restructure.",
+  "canonical": "http://localhost:4173/blog/company-vs-trust-vs-sole-trader-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Company vs Trust vs Sole Trader 2026 — Which Structure Saves Tax | Your Accountant Match",
+    "og:description": "Compare sole trader, company and trust structures for 2026 — tax rates, asset protection, compliance costs and when to restructure.",
+    "og:url": "http://localhost:4173/blog/company-vs-trust-vs-sole-trader-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Company vs Trust vs Sole Trader 2026 — Which Structure Saves Tax | Your Accountant Match",
+    "twitter:description": "Compare sole trader, company and trust structures for 2026 — tax rates, asset protection, compliance costs and when to restructure.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which business structure is best for tax in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your income, growth, asset exposure and succession plans. A company taxes profits at 25% (for base-rate entities); a trust offers flexible distribution; a sole trader is simplest but exposes personal assets. A registered accountant can model all three for your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a company protect my personal assets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — a company is a separate legal entity with limited liability, so your personal assets are generally protected from business debts. The trade-off is more compliance and administration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a trust save me tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A discretionary trust can distribute income to beneficiaries on lower marginal rates, which can reduce the overall tax paid. The flexibility is the key benefit, but it requires a compliant trust deed and proper distribution resolutions each year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change structures without paying CGT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly — the Small Business Restructure Rollover (SBRR) can allow eligible entities to transfer active assets without incurring immediate CGT or income tax liabilities, but the conditions must be met precisely. A matched adviser plans the restructure to preserve CGT concessions and avoid a taxable event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I restructure my business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review your structure when profits rise into higher personal brackets, you add employees or assets, you're considering property, or you're planning succession. A structure that was right at launch may no longer be optimal after growth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a structuring adviser?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and structuring needs. We match you with a vetted local accountant who specialises in entity setup and restructuring. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Planning",
+          "item": "/blog/company-vs-trust-vs-sole-trader-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?",
+      "description": "Compare sole trader, company and trust structures for 2026 — tax rates, asset protection, compliance costs and when to restructure.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/company-vs-trust-vs-sole-trader-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-tax-risks-and-compliance/tax-issues-for-trusts-tips-and-traps"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-restructure-roll-over"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Business structure and company tax rates",
+          "sameAs": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?"
+    },
+    {
+      "level": 2,
+      "text": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?"
+    },
+    {
+      "level": 3,
+      "text": "Sole trader: simple but exposed"
+    },
+    {
+      "level": 3,
+      "text": "Company: limited liability, separate tax rate"
+    },
+    {
+      "level": 3,
+      "text": "Trust: flexibility and asset protection"
+    },
+    {
+      "level": 3,
+      "text": "Restructuring without triggering CGT"
+    },
+    {
+      "level": 3,
+      "text": "When to review your structure"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?",
+      "images": 0,
+      "text": "Home/Blog/Tax PlanningTax Planning6 min readCompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Choosing a business structure is one of the most consequential tax decisions you'll make. Sole trader is simplest but exposes your personal assets and caps tax planning. A company limits liability but adds administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. There is no single best answer — the right choice depends on your income, growth plans, asset exposure and succession intentions. This guide compares the three for the 2025-26 year.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLECompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Sole trader: simple but exposedAs a sole trader, your business income is taxed as part of your personal income at individual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000. Setup is inexpensive and ongoing compliance is minimal. The downside is unlimited personal liability — your personal assets are at risk if the business incurs debts or legal claims — and limited tax planning flexibility. The sole trader structure generally suits low-risk, lower-income businesses and new startups.Company: limited liability, separate tax rateA company is a separate legal entity, so its profits are taxed at the corporate rate — 25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income). This rate can be significantly lower than top personal marginal rates. A company also provides limited liability protection for personal assets. The trade-off is higher administrative complexity (ASIC compliance, corporate secretarial obligations, separate company tax returns) and higher running costs.Trust: flexibility and asset protectionA discretionary (family) trust allows the trustee to distribute income among beneficiaries each year, optimizing tax outcomes by streaming income to family members on lower marginal rates. Trusts also offer asset protection because beneficiaries do not hold direct ownership of trust assets. The trade-offs include strict tax distribution rules (resolutions must be executed prior to 30 June each year), compliance costs, and the fact that tax losses cannot be distributed to beneficiaries.Restructuring without triggering CGTChanging business structures (e.g., sole trader to company) normally constitutes a disposal of business assets that can trigger capital gains tax (CGT) liabilities. However, small business rollover provisions — such as the Small Business Restructure Rollover (SBRR) — allow eligible entities to transfer active assets without incurring immediate CGT or income tax liabilities, provided specific conditions are met.When to review your structureReview your structure when profits move into higher personal tax brackets, you take on employees or commercial liabilities, you acquire substantial business assets, or you plan to introduce investors or transition ownership. A structure appropriate at launch may no longer be tax-effective after several years of growth. A registered tax agent can model different structural scenarios to determine whether restructuring is financially beneficial.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOindividual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000ATO25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income)ATOresolutions must be executed prior to 30 June each yearATOSmall Business Restructure Rollover (SBRR)This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhich business structure is best for tax in 2026?It depends on your income, growth, asset exposure and succession plans. A company taxes profits at 25% (for base-rate entities); a trust offers flexible distribution; a sole trader is simplest but exposes personal assets. A registered accountant can model all three for your situation.Does a company protect my personal assets?Can a trust save me tax?Can I change structures without paying CGT?When should I restructure my business?How do I get matched with a structuring adviser?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+      "text": "individual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+      "text": "25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-tax-risks-and-compliance/tax-issues-for-trusts-tips-and-traps",
+      "text": "resolutions must be executed prior to 30 June each year"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-restructure-roll-over",
+      "text": "Small Business Restructure Rollover (SBRR)"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+      "text": "ATOindividual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+      "text": "ATO25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-tax-risks-and-compliance/tax-issues-for-trusts-tips-and-traps",
+      "text": "ATOresolutions must be executed prior to 30 June each year"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-restructure-roll-over",
+      "text": "ATOSmall Business Restructure Rollover (SBRR)"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+      "text": "25% (for base-rate entities)"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax PlanningTax Planning6 min readCompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Choosing a business structure is one of the most consequential tax decisions you'll make. Sole trader is simplest but exposes your personal assets and caps tax planning. A company limits liability but adds administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. There is no single best answer — the right choice depends on your income, growth plans, asset exposure and succession intentions. This guide compares the three for the 2025-26 year.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLECompany vs Trust vs Sole Trader: Which Structure Saves Tax in 2026?Sole trader: simple but exposedAs a sole trader, your business income is taxed as part of your personal income at individual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000. Setup is inexpensive and ongoing compliance is minimal. The downside is unlimited personal liability — your personal assets are at risk if the business incurs debts or legal claims — and limited tax planning flexibility. The sole trader structure generally suits low-risk, lower-income businesses and new startups.Company: limited liability, separate tax rateA company is a separate legal entity, so its profits are taxed at the corporate rate — 25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income). This rate can be significantly lower than top personal marginal rates. A company also provides limited liability protection for personal assets. The trade-off is higher administrative complexity (ASIC compliance, corporate secretarial obligations, separate company tax returns) and higher running costs.Trust: flexibility and asset protectionA discretionary (family) trust allows the trustee to distribute income among beneficiaries each year, optimizing tax outcomes by streaming income to family members on lower marginal rates. Trusts also offer asset protection because beneficiaries do not hold direct ownership of trust assets. The trade-offs include strict tax distribution rules (resolutions must be executed prior to 30 June each year), compliance costs, and the fact that tax losses cannot be distributed to beneficiaries.Restructuring without triggering CGTChanging business structures (e.g., sole trader to company) normally constitutes a disposal of business assets that can trigger capital gains tax (CGT) liabilities. However, small business rollover provisions — such as the Small Business Restructure Rollover (SBRR) — allow eligible entities to transfer active assets without incurring immediate CGT or income tax liabilities, provided specific conditions are met.When to review your structureReview your structure when profits move into higher personal tax brackets, you take on employees or commercial liabilities, you acquire substantial business assets, or you plan to introduce investors or transition ownership. A structure appropriate at launch may no longer be tax-effective after several years of growth. A registered tax agent can model different structural scenarios to determine whether restructuring is financially beneficial.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOindividual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000ATO25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income)ATOresolutions must be executed prior to 30 June each yearATOSmall Business Restructure Rollover (SBRR)This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhich business structure is best for tax in 2026?It depends on your income, growth, asset exposure and succession plans. A company taxes profits at 25% (for base-rate entities); a trust offers flexible distribution; a sole trader is simplest but exposes personal assets. A registered accountant can model all three for your situation.Does a company protect my personal assets?Can a trust save me tax?Can I change structures without paying CGT?When should I restructure my business?How do I get matched with a structuring adviser?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Planning TAX PLANNING 6 min read Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026? Choosing a business structure is one of the most consequential tax decisions you'll make. Sole trader is simplest but exposes your personal assets and caps tax planning. A company limits liability but adds administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. There is no single best answer — the right choice depends on your income, growth plans, asset exposure and succession intentions. This guide compares the three for the 2025-26 year. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Company vs Trust vs Sole Trader: Which Structure Saves Tax in 2026? Sole trader: simple but exposed As a sole trader, your business income is taxed as part of your personal income at individual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000. Setup is inexpensive and ongoing compliance is minimal. The downside is unlimited personal liability — your personal assets are at risk if the business incurs debts or legal claims — and limited tax planning flexibility. The sole trader structure generally suits low-risk, lower-income businesses and new startups. Company: limited liability, separate tax rate A company is a separate legal entity, so its profits are taxed at the corporate rate — 25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income). This rate can be significantly lower than top personal marginal rates. A company also provides limited liability protection for personal assets. The trade-off is higher administrative complexity (ASIC compliance, corporate secretarial obligations, separate company tax returns) and higher running costs. Trust: flexibility and asset protection A discretionary (family) trust allows the trustee to distribute income among beneficiaries each year, optimizing tax outcomes by streaming income to family members on lower marginal rates. Trusts also offer asset protection because beneficiaries do not hold direct ownership of trust assets. The trade-offs include strict tax distribution rules (resolutions must be executed prior to 30 June each year), compliance costs, and the fact that tax losses cannot be distributed to beneficiaries. Restructuring without triggering CGT Changing business structures (e.g., sole trader to company) normally constitutes a disposal of business assets that can trigger capital gains tax (CGT) liabilities. However, small business rollover provisions — such as the Small Business Restructure Rollover (SBRR) — allow eligible entities to transfer active assets without incurring immediate CGT or income tax liabilities, provided specific conditions are met. When to review your structure Review your structure when profits move into higher personal tax brackets, you take on employees or commercial liabilities, you acquire substantial business assets, or you plan to introduce investors or transition ownership. A structure appropriate at launch may no longer be tax-effective after several years of growth. A registered tax agent can model different structural scenarios to determine whether restructuring is financially beneficial. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO individual marginal rates, which reach up to 45% (plus 2% Medicare levy) on taxable income over $190,000 ATO 25% for Base Rate Entities (aggregated turnover under $50m where active trading income is at least 20% of assessable income) ATO resolutions must be executed prior to 30 June each year ATO Small Business Restructure Rollover (SBRR) This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Which business structure is best for tax in 2026? It depends on your income, growth, asset exposure and succession plans. A company taxes profits at 25% (for base-rate entities); a trust offers flexible distribution; a sole trader is simplest but exposes personal assets. A registered accountant can model all three for your situation. Does a company protect my personal assets? Can a trust save me tax? Can I change structures without paying CGT? When should I restructure my business? How do I get matched with a structuring adviser? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2891,
+  "inSitemap": true
+}

@@ -1,0 +1,485 @@
+{
+  "path": "/blog/rental-property-deductions-2026",
+  "extractedAt": "2026-10-02T09:03:08.409Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/rental-property-deductions-2026",
+  "title": "Rental Property Deductions 2026 — What Property Investors Can Claim | Your Accountant Match",
+  "metaDescription": "A guide to rental property deductions for 2025-26 — interest, repairs vs improvements, depreciation, travel restrictions, and the records you must keep.",
+  "canonical": "http://localhost:4173/blog/rental-property-deductions-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Rental Property Deductions 2026 — What Property Investors Can Claim | Your Accountant Match",
+    "og:description": "A guide to rental property deductions for 2025-26 — interest, repairs vs improvements, depreciation, travel restrictions, and the records you must keep.",
+    "og:url": "http://localhost:4173/blog/rental-property-deductions-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Rental Property Deductions 2026 — What Property Investors Can Claim | Your Accountant Match",
+    "twitter:description": "A guide to rental property deductions for 2025-26 — interest, repairs vs improvements, depreciation, travel restrictions, and the records you must keep.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I claim interest on my investment property loan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — interest on the loan used to acquire or improve a rental property is generally deductible. Only the interest portion of your repayment is deductible, not the principal. Keep a clear separation between investment and private borrowing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a repair and an improvement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Repairs that restore the property to its original condition are deductible in the year incurred. Improvements that go beyond restoration — like a renovation — are capital and depreciated over time. Getting this distinction right is a common ATO review point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim depreciation on a rental property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — you can claim depreciation on the building structure (capital works) and on plant and equipment. For second-hand residential property bought after 9 May 2017, second-hand plant and equipment depreciation is generally only available to the original purchaser. New properties can claim both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim travel to inspect my rental property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Since 1 July 2017, travel to inspect, maintain, or collect rent for a residential rental property is completely non-deductible for individuals and cannot be added to the property's cost base. The restriction does not apply to corporate entities, property developers, or businesses carrying on a rental business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What records do I need for rental deductions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep loan statements showing interest, rates notices, management fee invoices, insurance, repair and maintenance receipts, and depreciation schedules. The ATO will ask for records behind each claim if you're reviewed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a property tax specialist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and rental property needs. We match you with a vetted local tax agent experienced in property deductions. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Deductions",
+          "item": "/blog/rental-property-deductions-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Rental Property Deductions 2026: What Investors Can Claim",
+      "description": "A guide to rental property deductions for 2025-26 — interest, repairs vs improvements, depreciation, travel restrictions, and the records you must keep.",
+      "datePublished": "2026-08-05",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/rental-property-deductions-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/depreciating-assets-in-rental-properties/second-hand-depreciating-assets"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/rental-properties-and-travel-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/api/public/content/530c1d629e07404aa4405dbe664b8011?v=0ced7a8c"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Residential rental property deductions",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Rental Property Deductions 2026: What Investors Can Claim"
+    },
+    {
+      "level": 2,
+      "text": "Rental Property Deductions 2026: What Investors Can Claim"
+    },
+    {
+      "level": 3,
+      "text": "Interest on the investment loan"
+    },
+    {
+      "level": 3,
+      "text": "Repairs vs improvements"
+    },
+    {
+      "level": 3,
+      "text": "Depreciation on building and fittings"
+    },
+    {
+      "level": 3,
+      "text": "Travel expenses"
+    },
+    {
+      "level": 3,
+      "text": "Record-keeping for rental claims"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Rental Property Deductions 2026: What Investors Can Claim",
+      "images": 0,
+      "text": "Home/Blog/DeductionsDeductions6 min readRental Property Deductions 2026: What Investors Can ClaimRental property deductions are one of the biggest tax savings for Australian property investors, but the rules around what you can claim — and when — are detailed. Interest, council rates, management fees and depreciation are generally deductible, but repairs and improvements are treated differently, and travel to inspect your property is restricted. This guide explains what investors can claim for the 2025-26 year and the records the ATO expects if you're reviewed.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLERental Property Deductions 2026: What Investors Can ClaimInterest on the investment loanInterest on the loan used to acquire or improve a rental property is generally deductible — it's usually the largest deduction for investors. Only the interest portion of your repayment is deductible, not the principal. If you refinanced or used the loan for other purposes, the deductibility can be apportioned, so keep a clear separation between investment and private borrowing.Repairs vs improvementsRepairs that merely restore the property to its original condition — like fixing a broken heater or replacing a damaged window — are generally deductible in the year they're incurred. Improvements that go beyond restoration — like renovating a kitchen or adding a deck — are capital and depreciated over time rather than fully deductible. Getting this distinction right is one of the most common review points for the ATO.Depreciation on building and fittingsYou can claim depreciation on the building structure (capital works) and on plant and equipment (fittings like ovens, carpets and air conditioners). For residential properties bought after 9 May 2017, second-hand plant and equipment depreciation is generally only available to the original purchaser. New properties can claim both capital works and plant and equipment. A quantity surveyor's depreciation schedule often pays for itself many times over.Travel expensesSince 1 July 2017, travel expenses to inspect, maintain, or collect rent for a residential rental property are completely non-deductible for individuals and cannot be added to the property's cost base. The restriction does not apply to corporate entities, property developers, or businesses carrying on a rental business. If you're affected, you need to ensure you're not claiming travel that's no longer allowed.Record-keeping for rental claimsKeep records of every expense: loan statements showing interest, rates notices, management fee invoices, insurance, repair and maintenance receipts, and depreciation schedules. If the ATO reviews your return, they'll ask for the records behind each claim. Many investors under-claim because they lose records — using accounting software or a property tax specialist ensures every legitimate deduction is captured.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOInterest on the loan used to acquire or improve a rental propertyATOdepreciation on the building structure and on plant and equipmentATOsecond-hand plant and equipment depreciationATOtravel expenses to inspect, maintain or collect rentATOinterest on the loanThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsCan I claim interest on my investment property loan?Yes — interest on the loan used to acquire or improve a rental property is generally deductible. Only the interest portion of your repayment is deductible, not the principal. Keep a clear separation between investment and private borrowing.What is the difference between a repair and an improvement?Can I claim depreciation on a rental property?Can I claim travel to inspect my rental property?What records do I need for rental deductions?How do I get matched with a property tax specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses",
+      "text": "Interest on the loan used to acquire or improve a rental property"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/depreciating-assets-in-rental-properties/second-hand-depreciating-assets",
+      "text": "second-hand plant and equipment depreciation"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses",
+      "text": "ATOInterest on the loan used to acquire or improve a rental property"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions",
+      "text": "ATOdepreciation on the building structure and on plant and equipment"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/depreciating-assets-in-rental-properties/second-hand-depreciating-assets",
+      "text": "ATOsecond-hand plant and equipment depreciation"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/rental-properties-and-travel-expenses",
+      "text": "ATOtravel expenses to inspect, maintain or collect rent"
+    },
+    {
+      "href": "https://www.ato.gov.au/api/public/content/530c1d629e07404aa4405dbe664b8011?v=0ced7a8c",
+      "text": "ATOinterest on the loan"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/api/public/content/530c1d629e07404aa4405dbe664b8011?v=0ced7a8c",
+      "text": "interest on the loan"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/DeductionsDeductions6 min readRental Property Deductions 2026: What Investors Can ClaimRental property deductions are one of the biggest tax savings for Australian property investors, but the rules around what you can claim — and when — are detailed. Interest, council rates, management fees and depreciation are generally deductible, but repairs and improvements are treated differently, and travel to inspect your property is restricted. This guide explains what investors can claim for the 2025-26 year and the records the ATO expects if you're reviewed.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLERental Property Deductions 2026: What Investors Can ClaimInterest on the investment loanInterest on the loan used to acquire or improve a rental property is generally deductible — it's usually the largest deduction for investors. Only the interest portion of your repayment is deductible, not the principal. If you refinanced or used the loan for other purposes, the deductibility can be apportioned, so keep a clear separation between investment and private borrowing.Repairs vs improvementsRepairs that merely restore the property to its original condition — like fixing a broken heater or replacing a damaged window — are generally deductible in the year they're incurred. Improvements that go beyond restoration — like renovating a kitchen or adding a deck — are capital and depreciated over time rather than fully deductible. Getting this distinction right is one of the most common review points for the ATO.Depreciation on building and fittingsYou can claim depreciation on the building structure (capital works) and on plant and equipment (fittings like ovens, carpets and air conditioners). For residential properties bought after 9 May 2017, second-hand plant and equipment depreciation is generally only available to the original purchaser. New properties can claim both capital works and plant and equipment. A quantity surveyor's depreciation schedule often pays for itself many times over.Travel expensesSince 1 July 2017, travel expenses to inspect, maintain, or collect rent for a residential rental property are completely non-deductible for individuals and cannot be added to the property's cost base. The restriction does not apply to corporate entities, property developers, or businesses carrying on a rental business. If you're affected, you need to ensure you're not claiming travel that's no longer allowed.Record-keeping for rental claimsKeep records of every expense: loan statements showing interest, rates notices, management fee invoices, insurance, repair and maintenance receipts, and depreciation schedules. If the ATO reviews your return, they'll ask for the records behind each claim. Many investors under-claim because they lose records — using accounting software or a property tax specialist ensures every legitimate deduction is captured.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOInterest on the loan used to acquire or improve a rental propertyATOdepreciation on the building structure and on plant and equipmentATOsecond-hand plant and equipment depreciationATOtravel expenses to inspect, maintain or collect rentATOinterest on the loanThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsCan I claim interest on my investment property loan?Yes — interest on the loan used to acquire or improve a rental property is generally deductible. Only the interest portion of your repayment is deductible, not the principal. Keep a clear separation between investment and private borrowing.What is the difference between a repair and an improvement?Can I claim depreciation on a rental property?Can I claim travel to inspect my rental property?What records do I need for rental deductions?How do I get matched with a property tax specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Deductions DEDUCTIONS 6 min read Rental Property Deductions 2026: What Investors Can Claim Rental property deductions are one of the biggest tax savings for Australian property investors, but the rules around what you can claim — and when — are detailed. Interest, council rates, management fees and depreciation are generally deductible, but repairs and improvements are treated differently, and travel to inspect your property is restricted. This guide explains what investors can claim for the 2025-26 year and the records the ATO expects if you're reviewed. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Rental Property Deductions 2026: What Investors Can Claim Interest on the investment loan Interest on the loan used to acquire or improve a rental property is generally deductible — it's usually the largest deduction for investors. Only the interest portion of your repayment is deductible, not the principal. If you refinanced or used the loan for other purposes, the deductibility can be apportioned, so keep a clear separation between investment and private borrowing. Repairs vs improvements Repairs that merely restore the property to its original condition — like fixing a broken heater or replacing a damaged window — are generally deductible in the year they're incurred. Improvements that go beyond restoration — like renovating a kitchen or adding a deck — are capital and depreciated over time rather than fully deductible. Getting this distinction right is one of the most common review points for the ATO. Depreciation on building and fittings You can claim depreciation on the building structure (capital works) and on plant and equipment (fittings like ovens, carpets and air conditioners). For residential properties bought after 9 May 2017, second-hand plant and equipment depreciation is generally only available to the original purchaser. New properties can claim both capital works and plant and equipment. A quantity surveyor's depreciation schedule often pays for itself many times over. Travel expenses Since 1 July 2017, travel expenses to inspect, maintain, or collect rent for a residential rental property are completely non-deductible for individuals and cannot be added to the property's cost base. The restriction does not apply to corporate entities, property developers, or businesses carrying on a rental business. If you're affected, you need to ensure you're not claiming travel that's no longer allowed. Record-keeping for rental claims Keep records of every expense: loan statements showing interest, rates notices, management fee invoices, insurance, repair and maintenance receipts, and depreciation schedules. If the ATO reviews your return, they'll ask for the records behind each claim. Many investors under-claim because they lose records — using accounting software or a property tax specialist ensures every legitimate deduction is captured. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO Interest on the loan used to acquire or improve a rental property ATO depreciation on the building structure and on plant and equipment ATO second-hand plant and equipment depreciation ATO travel expenses to inspect, maintain or collect rent ATO interest on the loan This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Can I claim interest on my investment property loan? Yes — interest on the loan used to acquire or improve a rental property is generally deductible. Only the interest portion of your repayment is deductible, not the principal. Keep a clear separation between investment and private borrowing. What is the difference between a repair and an improvement? Can I claim depreciation on a rental property? Can I claim travel to inspect my rental property? What records do I need for rental deductions? How do I get matched with a property tax specialist? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2962,
+  "inSitemap": true
+}

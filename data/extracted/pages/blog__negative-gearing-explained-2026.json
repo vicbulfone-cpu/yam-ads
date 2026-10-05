@@ -1,0 +1,521 @@
+{
+  "path": "/blog/negative-gearing-explained-2026",
+  "extractedAt": "2026-10-02T09:03:05.401Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/negative-gearing-explained-2026",
+  "title": "Negative Gearing Explained 2026 — How Property Losses Reduce Tax | Your Accountant Match",
+  "metaDescription": "How negative gearing works in 2025-26 — rental losses, deductible costs, the 2027 new-build limit, grandfathering and capital gains on sale.",
+  "canonical": "http://localhost:4173/blog/negative-gearing-explained-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Negative Gearing Explained 2026 — How Property Losses Reduce Tax | Your Accountant Match",
+    "og:description": "How negative gearing works in 2025-26 — rental losses, deductible costs, the 2027 new-build limit, grandfathering and capital gains on sale.",
+    "og:url": "http://localhost:4173/blog/negative-gearing-explained-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Negative Gearing Explained 2026 — How Property Losses Reduce Tax | Your Accountant Match",
+    "twitter:description": "How negative gearing works in 2025-26 — rental losses, deductible costs, the 2027 new-build limit, grandfathering and capital gains on sale.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is negative gearing still allowed in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — for the 2025-26 year, negative gearing remains available for property investors. The 2026 Federal Budget has enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can be negatively geared against salary until 30 June 2027, after which losses are quarantined to offset future rental income or property capital gains."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I claim on a negatively geared property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deductible expenses include loan interest, council and water rates, property management fees, landlord insurance, ongoing repairs and maintenance, and depreciation on the building and fittings. Travel to inspect residential property is non-deductible for individual investors. Only the interest portion of your loan repayment is deductible, not the principal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does negative gearing reduce my tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When your property's deductible expenses exceed the rental income, the loss is offset against your other income (such as salary), reducing your overall taxable income. This lowers the tax you pay for that year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I pay capital gains tax when I sell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — capital gains tax applies to the profit on sale. For established properties, the 50% CGT discount applies to gains accrued up to 1 July 2027, with subsequent gains calculated under the new cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the choice between the 50% CGT discount or the indexation model. The gain is added to your income in the year of sale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the 2027 negative gearing changes confirmed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the changes limiting deductions against salary and wages to new builds from 1 July 2027 are now law, enacted following the 2026 Federal Budget. The cut-off for established property is 7:30pm AEST on 12 May 2026. Properties purchased before the cut-off are grandfathered for negative gearing against salary and wages. For capital gains, the 50% CGT discount for established properties applies only to gains accrued up to 1 July 2027; gains after that date move to the cost-base indexation regime with a minimum 30% tax rate. Speak to a registered tax agent before relying on any timing or investment strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a property tax specialist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and investment property needs. We match you with a vetted local tax agent experienced in property and CGT. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Planning",
+          "item": "/blog/negative-gearing-explained-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Negative Gearing Explained 2026: How Property Losses Reduce Tax",
+      "description": "How negative gearing works in 2025-26 — rental losses, deductible costs, the 2027 new-build limit, grandfathering and capital gains on sale.",
+      "datePublished": "2026-06-10",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/negative-gearing-explained-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/losses/non-commercial-losses/how-to-offset-your-losses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Negative gearing and capital gains tax reform",
+          "sameAs": "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Negative Gearing Explained 2026: How Property Losses Reduce Tax"
+    },
+    {
+      "level": 2,
+      "text": "Negative Gearing Explained 2026: How Property Losses Reduce Tax"
+    },
+    {
+      "level": 3,
+      "text": "What negative gearing means"
+    },
+    {
+      "level": 3,
+      "text": "What expenses are deductible"
+    },
+    {
+      "level": 3,
+      "text": "Repayments: interest vs principal"
+    },
+    {
+      "level": 3,
+      "text": "Capital gains tax on sale"
+    },
+    {
+      "level": 3,
+      "text": "The 2027 changes — now law"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Negative Gearing Explained 2026: How Property Losses Reduce Tax",
+      "images": 0,
+      "text": "Home/Blog/Tax PlanningTax Planning6 min readNegative Gearing Explained 2026: How Property Losses Reduce TaxNegative gearing is one of the most discussed tax strategies for Australian property investors. It allows you to deduct the running costs of a rental property — including interest — against your other income when the property runs at a loss. For the 2025-26 year the rules remain in place. This guide explains how negative gearing works now, what you can claim, and how it interacts with capital gains tax on sale.2026 Federal Budget updateFollowing the 2026 Federal Budget, the government has now enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off are grandfathered for negative gearing against salary and wages, while established properties bought between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLENegative Gearing Explained 2026: How Property Losses Reduce TaxWhat negative gearing meansA property is negatively geared when its deductible expenses (interest, maintenance, management fees, rates) exceed the rental income it generates. The resulting loss can be offset against your other income — such as salary or business income — reducing your overall taxable income. The strategy relies on the property's capital growth over time outweighing the holding losses.What expenses are deductibleDeductible expenses for a rental property include interest on the loan used to acquire the property, council and water rates, property management fees, landlord insurance, ongoing repairs and maintenance, and depreciation on the building and fittings. Note that travel expenses to inspect residential property are completely non-deductible for individual investors (disallowed since 1 July 2017). Initial repairs carried out when you first purchase a property are treated as capital improvements and depreciated over time, not claimed as an immediate deduction. Keeping accurate records of every expense is essential — the ATO closely scrutinises rental claims.Repayments: interest vs principalOnly the interest portion of your loan repayments is deductible — not the principal. If you have an interest-only loan, the full repayment is deductible. If you're paying principal and interest, only the interest component reduces your taxable income. Many investors use interest-only loans during the accumulation phase to maximise deductions, though this increases financial risk.Capital gains tax on saleWhen you sell an investment property, capital gains tax (CGT) applies to the profit. For established properties, the standard 50% CGT discount applies to gains accrued up to 1 July 2027. For gains accruing from 1 July 2027 onwards, the discount no longer applies to established properties and gains are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the option to choose between the traditional 50% CGT discount or the new indexation model at the time of sale. The taxable gain is added to your income in the year of sale, which can push you into a higher tax bracket. Careful timing of the sale — and recording every deductible cost over the holding period — significantly affects the net result.The 2027 changes — now lawThe 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027. The key cut-off is 7:30pm AEST on 12 May 2026 — contracts to purchase established (existing) property signed after this date fall under the new rules. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027; from 1 July 2027, those losses become quarantined and can only be carried forward to offset future residential rental income or residential property capital gains. New builds remain fully eligible for negative gearing. On capital gains, the 50% CGT discount for established properties applies only to gains accrued up to 1 July 2027 — gains accruing after that date are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the choice between the 50% CGT discount or cost-base indexation plus a minimum tax on sale. Widely held trusts, super funds, build-to-rent and government housing-program investors are exempt. If you're considering buying an investment property, the timing relative to these changes matters — speak to a registered tax agent before acting.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOThe resulting loss can be offset against your other incomeATODeductible expenses for a rental propertyATOOnly the interest portion of your loan repayments is deductibleATOgains are calculated under a cost-base indexation regime with a minimum 30% tax rateBudgetThe 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027ATODeductible expensesATO50% CGT discountThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsIs negative gearing still allowed in 2026?Yes — for the 2025-26 year, negative gearing remains available for property investors. The 2026 Federal Budget has enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can be negatively geared against salary until 30 June 2027, after which losses are quarantined to offset future rental income or property capital gains.What can I claim on a negatively geared property?How does negative gearing reduce my tax?Do I pay capital gains tax when I sell?Are the 2027 negative gearing changes confirmed?How do I get matched with a property tax specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf",
+      "text": "the government has now enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/losses/non-commercial-losses/how-to-offset-your-losses",
+      "text": "The resulting loss can be offset against your other income"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses",
+      "text": "Deductible expenses for a rental property"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses",
+      "text": "Only the interest portion of your loan repayments is deductible"
+    },
+    {
+      "href": "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax",
+      "text": "gains are calculated under a cost-base indexation regime with a minimum 30% tax rate"
+    },
+    {
+      "href": "https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf",
+      "text": "The 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027"
+    },
+    {
+      "href": "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax",
+      "text": "gains accruing after that date are calculated under a cost-base indexation regime with a minimum 30% tax rate"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/losses/non-commercial-losses/how-to-offset-your-losses",
+      "text": "ATOThe resulting loss can be offset against your other income"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses",
+      "text": "ATODeductible expenses for a rental property"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses",
+      "text": "ATOOnly the interest portion of your loan repayments is deductible"
+    },
+    {
+      "href": "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax",
+      "text": "ATOgains are calculated under a cost-base indexation regime with a minimum 30% tax rate"
+    },
+    {
+      "href": "https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf",
+      "text": "BudgetThe 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses",
+      "text": "ATODeductible expenses"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount",
+      "text": "ATO50% CGT discount"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf",
+      "text": "The 2026 Federal Budget has enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax PlanningTax Planning6 min readNegative Gearing Explained 2026: How Property Losses Reduce TaxNegative gearing is one of the most discussed tax strategies for Australian property investors. It allows you to deduct the running costs of a rental property — including interest — against your other income when the property runs at a loss. For the 2025-26 year the rules remain in place. This guide explains how negative gearing works now, what you can claim, and how it interacts with capital gains tax on sale.2026 Federal Budget updateFollowing the 2026 Federal Budget, the government has now enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off are grandfathered for negative gearing against salary and wages, while established properties bought between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLENegative Gearing Explained 2026: How Property Losses Reduce TaxWhat negative gearing meansA property is negatively geared when its deductible expenses (interest, maintenance, management fees, rates) exceed the rental income it generates. The resulting loss can be offset against your other income — such as salary or business income — reducing your overall taxable income. The strategy relies on the property's capital growth over time outweighing the holding losses.What expenses are deductibleDeductible expenses for a rental property include interest on the loan used to acquire the property, council and water rates, property management fees, landlord insurance, ongoing repairs and maintenance, and depreciation on the building and fittings. Note that travel expenses to inspect residential property are completely non-deductible for individual investors (disallowed since 1 July 2017). Initial repairs carried out when you first purchase a property are treated as capital improvements and depreciated over time, not claimed as an immediate deduction. Keeping accurate records of every expense is essential — the ATO closely scrutinises rental claims.Repayments: interest vs principalOnly the interest portion of your loan repayments is deductible — not the principal. If you have an interest-only loan, the full repayment is deductible. If you're paying principal and interest, only the interest component reduces your taxable income. Many investors use interest-only loans during the accumulation phase to maximise deductions, though this increases financial risk.Capital gains tax on saleWhen you sell an investment property, capital gains tax (CGT) applies to the profit. For established properties, the standard 50% CGT discount applies to gains accrued up to 1 July 2027. For gains accruing from 1 July 2027 onwards, the discount no longer applies to established properties and gains are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the option to choose between the traditional 50% CGT discount or the new indexation model at the time of sale. The taxable gain is added to your income in the year of sale, which can push you into a higher tax bracket. Careful timing of the sale — and recording every deductible cost over the holding period — significantly affects the net result.The 2027 changes — now lawThe 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027. The key cut-off is 7:30pm AEST on 12 May 2026 — contracts to purchase established (existing) property signed after this date fall under the new rules. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027; from 1 July 2027, those losses become quarantined and can only be carried forward to offset future residential rental income or residential property capital gains. New builds remain fully eligible for negative gearing. On capital gains, the 50% CGT discount for established properties applies only to gains accrued up to 1 July 2027 — gains accruing after that date are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the choice between the 50% CGT discount or cost-base indexation plus a minimum tax on sale. Widely held trusts, super funds, build-to-rent and government housing-program investors are exempt. If you're considering buying an investment property, the timing relative to these changes matters — speak to a registered tax agent before acting.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOThe resulting loss can be offset against your other incomeATODeductible expenses for a rental propertyATOOnly the interest portion of your loan repayments is deductibleATOgains are calculated under a cost-base indexation regime with a minimum 30% tax rateBudgetThe 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027ATODeductible expensesATO50% CGT discountThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsIs negative gearing still allowed in 2026?Yes — for the 2025-26 year, negative gearing remains available for property investors. The 2026 Federal Budget has enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can be negatively geared against salary until 30 June 2027, after which losses are quarantined to offset future rental income or property capital gains.What can I claim on a negatively geared property?How does negative gearing reduce my tax?Do I pay capital gains tax when I sell?Are the 2027 negative gearing changes confirmed?How do I get matched with a property tax specialist?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Planning TAX PLANNING 6 min read Negative Gearing Explained 2026: How Property Losses Reduce Tax Negative gearing is one of the most discussed tax strategies for Australian property investors. It allows you to deduct the running costs of a rental property — including interest — against your other income when the property runs at a loss. For the 2025-26 year the rules remain in place. This guide explains how negative gearing works now, what you can claim, and how it interacts with capital gains tax on sale. 2026 FEDERAL BUDGET UPDATE Following the 2026 Federal Budget, the government has now enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off are grandfathered for negative gearing against salary and wages, while established properties bought between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Negative Gearing Explained 2026: How Property Losses Reduce Tax What negative gearing means A property is negatively geared when its deductible expenses (interest, maintenance, management fees, rates) exceed the rental income it generates. The resulting loss can be offset against your other income — such as salary or business income — reducing your overall taxable income. The strategy relies on the property's capital growth over time outweighing the holding losses. What expenses are deductible Deductible expenses for a rental property include interest on the loan used to acquire the property, council and water rates, property management fees, landlord insurance, ongoing repairs and maintenance, and depreciation on the building and fittings. Note that travel expenses to inspect residential property are completely non-deductible for individual investors (disallowed since 1 July 2017). Initial repairs carried out when you first purchase a property are treated as capital improvements and depreciated over time, not claimed as an immediate deduction. Keeping accurate records of every expense is essential — the ATO closely scrutinises rental claims. Repayments: interest vs principal Only the interest portion of your loan repayments is deductible — not the principal. If you have an interest-only loan, the full repayment is deductible. If you're paying principal and interest, only the interest component reduces your taxable income. Many investors use interest-only loans during the accumulation phase to maximise deductions, though this increases financial risk. Capital gains tax on sale When you sell an investment property, capital gains tax (CGT) applies to the profit. For established properties, the standard 50% CGT discount applies to gains accrued up to 1 July 2027. For gains accruing from 1 July 2027 onwards, the discount no longer applies to established properties and gains are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the option to choose between the traditional 50% CGT discount or the new indexation model at the time of sale. The taxable gain is added to your income in the year of sale, which can push you into a higher tax bracket. Careful timing of the sale — and recording every deductible cost over the holding period — significantly affects the net result. The 2027 changes — now law The 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027. The key cut-off is 7:30pm AEST on 12 May 2026 — contracts to purchase established (existing) property signed after this date fall under the new rules. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can still be negatively geared against salary until 30 June 2027; from 1 July 2027, those losses become quarantined and can only be carried forward to offset future residential rental income or residential property capital gains. New builds remain fully eligible for negative gearing. On capital gains, the 50% CGT discount for established properties applies only to gains accrued up to 1 July 2027 — gains accruing after that date are calculated under a cost-base indexation regime with a minimum 30% tax rate. Eligible new builds retain the choice between the 50% CGT discount or cost-base indexation plus a minimum tax on sale. Widely held trusts, super funds, build-to-rent and government housing-program investors are exempt. If you're considering buying an investment property, the timing relative to these changes matters — speak to a registered tax agent before acting. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO The resulting loss can be offset against your other income ATO Deductible expenses for a rental property ATO Only the interest portion of your loan repayments is deductible ATO gains are calculated under a cost-base indexation regime with a minimum 30% tax rate BUDGET The 2026 Federal Budget enacted changes that limit negative gearing deductions against salary and wages to new builds from 1 July 2027 ATO Deductible expenses ATO 50% CGT discount This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Is negative gearing still allowed in 2026? Yes — for the 2025-26 year, negative gearing remains available for property investors. The 2026 Federal Budget has enacted changes limiting negative gearing deductions against salary and wages to new builds from 1 July 2027, with a cut-off of 7:30pm AEST on 12 May 2026 for contracts to purchase established property. Properties purchased before the cut-off remain grandfathered for negative gearing against salary and wages. Established properties purchased between 12 May 2026 and 30 June 2027 can be negatively geared against salary until 30 June 2027, after which losses are quarantined to offset future rental income or property capital gains. What can I claim on a negatively geared property? How does negative gearing reduce my tax? Do I pay capital gains tax when I sell? Are the 2027 negative gearing changes confirmed? How do I get matched with a property tax specialist? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2903,
+  "inSitemap": true
+}

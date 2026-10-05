@@ -1,0 +1,72 @@
+[
+  {
+    "file": "/images/au/place-house.webp",
+    "theme": "Australian suburban home exterior",
+    "alt": "Sunny Queensland-style elevated family home with a wide timber deck, green lawn and palm trees.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/modern-elevated-house-with-wooden-deck-and-lawn-37588543/",
+    "photographer": "Stradbroke Island (Pexels contributor @stradbroke-island-2161582892)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1068,
+    "australianEvidence": "Photographer is based on Stradbroke Island, Queensland, and the home is a raised timber Queensland-style house with palms and Australian overhead power lines.",
+    "focus": "center",
+    "peopleCount": 0
+  },
+  {
+    "file": "/images/au/place-mainstreet.webp",
+    "theme": "Australian main street / suburban shopfronts",
+    "alt": "Sunny suburban shopping strip in Coogee, Sydney, with local shops under an apartment block and a few pedestrians.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/coogee-street-view-with-local-shops-and-apartments-32889279/",
+    "photographer": "Macourt Media (Pexels contributor @macourt-media-1519726)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1067,
+    "australianEvidence": "Pexels location tag reads Sydney, Australia (Coogee) and the scene shows Australian shopfronts, bus-stop signage and Norfolk Island pines.",
+    "focus": "left",
+    "peopleCount": 3
+  },
+  {
+    "file": "/images/au/place-family-beach.webp",
+    "theme": "Australian family outdoors, relaxed everyday moment",
+    "alt": "Three generations of a family walking barefoot along a sunny Perth beach beside a jetty.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/family-walk-on-the-beach-during-summer-29491355/",
+    "photographer": "Elvan Lam (Pexels contributor @elvan-lam-1105439946)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1067,
+    "australianEvidence": "Pexels location tag reads Perth, Australia, and the beach has a timber jetty typical of Western Australian coastal suburbs.",
+    "focus": "center",
+    "peopleCount": 6
+  },
+  {
+    "file": "/images/au/place-apollo-bay.webp",
+    "theme": "Wide bright Australian coastal-town landscape",
+    "alt": "Wide sunny view over the Victorian coastal town of Apollo Bay, its curving beach and green hills under a pale blue sky.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/stunning-coastal-view-over-apollo-bay-australia-37356669/",
+    "photographer": "Nanling Liu (Pexels contributor @nanling-liu-1430151)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1400,
+    "height": 1050,
+    "australianEvidence": "Pexels location tag reads Apollo Bay, Australia, on Victoria's Great Ocean Road, with native coastal scrub in the foreground.",
+    "focus": "right",
+    "peopleCount": 0
+  },
+  {
+    "file": "/images/au/place-cafe-chat.webp",
+    "theme": "Friendly conversation between ordinary Australians",
+    "alt": "A relaxed group of casually dressed locals chatting at the counter of a bright, modern suburban cafe.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/casual-gathering-in-modern-australian-cafe-30766293/",
+    "photographer": "DJ Paine (Pexels contributor @djpaine)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1067,
+    "australianEvidence": "Pexels location tag reads Corio, Victoria, Australia, and the cafe shows the Australian green running-man exit sign.",
+    "focus": "left",
+    "peopleCount": 4
+  }
+]

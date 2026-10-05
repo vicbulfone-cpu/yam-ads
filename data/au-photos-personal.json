@@ -1,0 +1,30 @@
+[
+  {
+    "file": "/images/au/personal-retired-couple-bondi.webp",
+    "theme": "older retired couple (SMSF / retirement)",
+    "alt": "An older couple in sun hats and walking shoes stroll along a white railing above the turquoise water at Bondi, Sydney.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/scenic-coastal-walkway-in-sydney-australia-37091492/",
+    "photographer": "Talha Resitoglu (@talharesitoglu)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1067,
+    "australianEvidence": "Pexels page text and tags say Bondi Beach, Sydney, Australia, and the Bondi-Bronte coastal headland with its Australian cliff-top houses and ocean pool is visible.",
+    "focus": "center",
+    "peopleCount": 2
+  },
+  {
+    "file": "/images/au/personal-beach-path-perth.webp",
+    "theme": "person relaxed outdoors in an Australian coastal suburb",
+    "alt": "A smiling grey-haired man in a blue hoodie looks back while holding the hand of a young woman on a sandy beach path through coastal scrub.",
+    "source": "Pexels",
+    "pageUrl": "https://www.pexels.com/photo/man-holding-a-womans-hand-26867629/",
+    "photographer": "Elvan Lam (@elvan-lam-1105439946)",
+    "licence": "Pexels License (free for commercial use, no attribution required)",
+    "width": 1600,
+    "height": 1269,
+    "australianEvidence": "Pexels page description places it on a sandy beach in Perth, Australia, and the dune path with banksia-style coastal scrub matches a Western Australian beach.",
+    "focus": "right",
+    "peopleCount": 2
+  }
+]

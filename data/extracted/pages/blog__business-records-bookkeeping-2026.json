@@ -1,0 +1,509 @@
+{
+  "path": "/blog/business-records-bookkeeping-2026",
+  "extractedAt": "2026-10-02T09:03:11.496Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/business-records-bookkeeping-2026",
+  "title": "Business Records & Bookkeeping 2026 — What to Keep & How Long | Your Accountant Match",
+  "metaDescription": "A guide to small business record-keeping for 2026 — what records you must keep, the 5-year rule, digital records, and how good bookkeeping cuts audit risk.",
+  "canonical": "http://localhost:4173/blog/business-records-bookkeeping-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Business Records & Bookkeeping 2026 — What to Keep & How Long | Your Accountant Match",
+    "og:description": "A guide to small business record-keeping for 2026 — what records you must keep, the 5-year rule, digital records, and how good bookkeeping cuts audit risk.",
+    "og:url": "http://localhost:4173/blog/business-records-bookkeeping-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Business Records & Bookkeeping 2026 — What to Keep & How Long | Your Accountant Match",
+    "twitter:description": "A guide to small business record-keeping for 2026 — what records you must keep, the 5-year rule, digital records, and how good bookkeeping cuts audit risk.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long must I keep business records?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return. However, two rules override this: the Fair Work Ombudsman requires employers to keep payroll and time-and-wages records for 7 years, and under Section 286 of the Corporations Act 2001, companies (Pty Ltd) must retain financial records for 7 years. If you operate as a company or have employees, keep records for at least 7 years to satisfy all regulators. Some records — relating to capital gains, depreciation, or disputes — may need to be kept longer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What records do I need for my small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need records of every business transaction: sales and expense records, bank statements, invoices and receipts, contracts, vehicle logs, stock records, and records of business-related asset use. Records must show the date, amount, and purpose of each transaction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are digital records acceptable to the ATO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — digital records are fully accepted and encouraged. Cloud accounting software like Xero, QuickBooks or MYOB automates reconciliation, stores receipts digitally, and keeps a permanent searchable record. Most small businesses find cloud accounting pays for itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a logbook for vehicle claims?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you use the logbook method, you need a 12-week logbook recording every trip. If you use the cents-per-km method, you need a reasonable basis for the kilometres claimed. Estimates without records are generally not accepted by the ATO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do good records reduce my tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete records let your accountant identify every legitimate deduction, which often saves more than the cost of keeping the records. They also dramatically reduce audit risk — the ATO is far less likely to challenge a fully substantiated return."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get matched with a bookkeeper to set up records?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and bookkeeping needs. We match you with a vetted local bookkeeper who can set up your record-keeping system in your software. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Business",
+          "item": "/blog/business-records-bookkeeping-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long",
+      "description": "A guide to small business record-keeping for 2026 — what records you must keep, the 5-year rule, digital records, and how good bookkeeping cuts audit risk.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/business-records-bookkeeping-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.legislation.gov.au/C2004A00818/latest"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/setting-up-and-managing-records/business-record-keeping-systems/digital-record-keeping"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/logbook-method"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Business record-keeping requirements",
+          "sameAs": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long"
+    },
+    {
+      "level": 2,
+      "text": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long"
+    },
+    {
+      "level": 3,
+      "text": "What records you must keep"
+    },
+    {
+      "level": 3,
+      "text": "The 5-year rule — and when it's actually 7 years"
+    },
+    {
+      "level": 3,
+      "text": "Digital records and cloud accounting"
+    },
+    {
+      "level": 3,
+      "text": "Vehicle and home office records"
+    },
+    {
+      "level": 3,
+      "text": "How clean records reduce tax and audit risk"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Business Records & Bookkeeping 2026: What You Must Keep and For How Long",
+      "images": 0,
+      "text": "Home/Blog/BusinessBusiness5 min readBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongGood record-keeping is the foundation of every legitimate tax-saving strategy — and a legal requirement. The ATO requires businesses to keep records for five years, in a form the ATO can examine. Records don't just protect you in an audit; they let your accountant identify every deduction you're entitled to, which often saves far more than the cost of keeping them. This guide explains what to keep, for how long, and how cloud bookkeeping makes it manageable.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongWhat records you must keepYou must keep records of every business transaction: sales and expense records, bank statements, invoices and receipts, contracts, vehicle logs, stock records, and records of any business-related use of assets. Records must show the date, amount, and purpose of each transaction, and the parties involved. Digital records (scanned receipts, bank feeds, software exports) are acceptable and encouraged.The 5-year rule — and when it's actually 7 yearsFor tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return (or the date the transaction was completed, if later). Some records — like those relating to capital gains, depreciation, or disputes — may need to be kept longer, until five years after the relevant event is finalised. Destroying records too early can mean you can't substantiate deductions in a later review. However, two other rules override the 5-year ATO baseline and require 7 years. First, the Fair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years — so if you have employees, your payroll records must be retained for 7 years regardless of the ATO's 5-year rule. Second, under Section 286 of the Corporations Act 2001, Australian companies (Pty Ltd) are legally required to retain financial records for 7 years, which overrides the 5-year ATO baseline for incorporated entities. If you operate as a company or employ staff, plan to keep records for at least 7 years to satisfy all three regulators.Digital records and cloud accountingDigital records are fully accepted by the ATO, and cloud accounting software (Xero, QuickBooks, MYOB) makes record-keeping far easier than a shoebox of receipts. Bank feeds automate reconciliation, receipt capture apps store receipts digitally, and the software keeps a permanent, searchable record. Most small businesses find cloud accounting pays for itself in time saved and deductions captured.Vehicle and home office recordsIf you claim vehicle deductions, keep a logbook or a record of business kilometres. If you claim home office deductions, keep a diary of hours worked from home and bills for the expenses you claim. These records are essential if the ATO reviews your return — estimates without records are generally not accepted. Good records also let your accountant maximise these claims.How clean records reduce tax and audit riskWhen your records are complete, your accountant can identify every legitimate deduction, which often saves more than the cost of keeping the records. Complete records also dramatically reduce audit risk — the ATO is far less likely to challenge a return that's fully substantiated. A matched bookkeeper or accountant can set up your record-keeping system so it's accurate and low-effort from day one.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOrecords of every business transactionATOkept for five yearsFair WorkFair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 yearsLegislationSection 286 of the Corporations Act 2001ATOdigital records are fully accepted and encouragedATOyou need a 12-week logbook recording every tripThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsHow long must I keep business records?For tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return. However, two rules override this: the Fair Work Ombudsman requires employers to keep payroll and time-and-wages records for 7 years, and under Section 286 of the Corporations Act 2001, companies (Pty Ltd) must retain financial records for 7 years. If you operate as a company or have employees, keep records for at least 7 years to satisfy all regulators. Some records — relating to capital gains, depreciation, or disputes — may need to be kept longer.What records do I need for my small business?Are digital records acceptable to the ATO?Do I need a logbook for vehicle claims?How do good records reduce my tax?How do I get matched with a bookkeeper to set up records?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business",
+      "text": "records of every business transaction"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years",
+      "text": "kept for five years"
+    },
+    {
+      "href": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+      "text": "Fair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years"
+    },
+    {
+      "href": "https://www.legislation.gov.au/C2004A00818/latest",
+      "text": "Section 286 of the Corporations Act 2001"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business",
+      "text": "ATOrecords of every business transaction"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years",
+      "text": "ATOkept for five years"
+    },
+    {
+      "href": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+      "text": "Fair WorkFair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years"
+    },
+    {
+      "href": "https://www.legislation.gov.au/C2004A00818/latest",
+      "text": "LegislationSection 286 of the Corporations Act 2001"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/setting-up-and-managing-records/business-record-keeping-systems/digital-record-keeping",
+      "text": "ATOdigital records are fully accepted and encouraged"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/logbook-method",
+      "text": "ATOyou need a 12-week logbook recording every trip"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years",
+      "text": "five years from the date of lodgement"
+    },
+    {
+      "href": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+      "text": "Fair Work Ombudsman requires employers to keep payroll and time-and-wages records for 7 years"
+    },
+    {
+      "href": "https://www.legislation.gov.au/C2004A00818/latest",
+      "text": "Section 286 of the Corporations Act 2001"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/BusinessBusiness5 min readBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongGood record-keeping is the foundation of every legitimate tax-saving strategy — and a legal requirement. The ATO requires businesses to keep records for five years, in a form the ATO can examine. Records don't just protect you in an audit; they let your accountant identify every deduction you're entitled to, which often saves far more than the cost of keeping them. This guide explains what to keep, for how long, and how cloud bookkeeping makes it manageable.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEBusiness Records & Bookkeeping 2026: What You Must Keep and For How LongWhat records you must keepYou must keep records of every business transaction: sales and expense records, bank statements, invoices and receipts, contracts, vehicle logs, stock records, and records of any business-related use of assets. Records must show the date, amount, and purpose of each transaction, and the parties involved. Digital records (scanned receipts, bank feeds, software exports) are acceptable and encouraged.The 5-year rule — and when it's actually 7 yearsFor tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return (or the date the transaction was completed, if later). Some records — like those relating to capital gains, depreciation, or disputes — may need to be kept longer, until five years after the relevant event is finalised. Destroying records too early can mean you can't substantiate deductions in a later review. However, two other rules override the 5-year ATO baseline and require 7 years. First, the Fair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years — so if you have employees, your payroll records must be retained for 7 years regardless of the ATO's 5-year rule. Second, under Section 286 of the Corporations Act 2001, Australian companies (Pty Ltd) are legally required to retain financial records for 7 years, which overrides the 5-year ATO baseline for incorporated entities. If you operate as a company or employ staff, plan to keep records for at least 7 years to satisfy all three regulators.Digital records and cloud accountingDigital records are fully accepted by the ATO, and cloud accounting software (Xero, QuickBooks, MYOB) makes record-keeping far easier than a shoebox of receipts. Bank feeds automate reconciliation, receipt capture apps store receipts digitally, and the software keeps a permanent, searchable record. Most small businesses find cloud accounting pays for itself in time saved and deductions captured.Vehicle and home office recordsIf you claim vehicle deductions, keep a logbook or a record of business kilometres. If you claim home office deductions, keep a diary of hours worked from home and bills for the expenses you claim. These records are essential if the ATO reviews your return — estimates without records are generally not accepted. Good records also let your accountant maximise these claims.How clean records reduce tax and audit riskWhen your records are complete, your accountant can identify every legitimate deduction, which often saves more than the cost of keeping the records. Complete records also dramatically reduce audit risk — the ATO is far less likely to challenge a return that's fully substantiated. A matched bookkeeper or accountant can set up your record-keeping system so it's accurate and low-effort from day one.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATOrecords of every business transactionATOkept for five yearsFair WorkFair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 yearsLegislationSection 286 of the Corporations Act 2001ATOdigital records are fully accepted and encouragedATOyou need a 12-week logbook recording every tripThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsHow long must I keep business records?For tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return. However, two rules override this: the Fair Work Ombudsman requires employers to keep payroll and time-and-wages records for 7 years, and under Section 286 of the Corporations Act 2001, companies (Pty Ltd) must retain financial records for 7 years. If you operate as a company or have employees, keep records for at least 7 years to satisfy all regulators. Some records — relating to capital gains, depreciation, or disputes — may need to be kept longer.What records do I need for my small business?Are digital records acceptable to the ATO?Do I need a logbook for vehicle claims?How do good records reduce my tax?How do I get matched with a bookkeeper to set up records?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Business BUSINESS 5 min read Business Records & Bookkeeping 2026: What You Must Keep and For How Long Good record-keeping is the foundation of every legitimate tax-saving strategy — and a legal requirement. The ATO requires businesses to keep records for five years, in a form the ATO can examine. Records don't just protect you in an audit; they let your accountant identify every deduction you're entitled to, which often saves far more than the cost of keeping them. This guide explains what to keep, for how long, and how cloud bookkeeping makes it manageable. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Business Records & Bookkeeping 2026: What You Must Keep and For How Long What records you must keep You must keep records of every business transaction: sales and expense records, bank statements, invoices and receipts, contracts, vehicle logs, stock records, and records of any business-related use of assets. Records must show the date, amount, and purpose of each transaction, and the parties involved. Digital records (scanned receipts, bank feeds, software exports) are acceptable and encouraged. The 5-year rule — and when it's actually 7 years For tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return (or the date the transaction was completed, if later). Some records — like those relating to capital gains, depreciation, or disputes — may need to be kept longer, until five years after the relevant event is finalised. Destroying records too early can mean you can't substantiate deductions in a later review. However, two other rules override the 5-year ATO baseline and require 7 years. First, the Fair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years — so if you have employees, your payroll records must be retained for 7 years regardless of the ATO's 5-year rule. Second, under Section 286 of the Corporations Act 2001, Australian companies (Pty Ltd) are legally required to retain financial records for 7 years, which overrides the 5-year ATO baseline for incorporated entities. If you operate as a company or employ staff, plan to keep records for at least 7 years to satisfy all three regulators. Digital records and cloud accounting Digital records are fully accepted by the ATO, and cloud accounting software (Xero, QuickBooks, MYOB) makes record-keeping far easier than a shoebox of receipts. Bank feeds automate reconciliation, receipt capture apps store receipts digitally, and the software keeps a permanent, searchable record. Most small businesses find cloud accounting pays for itself in time saved and deductions captured. Vehicle and home office records If you claim vehicle deductions, keep a logbook or a record of business kilometres. If you claim home office deductions, keep a diary of hours worked from home and bills for the expenses you claim. These records are essential if the ATO reviews your return — estimates without records are generally not accepted. Good records also let your accountant maximise these claims. How clean records reduce tax and audit risk When your records are complete, your accountant can identify every legitimate deduction, which often saves more than the cost of keeping the records. Complete records also dramatically reduce audit risk — the ATO is far less likely to challenge a return that's fully substantiated. A matched bookkeeper or accountant can set up your record-keeping system so it's accurate and low-effort from day one. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO records of every business transaction ATO kept for five years FAIR WORK Fair Work Ombudsman requires employers to keep employee payroll and time-and-wages records for 7 years LEGISLATION Section 286 of the Corporations Act 2001 ATO digital records are fully accepted and encouraged ATO you need a 12-week logbook recording every trip This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions How long must I keep business records? For tax purposes, business records must generally be kept for five years from the date of lodgement of the relevant return. However, two rules override this: the Fair Work Ombudsman requires employers to keep payroll and time-and-wages records for 7 years, and under Section 286 of the Corporations Act 2001, companies (Pty Ltd) must retain financial records for 7 years. If you operate as a company or have employees, keep records for at least 7 years to satisfy all regulators. Some records — relating to capital gains, depreciation, or disputes — may need to be kept longer. What records do I need for my small business? Are digital records acceptable to the ATO? Do I need a logbook for vehicle claims? How do good records reduce my tax? How do I get matched with a bookkeeper to set up records? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2758,
+  "inSitemap": true
+}

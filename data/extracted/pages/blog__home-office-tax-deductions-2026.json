@@ -1,0 +1,497 @@
+{
+  "path": "/blog/home-office-tax-deductions-2026",
+  "extractedAt": "2026-10-02T09:03:05.450Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/home-office-tax-deductions-2026",
+  "title": "Working From Home Tax Deductions 2026 — What You Can Claim | Your Accountant Match",
+  "metaDescription": "A guide to working from home tax deductions for 2025-26. The fixed-rate method, actual cost method, record-keeping rules and what you can and can't claim.",
+  "canonical": "http://localhost:4173/blog/home-office-tax-deductions-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Working From Home Tax Deductions 2026 — What You Can Claim | Your Accountant Match",
+    "og:description": "A guide to working from home tax deductions for 2025-26. The fixed-rate method, actual cost method, record-keeping rules and what you can and can't claim.",
+    "og:url": "http://localhost:4173/blog/home-office-tax-deductions-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Working From Home Tax Deductions 2026 — What You Can Claim | Your Accountant Match",
+    "twitter:description": "A guide to working from home tax deductions for 2025-26. The fixed-rate method, actual cost method, record-keeping rules and what you can and can't claim.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much is the fixed-rate for working from home in 2025-26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fixed-rate method allows you to claim 70 cents per hour worked from home. This covers energy, phone, internet, stationery and computer consumables. You must keep a record of all hours worked from home for the year and at least one bill for each covered expense."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim my internet and phone if I work from home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but how depends on your method. Under the fixed-rate method, phone and internet are included in the 70 cents per hour and can't be claimed separately. Under the actual cost method, you apportion your phone and internet bills based on work use and claim that portion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim my desk and computer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the decline in value (depreciation) of items like a desk, computer, monitor and office chair can be claimed separately under both methods, based on the percentage of work use. Keep receipts showing the purchase price and date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim rent or mortgage interest for my home office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Rent, mortgage interest, council rates and home insurance are private expenses and cannot be claimed as working from home deductions, regardless of which method you use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a diary of hours worked from home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes for both methods. The fixed-rate method requires a record of all hours worked from home for the entire year. The actual cost method requires a diary to establish your work-use pattern for apportioning expenses. Estimates without records are not accepted by the ATO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I make sure I claim the right amount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A registered tax agent can calculate your deduction under both methods and tell you which gives the better result. Complete our 60-second questionnaire and we'll match you with a vetted tax agent in your area. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Deductions",
+          "item": "/blog/home-office-tax-deductions-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Working From Home Tax Deductions 2026: What You Can Claim",
+      "description": "A guide to working from home tax deductions for 2025-26. The fixed-rate method, actual cost method, record-keeping rules and what you can and can't claim.",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/home-office-tax-deductions-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/meals-entertainment-and-functions/meals-and-snacks"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/tools-computers-and-items-you-use-for-work/office-furniture-and-equipment"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Home office and working from home deductions",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Working From Home Tax Deductions 2026: What You Can Claim"
+    },
+    {
+      "level": 2,
+      "text": "Working From Home Tax Deductions 2026: What You Can Claim"
+    },
+    {
+      "level": 3,
+      "text": "The fixed-rate method"
+    },
+    {
+      "level": 3,
+      "text": "The actual cost method"
+    },
+    {
+      "level": 3,
+      "text": "Records you must keep"
+    },
+    {
+      "level": 3,
+      "text": "What you can't claim"
+    },
+    {
+      "level": 3,
+      "text": "Which method is right for you?"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Working From Home Tax Deductions 2026: What You Can Claim",
+      "images": 0,
+      "text": "Home/Blog/DeductionsDeductions6 min readWorking From Home Tax Deductions 2026: What You Can ClaimIf you work from home — even part of the week — you may be able to claim a deduction for the running costs of your home office. The ATO offers two methods: a fixed-rate method and an actual cost method. Each has different record-keeping requirements, and choosing the right one depends on your circumstances. This guide explains both methods for the 2025-26 income year so you can claim what you're entitled to without triggering an ATO review.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEWorking From Home Tax Deductions 2026: What You Can ClaimThe fixed-rate methodUnder the fixed-rate method, you claim 70 cents per hour worked from home. This rate covers the energy expenses (electricity and gas), phone usage, internet, stationery and computer consumables. You can't separately claim any of those items if you use this method. You can still separately claim the decline in value of items like a desk, computer or office chair. To use this method you must keep a record of the hours worked from home for the entire year (a diary or timesheet) and at least one bill for each of the covered expenses in your name.The actual cost methodUnder the actual cost method, you calculate the real portion of your running expenses used for work. This means apportioning your electricity, gas, phone, internet and the decline in value of furniture and equipment based on work use. This method can yield a higher deduction if your actual costs are high, but it requires detailed records — bills, a diary of hours, and calculations of the work-use percentage for each expense. You must keep receipts for all claimed items.Records you must keepWhichever method you choose, record-keeping is non-negotiable. For the fixed-rate method, keep a log of hours worked from home for the full year and one bill for each covered expense. For the actual cost method, keep all relevant bills and receipts and a diary showing your work-use pattern. The ATO has increased its focus on working from home claims, so records that show how you calculated your deduction are essential if you're reviewed.What you can't claimYou cannot claim the cost of coffee, snacks or general household items, even if you consume them while working. You can't claim rent, mortgage interest, rates or insurance for your home (these are private expenses). You also can't claim the cost of standard clothing or the cost of getting to and from home if home is your main place of work. Claiming items that are clearly private is one of the fastest ways to attract ATO attention.Which method is right for you?If your home office costs are modest and you want simplicity, the fixed-rate method is usually the better choice. If you have significant work-related expenses — a dedicated office with high energy use, expensive equipment, or heavy phone and internet use — the actual cost method may give a larger deduction. A registered tax agent can calculate both and tell you which delivers the better result for your situation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO70 cents per hour worked from homeATOthe fixed-rate methodATOYou cannot claim the cost of coffee, snacks or general household items, even if you consume them while working.ATOYes — the decline in value (depreciation) of items like a desk, computer, monitor and office chair can be claimed separately under both methods, based on the percentage of work use. Keep receipts showing the purchase price and date.ATONo. Rent, mortgage interest, council rates and home insurance are private expenses and cannot be claimedThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsHow much is the fixed-rate for working from home in 2025-26?The fixed-rate method allows you to claim 70 cents per hour worked from home. This covers energy, phone, internet, stationery and computer consumables. You must keep a record of all hours worked from home for the year and at least one bill for each covered expense.Can I claim my internet and phone if I work from home?Can I claim my desk and computer?Can I claim rent or mortgage interest for my home office?Do I need a diary of hours worked from home?How do I make sure I claim the right amount?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method",
+      "text": "the fixed-rate method"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses",
+      "text": "70 cents per hour worked from home"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method",
+      "text": "the fixed-rate method"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/meals-entertainment-and-functions/meals-and-snacks",
+      "text": "You cannot claim the cost of coffee, snacks or general household items, even if you consume them while working."
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method",
+      "text": "the fixed-rate method"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses",
+      "text": "ATO70 cents per hour worked from home"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method",
+      "text": "ATOthe fixed-rate method"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/meals-entertainment-and-functions/meals-and-snacks",
+      "text": "ATOYou cannot claim the cost of coffee, snacks or general household items, even if you consume them while working."
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/tools-computers-and-items-you-use-for-work/office-furniture-and-equipment",
+      "text": "ATOYes — the decline in value (depreciation) of items like a desk, computer, monitor and office chair can be claimed separately under both methods, based on the percentage of work use. Keep receipts showing the purchase price and date."
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses",
+      "text": "ATONo. Rent, mortgage interest, council rates and home insurance are private expenses and cannot be claimed"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method",
+      "text": "The fixed-rate method"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/DeductionsDeductions6 min readWorking From Home Tax Deductions 2026: What You Can ClaimIf you work from home — even part of the week — you may be able to claim a deduction for the running costs of your home office. The ATO offers two methods: a fixed-rate method and an actual cost method. Each has different record-keeping requirements, and choosing the right one depends on your circumstances. This guide explains both methods for the 2025-26 income year so you can claim what you're entitled to without triggering an ATO review.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLEWorking From Home Tax Deductions 2026: What You Can ClaimThe fixed-rate methodUnder the fixed-rate method, you claim 70 cents per hour worked from home. This rate covers the energy expenses (electricity and gas), phone usage, internet, stationery and computer consumables. You can't separately claim any of those items if you use this method. You can still separately claim the decline in value of items like a desk, computer or office chair. To use this method you must keep a record of the hours worked from home for the entire year (a diary or timesheet) and at least one bill for each of the covered expenses in your name.The actual cost methodUnder the actual cost method, you calculate the real portion of your running expenses used for work. This means apportioning your electricity, gas, phone, internet and the decline in value of furniture and equipment based on work use. This method can yield a higher deduction if your actual costs are high, but it requires detailed records — bills, a diary of hours, and calculations of the work-use percentage for each expense. You must keep receipts for all claimed items.Records you must keepWhichever method you choose, record-keeping is non-negotiable. For the fixed-rate method, keep a log of hours worked from home for the full year and one bill for each covered expense. For the actual cost method, keep all relevant bills and receipts and a diary showing your work-use pattern. The ATO has increased its focus on working from home claims, so records that show how you calculated your deduction are essential if you're reviewed.What you can't claimYou cannot claim the cost of coffee, snacks or general household items, even if you consume them while working. You can't claim rent, mortgage interest, rates or insurance for your home (these are private expenses). You also can't claim the cost of standard clothing or the cost of getting to and from home if home is your main place of work. Claiming items that are clearly private is one of the fastest ways to attract ATO attention.Which method is right for you?If your home office costs are modest and you want simplicity, the fixed-rate method is usually the better choice. If you have significant work-related expenses — a dedicated office with high energy use, expensive equipment, or heavy phone and internet use — the actual cost method may give a larger deduction. A registered tax agent can calculate both and tell you which delivers the better result for your situation.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO70 cents per hour worked from homeATOthe fixed-rate methodATOYou cannot claim the cost of coffee, snacks or general household items, even if you consume them while working.ATOYes — the decline in value (depreciation) of items like a desk, computer, monitor and office chair can be claimed separately under both methods, based on the percentage of work use. Keep receipts showing the purchase price and date.ATONo. Rent, mortgage interest, council rates and home insurance are private expenses and cannot be claimedThis article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsHow much is the fixed-rate for working from home in 2025-26?The fixed-rate method allows you to claim 70 cents per hour worked from home. This covers energy, phone, internet, stationery and computer consumables. You must keep a record of all hours worked from home for the year and at least one bill for each covered expense.Can I claim my internet and phone if I work from home?Can I claim my desk and computer?Can I claim rent or mortgage interest for my home office?Do I need a diary of hours worked from home?How do I make sure I claim the right amount?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Deductions DEDUCTIONS 6 min read Working From Home Tax Deductions 2026: What You Can Claim If you work from home — even part of the week — you may be able to claim a deduction for the running costs of your home office. The ATO offers two methods: a fixed-rate method and an actual cost method. Each has different record-keeping requirements, and choosing the right one depends on your circumstances. This guide explains both methods for the 2025-26 income year so you can claim what you're entitled to without triggering an ATO review. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Working From Home Tax Deductions 2026: What You Can Claim The fixed-rate method Under the fixed-rate method, you claim 70 cents per hour worked from home. This rate covers the energy expenses (electricity and gas), phone usage, internet, stationery and computer consumables. You can't separately claim any of those items if you use this method. You can still separately claim the decline in value of items like a desk, computer or office chair. To use this method you must keep a record of the hours worked from home for the entire year (a diary or timesheet) and at least one bill for each of the covered expenses in your name. The actual cost method Under the actual cost method, you calculate the real portion of your running expenses used for work. This means apportioning your electricity, gas, phone, internet and the decline in value of furniture and equipment based on work use. This method can yield a higher deduction if your actual costs are high, but it requires detailed records — bills, a diary of hours, and calculations of the work-use percentage for each expense. You must keep receipts for all claimed items. Records you must keep Whichever method you choose, record-keeping is non-negotiable. For the fixed-rate method, keep a log of hours worked from home for the full year and one bill for each covered expense. For the actual cost method, keep all relevant bills and receipts and a diary showing your work-use pattern. The ATO has increased its focus on working from home claims, so records that show how you calculated your deduction are essential if you're reviewed. What you can't claim You cannot claim the cost of coffee, snacks or general household items, even if you consume them while working. You can't claim rent, mortgage interest, rates or insurance for your home (these are private expenses). You also can't claim the cost of standard clothing or the cost of getting to and from home if home is your main place of work. Claiming items that are clearly private is one of the fastest ways to attract ATO attention. Which method is right for you? If your home office costs are modest and you want simplicity, the fixed-rate method is usually the better choice. If you have significant work-related expenses — a dedicated office with high energy use, expensive equipment, or heavy phone and internet use — the actual cost method may give a larger deduction. A registered tax agent can calculate both and tell you which delivers the better result for your situation. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO 70 cents per hour worked from home ATO the fixed-rate method ATO You cannot claim the cost of coffee, snacks or general household items, even if you consume them while working. ATO Yes — the decline in value (depreciation) of items like a desk, computer, monitor and office chair can be claimed separately under both methods, based on the percentage of work use. Keep receipts showing the purchase price and date. ATO No. Rent, mortgage interest, council rates and home insurance are private expenses and cannot be claimed This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions How much is the fixed-rate for working from home in 2025-26? The fixed-rate method allows you to claim 70 cents per hour worked from home. This covers energy, phone, internet, stationery and computer consumables. You must keep a record of all hours worked from home for the year and at least one bill for each covered expense. Can I claim my internet and phone if I work from home? Can I claim my desk and computer? Can I claim rent or mortgage interest for my home office? Do I need a diary of hours worked from home? How do I make sure I claim the right amount? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2859,
+  "inSitemap": true
+}

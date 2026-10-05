@@ -1,0 +1,59 @@
+// Site-wide wording updates, applied to every page's text when it is loaded (and to the structured data, so FAQ markup
+// always matches what visitors read). The original extracted text in /data is never edited; change or remove a rule here
+// to change or undo it.
+//
+// Message used everywhere: visitors are "matched to one of our partner accountants".
+// Approved credential claim: "Every accountant in our network is TPB-registered and a member of CA ANZ, CPA Australia or the IPA."
+
+export const CREDENTIAL = "Every accountant in our network is TPB-registered and a member of CA ANZ, CPA Australia or the IPA.";
+
+type Rule = [RegExp, string];
+
+export const RULES: Rule[] = [
+  // ---- one match → matched to one of our partner accountants ----
+  [/we[’']ll match you with only one accountant from our partner network in your area/g, "you’ll be matched to one of our partner accountants in your area"],
+  [/we match you with one vetted accountant in our network who understands/g, "you’re matched to one of our partner accountants who understands"],
+  [/We match you with an accountant that fits your needs/g, "You’re matched to one of our partner accountants"],
+  [/We match you with a vetted local accountant/g, "You’re matched to one of our partner accountants"],
+  [/we will match you with a vetted [^,.]*? accountant whose/g, "you will be matched to one of our partner accountants whose"],
+  [/We match you to an accountant who works in the part of/g, "You’re matched to one of our partner accountants who work in the part of"],
+  [/we match you with trusted .+? accounting specialists who get/g, "you’re matched to one of our partner accountants who get"],
+  [/we[’']ll match you with a vetted accountant from our partner network whose/g, "you’ll be matched to one of our partner accountants whose"],
+  [/get matched with a vetted accountant suited to/g, "get matched to one of our partner accountants suited to"],
+  [/only to match you with a suitable accountant in our network/g, "only to match you to one of our partner accountants"],
+  [/beyond the single firm you are matched with/g, "beyond the partner accountant you are matched to"],
+
+  [/we[’']ll match you with one (?:suitable )?vetted accountant/g, "you’ll be matched to one of our partner accountants"],
+
+  // ---- credentials ----
+  // "Every / All / Our … accountants hold active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the TPB."
+  [/(?:Every|All|Our)[^.]*?active membership with recognised peak bodies \(such as CPA Australia or the NTAA\) and registration with the Tax Practitioners Board \(TPB\)\./g, CREDENTIAL],
+  [/We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax (?:&|&amp;) Accountants' Association \(NTAA\), and Tax Practitioners Board \(TPB\) registration where the firm lodges returns or BAS for a fee\./g, `We verify professional memberships and registrations before an accountant joins our network. ${CREDENTIAL}`],
+];
+
+export function applyWording(s: string): string {
+  let out = s;
+  for (const [re, to] of RULES) out = out.replace(re, to);
+  return out;
+}
+
+/** Applies the rules to every text field of a loaded page (in place). */
+const TEXT_KEYS = new Set(["html", "text", "aText", "a", "q", "alt", "placeholder"]);
+export function applyWordingDeep(x: unknown): void {
+  if (Array.isArray(x)) {
+    for (let i = 0; i < x.length; i++) {
+      if (typeof x[i] === "string") x[i] = applyWording(x[i]);
+      else applyWordingDeep(x[i]);
+    }
+  } else if (x && typeof x === "object") {
+    const o = x as Record<string, unknown>;
+    for (const k of Object.keys(o)) {
+      const v = o[k];
+      if (typeof v === "string") {
+        if (TEXT_KEYS.has(k)) o[k] = applyWording(v);
+      } else if (k === "parts" || k === "lines" || k === "fixed") {
+        applyWordingDeep(v);
+      } else applyWordingDeep(v);
+    }
+  }
+}

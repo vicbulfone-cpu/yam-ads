@@ -1,0 +1,521 @@
+{
+  "path": "/blog/tax-planning-strategies-2026",
+  "extractedAt": "2026-10-02T09:03:02.469Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/blog/tax-planning-strategies-2026",
+  "title": "Tax Planning Strategies 2026 — 8 Legitimate Ways to Reduce Tax | Your Accountant Match",
+  "metaDescription": "Eight legitimate tax planning strategies for 2026 — super, asset write-offs, timing income, structuring and prepayments. Stay compliant, reduce tax.",
+  "canonical": "http://localhost:4173/blog/tax-planning-strategies-2026",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "article",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Tax Planning Strategies 2026 — 8 Legitimate Ways to Reduce Tax | Your Accountant Match",
+    "og:description": "Eight legitimate tax planning strategies for 2026 — super, asset write-offs, timing income, structuring and prepayments. Stay compliant, reduce tax.",
+    "og:url": "http://localhost:4173/blog/tax-planning-strategies-2026",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/042200f2-bfc3-4613-8ced-76000a2a689c.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Tax Planning Strategies 2026 — 8 Legitimate Ways to Reduce Tax | Your Accountant Match",
+    "twitter:description": "Eight legitimate tax planning strategies for 2026 — super, asset write-offs, timing income, structuring and prepayments. Stay compliant, reduce tax.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the concessional super cap for 2025-26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The concessional (pre-tax) super contribution cap is $30,000 for 2025-26. To claim a personal deduction, the contribution must be received by your fund before 30 June 2026 and you must lodge a valid notice of intent to claim."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I prepay expenses to reduce my tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — small businesses can prepay deductible expenses up to 12 months in advance and claim the deduction in the current year. This is useful if your income is higher this year than you expect next year. The prepayment must be genuine and for a real business expense."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I become a company to save tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your profit, risk and growth plans. A company taxes profits at 25% (for base-rate entities) and offers limited liability, but adds compliance cost. A registered accountant can model both structures for your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I write off a bad debt for tax purposes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bad debts must be written off in your accounts before 30 June to be deductible in that financial year. Review your debtors before year-end and write off genuinely uncollectable amounts to reduce your taxable income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is tax planning legal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — legitimate tax planning uses established rules (super caps, write-offs, timing, structuring) to reduce tax. What's not allowed is aggressive tax avoidance or schemes designed solely to evade tax. A registered accountant ensures your planning stays within the rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get help with tax planning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete our 60-second questionnaire with your postcode and needs. We match you with a vetted accountant in your area who can review your position and advise on the steps to take before 30 June. The matching is free with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tax Planning",
+          "item": "/blog/tax-planning-strategies-2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax",
+      "description": "Eight legitimate tax planning strategies for 2026 — super, asset write-offs, timing income, structuring and prepayments. Stay compliant, reduce tax.",
+      "datePublished": "2026-05-20",
+      "dateModified": "2026-09-29",
+      "lastReviewed": "2026-09-29",
+      "author": {
+        "@type": "Person",
+        "@id": "https://youraccountantmatch.com.au/about#vic-bulfone",
+        "name": "Vic Bulfone",
+        "url": "https://youraccountantmatch.com.au/about",
+        "jobTitle": "Founder, Your Accountant Match",
+        "description": "Founder of Your Accountant Match with more than 19 years of experience working closely with members of the National Tax & Accountants' Association (NTAA) and accounting professionals across Australia.",
+        "knowsAbout": [
+          "Australian taxation",
+          "Accountant matching and referral",
+          "Small business tax compliance",
+          "BAS and GST lodgement",
+          "SMSF administration",
+          "Tax planning"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "National Tax & Accountants' Association (NTAA)",
+          "sameAs": "https://www.ntaa.com.au"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://youraccountantmatch.com.au/#organization",
+        "name": "Your Accountant Match",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youraccountantmatch.com.au/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://youraccountantmatch.com.au/blog/tax-planning-strategies-2026"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/law/view/print?DocID=SAV/DPE/00001"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/forms-and-instructions/deductions-for-prepaid-expenses-2022/small-business-entities"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-unrecoverable-income-bad-debts"
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://www.ato.gov.au/about-ato/tax-avoidance/understanding-tax-schemes/tax-schemes"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Tax planning and deductions",
+          "sameAs": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim"
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax"
+    },
+    {
+      "level": 2,
+      "text": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax"
+    },
+    {
+      "level": 3,
+      "text": "1. Maximise concessional super contributions"
+    },
+    {
+      "level": 3,
+      "text": "2. Time your income and expenses"
+    },
+    {
+      "level": 3,
+      "text": "3. Review your business structure"
+    },
+    {
+      "level": 3,
+      "text": "4. Use the instant asset write-off where eligible"
+    },
+    {
+      "level": 3,
+      "text": "5. Prepay deductible expenses"
+    },
+    {
+      "level": 3,
+      "text": "6. Write off bad debts before 30 June"
+    },
+    {
+      "level": 3,
+      "text": "7. Do a stocktake and write off obsolete stock"
+    },
+    {
+      "level": 3,
+      "text": "8. Document trust distribution resolutions"
+    },
+    {
+      "level": 2,
+      "text": "How We Vet the Accountants in Our Network"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "More Articles"
+    },
+    {
+      "level": 4,
+      "text": "BAS Due Dates 2026: When to Lodge and How to Prepare"
+    },
+    {
+      "level": 4,
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 October"
+    },
+    {
+      "level": 4,
+      "text": "Payday Super 2026: New Super Guarantee Timing for Employers"
+    },
+    {
+      "level": 4,
+      "text": "Company & Trust Tax Return Deadlines 2026"
+    },
+    {
+      "level": 4,
+      "text": "Available across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": null,
+      "heading": "Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax",
+      "images": 0,
+      "text": "Home/Blog/Tax PlanningTax Planning6 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxTax planning is about making legitimate moves before 30 June that reduce your taxable income — not aggressive schemes the ATO targets. For individuals and small businesses in the 2025-26 year, there are a handful of well-established strategies that, done properly with a registered accountant, can meaningfully reduce tax. This guide sets out eight legitimate approaches and explains when each one applies.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLETax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax1. Maximise concessional super contributionsConcessional (pre-tax) super contributions are deductible up to the annual cap — $30,000 for 2025-26. Contributing to your cap reduces your taxable income this year while building retirement savings. The contribution must be received by your fund before 30 June, and you must lodge a valid notice of intent to claim. For higher-income earners, this is often the single biggest legitimate tax saving available.2. Time your income and expensesIf you expect to earn less next year, bringing deductible expenses into this year (prepaying insurance, repairs, or subscriptions) and deferring income where legitimately possible smooths your tax across years. Conversely, if income will rise next year, deferring deductions may help. Timing must be genuine — you can't backdate invoices or fabricate transactions — but legitimate end-of-year planning is standard practice.3. Review your business structureIf you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities), which can be lower than your top personal rate. A trust can offer flexibility in how income is distributed. The decision depends on your income, risk and growth plans — a registered accountant can model both scenarios.4. Use the instant asset write-off where eligibleIf you're considering buying equipment, vehicles or other business assets, buying and installing them before 30 June can bring the deduction into this financial year. The instant asset write-off threshold and eligibility can change year to year, so confirm the current rules with your accountant before committing. The asset must be installed and ready for use by 30 June — ordering it is not enough.5. Prepay deductible expensesSmall businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year. This can be useful if your income is higher this year than you expect next year. Talk to your accountant about whether prepayment makes sense for your situation.6. Write off bad debts before 30 JuneBad debts must be written off in your accounts before 30 June to be deductible in that financial year. Reviewing your debtors before year-end and writing off genuinely uncollectable amounts reduces your taxable income. This requires a genuine decision to write off the debt — not just an estimate.7. Do a stocktake and write off obsolete stockIf you hold trading stock, a physical stocktake at 30 June is required where the value differs materially from opening stock. You can value stock at cost, market selling value, or replacement value. Writing off genuinely obsolete or damaged stock before 30 June reduces your taxable income and keeps your records accurate.8. Document trust distribution resolutionsFor discretionary trusts, the trustee must resolve how income will be distributed to beneficiaries by 30 June. Getting this documented in time ensures the distribution is effective for the year and can optimise the tax outcome for beneficiaries. A matched accountant can prepare the resolutions before year-end.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO$30,000 for 2025-26ATOIf you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities)ATOinstant asset write-off thresholdATOSmall businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year.ATOYes — small businesses can prepay deductible expenses up to 12 months in advance and claim the deduction in the current year.ATOBad debts must be written off in your accounts before 30 June to be deductible in that financial yearATOYes — legitimate tax planning uses established rules (super caps, write-offs, timing, structuring) to reduce tax.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the concessional super cap for 2025-26?The concessional (pre-tax) super contribution cap is $30,000 for 2025-26. To claim a personal deduction, the contribution must be received by your fund before 30 June 2026 and you must lodge a valid notice of intent to claim.Can I prepay expenses to reduce my tax?Should I become a company to save tax?When should I write off a bad debt for tax purposes?Is tax planning legal?How can I get help with tax planning?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 3,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "$30,000 for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+      "text": "If you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off",
+      "text": "instant asset write-off threshold"
+    },
+    {
+      "href": "https://www.ato.gov.au/law/view/print?DocID=SAV/DPE/00001",
+      "text": "Small businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year."
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "ATO$30,000 for 2025-26"
+    },
+    {
+      "href": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+      "text": "ATOIf you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities)"
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off",
+      "text": "ATOinstant asset write-off threshold"
+    },
+    {
+      "href": "https://www.ato.gov.au/law/view/print?DocID=SAV/DPE/00001",
+      "text": "ATOSmall businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year."
+    },
+    {
+      "href": "https://www.ato.gov.au/forms-and-instructions/deductions-for-prepaid-expenses-2022/small-business-entities",
+      "text": "ATOYes — small businesses can prepay deductible expenses up to 12 months in advance and claim the deduction in the current year."
+    },
+    {
+      "href": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-unrecoverable-income-bad-debts",
+      "text": "ATOBad debts must be written off in your accounts before 30 June to be deductible in that financial year"
+    },
+    {
+      "href": "https://www.ato.gov.au/about-ato/tax-avoidance/understanding-tax-schemes/tax-schemes",
+      "text": "ATOYes — legitimate tax planning uses established rules (super caps, write-offs, timing, structuring) to reduce tax."
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/investments-insurance-and-super/personal-super-contributions",
+      "text": "$30,000 for 2025-26"
+    },
+    {
+      "href": "/blog/bas-due-dates-2026",
+      "text": "BAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min read"
+    },
+    {
+      "href": "/blog/tax-return-deadlines-2026",
+      "text": "Individual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog/payday-super-deadlines-2026",
+      "text": "Payday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min read"
+    },
+    {
+      "href": "/blog/company-trust-return-deadlines-2026",
+      "text": "Company & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min read"
+    },
+    {
+      "href": "/blog",
+      "text": "Browse all articles"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Blog/Tax PlanningTax Planning6 min readTax Planning Strategies 2026: 8 Legitimate Ways to Reduce TaxTax planning is about making legitimate moves before 30 June that reduce your taxable income — not aggressive schemes the ATO targets. For individuals and small businesses in the 2025-26 year, there are a handful of well-established strategies that, done properly with a registered accountant, can meaningfully reduce tax. This guide sets out eight legitimate approaches and explains when each one applies.VBWritten byVic BulfoneFounder, Your Accountant MatchLast reviewed29 September 2026Last verified against ATO guidance 29 September 2026Find My AccountantIN THIS ARTICLETax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax1. Maximise concessional super contributionsConcessional (pre-tax) super contributions are deductible up to the annual cap — $30,000 for 2025-26. Contributing to your cap reduces your taxable income this year while building retirement savings. The contribution must be received by your fund before 30 June, and you must lodge a valid notice of intent to claim. For higher-income earners, this is often the single biggest legitimate tax saving available.2. Time your income and expensesIf you expect to earn less next year, bringing deductible expenses into this year (prepaying insurance, repairs, or subscriptions) and deferring income where legitimately possible smooths your tax across years. Conversely, if income will rise next year, deferring deductions may help. Timing must be genuine — you can't backdate invoices or fabricate transactions — but legitimate end-of-year planning is standard practice.3. Review your business structureIf you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities), which can be lower than your top personal rate. A trust can offer flexibility in how income is distributed. The decision depends on your income, risk and growth plans — a registered accountant can model both scenarios.4. Use the instant asset write-off where eligibleIf you're considering buying equipment, vehicles or other business assets, buying and installing them before 30 June can bring the deduction into this financial year. The instant asset write-off threshold and eligibility can change year to year, so confirm the current rules with your accountant before committing. The asset must be installed and ready for use by 30 June — ordering it is not enough.5. Prepay deductible expensesSmall businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year. This can be useful if your income is higher this year than you expect next year. Talk to your accountant about whether prepayment makes sense for your situation.6. Write off bad debts before 30 JuneBad debts must be written off in your accounts before 30 June to be deductible in that financial year. Reviewing your debtors before year-end and writing off genuinely uncollectable amounts reduces your taxable income. This requires a genuine decision to write off the debt — not just an estimate.7. Do a stocktake and write off obsolete stockIf you hold trading stock, a physical stocktake at 30 June is required where the value differs materially from opening stock. You can value stock at cost, market selling value, or replacement value. Writing off genuinely obsolete or damaged stock before 30 June reduces your taxable income and keeps your records accurate.8. Document trust distribution resolutionsFor discretionary trusts, the trustee must resolve how income will be distributed to beneficiaries by 30 June. Getting this documented in time ensures the distribution is effective for the year and can optimise the tax outcome for beneficiaries. A matched accountant can prepare the resolutions before year-end.Sources & Official GuidanceThis article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source.ATO$30,000 for 2025-26ATOIf you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities)ATOinstant asset write-off thresholdATOSmall businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year.ATOYes — small businesses can prepay deductible expenses up to 12 months in advance and claim the deduction in the current year.ATOBad debts must be written off in your accounts before 30 June to be deductible in that financial yearATOYes — legitimate tax planning uses established rules (super caps, write-offs, timing, structuring) to reduce tax.This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent.Vetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGHow We Vet the Accountants in Our NetworkBefore any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make.Verified professional membershipsWe verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee.Stringent vetting & complianceEach partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsWhat is the concessional super cap for 2025-26?The concessional (pre-tax) super contribution cap is $30,000 for 2025-26. To claim a personal deduction, the contribution must be received by your fund before 30 June 2026 and you must lodge a valid notice of intent to claim.Can I prepay expenses to reduce my tax?Should I become a company to save tax?When should I write off a bad debt for tax purposes?Is tax planning legal?How can I get help with tax planning?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREMore ArticlesMore tax and accounting insights you may find usefulBAS Due Dates 2026: When to Lodge and How to PrepareEvery BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late.5 min readIndividual Tax Return Deadlines 2026: Don't Miss 31 OctoberThe 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026.5 min readPayday Super 2026: New Super Guarantee Timing for EmployersFrom 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong.5 min readCompany & Trust Tax Return Deadlines 2026Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026.5 min readBrowse all articlesAvailable across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaBlogGuidesLocationsPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Blog / Tax Planning TAX PLANNING 6 min read Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax Tax planning is about making legitimate moves before 30 June that reduce your taxable income — not aggressive schemes the ATO targets. For individuals and small businesses in the 2025-26 year, there are a handful of well-established strategies that, done properly with a registered accountant, can meaningfully reduce tax. This guide sets out eight legitimate approaches and explains when each one applies. VB WRITTEN BY Vic Bulfone Founder, Your Accountant Match LAST REVIEWED 29 September 2026 Last verified against ATO guidance 29 September 2026 IN THIS ARTICLE Tax Planning Strategies 2026: 8 Legitimate Ways to Reduce Tax 1. Maximise concessional super contributions Concessional (pre-tax) super contributions are deductible up to the annual cap — $30,000 for 2025-26. Contributing to your cap reduces your taxable income this year while building retirement savings. The contribution must be received by your fund before 30 June, and you must lodge a valid notice of intent to claim. For higher-income earners, this is often the single biggest legitimate tax saving available. 2. Time your income and expenses If you expect to earn less next year, bringing deductible expenses into this year (prepaying insurance, repairs, or subscriptions) and deferring income where legitimately possible smooths your tax across years. Conversely, if income will rise next year, deferring deductions may help. Timing must be genuine — you can't backdate invoices or fabricate transactions — but legitimate end-of-year planning is standard practice. 3. Review your business structure If you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities), which can be lower than your top personal rate. A trust can offer flexibility in how income is distributed. The decision depends on your income, risk and growth plans — a registered accountant can model both scenarios. 4. Use the instant asset write-off where eligible If you're considering buying equipment, vehicles or other business assets, buying and installing them before 30 June can bring the deduction into this financial year. The instant asset write-off threshold and eligibility can change year to year, so confirm the current rules with your accountant before committing. The asset must be installed and ready for use by 30 June — ordering it is not enough. 5. Prepay deductible expenses Small businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year. This can be useful if your income is higher this year than you expect next year. Talk to your accountant about whether prepayment makes sense for your situation. 6. Write off bad debts before 30 June Bad debts must be written off in your accounts before 30 June to be deductible in that financial year. Reviewing your debtors before year-end and writing off genuinely uncollectable amounts reduces your taxable income. This requires a genuine decision to write off the debt — not just an estimate. 7. Do a stocktake and write off obsolete stock If you hold trading stock, a physical stocktake at 30 June is required where the value differs materially from opening stock. You can value stock at cost, market selling value, or replacement value. Writing off genuinely obsolete or damaged stock before 30 June reduces your taxable income and keeps your records accurate. 8. Document trust distribution resolutions For discretionary trusts, the trustee must resolve how income will be distributed to beneficiaries by 30 June. Getting this documented in time ensures the distribution is effective for the year and can optimise the tax outcome for beneficiaries. A matched accountant can prepare the resolutions before year-end. SOURCES & OFFICIAL GUIDANCE This article cites the following official sources. We are not the author of these documents — they are published by the Australian Government and government agencies. Always verify the current rules directly with the source. ATO $30,000 for 2025-26 ATO If you're a sole trader earning strong profits, a company structure may tax some profit at the company rate (25% for base-rate entities) ATO instant asset write-off threshold ATO Small businesses and some individuals can prepay deductible expenses (such as insurance, rent, or subscriptions) up to 12 months in advance and claim the deduction in the current year. ATO Yes — small businesses can prepay deductible expenses up to 12 months in advance and claim the deduction in the current year. ATO Bad debts must be written off in your accounts before 30 June to be deductible in that financial year ATO Yes — legitimate tax planning uses established rules (super caps, write-offs, timing, structuring) to reduce tax. This article explains how ATO rules work and cites official ATO guidance. It is general information, not tax advice. For advice on your situation, speak to a registered tax agent. Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING How We Vet the Accountants in Our Network Before any firm joins our network, we confirm their credentials and ongoing compliance. This guide explains exactly what we check — so you understand the standard behind every match we make. Verified professional memberships We verify professional memberships and registrations before a firm is listed — CPA Australia, the National Tax & Accountants' Association (NTAA), and Tax Practitioners Board (TPB) registration where the firm lodges returns or BAS for a fee. Stringent vetting & compliance Each partner clears a background and qualification review at onboarding, and we re-check their registration status periodically. Firms whose registration lapses are removed from the network until it is reinstated. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions What is the concessional super cap for 2025-26? The concessional (pre-tax) super contribution cap is $30,000 for 2025-26. To claim a personal deduction, the contribution must be received by your fund before 30 June 2026 and you must lodge a valid notice of intent to claim. Can I prepay expenses to reduce my tax? Should I become a company to save tax? When should I write off a bad debt for tax purposes? Is tax planning legal? How can I get help with tax planning? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE More Articles More tax and accounting insights you may find useful BAS Due Dates 2026: When to Lodge and How to Prepare Every BAS due date for 2026 — monthly and quarterly cycles, the extra time registered agents receive, and what happens if you lodge late. 5 min read Individual Tax Return Deadlines 2026: Don't Miss 31 October The 31 October deadline for self-lodgers, the May extension for registered tax agents, and what happens if you lodge late — explained for 2026. 5 min read Payday Super 2026: New Super Guarantee Timing for Employers From 1 July 2026, Payday Super replaces quarterly super contributions. What employers must pay each payday, the 7-business-day rule, and the penalties for getting it wrong. 5 min read Company & Trust Tax Return Deadlines 2026 Company and trust returns are generally due by 15 January, trust distributions by 30 June, and ASIC annual reviews on the company's registration anniversary — all explained for 2026. 5 min read Browse all articles Available across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Blog Guides Locations Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2845,
+  "inSitemap": true
+}

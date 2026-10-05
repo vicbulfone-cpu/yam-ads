@@ -1,0 +1,558 @@
+{
+  "path": "/accountant/business-structures",
+  "extractedAt": "2026-10-02T09:01:00.986Z",
+  "httpStatusOfShell": 200,
+  "accordionsOpened": 0,
+  "finalPath": "/accountant/business-structures",
+  "title": "Business Structuring Advice — Sole Trader, Company, Trust Setup | Your Accountant Match",
+  "metaDescription": "Business structuring accountant matching — free. Get a local specialist for sole trader, company, trust or partnership setup. Protect assets, optimise tax.",
+  "canonical": "http://localhost:4173/accountant/business-structures",
+  "robots": [
+    "index, follow"
+  ],
+  "hreflang": [],
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Your Accountant Match",
+    "og:locale": "en_AU",
+    "og:title": "Business Structuring Advice — Sole Trader, Company, Trust Setup | Your Accountant Match",
+    "og:description": "Business structuring accountant matching — free. Get a local specialist for sole trader, company, trust or partnership setup. Protect assets, optimise tax.",
+    "og:url": "http://localhost:4173/accountant/business-structures",
+    "og:image": "https://vibe.filesafe.space/1790763394443647974/assets/c693d246-e356-47ab-9f77-30c7fb660606.png"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@YourAcctMatchAU",
+    "twitter:title": "Business Structuring Advice — Sole Trader, Company, Trust Setup | Your Accountant Match",
+    "twitter:description": "Business structuring accountant matching — free. Get a local specialist for sole trader, company, trust or partnership setup. Protect assets, optimise tax.",
+    "twitter:image": "https://vibe.filesafe.space/1790763394443647974/assets/c2e03f4c-ebf5-4852-bc89-f4fb9e3c6e64.png"
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Business Structures Matching Service",
+      "description": "Business structuring accountant matching — free. Get a local specialist for sole trader, company, trust or partnership setup. Protect assets, optimise tax.",
+      "serviceType": "Business Structures",
+      "provider": {
+        "@type": "Organization",
+        "name": "Your Accountant Match",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Business Structures",
+          "item": "/accountant/business-structures"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best structure for a new business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best structure — it depends on your income, growth, asset exposure, and succession plans. A sole trader is cheapest but exposes personal assets; a company limits liability but adds administration; a trust offers flexibility but has distribution rules. The matched adviser assesses your situation and recommends the right structure — not a generic 'everyone should be a company' answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change my business structure later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but a restructure can trigger CGT if not done under a rollover. Small-business CGT concessions and entity rollovers can preserve the position, but the conditions must be met precisely. The matched adviser plans the restructure to preserve concessions and avoid a taxable event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a trust protect my assets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A discretionary trust can offer asset protection because beneficiaries do not own trust assets directly. But protection depends on the deed, your role, and how distributions are made. The matched adviser reviews your deed and structuring to ensure protection is genuine — not a label that fails under scrutiny."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does structuring advice cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A structure review and recommendation is typically $500–$2,000; a full entity establishment with registrations is usually $1,000–$3,000. The matched adviser gives you a clear quote after reviewing your situation — the matching is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will a matched structuring adviser contact me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most matches are completed within 60 seconds of finishing the questionnaire. Your matched firm will typically reach out within 2 hours, or you can call for immediate assistance to discuss your structuring needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a structuring adviser help with a partnership or joint venture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched adviser structures partnership and joint-venture agreements, advises on profit-sharing and contribution terms, and ensures the entity type and deed support your commercial arrangement while protecting each party."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is business structuring matching free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matching service is free for individuals and businesses. We are engaged by the accounting firms in our network, not by you. You are under no obligation to proceed with any matched firm, and the matched adviser gives you a clear quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a structuring adviser help with succession planning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The matched adviser structures your entities for exit-readiness — ensuring buy-sell agreements, share transfers and CGT concessions are set up correctly well before a sale or handover, so you maximise value and minimise tax on exit."
+          }
+        }
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Find Business Structuring Advice Near You"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 3,
+      "text": "Your perfect match starts here — What do you need help with?"
+    },
+    {
+      "level": 2,
+      "text": "Business Structures — what we can help with"
+    },
+    {
+      "level": 3,
+      "text": "Sole trader vs company vs trust"
+    },
+    {
+      "level": 3,
+      "text": "Restructuring without triggering CGT"
+    },
+    {
+      "level": 3,
+      "text": "Asset protection and risk"
+    },
+    {
+      "level": 2,
+      "text": "Business Structures services we match"
+    },
+    {
+      "level": 2,
+      "text": "Trust and vetting standards for Business Structures Partners"
+    },
+    {
+      "level": 3,
+      "text": "Verified professional memberships"
+    },
+    {
+      "level": 3,
+      "text": "Stringent vetting & compliance"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Ready to find your accountant?"
+    },
+    {
+      "level": 3,
+      "text": "Other Matching Services"
+    },
+    {
+      "level": 4,
+      "text": "Business Structures matching across Australia"
+    },
+    {
+      "level": 2,
+      "text": "All Cities We Service"
+    }
+  ],
+  "blocks": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "tag": "header",
+      "id": null,
+      "heading": null,
+      "images": 1,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": null,
+      "heading": "Find Business Structuring Advice Near You",
+      "images": 15,
+      "text": "Find Business Structuring Advice Near YouFree matching serviceVetted accountantsNo obligationChoosing the right structure — sole trader, company, trust, partnership — affects your tax, asset protection and succession options for years. Your Accountant Match connects you with a local accountant who specialises in entity set-up and restructuring for tax efficiency. Tell us what you need and your postcode, and we will match you with a qualified adviser who fits your needs. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": null,
+      "heading": "Business Structures — what we can help with",
+      "images": 0,
+      "text": "SPECIALIST NETWORKBusiness Structures — what we can help withSole trader vs company vs trustSole trader is the simplest but exposes your personal assets and caps your tax planning. A company limits liability but introduces administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. The right structure depends on your income, growth plans, asset exposure, and succession intentions — not a template.Restructuring without triggering CGTMoving from one structure to another (sole trader to company, company to trust) can trigger a CGT event if done naively. Rollover relief exists under specific conditions — the small-business rollover, replacement-asset rollover, and entity restructuring — but the conditions must be met precisely. Our matched firms execute restructures cleanly, preserving CGT concessions where available.Asset protection and riskIf you hold significant assets (property, investments, IP), the right structure can protect them from business risk. Trading in a company while holding assets in a trust or separate entity is a common protective pattern. Our matched advisers assess your risk profile and structure for protection — not just tax."
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "id": null,
+      "heading": "Business Structures services we match",
+      "images": 0,
+      "text": "WHAT WE MATCHBusiness Structures services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Sole trader vs company vs trust analysisEntity establishment & registrationCGT-protected restructuring & rolloversAsset-protection structuringPartnership & joint-venture agreementsTrust deed review & variationSuccession & exit-ready structuringMulti-entity group structuring"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Vetted, Registered AgentsFree, No ObligationAustralia-Wide"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "id": null,
+      "heading": "Trust and vetting standards for Business Structures Partners",
+      "images": 0,
+      "text": "TRUST & VETTINGTrust and vetting standards for Business Structures PartnersEntrusting someone with your business structures needs means putting your finances in their hands. At Your Accountant Match, we hold every business structures specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll business structures professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery business structures partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPE"
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "id": null,
+      "heading": "Frequently Asked Questions",
+      "images": 0,
+      "text": "COMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What is the best structure for a new business?There is no single best structure — it depends on your income, growth, asset exposure, and succession plans. A sole trader is cheapest but exposes personal assets; a company limits liability but adds administration; a trust offers flexibility but has distribution rules. The matched adviser assesses your situation and recommends the right structure — not a generic 'everyone should be a company' answer.Can I change my business structure later?Does a trust protect my assets?How much does structuring advice cost?How quickly will a matched structuring adviser contact me?Can a structuring adviser help with a partnership or joint venture?Is business structuring matching free?Can a structuring adviser help with succession planning?"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "id": "find-accountant-cta",
+      "heading": "Ready to find your accountant?",
+      "images": 0,
+      "text": "Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligation"
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "id": null,
+      "heading": "Other Matching Services",
+      "images": 0,
+      "text": "EXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BAS"
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Business Structures matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "id": null,
+      "heading": null,
+      "images": 0,
+      "text": "Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services."
+    },
+    {
+      "index": 12,
+      "tag": "footer",
+      "id": null,
+      "heading": "All Cities We Service",
+      "images": 0,
+      "text": "Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved."
+    }
+  ],
+  "images": [
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/00b6994b-493e-4377-bbb9-bba58ac854d1.png",
+      "alt": "",
+      "width": "1627",
+      "height": "967"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/7e06348a-6a9d-4cb9-acce-be572fab695c.png",
+      "alt": "Your Accountant Match",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/259567ef-50b8-4565-8459-7b671f546662.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a4acb323-c460-4603-9d9a-7ab1e4f809e2.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/2039911c-b149-4f89-ba95-3b037c282559.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/af5746b6-3bb7-40ce-991e-21131813f9f3.png",
+      "alt": "Your perfect match starts here — What do you need help with?",
+      "width": "900",
+      "height": "260"
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/be69eb9d-9ee5-4ab1-a7a5-1033a6066af7.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/a6e743f9-7b30-4b87-9ef9-9cb837378e18.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/921d721b-f8b0-4bd6-ad0f-f08fb3fae0d9.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/1e220d65-b35f-43d1-b470-80644b043535.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    },
+    {
+      "src": "https://vibe.filesafe.space/1790763394443647974/attachments/febfc565-489e-49b4-b878-483a0b97b1ee.png",
+      "alt": "",
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "text": ""
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/how-we-select-accountants",
+      "text": "Learn more about how we select accountants"
+    },
+    {
+      "href": "/accountant/tax-accountant",
+      "text": "Tax Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeper",
+      "text": "Bookkeeper"
+    },
+    {
+      "href": "/accountant/personal-tax-support",
+      "text": "Personal Tax Return"
+    },
+    {
+      "href": "/accountant/tax-deduction-expert",
+      "text": "Tax Deduction Expert"
+    },
+    {
+      "href": "/accountant/small-business-accountant",
+      "text": "Small Business Accountant"
+    },
+    {
+      "href": "/accountant/bookkeeping-bas",
+      "text": "Bookkeeping & BAS"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)|"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)|"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)|"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)|"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)|"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)|"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra (ACT)|"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "/locations",
+      "text": "Locations"
+    },
+    {
+      "href": "/guides",
+      "text": "Guides"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Statement"
+    },
+    {
+      "href": "/locations/melbourne",
+      "text": "Melbourne (VIC)"
+    },
+    {
+      "href": "/locations/sydney",
+      "text": "Sydney (NSW)"
+    },
+    {
+      "href": "/locations/brisbane",
+      "text": "Brisbane (QLD)"
+    },
+    {
+      "href": "/locations/perth",
+      "text": "Perth (WA)"
+    },
+    {
+      "href": "/locations/adelaide",
+      "text": "Adelaide (SA)"
+    },
+    {
+      "href": "/locations/gold-coast",
+      "text": "Gold Coast (QLD)"
+    },
+    {
+      "href": "/locations/newcastle-maitland",
+      "text": "Newcastle - Maitland (NSW)"
+    },
+    {
+      "href": "/locations/canberra-queanbeyan",
+      "text": "Canberra - Queanbeyan (ACT)"
+    },
+    {
+      "href": "/locations/sunshine-coast",
+      "text": "Sunshine Coast (QLD)"
+    },
+    {
+      "href": "/locations/geelong",
+      "text": "Geelong (VIC)"
+    },
+    {
+      "href": "/locations/hobart",
+      "text": "Hobart (TAS)"
+    },
+    {
+      "href": "/locations/launceston",
+      "text": "Launceston (TAS)"
+    },
+    {
+      "href": "/locations/darwin",
+      "text": "Darwin (NT)"
+    },
+    {
+      "href": "https://www.ato.gov.au",
+      "text": "ato.gov.au"
+    },
+    {
+      "href": "https://www.tpb.gov.au",
+      "text": "Tax Practitioners Board (TPB)"
+    }
+  ],
+  "allText": "Home/Business StructuresFind Business Structuring Advice Near YouFree matching serviceVetted accountantsNo obligationChoosing the right structure — sole trader, company, trust, partnership — affects your tax, asset protection and succession options for years. Your Accountant Match connects you with a local accountant who specialises in entity set-up and restructuring for tax efficiency. Tell us what you need and your postcode, and we will match you with a qualified adviser who fits your needs. Free and no obligation.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.StartYour perfect match starts here — What do you need help with?Personal Tax Returnsand PlanningIndividuals, investors, capital gains, tax planning and more.Business ServicesSole trader, company, partnership, BAS, bookkeeping, payroll and more.SMSF and FinancialPlanningSMSF setup, admin, audit, retirement planning and wealth advice.Registration ServicesNew company, business name, ABN, GST, TFN and ASIC setup.Start My MatchTell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly.SPECIALIST NETWORKBusiness Structures — what we can help withSole trader vs company vs trustSole trader is the simplest but exposes your personal assets and caps your tax planning. A company limits liability but introduces administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. The right structure depends on your income, growth plans, asset exposure, and succession intentions — not a template.Restructuring without triggering CGTMoving from one structure to another (sole trader to company, company to trust) can trigger a CGT event if done naively. Rollover relief exists under specific conditions — the small-business rollover, replacement-asset rollover, and entity restructuring — but the conditions must be met precisely. Our matched firms execute restructures cleanly, preserving CGT concessions where available.Asset protection and riskIf you hold significant assets (property, investments, IP), the right structure can protect them from business risk. Trading in a company while holding assets in a trust or separate entity is a common protective pattern. Our matched advisers assess your risk profile and structure for protection — not just tax.WHAT WE MATCHBusiness Structures services we matchOur vetted network covers the full range of accounting, tax and bookkeeping services.Sole trader vs company vs trust analysisEntity establishment & registrationCGT-protected restructuring & rolloversAsset-protection structuringPartnership & joint-venture agreementsTrust deed review & variationSuccession & exit-ready structuringMulti-entity group structuringVetted, Registered AgentsFree, No ObligationAustralia-WideTRUST & VETTINGTrust and vetting standards for Business Structures PartnersEntrusting someone with your business structures needs means putting your finances in their hands. At Your Accountant Match, we hold every business structures specialist we refer to the highest professional and ethical standards in the industry.Verified professional membershipsAll business structures professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB).Stringent vetting & complianceEvery business structures partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance.Learn more about how we select accountantsCPA AustraliaNTAATax Practitioners BoardCPECOMMON QUESTIONSFrequently Asked QuestionsJust some questions about getting matched with the right accountant for your needs.What is the best structure for a new business?There is no single best structure — it depends on your income, growth, asset exposure, and succession plans. A sole trader is cheapest but exposes personal assets; a company limits liability but adds administration; a trust offers flexibility but has distribution rules. The matched adviser assesses your situation and recommends the right structure — not a generic 'everyone should be a company' answer.Can I change my business structure later?Does a trust protect my assets?How much does structuring advice cost?How quickly will a matched structuring adviser contact me?Can a structuring adviser help with a partnership or joint venture?Is business structuring matching free?Can a structuring adviser help with succession planning?Ready to find your accountant?Your needs. Your area. Your accountant.Find My AccountantFree matching service · No obligationEXPLOREOther Matching ServicesHere are some other specialist services you may find usefulTax AccountantBookkeeperPersonal Tax ReturnTax Deduction ExpertSmall Business AccountantBookkeeping & BASBusiness Structures matching across AustraliaSydney (NSW)|Melbourne (VIC)|Brisbane (QLD)|Perth (WA)|Adelaide (SA)|Hobart (TAS)|Canberra (ACT)|Darwin (NT)Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services.Your Accountant Match18 Savannah Place, Chadstone, Victoria 3148Melbourne-based, serving all of AustraliaLocationsGuidesPrivacy StatementAll Cities We ServiceMelbourne (VIC)Sydney (NSW)Brisbane (QLD)Perth (WA)Adelaide (SA)Gold Coast (QLD)Newcastle - Maitland (NSW)Canberra - Queanbeyan (ACT)Sunshine Coast (QLD)Geelong (VIC)Hobart (TAS)Launceston (TAS)Darwin (NT)Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs.© 2026 Your Accountant Match. All rights reserved.Get Matched Now",
+  "visibleText": "Home / Business Structures Find Business Structuring Advice Near You Free matching service Vetted accountants No obligation Choosing the right structure — sole trader, company, trust, partnership — affects your tax, asset protection and succession options for years. Your Accountant Match connects you with a local accountant who specialises in entity set-up and restructuring for tax efficiency. Tell us what you need and your postcode, and we will match you with a qualified adviser who fits your needs. Free and no obligation. Start Your perfect match starts here — What do you need help with? Personal Tax Returns and Planning Individuals, investors, capital gains, tax planning and more. Business Services Sole trader, company, partnership, BAS, bookkeeping, payroll and more. SMSF and Financial Planning SMSF setup, admin, audit, retirement planning and wealth advice. Registration Services New company, business name, ABN, GST, TFN and ASIC setup. Start My Match Tell us what you need help with. We’ll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly. SPECIALIST NETWORK Business Structures — what we can help with Sole trader vs company vs trust Sole trader is the simplest but exposes your personal assets and caps your tax planning. A company limits liability but introduces administration and a separate tax rate. A trust offers flexibility and asset protection but has distribution rules and compliance costs. The right structure depends on your income, growth plans, asset exposure, and succession intentions — not a template. Restructuring without triggering CGT Moving from one structure to another (sole trader to company, company to trust) can trigger a CGT event if done naively. Rollover relief exists under specific conditions — the small-business rollover, replacement-asset rollover, and entity restructuring — but the conditions must be met precisely. Our matched firms execute restructures cleanly, preserving CGT concessions where available. Asset protection and risk If you hold significant assets (property, investments, IP), the right structure can protect them from business risk. Trading in a company while holding assets in a trust or separate entity is a common protective pattern. Our matched advisers assess your risk profile and structure for protection — not just tax. WHAT WE MATCH Business Structures services we match Our vetted network covers the full range of accounting, tax and bookkeeping services. Sole trader vs company vs trust analysis Entity establishment & registration CGT-protected restructuring & rollovers Asset-protection structuring Partnership & joint-venture agreements Trust deed review & variation Succession & exit-ready structuring Multi-entity group structuring Vetted, Registered Agents Free, No Obligation Australia-Wide TRUST & VETTING Trust and vetting standards for Business Structures Partners Entrusting someone with your business structures needs means putting your finances in their hands. At Your Accountant Match, we hold every business structures specialist we refer to the highest professional and ethical standards in the industry. Verified professional memberships All business structures professionals in our network maintain active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the Tax Practitioners Board (TPB). Stringent vetting & compliance Every business structures partner undergoes a thorough background and qualification check, including verification of their Continuing Professional Education (CPE) compliance. Learn more about how we select accountants CPA Australia NTAA Tax Practitioners Board CPE COMMON QUESTIONS Frequently Asked Questions Just some questions about getting matched with the right accountant for your needs. What is the best structure for a new business? There is no single best structure — it depends on your income, growth, asset exposure, and succession plans. A sole trader is cheapest but exposes personal assets; a company limits liability but adds administration; a trust offers flexibility but has distribution rules. The matched adviser assesses your situation and recommends the right structure — not a generic 'everyone should be a company' answer. Can I change my business structure later? Does a trust protect my assets? How much does structuring advice cost? How quickly will a matched structuring adviser contact me? Can a structuring adviser help with a partnership or joint venture? Is business structuring matching free? Can a structuring adviser help with succession planning? Ready to find your accountant? Your needs. Your area. Your accountant. Find My Accountant Free matching service · No obligation EXPLORE Other Matching Services Here are some other specialist services you may find useful Tax Accountant Bookkeeper Personal Tax Return Tax Deduction Expert Small Business Accountant Bookkeeping & BAS Business Structures matching across Australia Sydney (NSW)| Melbourne (VIC)| Brisbane (QLD)| Perth (WA)| Adelaide (SA)| Hobart (TAS)| Canberra (ACT)| Darwin (NT) Your Accountant Match is an independent referral and matching service based in Chadstone, Melbourne. We operate entirely online and by phone — we do not maintain branch offices or shopfronts outside Melbourne. We are not an accounting firm and do not provide tax or financial advice directly. We connect you with qualified, independent, locally-based accounting firms across Australia who provide their own services. Your Accountant Match 18 Savannah Place, Chadstone, Victoria 3148 Melbourne-based, serving all of Australia Locations Guides Privacy Statement ALL CITIES WE SERVICE Melbourne (VIC) Sydney (NSW) Brisbane (QLD) Perth (WA) Adelaide (SA) Gold Coast (QLD) Newcastle - Maitland (NSW) Canberra - Queanbeyan (ACT) Sunshine Coast (QLD) Geelong (VIC) Hobart (TAS) Launceston (TAS) Darwin (NT) Disclaimer: The information provided on this website is for general educational and informational purposes only and does not constitute formal tax, legal, accounting, or financial advice. We are not registered tax agents, accountants, or financial advisers. Tax laws and ATO guidelines change frequently; always verify information against official sources at ato.gov.au or consult a qualified Tax Agent registered with the Tax Practitioners Board (TPB) before making decisions regarding your personal tax affairs. © 2026 Your Accountant Match. All rights reserved. Get Matched Now",
+  "redirectedTo": null,
+  "ms": 2993,
+  "inSitemap": true
+}
