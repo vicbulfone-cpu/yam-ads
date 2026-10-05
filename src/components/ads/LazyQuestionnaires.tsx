@@ -1,6 +1,6 @@
 "use client";
 
-import { OPEN_BIZ_QUESTIONNAIRE, OPEN_PERSONAL_QUESTIONNAIRE, OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import { OPEN_BIZ_QUESTIONNAIRE, OPEN_PERSONAL_QUESTIONNAIRE, OPEN_REG_QUESTIONNAIRE, OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 import WhenNeeded from "../ui/WhenNeeded";
 
 /**
@@ -15,4 +15,7 @@ export function LazyPersonalQuestionnaire() {
 }
 export function LazySmsfQuestionnaire() {
   return <WhenNeeded load={() => import("./SmsfQuestionnaire")} props={{}} events={[OPEN_SMSF_QUESTIONNAIRE]} />;
+}
+export function LazyRegistrationQuestionnaire() {
+  return <WhenNeeded load={() => import("./RegistrationQuestionnaire")} props={{}} events={[OPEN_REG_QUESTIONNAIRE]} />;
 }

@@ -40,3 +40,11 @@ export const SAMPLE_MATCH_SMSF: MatchDetails = {
     "A local accountant who looks after self-managed super funds: setup, annual accounts and tax returns, audits, SMSF borrowing and retirement planning, working alongside licensed advisers where advice is needed.",
   services: ["SMSF setup", "SMSF accounts & tax returns", "SMSF audits", "SMSF borrowing", "Super & retirement planning", "Investment & tax planning"],
 };
+
+/** The same sample accountant as shown after the registration questionnaire (/ad-4). */
+export const SAMPLE_MATCH_REGISTRATION: MatchDetails = {
+  ...SAMPLE_MATCH,
+  blurb:
+    "A local accountant who helps people start and set up their business: company and trust setup, ABN, GST, PAYG and TFN registrations, business names and choosing the right structure.",
+  services: ["Company registration", "ABN & GST registration", "PAYG withholding", "Business names", "Trust setup", "Business structures"],
+};

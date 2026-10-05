@@ -29,6 +29,14 @@ export const SMSF_CATEGORY_ICONS: Record<string, ReactNode> = {
   wealth: <><path d="M12 21v-8.4" {...o} strokeWidth={2.2} /><path d="M12 13.2C12 8.6 8.8 5.6 3.8 5.6c0 4.8 3.2 7.6 8.2 7.6Z" fill="currentColor" /><path d="M12 11.2c0-4.4 3-7.6 8.2-7.6 0 4.8-3 7.6-8.2 7.6Z" fill="currentColor" /><path d="M7.4 21h9.2" {...o} strokeWidth={2.2} /></>,
 };
 
+/** Registration ad page (owner's "registration" design picture): document, gear, tag, bar chart. */
+export const REG_CATEGORY_ICONS: Record<string, ReactNode> = {
+  company: BIZ_CATEGORY_ICONS.biz_tax,
+  abn_tax: BIZ_CATEGORY_ICONS.planning,
+  business_name: <><path d="M3.4 12.6V4.8c0-.8.6-1.4 1.4-1.4h7.8c.4 0 .7.1 1 .4l7.6 7.6a1.4 1.4 0 0 1 0 2l-7.8 7.8a1.4 1.4 0 0 1-2 0l-7.6-7.6c-.3-.3-.4-.6-.4-1Z" {...o} /><circle cx="8.2" cy="8.2" r="1.7" fill="currentColor" /></>,
+  structure: BIZ_CATEGORY_ICONS.bookkeeping,
+};
+
 /** SMSF ad page: outline icons for the three steps (document, pin, people). */
 export const SMSF_STEP_ICONS: Record<string, ReactNode> = {
   doc: BIZ_CATEGORY_ICONS.biz_tax,
@@ -49,7 +57,10 @@ export const PinSolid = ({ className }: P) => (
 export const PeopleSolid = ({ className }: P) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><circle cx="12" cy="7.4" r="3.2" /><path d="M6.2 19.6c0-3.6 2.6-6 5.8-6s5.8 2.4 5.8 6c0 .4-.3.6-.6.6H6.8c-.3 0-.6-.2-.6-.6Z" /><circle cx="5.4" cy="9" r="2.3" /><path d="M1.4 18.4c0-2.6 1.7-4.4 4-4.6-.9 1.2-1.4 2.8-1.4 4.6v.6H2c-.3 0-.6-.3-.6-.6Z" /><circle cx="18.6" cy="9" r="2.3" /><path d="M22.6 18.4c0-2.6-1.7-4.4-4-4.6.9 1.2 1.4 2.8 1.4 4.6v.6H22c.3 0 .6-.3.6-.6Z" /></svg>
 );
-export const HandshakeSolid = ({ className }: P) => (
+export const PersonSolid = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><circle cx="12" cy="7.6" r="4.2" /><path d="M4.2 20.4c0-4.4 3.5-7.4 7.8-7.4s7.8 3 7.8 7.4c0 .5-.4.8-.8.8H5c-.4 0-.8-.3-.8-.8Z" /></svg>
+);
+export const HandshakeSolid =({ className }: P) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="m11.2 6.6-2.4-1.2a2 2 0 0 0-1.6-.1L2.8 7v7.2l1.6.8" /><path d="m21.2 14.2-1.6.8-4.4-4.4" /><path d="M21.2 7v7.2" /><path d="M21.2 7 17 5.3a2 2 0 0 0-1.6.1l-4.9 2.7a1.5 1.5 0 0 0-.4 2.3c.6.7 1.6.8 2.4.4l2.6-1.4" /><path d="m4.4 15 3.8 3.6a1.5 1.5 0 0 0 2.1 0" /><path d="m7.4 16.4 2.9 2.7a1.5 1.5 0 0 0 2.1 0l.4-.4" /><path d="m10.6 15.4 2.3 2.2a1.5 1.5 0 0 0 2.1 0l.4-.4a1.5 1.5 0 0 0 0-2.1L13 12.8" /><path d="m13.4 14 1.6 1.5a1.5 1.5 0 0 0 2.1 0l.3-.3a1.5 1.5 0 0 0 0-2.1l-2.2-2.5" /></svg>
 );
 export const ShieldCheck = ({ className }: P) => (

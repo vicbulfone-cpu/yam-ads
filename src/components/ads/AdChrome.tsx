@@ -25,10 +25,12 @@ const TRUST_ICONS = { shield: ShieldCheck, people: PeopleSolid, thumb: ThumbSoli
 const PERSONAL_TRUST_ICONS = [LockIcon, PeopleOutline, HandshakeSolid];
 // owner's "smsf" design picture: padlock, people and map pin
 const SMSF_TRUST_ICONS = [LockIcon, PeopleSolid, PinSolid];
+// owner's "registration" design picture: padlock, map pin and people
+const REG_TRUST_ICONS = [LockIcon, PinSolid, PeopleSolid];
 
-export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" | "smsf" }) {
+export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" | "smsf" | "registration" }) {
   if (variant !== "business") {
-    const icons = variant === "smsf" ? SMSF_TRUST_ICONS : PERSONAL_TRUST_ICONS;
+    const icons = variant === "smsf" ? SMSF_TRUST_ICONS : variant === "registration" ? REG_TRUST_ICONS : PERSONAL_TRUST_ICONS;
     // trust strip across the page, then one line: copyright on the left, information links on the right
     return (
       <footer className="bz-footer pz-footer">

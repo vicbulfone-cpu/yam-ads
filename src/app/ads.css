@@ -240,6 +240,17 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .sz-disclaimer { right: calc(clamp(27rem, 36.5vw, 46rem) + var(--mc-extra-w) + clamp(1.75rem, 3vw, 4.5rem) + max(1rem, 3.6vw)); }
 }
 
+/* =====================================================================================
+   Registration ad page (/ad-4): owner's "registration" design picture, 6 Oct 2026. Built on the SMSF/business page
+   (".sz-", ".bz-"); only the differences are here. RegistrationAdPage.tsx, RegistrationMatchCard.tsx,
+   RegistrationQuestionnaire.tsx.
+   ===================================================================================== */
+/* the design's headline is two lines ("Starting a business or / need registrations?"): sized so it always breaks there,
+   and a little larger than the three-line headlines on laptops and desktops, filling the same space */
+.rz-h1 { font-size: min(9vw, 4.4rem); }
+@media (min-width: 1024px) { .rz-h1 { font-size: clamp(2.6rem, 4.25vw, 4.2rem); } }
+@media (min-width: 1024px) and (max-width: 1199px) { .rz-h1 { font-size: 4vw; } }
+
 /* Business ad page only (owner, 5 Oct 2026): the handwriting's two lines closer together (the space between the bottom of
    the first line and the top of the second is 60% of before: line-height 1.05 -> 0.9) and, on laptops and desktops, the
    handwriting 1.2cm lower. "translate" is applied before the rotation, so the move is straight down. */
@@ -317,7 +328,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .bz-steps { order: 2; margin-top: 0.9rem; }
   /* the photo: twice the screen width, nudged left so the mug, the arrow with its handwriting and part of the laptop
      show; its top fades into the page behind the words above it */
-  .bz-photo { order: 3; width: var(--bzp-w); margin-left: -12.5vw; margin-top: calc(var(--bzp-h) * -0.34);
+  .bz-photo { order: 3; width: var(--bzp-w); margin-left: -12.5vw; margin-top: calc(var(--bzp-h) * -0.34 - 1cm); /* owner, 6 Oct 2026: 1cm higher */
     -webkit-mask-image: linear-gradient(180deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); mask-image: linear-gradient(180deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); }
   .bz-script { font-size: 4.4vw; }
   .bz-card-col { order: 4; margin-top: -0.6rem; padding-inline: 0.6rem; }

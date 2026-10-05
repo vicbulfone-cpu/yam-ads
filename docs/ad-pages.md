@@ -29,6 +29,13 @@ The owner's design pictures are in `hero section/ad landing pages/` (e.g. `busin
 
 **Ad 3 (SMSF & wealth, `/ad-3`)** is a "select all that apply" box like Ad 1: `src/content/smsf-questionnaire.ts`, `SmsfAdPage.tsx`, `SmsfMatchCard.tsx` (reuses `BizMatchCard.tsx` with props: wording, categories, icons, opening event), `SmsfQuestionnaire.tsx`, `.sz-` styles. It shows how to add a short qualifying page (two quick choices and an optional note) after the category pages.
 
+**Ad 4 (registrations, `/ad-4`)** is a "select all that apply" box like Ad 3: `src/content/registration-questionnaire.ts`,
+`RegistrationAdPage.tsx`, `RegistrationMatchCard.tsx` (reuses `BizMatchCard.tsx`), `RegistrationQuestionnaire.tsx`,
+`.rz-` styles on top of `.sz-`/`.bz-`. Owner's sub-selections (6 Oct 2026) per category, each with "Other"; the owner's
+own "Not sure…/Help choosing…" options can be ticked together with the others. After the category pages: "Is this a new
+or existing business?" (New / Existing) with an optional "Anything else your accountant should know?". The headline is
+two lines as in the design (green words between asterisks in the wording file). Match page wording: `REG_MATCH`.
+
 Best approach for Ad N: create `src/content/<type>-questionnaire.ts` with the same shape as the business file, and make the
 page, match box and questionnaire components take that content (or copy them with a new prefix). Keep shared pieces shared.
 Route it in `src/app/[[...slug]]/page.tsx` like `/ad-1`. Ad pages stay **noindex** (`seo/index-status.json`).
