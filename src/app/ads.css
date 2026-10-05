@@ -163,32 +163,15 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
    Personal tax ad page (/ad-2): owner's "personal" design picture, 5 Oct 2026. Built on the ".bz-" business page;
    only the differences are here. PersonalAdPage.tsx, PersonalMatchCard.tsx, PersonalQuestionnaire.tsx.
    ===================================================================================== */
-.pz-top { position: relative; display: flex; flex-direction: column; overflow: hidden; background: linear-gradient(180deg, #f6f9f6 0%, #eef4ef 100%); }
-.pz-header { order: 0; }
-.pz-hero { order: 1; background: transparent; overflow: visible; }
-.pz-photo { order: 2; }
 .pz-h1 { font-size: clamp(2.1rem, 9vw, 5rem); line-height: 1.02; text-wrap: balance; }
 .pz-benefits li { gap: 0.7rem; }
 .pz-benefit-icon { flex: none; width: clamp(2.3rem, 2.9vw, 3.3rem); height: auto; color: #0e7a32; }
 .pz-disclaimer { line-height: 1.35; }
-@media (max-width: 1023px) { .pz-hero .bz-grid { padding-bottom: 0.5rem; } }
 @media (min-width: 1024px) {
-  .pz-top { display: block; background: #fff; }
-  /* the photograph sits along the bottom of the whole top area and fades out under the header */
-  .pz-photo { position: absolute; top: auto; bottom: 0; left: 0; right: 0; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 16%); mask-image: linear-gradient(180deg, transparent 0, #000 16%); }
-  /* light wash on the left so the headline reads cleanly; the right of the photo stays bright behind the match box */
-  .pz-photo::after { background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.45) 30%, rgba(255, 255, 255, 0) 52%),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0) 62%); }
-  .pz-header { position: relative; z-index: 2; background: transparent; border-bottom: 0; }
-  .pz-hero { position: relative; z-index: 1; }
-  .pz-grid { min-height: calc(43vw - 5rem); padding-block: 0 1.1rem; }
-  .pz-grid .bz-text { padding-top: clamp(0.75rem, 1.6vw, 2.2rem); }
+  /* photograph, handwriting, benefits and small print exactly as the business page (benefits and small print in the white
+     strip under the photo, as the home page has its trust banner there) */
   .pz-h1 { font-size: clamp(2.5rem, 3.95vw, 4.3rem); line-height: 1.02; }
-  /* benefits and small print sit on the photograph (no white strip under it, unlike the business page) */
-  .pz-grid .bz-benefits { position: static; margin-top: clamp(1rem, 1.9vw, 2.2rem); padding-left: 2vw; gap: 1rem clamp(1.5rem, 4vw, 4.5rem); }
-  .pz-grid .bz-disclaimer { position: static; grid-area: disc; align-self: end; margin-left: calc(-1 * max(0px, 3.6vw - 2.2rem)); font-size: clamp(0.85rem, 1.02vw, 1.1rem); text-shadow: 0 1px 8px rgba(255, 255, 255, 0.9); }
-  .pz-script { left: 23%; bottom: 33%; transform: rotate(-12deg); }
+  .pz-grid .bz-benefits { gap: 1rem clamp(1.5rem, 4vw, 4.5rem); }
 }
 
 /* personal match box: the home page box itself (.mc in globals.css, sized like the business box via .bz-card), plus a
@@ -207,6 +190,6 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 /* small laptops (1024–1279px): less room beside the box, so the steps and benefits may use two rows */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .pz-page .bz-steps { flex-wrap: wrap; white-space: normal; }
-  .pz-grid .bz-benefits { flex-wrap: wrap; padding-left: 0; }
   .pz-h1 { font-size: clamp(2.3rem, 3.7vw, 3rem); }
 }
+@media (min-width: 1024px) and (max-width: 1279px) { .pz-grid .bz-benefits { gap: 1rem 1.25rem; } .pz-grid .bz-benefits li { font-size: 0.92rem; gap: 0.55rem; } }
