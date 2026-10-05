@@ -243,25 +243,9 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 /* owner, 5 Oct 2026: then 1.2cm right and 0.6cm up (net: 1.2cm right, 0.6cm down from the original place) */
 /* owner, 5 Oct 2026: a further 1.2cm right, then 3mm up (net: 2.4cm right, 0.3cm down from the original place) */
 @media (min-width: 1024px) { .bz-script-biz { translate: 2.4cm 0.3cm; } }
-/* Business ad page only (owner, 5 Oct 2026): the same soft white shade behind the three steps as behind the home page's
-   three trust points (.desk-hero-points::before in globals.css), so they read clearly over the photo */
-.bz-steps-shade { position: relative; isolation: isolate; }
-.bz-steps-shade::before {
-  content: "";
-  position: absolute;
-  /* the home page row is 60px tall (icons); this row is one line, so the shade is given the same height in fixed units */
-  inset: -3rem -12%;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 26% 44% at 14% 48%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 26% 42% at 48% 54%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 26% 44% at 82% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.72) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 18% 30% at 31% 38%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 18% 30% at 66% 62%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
-  filter: blur(18px);
-}
+/* Business ad page only (owner, 5 Oct 2026): "fade behind words" (.fade-behind in globals.css) behind the three steps and
+   behind the handwriting, so they read clearly over the photo */
+.bz-steps-shade { position: relative; }
 /* ...and the headline and the line under it stay in front of that shade, so it never washes them out */
 .bz-grid:has(.bz-steps-shade) .bz-text { position: relative; z-index: 1; }
 

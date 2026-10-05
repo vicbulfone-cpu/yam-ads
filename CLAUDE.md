@@ -218,3 +218,11 @@ The whole purpose of the website is to get visitors to complete the questionnair
 - **Performance (mobile):** LCP < 2.5s, CLS < 0.1, INP < 200ms, Lighthouse SEO and Performance 90+; minimal JavaScript; self-hosted fonts.
 - **Trust and consistency:** the same business name (and phone, email, ABN only once the owner supplies real ones; never invent them) in every footer; About and Contact linked from the footer.
 - **Stage gate:** at the end of every stage run `npm run build`, start the site (`npx next start -p 3300`) and run `npm run seo-check`. Fix every failure that needs no wording change, log the rest in `docs/seo-report.md`, and report in plain English. A stage is not finished until it passes.
+
+## "FADE BEHIND WORDS" (owner rule, 5 Oct 2026)
+When the owner says **"fade behind words"**, it always means the soft white cloud fade used behind the home page's three
+trust points ("Local accountants in your area · Matched to your exact needs · Free and no obligation"). It is the
+reusable class `fade-behind` in `src/app/globals.css`: add `fade-behind` to the element holding the words (the element must
+be `position: relative` or `absolute`); set `--fade-inset` only if the cloud needs to reach further or less far (default
+3rem above/below, 12% each side). Make sure nearby words stay in front of it and are not washed out. Used on the business
+ad page behind the three steps and the handwriting.

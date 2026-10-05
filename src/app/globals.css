@@ -775,6 +775,26 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
     radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
   filter: blur(18px);
 }
+/* "FADE BEHIND WORDS" (project rule, owner 5 Oct 2026): when the owner asks for a "fade behind words", it means this soft
+   white cloud, the one behind the home page's three trust points (above). Add class="fade-behind" to the words; the
+   element must be positioned (relative or absolute). --fade-inset sets how far the cloud reaches beyond the words
+   (default: 3rem above and below, 12% each side). */
+.fade-behind { isolation: isolate; }
+.fade-behind::before {
+  content: "";
+  position: absolute;
+  inset: var(--fade-inset, -3rem -12%);
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 26% 44% at 14% 48%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 26% 42% at 48% 54%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 26% 44% at 82% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.72) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 18% 30% at 31% 38%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 18% 30% at 66% 62%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+  filter: blur(18px);
+}
 .desk-hero-card { grid-column: 1; grid-row: 2; margin-top: -3.5rem; }
 .desk-hero-trust { grid-column: 1; grid-row: 3; display: grid; gap: 1rem; padding-block: 1.75rem 1.5rem; }
 
