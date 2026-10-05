@@ -859,6 +859,33 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .has-mobile-pic .desk-hero-card { margin-top: 0.9rem; }
 .desk-hero-card { margin-top: calc(0.9rem + 0.7cm); }
 }
+/* Home page on phones only (below 768px; owner's "zz" design, 6 Oct 2026): logo, then the hero (the desk picture with the
+   headline, line and three points over its faded top, the mug, arrow and laptop showing below them), then the match box
+   straight underneath. The picture is drawn at twice the screen width and nudged left, so the mug, the handwriting with
+   its arrow and the left part of the laptop are all on screen (as in the design). */
+@media (max-width: 767px) {
+  .zz-phone { margin-top: 0; overflow-x: clip;--zz-w: 200vw; --zz-h: calc(var(--zz-w) * 793 / 1983); }
+  .zz-phone .desk-hero-picture { transform: none; overflow: clip; } /* the wide picture never makes the page scroll sideways */
+  .zz-phone .desk-hero-photo { width: var(--zz-w); height: auto; aspect-ratio: 1983 / 793; transform: translateX(-12.5vw); bottom: 0; }
+  .zz-phone .desk-hero-photo img.desk-hero-img { transform: none; height: auto;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0,.35) 18%, #000 42%); mask-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0,.35) 18%, #000 42%); }
+  .zz-phone .desk-hero-wash { background: linear-gradient(180deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.75) 45%, rgba(255,255,255,0) 72%); }
+  /* the words: no sideways stretch on phones, so nothing runs off the screen */
+  .zz-phone .desk-hero-text { transform: none; padding-top: 1.1rem; padding-bottom: calc(var(--zz-h) * 0.58); }
+  .zz-phone .desk-hero-h1 { font-size: clamp(2.1rem, 11.4vw, 3.2rem); line-height: 1; }
+  .zz-phone .desk-hero-h1 .text-green-700 { display: block; } /* "near you?" on its own line, as in the design */
+  .zz-phone .desk-hero-sub { margin-top: 0.5rem; font-size: clamp(1.05rem, 4.9vw, 1.3rem); line-height: 1.2; }
+  /* the three points in one row, icon beside two short lines */
+  .zz-phone .desk-hero-points { transform: none; margin-top: 0.9rem; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; }
+  .zz-phone .desk-hero-points > li { gap: 0.35rem; }
+  .zz-phone .desk-hero-points img { width: 2.1rem; height: 2.1rem; }
+  .zz-phone .desk-hero-points span { font-size: clamp(0.66rem, 3.1vw, 0.85rem); line-height: 1.2; }
+  /* handwriting above the picture's green arrow */
+  .zz-phone .hero-tagline-overlay { top: auto; left: 61vw; bottom: calc(var(--zz-h) * 0.345); transform: translateX(-50%) rotate(-8deg); font-size: clamp(1.05rem, 5vw, 1.35rem); white-space: nowrap; }
+  /* the match box starts right where the picture ends */
+  .zz-phone .desk-hero-card { margin-top: -0.6rem; margin-inline: calc(0.6rem - var(--gutter)); position: relative; z-index: 1; }
+  .zz-phone .desk-hero-card .mc { margin-top: 0; }
+}
 /* the trust banner: runs the full width of the page behind the three symbols (all screen sizes) */
 .desk-hero-trust { position: relative; isolation: isolate; }
 .desk-hero-trust::before {

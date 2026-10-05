@@ -17,8 +17,12 @@ export type DeskHeroHeadline = { before: string; green: string; after?: string; 
 type Pic = { src: string; width: number; height: number };
 
 export default function DeskHero({
-  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture, desktopPicture, showTrust = true,
-}: { headline: DeskHeroHeadline; crumbs?: { label: string; href?: string }[]; card: MatchCardData | null; cardTitleTag?: "h2" | "p"; mobilePicture?: Pic; desktopPicture?: Pic; showTrust?: boolean }) {
+  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false,
+}: { headline: DeskHeroHeadline; crumbs?: { label: string; href?: string }[]; card: MatchCardData | null; cardTitleTag?: "h2" | "p"; mobilePicture?: Pic; desktopPicture?: Pic; showTrust?: boolean;
+  /** Home page on phones (owner's "zz" design, 6 Oct 2026): logo, then the desk picture with the headline over its top,
+      then the match box straight underneath. Phones use the same desk picture as desktop. */
+  phoneStack?: boolean }) {
+  const mobilePicture = phoneStack ? undefined : mobilePictureProp;
   const desk = desktopPicture ?? deskHeroPicture;
   const desktopSrcSet = mobilePicture
     ? getImageProps({ src: desk.src, alt: "", width: desk.width, height: desk.height, quality: 92, sizes: "100vw" }).props.srcSet
@@ -29,7 +33,7 @@ export default function DeskHero({
       )
     : undefined;
   return (
-    <section className={`desk-hero relative isolate -mt-[4cm]${mobilePicture ? " has-mobile-pic" : ""}`}>
+    <section className={`desk-hero relative isolate -mt-[4cm]${mobilePicture ? " has-mobile-pic" : ""}${phoneStack ? " zz-phone" : ""}`}>
       <div className="desk-hero-grid">
         {/* the photograph: shares the first row with the words and stretches to the full width of the screen */}
         <div className="desk-hero-picture relative">
@@ -53,7 +57,7 @@ export default function DeskHero({
                 priority
                 fetchPriority="high"
                 quality={92}
-                sizes="(min-width:1024px) 100vw, 250vh"
+                sizes={phoneStack ? "(min-width:768px) 100vw, 200vw" : "(min-width:1024px) 100vw, 250vh"}
                 className="desk-hero-img"
               />
             )}
