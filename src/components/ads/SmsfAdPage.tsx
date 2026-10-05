@@ -10,7 +10,7 @@ import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
 import MatchFitScript from "../sections/MatchFitScript";
 import SmsfMatchCard from "./SmsfMatchCard";
-import SmsfQuestionnaire from "./SmsfQuestionnaire";
+import { LazySmsfQuestionnaire } from "./LazyQuestionnaires";
 import { PeopleSolid, PinSolid, ShieldCheck, SMSF_STEP_ICONS } from "./BizIcons";
 
 const BENEFIT_ICONS = { pin: PinSolid, people: PeopleSolid, shield: ShieldCheck };
@@ -67,7 +67,7 @@ export default function SmsfAdPage() {
         </div>
       </main>
       <AdFooter variant="smsf" />
-      <SmsfQuestionnaire />
+      <LazySmsfQuestionnaire />
     </div>
   );
 }

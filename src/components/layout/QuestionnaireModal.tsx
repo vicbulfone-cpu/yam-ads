@@ -24,7 +24,8 @@ import { progressMilestones } from "@/lib/progress";
 type Answers = Record<string, { optionIds: string[]; software: string | null; otherNote: string }>;
 type Step = { kind: "select" } | { kind: "category"; index: number } | { kind: "next" };
 
-export const OPEN_QUESTIONNAIRE_EVENT = "yam:open-questionnaire";
+import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
+export { OPEN_QUESTIONNAIRE_EVENT };
 
 const norm = (s: string) => s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, " ").trim();
 /** Card titles → questionnaire category ids, always in the old questionnaire's order. */

@@ -5,7 +5,7 @@ import { matchFit } from "@/lib/match-fit";
 import { BIZ_CARD, BIZ_CATEGORIES, type BizCategory } from "@/content/business-questionnaire";
 import { ArrowRight, Check } from "../ui/Icons";
 import { BIZ_CATEGORY_ICONS, ShieldCheck } from "./BizIcons";
-import { OPEN_BIZ_QUESTIONNAIRE } from "./BusinessQuestionnaire";
+import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 
 /**
  * Business match box (owner's "business" design picture). Same look as the site's match box (".mc" styles in

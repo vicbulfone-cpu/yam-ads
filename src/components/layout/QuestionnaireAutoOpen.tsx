@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { OPEN_QUESTIONNAIRE_EVENT } from "./QuestionnaireModal";
+import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
 
 /**
  * Opens the questionnaire popup when a page is loaded as /?start=1 (that is where /questionnaire sends visitors):

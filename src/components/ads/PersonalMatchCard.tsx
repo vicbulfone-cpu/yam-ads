@@ -5,7 +5,7 @@ import { matchFit } from "@/lib/match-fit";
 import { PERSONAL_CARD as C, PERSONAL_NEEDS } from "@/content/personal-questionnaire";
 import { ArrowRight, Check } from "../ui/Icons";
 import { PERSONAL_NEED_ICONS, ShieldCheck } from "./BizIcons";
-import { OPEN_PERSONAL_QUESTIONNAIRE } from "./PersonalQuestionnaire";
+import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 
 /**
  * Personal tax match box. Same look and size as the home page box (".mc" in globals.css; owner, 5 Oct 2026: every ad

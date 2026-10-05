@@ -74,38 +74,6 @@ export function SideCollage({ flip = false, badge = "check", prefer = ["home", "
 }
 
 /**
- * Fills the empty space under the match box on the home page (desktop): three photos in a tidy mosaic, nothing overlapping.
- * Renders nothing if fewer than two unused photos are left.
- */
-export function HeroPeople() {
-  const photos = auGroupPhotos(["home", "desk", "life"], 3);
-  if (photos.length < 2) return null;
-  const [a, b, c] = photos;
-  return (
-    <div aria-hidden className="relative mt-9 hidden lg:block">
-      <span className="absolute -inset-x-3 -inset-y-3 rounded-[2.5rem] bg-gradient-to-br from-amber-100/80 via-amber-50 to-green-100/70" />
-      <div className="relative grid grid-cols-[1.1fr_1fr] gap-3.5">
-        <div className="relative row-span-2 min-h-[18rem] overflow-hidden rounded-[1.75rem] border-[5px] border-white shadow-[0_22px_44px_-20px_rgba(7,50,101,.5)]">
-          <Image src={a} alt="" fill sizes="(min-width:1280px) 290px, 26vw" className="object-cover" />
-        </div>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border-[5px] border-white shadow-[0_18px_36px_-18px_rgba(7,50,101,.5)]">
-          <Image src={b} alt="" fill sizes="(min-width:1280px) 250px, 22vw" className="object-cover" />
-        </div>
-        {c ? (
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border-[5px] border-white shadow-[0_18px_36px_-18px_rgba(7,50,101,.5)]">
-            <Image src={c} alt="" fill sizes="(min-width:1280px) 250px, 22vw" className="object-cover" />
-          </div>
-        ) : (
-          <span />
-        )}
-      </div>
-      <span className="absolute -right-3 -top-3 grid h-10 w-10 place-items-center rounded-full bg-green-600 text-white shadow-[0_10px_20px_-8px_rgba(0,135,58,.7)] ring-4 ring-white"><Check width={18} height={18} strokeWidth={2.8} /></span>
-      <span className="absolute -bottom-3 left-8 grid h-10 w-10 place-items-center rounded-full bg-navy-900 text-white shadow-lg ring-4 ring-white"><Shield width={18} height={18} /></span>
-    </div>
-  );
-}
-
-/**
  * A warm, slim call-to-action strip in the middle of the home page (tablet and desktop). Uses the site's existing
  * "Ready to find your accountant?" wording; the goal of the page is to get visitors into the questionnaire.
  */

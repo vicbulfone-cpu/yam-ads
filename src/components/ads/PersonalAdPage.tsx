@@ -9,7 +9,7 @@ import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
 import MatchFitScript from "../sections/MatchFitScript";
 import PersonalMatchCard from "./PersonalMatchCard";
-import PersonalQuestionnaire from "./PersonalQuestionnaire";
+import { LazyPersonalQuestionnaire } from "./LazyQuestionnaires";
 import { PeopleOutline, PinSolid, ShieldCheck } from "./BizIcons";
 
 const BENEFIT_ICONS = { pin: PinSolid, people: PeopleOutline, shield: ShieldCheck };
@@ -61,7 +61,7 @@ export default function PersonalAdPage() {
         </div>
       </main>
       <AdFooter variant="personal" />
-      <PersonalQuestionnaire />
+      <LazyPersonalQuestionnaire />
     </div>
   );
 }

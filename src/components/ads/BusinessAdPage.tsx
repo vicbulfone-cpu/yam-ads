@@ -8,7 +8,7 @@ import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
 import BizMatchCard from "./BizMatchCard";
 import MatchFitScript from "../sections/MatchFitScript";
-import BusinessQuestionnaire from "./BusinessQuestionnaire";
+import { LazyBusinessQuestionnaire } from "./LazyQuestionnaires";
 import { HandshakeSolid, PeopleSolid, PinSolid } from "./BizIcons";
 
 const BENEFIT_ICONS = { pin: PinSolid, people: PeopleSolid, handshake: HandshakeSolid };
@@ -62,7 +62,7 @@ export default function BusinessAdPage() {
         </div>
       </main>
       <AdFooter />
-      <BusinessQuestionnaire />
+      <LazyBusinessQuestionnaire />
     </div>
   );
 }

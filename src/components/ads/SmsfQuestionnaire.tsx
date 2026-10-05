@@ -23,7 +23,8 @@ import PhoneFit from "../ui/PhoneFit";
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the SMSF match box (OPEN_SMSF_QUESTIONNAIRE).
  */
 
-export const OPEN_SMSF_QUESTIONNAIRE = "yam:open-smsf-questionnaire";
+import { OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+export { OPEN_SMSF_QUESTIONNAIRE };
 const MATCH_PAGE = "/ad-6";
 
 type CatAnswer = { ids: string[]; other: string };

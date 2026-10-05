@@ -21,7 +21,8 @@ import PhoneFit from "../ui/PhoneFit";
  * Each category counts as one step in the progress bar. Opened by the business match box (OPEN_BIZ_QUESTIONNAIRE event).
  */
 
-export const OPEN_BIZ_QUESTIONNAIRE = "yam:open-biz-questionnaire";
+import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+export { OPEN_BIZ_QUESTIONNAIRE };
 const MATCH_PAGE = "/ad-6";
 
 type CatAnswer = { ids: string[]; other: string; software: string | null };

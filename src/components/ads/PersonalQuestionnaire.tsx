@@ -27,7 +27,8 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCar
  * detail = the chosen reason, or "choose" for "Not sure — help me choose").
  */
 
-export const OPEN_PERSONAL_QUESTIONNAIRE = "yam:open-personal-questionnaire";
+import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+export { OPEN_PERSONAL_QUESTIONNAIRE };
 const MATCH_PAGE = "/ad-6";
 
 type Kind = "choose" | "followup" | "income" | "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe";

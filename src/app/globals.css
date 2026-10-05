@@ -1,4 +1,6 @@
-@import "tailwindcss";
+/* Styles are generated only from the site's own code (src/). Without this the generator also scans the old-site
+   extracts in data/ (23MB) and the docs, and adds thousands of styles no page uses (owner speed pass, 6 Oct 2026). */
+@import "tailwindcss" source("..");
 
 /* =====================================================================================
    YAM v4 — design system

@@ -5,7 +5,7 @@ import SiteHeader from "@/components/layout/SiteHeader";
 import StickyCta from "@/components/layout/StickyCta";
 import ReturnToTop from "@/components/layout/ReturnToTop";
 import ScrollToTop from "@/components/layout/ScrollToTop";
-import QuestionnaireModal from "@/components/layout/QuestionnaireModal";
+import LazyQuestionnaireModal from "@/components/layout/LazyQuestionnaireModal";
 import QuestionnaireAutoOpen from "@/components/layout/QuestionnaireAutoOpen";
 import { getHomeMatchCard } from "@/components/sections/MatchCard";
 import { SITE_URL } from "@/config/site.config";
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyCta />
         <ReturnToTop />
         <ScrollToTop />
-        <QuestionnaireModal card={getHomeMatchCard()} />
+        <LazyQuestionnaireModal card={getHomeMatchCard()} />
         <QuestionnaireAutoOpen />
         {(GA4_ID || GADS_ID) && (
           <>
