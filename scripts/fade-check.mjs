@@ -14,7 +14,7 @@ for (const [w, h] of [[1280, 800], [1366, 768], [1536, 864], [1920, 1080], [375,
   const rect = (s) => pg.evaluate((s) => { const r = document.querySelector(s).getBoundingClientRect(); return { x: Math.floor(r.left), y: Math.floor(r.top + scrollY), w: Math.ceil(r.width), h: Math.ceil(r.height) }; }, s);
   const R = { h1: await rect(".bz-h1"), sub: await rect(".bz-sub"), st: await rect(".bz-steps"), sc: await rect(".bz-script") };
   const A = await raw(await pg.screenshot({ fullPage: true }));
-  await pg.addStyleTag({ content: ".fade-behind::before { display: none !important; }" }); await pg.waitForTimeout(200);
+  await pg.addStyleTag({ content: ".fade-behind::before, .fade-behind::after { display: none !important; }" }); await pg.waitForTimeout(200);
   const Z = await raw(await pg.screenshot({ fullPage: true })); // no fades at all
   const count = (r, f) => { let n = 0; for (let y = r.y; y < r.y + r.h; y++) for (let x = r.x; x < r.x + r.w; x++) if (f(x, y)) n++; return n; };
   const areaChanged = (r) => count(r, (x, y) => diff(px(A, x, y), px(Z, x, y)) > 2);

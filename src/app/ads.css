@@ -278,7 +278,21 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
    top so the blur never reaches the headline above; the handwriting's fade stops short at the bottom so the green arrow
    in the photo is never lightened. */
 .bz-sub-fade { position: relative; --fade-inset: 1.6rem -8% -1.75rem -8%; }
+/* the cloud stops along the bottom of the words (the mask is applied after the blur and turns with them), so the green
+   arrow in the photo just below is never lightened */
 .bz-script-biz.fade-behind { --fade-inset: -3rem -12% 0 -12%; }
-/* hard stop along the bottom of the writing (the mask is applied after the blur and turns with the words), so the soft
-   edge never spills onto the arrow just below */
 .bz-script-biz.fade-behind::before { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 1.4rem), transparent calc(100% - 0.35rem)); mask-image: linear-gradient(to bottom, #000 calc(100% - 1.4rem), transparent calc(100% - 0.35rem)); }
+/* more fade under the words (owner, 5 Oct 2026): a second, smaller cloud of the same white under the left part of the
+   words only ("a business"), ending well before the middle of the line, where the arrow starts */
+.bz-script-biz.fade-behind::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: 64%;
+  top: 35%;
+  bottom: -1.9rem;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse 58% 52% at 50% 45%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.6) 55%, rgba(255, 255, 255, 0) 100%);
+  filter: blur(14px);
+}
