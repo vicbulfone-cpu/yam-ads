@@ -185,6 +185,8 @@ h1 { color: var(--navy-900); } /* headlines are brand navy, never near-black */
     radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
   filter: blur(18px);
 }
+/* owner, 5 Oct 2026: the hero picture moved up 1cm (tablet, laptop, desktop), so the handwriting moves with it to stay on its arrow */
+@media (min-width: 768px) { .hero-tagline-overlay { transform: translateX(-50%) translateY(calc(-50% + 3.75cm)) rotate(-8deg); } }
 /* Home page (owner's "home page 1/2" design): section headings use the heavy sans of the hero headline. The hero is excluded. */
 .home-v2 > section:not(.desk-hero) :is(h2, h3) {
   font-family: var(--font-sans);
@@ -670,7 +672,7 @@ html.q-modal-open { overflow: hidden; }
 }
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
 @media (min-width: 1024px) { .intro-badge { translate: 0.5cm 0.55cm; } }
-.desk-hero-photo img.desk-hero-img { transform: translateY(0.5cm); display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); }
+.desk-hero-photo img.desk-hero-img { transform: translateY(-0.5cm); display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); }
 @media (min-width: 1024px) {
   .desk-hero-photo { width: 100%; height: auto; transform: none; bottom: min(0px, calc((100% - 39.99vw) * 0.62)); }
   .desk-hero-photo img.desk-hero-img { -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 26%); mask-image: linear-gradient(to bottom, transparent 0, #000 26%); }
@@ -736,7 +738,7 @@ html.q-modal-open { overflow: hidden; }
   /* owner, 4 Oct 2026: a 1.5cm gap between the bottom of the picture and the trust banner */
   .desk-hero-grid { padding-bottom: calc(var(--hero-open) + 1.5cm + 2.5rem); } /* + 2.5rem: the trust banner is 150% of its 5rem row */  .desk-hero-picture { margin-bottom: calc(-1 * var(--hero-open)); }
   .desk-hero-photo { bottom: calc(min(0px, calc((100% - var(--hero-open) - 39.99vw) * 0.62)) + var(--hero-open)); }
-  .desk-hero-photo img.desk-hero-img { transform: translateY(var(--hero-nudge)); }
+  .desk-hero-photo img.desk-hero-img { transform: translateY(calc(var(--hero-nudge) - 1cm)); } /* owner, 5 Oct 2026: picture only moved up 1cm (banner stays put) */
   .desk-hero-trust { grid-column: 1 / -1; justify-self: stretch; width: 100%; height: 5.625rem; transform: translateY(calc(var(--hero-open) + 1.5cm)); grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: stretch; gap: clamp(2rem, 4vw, 5rem); }
   .desk-hero-trust > li { justify-content: center; }
   .desk-hero-trust > li + li { border-left: 1px solid rgba(7, 50, 101, 0.12); padding-left: 0; }
