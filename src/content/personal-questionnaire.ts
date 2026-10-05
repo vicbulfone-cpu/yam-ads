@@ -15,18 +15,18 @@ export interface PersonalNeed {
   id: Exclude<NeedId, "unsure">;
   /** name in the questionnaire and summary */
   title: string;
-  /** name on the match box (as in the design picture) */
-  box: string;
+  /** shorter name and line on the match box (home box style: title about 25 characters, line about 38) */
+  box: { title: string; desc: string };
   /** one line under the name on the "help me choose" page */
   help: string;
   tone: "blue" | "green" | "orange" | "purple";
 }
 
 export const PERSONAL_NEEDS: PersonalNeed[] = [
-  { id: "this_year", title: "This year’s tax return", box: "This year’s tax return", help: "You need to lodge your return for the latest financial year.", tone: "blue" },
-  { id: "overdue", title: "Overdue or multiple returns", box: "Overdue or multiple tax returns", help: "You’ve missed one or more years and want to catch up.", tone: "green" },
-  { id: "amend", title: "Amend a lodged return", box: "Amend a lodged tax return", help: "Something was missed or wrong on a return you’ve already lodged.", tone: "orange" },
-  { id: "planning", title: "Tax planning or advice", box: "Tax planning or advice", help: "You’d like advice before you act — property, capital gains, income or deductions.", tone: "purple" },
+  { id: "this_year", title: "This year’s tax return", box: { title: "This Year’s Tax Return", desc: "Lodge your latest tax return" }, help: "You need to lodge your return for the latest financial year.", tone: "blue" },
+  { id: "overdue", title: "Overdue or multiple returns", box: { title: "Overdue Tax Returns", desc: "Catch up on one or more years" }, help: "You’ve missed one or more years and want to catch up.", tone: "green" },
+  { id: "amend", title: "Amend a lodged return", box: { title: "Amend a Lodged Return", desc: "Fix or add to a lodged return" }, help: "Something was missed or wrong on a return you’ve already lodged.", tone: "orange" },
+  { id: "planning", title: "Tax planning or advice", box: { title: "Tax Planning & Advice", desc: "Property, capital gains, deductions" }, help: "You’d like advice before you act — property, capital gains, income or deductions.", tone: "purple" },
 ];
 
 /** "Help me choose" page: the extra choice for visitors who still can't pick one. */
@@ -87,17 +87,17 @@ export const PERSONAL_LANDING = {
 };
 
 /** The personal match box. */
+/** The personal match box: home page box layout (owner, 5 Oct 2026), personal wording. */
 export const PERSONAL_CARD = {
-  title: ["Your personal tax match", "starts here"],
-  map: "Australia wide",
-  /** the word in [ ] is drawn green */
-  band: ["Your enquiry goes to ", "one", " local accountant, never a list."],
+  eyebrow: "Your Accountant Match",
+  title: ["Your personal tax", "match starts here."],
+  sub: "One local accountant, never a list.",
   question: "What do you need help with?",
   hint: "Choose one option to get started.",
   unsure: "Not sure — help me choose",
   start: "Start My Tax Match",
-  note: "Takes about 60 seconds. Free and no obligation.",
-  footer: "Matching is free. Accountant fees are agreed separately.",
+  note: ["60 seconds", "Free", "No obligation"],
+  footer: "Your details go to one local accountant only.",
   error: "Please choose one option to continue.",
 };
 

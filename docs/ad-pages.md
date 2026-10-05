@@ -44,6 +44,11 @@ Route it in `src/app/[[...slug]]/page.tsx` like `/ad-1`. Ad pages stay **noindex
 
 ## Match box (must look like and be the same size as the home page box)
 
+**Rule (owner, 5 Oct 2026): every ad match box uses the home page box style, even if the ad's design picture draws the box
+differently** (e.g. the "personal" picture shows a white heading and boxed rows; the built box uses the home style).
+Take only the wording, the rows and their icons from the design picture. Extras (such as Ad 2's "Not sure — help me
+choose" link) sit inside the home layout without changing it.
+
 - Built from the home box's own classes (`.mc`, `.mc-head`, `.mc-rows`, `.mc-row`, `.mc-tile`, `.mc-row-title`,
   `.mc-row-desc`, `.mc-radio`, `.mc-start`, `.mc-note`, `.mc-foot`), so text sizes are identical. Open rows with thin
   dividers, soft-coloured icon squares (blue, green, orange, purple), round tick circles, mint band at the bottom.

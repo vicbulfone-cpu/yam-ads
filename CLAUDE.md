@@ -202,6 +202,7 @@ This section is a standing project requirement. Read and follow it in every sess
 ## QUESTIONNAIRE PURPOSE (owner, 3 Oct 2026)
 The whole purpose of the website is to get visitors to complete the questionnaire and be matched. Every questionnaire page must look like the rest of the site and encourage the visitor to finish. Follow `docs/questionnaire-design.md` for any questionnaire page, including the summary and contact pages built in Stage 4.
 **Ad landing pages (owner, 5 Oct 2026):** every new Google Ads landing page and questionnaire is built the same way as Ad 1 (business, `/ad-1`), following `docs/ad-pages.md`. Ad 6 (`/ad-6`) is the shared match page.
+**Ad match boxes (owner, 5 Oct 2026):** every ad landing page's match box uses the HOME PAGE match box style and size (navy heading panel with eyebrow, two-line title, green rule, line under it and the map; open rows with dividers, coloured icon squares, title + short line, round tick circles; green Start button; dotted note; mint band at the bottom), even where the owner's design picture draws the box differently. Only the wording, rows and icons change per ad (see `docs/ad-pages.md`).
 **Name rule (owner, 5 Oct 2026):** every questionnaire asks for the visitor's name straight after the service selection, and every later question box is personalised with their first name (e.g. "John, could I please have your mobile number so…").
 
 ## SEO & AI-SEARCH RULES (owner-supplied, merged 3 Oct 2026; where they differ from older notes, this section and the dated owner updates win)
