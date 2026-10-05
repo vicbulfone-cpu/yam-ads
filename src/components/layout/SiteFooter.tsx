@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Node } from "@/lib/content";
 import { BUSINESS, REQUIRED_FOOTER_LINKS } from "@/content/business";
+import { isLivePage } from "@/lib/pages";
 import { Pin } from "../ui/Icons";
 
 /** Pulls the footer section out of a page's extracted nodes. */
@@ -25,28 +26,13 @@ const HOME_FOOTER_COLUMNS: { title: string; links: { text: string; href?: string
     links: [
       { text: "About", href: "/about" },
       { text: "How It Works", href: "/how-it-works" },
-      { text: "Guides", href: "/guides" },
-      { text: "Blog", href: "/blog" },
       { text: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Locations",
     links: [
-      { text: "Sydney", href: "/locations/sydney" },
       { text: "Melbourne", href: "/locations/melbourne" },
-      { text: "Brisbane", href: "/locations/brisbane" },
-      { text: "Perth", href: "/locations/perth" },
-      { text: "Adelaide", href: "/locations/adelaide" },
-      { text: "Hobart", href: "/locations/hobart" },
-      { text: "Canberra", href: "/locations/canberra-queanbeyan" },
-      { text: "Darwin", href: "/locations/darwin" },
-      { text: "Gold Coast", href: "/locations/gold-coast" },
-      { text: "Newcastle", href: "/locations/newcastle-maitland" },
-      { text: "Sunshine Coast", href: "/locations/sunshine-coast" },
-      { text: "Geelong", href: "/locations/geelong" },
-      { text: "Launceston", href: "/locations/launceston" },
-      { text: "Regional Australia" },
     ],
   },
   {
@@ -111,11 +97,12 @@ export default function SiteFooter({ nodes, variant }: { nodes: Node[]; variant?
   const heading = cityHeadingIdx === -1 ? null : (f[cityHeadingIdx] as Extract<Node, { t: "h" }>);
 
   const address = before.find((n) => n.t === "text") as Extract<Node, { t: "text" }> | undefined;
-  const ownLinks = before.filter((n): n is Extract<Node, { t: "link" }> => n.t === "link");
+  // links to pages removed from this scaled-back site are left out
+  const ownLinks = before.filter((n): n is Extract<Node, { t: "link" }> => n.t === "link" && isLivePage(n.href));
   // every footer carries About, Contact and the policy links, even where the page's old footer had fewer
   const have = new Set(ownLinks.map((l) => l.href.replace(/\/$/, "")));
   const navLinks = [...ownLinks, ...REQUIRED_FOOTER_LINKS.filter((l) => !have.has(l.href)).map((l) => ({ t: "link" as const, ...l }))];
-  const cities = after.filter((n): n is Extract<Node, { t: "link" }> => n.t === "link");
+  const cities = after.filter((n): n is Extract<Node, { t: "link" }> => n.t === "link" && isLivePage(n.href));
   const paras = [...before, ...after].filter((n): n is Extract<Node, { t: "p" }> => n.t === "p");
   const copyright = paras.length ? paras[paras.length - 1] : undefined;
   const notes = paras.slice(0, -1);

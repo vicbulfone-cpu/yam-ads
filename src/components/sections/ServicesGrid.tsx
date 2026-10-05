@@ -4,31 +4,14 @@ import { QUESTIONNAIRE_URL } from "@/config/site.config";
 /*
  * "The right expertise starts with the right match." (home page)
  *
- * Owner exception: instead of the generic labels in the reference picture,
- * the list shows EVERY service page on the site (type "service" in
- * data/extracted/page-types.json). Each short name is taken from that page's
- * own H1 in data/extracted/pages/accountant__<slug>.json (the "Find ... Near
- * You" wrapper removed), so no service is invented.
+ * The services accountants in the network offer, shown as plain pills (this site has no separate service pages).
  */
 const services = [
-  { name: "Tax Accountant", href: "/accountant/tax-accountant" },
-  { name: "Personal Tax Return Accountant", href: "/accountant/personal-tax-support" },
-  { name: "Small Business Accountant", href: "/accountant/small-business-accountant" },
-  { name: "SMSF Accountant", href: "/accountant/smsf-accountant" },
-  { name: "Bookkeeper", href: "/accountant/bookkeeper" },
-  { name: "Bookkeeping and BAS Help", href: "/accountant/bookkeeping-bas" },
-  { name: "Payroll and Compliance Support", href: "/accountant/payroll-compliance" },
-  { name: "Business Structuring Advice", href: "/accountant/business-structures" },
-  { name: "Registration Services", href: "/accountant/registration-services" },
-  { name: "Registered Tax Agent", href: "/accountant/registered-tax-agent" },
-  { name: "Certified Practising Accountant", href: "/accountant/cpa-accountant" },
-  { name: "Tax Deduction Expert", href: "/accountant/tax-deduction-expert" },
-  { name: "Property and SMSF Specialist", href: "/accountant/property-smsf-specialist" },
-  { name: "Cloud Accounting Support", href: "/accountant/cloud-accounting" },
-  { name: "Business Growth Adviser", href: "/accountant/business-growth-adviser" },
-  { name: "Advanced Reporting Specialist", href: "/accountant/advanced-reporting-specialist" },
-  { name: "Audit and Assurance Services", href: "/accountant/audit-assurance" },
-  { name: "Succession Planning Advice", href: "/accountant/succession-planning" },
+  "Tax Accountant", "Personal Tax Return Accountant", "Small Business Accountant", "SMSF Accountant", "Bookkeeper",
+  "Bookkeeping and BAS Help", "Payroll and Compliance Support", "Business Structuring Advice", "Registration Services",
+  "Registered Tax Agent", "Certified Practising Accountant", "Tax Deduction Expert", "Property and SMSF Specialist",
+  "Cloud Accounting Support", "Business Growth Adviser", "Advanced Reporting Specialist", "Audit and Assurance Services",
+  "Succession Planning Advice",
 ];
 
 /** Solid green circle with a white tick (matches the reference pills). */
@@ -78,17 +61,15 @@ export default function ServicesGrid() {
           </div>
         </div>
 
-        {/* Right: every service page as a soft pill with a green tick */}
+        {/* Right: every service as a soft pill with a green tick */}
         <ul className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-[0.75vw]">
-          {services.map((s) => (
-            <li key={s.href}>
-              <Link
-                href={s.href}
-                className="flex min-h-11 items-center gap-3 rounded-xl border border-[#ece6d6] bg-[#fffcf3] px-3.5 py-1.5 text-[0.88rem] font-medium lg:min-h-[clamp(2.75rem,3vw,4.4rem)] lg:px-[1vw] fs-sm text-navy-900 shadow-[0_1px_2px_rgba(7,50,101,0.04)] transition duration-200 hoverable:hover:-translate-y-0.5 hoverable:hover:border-green-600/40 hoverable:hover:shadow-[0_10px_24px_-12px_rgba(7,50,101,0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
-              >
-                <CheckCircle />
-                <span>{s.name}</span>
-              </Link>
+          {services.map((name) => (
+            <li
+              key={name}
+              className="flex min-h-11 items-center gap-3 rounded-xl border border-[#ece6d6] bg-[#fffcf3] px-3.5 py-1.5 text-[0.88rem] font-medium lg:min-h-[clamp(2.75rem,3vw,4.4rem)] lg:px-[1vw] fs-sm text-navy-900 shadow-[0_1px_2px_rgba(7,50,101,0.04)]"
+            >
+              <CheckCircle />
+              <span>{name}</span>
             </li>
           ))}
         </ul>

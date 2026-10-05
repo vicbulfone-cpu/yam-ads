@@ -2,7 +2,7 @@
 import type { ReactNode } from "react";
 import { cityPicture, homeDeskHeroPicture, homeMobileHeroPicture } from "@/config/site.config";
 import { explodeLinkGroups, loadContent, mergeViews, splitOnHeadings, toSections, type Node, type Section } from "@/lib/content";
-import { cityOf, typeOf } from "@/lib/pages";
+import { cityOf, isLivePage, typeOf } from "@/lib/pages";
 import { copyFor } from "@/lib/seo";
 import { getCtaBandWords } from "@/lib/site-data";
 import CityShowcase from "./sections/CityShowcase";
@@ -24,7 +24,6 @@ import HowItWorks from "./sections/HowItWorks";
 import WhyItMatters from "./sections/WhyItMatters";
 import ClientTypes from "./sections/ClientTypes";
 import ServicesGrid from "./sections/ServicesGrid";
-import InsightsSection from "./sections/InsightsSection";
 import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeMidCta from "./sections/HomeMidCta";
@@ -63,7 +62,13 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
   // 1. Pull the old category "match card" out of the page (it becomes the hero card)
   const { card: pageCard, rest } = extractMatchCard(nodes);
   const card = SHARED_MATCH_CARD;
-  const sections = reflowSteps(splitOnHeadings(explodeLinkGroups(toSections(rest))));
+  // This site has only a few pages: a section made only of links to other pages (e.g. industry cards, other cities)
+  // is left out, and breadcrumb links to missing pages are dropped. Footers do their own filtering.
+  const isDead = (n: Node) => (n.t === "link" || n.t === "cardlink") && n.href.startsWith("/") && !isLivePage(n.href);
+  const isLive = (n: Node) => (n.t === "link" || n.t === "cardlink") && (!n.href.startsWith("/") || isLivePage(n.href));
+  const sections = reflowSteps(splitOnHeadings(explodeLinkGroups(toSections(rest))))
+    .filter((s) => s.tag === "footer" || !(s.nodes.some(isDead) && !s.nodes.some(isLive)))
+    .map((s) => (s.tag === "footer" ? s : { ...s, nodes: s.nodes.filter((n) => !isDead(n)) }));
 
   // 2. Split chrome (header/footer) from content
   const body = sections.filter((s) => s.tag !== "header" && s.tag !== "footer");
@@ -128,7 +133,6 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           <ClientTypes />
           <HomeMidCta />
           <ServicesGrid />
-          <InsightsSection />
           <FAQSection />
           <CoverageSection />
           <HomeTagline text={TAGLINES[8]} />

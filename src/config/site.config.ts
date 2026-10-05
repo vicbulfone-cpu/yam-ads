@@ -71,9 +71,7 @@ export const cityHeroPicture = (slug: string, cityName?: string) => heroByNumber
 /** HEADER NAVIGATION — labels are existing site wording. */
 export const navItems = [
   { label: "How It Works", href: "/how-it-works" },
-  { label: "Guides", href: "/guides" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
 ];
 
 /** Existing CTA wording on the old site. */

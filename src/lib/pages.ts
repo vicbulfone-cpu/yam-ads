@@ -1,30 +1,30 @@
-// Routes built from the public page inventory; retired, admin, and questionnaire records stay out of this list.
+// Routes for the scaled-back YAM ads site: the kept pages from the public page inventory plus the ad landing pages.
 import fs from "node:fs";
 import path from "node:path";
 
 type TypeRow = { path: string; type: string };
-const SKIP_TYPES = new Set(["admin (not rebuilt)", "questionnaire", "retired location (redirect)"]);
 const PAGE_ROWS = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "extracted", "page-types.json"), "utf8")) as TypeRow[];
 const PRIVATE_PREFIXES = ["/api", "/match", "/accountant-demo-x7k2", "/questionnaire"];
 const isPrivatePath = (p: string) => PRIVATE_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`));
 
-/** Every page the site builds: all pages in data/extracted/page-types.json except the admin pages, the old questionnaire
- *  redirect and the 12 retired location pages (those 301 to their city, see REDIRECTS). The 13 city pages are the only city pages.
- *  /how-we-select-accountants has its own route file, so it is not part of the catch-all. */
-export const PAGE_PATHS: string[] = PAGE_ROWS
-  .filter((r) => !SKIP_TYPES.has(r.type) && r.path !== "/how-we-select-accountants" && !isPrivatePath(r.path))
-  .map((r) => r.path);
+/** YAM ads is a scaled-back copy of the main site (owner, 5 Oct 2026). Only these content pages are kept from the old site;
+ *  /how-we-select-accountants and /questionnaire have their own route files. Add a path here to bring a page back. */
+const KEPT_PAGES = ["/", "/locations/melbourne", "/how-it-works", "/about", "/contact", "/privacy", "/terms"];
+
+/** Ad landing pages /ad-1 … /ad-6: home page hero, blank space below (owner will decide their content). noindex. */
+export const AD_PAGES = [1, 2, 3, 4, 5, 6].map((n) => `/ad-${n}`);
+
+/** Every content page the catch-all route builds. */
+export const PAGE_PATHS: string[] = [
+  ...PAGE_ROWS.map((r) => r.path).filter((p) => KEPT_PAGES.includes(p)),
+  ...AD_PAGES,
+];
 
 const INDEXABLE_EXTRAS = ["/how-we-select-accountants"];
 const PUBLIC_PAGE_PATHS = [...new Set([...PAGE_PATHS, ...INDEXABLE_EXTRAS])];
 
-/** Old URLs that no longer have a page: permanent redirect straight to the final page (no chains). */
-export const REDIRECTS: { source: string; destination: string }[] = PAGE_ROWS
-  .filter((r) => r.type === "retired location (redirect)")
-  .map((r) => {
-    const j = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "extracted", "pages", r.path.replace(/^\//, "").replace(/\//g, "__") + ".json"), "utf8"));
-    return { source: r.path, destination: (j.finalPath as string) || "/locations" };
-  });
+/** True when an internal link points at a page this site has; pages use it to leave out links to anything else. */
+export const isLivePage = (href: string) => PUBLIC_PAGE_PATHS.includes(href.replace(/[?#].*$/, "").replace(/(.)\/$/, "$1"));
 
 export type PageType = "homepage" | "city" | "industry-city" | "service" | "guide" | "article (blog)" | "other";
 

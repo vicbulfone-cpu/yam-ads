@@ -20,7 +20,7 @@ Your Accountant Match (${SITE_URL}) is a national accountant matching and referr
 People looking for personal tax, business and sole-trader accounting, bookkeeping and BAS, SMSF, registrations or related accounting help can share their postcode and service needs through the questionnaire. We use those requirements and location to match them with one of our partner accountants serving their area.
 
 ## Areas served
-Australia-wide, with city pages for Sydney, Newcastle–Maitland, Melbourne, Geelong, Brisbane, Gold Coast, Sunshine Coast, Perth, Adelaide, Hobart, Launceston, Canberra–Queanbeyan and Darwin.
+Australia-wide.
 
 ## Key services and information
 ${[
@@ -28,8 +28,6 @@ ${[
   "/accountant/tax-accountant", "/accountant/smsf-accountant", "/accountant/bookkeeping-bas",
   "/locations", "/how-it-works", "/how-we-select-accountants", "/about", "/contact",
 ].filter((p) => INDEXABLE_PATHS.includes(p)).map(line).join("\n")}
-
-Further guides and articles are available from the [Guides](${pageUrl("/guides")}) and [Blog](${pageUrl("/blog")}) pages.
 `;
   return new Response(body, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }

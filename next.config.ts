@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-import { REDIRECTS } from "./src/lib/pages";
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -14,11 +13,6 @@ const nextConfig: NextConfig = {
 
   // Picture quality levels the site may serve: 75 for ordinary pictures, 92 for the hero photograph (kept sharp).
   images: { qualities: [75, 92] },
-
-  // The 12 retired location pages go straight (one hop, permanent) to the city the old site sent them to.
-  async redirects() {
-    return REDIRECTS.map((r) => ({ ...r, permanent: true }));
-  },
 
   async headers() {
     return [

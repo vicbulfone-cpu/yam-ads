@@ -3,7 +3,7 @@
 //   node scripts/seo-audit.mjs http://localhost:3300 [--write]     (--write saves docs/seo-report.md)
 // Checks per page: 200 status, title, meta description, self-referencing canonical, robots tag, one H1 (report only),
 // lang="en-AU", server-rendered content, valid JSON-LD, visible FAQ/schema parity, Open Graph + Twitter tags, images without alt attribute, broken internal links, no localhost
-// addresses; then robots.txt, sitemap, llms.txt, retired-page redirects and a real 404.
+// addresses; then robots.txt, sitemap, llms.txt, lowercase redirects and a real 404.
 import fs from "node:fs";
 import { applyWording } from "../src/content/wording.ts";
 import { MATCH_CARD_COPY } from "../src/content/match-card-copy.ts";
@@ -175,24 +175,17 @@ site.push(["sitemap excludes hidden and noindex routes", !paths.some((p) => /^\/
 site.push(["llms.txt exists", (await get("/llms.txt")).status === 200]);
 const llmsTxt = await text("/llms.txt");
 site.push(["llms.txt does not reveal hidden routes", !/accountant-demo-x7k2|\/match\/|\/questionnaire/.test(llmsTxt)]);
-const gb = await fetch(BASE + "/locations/sydney", { headers: { "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" } });
+const gb = await fetch(BASE + "/locations/melbourne", { headers: { "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" } });
 site.push(["Googlebot receives the real page (200, has its H1)", gb.status === 200 && /<h1/.test(await gb.text())]);
-const bb = await fetch(BASE + "/locations/sydney", { headers: { "User-Agent": "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" } });
+const bb = await fetch(BASE + "/locations/melbourne", { headers: { "User-Agent": "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" } });
 site.push(["Bingbot receives the real page (200)", bb.status === 200]);
-const rq = await get("/locations/dubbo?gclid=abc&utm_source=x");
+const rq = await get("/Locations/Melbourne?gclid=abc&utm_source=x");
 site.push(["redirects keep gclid / utm query strings", (rq.headers.get("location") || "").includes("gclid=abc")]);
-const up = await get("/Locations/Sydney");
-site.push([`upper-case URL /Locations/Sydney redirects to lowercase (${up.status})`, [301, 308].includes(up.status) && (up.headers.get("location") || "").endsWith("/locations/sydney")]);
+const up = await get("/Locations/Melbourne");
+site.push([`upper-case URL /Locations/Melbourne redirects to lowercase (${up.status})`, [301, 308].includes(up.status) && (up.headers.get("location") || "").endsWith("/locations/melbourne")]);
 for (const b of ["Amazonbot", "Applebot", "DuckAssistBot", "Meta-ExternalAgent", "MistralAI-User", "CCBot"]) site.push([`robots.txt names ${b}`, robotsTxt.includes(b)]);
 const nf = await get("/no-such-page-xyz");
 site.push(["unknown URL returns a real 404", nf.status === 404]);
-const retired = JSON.parse(fs.readFileSync("data/extracted/page-types.json", "utf8")).filter((r) => r.type === "retired location (redirect)");
-for (const r of retired) {
-  const x = await get(r.path);
-  const to = x.headers.get("location");
-  const ok = [301, 308].includes(x.status) && to && known.has(new URL(to, BASE).pathname);
-  site.push([`${r.path} → ${to} (${x.status})`, ok]);
-}
 
 const failed = site.filter((s) => !s[1]);
 const lines = [];

@@ -2,31 +2,31 @@ import Link from "next/link";
 
 /**
  * Home page: "Connecting Australians with local accountants".
- * Owner rule: only the site's 13 city pages are shown (no other towns); "Regional Australia" is plain text, not a link.
+ * The areas served; Melbourne is the only one with its own page on this site, so it is the only link.
  */
 
 const rows: { label: string; places: { name: string; href?: string }[] }[] = [
   {
     label: "Capital cities",
     places: [
-      { name: "Sydney", href: "/locations/sydney" },
+      { name: "Sydney" },
       { name: "Melbourne", href: "/locations/melbourne" },
-      { name: "Brisbane", href: "/locations/brisbane" },
-      { name: "Perth", href: "/locations/perth" },
-      { name: "Adelaide", href: "/locations/adelaide" },
-      { name: "Hobart", href: "/locations/hobart" },
-      { name: "Canberra", href: "/locations/canberra-queanbeyan" },
-      { name: "Darwin", href: "/locations/darwin" },
+      { name: "Brisbane" },
+      { name: "Perth" },
+      { name: "Adelaide" },
+      { name: "Hobart" },
+      { name: "Canberra" },
+      { name: "Darwin" },
     ],
   },
   {
     label: "Regional centres",
     places: [
-      { name: "Gold Coast", href: "/locations/gold-coast" },
-      { name: "Newcastle", href: "/locations/newcastle-maitland" },
-      { name: "Sunshine Coast", href: "/locations/sunshine-coast" },
-      { name: "Geelong", href: "/locations/geelong" },
-      { name: "Launceston", href: "/locations/launceston" },
+      { name: "Gold Coast" },
+      { name: "Newcastle" },
+      { name: "Sunshine Coast" },
+      { name: "Geelong" },
+      { name: "Launceston" },
       { name: "Regional Australia" },
     ],
   },
@@ -79,13 +79,6 @@ export default function CoverageSection() {
         <p className="mt-7 text-[0.88rem] text-navy-900/80">
           One local accountant per area. Your enquiry is sent to your matched accountant, and your details are never sold or distributed to multiple firms.
         </p>
-        <Link
-          href="/locations"
-          className="mt-6 inline-flex min-h-12 items-center gap-3 rounded-full border-[1.5px] border-green-600 bg-white px-7 text-[0.95rem] font-bold text-navy-900 transition hover:bg-green-50"
-        >
-          View all locations
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="text-green-700"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-        </Link>
       </div>
     </section>
   );
