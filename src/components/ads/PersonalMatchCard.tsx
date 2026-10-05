@@ -19,8 +19,9 @@ export default function PersonalMatchCard() {
 
   // laptops/desktops: drawn just small enough to fit the visible browser area, exactly as the home page match box
   useEffect(() => {
+    // (only in the page hero: inside the site popup the box keeps the popup's size)
     const box = boxRef.current;
-    if (!box) return;
+    if (!box || !box.closest(".bz-card-col")) return;
     const fit = () => {
       const f = matchFit(box);
       if (f == null) box.style.removeProperty("--mc-fit");

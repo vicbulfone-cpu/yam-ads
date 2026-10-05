@@ -40,6 +40,13 @@ Best approach for Ad N: create `src/content/<type>-questionnaire.ts` with the sa
 page, match box and questionnaire components take that content (or copy them with a new prefix). Keep shared pieces shared.
 Route it in `src/app/[[...slug]]/page.tsx` like `/ad-1`. Ad pages stay **noindex** (`seo/index-status.json`).
 
+**Main-site use (owner, 6 Oct 2026):** the site match box (home page and popup) maps each service to an ad: Personal →
+Ad 2, Business → Ad 1, SMSF → Ad 3, Registrations → Ad 4 (`src/lib/service-routes.ts`). The popup shows that ad's match
+box, then its questionnaire. Send the lead with `...leadOrigin("<type>")` (QuestionnaireParts.tsx), never a fixed
+`adType`: it sets `adType` only on `/ad-N` pages, so main-site leads stay Organic. A new ad's questionnaire must also be
+added to `SiteAdQuestionnaires` (LazyQuestionnaires.tsx) and `SERVICE_BOX` in QuestionnaireModal.tsx if it gets a row
+on the site box.
+
 ## Landing page (laptop/desktop)
 
 - Slim ad header (logo + shield + "Free matching. No obligation."); the site header and phone CTA bar are hidden on ad

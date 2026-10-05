@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
+import { SERVICE_OF } from "@/lib/service-routes";
 import { MATCH_CARD_COPY as COPY } from "@/content/match-card-copy";
 import { matchFit } from "@/lib/match-fit";
 import { ArrowRight, Check } from "../ui/Icons";
@@ -66,29 +67,38 @@ const boxIcons = [
   { tone: "is-purple", icon: <><path d="M6.4 2.8h7.2l4.8 4.8v12a1.6 1.6 0 0 1-1.6 1.6H6.4a1.6 1.6 0 0 1-1.6-1.6V4.4a1.6 1.6 0 0 1 1.6-1.6Z" {...outline} /><path d="M13.6 2.8v4.8h4.8M8.4 12h7.2M8.4 15h7.2M8.4 18h4.6" {...outline} /></> },
 ];
 
-function questionnaireHref(selected: string[]) {
+/** Questionnaire address with ?service=… (the popup then shows that service's ad match box; see service-routes.ts). */
+function questionnaireHref(selected: string | null) {
   const [pathAndQuery, hash = ""] = QUESTIONNAIRE_URL.split("#", 2);
   const queryStart = pathAndQuery.indexOf("?");
   const path = queryStart === -1 ? pathAndQuery : pathAndQuery.slice(0, queryStart);
   const query = new URLSearchParams(queryStart === -1 ? "" : pathAndQuery.slice(queryStart + 1));
   query.delete("category");
-  selected.forEach((category) => query.append("category", category));
+  query.delete("service");
+  const service = selected ? SERVICE_OF[selected] : undefined;
+  if (service) query.set("service", service);
   const serialized = query.toString();
   return `${path}${serialized ? `?${serialized}` : ""}${hash ? `#${hash}` : ""}`;
 }
 
+/**
+ * The four services (owner, 6 Oct 2026): pick ONE. Each maps to its ad questionnaire (Personal → Ad 2, Business → Ad 1,
+ * SMSF → Ad 3, Registrations → Ad 4); Start opens the popup on that ad's own match box.
+ */
 export default function MatchCardServices({
   categories,
   startLabel,
-  initialSelected = [],
+  initialSelected = null,
 }: {
   categories: Category[];
   startLabel: string;
-  initialSelected?: string[];
+  initialSelected?: string | null;
 }) {
-  const [selected, setSelected] = useState<string[]>(initialSelected);
+  const [selected, setSelected] = useState<string | null>(initialSelected);
   const [error, setError] = useState(false);
   const rowsRef = useRef<HTMLFieldSetElement>(null);
+  // each box on the page (hero, popup) needs its own radio group
+  const radioName = `mc-service-${useId()}`;
 
   // Hero match box on laptops/desktops: draw it just small enough to fit the visible browser area (layout unchanged)
   useEffect(() => {
@@ -105,11 +115,9 @@ export default function MatchCardServices({
     return () => window.removeEventListener("resize", fit);
   }, []);
 
-  function toggleCategory(category: string) {
+  function choose(category: string) {
     setError(false);
-    setSelected((current) => current.includes(category)
-      ? current.filter((item) => item !== category)
-      : [...current, category]);
+    setSelected(category);
   }
 
   return (
@@ -118,15 +126,16 @@ export default function MatchCardServices({
         <legend className="sr-only">Select accounting services</legend>
         {categories.map((category, index) => {
           const { tone, icon } = boxIcons[index % boxIcons.length];
-          const isSelected = selected.includes(category.title);
+          const isSelected = selected === category.title;
           // the box may call a service by a different name; the questionnaire still receives the original one
           const shown = COPY.rows[category.title] ?? category;
           return (
             <label key={category.title} className={`mc-row${isSelected ? " is-on" : ""}`}>
               <input
-                type="checkbox"
+                type="radio"
+                name={radioName}
                 checked={isSelected}
-                onChange={() => toggleCategory(category.title)}
+                onChange={() => choose(category.title)}
                 aria-label={shown.title}
                 className="peer sr-only"
               />
@@ -146,9 +155,9 @@ export default function MatchCardServices({
       </fieldset>
       <Link
         href={questionnaireHref(selected)}
-        // Start always leads to questionnaire page 1; with nothing ticked it shows the old card's message instead
+        // Start opens the chosen service's ad match box; with nothing picked it shows the old card's message instead
         data-match-start=""
-        onClick={(e) => { if (!selected.length) { e.preventDefault(); setError(true); } }}
+        onClick={(e) => { if (!selected) { e.preventDefault(); setError(true); } }}
         className="btn btn-primary mc-start">
         <span>{startLabel}</span>
         <ArrowRight className="mc-start-arrow" strokeWidth={2.6} />

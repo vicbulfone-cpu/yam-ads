@@ -1,7 +1,7 @@
 "use client";
 
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
-import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
+import { OPEN_QUESTIONNAIRE_EVENT, OPEN_SERVICE_BOX } from "@/lib/questionnaire-events";
 import type { MatchCardData } from "../sections/MatchCardView";
 import WhenNeeded from "../ui/WhenNeeded";
 
@@ -14,7 +14,7 @@ export default function LazyQuestionnaireModal({ card }: { card: MatchCardData }
     <WhenNeeded
       load={() => import("./QuestionnaireModal")}
       props={{ card }}
-      events={[OPEN_QUESTIONNAIRE_EVENT]}
+      events={[OPEN_QUESTIONNAIRE_EVENT, OPEN_SERVICE_BOX]}
       linkPath={QUESTIONNAIRE_URL}
     />
   );

@@ -8,7 +8,7 @@ import { BIZ_CATEGORIES, BIZ_MATCH_KEY, BIZ_MODES, BIZ_Q as Q, BIZ_SOFTWARE, typ
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, leadOrigin, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 import { BIZ_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
@@ -223,7 +223,7 @@ export default function BusinessQuestionnaire() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          adType: "business",
+          ...leadOrigin("business"),
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services, answers, workMode: modeLabel,

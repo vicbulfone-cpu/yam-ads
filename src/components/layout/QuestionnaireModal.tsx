@@ -15,16 +15,32 @@ import { progressMilestones } from "@/lib/progress";
 /**
  * The questionnaire popup (3/4 of the screen, blurred page behind it).
  * Any link to the questionnaire address opens it instead of leaving the page:
- *  - links carrying ?category=… (the match card's Start button) go straight to questionnaire page 1;
+ *  - links carrying ?service=… (the match card's Start button) show that service's ad match box, whose Start opens
+ *    that ad's questionnaire (Personal → Ad 2, Business → Ad 1, SMSF → Ad 3, Registrations → Ad 4);
+ *  - links carrying ?category=… go straight to questionnaire page 1;
  *  - every other CTA first shows the match card so the visitor can pick their services.
  * The links stay ordinary links in the HTML (search engines and no-JavaScript visitors still reach /questionnaire).
  * Nothing is rendered inside the popup until it opens, so page HTML and SEO are unchanged.
  */
 
 type Answers = Record<string, { optionIds: string[]; software: string | null; otherNote: string }>;
-type Step = { kind: "select" } | { kind: "category"; index: number } | { kind: "next" };
+type Step = { kind: "select" } | { kind: "service"; service: ServiceKey } | { kind: "category"; index: number } | { kind: "next" };
 
-import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
+/** Each service's own ad match box (owner, 6 Oct 2026): Start on it opens that ad's questionnaire. */
+const SERVICE_BOX: Record<ServiceKey, () => React.ReactNode> = {
+  personal: () => <PersonalMatchCard />,
+  business: () => <BizMatchCard />,
+  smsf: () => <SmsfMatchCard />,
+  registration: () => <RegistrationMatchCard />,
+};
+const titleOf = (service: ServiceKey) => Object.keys(SERVICE_OF).find((t) => SERVICE_OF[t] === service) ?? null;
+
+import { OPEN_QUESTIONNAIRE_EVENT, OPEN_SERVICE_BOX } from "@/lib/questionnaire-events";
+import { isServiceKey, OPEN_EVENT_OF, preloadEvent, SERVICE_OF, type ServiceKey } from "@/lib/service-routes";
+import BizMatchCard from "../ads/BizMatchCard";
+import PersonalMatchCard from "../ads/PersonalMatchCard";
+import SmsfMatchCard from "../ads/SmsfMatchCard";
+import RegistrationMatchCard from "../ads/RegistrationMatchCard";
 export { OPEN_QUESTIONNAIRE_EVENT };
 
 const norm = (s: string) => s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, " ").trim();
@@ -43,6 +59,8 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
   const [fromCard, setFromCard] = useState(false);
   // true while the "Are you sure you want to leave?" box is showing
   const [confirmLeave, setConfirmLeave] = useState(false);
+  // back from a service's ad match box: the site box shows that service still picked
+  const [picked, setPicked] = useState<string | null>(null);
   const stayRef = useRef<HTMLButtonElement>(null);
 
   const show = useCallback((categoryIds: string[], fromPageCard = false) => {
@@ -57,12 +75,24 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
     setFromCard(fromPageCard);
     setError(false);
     setConfirmLeave(false);
+    setPicked(null);
     setStep(
       resume && saved.step.kind === "next" ? { kind: "next" }
         : resume && saved.step.kind === "category" ? { kind: "category", index: Math.min(saved.step.index, useIds.length - 1) }
           : useIds.length ? { kind: "category", index: 0 } : { kind: "select" },
     );
     setOpen(true);
+  }, []);
+
+  const showService = useCallback((service: ServiceKey) => {
+    setIds([]);
+    setFromCard(false);
+    setError(false);
+    setConfirmLeave(false);
+    setStep({ kind: "service", service });
+    setOpen(true);
+    // start loading that ad's questionnaire now, so it opens straight away when Start is pressed
+    window.dispatchEvent(new Event(preloadEvent(OPEN_EVENT_OF[service])));
   }, []);
 
   const close = useCallback(() => {
@@ -73,13 +103,13 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
 
   // Closing part-way through the questions first asks "Are you sure you want to leave?" (the match box page just closes)
   const requestClose = useCallback(() => {
-    if (step.kind === "select") close();
+    if (step.kind === "select" || step.kind === "service") close();
     else setConfirmLeave(true);
   }, [close, step.kind]);
 
   // keep the visitor's progress in their browser, so it is still there if they come back
   useEffect(() => {
-    if (open && step.kind !== "select") saveProgress(ids, answers, step);
+    if (open && (step.kind === "category" || step.kind === "next")) saveProgress(ids, answers, step);
   }, [open, ids, answers, step]);
 
   // the "leave?" box: focus lands on Stay; closing the browser tab mid-way shows the browser's own "leave site?" warning
@@ -87,7 +117,7 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
     if (confirmLeave) stayRef.current?.focus();
   }, [confirmLeave]);
   useEffect(() => {
-    if (!open || step.kind === "select") return;
+    if (!open || step.kind === "select" || step.kind === "service") return;
     const warn = (e: BeforeUnloadEvent) => { e.preventDefault(); };
     window.addEventListener("beforeunload", warn);
     return () => window.removeEventListener("beforeunload", warn);
@@ -115,20 +145,30 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
       if (!a) return;
       const url = new URL(a.href, window.location.href);
       if (url.origin !== target.origin || url.pathname.replace(/\/$/, "") !== target.pathname.replace(/\/$/, "")) return;
+      e.preventDefault(); // Next's <Link> skips navigation when the default is prevented
+      const service = url.searchParams.get("service");
+      if (isServiceKey(service)) return showService(service);
       const categoryIds = toIds(url.searchParams.getAll("category"));
       // a match-card Start button with nothing ticked never opens the popup; the card shows its own message
-      if (a.hasAttribute("data-match-start") && !categoryIds.length) return e.preventDefault();
-      e.preventDefault(); // Next's <Link> skips navigation when the default is prevented
+      if (a.hasAttribute("data-match-start") && !categoryIds.length) return;
       show(categoryIds, !a.closest("dialog") && a.hasAttribute("data-match-start"));
     };
     const onOpen = (e: Event) => show(toIds((e as CustomEvent<string[]>).detail ?? []), true);
+    const onService = (e: Event) => { const s = (e as CustomEvent<string>).detail; if (isServiceKey(s)) showService(s); };
+    // an ad questionnaire opening (Start on an ad match box) takes over from this popup
+    const adEvents = Object.values(OPEN_EVENT_OF);
+    const onAdOpen = () => { setOpen(false); setConfirmLeave(false); };
     window.addEventListener("click", onClick, true);
     window.addEventListener(OPEN_QUESTIONNAIRE_EVENT, onOpen);
+    window.addEventListener(OPEN_SERVICE_BOX, onService);
+    adEvents.forEach((t) => window.addEventListener(t, onAdOpen));
     return () => {
       window.removeEventListener("click", onClick, true);
       window.removeEventListener(OPEN_QUESTIONNAIRE_EVENT, onOpen);
+      window.removeEventListener(OPEN_SERVICE_BOX, onService);
+      adEvents.forEach((t) => window.removeEventListener(t, onAdOpen));
     };
-  }, [show]);
+  }, [show, showService]);
 
   const categories = ids.map((id) => MATCH_CATEGORIES.find((c) => c.id === id)!).filter(Boolean);
   const totalSteps = categories.length + 2; // categories + summary + contact (as on the old site)
@@ -162,31 +202,47 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
   };
 
   const stepNumber = step.kind === "category" ? step.index + 1 : categories.length + 1;
-  const selectedTitles = card.categories.filter((c) => ids.includes(toIds([c.title])[0] ?? "")).map((c) => c.title);
+  const backToServices = () => {
+    if (step.kind === "service") setPicked(titleOf(step.service));
+    setStep({ kind: "select" });
+  };
+  // both match box pages are drawn at the popup's match box size
+  const boxStep = step.kind === "select" || step.kind === "service";
 
   return (
     <dialog
       ref={dialogRef}
       className="q-modal"
-      data-step={step.kind}
-      aria-label={step.kind === "select" ? card.title ?? "Questionnaire" : UI.progressBadge}
+      data-step={boxStep ? "select" : step.kind}
+      aria-label={boxStep ? card.title ?? "Questionnaire" : UI.progressBadge}
       onCancel={(e) => { e.preventDefault(); if (confirmLeave) setConfirmLeave(false); else requestClose(); }}
-      onClick={(e) => { if (e.target === e.currentTarget && step.kind === "select") close(); }}
+      onClick={(e) => { if (e.target === e.currentTarget && boxStep) close(); }}
     >
       {open && (
         <div className="relative flex h-full max-h-[inherit] flex-col">
           <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
+            {step.kind === "service" && (
+              <button type="button" onClick={backToServices} className="ml-auto inline-flex min-h-11 items-center gap-2 rounded-full px-3 text-sm font-semibold text-muted transition hover:text-navy-900">
+                <ArrowRight width={16} height={16} strokeWidth={2.5} className="rotate-180" />
+                {UI.back}
+              </button>
+            )}
             <button type="button" onClick={requestClose} aria-label="Close" className="q-modal-close">
               <Close width={20} height={20} strokeWidth={2.4} />
             </button>
           </div>
 
           <div ref={scrollRef} data-bg={step.kind === "category" ? current?.id : step.kind} className="q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
-            {step.kind === "select" ? (
+            {step.kind === "service" ? (
+              // the chosen service's own ad match box, at the same size as the site box
+              <div className="q-modal-card flex min-h-full items-center"><div className="w-full">
+                {SERVICE_BOX[step.service]()}
+              </div></div>
+            ) : step.kind === "select" ? (
               // match box at the same width as on every page, with 2cm either side of it (q-modal-card in globals.css)
               <div className="q-modal-card flex min-h-full items-center"><div className="w-full">
-                <MatchCardView key={ids.join()} data={card} initialSelected={selectedTitles} />
+                <MatchCardView key={picked ?? ""} data={card} initialSelected={picked} />
               </div></div>
             ) : (
               <PhoneFit>
@@ -206,7 +262,7 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
             )}
           </div>
 
-          {step.kind !== "select" && (
+          {!boxStep && (
             <div className="q-modal-footer shrink-0 border-t border-line/70 bg-white/95 px-4 py-3 sm:px-8">
               {error && current && sel && (
                 <p role="alert" className="mb-2 text-center text-sm font-semibold text-red-600">

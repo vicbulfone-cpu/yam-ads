@@ -212,6 +212,20 @@ Later (after the main build): Google Ads landing pages and ads questionnaire on 
 - **SEO:** the popup's contents are only created after a click, so no page's HTML, headings or word count changes. The CTA links remain ordinary links. `/questionnaire` itself is a noindex page (also blocked in robots.txt and absent from the sitemap) showing the match card; with `?category=` it opens the popup at page 1.
 - **Closing:** the � button or Esc closes the popup and clears the answers. Clicking the blurred background closes it only on the service-choice step, so answers are never lost by a stray click. Back on page 1 closes the popup when it was opened from a page's match box (the ticks stay on the card); when it was opened from another CTA, Back returns to the match box in the popup with the ticks kept.
 
+## Site match box mapped to the four ad questionnaires (owner, 6 Oct 2026)
+
+- The site match box (home hero, every page that shows it, and the popup) is now **pick one service**. Each service opens
+  its ad's own match box in the popup, then that ad's questionnaire: Personal Tax & Planning → Ad 2, Business Services →
+  Ad 1, SMSF & Wealth Advisory → Ad 3, Registration Services → Ad 4. Map: `src/lib/service-routes.ts`.
+- Start on the site box links to `/questionnaire?service=<personal|business|smsf|registration>` (still an ordinary link
+  for no-JavaScript visitors); the popup shows that ad's box, with a Back button to change service.
+- The four ad questionnaires are mounted site-wide from the layout (`SiteAdQuestionnaires`), loaded only once the popup
+  shows their box; ad pages keep their own copy.
+- **Lead source unchanged for the main site:** leads from these questionnaires started on the main site send no `adType`,
+  so they stay "Organic" (postcode owner). On the ad pages `adType` is still sent, so they stay "Paid". Every lead now
+  also carries `questionnaire` (business / personal / smsf / registration).
+- The old per-category questionnaire (`?category=` links) still works but is no longer reached from the match box.
+
 ## New hero, header and logo for the home and city pages (owner's design, 4 Oct 2026)
 
 Built from the owner's picture "how it should look" and the artwork in `hero section/` (git-ignored; web copies are made by `node scripts/make-hero-assets.mjs`).

@@ -57,6 +57,8 @@ export async function POST(request: Request) {
     matchPageUrl: str(body.matchPageUrl, 300),
     leadSource: paid ? "Paid" : "Organic",
     adType: str(body.adType, 40),
+    // which questionnaire was filled in (business, personal, smsf, registration), whether from an ad page or the main site
+    questionnaire: str(body.questionnaire, 40),
     campaign: str(tracking.utm_campaign, 200),
     gclid: str(tracking.gclid, 300),
     ref: str(tracking.ref, 200),

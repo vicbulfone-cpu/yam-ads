@@ -22,6 +22,15 @@ export function readTracking() {
 }
 
 /**
+ * Which questionnaire the lead came from, and whether it counts as an ad lead. On an ad landing page (/ad-1, /ad-2, …)
+ * `adType` is set, so GoHighLevel treats the lead as "Paid" (the advertiser gets it). The same questionnaire opened from
+ * the main site's match box sends no `adType`, so the lead stays "Organic" (postcode owner) unless a gclid is present.
+ */
+export function leadOrigin(type: string) {
+  return { questionnaire: type, adType: /^\/ad-\d+(\/|$)/.test(window.location.pathname) ? type : "" };
+}
+
+/**
  * Opens the match page. The quick in-app switch is tried first (the popup stays on "Preparing your match…" until the
  * match page replaces it); if the match page hasn't appeared within 3 seconds (e.g. an old browser tab after a site
  * update, or a browser that blocks the switch), the browser loads it directly, so the customer is never left waiting.

@@ -9,7 +9,7 @@ export const MATCH_CARD_HIGHLIGHT = "Skip directories. Get matched with a local 
 // the same whether it is narrow (phones, laptop hero) or wide (desktop hero, popup). Styles: ".mc" in globals.css.
 
 /** Server-rendered heading, benefit strip and prompt; the service selector is the only interactive part. */
-export default function MatchCardView({ data, titleTag = "h2", initialSelected }: { data: MatchCardData; titleTag?: "h2" | "p"; initialSelected?: string[] }) {
+export default function MatchCardView({ data, titleTag = "h2", initialSelected }: { data: MatchCardData; titleTag?: "h2" | "p"; initialSelected?: string | null }) {
   const Title = titleTag;
   return (
     <div data-match-card="" className="mc">
