@@ -92,3 +92,8 @@ is bigger than the home box, as in the owner's picture: about 40% of the screen 
 From 1500px wide it shows the full row names and lines from the design ("Returns, BAS, GST, PAYG and overdue
 lodgements."); 1200–1499px keeps the short ones. Styles: `.bz-grid-wide` / `.bz-card-wide` in `ads.css`; `longText` prop
 on `BizMatchCard`. Every other ad page keeps the home box size.
+
+**Update (owner, 6 Oct 2026): Ad 2 and Ad 3 use Ad 1's hero layout**, with their own wording unchanged: three-line
+headline (middle line green), "fade behind words" behind the line under it, the steps and the handwriting
+(`.bz-script-biz`), plain steps with arrows, solid green benefit circles, the small print on one paragraph, and the wider
+Ad 1 match box (`.bz-grid-wide` / `.bz-card-wide`; they have no long row names, so `.bz-long` does not apply).

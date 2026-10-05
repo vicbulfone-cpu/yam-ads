@@ -35,7 +35,7 @@ export default function PersonalMatchCard() {
   const start = () => (selected ? open(selected) : setError(true));
 
   return (
-    <div ref={boxRef} data-match-card="" className="mc bz-card pz-card">
+    <div ref={boxRef} data-match-card="" className="mc bz-card pz-card bz-card-wide">
       <div className="mc-head">
         <p className="mc-eyebrow">{C.eyebrow}</p>
         <h2 className="mc-title">

@@ -235,6 +235,10 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   /* the small print stops before the match box column */
   .sz-disclaimer { right: calc(clamp(26rem, 31.6vw, 39.2rem) + var(--mc-extra-w) + clamp(1.75rem, 3vw, 4.5rem) + max(1rem, 3.6vw)); max-width: none; }
 }
+/* ...and before the wider Ad 1-sized match box (owner, 6 Oct 2026: Ad 2 and Ad 3 use Ad 1's layout) */
+@media (min-width: 1200px) {
+  .sz-disclaimer { right: calc(clamp(27rem, 36.5vw, 46rem) + var(--mc-extra-w) + clamp(1.75rem, 3vw, 4.5rem) + max(1rem, 3.6vw)); }
+}
 
 /* Business ad page only (owner, 5 Oct 2026): the handwriting's two lines closer together (the space between the bottom of
    the first line and the top of the second is 60% of before: line-height 1.05 -> 0.9) and, on laptops and desktops, the

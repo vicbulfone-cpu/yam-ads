@@ -11,7 +11,7 @@ import { AdFooter, AdHeader } from "./AdChrome";
 import MatchFitScript from "../sections/MatchFitScript";
 import SmsfMatchCard from "./SmsfMatchCard";
 import { LazySmsfQuestionnaire } from "./LazyQuestionnaires";
-import { PeopleSolid, PinSolid, ShieldCheck, SMSF_STEP_ICONS } from "./BizIcons";
+import { PeopleSolid, PinSolid, ShieldCheck } from "./BizIcons";
 
 const BENEFIT_ICONS = { pin: PinSolid, people: PeopleSolid, shield: ShieldCheck };
 
@@ -23,16 +23,19 @@ export default function SmsfAdPage() {
         {/* the desk photograph at the home page's height and shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
           <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
-          <p className="bz-script">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
+          <p className="bz-script bz-script-biz fade-behind">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
         </div>
 
-        <div className="bz-wrap bz-grid sz-grid">
+        {/* hero laid out exactly as Ad 1 (owner, 6 Oct 2026): three-line headline, faded line and steps (plain, with
+            arrows), solid benefit circles, the wider match box; wording unchanged */}
+        <div className="bz-wrap bz-grid bz-grid-wide sz-grid">
           <div className="bz-text">
-            <h1 className="bz-h1 sz-h1">
-              <span className="block">{L.h1[0]}</span>
-              <span className="block"><span className="text-[#0e7a32]">{L.h1[1]}</span> {L.h1[2]}</span>
+            <h1 className="bz-h1">
+              <span className="block">{L.h1[0]}</span>{" "}
+              <span className="block text-[#0e7a32]">{L.h1[1]}</span>{" "}
+              <span className="block">{L.h1[2]}</span>
             </h1>
-            <p className="bz-sub">{L.sub}</p>
+            <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 
           <div className="bz-card-col">
@@ -41,21 +44,17 @@ export default function SmsfAdPage() {
           </div>
 
           <div className="bz-more">
-            <ol className="bz-steps sz-steps">
+            <ol className="bz-steps bz-steps-shade fade-behind">
               {L.steps.map((s, i) => (
-                <li key={s.icon}>
-                  {i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}
-                  <span aria-hidden className="sz-step-icon"><svg viewBox="0 0 24 24">{SMSF_STEP_ICONS[s.icon]}</svg></span>
-                  <span>{s.text[0]}<br />{s.text[1]}</span>
-                </li>
+                <li key={s.icon}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s.text.join(" ")}</span></li>
               ))}
             </ol>
-            <ul className="bz-benefits sz-benefits">
+            <ul className="bz-benefits">
               {L.benefits.map((b) => {
                 const Icon = BENEFIT_ICONS[b.icon as keyof typeof BENEFIT_ICONS];
                 return (
                   <li key={b.text.join(" ")}>
-                    <span aria-hidden className="bz-benefit-icon sz-benefit-icon"><Icon className="h-[55%] w-[55%]" /></span>
+                    <span aria-hidden className="bz-benefit-icon"><Icon className="h-[55%] w-[55%]" /></span>
                     <span>{b.text[0]}<br />{b.text[1]}</span>
                   </li>
                 );
@@ -63,7 +62,7 @@ export default function SmsfAdPage() {
             </ul>
           </div>
 
-          <p className="bz-disclaimer sz-disclaimer">{L.disclaimer.map((d) => <span key={d} className="block">{d}</span>)}</p>
+          <p className="bz-disclaimer sz-disclaimer">{L.disclaimer.join(" ")}</p>
         </div>
       </main>
       <AdFooter variant="smsf" />
