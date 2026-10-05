@@ -2,17 +2,18 @@
 
 import Image from "next/image";
 import { useMemo, useSyncExternalStore } from "react";
-import { BIZ_MATCH as M, BIZ_MATCH_KEY } from "@/content/business-questionnaire";
-import type { MatchDetails } from "@/content/sample-match";
+import { BIZ_MATCH, BIZ_MATCH_KEY } from "@/content/business-questionnaire";
+import { PERSONAL_MATCH } from "@/content/personal-questionnaire";
+import { SAMPLE_MATCH_PERSONAL, type MatchDetails } from "@/content/sample-match";
 import { ArrowRight, Check, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
- * The customer's match page (/ad-6), shown after the business questionnaire. The accountant's details come from the
+ * The customer's match page (/ad-6), shown after every ad questionnaire (business, personal, ...). The accountant's details come from the
  * server (the sample accountant until GoHighLevel is connected); the customer's own answers come from this browser tab.
  * Empty fields are hidden. Wording is neutral (no claims about why this accountant was chosen).
  */
 type Saved = {
-  leadId: string; name: string; email: string; emailMe: boolean; mode: string;
+  adType?: string; leadId: string; name: string; email: string; emailMe: boolean; mode: string;
   place: { postcode: string; suburb: string; state: string };
   services: { category: string; items: string[] }[];
 };
@@ -24,14 +25,19 @@ function readSaved() {
 const tel = (p: string) => p.replace(/[^\d+]/g, "");
 const host = (u: string) => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
-export default function BizMatchPage({ match, isSample }: { match: MatchDetails; isSample: boolean }) {
+export default function BizMatchPage({ match: serverMatch, isSample }: { match: MatchDetails; isSample: boolean }) {
   // the customer's answers, saved in this browser tab by the questionnaire (nothing on the server render)
   const raw = useSyncExternalStore(noSubscribe, readSaved, () => null);
   const saved = useMemo(() => {
     try { return raw ? (JSON.parse(raw) as Saved) : null; } catch { return null; }
   }, [raw]);
 
-  const firstName = saved?.name.split(/\s+/)[0];
+  const firstWord = saved?.name.trim().split(/\s+/)[0];
+  const firstName = firstWord ? firstWord[0].toUpperCase() + firstWord.slice(1) : undefined;
+  // wording (and, until GoHighLevel is connected, the sample accountant) for the questionnaire the customer came from
+  const personal = saved?.adType === "personal";
+  const M = personal ? { ...BIZ_MATCH, ...PERSONAL_MATCH } : BIZ_MATCH;
+  const match = personal && isSample ? SAMPLE_MATCH_PERSONAL : serverMatch;
 
   return (
     <main className="bz-match">

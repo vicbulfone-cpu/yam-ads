@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { logo } from "@/config/site.config";
 import { BIZ_LANDING as L } from "@/content/business-questionnaire";
-import { PeopleSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
+import { HandshakeSolid, LockIcon, PeopleOutline, PeopleSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
 
-export function AdHeader() {
+export function AdHeader({ className = "" }: { className?: string }) {
   return (
-    <header className="bz-header">
+    <header className={`bz-header ${className}`}>
       <div className="bz-wrap flex items-center justify-between gap-4">
         <Link href="/" aria-label="Your Accountant Match — Home" className="shrink-0">
           <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} priority className="bz-logo" />
@@ -21,8 +21,35 @@ export function AdHeader() {
 }
 
 const TRUST_ICONS = { shield: ShieldCheck, people: PeopleSolid, thumb: ThumbSolid };
+// owner's "personal" design picture: padlock, people outline and handshake
+const PERSONAL_TRUST_ICONS = [LockIcon, PeopleOutline, HandshakeSolid];
 
-export function AdFooter() {
+export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" }) {
+  if (variant === "personal") {
+    // trust strip across the page, then one line: copyright on the left, information links on the right
+    return (
+      <footer className="bz-footer pz-footer">
+        <div className="bz-wrap">
+          <ul className="bz-trust pz-trust">
+            {L.trust.map((t, i) => {
+              const Icon = PERSONAL_TRUST_ICONS[i];
+              return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
+            })}
+          </ul>
+        </div>
+        <div className="pz-footer-line">
+          <div className="bz-wrap flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
+            <p className="text-[0.82rem] leading-snug text-navy-900">
+              © {new Date().getFullYear()} {L.copyright}.<span className="ml-2">{L.based[0]} <span aria-hidden>•</span> {L.based[1]}.</span>
+            </p>
+            <nav aria-label="Information" className="bz-links pz-links">
+              <p>{L.links.map((l) => <Link key={l.href} href={l.href}>{l.text}</Link>)}</p>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    );
+  }
   return (
     <footer className="bz-footer">
       <div className="bz-wrap grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">

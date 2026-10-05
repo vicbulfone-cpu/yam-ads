@@ -18,11 +18,14 @@ The owner's design pictures are in `hero section/ad landing pages/` (e.g. `busin
 | Ad header and footer | `src/components/ads/AdChrome.tsx` (shared, reuse as is) |
 | Service and benefit icons | `src/components/ads/BizIcons.tsx` |
 | Match page | `src/components/ads/BizMatchPage.tsx` (shared by every ad) |
+| Shared questionnaire parts (progress, option cards, text boxes, checks, tracking) | `src/components/ads/QuestionnaireParts.tsx` |
 | Styles (`.bz-` page, `.bq-` questionnaire) | `src/app/ads.css` |
 | Lead endpoint | `src/app/api/lead/route.ts` (shared; send a different `adType`) |
 | Routing and page titles | `src/app/[[...slug]]/page.tsx` (`/ad-1` and `/ad-6` branches) |
 | Progress milestones | `src/lib/progress.ts` (shared) |
 | Postcode list | `public/data/au-postcodes.txt`, built by `scripts/build-postcodes.mjs` (GeoNames, CC BY 4.0; keep the credit under the box) |
+
+**Ad 2 (personal, `/ad-2`)** is built this way: `src/content/personal-questionnaire.ts`, `PersonalAdPage.tsx`, `PersonalMatchCard.tsx`, `PersonalQuestionnaire.tsx`, `.pz-` styles layered on `.bz-`. It shows how to do a one-choice box with follow-up pages that depend on the answer.
 
 Best approach for Ad N: create `src/content/<type>-questionnaire.ts` with the same shape as the business file, and make the
 page, match box and questionnaire components take that content (or copy them with a new prefix). Keep shared pieces shared.

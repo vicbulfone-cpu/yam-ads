@@ -12,7 +12,22 @@ export const BIZ_CATEGORY_ICONS: Record<string, ReactNode> = {
   advice: <><path d="M9 17.6h6M9.8 20.8h4.4" {...o} /><path d="M12 3a6.2 6.2 0 0 0-3.6 11.3c.5.4.8 1 .8 1.6v.6h5.6v-.6c0-.6.3-1.2.8-1.6A6.2 6.2 0 0 0 12 3Z" {...o} /></>,
 };
 
+/** Personal ad page (owner's "personal" design picture): document, calendar with tick, document with pencil, bar chart. */
+export const PERSONAL_NEED_ICONS: Record<string, ReactNode> = {
+  this_year: <><path d="M6.4 2.8h7.2l4.8 4.8v12a1.6 1.6 0 0 1-1.6 1.6H6.4a1.6 1.6 0 0 1-1.6-1.6V4.4a1.6 1.6 0 0 1 1.6-1.6Z" {...o} /><path d="M8.4 8.4h4M8.4 12h7.2M8.4 15.4h3.6" {...o} /><path d="m13.6 17.6 1.4 1.4 3-3" {...o} /></>,
+  overdue: <><rect x="3.4" y="4.8" width="17.2" height="15.6" rx="2" {...o} /><path d="M3.4 9.4h17.2M8 2.8v4M16 2.8v4" {...o} /><path d="m8.8 14.6 2.2 2.2 4.2-4.4" {...o} /></>,
+  amend: <><path d="M13 20.8H6.4a1.6 1.6 0 0 1-1.6-1.6V4.4a1.6 1.6 0 0 1 1.6-1.6h7.2l4.8 4.8v3" {...o} /><path d="M8.4 9h4M8.4 12.4h4.4M8.4 15.8h2.4" {...o} /><path d="m19.6 13.2 1.4 1.4-5.4 5.4-2.2.6.6-2.2 5.6-5.2Z" {...o} /></>,
+  planning: <><rect x="3.6" y="14" width="3" height="6.6" rx=".7" fill="currentColor" /><rect x="8.6" y="10.4" width="3" height="10.2" rx=".7" fill="currentColor" /><rect x="13.6" y="7" width="3" height="13.6" rx=".7" fill="currentColor" /><rect x="18.6" y="3.4" width="3" height="17.2" rx=".7" fill="currentColor" /></>,
+  unsure: <><circle cx="12" cy="12" r="8.6" {...o} /><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.7" {...o} /><circle cx="12" cy="16.8" r=".6" fill="currentColor" stroke="currentColor" strokeWidth={1} /></>,
+};
+
 type P = { className?: string };
+export const LockIcon = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" className={className} aria-hidden fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4.6" y="10.4" width="14.8" height="10.4" rx="2" /><path d="M8 10.4V7.6a4 4 0 0 1 8 0v2.8" /><path d="M12 14.4v2.6" /></svg>
+);
+export const PeopleOutline = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" className={className} aria-hidden fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="8" r="3.4" /><path d="M2.8 20.2c0-3.6 2.8-6.2 6.2-6.2s6.2 2.6 6.2 6.2" /><circle cx="16.6" cy="8.8" r="2.7" /><path d="M16.6 14.2c2.7.2 4.6 2.4 4.6 5.4" /></svg>
+);
 export const PinSolid = ({ className }: P) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden><path d="M12 2.2a7.4 7.4 0 0 0-7.4 7.4c0 5.4 6.2 11.4 6.8 12a.9.9 0 0 0 1.2 0c.6-.6 6.8-6.6 6.8-12A7.4 7.4 0 0 0 12 2.2Z" fill="currentColor" /><circle cx="12" cy="9.6" r="2.7" fill="var(--icon-hole, #fff)" /></svg>
 );

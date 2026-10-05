@@ -158,3 +158,82 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 
 /* phones and tablets: same side margins as the home page, so the match box is the same width */
 @media (max-width: 1023px) { .bz-hero .bz-wrap { padding-inline: var(--gutter); } }
+
+/* =====================================================================================
+   Personal tax ad page (/ad-2): owner's "personal" design picture, 5 Oct 2026. Built on the ".bz-" business page;
+   only the differences are here. PersonalAdPage.tsx, PersonalMatchCard.tsx, PersonalQuestionnaire.tsx.
+   ===================================================================================== */
+.pz-top { position: relative; display: flex; flex-direction: column; overflow: hidden; background: linear-gradient(180deg, #f6f9f6 0%, #eef4ef 100%); }
+.pz-header { order: 0; }
+.pz-hero { order: 1; background: transparent; overflow: visible; }
+.pz-photo { order: 2; }
+.pz-h1 { font-size: clamp(2.1rem, 9vw, 5rem); line-height: 1.02; text-wrap: balance; }
+.pz-benefits li { gap: 0.7rem; }
+.pz-benefit-icon { flex: none; width: clamp(2.3rem, 2.9vw, 3.3rem); height: auto; color: #0e7a32; }
+.pz-disclaimer { line-height: 1.35; }
+@media (max-width: 1023px) { .pz-hero .bz-grid { padding-bottom: 0.5rem; } }
+@media (min-width: 1024px) {
+  .pz-top { display: block; background: #fff; }
+  /* the photograph sits along the bottom of the whole top area and fades out under the header */
+  .pz-photo { position: absolute; top: auto; bottom: 0; left: 0; right: 0; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 16%); mask-image: linear-gradient(180deg, transparent 0, #000 16%); }
+  /* light wash on the left so the headline reads cleanly; the right of the photo stays bright behind the match box */
+  .pz-photo::after { background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.45) 30%, rgba(255, 255, 255, 0) 52%),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0) 62%); }
+  .pz-header { position: relative; z-index: 2; background: transparent; border-bottom: 0; }
+  .pz-hero { position: relative; z-index: 1; }
+  .pz-grid { min-height: calc(43vw - 5rem); padding-block: 0 1.1rem; }
+  .pz-grid .bz-text { padding-top: clamp(0.75rem, 1.6vw, 2.2rem); }
+  .pz-h1 { font-size: clamp(2.5rem, 3.95vw, 4.3rem); line-height: 1.02; }
+  /* benefits and small print sit on the photograph (no white strip under it, unlike the business page) */
+  .pz-grid .bz-benefits { position: static; margin-top: clamp(1rem, 1.9vw, 2.2rem); padding-left: 2vw; gap: 1rem clamp(1.5rem, 4vw, 4.5rem); }
+  .pz-grid .bz-disclaimer { position: static; grid-area: disc; align-self: end; margin-left: calc(-1 * max(0px, 3.6vw - 2.2rem)); font-size: clamp(0.85rem, 1.02vw, 1.1rem); text-shadow: 0 1px 8px rgba(255, 255, 255, 0.9); }
+  .pz-script { left: 23%; bottom: 33%; transform: rotate(-12deg); }
+}
+
+/* personal match box: the home box (.mc) with a white heading, a mint band and boxed one-choice rows */
+.pz-card .mc-head { background: #fff; color: var(--navy-900); padding-bottom: clamp(0.7rem, calc(var(--u) * 3), 1.4rem); }
+.pz-card .mc-title { color: var(--navy-900); font-size: clamp(1.55rem, calc(var(--u) * 6.4), 3rem); line-height: 1.04; letter-spacing: -0.035em; max-width: 76%; }
+.pz-swoosh { position: relative; display: inline-block; }
+.pz-swoosh::after { content: ""; position: absolute; left: 0.05em; bottom: -0.36em; width: 3.2em; height: 0.36em; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 14' preserveAspectRatio='none'%3E%3Cpath d='M2 11 C 30 3, 65 2, 98 6' fill='none' stroke='%230e7a32' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat; }
+.pz-map { position: absolute; right: clamp(0.9rem, calc(var(--u) * 4.4), 2rem); top: clamp(0.9rem, calc(var(--u) * 3.6), 1.8rem); display: flex; flex-direction: column; align-items: center; gap: clamp(0.15rem, calc(var(--u) * 0.8), 0.4rem); pointer-events: none; }
+.pz-card .pz-map .mc-map { position: relative; right: auto; top: auto; display: block; width: clamp(3.4rem, calc(var(--u) * 13), 6.1rem); background: #bfe5c9; }
+.pz-map-label { font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; white-space: nowrap; color: var(--navy-900); font-size: clamp(0.55rem, calc(var(--u) * 1.85), 0.86rem); }
+.pz-band { display: flex; align-items: center; gap: clamp(0.5rem, calc(var(--u) * 2.2), 1rem); margin-inline: clamp(0.9rem, calc(var(--u) * 4.6), 2.2rem); padding: clamp(0.55rem, calc(var(--u) * 2), 0.95rem) clamp(0.7rem, calc(var(--u) * 3), 1.4rem); border-radius: clamp(0.6rem, calc(var(--u) * 1.8), 0.9rem); background: #e3f8ea; color: var(--navy-900); line-height: 1.3; font-size: clamp(0.82rem, calc(var(--u) * 2.5), 1.17rem); }
+.pz-band strong { font-weight: 800; color: #0e7a32; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.pz-card .mc-in { padding-top: clamp(0.8rem, calc(var(--u) * 3.2), 1.6rem); }
+.pz-card .mc-rows { gap: clamp(0.45rem, calc(var(--u) * 1.8), 0.85rem); }
+.pz-card .mc-row { margin-inline: 0; padding: clamp(0.3rem, calc(var(--u) * 1.1), 0.55rem); border: 1.5px solid #e3e9f1; border-radius: clamp(0.7rem, calc(var(--u) * 2.2), 1.1rem); background: #fff; box-shadow: 0 6px 16px -12px rgba(7, 50, 101, 0.35); transition: background-color .18s, border-color .18s, box-shadow .18s; }
+.pz-card .mc-row + .mc-row { border-top: 1.5px solid #e3e9f1; }
+.pz-card .mc-row:hover { border-color: var(--green-500); background: #f8fcf9; }
+.pz-card .mc-row.is-on { border-color: var(--green-600); background: #eefaf2; box-shadow: 0 10px 22px -14px rgba(0, 135, 58, 0.55); }
+.pz-card .mc-tile { width: clamp(3rem, calc(var(--u) * 10.6), 5rem); }
+.pz-card .mc-row-title { font-weight: 700; font-size: min(clamp(1.05rem, calc(var(--u) * 3.85), 1.8rem), (100cqw - 2 * var(--mc-padx) - clamp(3rem, calc(var(--u) * 10.6), 5rem) - 2 * var(--mc-gap) - var(--mc-radiow) - 5mm - 1.4rem) / 15.5); }
+.pz-card .mc-radio { margin-right: clamp(0.4rem, calc(var(--u) * 1.6), 0.8rem); }
+.pz-unsure { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: clamp(0.1rem, calc(var(--u) * 0.4), 0.2rem); font-size: clamp(0.85rem, calc(var(--u) * 2.6), 1.22rem); font-weight: 600; color: #0e7a32; text-decoration: underline; text-underline-offset: 3px; }
+.pz-unsure:hover { color: var(--navy-900); }
+@media (min-width: 1024px) { .pz-unsure { min-height: 2.2rem; } }
+.pz-card .btn.mc-start { position: relative; margin-top: clamp(0.2rem, calc(var(--u) * 0.8), 0.4rem); }
+.pz-card .mc-start-arrow { position: absolute; right: clamp(1rem, calc(var(--u) * 4.4), 2rem); top: 50%; translate: 0 -50%; }
+.pz-card .mc-note { gap: 0.45rem; color: #4b5876; font-size: clamp(0.78rem, calc(var(--u) * 2.3), 1.08rem); }
+.pz-lock { width: 1.15em; height: auto; flex: none; color: var(--navy-900); }
+.pz-foot { margin-top: clamp(0.55rem, calc(var(--u) * 1.9), 0.9rem); padding-block: clamp(0.55rem, calc(var(--u) * 2), 0.95rem) clamp(0.45rem, calc(var(--u) * 1.4), 0.7rem); border-top: 1.5px solid #e6ebf2; text-align: center; color: #4b5876; line-height: 1.3; font-size: clamp(0.78rem, calc(var(--u) * 2.3), 1.08rem); }
+
+/* personal footer: trust strip across the page, then a single line with copyright and links */
+.pz-footer { padding-block: 0.9rem 0; }
+.pz-footer-line { margin-top: 0.9rem; border-top: 1px solid var(--line); padding-block: 0.5rem 0.6rem; }
+@media (min-width: 768px) {
+  .pz-trust li { justify-content: center; max-width: none; }
+}
+/* phones: option names keep a readable size and may wrap; the heading flows on two lines around the map */
+@media (max-width: 639px) {
+  .pz-card .mc-row-title { font-size: 1.06rem; white-space: normal; }
+  .pz-card .mc-title { max-width: calc(100% - clamp(3.4rem, calc(var(--u) * 13), 6.1rem) - 1.5rem); font-size: 1.6rem; }
+  .pz-card .pz-title-1 { display: inline; }
+}
+/* small laptops (1024–1279px): less room beside the box, so the steps and benefits may use two rows */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .pz-page .bz-steps { flex-wrap: wrap; white-space: normal; }
+  .pz-grid .bz-benefits { flex-wrap: wrap; padding-left: 0; }
+  .pz-h1 { font-size: clamp(2.3rem, 3.7vw, 3rem); }
+}
