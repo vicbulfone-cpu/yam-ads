@@ -21,7 +21,7 @@ export default function BusinessAdPage() {
         {/* the desk photograph sits along the bottom of the hero at its natural shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
           <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
-          <p className="bz-script">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
+          <p className="bz-script bz-script-biz">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
         </div>
 
         <div className="bz-wrap bz-grid">
@@ -40,7 +40,7 @@ export default function BusinessAdPage() {
           </div>
 
           <div className="bz-more">
-            <ol className="bz-steps">
+            <ol className="bz-steps bz-steps-shade">
               {L.steps.map((s, i) => (
                 <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
               ))}

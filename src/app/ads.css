@@ -235,3 +235,28 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   /* the small print stops before the match box column */
   .sz-disclaimer { right: calc(clamp(26rem, 31.6vw, 39.2rem) + var(--mc-extra-w) + clamp(1.75rem, 3vw, 4.5rem) + max(1rem, 3.6vw)); max-width: none; }
 }
+
+/* Business ad page only (owner, 5 Oct 2026): the handwriting's two lines closer together (the space between the bottom of
+   the first line and the top of the second is 60% of before: line-height 1.05 -> 0.9) and, on laptops and desktops, the
+   handwriting 1.2cm lower. "translate" is applied before the rotation, so the move is straight down. */
+.bz-script-biz { line-height: 0.9; }
+/* owner, 5 Oct 2026: then 1.2cm right and 0.6cm up (net: 1.2cm right, 0.6cm down from the original place) */
+@media (min-width: 1024px) { .bz-script-biz { translate: 1.2cm 0.6cm; } }
+/* Business ad page only (owner, 5 Oct 2026): the same soft white shade behind the three steps as behind the home page's
+   three trust points (.desk-hero-points::before in globals.css), so they read clearly over the photo */
+.bz-steps-shade { position: relative; isolation: isolate; }
+.bz-steps-shade::before {
+  content: "";
+  position: absolute;
+  inset: -60% -12%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 26% 44% at 14% 48%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 26% 42% at 48% 54%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 26% 44% at 82% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.72) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 18% 30% at 31% 38%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 18% 30% at 66% 62%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+  filter: blur(18px);
+}
