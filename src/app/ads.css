@@ -242,12 +242,14 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .bz-script-biz { line-height: 0.9; }
 /* owner, 5 Oct 2026: then 1.2cm right and 0.6cm up (net: 1.2cm right, 0.6cm down from the original place) */
 /* owner, 5 Oct 2026: a further 1.2cm right, then 3mm up (net: 2.4cm right, 0.3cm down from the original place) */
-@media (min-width: 1024px) { .bz-script-biz { translate: 2.4cm 0.3cm; } }
+/* then 3mm up again with its fade (net: 2.4cm right, level with the original place) */
+@media (min-width: 1024px) { .bz-script-biz { translate: 2.4cm 0cm; } }
 /* Business ad page only (owner, 5 Oct 2026): "fade behind words" (.fade-behind in globals.css) behind the three steps and
    behind the handwriting, so they read clearly over the photo */
 .bz-steps-shade { position: relative; }
-/* ...and the headline and the line under it stay in front of that shade, so it never washes them out */
-.bz-grid:has(.bz-steps-shade) .bz-text { position: relative; z-index: 1; }
+/* The fades behind the line under the headline and behind the steps share one layer under ALL the words in the hero
+   (the grid is the layer; the fades are not shut in their own), so no fade can ever paint over any words */
+.bz-grid .fade-behind.bz-sub-fade, .bz-grid .fade-behind.bz-steps-shade { isolation: auto; }
 
 /* Business ad page only (owner, 5 Oct 2026): a bigger match box on laptops and desktops, as the owner's picture — about
    40% of the screen width instead of the home box's ~34%. Its text stays exactly the home box's size (the size unit is
@@ -271,3 +273,12 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   /* the two longest lines need about 5% less size to stay on one line */
   .bz-card-wide .mc-row-desc { font-size: min(clamp(1.032rem, calc(var(--u) * 3.3), 1.56rem), var(--mc-col) / 26.5); }
 }
+
+/* Business ad page: "fade behind words" behind the line under the headline. It starts inside the line's own box at the
+   top so the blur never reaches the headline above; the handwriting's fade stops short at the bottom so the green arrow
+   in the photo is never lightened. */
+.bz-sub-fade { position: relative; --fade-inset: 1.6rem -8% -1.75rem -8%; }
+.bz-script-biz.fade-behind { --fade-inset: -3rem -12% 0 -12%; }
+/* hard stop along the bottom of the writing (the mask is applied after the blur and turns with the words), so the soft
+   edge never spills onto the arrow just below */
+.bz-script-biz.fade-behind::before { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 1.4rem), transparent calc(100% - 0.35rem)); mask-image: linear-gradient(to bottom, #000 calc(100% - 1.4rem), transparent calc(100% - 0.35rem)); }

@@ -224,5 +224,8 @@ When the owner says **"fade behind words"**, it always means the soft white clou
 trust points ("Local accountants in your area · Matched to your exact needs · Free and no obligation"). It is the
 reusable class `fade-behind` in `src/app/globals.css`: add `fade-behind` to the element holding the words (the element must
 be `position: relative` or `absolute`); set `--fade-inset` only if the cloud needs to reach further or less far (default
-3rem above/below, 12% each side). Make sure nearby words stay in front of it and are not washed out. Used on the business
-ad page behind the three steps and the handwriting.
+3rem above/below, 12% each side). Make sure nearby words stay in front of it and are not washed out: where several fades sit close together, put them in
+one shared layer under all the words (`isolation: auto` on those elements, as `.bz-grid` does on the business page);
+keep a fade off words or picture details it must not touch with `--fade-inset` or a mask, and check it pixel by pixel
+(`.work/fade-check2.mjs`). Used on the business ad page behind the line under the headline, the three steps and the
+handwriting (the handwriting's fade stops at the bottom of the words so the photo's green arrow is never lightened).

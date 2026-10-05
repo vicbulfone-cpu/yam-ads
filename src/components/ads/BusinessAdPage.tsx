@@ -31,7 +31,7 @@ export default function BusinessAdPage() {
               <span className="block text-[#0e7a32]">{L.h1[1]}</span>
               <span className="block">{L.h1[2]}</span>
             </h1>
-            <p className="bz-sub">{L.sub}</p>
+            <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 
           <div className="bz-card-col">
