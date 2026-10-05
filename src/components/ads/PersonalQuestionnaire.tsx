@@ -14,6 +14,7 @@ import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
+import PhoneFit from "../ui/PhoneFit";
 import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 
 /**
@@ -340,7 +341,7 @@ export default function PersonalQuestionnaire() {
     >
       {open && (
         <div className="relative flex h-full max-h-[inherit] flex-col">
-          <div className="flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
+          <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
             <button type="button" onClick={() => setConfirmLeave(true)} aria-label="Close" className="q-modal-close" disabled={sending}>
               <Close width={20} height={20} strokeWidth={2.4} />
@@ -348,9 +349,10 @@ export default function PersonalQuestionnaire() {
           </div>
 
           <div ref={scrollRef} data-bg="biz" className="q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
+            <PhoneFit>
             <AdProgress stepNumber={stepIdx + 1} total={total} badge={Q.badge} stepOf={Q.stepOf} />
             <form
-              className="mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
+              className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
               onSubmit={(e) => { e.preventDefault(); next(); }}
               noValidate
             >
@@ -497,6 +499,7 @@ export default function PersonalQuestionnaire() {
               {/* Enter in a text box moves on */}
               <button type="submit" hidden />
             </form>
+            </PhoneFit>
           </div>
 
           <div className="q-modal-footer shrink-0 border-t border-line/70 bg-white/95 px-4 py-3 sm:px-8">

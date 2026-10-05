@@ -74,7 +74,7 @@ export function StepHead({ eyebrow, title, icon, children }: { eyebrow: string; 
   return (
     <div className="space-y-4">
       <div className="flex items-start gap-4">
-        <span aria-hidden className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-green-600 text-white shadow-[0_10px_24px_-10px_rgba(0,135,58,.6)]">{icon}</span>
+        <span aria-hidden className="q-icon grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-green-600 text-white shadow-[0_10px_24px_-10px_rgba(0,135,58,.6)]">{icon}</span>
         <div className="min-w-0 space-y-1">
           <span className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-green-700">{eyebrow}</span>
           <h3 className="font-sans tracking-[-0.02em] text-[1.45rem] font-semibold leading-tight text-navy-900 sm:text-[1.75rem]">{title}</h3>
@@ -87,7 +87,7 @@ export function StepHead({ eyebrow, title, icon, children }: { eyebrow: string; 
 
 export function OptionCard({ checked, onToggle, label, warn }: { checked: boolean; onToggle: () => void; label: string; warn?: boolean }) {
   return (
-    <label className={`group relative flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border-2 px-3.5 py-2.5 transition duration-200 lg:min-h-12 lg:py-2 ${
+    <label className={`q-opt group relative flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border-2 px-3.5 py-2.5 transition duration-200 lg:min-h-12 lg:py-2 ${
       checked ? "border-green-500 bg-gradient-to-br from-green-50 to-white shadow-[0_10px_24px_-10px_rgba(0,135,58,.45)]"
         : warn ? "border-amber-300 bg-white hover:border-amber-400"
           : "border-line bg-white/95 hover:-translate-y-0.5 hover:border-green-400 hover:bg-green-50/40 hover:shadow-[0_8px_20px_-10px_rgba(7,50,101,.3)]"}`}>
@@ -107,7 +107,7 @@ export function ChoiceCard({ checked, onSelect, label, desc, warn }: { checked: 
       role="radio"
       aria-checked={checked}
       onClick={onSelect}
-      className={`flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left transition duration-200 ${
+      className={`q-choice flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left transition duration-200 ${
         checked ? "border-green-500 bg-gradient-to-br from-green-50 to-white shadow-[0_10px_24px_-10px_rgba(0,135,58,.45)]"
           : warn ? "border-amber-300 bg-white hover:border-amber-400"
             : "border-line bg-white/95 hover:-translate-y-0.5 hover:border-green-400 hover:bg-green-50/40 hover:shadow-[0_8px_20px_-10px_rgba(7,50,101,.3)]"}`}

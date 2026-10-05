@@ -17,3 +17,13 @@ Every page leads to it, and every questionnaire page should make the visitor wan
 ## Where it lives
 `src/components/layout/QuestionnaireModal.tsx` (steps, progress, option cards), `src/app/globals.css` (popup size, Next glow), wording in `src/content/questionnaire.ts`.
 Summary and contact pages are still placeholders until the questionnaire stage (Stage 4) and must follow the same rules.
+
+## Phones: full screen, not a popup (owner, 5 Oct 2026)
+On phones (below 768px) every questionnaire (site, business, personal, SMSF) fills the whole screen instead of showing as a
+popup box: top bar with the logo and the small "x" (which still asks "Are you sure you want to leave?"), the progress
+header, the step, and the Back/Next bar. The page behind is locked (no scrolling) until the questionnaire is closed or the
+match page opens. Each step uses a compact phone layout and `src/components/ui/PhoneFit.tsx` draws it just small enough to
+fit the screen (never below 72%), so there is nothing to scroll. Wrap any new questionnaire's progress header and step in
+`<PhoneFit>` inside `.q-modal-body`. Tablets and desktops keep the popup. Known limit: on the smallest phones (iPhone SE,
+375x667) the business "Bookkeeping & payroll" page with the software choice open is about 29px too tall and can scroll
+slightly.

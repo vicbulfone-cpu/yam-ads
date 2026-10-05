@@ -8,6 +8,7 @@ import { tiles } from "../sections/MatchCardServices";
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import { ArrowRight, Check, Clock, Close, Sparkle } from "../ui/Icons";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
+import PhoneFit from "../ui/PhoneFit";
 import { noteAbandon, noteOpen, saveProgress } from "@/lib/visitor";
 import { progressMilestones } from "@/lib/progress";
 
@@ -173,7 +174,7 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
     >
       {open && (
         <div className="relative flex h-full max-h-[inherit] flex-col">
-          <div className="flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
+          <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
             <button type="button" onClick={requestClose} aria-label="Close" className="q-modal-close">
               <Close width={20} height={20} strokeWidth={2.4} />
@@ -187,9 +188,9 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
                 <MatchCardView key={ids.join()} data={card} initialSelected={selectedTitles} />
               </div></div>
             ) : (
-              <>
+              <PhoneFit>
                 <ProgressHeader stepNumber={stepNumber} totalSteps={totalSteps} />
-                <div className="mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-3 lg:pt-4">
+                <div className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-3 lg:pt-4">
                   {current && sel ? (
                     <CategoryStep category={current} index={step.kind === "category" ? step.index : 0} total={categories.length} sel={sel} error={error} toggle={toggle} update={update} />
                   ) : (
@@ -200,7 +201,7 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
                     </div>
                   )}
                 </div>
-              </>
+              </PhoneFit>
             )}
           </div>
 
@@ -308,7 +309,7 @@ function CategoryStep({
   return (
     <div className="space-y-4 lg:space-y-3.5">
       <div className="flex items-start gap-4">
-        <span aria-hidden style={{ "--tile-ink": ink } as React.CSSProperties} className={`relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-2xl text-white ring-1 ring-white/40 lg:h-14 lg:w-14 ${tile}`}>
+        <span aria-hidden style={{ "--tile-ink": ink } as React.CSSProperties} className={`q-icon relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-2xl text-white ring-1 ring-white/40 lg:h-14 lg:w-14 ${tile}`}>
           <Icon className="relative h-8 w-8 lg:h-7 lg:w-7" />
         </span>
         <div className="min-w-0 space-y-1">
@@ -339,7 +340,7 @@ function CategoryStep({
               return (
                 <label
                   key={opt.id}
-                  className={`group relative flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border-2 px-3.5 py-2.5 transition duration-200 lg:min-h-12 lg:py-2 ${
+                  className={`q-opt group relative flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border-2 px-3.5 py-2.5 transition duration-200 lg:min-h-12 lg:py-2 ${
                     checked ? "border-green-500 bg-gradient-to-br from-green-50 to-white shadow-[0_10px_24px_-10px_rgba(0,135,58,.45)]"
                       : error ? "border-amber-300 bg-white hover:border-amber-400"
                         : "border-line bg-white hover:-translate-y-0.5 hover:border-green-400 hover:bg-green-50/40 hover:shadow-[0_8px_20px_-10px_rgba(7,50,101,.3)]"
