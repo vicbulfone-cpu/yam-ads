@@ -14,7 +14,7 @@ import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 
 /**
  * The personal tax questionnaire (personal ad page /ad-2). Same popup, progress header and option cards as the business
@@ -306,7 +306,7 @@ export default function PersonalQuestionnaire() {
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "personal" });
       // the popup stays open ("Preparing your match…") until the match page replaces this page
-      router.push(`${MATCH_PAGE}?lead=${data.leadId}`);
+      openMatchPage(router, `${MATCH_PAGE}?lead=${data.leadId}`);
     } catch {
       setSending(false);
       setError(Q.errors.send);

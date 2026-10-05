@@ -21,6 +21,17 @@ export function readTracking() {
   return out;
 }
 
+/**
+ * Opens the match page. The quick in-app switch is tried first (the popup stays on "Preparing your match…" until the
+ * match page replaces it); if the match page hasn't appeared within 3 seconds (e.g. an old browser tab after a site
+ * update, or a browser that blocks the switch), the browser loads it directly, so the customer is never left waiting.
+ */
+export function openMatchPage(router: { push: (href: string) => void }, href: string) {
+  const path = href.split("?")[0];
+  router.push(href);
+  window.setTimeout(() => { if (window.location.pathname !== path) window.location.assign(href); }, 3000);
+}
+
 /** Navy progress header: at most 5 milestones, the real pages shared out evenly across them (src/lib/progress.ts). */
 export function AdProgress({ stepNumber, total, badge, stepOf }: { stepNumber: number; total: number; badge: string; stepOf: string }) {
   const pct = Math.round((stepNumber / total) * 100);

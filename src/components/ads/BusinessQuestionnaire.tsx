@@ -8,7 +8,7 @@ import { BIZ_CATEGORIES, BIZ_MATCH_KEY, BIZ_MODES, BIZ_Q as Q, BIZ_SOFTWARE, typ
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 import { BIZ_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 
@@ -242,7 +242,7 @@ export default function BusinessQuestionnaire() {
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "business" });
       // the popup stays open (showing "Preparing your match…") until the match page replaces this page, so the landing
       // page never flashes up in between
-      router.push(`${MATCH_PAGE}?lead=${data.leadId}`);
+      openMatchPage(router, `${MATCH_PAGE}?lead=${data.leadId}`);
     } catch {
       setSending(false);
       setError(Q.errors.send);
