@@ -264,3 +264,26 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 }
 /* ...and the headline and the line under it stay in front of that shade, so it never washes them out */
 .bz-grid:has(.bz-steps-shade) .bz-text { position: relative; z-index: 1; }
+
+/* Business ad page only (owner, 5 Oct 2026): a bigger match box on laptops and desktops, as the owner's picture — about
+   40% of the screen width instead of the home box's ~34%. Its text stays exactly the home box's size (the size unit is
+   still worked out from the home box's width), so the extra width goes to the full row names and lines from the design
+   ("Returns, BAS, GST, PAYG and overdue lodgements.") on one line. Below 1200px the box is the home box as before.
+   (An exception to the "every ad box = home box size" rule, approved for this page only.) */
+.bz-long { display: none; }
+@media (min-width: 1200px) {
+  .bz-grid-wide { grid-template-columns: minmax(0, 1fr) calc(clamp(27rem, 36.5vw, 46rem) + var(--mc-extra-w)); }
+  .bz-grid-wide .bz-card-col .mc * { --u: calc(clamp(26rem, 31.6vw, 39.2rem) / 100 * 1.045); }
+  /* the rows keep to the box (a form group and grid rows otherwise grow to their longest line) */
+  .bz-card-wide .mc-rows { min-inline-size: 0; grid-template-columns: minmax(0, 1fr); }
+  .bz-card-wide .mc-row { min-width: 0; }
+  .bz-card-wide .mc-row-title, .bz-card-wide .mc-row-desc { overflow: hidden; text-overflow: ellipsis; }
+}
+/* the full row names and lines from the design where they fit on one line at the normal text size (wider screens);
+   smaller laptops keep the short ones in the wider box */
+@media (min-width: 1500px) {
+  .bz-card-wide .bz-long { display: inline; }
+  .bz-card-wide .bz-short { display: none; }
+  /* the two longest lines need about 5% less size to stay on one line */
+  .bz-card-wide .mc-row-desc { font-size: min(clamp(1.032rem, calc(var(--u) * 3.3), 1.56rem), var(--mc-col) / 26.5); }
+}

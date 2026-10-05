@@ -86,3 +86,9 @@ Rules (also in `docs/questionnaire-design.md` and `CLAUDE.md`):
 Type-check (`npx tsc --noEmit`), lint, walk the whole questionnaire in a browser at 1280 and 375 wide through to the
 match page, run `npm run build` and `npm run seo-check` (with `npx next start -p 3300`), update `docs/plan.md`, then
 commit and push.
+
+**Exception — Ad 1 (business) only (owner, 5 Oct 2026):** on laptops and desktops (1200px and wider) the business match box
+is bigger than the home box, as in the owner's picture: about 40% of the screen width (home box ~34%), same text sizes.
+From 1500px wide it shows the full row names and lines from the design ("Returns, BAS, GST, PAYG and overdue
+lodgements."); 1200–1499px keeps the short ones. Styles: `.bz-grid-wide` / `.bz-card-wide` in `ads.css`; `longText` prop
+on `BizMatchCard`. Every other ad page keeps the home box size.

@@ -24,7 +24,7 @@ export default function BusinessAdPage() {
           <p className="bz-script bz-script-biz">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
         </div>
 
-        <div className="bz-wrap bz-grid">
+        <div className="bz-wrap bz-grid bz-grid-wide">
           <div className="bz-text">
             <h1 className="bz-h1">
               <span className="block">{L.h1[0]}</span>
@@ -35,7 +35,7 @@ export default function BusinessAdPage() {
           </div>
 
           <div className="bz-card-col">
-            <BizMatchCard />
+            <BizMatchCard longText className="bz-card-wide" />
             <MatchFitScript />
           </div>
 

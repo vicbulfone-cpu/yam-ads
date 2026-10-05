@@ -16,8 +16,10 @@ export type CardWords = { eyebrow: string; title: string[]; sub: string; questio
 const BUSINESS_WORDS: CardWords = { ...BIZ_CARD, sub: BIZ_CARD.sub.join(" "), footer: BIZ_CARD.footer[0] };
 
 export default function BizMatchCard({
-  words: W = BUSINESS_WORDS, categories = BIZ_CATEGORIES, icons = BIZ_CATEGORY_ICONS, openEvent = OPEN_BIZ_QUESTIONNAIRE, className = "",
-}: { words?: CardWords; categories?: BizCategory[]; icons?: Record<string, ReactNode>; openEvent?: string; className?: string }) {
+  words: W = BUSINESS_WORDS, categories = BIZ_CATEGORIES, icons = BIZ_CATEGORY_ICONS, openEvent = OPEN_BIZ_QUESTIONNAIRE, className = "", longText = false,
+}: { words?: CardWords; categories?: BizCategory[]; icons?: Record<string, ReactNode>; openEvent?: string; className?: string;
+  /** business page (owner, 5 Oct 2026): the wider box on laptops/desktops shows the full row names and lines (short ones on smaller screens) */
+  longText?: boolean }) {
   const [selected, setSelected] = useState<string[]>([]);
   const [error, setError] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
@@ -73,8 +75,8 @@ export default function BizMatchCard({
                   <svg viewBox="0 0 24 24" className="mc-tile-icon">{icons[c.id]}</svg>
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="mc-row-title">{c.box.title}</span>
-                  <span className="mc-row-desc">{c.box.desc}</span>
+                  <span className="mc-row-title">{longText ? <><span className="bz-short">{c.box.title}</span><span className="bz-long">{c.title}</span></> : c.box.title}</span>
+                  <span className="mc-row-desc">{longText ? <><span className="bz-short">{c.box.desc}</span><span className="bz-long">{c.desc}</span></> : c.box.desc}</span>
                 </span>
                 <span aria-hidden className="mc-radio"><Check width={20} height={20} strokeWidth={3.2} /></span>
               </label>

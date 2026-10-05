@@ -289,3 +289,8 @@ Owner: on phones, no popup box; the questionnaire fills the screen, the screen i
 with the small "x" and the "Are you sure you want to leave?" box. Done for all four questionnaires (see
 `docs/questionnaire-design.md`, "Phones"). Tested at 375x667, 360x740 and 390x844: every step fits except the business
 bookkeeping page with the software choice open on a 375x667 phone (29px). Tablets/desktops unchanged.
+
+## Ad 1: bigger match box (5 Oct 2026)
+Owner asked for the business ad page's match box to be as big as in their picture, on the business page only. Done for
+1200px and wider: ~40% of the screen width, same text sizes, full design wording on the rows from 1500px. Phones and
+tablets unchanged. Recorded as an exception in `docs/ad-pages.md`.
