@@ -300,3 +300,28 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   background: radial-gradient(ellipse 58% 52% at 50% 45%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.6) 55%, rgba(255, 255, 255, 0) 100%);
   filter: blur(14px);
 }
+
+/* =====================================================================================
+   Ad landing pages on phones (below 768px; owner, 6 Oct 2026): laid out like the desktop hero, with the match box
+   under the hero (as the home page "zz" phone layout). Ad 1, Ad 2 and Ad 3.
+   Order: headline, line under it, steps (over the faded top of the desk photo), the photo with the handwriting on
+   its arrow, then the match box straight under the photo, then the benefits and the small print.
+   The grid and the steps/benefits wrapper are unboxed (display: contents) so their parts can be put in that order.
+   ===================================================================================== */
+@media (max-width: 767px) {
+  .bz-hero { --bzp-w: 200vw; --bzp-h: calc(var(--bzp-w) * 793 / 1983); }
+  .bz-hero .bz-grid, .bz-hero .bz-more { display: contents; }
+  .bz-text, .bz-steps, .bz-card-col, .bz-benefits, .bz-disclaimer { position: relative; z-index: 1; padding-inline: var(--gutter); }
+  /* in front of the steps' fade, which reaches up behind the line under the headline */
+  .bz-text { order: 1; padding-top: 1.25rem; z-index: 2; }
+  .bz-steps { order: 2; margin-top: 0.9rem; }
+  /* the photo: twice the screen width, nudged left so the mug, the arrow with its handwriting and part of the laptop
+     show; its top fades into the page behind the words above it */
+  .bz-photo { order: 3; width: var(--bzp-w); margin-left: -12.5vw; margin-top: calc(var(--bzp-h) * -0.34);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); mask-image: linear-gradient(180deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); }
+  .bz-script { font-size: 4.4vw; }
+  .bz-card-col { order: 4; margin-top: -0.6rem; padding-inline: 0.6rem; }
+  .bz-card-col .mc { margin-top: 0; }
+  .bz-benefits { order: 5; margin-top: 1.4rem; }
+  .bz-disclaimer { order: 6; margin-top: 1rem; padding-bottom: 1.4rem; }
+}
