@@ -32,3 +32,11 @@ export const SAMPLE_MATCH_PERSONAL: MatchDetails = {
     "A local accountant who looks after individuals and families: tax returns, overdue and amended returns, investment property, shares and crypto, and practical tax planning.",
   services: ["Individual tax returns", "Overdue returns", "Amended returns", "Investment property", "Shares & crypto", "Tax planning"],
 };
+
+/** The same sample accountant as shown after the SMSF & wealth questionnaire (/ad-3). */
+export const SAMPLE_MATCH_SMSF: MatchDetails = {
+  ...SAMPLE_MATCH,
+  blurb:
+    "A local accountant who looks after self-managed super funds: setup, annual accounts and tax returns, audits, SMSF borrowing and retirement planning, working alongside licensed advisers where advice is needed.",
+  services: ["SMSF setup", "SMSF accounts & tax returns", "SMSF audits", "SMSF borrowing", "Super & retirement planning", "Investment & tax planning"],
+};

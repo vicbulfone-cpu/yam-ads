@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { logo } from "@/config/site.config";
 import { BIZ_LANDING as L } from "@/content/business-questionnaire";
-import { HandshakeSolid, LockIcon, PeopleOutline, PeopleSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
+import { HandshakeSolid, LockIcon, PeopleOutline, PeopleSolid, PinSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
 
 export function AdHeader({ className = "" }: { className?: string }) {
   return (
@@ -23,16 +23,19 @@ export function AdHeader({ className = "" }: { className?: string }) {
 const TRUST_ICONS = { shield: ShieldCheck, people: PeopleSolid, thumb: ThumbSolid };
 // owner's "personal" design picture: padlock, people outline and handshake
 const PERSONAL_TRUST_ICONS = [LockIcon, PeopleOutline, HandshakeSolid];
+// owner's "smsf" design picture: padlock, people and map pin
+const SMSF_TRUST_ICONS = [LockIcon, PeopleSolid, PinSolid];
 
-export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" }) {
-  if (variant === "personal") {
+export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" | "smsf" }) {
+  if (variant !== "business") {
+    const icons = variant === "smsf" ? SMSF_TRUST_ICONS : PERSONAL_TRUST_ICONS;
     // trust strip across the page, then one line: copyright on the left, information links on the right
     return (
       <footer className="bz-footer pz-footer">
         <div className="bz-wrap">
           <ul className="bz-trust pz-trust">
             {L.trust.map((t, i) => {
-              const Icon = PERSONAL_TRUST_ICONS[i];
+              const Icon = icons[i];
               return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
             })}
           </ul>

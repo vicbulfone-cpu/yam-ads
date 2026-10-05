@@ -27,6 +27,8 @@ The owner's design pictures are in `hero section/ad landing pages/` (e.g. `busin
 
 **Ad 2 (personal, `/ad-2`)** is built this way: `src/content/personal-questionnaire.ts`, `PersonalAdPage.tsx`, `PersonalMatchCard.tsx`, `PersonalQuestionnaire.tsx`, `.pz-` styles layered on `.bz-`. It shows how to do a one-choice box with follow-up pages that depend on the answer.
 
+**Ad 3 (SMSF & wealth, `/ad-3`)** is a "select all that apply" box like Ad 1: `src/content/smsf-questionnaire.ts`, `SmsfAdPage.tsx`, `SmsfMatchCard.tsx` (reuses `BizMatchCard.tsx` with props: wording, categories, icons, opening event), `SmsfQuestionnaire.tsx`, `.sz-` styles. It shows how to add a short qualifying page (two quick choices and an optional note) after the category pages.
+
 Best approach for Ad N: create `src/content/<type>-questionnaire.ts` with the same shape as the business file, and make the
 page, match box and questionnaire components take that content (or copy them with a new prefix). Keep shared pieces shared.
 Route it in `src/app/[[...slug]]/page.tsx` like `/ad-1`. Ad pages stay **noindex** (`seo/index-status.json`).

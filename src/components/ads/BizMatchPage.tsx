@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useMemo, useSyncExternalStore } from "react";
 import { BIZ_MATCH, BIZ_MATCH_KEY } from "@/content/business-questionnaire";
 import { PERSONAL_MATCH } from "@/content/personal-questionnaire";
-import { SAMPLE_MATCH_PERSONAL, type MatchDetails } from "@/content/sample-match";
+import { SMSF_MATCH } from "@/content/smsf-questionnaire";
+import { SAMPLE_MATCH_PERSONAL, SAMPLE_MATCH_SMSF, type MatchDetails } from "@/content/sample-match";
 import { ArrowRight, Check, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
@@ -35,9 +36,9 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
   const firstWord = saved?.name.trim().split(/\s+/)[0];
   const firstName = firstWord ? firstWord[0].toUpperCase() + firstWord.slice(1) : undefined;
   // wording (and, until GoHighLevel is connected, the sample accountant) for the questionnaire the customer came from
-  const personal = saved?.adType === "personal";
-  const M = personal ? { ...BIZ_MATCH, ...PERSONAL_MATCH } : BIZ_MATCH;
-  const match = personal && isSample ? SAMPLE_MATCH_PERSONAL : serverMatch;
+  const adType = saved?.adType;
+  const M = adType === "personal" ? { ...BIZ_MATCH, ...PERSONAL_MATCH } : adType === "smsf" ? { ...BIZ_MATCH, ...SMSF_MATCH } : BIZ_MATCH;
+  const match = !isSample ? serverMatch : adType === "personal" ? SAMPLE_MATCH_PERSONAL : adType === "smsf" ? SAMPLE_MATCH_SMSF : serverMatch;
 
   return (
     <main className="bz-match">

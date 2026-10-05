@@ -21,6 +21,21 @@ export const PERSONAL_NEED_ICONS: Record<string, ReactNode> = {
   unsure: <><circle cx="12" cy="12" r="8.6" {...o} /><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.7" {...o} /><circle cx="12" cy="16.8" r=".6" fill="currentColor" stroke="currentColor" strokeWidth={1} /></>,
 };
 
+/** SMSF ad page (owner's "smsf" design picture): calculator, house, bar chart, sprout. */
+export const SMSF_CATEGORY_ICONS: Record<string, ReactNode> = {
+  smsf_setup: <><rect x="5" y="2.8" width="14" height="18.4" rx="2" {...o} /><rect x="7.8" y="5.6" width="8.4" height="3.6" rx=".6" fill="currentColor" /><path d="M8.4 12.6h.01M12 12.6h.01M15.6 12.6h.01M8.4 15.6h.01M12 15.6h.01M15.6 15.6h.01M8.4 18.4h.01M12 18.4h.01M15.6 18.4h.01" {...o} strokeWidth={2.6} /></>,
+  smsf_audit: <><path d="M3 11.2 12 3.6l9 7.6" {...o} strokeWidth={2.2} /><path d="M5.4 9.6v10.2c0 .5.4.9.9.9h4v-5.6h3.4v5.6h4c.5 0 .9-.4.9-.9V9.6L12 4.2 5.4 9.6Z" fill="currentColor" /></>,
+  retirement: <><rect x="4" y="13" width="3.8" height="7.6" rx=".8" fill="currentColor" /><rect x="10.1" y="8.6" width="3.8" height="12" rx=".8" fill="currentColor" /><rect x="16.2" y="4" width="3.8" height="16.6" rx=".8" fill="currentColor" /></>,
+  wealth: <><path d="M12 21v-8.4" {...o} strokeWidth={2.2} /><path d="M12 13.2C12 8.6 8.8 5.6 3.8 5.6c0 4.8 3.2 7.6 8.2 7.6Z" fill="currentColor" /><path d="M12 11.2c0-4.4 3-7.6 8.2-7.6 0 4.8-3 7.6-8.2 7.6Z" fill="currentColor" /><path d="M7.4 21h9.2" {...o} strokeWidth={2.2} /></>,
+};
+
+/** SMSF ad page: outline icons for the three steps (document, pin, people). */
+export const SMSF_STEP_ICONS: Record<string, ReactNode> = {
+  doc: BIZ_CATEGORY_ICONS.biz_tax,
+  pin: <><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" {...o} /><circle cx="12" cy="10" r="2.5" {...o} /></>,
+  people: <><circle cx="9" cy="8" r="3.4" {...o} /><path d="M2.8 20.2c0-3.6 2.8-6.2 6.2-6.2s6.2 2.6 6.2 6.2" {...o} /><circle cx="16.6" cy="8.8" r="2.7" {...o} /><path d="M16.6 14.2c2.7.2 4.6 2.4 4.6 5.4" {...o} /></>,
+};
+
 type P = { className?: string };
 export const LockIcon = ({ className }: P) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4.6" y="10.4" width="14.8" height="10.4" rx="2" /><path d="M8 10.4V7.6a4 4 0 0 1 8 0v2.8" /><path d="M12 14.4v2.6" /></svg>

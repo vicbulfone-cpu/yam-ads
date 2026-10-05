@@ -5,6 +5,7 @@ import { AdFooter, AdHeader } from "@/components/ads/AdChrome";
 import BizMatchPage from "@/components/ads/BizMatchPage";
 import BusinessAdPage from "@/components/ads/BusinessAdPage";
 import PersonalAdPage from "@/components/ads/PersonalAdPage";
+import SmsfAdPage from "@/components/ads/SmsfAdPage";
 import { SAMPLE_MATCH } from "@/content/sample-match";
 import ContentPage from "@/components/ContentPage";
 import JsonLd from "@/components/JsonLd";
@@ -40,6 +41,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
       robots: { index: false, follow: true },
     };
   }
+  if (path === "/ad-3") {
+    return {
+      title: { absolute: "SMSF & Wealth Accountant Near You | Your Accountant Match" },
+      description: "Tell us about your SMSF, super or investment needs and get matched with one local accountant. Free matching, no obligation.",
+      alternates: { canonical: pageUrl(path) },
+      robots: { index: false, follow: true },
+    };
+  }
   // the customer's match page: never indexed or followed
   if (path === "/ad-6") {
     return { title: { absolute: "Your Accountant Match | Your Match Details" }, robots: { index: false, follow: false } };
@@ -60,6 +69,7 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
   if (!PAGE_PATHS.includes(path)) notFound();
   if (path === "/ad-1") return <BusinessAdPage />;
   if (path === "/ad-2") return <PersonalAdPage />;
+  if (path === "/ad-3") return <SmsfAdPage />;
   if (path === "/ad-6") {
     // the sample accountant shows until GoHighLevel is connected (Stage 5 replaces it with the real match)
     const isSample = !process.env.GHL_INBOUND_WEBHOOK_URL || process.env.MOCK_GHL === "true";
