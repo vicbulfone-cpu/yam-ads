@@ -6,6 +6,7 @@ import { QUESTIONNAIRE_URL, ctaLabel } from "@/config/site.config";
 import { ArrowRight, Check, Coins, Shield } from "../ui/Icons";
 import { Html } from "./Blocks";
 import MatchCard, { type MatchCardData } from "./MatchCard";
+import MatchFitScript from "./MatchFitScript";
 
 type N = Exclude<Node, { t: "sec" }>;
 const isUpper = (s: string) => s.length > 2 && s === s.toUpperCase() && /[A-Z]/.test(s) && s.split(" ").length <= 7;
@@ -232,7 +233,7 @@ export default function PageHero({
               </div>
             )}
           </div>
-          {card && <div className="mc-hero-card lg:col-start-2 lg:row-span-2 lg:row-start-1"><MatchCard data={card} titleTag={cardTitleTag} /></div>}
+          {card && <div className="mc-hero-card lg:col-start-2 lg:row-span-2 lg:row-start-1"><MatchCard data={card} titleTag={cardTitleTag} /><MatchFitScript /></div>}
           {card && parts.lead.length > 1 && (
             <div className="max-w-3xl space-y-5 lg:col-start-1 lg:row-start-2">
               {parts.lead.slice(1).map((l, i) => (

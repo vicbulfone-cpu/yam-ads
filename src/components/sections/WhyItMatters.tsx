@@ -86,7 +86,7 @@ const benefits: Benefit[] = [
 
 export default function WhyItMatters() {
   return (
-    <section className="relative overflow-hidden bg-navy-900 py-16 text-white md:py-20">
+    <section className="relative mt-[2.5cm] overflow-hidden bg-navy-900 py-16 text-white md:py-20">
       {/* Soft lighting so the band is not a flat block of colour */}
       <div
         aria-hidden

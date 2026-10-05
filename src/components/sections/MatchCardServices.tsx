@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
 import { MATCH_CARD_COPY as COPY } from "@/content/match-card-copy";
+import { matchFit } from "@/lib/match-fit";
 import { ArrowRight, Check } from "../ui/Icons";
 
 type Category = { title: string; desc: string };
@@ -91,13 +92,13 @@ export default function MatchCardServices({
 
   // Hero match box on laptops/desktops: draw it just small enough to fit the visible browser area (layout unchanged)
   useEffect(() => {
-    const box = rowsRef.current?.closest<HTMLElement>(":is(.desk-hero-card, .mc-hero-card) .mc");
+    const box = rowsRef.current?.closest<HTMLElement>(":is(.desk-hero-card, .mc-hero-card, .bz-card-col) .mc");
     if (!box) return;
+    // first size is set before the page is drawn (MatchFitScript); this keeps it right as the window changes
     const fit = () => {
-      if (window.innerWidth < 1024) { box.style.removeProperty("--mc-fit"); return; }
-      const top = box.parentElement!.getBoundingClientRect().top + window.scrollY + parseFloat(getComputedStyle(box).marginTop);
-      const room = document.documentElement.clientHeight - top - (5 * 96) / 25.4; // 5mm clear below the box
-      box.style.setProperty("--mc-fit", String(Math.max(0.6, Math.min(1, room / box.offsetHeight))));
+      const f = matchFit(box);
+      if (f == null) box.style.removeProperty("--mc-fit");
+      else box.style.setProperty("--mc-fit", String(f));
     };
     fit();
     window.addEventListener("resize", fit);

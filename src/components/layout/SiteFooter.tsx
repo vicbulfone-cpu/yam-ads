@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Node } from "@/lib/content";
 import { BUSINESS, REQUIRED_FOOTER_LINKS } from "@/content/business";
-import { isLivePage } from "@/lib/pages";
+import { AD_PAGES, isLivePage } from "@/lib/pages";
 import { Pin } from "../ui/Icons";
 
 /** Pulls the footer section out of a page's extracted nodes. */
@@ -45,12 +45,16 @@ const HOME_FOOTER_COLUMNS: { title: string; links: { text: string; href?: string
   },
 ];
 
+/** Links to the six ad landing pages (/ad-1 … /ad-6); shown in the home page footer only. */
+const AD_COLUMN = { title: "Ads", links: AD_PAGES.map((href, i) => ({ text: `Ad ${i + 1}`, href })) };
+
 /** Home page footer, laid out as in the owner's "home page 2" picture. */
-function HomeFooter() {
+function HomeFooter({ showAds }: { showAds?: boolean }) {
+  const columns = showAds ? [...HOME_FOOTER_COLUMNS, AD_COLUMN] : HOME_FOOTER_COLUMNS;
   return (
     <footer className="border-t border-line bg-[#f7f9fb]">
       <div className="container-page pb-6 pt-12 md:pt-14">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_0.8fr_1.3fr_1fr]">
+        <div className={`grid gap-10 ${showAds ? "md:grid-cols-[1.4fr_0.8fr_1.3fr_1fr_0.7fr]" : "md:grid-cols-[1.4fr_0.8fr_1.3fr_1fr]"}`}>
           <div>
             <p className="text-[1.45rem] font-extrabold tracking-tight text-navy-900">
               Your Accountant <span className="text-green-700">Match</span>
@@ -62,7 +66,7 @@ function HomeFooter() {
               {BUSINESS.phone && <><br /><a href={`tel:${BUSINESS.phone.replace(/\s/g, "")}`} className="font-semibold text-navy-900 transition hover:text-green-700">{BUSINESS.phone}</a></>}
             </p>
           </div>
-          {HOME_FOOTER_COLUMNS.map((col) => (
+          {columns.map((col) => (
             <nav key={col.title} aria-label={col.title}>
               <p className="text-[0.85rem] font-extrabold text-navy-900">{col.title}</p>
               <ul className={`mt-2 ${col.title === "Locations" ? "grid grid-flow-col grid-rows-7 gap-x-6" : ""}`}>
@@ -88,8 +92,8 @@ function HomeFooter() {
   );
 }
 
-export default function SiteFooter({ nodes, variant }: { nodes: Node[]; variant?: "home" }) {
-  if (variant === "home") return <HomeFooter />;
+export default function SiteFooter({ nodes, variant, showAds }: { nodes: Node[]; variant?: "home"; showAds?: boolean }) {
+  if (variant === "home") return <HomeFooter showAds={showAds} />;
   const f = footerNodes(nodes);
   const cityHeadingIdx = f.findIndex((n) => n.t === "h");
   const before = cityHeadingIdx === -1 ? f : f.slice(0, cityHeadingIdx);

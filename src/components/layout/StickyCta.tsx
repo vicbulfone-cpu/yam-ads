@@ -39,7 +39,7 @@ export default function StickyCta() {
   return (
     <div
       aria-hidden={!visible}
-      className={`fixed inset-x-0 bottom-0 z-40 px-[12.5%] pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+0.75rem))] pt-1 transition duration-300 md:hidden ${visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"}`}
+      className={`sticky-cta fixed inset-x-0 bottom-0 z-40 px-[12.5%] pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+0.75rem))] pt-1 transition duration-300 md:hidden ${visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"}`}
     >
       <Link
         href={QUESTIONNAIRE_URL}

@@ -26,6 +26,10 @@ const photos = {
   "ukuykj.png": "market-team",
   "yjhrhgfdh.png": "family-table",
   "uyykiyu.png": "coast",
+  "4.png": "tradie-drill-ute",
+  "10.png": "woman-phone-sofa",
+  "11.png": "accountant-client-desk",
+  "12.png": "australia-map-pin",
 };
 
 const icons = {

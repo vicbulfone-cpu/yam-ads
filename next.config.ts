@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
   // Lets a phone on the same Wi-Fi open the development site (http://<this computer's address>:3217).
   allowedDevOrigins: ["192.168.*.*", "10.*.*.*"],
 
-  // Picture quality levels the site may serve: 75 for ordinary pictures, 92 for the hero photograph (kept sharp).
-  images: { qualities: [75, 92] },
+  // Picture quality levels the site may serve: 75 for ordinary pictures, 85 for the phone hero, 92 for the hero photograph (kept sharp).
+  images: { qualities: [75, 85, 92] },
 
   async headers() {
     return [
@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
       // never index the private routes (match results, API, hidden accountants' demo page)
       { source: "/match/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/api/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+      { source: "/ad-6", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/accountant-demo-x7k2", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       // preview deployments and the *.vercel.app address must never be indexed
       {

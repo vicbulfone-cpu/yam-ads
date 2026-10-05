@@ -28,3 +28,7 @@ Icons are drawn as small inline SVGs in `src/components/ui/Icons.tsx` (original,
 ## Home page photos supplied by the owner (4 Oct 2026)
 Source: owner-supplied files in `hero section/` (owner's own images, supplied for use on this site), converted to WebP by `scripts/make-home-assets.mjs` into `public/images/home/`:
 tradie-van, woman-laptop-home, woman-laptop-office, couple-laptop, house-front, client-meeting, city-desk-laptop, cafe-owner-man, cafe-owner-woman, rural-couple-portrait, rural-couple-fence, retirees-coast, family-walk, couple-house, team-meeting, market-team, family-table, coast; icons in `public/images/home/icons/`.
+
+## Data
+
+- `public/data/au-postcodes.txt` (postcode and suburb suggestions in the business questionnaire): GeoNames Australian postal codes, https://download.geonames.org/export/zip/ — Creative Commons Attribution 4.0 (commercial use allowed with credit; credit shown under the postcode box).

@@ -2,13 +2,14 @@
 
 import { useEffect, useRef } from "react";
 
-const GAP = (2.5 * 96) / 2.54; // 2.5cm in CSS pixels
+const CM = 96 / 2.54; // 1cm in CSS pixels
 
 /**
- * Home page, laptop and desktop: pulls the section it sits in up so its content starts 2.5cm below the bottom of the
- * hero picture and match box (the hero keeps blank space at its foot, which varies with the screen size).
+ * Home page, laptop and desktop: pulls the section it sits in up so its content starts `cm` (default 2.5cm) below the
+ * bottom of the hero picture and match box (the hero keeps blank space at its foot, which varies with the screen size).
  */
-export default function HeroGap() {
+export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
+  const GAP = cm * CM;
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
     const section = ref.current?.closest<HTMLElement>("section");
@@ -28,6 +29,6 @@ export default function HeroGap() {
     run();
     window.addEventListener("resize", run);
     return () => window.removeEventListener("resize", run);
-  }, []);
+  }, [GAP]);
   return <span ref={ref} hidden />;
 }

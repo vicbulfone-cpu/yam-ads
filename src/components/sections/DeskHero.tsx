@@ -10,6 +10,7 @@ import Link from "next/link";
 import { deskHeroPicture } from "@/config/site.config";
 import { HERO_COPY } from "@/content/hero-copy";
 import MatchCard, { type MatchCardData } from "./MatchCard";
+import MatchFitScript from "./MatchFitScript";
 
 export type DeskHeroHeadline = { before: string; green: string; after?: string; sub?: string; greenOnOwnLine?: boolean };
 
@@ -104,6 +105,7 @@ export default function DeskHero({
         {card && (
           <div className="desk-hero-card">
             <MatchCard data={card} titleTag={cardTitleTag} />
+            <MatchFitScript />
           </div>
         )}
 
@@ -125,16 +127,16 @@ export default function DeskHero({
   );
 }
 
-/** Home page: the three reassurance lines as their own band, under "What is Your Accountant Match?". */
+/** Home page: band under the "Ready to meet your accountant?" bar, repeating the hero's three points and icons (owner, 5 Oct 2026). */
 export function HeroTrustStrip() {
   return (
     <section className="home-trust">
       <ul className="home-trust-list">
-        {HERO_COPY.trust.map((t) => (
-          <li key={t.lines[0]}>
-            <Image src={t.icon} alt="" width={160} height={160} className="home-trust-icon" />
-            <span className="text-[0.76rem] leading-snug text-navy-900 2xl:text-[0.92rem]">
-              <span className="font-bold xl:block xl:whitespace-nowrap">{t.lines[0]}</span> <span className="xl:block xl:whitespace-nowrap">{t.lines[1]}</span>
+        {HERO_COPY.points.map((p) => (
+          <li key={p.strong}>
+            <Image src={p.icon} alt="" width={160} height={160} className="h-11 w-11 shrink-0 2xl:h-[3.75rem] 2xl:w-[3.75rem]" />
+            <span className="text-[0.95rem] leading-tight text-navy-900 2xl:text-[1.15rem]">
+              <strong className="block font-extrabold">{p.strong}</strong> {p.text}
             </span>
           </li>
         ))}

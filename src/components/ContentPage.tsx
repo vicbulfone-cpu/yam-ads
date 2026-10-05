@@ -19,11 +19,8 @@ import SiteFooter from "./layout/SiteFooter";
 import { auFind } from "./sections/au-media";
 import Tagline from "./sections/Tagline";
 import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
-import WhatIsYAM from "./sections/WhatIsYAM";
-import HowItWorks from "./sections/HowItWorks";
+import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
-import ClientTypes from "./sections/ClientTypes";
-import ServicesGrid from "./sections/ServicesGrid";
 import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeMidCta from "./sections/HomeMidCta";
@@ -126,19 +123,16 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
       <>
         <main className="home-v2">
           <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} mobilePicture={homeMobileHeroPicture} desktopPicture={homeDeskHeroPicture} showTrust={false} />
-          <WhatIsYAM />
+          <HomeMatchIntro />
           <HeroTrustStrip />
-          <HowItWorks />
           <WhyItMatters />
-          <ClientTypes />
           <HomeMidCta />
-          <ServicesGrid />
           <FAQSection />
           <CoverageSection />
           <HomeTagline text={TAGLINES[8]} />
           <HomeClosingCta />
         </main>
-        <SiteFooter nodes={nodes} variant="home" />
+        <SiteFooter nodes={nodes} variant="home" showAds />
       </>
     );
   }

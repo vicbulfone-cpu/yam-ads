@@ -4,11 +4,13 @@ import { Caveat, Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import SiteHeader from "@/components/layout/SiteHeader";
 import StickyCta from "@/components/layout/StickyCta";
 import ReturnToTop from "@/components/layout/ReturnToTop";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import QuestionnaireModal from "@/components/layout/QuestionnaireModal";
 import QuestionnaireAutoOpen from "@/components/layout/QuestionnaireAutoOpen";
 import { getHomeMatchCard } from "@/components/sections/MatchCard";
 import { SITE_URL } from "@/config/site.config";
 import "./globals.css";
+import "./ads.css";
 
 // Headings: Fraunces (elegant serif). Body/UI: Plus Jakarta Sans. Same families the old site used.
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", axes: ["opsz"], display: "swap" });
@@ -45,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div id="main">{children}</div>
         <StickyCta />
         <ReturnToTop />
+        <ScrollToTop />
         <QuestionnaireModal card={getHomeMatchCard()} />
         <QuestionnaireAutoOpen />
         {(GA4_ID || GADS_ID) && (

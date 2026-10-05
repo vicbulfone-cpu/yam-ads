@@ -5,6 +5,7 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { Check } from "@/components/ui/Icons";
 import CtaBand from "@/components/sections/CtaBand";
 import MatchCard, { getHomeMatchCard } from "@/components/sections/MatchCard";
+import MatchFitScript from "@/components/sections/MatchFitScript";
 import SectionView from "@/components/sections/SectionRenderer";
 import { QUESTIONNAIRE_URL, ctaLabel } from "@/config/site.config";
 import { howWeSelect as hw } from "@/content/how-we-select";
@@ -42,6 +43,7 @@ export default function HowWeSelectPage() {
               </div>
               <div className="mc-hero-card lg:col-start-2 lg:row-start-1">
                 <MatchCard data={matchCard} titleTag="p" />
+                <MatchFitScript />
               </div>
             </div>
           </div>

@@ -1,0 +1,160 @@
+/* =====================================================================================
+   Business ad page (/ad-1) and its match page (/ad-6): owner's "business" design picture, 5 Oct 2026.
+   BusinessAdPage.tsx, BizMatchCard.tsx, AdChrome.tsx, BusinessQuestionnaire.tsx, PostcodeBox.tsx, BizMatchPage.tsx.
+   Uses the colour tokens and the ".mc" match box styles from globals.css.
+   ===================================================================================== */
+/* ad pages carry their own slim header; the site header and the phone CTA bar are not shown */
+body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
+.bz-page { background: #fff; color: var(--navy-900); }
+.bz-wrap { width: 100%; max-width: 1720px; margin-inline: auto; padding-inline: max(1rem, 3.6vw); }
+
+.bz-header { background: #fff; border-bottom: 1px solid rgba(225, 232, 240, 0.7); }
+.bz-header .bz-wrap { min-height: 4.25rem; padding-block: 0.6rem; }
+@media (min-width: 768px) { .bz-header .bz-wrap { height: 5rem; min-height: 0; padding-block: 0; } } /* same height as the site header */
+.bz-logo { width: clamp(170px, 27vw, 460px); height: auto; }
+@media (min-width: 1280px) { .bz-logo { width: calc(clamp(300px, 21.5vw, 430px) * 1.2); } } /* same size as the home page logo */
+.bz-badge { display: flex; align-items: center; gap: 0.5rem; font-size: clamp(0.78rem, 1.25vw, 1.2rem); font-weight: 600; color: var(--navy-900); line-height: 1.2; text-align: right; }
+.bz-badge-icon { width: clamp(1.6rem, 2.6vw, 2.75rem); height: auto; flex: none; color: #0e7a32; }
+@media (max-width: 479px) { .bz-badge span { max-width: 7.5rem; } }
+
+/* hero: desk photograph along the bottom, light wash behind the words */
+.bz-hero { position: relative; display: flex; flex-direction: column; overflow: hidden; background: linear-gradient(180deg, #f6f9f6 0%, #eef4ef 100%); }
+.bz-photo { position: relative; order: 2; pointer-events: none; }
+.bz-photo img { display: block; }
+.bz-script { position: absolute; left: 22.5%; bottom: 32%; transform: rotate(-9deg); transform-origin: left bottom; font-family: var(--font-caveat), cursive; font-weight: 600; font-size: clamp(1rem, 1.85vw, 2.2rem); line-height: 1.05; color: var(--navy-900); text-shadow: 0 1px 10px rgba(255, 255, 255, 0.9); }
+.bz-script span:nth-child(2) { padding-left: 0.3em; }
+.bz-grid { position: relative; z-index: 1; display: grid; gap: 1.25rem; padding-block: 1.5rem 1.25rem; }
+.bz-h1 { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.045em; line-height: 0.98; color: #0b2160; font-size: clamp(2.2rem, 10vw, 5.4rem); }
+.bz-sub { margin-top: 0.9rem; max-width: 47rem; font-size: clamp(1.08rem, 1.78vw, 1.9rem); line-height: 1.25; color: #0b2160; }
+.bz-card-col { width: 100%; }
+.bz-card { margin-top: 0; }
+.bz-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; font-size: clamp(0.95rem, 1.2vw, 1.25rem); font-weight: 500; color: #0b2160; }
+.bz-steps li { display: inline-flex; align-items: center; gap: 0.6rem; }
+.bz-step-arrow { width: 1.35em; height: 1.35em; color: #0e7a32; }
+.bz-benefits { display: flex; flex-wrap: wrap; gap: 1rem clamp(1.25rem, 3.2vw, 4rem); margin-top: 1.25rem; }
+.bz-benefits li { display: flex; align-items: center; gap: 0.9rem; font-size: clamp(0.98rem, 1.25vw, 1.32rem); font-weight: 500; line-height: 1.15; color: #0b2160; }
+.bz-benefit-icon { display: grid; place-items: center; flex: none; width: clamp(3rem, 3.9vw, 4.1rem); aspect-ratio: 1; border-radius: 999px; background: #0e7a32; color: #fff; --icon-hole: #0e7a32; box-shadow: 0 10px 22px -10px rgba(14, 122, 50, 0.7); }
+.bz-disclaimer { font-size: clamp(0.85rem, 1vw, 1.02rem); color: #0b2160; }
+@media (max-width: 1023px) {
+  .bz-photo { width: 165%; margin-top: -0.5rem; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 18%); mask-image: linear-gradient(180deg, transparent 0, #000 18%); }
+}
+@media (min-width: 1024px) {
+  .bz-hero { display: block; }
+  /* photo sits high, as on the home page: its top just under the header, white page below it */
+  .bz-hero { background: #fff; }
+  .bz-photo { position: absolute; left: 0; right: 0; top: 2.2vw; width: auto; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22%); mask-image: linear-gradient(180deg, transparent 0, #000 22%); }
+  /* light wash over the top of the photograph so the headline reads cleanly; the mug and laptop stay crisp */
+  .bz-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(246, 249, 246, 0.9) 0%, rgba(246, 249, 246, 0.55) 42%, rgba(246, 249, 246, 0) 62%); }
+  .bz-script { z-index: 1; }
+  .bz-grid {
+    grid-template-columns: minmax(0, 1fr) calc(clamp(26rem, 31.6vw, 39.2rem) + var(--mc-extra-w)); /* same width as the home page match box */
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "text card" "more card" "space card" "disc card";
+    column-gap: clamp(1.75rem, 3vw, 4.5rem);
+    row-gap: 0;
+    min-height: calc(42.2vw + 1.1rem + clamp(2.8rem, 3.4vw, 3.9rem) + 3.6rem);
+    max-width: calc(1575px + 2 * max(1rem, 3.6vw));
+    padding-block: 0.95rem 1.4rem;
+  }
+  .bz-text { grid-area: text; padding-top: clamp(1.5rem, 2.4vw, 3rem); padding-left: 3.9vw; }
+  .bz-more { grid-area: more; padding-left: 3.9vw; margin-top: 1.1rem; }
+  .bz-benefits { flex-wrap: nowrap; }
+  .bz-steps { flex-wrap: nowrap; white-space: nowrap; font-size: clamp(0.88rem, 1.08vw, 1.2rem); }
+  /* the three benefit circles and the small print sit in the white strip under the photo (photo = 2.2vw + 40vw tall) */
+  .bz-benefits { position: absolute; top: calc(42.2vw + 1.1rem); left: calc(max(1rem, 3.6vw) + 3.9vw); margin-top: 0; }
+  .bz-disclaimer { position: absolute; top: calc(42.2vw + 1.1rem + clamp(2.8rem, 3.4vw, 3.9rem) + 1rem); left: calc(max(1rem, 3.6vw) + 3.9vw); }
+  .bz-benefit-icon { width: clamp(2.8rem, 3.4vw, 3.9rem); }
+  .bz-benefits li { white-space: nowrap; }
+  /* same width, position and nudge as the home page match box (.desk-hero-card in globals.css) */
+  .bz-card-col { grid-area: card; margin-top: calc(1.25rem - 0.5cm); container-type: inline-size; transform: translateX(min(1.6cm, calc(max(1rem, 3.6vw) - 0.5rem + max(0px, (100vw - 1575px - 2 * max(1rem, 3.6vw)) / 2)))); }
+
+  .bz-h1 { font-size: clamp(2.6rem, 3.75vw, 4.6rem); }
+  .bz-sub { font-size: clamp(1.05rem, 1.55vw, 1.85rem); margin-top: 0.6rem; }
+  .bz-text { padding-top: clamp(1.5rem, 2.6vw, 3.4rem); }
+}
+
+/* business match box: the site's ".mc" box with bordered rows and square tick boxes */
+/* business match box: the home page box itself (.mc styles in globals.css), with only these differences */
+/* its second heading line ("business accountant.") is longer than the home box's, so it is drawn a little smaller to clear the map */
+.bz-card .mc-title { font-size: clamp(1.75rem, calc(var(--u) * 7.4), 3.4rem); }
+/* ...and the space that saves is given back below the heading, so the box stays the home box's size */
+@media (min-width: 768px) { .bz-card .mc-head { padding-bottom: calc(clamp(1.05rem, calc(var(--u) * 4.6), 2.1rem) + var(--u) * 2.35); } }
+/* 1cm taller, as the home page box (1.25mm more above and below each row) */
+.bz-card-col .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+.bz-tile { flex: none; display: grid; place-items: center; width: 3.25rem; aspect-ratio: 1; border-radius: 0.8rem; }
+.bz-tile svg { width: 56%; height: auto; }
+.bz-tile.is-blue { background: #e4effe; color: #1f6ff2; }
+.bz-tile.is-green { background: #e0f4e6; color: #16893a; }
+.bz-tile.is-orange { background: #fff0dc; color: #f08a0c; }
+.bz-tile.is-purple { background: #efe7fd; color: #7c3aed; }
+
+/* footer: trust strip + copyright on the left, information links on the right */
+.bz-footer { border-top: 1px solid var(--line); background: #fff; padding-block: 1.1rem 1.25rem; }
+.bz-trust { display: grid; gap: 0.75rem; }
+.bz-trust li { display: flex; align-items: center; gap: 0.8rem; font-size: 0.92rem; line-height: 1.3; color: var(--navy-900); }
+.bz-trust-icon { width: 2.4rem; height: auto; flex: none; color: #0e7a32; }
+.bz-links { display: grid; gap: 0.25rem 0; font-size: 0.9rem; }
+.bz-links p { display: flex; flex-wrap: wrap; }
+.bz-links a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--navy-900); }
+@media (max-width: 1023px) { .bz-links p { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1rem; } .bz-links { gap: 0; } }
+@media (min-width: 1024px) { .bz-links a:not(:last-child)::after { content: "|"; margin-inline: 0.75rem; color: #9aa6b8; } }
+.bz-links a:hover { color: var(--green-700); text-decoration: underline; }
+@media (min-width: 768px) {
+  .bz-trust { display: flex; gap: 0; }
+  .bz-trust li { flex: 1 1 0; padding-right: clamp(1rem, 2vw, 2rem); max-width: 18rem; }
+  .bz-trust li + li { padding-left: clamp(1rem, 2vw, 2rem); border-left: 1.5px solid #c8d1dd; }
+}
+@media (min-width: 1024px) { .bz-links p { justify-content: flex-end; } .bz-links a { min-height: 2rem; } }
+
+/* business questionnaire: the site's popup, with a faded picture in each step's box */
+.q-modal-body[data-bg="biz"]::before { display: none; }
+.bq-box { position: relative; isolation: isolate; border-radius: 1.75rem; border: 1px solid rgba(214, 222, 233, 0.9); background: #fff; padding: 1.25rem 1rem 1.4rem; box-shadow: 0 18px 44px -24px rgba(7, 50, 101, 0.35); }
+.bq-box::before { content: ""; position: absolute; inset: 0; z-index: -2; border-radius: inherit; background: var(--bq-img) center / cover no-repeat; opacity: 0.7; }
+.bq-box::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: linear-gradient(105deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.86) 45%, rgba(255, 255, 255, 0.6) 100%); }
+@media (min-width: 640px) { .bq-box { padding: 1.6rem 1.75rem 1.75rem; } }
+.bq-input { display: block; width: 100%; min-height: 3.35rem; border-radius: 0.9rem; border: 2px solid var(--line); background: #fff; padding: 0.6rem 1rem; font-size: 1.05rem; color: var(--ink); transition: border-color .2s, box-shadow .2s; }
+.bq-input::placeholder { color: #94a3b8; }
+.bq-input:focus { outline: none; border-color: var(--green-500); box-shadow: 0 0 0 4px rgba(0, 174, 65, 0.15); }
+.bq-input.is-invalid { border-color: #fca5a5; box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1); }
+.bq-suggest { margin-top: 0.5rem; max-height: 17rem; overflow-y: auto; overscroll-behavior: contain; border-radius: 0.9rem; border: 1px solid var(--line); background: #fff; box-shadow: 0 18px 40px -20px rgba(7, 50, 101, 0.4); }
+.bq-suggest li[role="option"] { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 2.9rem; padding: 0.5rem 1rem; cursor: pointer; font-size: 0.98rem; }
+.bq-suggest li[role="option"] + li { border-top: 1px solid #f0f3f7; }
+.bq-suggest li.is-active { background: var(--green-50); }
+.bq-note { display: flex; gap: 0.6rem; align-items: flex-start; border-radius: 0.9rem; background: rgba(233, 251, 241, 0.92); padding: 0.75rem 0.9rem; font-size: 0.92rem; line-height: 1.4; color: var(--navy-900); }
+.bq-note-icon { display: grid; place-items: center; flex: none; width: 1.4rem; height: 1.4rem; margin-top: 0.05rem; border-radius: 999px; background: var(--green-600); color: #fff; }
+.bq-search { padding-bottom: 2rem; }
+.bq-radar { position: relative; display: grid; place-items: center; width: 4.5rem; height: 4.5rem; margin: 0 auto 1.2rem; border-radius: 999px; background: var(--green-600); color: #fff; }
+.bq-radar::before, .bq-radar::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 2px solid var(--green-500); animation: bq-ping 1.6s ease-out infinite; }
+.bq-radar::after { animation-delay: 0.8s; }
+@keyframes bq-ping { from { transform: scale(1); opacity: 0.8; } to { transform: scale(2.1); opacity: 0; } }
+.bq-search-bar { display: block; height: 6px; margin-top: 1.4rem; overflow: hidden; border-radius: 999px; background: var(--green-50); }
+.bq-search-bar span { display: block; height: 100%; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--green-500), var(--navy-700)); transform-origin: left; animation: bq-fill 3s linear forwards; }
+@keyframes bq-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.bq-found { max-width: 27rem; }
+.bq-found-icon { color: #fff; background: var(--green-600); box-shadow: 0 0 0 8px rgba(0, 174, 65, 0.14); }
+@media (prefers-reduced-motion: reduce) { .bq-radar::before, .bq-radar::after { animation: none; } .bq-search-bar span { animation: none; } }
+
+/* match page (/ad-6) */
+.bz-match { background: linear-gradient(180deg, #f6f9f6 0%, #fff 60%); }
+.bz-match-hero { position: relative; overflow: hidden; background: var(--navy-900); }
+.bz-match-hero h1 { color: #fff; font-family: var(--font-sans); }
+.bz-match :is(h2, h3) { font-family: var(--font-sans); }
+.bz-match-card { position: relative; border-radius: 1.75rem; border: 1px solid var(--line); background: #fff; padding: 1.5rem 1.25rem; box-shadow: 0 30px 70px -30px rgba(7, 50, 101, 0.45); }
+@media (min-width: 640px) { .bz-match-card { padding: 2rem 2.25rem; } }
+.bz-match-side { border-radius: 1.5rem; border: 1px solid var(--line); background: #fff; padding: 1.4rem 1.5rem; box-shadow: 0 18px 44px -26px rgba(7, 50, 101, 0.35); }
+.bz-contact { display: flex; align-items: center; gap: 0.7rem; min-height: 3.6rem; border-radius: 1rem; border: 2px solid var(--line); padding: 0.55rem 0.9rem; font-size: 0.92rem; font-weight: 700; color: var(--navy-900); overflow-wrap: anywhere; transition: border-color .2s, transform .2s, background-color .2s; }
+.bz-contact svg { flex: none; color: var(--green-700); }
+.bz-contact:hover { border-color: var(--green-500); transform: translateY(-2px); }
+.bz-contact.is-primary { border-color: #0e7a32; background: #0e7a32; color: #fff; }
+.bz-contact.is-primary svg { color: #fff; }
+.bz-contact.is-primary:hover { background: var(--navy-700); border-color: var(--navy-700); }
+.bz-contact-k { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.75; }
+@media (prefers-reduced-motion: reduce) { .bz-contact:hover { transform: none; } }
+
+/* Questionnaire popups and the leave / good-news boxes: one typeface throughout (Plus Jakarta Sans, the body text font),
+   the same as the match boxes (owner, 5 Oct 2026). Outside Tailwind's layers so it beats the site's serif heading rule. */
+.q-modal, .q-modal :is(h1, h2, h3, h4, legend) { font-family: var(--font-sans); }
+.q-modal .q-leave-title { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.02em; }
+
+/* phones and tablets: same side margins as the home page, so the match box is the same width */
+@media (max-width: 1023px) { .bz-hero .bz-wrap { padding-inline: var(--gutter); } }

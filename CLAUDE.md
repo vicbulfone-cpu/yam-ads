@@ -201,6 +201,8 @@ This section is a standing project requirement. Read and follow it in every sess
 
 ## QUESTIONNAIRE PURPOSE (owner, 3 Oct 2026)
 The whole purpose of the website is to get visitors to complete the questionnaire and be matched. Every questionnaire page must look like the rest of the site and encourage the visitor to finish. Follow `docs/questionnaire-design.md` for any questionnaire page, including the summary and contact pages built in Stage 4.
+**Ad landing pages (owner, 5 Oct 2026):** every new Google Ads landing page and questionnaire is built the same way as Ad 1 (business, `/ad-1`), following `docs/ad-pages.md`. Ad 6 (`/ad-6`) is the shared match page.
+**Name rule (owner, 5 Oct 2026):** every questionnaire asks for the visitor's name straight after the service selection, and every later question box is personalised with their first name (e.g. "John, could I please have your mobile number so…").
 
 ## SEO & AI-SEARCH RULES (owner-supplied, merged 3 Oct 2026; where they differ from older notes, this section and the dated owner updates win)
 - **Markup first.** SEO work is markup, metadata, structure and performance. Wording changes are allowed only as set out in the 2 Oct owner update; log each change in `docs/seo-copy-log.md`.

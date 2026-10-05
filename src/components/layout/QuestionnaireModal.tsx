@@ -9,6 +9,7 @@ import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import { ArrowRight, Check, Clock, Close, Sparkle } from "../ui/Icons";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { noteAbandon, noteOpen, saveProgress } from "@/lib/visitor";
+import { progressMilestones } from "@/lib/progress";
 
 /**
  * The questionnaire popup (3/4 of the screen, blurred page behind it).
@@ -195,7 +196,7 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
                     // Summary and contact pages are finalised in the questionnaire stage
                     <div className="rounded-3xl border border-green-200/70 bg-gradient-to-br from-green-50 via-white to-amber-50/60 px-6 py-12 text-center shadow-[0_14px_40px_-18px_rgba(7,50,101,.25)]">
                       <span className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-green-600 text-white shadow-[0_10px_24px_-8px_rgba(0,135,58,.6)]"><Sparkle width={26} height={26} /></span>
-                      <p className="font-serif text-xl font-semibold text-navy-900">Content coming soon</p>
+                      <p className="font-sans tracking-[-0.02em] text-xl font-semibold text-navy-900">Content coming soon</p>
                     </div>
                   )}
                 </div>
@@ -258,6 +259,8 @@ export default function QuestionnaireModal({ card }: { card: MatchCardData }) {
 
 function ProgressHeader({ stepNumber, totalSteps }: { stepNumber: number; totalSteps: number }) {
   const pct = Math.round((stepNumber / totalSteps) * 100);
+  // at most 5 milestones, the real pages shared out evenly across them (src/lib/progress.ts)
+  const { shown, current } = progressMilestones(stepNumber, totalSteps);
   return (
     <div className="q-hero relative overflow-hidden bg-navy-900 px-5 pb-5 pt-4 text-white sm:px-8 lg:pb-4 lg:pt-3.5">
       <div aria-hidden className="absolute inset-0 opacity-70 [background:radial-gradient(55%_120%_at_90%_-10%,rgba(0,174,65,.5),transparent_60%),radial-gradient(45%_100%_at_0%_110%,rgba(26,90,166,.8),transparent_60%)]" />
@@ -269,10 +272,10 @@ function ProgressHeader({ stepNumber, totalSteps }: { stepNumber: number; totalS
         </span>
         {/* milestones: one dot per step, the last is the finish (your match); the green line fills as you go */}
         <div className="mx-auto mt-3.5 flex max-w-md items-center" aria-hidden>
-          {Array.from({ length: totalSteps }, (_, i) => {
-            const done = stepNumber > i + 1;
-            const here = stepNumber === i + 1;
-            const last = i === totalSteps - 1;
+          {Array.from({ length: shown }, (_, i) => {
+            const done = current > i + 1;
+            const here = current === i + 1;
+            const last = i === shown - 1;
             return (
               <div key={i} className={`flex items-center ${last ? "" : "flex-1"}`}>
                 <span className={`grid shrink-0 place-items-center rounded-full text-[0.8rem] font-bold transition-all duration-500 ${last ? "h-10 w-10" : "h-8 w-8"} ${
@@ -285,7 +288,7 @@ function ProgressHeader({ stepNumber, totalSteps }: { stepNumber: number; totalS
           })}
         </div>
         <p className="mt-2.5 text-xs font-semibold text-navy-100">
-          {UI.stepOf.replace("{n}", String(stepNumber)).replace("{total}", String(totalSteps))} <span className="text-green-300">· {pct}%</span>
+          {UI.stepOf.replace("{n}", String(current)).replace("{total}", String(shown))} <span className="text-green-300">· {pct}%</span>
         </p>
       </div>
     </div>
@@ -312,7 +315,7 @@ function CategoryStep({
           <span className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-green-700">
             {UI.categoryOf.replace("{n}", String(index + 1)).replace("{total}", String(total))}
           </span>
-          <h3 className="font-serif text-[1.55rem] font-semibold leading-tight text-navy-900 sm:text-[1.85rem] lg:text-[1.7rem]">{category.label}</h3>
+          <h3 className="font-sans tracking-[-0.02em] text-[1.55rem] font-semibold leading-tight text-navy-900 sm:text-[1.85rem] lg:text-[1.7rem]">{category.label}</h3>
           {category.subtitle && <p className="text-sm font-semibold text-green-700">{category.subtitle}</p>}
         </div>
       </div>
@@ -327,7 +330,7 @@ function CategoryStep({
           {section.heading ? (
             <legend className="float-left mb-1 flex w-full items-center gap-3 border-b border-slate-100 pb-2.5">
               <span aria-hidden className="h-5 w-1.5 rounded-full bg-gradient-to-b from-green-500 to-navy-900" />
-              <span className="font-serif text-lg font-semibold text-navy-900">{section.heading}</span>
+              <span className="font-sans tracking-[-0.02em] text-lg font-semibold text-navy-900">{section.heading}</span>
             </legend>
           ) : <legend className="sr-only">{category.label}</legend>}
           <div className="clear-both grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-2">
@@ -369,7 +372,7 @@ function CategoryStep({
       {showsSoftware && (
         <div className={`space-y-3 rounded-3xl border-2 bg-white p-4 shadow-[0_14px_36px_-18px_rgba(7,50,101,.25)] sm:p-5 lg:p-4 ${needsSoftware && error ? "border-red-300 ring-2 ring-red-100" : "border-green-500/40"}`}>
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h4 className="font-serif text-lg font-semibold text-navy-900">{UI.softwareHeading}</h4>
+            <h4 className="font-sans tracking-[-0.02em] text-lg font-semibold text-navy-900">{UI.softwareHeading}</h4>
             {needsSoftware && error && <span className="text-xs font-semibold text-red-600">{UI.softwareError}</span>}
           </div>
           <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
