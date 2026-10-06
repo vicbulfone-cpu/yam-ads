@@ -119,7 +119,8 @@ export default function HomeMatchIntro() {
 
         {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
         <div className="container-page home-wide grid items-center gap-8 pt-[calc(2.5rem+1.85cm)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-0 lg:pt-[calc(2vw+1.85cm)]">
-          <div className="relative z-10 lg:py-[1vw]">
+          {/* lg:mb-[1cm] balances the photo's 1cm top margin, so the words stay where they were (owner, 6 Oct 2026) */}
+          <div className="relative z-10 lg:mb-[1cm] lg:py-[1vw]">
             <Eyebrow>Meet Your Accountant Match</Eyebrow>
             <h2
               id="home-match-intro"
@@ -148,7 +149,8 @@ export default function HomeMatchIntro() {
           {/* photo: bleeds to the right edge of the screen on laptops and desktops, fading into the white on its left */}
           {/* laptops/desktops: shifted 0.5cm to the left (owner, 5 Oct 2026: 2.5cm right, then 3cm left) */}
           {/* laptops/desktops: sits on the bottom of the row, so the navy bar below always touches it (owner, 6 Oct 2026) */}
-          <div className="relative -mx-[var(--gutter)] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.95/1] lg:-translate-x-[0.5cm]">
+          {/* owner, 6 Oct 2026: photo (and the bar on it) 1cm lower; everything below follows */}
+          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.95/1] lg:-translate-x-[0.5cm]">
             <Image
               src="/images/home/tradie-drill-ute.webp"
               alt="Smiling tradesman holding a drill and tool bag beside his ute in a driveway"
