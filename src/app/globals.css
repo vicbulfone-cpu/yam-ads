@@ -1046,7 +1046,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 }
 
 /* Home page FAQ (owner's "faq example" picture, 6 Oct 2026; FAQSection.tsx). Nine white cards: three per row from 1024px,
-   two on tablets, one on phones. Card: the owner's round icon | mint number badge | question with a short line under it |
+   two on tablets, one on phones. Card: the owner's round icon | question with a short line under it |
    round plus (green minus when open), and a short coloured tab on its top edge (green, then blue, alternating).
    Sizes are 80% of the first full-size version (owner, 6 Oct 2026), text never below a comfortable reading size.
    All words are real page text; solid colours and no moving text keep everything crisp. */
@@ -1059,15 +1059,15 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .faq8 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(0.9rem, 1.3vw, 1.9rem) clamp(0.6rem, 0.6vw, 0.9rem); margin-top: clamp(1.5rem, 1.8vw, 2.6rem); }
 }
 .faq8-card {
-  --pad: 0.75rem; --icon: 2.9rem; --gap: 0.6rem; --num: 1.75rem; --plus: 1.75rem; --tab-l: 1.1rem; --tab-w: 2.1rem; --tab-h: 4px;
+  --pad: 0.75rem; --icon: 2.9rem; --gap: 0.75rem; --plus: 1.75rem; --tab-l: 1.1rem; --tab-w: 2.1rem; --tab-h: 4px;
   position: relative; background: #fff; border: 1px solid #c9d3e0; border-radius: 0.9rem;
   box-shadow: 0 1px 2px rgba(7, 50, 101, 0.05), 0 10px 24px -20px rgba(7, 50, 101, 0.35);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 @media (min-width: 640px) { .faq8-card { --icon: 3.5rem; --pad: 0.9rem; } }
 @media (min-width: 1024px) {
-  .faq8-card { --pad: clamp(0.7rem, 0.8vw, 1.2rem); --icon: clamp(3.7rem, 5.3vw, 7.6rem); --gap: clamp(0.56rem, 0.64vw, 0.96rem);
-    --num: clamp(1.52rem, 1.68vw, 2.4rem); --plus: clamp(1.6rem, 1.84vw, 2.64rem);
+  .faq8-card { --pad: clamp(0.7rem, 0.8vw, 1.2rem); --icon: clamp(3.7rem, 5.3vw, 7.6rem); --gap: clamp(0.75rem, 0.9vw, 1.35rem);
+    --plus: clamp(1.6rem, 1.84vw, 2.64rem);
     --tab-l: clamp(1.1rem, 1.6vw, 2.4rem); --tab-w: clamp(2.1rem, 2.3vw, 3.4rem); border-radius: clamp(0.9rem, 0.85vw, 1.3rem); }
 }
 /* the coloured tab on the top edge */
@@ -1079,26 +1079,20 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .faq8-card:hover { border-color: #aebbd0; box-shadow: 0 1px 2px rgba(7, 50, 101, 0.06), 0 14px 30px -18px rgba(7, 50, 101, 0.4); }
 .faq8-card[open] { border-color: #8fc9a3; }
 
-/* phones, tablets and small laptops: the number badge sits above the question */
+/* icon | question with its short line | plus (the number badges were removed, owner 6 Oct 2026) */
 .faq8-sum {
-  display: grid; grid-template-columns: var(--icon) minmax(0, 1fr) var(--plus); grid-template-rows: 1fr auto auto auto 1fr;
+  display: grid; grid-template-columns: var(--icon) minmax(0, 1fr) var(--plus); grid-template-rows: 1fr auto auto 1fr;
   column-gap: var(--gap); align-items: center; padding: var(--pad); cursor: pointer; list-style: none;
 }
 .faq8-card:not([open]) > .faq8-sum { height: 100%; } /* cards in a row share one height, words centred */
 .faq8-sum::-webkit-details-marker { display: none; }
 .faq8-sum:focus-visible { outline: 2px solid #0e7a32; outline-offset: 3px; border-radius: inherit; }
 .faq8-icon { grid-column: 1; grid-row: 1 / -1; width: var(--icon); height: var(--icon); align-self: center; }
-.faq8-num {
-  grid-column: 2; grid-row: 2; align-self: start; justify-self: start; margin-bottom: 0.3rem;
-  display: grid; place-items: center; min-width: var(--num); height: calc(var(--num) * 0.72); padding-inline: 0.4em;
-  border-radius: 999px; background: #dcf5e5; color: #0b6b2c; font-weight: 800; letter-spacing: 0.02em; line-height: 1;
-  font-size: clamp(0.66rem, calc(var(--num) * 0.38), 0.95rem); font-variant-numeric: tabular-nums;
-}
 .faq8-q {
-  grid-column: 2; grid-row: 3; align-self: start; font-family: var(--font-sans); font-weight: 800; color: #0a2a57;
+  grid-column: 2; grid-row: 2; align-self: start; font-family: var(--font-sans); font-weight: 800; color: #0a2a57;
   letter-spacing: -0.015em; line-height: 1.25; font-size: 0.95rem;
 }
-.faq8-teaser { grid-column: 2; grid-row: 4; align-self: start; margin-top: 0.3rem; color: #55667f; line-height: 1.4; font-size: 0.82rem; }
+.faq8-teaser { grid-column: 2; grid-row: 3; align-self: start; margin-top: 0.3rem; color: #55667f; line-height: 1.4; font-size: 0.82rem; }
 .faq8-plus {
   grid-column: 3; grid-row: 1 / -1; position: relative; display: grid; place-items: center;
   width: var(--plus); height: var(--plus); border-radius: 999px; background: #dcf5e5; color: #0b6b2c;
@@ -1118,13 +1112,4 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .faq8-q { font-size: clamp(0.92rem, 0.86vw, 1.28rem); }
   .faq8-teaser { font-size: clamp(0.8rem, 0.72vw, 1.08rem); margin-top: 0.35rem; }
   .faq8-a { font-size: clamp(0.85rem, 0.75vw, 1.1rem); }
-}
-/* wide laptops and desktops: the number badge sits beside the question, as in the owner's picture */
-@media (min-width: 1280px) {
-  .faq8-sum { grid-template-columns: var(--icon) var(--num) minmax(0, 1fr) var(--plus); grid-template-rows: 1fr auto auto 1fr; }
-  .faq8-num { grid-column: 2; grid-row: 2; margin: -0.05em 0 0; }
-  .faq8-q { grid-column: 3; grid-row: 2; }
-  .faq8-teaser { grid-column: 3; grid-row: 3; }
-  .faq8-plus { grid-column: 4; }
-  .faq8-a { padding-left: calc(var(--pad) + var(--icon) + var(--num) + 2 * var(--gap)); }
 }

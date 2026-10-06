@@ -22,7 +22,7 @@ function homeFaqs(): Faq[] {
  * Layout from the owner's "faq example" picture (6 Oct 2026), condensed: the heading is styled like the other home
  * sections' intros ("How it works" / "Meet your accountant match": eyebrow with a rule after it, two-line heading,
  * the line beside it behind a divider), then nine smaller cards, three per row on laptops and desktops (two on
- * tablets, one on phones). Each card: round icon, mint number badge, the question, a short line under it and a round
+ * tablets, one on phones). Each card: round icon, the question (numbers removed, owner 6 Oct 2026), a short line under it and a round
  * plus that turns into a green minus when the answer is open. Styles: ".faq8" in globals.css.
  * Every word is real text in the page (crawlable). The question and answer carry data-faq-question / data-faq-answer;
  * those two match the FAQPage structured data word for word (scripts/seo-audit.mjs checks them; the ninth comes from
@@ -34,7 +34,6 @@ function FaqCard({ f, i }: { f: Faq; i: number }) {
       <summary className="faq8-sum">
         {/* the owner's original PNG, served as is (no recompression) so it stays crisp */}
         <Image src={FAQ_ICONS[i]} alt="" width={118} height={118} unoptimized className="faq8-icon" />
-        <span aria-hidden="true" className="faq8-num">{String(i + 1).padStart(2, "0")}</span>
         <span className="faq8-q" data-faq-question="">{f.q}</span>
         <span className="faq8-teaser">{FAQ_TEASERS[i]}</span>
         <span aria-hidden="true" className="faq8-plus">
