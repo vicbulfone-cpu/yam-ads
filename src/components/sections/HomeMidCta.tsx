@@ -29,7 +29,7 @@ export default function HomeMidCta() {
             href={QUESTIONNAIRE_URL}
             className="inline-flex min-h-14 items-center gap-4 rounded-full bg-white py-2 pl-9 pr-2.5 text-[1.05rem] font-bold text-green-700 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.4)] transition hover:-translate-y-0.5 lg:min-h-[clamp(3.5rem,3.9vw,5.5rem)] lg:pl-[clamp(2.25rem,2.4vw,3.4rem)] lg:text-[clamp(1.05rem,1.25vw,1.8rem)]"
           >
-            Find My Accountant
+            Find my Match
             <span aria-hidden="true" className="grid h-10 w-10 place-items-center rounded-full bg-green-600 text-white lg:h-[clamp(2.5rem,2.8vw,4rem)] lg:w-[clamp(2.5rem,2.8vw,4rem)]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="h-[45%] w-[45%]"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </span>

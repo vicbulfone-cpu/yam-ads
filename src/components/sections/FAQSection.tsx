@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import Image from "next/image";
 
 /**
  * Home page: "Frequently Asked Questions".
@@ -21,7 +20,7 @@ export default function FAQSection() {
   const faqs = homeFaqs();
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="container-page home-wide grid items-center gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-[4vw]">
+      <div className="container-page home-wide">
         <div>
           <p className="inline-flex rounded-full bg-green-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-green-700 fs-eyebrow">Common questions</p>
           <h2 className="mt-4 text-[1.85rem] leading-[1.1]! text-navy-900 sm:text-[2.1rem] lg:text-[2.3rem] fs-h2">
@@ -44,18 +43,7 @@ export default function FAQSection() {
             ))}
           </div>
         </div>
-
-        {/* Photo collage: large rural couple portrait with a smaller office photo overlapping its lower left */}
-        <div className="relative mx-auto hidden aspect-[0.92/1] w-full max-w-[460px] sm:block lg:max-w-[32vw]">
-          <span aria-hidden="true" className="absolute left-0 top-[8%] h-[52%] w-[40%] rounded-[1.5rem] bg-green-50" />
-          <span aria-hidden="true" className="absolute bottom-[4%] right-[-4%] h-[38%] w-[30%] rounded-[1.5rem] bg-green-50" />
-          <div className="absolute right-[4%] top-0 h-[82%] w-[66%] overflow-hidden rounded-[1.25rem] border-[5px] border-white shadow-[0_20px_44px_-18px_rgba(7,50,101,0.4)]">
-            <Image src="/images/home/rural-couple-portrait.webp" alt="Farming couple in hats leaning on a fence on their property" fill sizes="(min-width:1024px) 21vw, 50vw" className="object-cover" style={{ objectPosition: "50% 40%" }} />
-          </div>
-          <div className="absolute bottom-[2%] left-[6%] h-[48%] w-[44%] overflow-hidden rounded-[1.1rem] border-[5px] border-white shadow-[0_20px_44px_-18px_rgba(7,50,101,0.45)]">
-            <Image src="/images/home/woman-laptop-office.webp" alt="Accountant smiling as she works at her laptop" fill sizes="(min-width:1024px) 14vw, 40vw" className="object-cover" style={{ objectPosition: "45% 30%" }} />
-          </div>
-        </div>
+        {/* (photo collage and its green squares removed, owner 6 Oct 2026) */}
       </div>
     </section>
   );

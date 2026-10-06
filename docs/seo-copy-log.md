@@ -1237,3 +1237,7 @@ New lines in `src/content/home-copy.ts` (each restates wording the site already 
 ## 3 Oct 2026 — owner request: match box small print
 Old: "Tell us what you need help with. We'll connect you with an accountant whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
 New (src/content/home-copy.ts, MATCH_CARD_NOTE): "Tell us what you need help with. We’ll connect you with one of our national partner firms near you whose expertise fits. The matched firm provides its own accounting, tax or financial services directly."
+
+## 6 Oct 2026 — owner request: home page wording
+- "How it works" step 3 (src/components/sections/HomeMatchIntro.tsx). Old: "Your matched accountant contacts you directly to discuss your needs." New: "Your match calls you, or you call for immediate assistance."
+- Mid-page "Ready to find your accountant?" band button (src/components/sections/HomeMidCta.tsx). Old: "Find My Accountant". New: "Find my Match".

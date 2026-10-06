@@ -30,7 +30,7 @@ const steps: { title: string; text: string; image: string; alt: string; position
   },
   {
     title: "Connect and get started",
-    text: "Your matched accountant contacts you directly to discuss your needs.",
+    text: "Your match calls you, or you call for immediate assistance.",
     image: "/images/home/accountant-client-desk.webp",
     alt: "Accountant talking through paperwork with a new client at his desk",
     position: "50% 0%",
@@ -108,7 +108,8 @@ export default function HomeMatchIntro() {
 
           {/* photo: bleeds to the right edge of the screen on laptops and desktops, fading into the white on its left */}
           {/* laptops/desktops: shifted 0.5cm to the left (owner, 5 Oct 2026: 2.5cm right, then 3cm left) */}
-          <div className="relative -mx-[var(--gutter)] aspect-[4/3] sm:aspect-[3/2] lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.95/1] lg:-translate-x-[0.5cm]">
+          {/* laptops/desktops: sits on the bottom of the row, so the navy bar below always touches it (owner, 6 Oct 2026) */}
+          <div className="relative -mx-[var(--gutter)] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.95/1] lg:-translate-x-[0.5cm]">
             <Image
               src="/images/home/tradie-drill-ute.webp"
               alt="Smiling tradesman holding a drill and tool bag beside his ute in a driveway"
@@ -194,8 +195,8 @@ export default function HomeMatchIntro() {
         </div>
 
         {/* 3 — navy start bar: full screen width, no space below it, so the gaps above and below the icon strip
-            that follows match; 1cm extra space above it (owner, 5 Oct 2026: 3cm, then 2cm back up) */}
-        <div className="mt-[calc(2.5rem+1cm)] lg:mt-[calc(1.4vw+1cm)]">
+            that follows match (owner, 5 Oct 2026: 1cm extra space above it; 6 Oct 2026: moved up 1cm, so none) */}
+        <div className="mt-[2.5rem] lg:mt-[1.4vw]">
           <StartBar />
         </div>
       </div>
