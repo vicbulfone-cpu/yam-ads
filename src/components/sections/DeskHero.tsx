@@ -12,6 +12,7 @@ import { deskHeroPicture } from "@/config/site.config";
 import { HERO_COPY } from "@/content/hero-copy";
 import MatchCard, { type MatchCardData } from "./MatchCard";
 import MatchFitScript from "./MatchFitScript";
+import HeroPoints from "./HeroPoints";
 
 export type DeskHeroHeadline = { before: string; green: string; after?: string; sub?: string; greenOnOwnLine?: boolean };
 
@@ -97,16 +98,7 @@ export default function DeskHero({
             )}
           </h1>
           {headline.sub && <p className="desk-hero-sub">{headline.sub}</p>}
-          <ul className="desk-hero-points">
-            {HERO_COPY.points.map((p) => (
-              <li key={p.strong} className="flex items-center gap-3">
-                <Image src={p.icon} alt="" width={160} height={160} className="h-11 w-11 shrink-0 2xl:h-[3.75rem] 2xl:w-[3.75rem]" />
-                <span className="text-[0.95rem] leading-tight text-navy-900 2xl:text-[1.15rem]">
-                  <strong className="block font-extrabold">{p.strong}</strong> {p.text}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <HeroPoints />
         </div>
 
         {/* 2 — the match box (desktop: right column, running over the white strip) */}

@@ -30,11 +30,15 @@ Source: owner-supplied files in `hero section/` (owner's own images, supplied fo
 tradie-van, woman-laptop-home, woman-laptop-office, couple-laptop, house-front, client-meeting, city-desk-laptop, cafe-owner-man, cafe-owner-woman, rural-couple-portrait, rural-couple-fence, retirees-coast, family-walk, couple-house, team-meeting, market-team, family-table, coast, accountant-client-desk; icons in `public/images/home/icons/`.
 
 ## Home page FAQ icons supplied by the owner (6 Oct 2026)
-Source: owner-supplied files in `hero section/ad landing pages/` (01-clock … 10-large-map-illustration; owner's own images,
+Source: owner-supplied files in `hero section/ad landing pages/` (01-clock … 09-clipboard; owner's own images,
 supplied for use on this site). `scripts/faq-icons.mjs` makes their white background transparent, trims them and saves WebP to
 `public/images/home/faq-icons/`: 01-clock, 02-shield, 03-coins, 04-document, 05-phone, 06-gears, 07-people,
-08-location-pin, 09-clipboard, 10-map-large. (They replace the earlier set from `hero section/icons faq/`.)
+08-location-pin, 09-clipboard. (They replace the earlier set from `hero section/icons faq/`.)
 
 ## Data
 
 - `public/data/au-postcodes.txt` (postcode and suburb suggestions in the business questionnaire): GeoNames Australian postal codes, https://download.geonames.org/export/zip/ — Creative Commons Attribution 4.0 (commercial use allowed with credit; credit shown under the postcode box).
+
+## Home page "How we select accountants" icons supplied by the owner (6 Oct 2026)
+Source: owner-supplied files in `hero section/ad landing pages/` (01-identity-card … 07-customer-concerns; owner's own images,
+supplied for use on this site, transparent background), converted to WebP in `public/images/home/select-icons/`.

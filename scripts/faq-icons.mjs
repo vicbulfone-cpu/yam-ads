@@ -5,7 +5,7 @@ import sharp from "sharp";
 const SRC = "hero section/ad landing pages/";
 const MAP = { "01-clock": "01-clock", "02-credentials-shield": "02-shield", "03-coins": "03-coins", "04-document-folder": "04-document",
   "05-phone": "05-phone", "06-gears": "06-gears", "07-people": "07-people", "08-map-location-pin": "08-location-pin",
-  "09-clipboard": "09-clipboard", "10-large-map-illustration": "10-map-large" };
+  "09-clipboard": "09-clipboard" };
 for (const [from, to] of Object.entries(MAP)) {
   const { data, info } = await sharp(`${SRC}${from}.png`).removeAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width: w, height: h } = info;

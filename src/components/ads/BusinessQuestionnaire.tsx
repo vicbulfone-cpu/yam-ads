@@ -17,13 +17,13 @@ import PhoneFit from "../ui/PhoneFit";
  * The business questionnaire (business ad page /ad-1). Same popup, progress header and option cards as the site's
  * questionnaire (QuestionnaireModal.tsx, docs/questionnaire-design.md), with more steps:
  *   one page per ticked category → summary (confirm) → in person or remote → postcode/suburb → 3-second search →
- *   "great news" box asking for email → mobile → name → email the match details? → match page (/ad-6).
+ *   "great news" box asking for email → mobile → name → email the match details? → match page (/match).
  * Each category counts as one step in the progress bar. Opened by the business match box (OPEN_BIZ_QUESTIONNAIRE event).
  */
 
 import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 export { OPEN_BIZ_QUESTIONNAIRE };
-const MATCH_PAGE = "/ad-6";
+const MATCH_PAGE = "/match";
 
 type CatAnswer = { ids: string[]; other: string; software: string | null };
 type Step = { kind: "cat"; id: string } | { kind: "summary" | "mode" | "location" | "email" | "phone" | "name" | "emailMe" };

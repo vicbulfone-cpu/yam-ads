@@ -10,7 +10,7 @@ import { SAMPLE_MATCH_PERSONAL, SAMPLE_MATCH_REGISTRATION, SAMPLE_MATCH_SMSF, ty
 import { ArrowRight, Check, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
- * The customer's match page (/ad-6), shown after every ad questionnaire (business, personal, ...). The accountant's details come from the
+ * The customer's match page (/match), shown after every ad questionnaire (business, personal, ...). The accountant's details come from the
  * server (the sample accountant until GoHighLevel is connected); the customer's own answers come from this browser tab.
  * Empty fields are hidden. Wording is neutral (no claims about why this accountant was chosen).
  */

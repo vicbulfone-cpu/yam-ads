@@ -7,6 +7,7 @@ import { homeDeskHeroPicture } from "@/config/site.config";
 import { PERSONAL_LANDING as L } from "@/content/personal-questionnaire";
 import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
+import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import PersonalMatchCard from "./PersonalMatchCard";
 import { LazyPersonalQuestionnaire } from "./LazyQuestionnaires";
@@ -34,6 +35,8 @@ export default function PersonalAdPage() {
               <span className="block text-[#0e7a32]">{L.h1[1].trim()}</span>{" "}
               <span className="block">{L.h1[2].trim()}</span>
             </h1>
+            {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
+            <HeroPoints className="bz-points" />
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 

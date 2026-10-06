@@ -9,6 +9,7 @@ import { homeDeskHeroPicture } from "@/config/site.config";
 import { REG_LANDING as L } from "@/content/registration-questionnaire";
 import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
+import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import RegistrationMatchCard from "./RegistrationMatchCard";
 import { LazyRegistrationQuestionnaire } from "./LazyQuestionnaires";
@@ -36,6 +37,8 @@ export default function RegistrationAdPage() {
             <h1 className="bz-h1 rz-h1">
               {L.h1.map((line, i) => <Fragment key={line}>{i > 0 && " "}<span className="block">{greenWords(line)}</span></Fragment>)}
             </h1>
+            {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
+            <HeroPoints className="bz-points" />
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 

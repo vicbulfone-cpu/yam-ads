@@ -25,7 +25,6 @@ import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
 import StartBar from "./sections/StartBar";
 import CoverageSection from "./sections/CoverageSection";
-import HomeTagline from "./sections/HomeTagline";
 import HomeClosingCta from "./sections/HomeClosingCta";
 
 type N = Exclude<Node, { t: "sec" }>;
@@ -127,6 +126,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
             <StartBar
               button={false}
               hero
+              className="bar-align-how" /* words in line with "How it works" on laptops and desktops (owner, 6 Oct 2026) */
               words={
                 <>
                   <p className="hb-title">More than a directory. A match for your needs.</p>
@@ -140,11 +140,11 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           <HeroTrustStrip />
           <WhyItMatters />
           <HomeSelection /> {/* trust: how we select accountants (owner, 6 Oct 2026) */}
+          <CoverageSection /> {/* "Connecting Australians": moved under the trust section (owner, 6 Oct 2026) */}
           <FAQSection />
           {/* (mid-page "Ready to find your accountant?" banner removed, owner 6 Oct 2026) */}
-          <CoverageSection />
-          <HomeTagline text={TAGLINES[8]} />
-          <HomeClosingCta />
+          {/* "One quick match…" now sits at the top of the closing band (owner, 6 Oct 2026) */}
+          <HomeClosingCta tagline={TAGLINES[8]} />
         </main>
         <SiteFooter nodes={nodes} variant="home" showAds />
       </>

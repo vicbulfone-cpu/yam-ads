@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Node } from "@/lib/content";
 import { BUSINESS, REQUIRED_FOOTER_LINKS } from "@/content/business";
-import { AD_PAGES, isLivePage } from "@/lib/pages";
+import { AD_LANDING_PAGES, isLivePage } from "@/lib/pages";
 import { Pin } from "../ui/Icons";
 
 /** Pulls the footer section out of a page's extracted nodes. */
@@ -40,8 +40,8 @@ const HOME_FOOTER_COLUMNS: { title: string; links: { text: string; href?: string
   },
 ];
 
-/** Links to the six ad landing pages (/ad-1 … /ad-6); shown in the home page footer only. */
-const AD_COLUMN = { title: "Ads", links: AD_PAGES.map((href, i) => ({ text: `Ad ${i + 1}`, href })) };
+/** Links to the four ad landing pages, each named as its page, under the heading "Services" (owner, 6 Oct 2026); shown in the home page footer only. */
+const AD_COLUMN = { title: "Services", links: AD_LANDING_PAGES.map((a) => ({ text: a.name, href: a.path })) };
 
 /** Home page footer, laid out as in the owner's "home page 2" picture. */
 function HomeFooter({ showAds }: { showAds?: boolean }) {
@@ -49,7 +49,7 @@ function HomeFooter({ showAds }: { showAds?: boolean }) {
   return (
     <footer className="border-t border-line bg-[#f7f9fb]">
       <div className="container-page pb-6 pt-12 md:pt-14">
-        <div className={`grid gap-10 ${showAds ? "md:grid-cols-[1.4fr_0.8fr_1fr_0.7fr]" : "md:grid-cols-[1.4fr_0.8fr_1fr]"}`}>
+        <div className={`grid gap-10 ${showAds ? "md:grid-cols-[1.3fr_0.7fr_1fr_1.3fr]" : "md:grid-cols-[1.4fr_0.8fr_1fr]"}`}>
           <div>
             <p className="text-[1.45rem] font-extrabold tracking-tight text-navy-900">
               Your Accountant <span className="text-green-700">Match</span>

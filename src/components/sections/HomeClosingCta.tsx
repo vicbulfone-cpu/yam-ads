@@ -5,8 +5,14 @@ import { QUESTIONNAIRE_URL } from "@/config/site.config";
 /**
  * Home page closing call to action: a full-width navy band with a coastal photo blended into the right side; the words stay centred.
  * The button points at the questionnaire (the questionnaire popup intercepts the click).
+ * `tagline` ("One quick match. A year of better tax outcomes.") sits at the top of the band, above the heading (owner,
+ * 6 Oct 2026; it used to be its own line on white above the band): first sentence white, the rest bright green, both
+ * easy to read on the navy.
  */
-export default function HomeClosingCta() {
+export default function HomeClosingCta({ tagline }: { tagline?: string }) {
+  const cut = tagline ? tagline.indexOf(". ") : -1;
+  const first = tagline && cut !== -1 ? tagline.slice(0, cut + 1) : tagline;
+  const rest = tagline && cut !== -1 ? tagline.slice(cut + 2) : "";
   return (
     <section aria-labelledby="home-closing-cta">
       <div className="relative isolate overflow-hidden bg-navy-900">
@@ -27,6 +33,15 @@ export default function HomeClosingCta() {
         </div>
 
         <div className="flex flex-col items-center px-6 py-10 text-center md:py-[clamp(2.75rem,3.6vw,5rem)]">
+          {tagline && (
+            <>
+              <p className="text-balance font-sans text-[1.3rem] font-extrabold leading-tight tracking-tight text-white [text-shadow:0_2px_12px_rgba(4,24,52,0.55)] sm:text-[1.6rem] lg:text-[clamp(1.6rem,1.9vw,2.8rem)]">
+                {first}
+                {rest && <> <span className="text-[#4ee28f] max-sm:block">{rest}</span></>}
+              </p>
+              <span aria-hidden className="mb-6 mt-5 block h-[3px] w-14 rounded-full bg-[#4ee28f]/80 lg:mb-[1.6vw] lg:mt-[1.3vw] lg:w-[clamp(3.5rem,4vw,6rem)]" />
+            </>
+          )}
           <h2 id="home-closing-cta" className="text-[1.65rem] leading-tight! text-white! sm:text-[2rem] lg:text-[clamp(2rem,2.4vw,3.6rem)]">
             Ready to find your accountant?
           </h2>

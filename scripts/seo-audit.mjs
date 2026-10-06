@@ -90,11 +90,16 @@ for (const p of paths) {
   if (p !== "/" && !crumbs) add(problems, p, "missing BreadcrumbList schema");
   if (crumbs) schemaCounts.breadcrumbs++;
   const faq = graph.find((n) => n["@type"] === "FAQPage");
-  const summaryCount = [...h.matchAll(/<summary\b/g)].length;
+  // where a page marks its FAQ questions (data-faq-question), only those boxes are FAQs; other open/close boxes on the
+  // page (e.g. the home page's "How we select accountants" checks) are not
+  const allDetails = [...h.matchAll(/<details\b[^>]*>([\s\S]*?)<\/details>/gi)].map((m) => m[1]);
+  const markedDetails = allDetails.filter((d) => /\bdata-faq-question\b/.test(d));
+  const faqDetails = markedDetails.length ? markedDetails : allDetails;
+  const summaryCount = markedDetails.length || [...h.matchAll(/<summary\b/g)].length;
   if (faq) {
     schemaCounts.faq++;
     if (!faq.mainEntity?.length || faq.mainEntity.length !== summaryCount) add(problems, p, `FAQ schema has ${faq.mainEntity?.length ?? 0} answers but ${summaryCount} visible questions`);
-    const visibleFaqs = [...h.matchAll(/<details\b[^>]*>([\s\S]*?)<\/details>/gi)].map(([, detail]) => {
+    const visibleFaqs = faqDetails.map((detail) => {
       // a card may hold extra visible text (number, short line); then the question and answer are the elements marked
       // data-faq-question / data-faq-answer, and only those are compared with the FAQPage structured data
       const marked = (attr, html) => (html.match(new RegExp(`<([a-z0-9]+)\\b[^>]*\\b${attr}\\b[^>]*>([\\s\\S]*?)<\\/\\1>`, "i")) || [])[2];

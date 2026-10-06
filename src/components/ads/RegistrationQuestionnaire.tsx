@@ -19,12 +19,12 @@ import PhoneFit from "../ui/PhoneFit";
  * business and SMSF questionnaires, with the owner's registration questions (6 Oct 2026):
  *   one page per ticked category (exact requirements) → new or existing business? (+ optional note) → name →
  *   summary (confirm) → in person or remote → postcode/suburb → 3-second search → "great news" box asking for email →
- *   mobile → email the match details? → match page (/ad-6).
+ *   mobile → email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the registration match box (OPEN_REG_QUESTIONNAIRE).
  */
 
 import { OPEN_REG_QUESTIONNAIRE } from "@/lib/questionnaire-events";
-const MATCH_PAGE = "/ad-6";
+const MATCH_PAGE = "/match";
 
 type CatAnswer = { ids: string[]; other: string };
 type Step = { kind: "cat"; id: string } | { kind: "qualify" | "summary" | "mode" | "location" | "email" | "phone" | "name" | "emailMe" };

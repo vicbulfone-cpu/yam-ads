@@ -1,5 +1,5 @@
 /**
- * SAMPLE ACCOUNTANT — shown on the match page (/ad-6) only while GoHighLevel is not connected (MOCK_GHL / no webhook).
+ * SAMPLE ACCOUNTANT — shown on the match page (/match) only while GoHighLevel is not connected (MOCK_GHL / no webhook).
  * Not a real person or firm. When GHL is connected (Stage 5) the real match details replace this, using the same fields.
  */
 export type MatchDetails = {

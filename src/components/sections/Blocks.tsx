@@ -170,7 +170,7 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
   return (
     <div className="mx-auto max-w-3xl space-y-3">
       {items.map((it, i) => (
-        <details key={i} className="group card overflow-hidden transition hover:border-green-200 open:border-green-200 open:shadow-[var(--shadow-md)]" name="faq">
+        <details key={i} className="group card overflow-hidden transition hover:border-green-200 open:border-green-200 open:shadow-[var(--shadow-md)]" name="faq" data-faq="">
           <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 p-5 font-serif text-[1.05rem] font-semibold leading-snug text-navy-900 marker:hidden md:p-6 md:text-lg [&::-webkit-details-marker]:hidden">
             <span>{it.q}</span>
             <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-green-50 text-green-700 transition-transform duration-300 group-open:rotate-45 group-open:bg-green-600 group-open:text-white">

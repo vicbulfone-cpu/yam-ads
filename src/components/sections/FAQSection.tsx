@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import Image from "next/image";
-import { FAQ_ICONS, FAQ_MAP, HOME_EXTRA_FAQS } from "@/content/faq-teasers";
+import { HOME_EXTRA_FAQS } from "@/content/faq-teasers";
 
 /**
  * Home page: the FAQ section.
@@ -19,27 +18,26 @@ function homeFaqs(): Faq[] {
 }
 
 /**
- * Layout from the owner's "faq example" picture (hero section/ad landing pages, 6 Oct 2026): on laptops and desktops the
- * heading, the line under it and a large map illustration sit on the left behind a thin divider, and the questions run in
- * two columns on the right (five, then four). Each question is an open row: the owner's icon (transparent background, scripts/faq-icons.mjs) | the question | a green
- * plus, with a thin line between rows. An open row turns mint, the plus becomes a minus and the answer shows under the
- * question. Tablets keep the two columns under the heading; phones show one column. Styles: ".faqx" in globals.css.
+ * Layout: on laptops and desktops the heading and the line under it sit on the left behind a thin divider, and the
+ * questions run in two columns on the right (five, then four). Each question is a box exactly like the home page's
+ * "Vetted partner network" section (owner, 6 Oct 2026; HomeSelection.tsx, ".sel-" styles in globals.css): a soft-filled
+ * box with no border and no icon, the question in green and a plus; open, it turns mint, the plus becomes a minus and the
+ * answer shows. Every question starts closed on every visit (owner, 6 Oct 2026; data-faq + FaqReset.tsx). Tablets keep the two columns under the heading; phones show one column. Section styles: ".faqx" in globals.css.
  * Every word is real text in the page (crawlable). The question and answer carry data-faq-question / data-faq-answer;
  * those two match the FAQPage structured data word for word (scripts/seo-audit.mjs checks them; the ninth comes from
  * HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
  */
 function FaqRow({ f, i }: { f: Faq; i: number }) {
   return (
-    <details className="faqx-row" open={i === 0}>
-      <summary className="faqx-sum">
-        <Image src={FAQ_ICONS[i]} alt="" width={360} height={260} sizes="(min-width: 1024px) 9vw, 6rem" className="faqx-icon" />
-        <span className="faqx-q" data-faq-question="">{f.q}</span>
-        <span aria-hidden="true" className="faqx-plus">
-          <span className="faqx-bar" />
-          <span className="faqx-bar faqx-bar-v" />
+    <details className="sel-box" data-faq="">
+      <summary className="sel-sum">
+        <span className="sel-q" data-faq-question="">{f.q}</span>
+        <span aria-hidden="true" className="sel-plus">
+          <span className="sel-bar" />
+          <span className="sel-bar sel-bar-v" />
         </span>
       </summary>
-      <p className="faqx-a" data-faq-answer="">{f.a}</p>
+      <p className="sel-a" data-faq-answer="">{f.a}</p>
     </details>
   );
 }
@@ -61,15 +59,16 @@ export default function FAQSection() {
             <span className="block text-green-700">Clear answers.</span>
           </h2>
           <p className="faqx-sub">Everything you need to know about finding your accountant.</p>
-          <Image src={FAQ_MAP} alt="" width={354} height={233} sizes="(min-width: 1024px) 22vw, 1px" className="faqx-map" />
         </div>
 
-        <div className="faqx-cols">
+        <div className="sel-right">
+          <div className="sel-cols">
           {cols.map((col, c) => (
-            <div key={c} className="faqx-col">
+            <div key={c} className="sel-col">
               {col.map((f, j) => <FaqRow key={f.q} f={f} i={c * half + j} />)}
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

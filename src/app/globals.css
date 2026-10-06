@@ -731,18 +731,18 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
    Laptop and desktop: full width at its own proportions, sitting on the bottom of the frame: never zoomed or stretched.
    Where the frame is taller than the picture, the picture's top edge fades into the white page. */
 .desk-hero-photo { position: absolute; bottom: 0; left: 0; height: 100%; aspect-ratio: 1983 / 793; transform: translateX(calc((100vw - 100%) * 0.09)); }
-/* Home "A local accountant. A better match." photo: a soft 48px fade into the white at its top (no fade at the bottom);
-   laptops and desktops show the whole photo height (right-aligned, so it starts ~23% in from the frame's left)
-   and fade its left side into the words (both fades combined) */
+/* Home "A local accountant. A better match." photo: a very slight 16px fade into the white at its top (owner, 6 Oct 2026:
+   the earlier 48px fade was too much), none at the bottom; laptops and desktops show the whole photo height
+   (right-aligned, so it starts ~23% in from the frame's left) and fade its left side into the words (both fades combined) */
 .intro-photo {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 48px);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 48px);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
 }
 @media (min-width: 1024px) {
   .intro-photo {
-    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, transparent 0, #000 48px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, transparent 0, #000 48px);
+    mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
     mask-composite: intersect;
   }
 }
@@ -835,7 +835,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .desk-hero-grid { padding-bottom: calc(var(--hero-open) + 1.5cm + 2.5rem); } /* + 2.5rem: the trust banner is 150% of its 5rem row */  .desk-hero-picture { margin-bottom: calc(-1 * var(--hero-open)); }
   .desk-hero-photo { bottom: calc(min(0px, calc((100% - var(--hero-open) - 39.99vw) * 0.62)) + var(--hero-open)); }
   .desk-hero-photo img.desk-hero-img { transform: translateY(calc(var(--hero-nudge) - 1cm)); } /* owner, 5 Oct 2026: picture only moved up 1cm (banner stays put) */
-  /* owner, 6 Oct 2026: the photo sits in exactly the same place on every page that shows it (home, Ad 5 and Ads 1-4):
+  /* owner, 6 Oct 2026: the photo sits in exactly the same place on every page that shows it (home and Ads 1-4):
      its top 2.2vw under the header at every laptop/desktop width, as on the Ad 1 page (.bz-photo in ads.css). The frame
      (.desk-hero-picture) is lifted 5.2cm, so the photo's top is set 5.2cm + 2.2vw down inside it. Only the photo and the
      handwriting on its arrow move; the frame, words, match box and banner keep their places. */
@@ -1070,67 +1070,15 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   font-size: 2.3rem;
 }
 .faqx-sub { margin-top: 0.8rem; color: #3f5068; line-height: 1.4; font-size: 1.05rem; max-width: 26rem; }
-.faqx-map { display: none; }
 @media (min-width: 640px) { .faqx-h2 { font-size: 2.8rem; } }
 @media (min-width: 1024px) {
   .faqx-eyebrow { font-size: clamp(0.72rem, 0.68vw, 1rem); }
   .faqx-eyebrow-rule { width: clamp(4rem, 5vw, 7.5rem); }
   .faqx-h2 { font-size: clamp(2.4rem, 3.05vw, 4.6rem); margin-top: clamp(0.7rem, 1vw, 1.5rem); }
   .faqx-sub { font-size: clamp(1rem, 1.12vw, 1.65rem); margin-top: clamp(0.8rem, 1.1vw, 1.6rem); max-width: none; }
-  .faqx-map { display: block; width: 92%; height: auto; margin-top: clamp(1.5rem, 2.6vw, 4rem); }
 }
 
-.faqx-cols { display: grid; min-width: 0; }
-@media (min-width: 768px) { .faqx-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; } }
-@media (min-width: 1024px) { .faqx-cols { column-gap: clamp(2rem, 3vw, 4.5rem); padding-left: clamp(1.5rem, 2.4vw, 3.5rem); } }
-.faqx-col { display: flex; flex-direction: column; min-width: 0; }
-
-.faqx-row {
-  --icon: 4.6rem; --gap: 0.9rem; --pad: 0.75rem; --plus: 1.6rem;
-  position: relative; border-radius: 0.9rem; transition: background-color 0.2s ease;
-}
-/* the thin line between rows */
-.faqx-row + .faqx-row::before {
-  content: ""; position: absolute; top: 0; left: var(--pad); right: var(--pad); height: 1px; background: #d9e1ec;
-  transition: opacity 0.2s ease;
-}
-.faqx-row[open] { background: #e8f6ee; }
-.faqx-row[open]::before, .faqx-row[open] + .faqx-row::before { opacity: 0; }
-@media (min-width: 1024px) {
-  .faqx-row { --icon: clamp(4.8rem, 6.4vw, 9.6rem); --gap: clamp(1rem, 1.6vw, 2.4rem); --pad: clamp(0.7rem, 0.9vw, 1.35rem);
-    --plus: clamp(1.6rem, 1.7vw, 2.5rem); border-radius: clamp(0.9rem, 0.8vw, 1.2rem); }
-}
-
-.faqx-sum {
-  display: grid; grid-template-columns: var(--icon) minmax(0, 1fr) var(--plus); column-gap: var(--gap); align-items: center;
-  padding: var(--pad); cursor: pointer; list-style: none; border-radius: inherit;
-}
-@media (min-width: 1024px) { .faqx-sum { padding-block: clamp(0.8rem, 1.1vw, 1.65rem); } }
-.faqx-sum::-webkit-details-marker { display: none; }
-.faqx-sum:focus-visible { outline: 2px solid #0e7a32; outline-offset: 2px; }
-.faqx-icon { width: var(--icon); height: calc(var(--icon) * 0.72); object-fit: contain; transition: transform 0.25s ease; }
-@media (hover: hover) and (min-width: 1024px) { .faqx-sum:hover .faqx-icon { transform: translateY(-2px) scale(1.04); } }
-@media (prefers-reduced-motion: reduce) { .faqx-icon { transition: none; } .faqx-sum:hover .faqx-icon { transform: none; } }
-.faqx-q {
-  font-family: var(--font-sans); font-weight: 700; color: #0a2a57; letter-spacing: -0.01em; line-height: 1.3; font-size: 1rem;
-}
-.faqx-sum:hover .faqx-q { color: #073265; }
-@media (min-width: 1024px) { .faqx-q { font-size: clamp(1rem, 1.1vw, 1.65rem); } }
-
-/* plus that becomes a minus */
-.faqx-plus { position: relative; display: grid; place-items: center; width: var(--plus); height: var(--plus); color: #0e7a32; }
-.faqx-bar { position: absolute; width: 70%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease; }
-.faqx-bar-v { transform: rotate(90deg); }
-.faqx-row[open] .faqx-plus { color: #0a2a57; }
-.faqx-row[open] .faqx-bar-v { transform: rotate(90deg) scaleX(0); }
-
-/* the answer lines up under the question */
-.faqx-a {
-  margin-top: calc(var(--pad) * -0.4); padding: 0 calc(var(--pad) + var(--plus)) var(--pad) calc(var(--pad) + var(--icon) + var(--gap));
-  color: #34465f; line-height: 1.5; font-size: 0.92rem;
-}
-@media (max-width: 479px) { .faqx-a { padding-left: var(--pad); padding-right: var(--pad); } }
-@media (min-width: 1024px) { .faqx-a { font-size: clamp(0.9rem, 0.92vw, 1.38rem); } }
+/* the question boxes use the ".sel-" styles below (same as the "Vetted partner network" section, owner 6 Oct 2026) */
 
 /* Home page "Our coverage" (owner's "australia wide" picture, 6 Oct 2026; CoverageSection.tsx): navy band, framed panels of
    place chips on the left, a large map of Australia with a pin and "Australia wide" on the right, a rule and a note below.
@@ -1273,59 +1221,136 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .home-trust-list > li:last-child { padding-right: 0; }
 }
 
-/* Home page trust section "How we select accountants" (owner, 6 Oct 2026; HomeSelection.tsx): one soft card with a
-   shield badge, eyebrow, heading and the approved credential claim; the seven checks as ticked tiles (4 + 3 on laptops);
-   the cost/referral note and a link to the full page along the bottom. */
-.sel { background: #fff; padding-block: 3rem; }
-@media (min-width: 1024px) { .sel { padding-block: clamp(3.5rem, 4.5vw, 6.5rem); } }
-.sel-card {
-  border: 1px solid #d5e3da; border-radius: 1.25rem; padding: 1.4rem;
-  background: linear-gradient(180deg, #f6fbf8 0%, #ffffff 70%);
-  box-shadow: 0 1px 2px rgba(7, 50, 101, 0.04), 0 24px 48px -36px rgba(7, 50, 101, 0.35);
-}
-@media (min-width: 768px) { .sel-card { padding: 2rem 2.2rem; } }
-@media (min-width: 1024px) { .sel-card { padding: clamp(2rem, 2.6vw, 3.8rem) clamp(2.2rem, 3vw, 4.4rem); border-radius: clamp(1.25rem, 1.4vw, 2rem); } }
-.sel-head { display: flex; align-items: flex-start; gap: 1rem; }
-@media (min-width: 1024px) { .sel-head { gap: clamp(1rem, 1.5vw, 2.2rem); } }
-.sel-badge {
-  flex: none; display: grid; place-items: center; width: 3.25rem; height: 3.25rem; border-radius: 999px;
-  background: #0e7a32; color: #0e7a32; box-shadow: 0 10px 22px -12px rgba(14, 122, 50, 0.7);
-}
-.sel-badge svg { width: 58%; height: 58%; color: #ffffff; }
-.sel-badge svg path:first-child { fill: #ffffff; }
-.sel-badge svg path:last-child { stroke: #0e7a32; }
-@media (min-width: 1024px) { .sel-badge { width: clamp(3.25rem, 4vw, 5.8rem); height: clamp(3.25rem, 4vw, 5.8rem); } }
-.sel-eyebrow { color: #0e7a32; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem; }
-.sel-h2 { margin-top: 0.35rem; color: var(--navy-900); font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.03em !important; line-height: 1.08; font-size: 1.75rem; }
-.sel-lead { margin-top: 0.5rem; color: #3f5068; font-size: 1rem; line-height: 1.5; max-width: 46rem; }
+/* Home page trust section "How we select accountants" (owner, 6 Oct 2026; HomeSelection.tsx), laid out like the Common
+   questions section: heading, credential line and link on the left behind a thin divider (laptops and up);
+   the seven checks on the right in two columns (one on phones) as filled boxes with no border and no icons, the cost note under them. Each box: the
+   check title in green and a plus; open, the box turns mint, the plus becomes a minus and the description shows. */
+.sel { background: #fff; padding-block: 3rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@media (min-width: 1024px) { .sel { padding-block: clamp(3.5rem, 4.2vw, 6.5rem); } }
+.sel-grid { display: grid; gap: 1.5rem; }
+@media (min-width: 1024px) { .sel-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 2.25fr); gap: 0; align-items: start; } }
+.sel-intro { min-width: 0; }
 @media (min-width: 1024px) {
-  .sel-eyebrow { font-size: clamp(0.72rem, 0.78vw, 1.15rem); }
-  .sel-h2 { font-size: clamp(1.9rem, 2.6vw, 3.9rem); }
-  .sel-lead { font-size: clamp(1rem, 1.15vw, 1.7rem); max-width: 60em; }
+  .sel-intro { padding-right: clamp(1.5rem, 2.4vw, 3.5rem); border-right: 1px solid #d5dde8; align-self: stretch; padding-top: 0.6vw; }
 }
-.sel-checks { display: grid; gap: 0.6rem; margin-top: 1.4rem; }
-@media (min-width: 640px) { .sel-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 1024px) { .sel-checks { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(0.6rem, 0.8vw, 1.2rem); margin-top: clamp(1.4rem, 2vw, 3rem); } }
-.sel-checks li {
-  display: flex; align-items: center; gap: 0.7rem; padding: 0.85rem 0.95rem; border-radius: 0.85rem;
-  background: #fff; border: 1px solid #dfe7ee; color: var(--navy-900); font-weight: 700; font-size: 0.92rem; line-height: 1.3;
+.sel-eyebrow {
+  display: flex; align-items: center; gap: 0.9rem; color: #0e7a32; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.24em; font-size: 0.72rem;
 }
-@media (min-width: 1024px) { .sel-checks li { padding: clamp(0.85rem, 1vw, 1.5rem) clamp(0.95rem, 1.1vw, 1.6rem); font-size: clamp(0.9rem, 0.95vw, 1.4rem); border-radius: clamp(0.85rem, 0.9vw, 1.3rem); } }
-.sel-tick { flex: none; width: 1.35rem; height: 1.35rem; color: #0e7a32; }
-@media (min-width: 1024px) { .sel-tick { width: clamp(1.35rem, 1.5vw, 2.2rem); height: clamp(1.35rem, 1.5vw, 2.2rem); } }
-.sel-foot { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid #e3eae6; }
-@media (min-width: 1024px) { .sel-foot { flex-direction: row; align-items: center; justify-content: space-between; gap: 2.5rem; margin-top: clamp(1.4rem, 2vw, 3rem); padding-top: clamp(1.2rem, 1.5vw, 2.2rem); } }
-.sel-note { color: #55667f; font-size: 0.86rem; line-height: 1.5; }
+.sel-eyebrow-rule { height: 1px; width: 4rem; background: #0e7a32; }
+.sel-h2 {
+  margin-top: 0.7rem; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.045em !important; line-height: 1.02 !important;
+  font-size: 2.3rem;
+}
+.sel-lead { margin-top: 0.8rem; color: #3f5068; line-height: 1.45; font-size: 1.05rem; max-width: 30rem; }
+.sel-note { margin-top: 1.1rem; padding-inline: 0.25rem; color: #55667f; font-size: 0.86rem; line-height: 1.5; }
 .sel-note strong { color: var(--navy-900); font-weight: 700; }
-@media (min-width: 1024px) { .sel-note { font-size: clamp(0.86rem, 0.92vw, 1.35rem); } }
-.sel-link {
-  flex: none; align-self: flex-start; display: inline-flex; align-items: center; gap: 0.6rem; min-height: 2.9rem; padding-inline: 1.3rem;
-  border-radius: 999px; border: 1.5px solid #0e7a32; color: #0e7a32; font-weight: 800; font-size: 0.95rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+@media (min-width: 640px) { .sel-h2 { font-size: 2.8rem; } }
+@media (min-width: 1024px) {
+  .sel-eyebrow { font-size: clamp(0.72rem, 0.68vw, 1rem); }
+  .sel-eyebrow-rule { width: clamp(4rem, 5vw, 7.5rem); }
+  .sel-h2 { font-size: clamp(2.4rem, 3.05vw, 4.6rem); margin-top: clamp(0.7rem, 1vw, 1.5rem); }
+  .sel-lead { font-size: clamp(1rem, 1.12vw, 1.65rem); margin-top: clamp(0.8rem, 1.1vw, 1.6rem); max-width: none; }
+  .sel-note { font-size: clamp(0.84rem, 0.82vw, 1.2rem); margin-top: clamp(1.1rem, 1.4vw, 2rem); }
 }
-.sel-link svg { width: 1.1em; height: 1.1em; }
-.sel-link:hover { background: #0e7a32; color: #fff; }
-@media (min-width: 1024px) { .sel-link { align-self: center; min-height: clamp(2.9rem, 3.2vw, 4.6rem); padding-inline: clamp(1.3rem, 1.6vw, 2.4rem); font-size: clamp(0.95rem, 1vw, 1.45rem); } }
+
+.sel-cols { display: grid; gap: 0.6rem; min-width: 0; }
+@media (min-width: 768px) { .sel-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 0.75rem; align-items: start; } }
+.sel-right { min-width: 0; }
+@media (min-width: 1024px) { .sel-right { padding-left: clamp(1.5rem, 2.4vw, 3.5rem); } .sel-cols { column-gap: clamp(0.75rem, 1vw, 1.5rem); } }
+.sel-col { display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; }
+@media (min-width: 1024px) { .sel-col { gap: clamp(0.6rem, 0.75vw, 1.1rem); } }
+
+/* the box: a soft fill, no border */
+.sel-box {
+  --pad: 1rem; --plus: 1.3rem;
+  border-radius: 0.9rem; background: #f2f6fa; transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.sel-box:hover { background: #eaf0f6; }
+.sel-box[open] { background: #e8f6ee; }
+@media (min-width: 1024px) {
+  .sel-box { --pad: clamp(0.95rem, 1.15vw, 1.7rem); --plus: clamp(1.28rem, 1.36vw, 2rem); border-radius: clamp(0.9rem, 0.85vw, 1.3rem); }
+}
+.sel-sum {
+  display: grid; grid-template-columns: minmax(0, 1fr) var(--plus); column-gap: 1rem; align-items: center;
+  padding: var(--pad); cursor: pointer; list-style: none; border-radius: inherit;
+}
+.sel-sum::-webkit-details-marker { display: none; }
+.sel-sum:focus-visible { outline: 2px solid #0e7a32; outline-offset: 2px; }
+.sel-q { font-family: var(--font-sans); font-weight: 800; color: #0e7a32; letter-spacing: -0.01em; line-height: 1.3; font-size: 0.98rem; }
+@media (min-width: 1024px) { .sel-q { font-size: clamp(0.92rem, 0.95vw, 1.4rem); } }
+.sel-plus { position: relative; display: grid; place-items: center; width: var(--plus); height: var(--plus); color: #0e7a32; }
+.sel-bar { position: absolute; width: 70%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease; }
+.sel-bar-v { transform: rotate(90deg); }
+.sel-box[open] .sel-plus { color: #0a2a57; }
+.sel-box[open] .sel-bar-v { transform: rotate(90deg) scaleX(0); }
+.sel-a { margin-top: calc(var(--pad) * -0.4); padding: 0 calc(var(--pad) + var(--plus)) var(--pad) var(--pad); color: #34465f; line-height: 1.55; font-size: 0.88rem; }
+@media (min-width: 1024px) { .sel-a { font-size: clamp(0.85rem, 0.8vw, 1.18rem); } }
+
+/* Home "How we select accountants" checks (owner's "how we" picture, 6 Oct 2026; HomeSelection.tsx): a grid of green line
+   icons with their titles, thin lines between the cells and under each row, a navy button in the last cell.
+   Two across on phones, four from tablets up. */
+.sel-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); min-width: 0; border-top: 1px solid #e3e9f1; }
+@media (min-width: 768px) { .sel-checks { grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 0; } }
+.sel-cell {
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 0.55rem;
+  padding: 1.25rem 0.6rem; text-align: center; border-bottom: 1px solid #e3e9f1;
+}
+/* the short upright line between cells (not before the first cell of a row) */
+.sel-cell::before { content: ""; position: absolute; left: 0; top: 14%; bottom: 14%; width: 1px; background: #e3e9f1; }
+.sel-cell:nth-child(2n + 1)::before { display: none; }
+@media (min-width: 768px) {
+  .sel-cell:nth-child(2n + 1)::before { display: block; }
+  .sel-cell:nth-child(4n + 1)::before { display: none; }
+}
+.sel-icon { width: 3.6rem; height: 3.6rem; flex: none; object-fit: contain; transition: transform 0.25s ease; }
+/* hover (owner, 6 Oct 2026: "nice polished hover effect" on the seven panels; laptops/desktops with a mouse only):
+   a soft white-to-mint card with a fine border and shadow fades in behind the panel and lifts it slightly, the icon
+   rises and grows a touch, the title turns green, and a short green line grows under it. The lines between panels are
+   hidden while a panel is lifted so the card reads cleanly. Motion is off for reduced-motion users. */
+.sel-cell:not(.sel-cell-cta) { isolation: isolate; }
+.sel-cell:not(.sel-cell-cta)::after {
+  content: ""; position: absolute; inset: 0.35rem; z-index: -1; border-radius: 1rem; opacity: 0;
+  background: linear-gradient(180deg, #fff 0%, #f1faf4 100%); border: 1px solid #d6efe0;
+  box-shadow: 0 18px 36px -22px rgba(7, 50, 101, 0.38), 0 2px 6px -3px rgba(7, 50, 101, 0.08);
+  transform: translateY(4px) scale(0.97); transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.sel-title { position: relative; transition: color 0.25s ease, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.sel-cell:not(.sel-cell-cta) .sel-title::after {
+  content: ""; display: block; width: 1.6rem; height: 2px; margin: 0.5rem auto 0; border-radius: 2px; background: #0e7a32;
+  transform: scaleX(0); transition: transform 0.3s ease;
+}
+.sel-cell::before { transition: opacity 0.25s ease; }
+.sel-icon { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.3s ease; }
+@media (hover: hover) and (min-width: 1024px) {
+  .sel-cell:not(.sel-cell-cta):hover::after { opacity: 1; transform: translateY(-4px); }
+  .sel-cell:not(.sel-cell-cta):hover::before, .sel-cell:not(.sel-cell-cta):hover + .sel-cell::before { opacity: 0; }
+  .sel-cell:not(.sel-cell-cta):hover .sel-icon { transform: translateY(-7px) scale(1.06); filter: drop-shadow(0 6px 8px rgba(14, 122, 50, 0.18)); }
+  .sel-cell:not(.sel-cell-cta):hover .sel-title { color: #0e7a32; transform: translateY(-4px); }
+  .sel-cell:not(.sel-cell-cta):hover .sel-title::after { transform: scaleX(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sel-cell, .sel-cell::after, .sel-icon, .sel-title::after { transition: none !important; }
+  .sel-cell:hover::after, .sel-cell:hover .sel-icon, .sel-cell:hover .sel-title { transform: none !important; }
+}
+/* the button cell: centred, with a little less side padding so the button is wider */
+.sel-cell.sel-cell-cta { justify-content: center; padding-left: 0.75rem; padding-right: 0; }
+.sel-title { font-family: var(--font-sans); font-weight: 500; color: var(--navy-900); letter-spacing: -0.01em; line-height: 1.25; font-size: 0.9rem; text-wrap: balance; }
+.sel-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem; width: 100%; min-height: 3.6rem;
+  padding: 0.8rem 1rem; border-radius: 0.75rem; background: var(--navy-900); color: #fff; font-weight: 800; font-size: 0.92rem;
+  line-height: 1.2; text-wrap: balance; text-align: left; box-shadow: 0 14px 28px -18px rgba(7, 50, 101, 0.7); transition: background-color 0.2s ease;
+}
+.sel-cta svg { width: 1.15em; height: 1.15em; flex: none; color: #3ddc84; transition: color 0.2s ease, transform 0.2s ease; }
+.sel-cta:hover { background: #0e7a32; }
+.sel-cta:hover svg { color: #fff; transform: translateX(2px); }
+.sel-cta:focus-visible { outline: 2px solid #0e7a32; outline-offset: 3px; }
+@media (min-width: 1024px) {
+  .sel-cell { padding: clamp(1.2rem, 1.6vw, 2.4rem) clamp(0.6rem, 0.9vw, 1.4rem); gap: clamp(0.5rem, 0.6vw, 0.9rem); }
+  .sel-icon { width: clamp(4rem, 4.8vw, 7rem); height: clamp(4rem, 4.8vw, 7rem); }
+  .sel-title { font-size: clamp(0.92rem, 1.05vw, 1.55rem); }
+  .sel-cta { min-height: clamp(3.6rem, 4.4vw, 6.4rem); border-radius: clamp(0.75rem, 0.8vw, 1.2rem); font-size: clamp(0.9rem, 0.95vw, 1.4rem); padding-inline: clamp(0.9rem, 1.1vw, 1.7rem); }
+}
 /* match boxes: a small Privacy link after 'Your details go to one local accountant only.' (owner, 6 Oct 2026: trust) */
 .mc-privacy { margin-left: 0.15em; color: #0b6b2c; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
 .mc-privacy:hover { color: var(--navy-900); }
@@ -1334,14 +1359,35 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .bz-assure a { color: var(--navy-900); font-weight: 700; text-decoration: underline; text-decoration-color: rgba(14, 122, 50, 0.45); text-underline-offset: 3px; }
 .bz-assure a:hover { color: #0e7a32; }
 @media (min-width: 1024px) { .bz-assure { font-size: clamp(0.8rem, 0.82vw, 1.2rem); } }
-.sel-checks li.sel-tile-link { padding: 0; border: 0; background: transparent; }
-.sel-tile-link a { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; width: 100%; height: 100%; min-height: 3.2rem; padding: 0.85rem 1.1rem; border-radius: inherit; border-radius: 0.85rem; background: var(--navy-900); color: #fff; font-weight: 800; transition: background-color 0.2s ease; }
-.sel-tile-link a svg { flex: none; width: 1.15em; height: 1.15em; color: #3ddc84; }
-.sel-tile-link a:hover { background: #0e7a32; }
-.sel-tile-link a:hover svg { color: #fff; }
-@media (min-width: 1024px) { .sel-tile-link a { padding: clamp(0.85rem, 1vw, 1.5rem) clamp(1.1rem, 1.3vw, 1.9rem); border-radius: clamp(0.85rem, 0.9vw, 1.3rem); } }
 /* Privacy page (owner, 6 Oct 2026): no match box, and the statement starts straight under 'Last updated' */
 .page-privacy > section:first-child > .container-page { padding-bottom: 0; }
 .page-privacy > section:nth-child(2) { padding-top: 2.5rem; }
 @media (min-width: 768px) { .page-privacy > section:nth-child(2) { padding-top: 3rem; } }
 .page-privacy > section:first-child > div[aria-hidden].rounded-full { display: none; } /* the soft green glow would be cut off by the shorter header */
+
+/* Home page navy bars (owner, 6 Oct 2026): on laptops and desktops the words of all three bars ("More than a directory…"
+   under the hero, "Ready to meet your accountant?" and "Less searching, a better match.") start at the same left edge as
+   "How it works" (the .home-wide column: 85vw, centred). Phones and tablets keep them centred. */
+@media (min-width: 1024px) {
+  .bar-align-how .hero-bar-grid { width: 85vw; max-width: none; margin-inline: auto; padding-inline: 0; }
+  .bar-align-how .hero-bar-words { justify-content: flex-start; align-items: flex-start; text-align: left; }
+  /* "We don't just list accountants, we match you." centred under the match box (owner, 6 Oct 2026); --hb-box-mid and
+     .hb-mid are set by HeroGap.tsx. Without them the words stay next to the bold line. */
+  .hero-bar.hb-mid .hero-bar-words { position: relative; }
+  .hero-bar.hb-mid .hb-div { display: none; }
+  .hero-bar.hb-mid .hb-sub { position: absolute; left: var(--hb-box-mid); top: 50%; transform: translate(-50%, -50%); width: max-content; text-align: center; }
+  .bar-align-how-row { justify-content: flex-start; padding-left: 7.5vw; padding-right: 7.5vw; }
+}
+/* "Less searching" bar (owner, 6 Oct 2026): "Your needs, your area, your accountant." centred under the man in the tradie
+   photo above it. The photo is laid out in screen-width units: drawn 29.79vw tall at 3:2 (44.71vw wide), its right edge at
+   100vw less the 0.5cm nudge, and the man stands 48% of the way across it, so his centre is 76.86vw - 0.5cm.
+   The thin divider is hidden because the two lines are now far apart. */
+@media (min-width: 1024px) {
+  .bar-sub-under-man .sb-div { display: none; }
+  .bar-sub-under-man .sb-sub { position: absolute; left: calc(76.86vw - 0.5cm); top: 50%; transform: translate(-50%, -50%); white-space: nowrap; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* small laptops: both take two short lines, so they stay well apart */
+  .hero-bar.hb-mid .hb-sub > span { display: block; }
+  .hero-bar.hb-mid .hb-title { max-width: calc(var(--hb-box-mid) - 9.5rem); }
+}

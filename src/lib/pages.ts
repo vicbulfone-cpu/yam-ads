@@ -12,8 +12,17 @@ const isPrivatePath = (p: string) => PRIVATE_PREFIXES.some((prefix) => p === pre
  *  /locations/melbourne was removed (owner, 6 Oct 2026) and permanently redirects to the home page (next.config.ts). */
 const KEPT_PAGES = ["/", "/how-it-works", "/about", "/contact", "/privacy", "/terms"];
 
-/** Ad landing pages /ad-1 … /ad-6: home page hero, blank space below (owner will decide their content). noindex. */
-export const AD_PAGES = [1, 2, 3, 4, 5, 6].map((n) => `/ad-${n}`);
+/** The four Google Ads landing pages (noindex, ad traffic only). `name` is each page's title (before
+ *  " | Your Accountant Match") and its link text in the home page footer, so the two always match. */
+export const AD_LANDING_PAGES = [
+  { path: "/ad-1", name: "Find a Business Accountant Near You" },
+  { path: "/ad-2", name: "Personal Tax Accountant Near You" },
+  { path: "/ad-3", name: "SMSF & Wealth Accountant Near You" },
+  { path: "/ad-4", name: "Business & Company Registration Help" },
+];
+export const AD_PAGES = AD_LANDING_PAGES.map((a) => a.path);
+/** An ad landing page's name, from its path. */
+export const adPageName = (p: string) => AD_LANDING_PAGES.find((a) => a.path === p)?.name ?? "";
 
 /** Every content page the catch-all route builds. */
 export const PAGE_PATHS: string[] = [
@@ -66,7 +75,8 @@ export function oldMeta(p: string) {
 const STATUS_FILE = path.join(process.cwd(), "seo", "index-status.json");
 const STATUS: Record<string, "index" | "noindex"> = fs.existsSync(STATUS_FILE) ? JSON.parse(fs.readFileSync(STATUS_FILE, "utf8")) : {};
 const oldNoindex = (p: string) => Boolean(oldMeta(p)?.robots?.some((value) => /noindex/i.test(value)));
-export const isNoindex = (p: string) => isPrivatePath(p) || (STATUS[p] ? STATUS[p] === "noindex" : oldNoindex(p));
+// ad landing pages are always noindex (ad traffic only), whatever the file says
+export const isNoindex = (p: string) => isPrivatePath(p) || AD_PAGES.includes(p) || (STATUS[p] ? STATUS[p] === "noindex" : oldNoindex(p));
 
 /** Built public pages that are allowed in search indexes and public discovery feeds. */
 export const INDEXABLE_PATHS = PUBLIC_PAGE_PATHS.filter((p) => !isNoindex(p));

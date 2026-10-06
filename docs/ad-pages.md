@@ -2,7 +2,7 @@
 
 The recipe for every Google Ads landing page on this site. **Ad 1 (business, `/ad-1`) is the finished reference**: copy its
 structure, behaviour and look exactly, changing only the words, categories, pictures and anything the owner's design
-picture for the new ad shows differently. **Ad 6 (`/ad-6`) is the match page** every ad questionnaire finishes on.
+picture for the new ad shows differently. **The match page is `/match`** (`src/app/match/page.tsx`); every questionnaire finishes on it.
 
 The owner's design pictures are in `hero section/ad landing pages/` (e.g. `business.png`). Read the new one first.
 
@@ -21,7 +21,7 @@ The owner's design pictures are in `hero section/ad landing pages/` (e.g. `busin
 | Shared questionnaire parts (progress, option cards, text boxes, checks, tracking) | `src/components/ads/QuestionnaireParts.tsx` |
 | Styles (`.bz-` page, `.bq-` questionnaire) | `src/app/ads.css` |
 | Lead endpoint | `src/app/api/lead/route.ts` (shared; send a different `adType`) |
-| Routing and page titles | `src/app/[[...slug]]/page.tsx` (`/ad-1` and `/ad-6` branches) |
+| Routing and page titles | `src/app/[[...slug]]/page.tsx` (`/ad-1` … `/ad-4` branches; names in `AD_LANDING_PAGES`, `src/lib/pages.ts`) |
 | Progress milestones | `src/lib/progress.ts` (shared) |
 | Postcode list | `public/data/au-postcodes.txt`, built by `scripts/build-postcodes.mjs` (GeoNames, CC BY 4.0; keep the credit under the box) |
 

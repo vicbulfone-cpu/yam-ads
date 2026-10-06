@@ -5,7 +5,7 @@
  * Flow: one main reason (match box, or "Not sure — help me choose" inside the questionnaire) → its follow-up page →
  * "Does your return include any of these?" (return preparation only) → name → summary (confirm, optional note) →
  * in person or remote → postcode/suburb → short pause → "great news" box with email → mobile → email the match details?
- * → match page (/ad-6). Each page counts as one step in the progress bar.
+ * → match page (/match). Each page counts as one step in the progress bar.
  */
 import { BIZ_LANDING, BIZ_MODES, BIZ_Q } from "./business-questionnaire";
 
@@ -167,7 +167,7 @@ export const PERSONAL_Q = {
   found: { ...BIZ_Q.found, placeholder: "you@example.com" },
 };
 
-/** Match page (/ad-6) wording that differs for personal tax customers (the rest is BIZ_MATCH). */
+/** Match page (/match) wording that differs for personal tax customers (the rest is BIZ_MATCH). */
 export const PERSONAL_MATCH = {
   title: "Meet your local tax accountant",
   next: [

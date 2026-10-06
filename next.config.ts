@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
       // never index the private routes (match results, API, hidden accountants' demo page)
       { source: "/match/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/api/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
-      { source: "/ad-6", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+      { source: "/match", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/accountant-demo-x7k2", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       // preview deployments and the *.vercel.app address must never be indexed
       {

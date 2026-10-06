@@ -33,12 +33,12 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
  *     SMSF (Ad 3): one page per ticked category → the two quick questions
  *     Registrations (Ad 4): one page per ticked category → new or existing business?
  *   → name → summary (Change links) → in person or remote → postcode/suburb → 3-second search → email → mobile →
- *   email my match details? → match page (/ad-6).
+ *   email my match details? → match page (/match).
  * Leads from here send no adType, so they stay "Organic" (the postcode owner gets them).
  * Links carrying ?service=… (the site box's Start) skip the box; other CTAs show the box first.
  */
 
-const MATCH_PAGE = "/ad-6";
+const MATCH_PAGE = "/match";
 
 type CatService = "business" | "smsf" | "registration";
 type CatAnswer = { ids: string[]; other: string; software: string | null };

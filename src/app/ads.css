@@ -1,5 +1,5 @@
 /* =====================================================================================
-   Business ad page (/ad-1) and its match page (/ad-6): owner's "business" design picture, 5 Oct 2026.
+   Business ad page (/ad-1) and the match page (/match): owner's "business" design picture, 5 Oct 2026.
    BusinessAdPage.tsx, BizMatchCard.tsx, AdChrome.tsx, BusinessQuestionnaire.tsx, PostcodeBox.tsx, BizMatchPage.tsx.
    Uses the colour tokens and the ".mc" match box styles from globals.css.
    ===================================================================================== */
@@ -139,7 +139,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .bq-found-icon { color: #fff; background: var(--green-600); box-shadow: 0 0 0 8px rgba(0, 174, 65, 0.14); }
 @media (prefers-reduced-motion: reduce) { .bq-radar::before, .bq-radar::after { animation: none; } .bq-search-bar span { animation: none; } }
 
-/* match page (/ad-6) */
+/* match page (/match) */
 .bz-match { background: linear-gradient(180deg, #f6f9f6 0%, #fff 60%); }
 .bz-match-hero { position: relative; overflow: hidden; background: var(--navy-900); }
 .bz-match-hero h1 { color: #fff; font-family: var(--font-sans); }
@@ -353,3 +353,8 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .bz-benefits { order: 5; margin-top: 1.4rem; }
   .bz-disclaimer { order: 6; margin-top: 1rem; padding-bottom: 1.4rem; }
 }
+
+/* Ad landing pages: the home page's three trust points straight under the headline (owner, 6 Oct 2026; HeroPoints.tsx).
+   Same look as the home hero; they sit in the normal flow here (no 0.5cm drop) with a little room before the line under them. */
+.bz-points { transform: none; margin-top: 1.1rem; margin-bottom: 0.4rem; }
+@media (min-width: 1024px) { .bz-points { margin-top: clamp(1rem, 1.2vw, 1.6rem); margin-bottom: clamp(0.2rem, 0.4vw, 0.6rem); } }

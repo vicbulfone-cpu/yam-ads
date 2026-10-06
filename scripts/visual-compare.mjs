@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 const [, , mode, a, b = "3300"] = process.argv;
 const PAGES = ["/", "/locations/melbourne", "/how-it-works", "/about", "/contact", "/privacy", "/terms", "/how-we-select-accountants",
-  "/questionnaire", "/accountant-demo-x7k2", "/ad-1", "/ad-2", "/ad-3", "/ad-4", "/ad-5", "/ad-6", "/no-such-page"];
+  "/questionnaire", "/accountant-demo-x7k2", "/ad-1", "/ad-2", "/ad-3", "/ad-4", "/match", "/no-such-page"];
 const WIDTHS = [[375, 812], [768, 1024], [1280, 800], [1536, 864]];
 if (mode === "shoot") {
   fs.mkdirSync(a, { recursive: true });

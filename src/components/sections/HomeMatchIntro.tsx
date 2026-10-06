@@ -114,7 +114,8 @@ export default function HomeMatchIntro() {
         {/* navy start bar under the steps: full screen width (owner, 5 Oct 2026: 1cm extra space above it;
             6 Oct 2026: moved up 1cm, so none; later 6 Oct 2026: moved down 1cm again, everything below follows) */}
         <div className="mt-[calc(2.5rem+1cm)] lg:mt-[calc(1.4vw+1cm)]">
-          <StartBar />
+          {/* words start in line with "How it works" on laptops and desktops (owner, 6 Oct 2026) */}
+          <StartBar buttonOnPhone={false} className="bar-align-how-row" />
         </div>
 
         {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
@@ -195,7 +196,10 @@ export default function HomeMatchIntro() {
             no thin line of white shows at the seam, and has no button, just the two lines centred (owner, 6 Oct 2026) */}
         {/* (its extra 3mm top and bottom was taken off again, owner 6 Oct 2026: same height as the other bar) */}
         {/* owner, 6 Oct 2026: its bold words read "Less searching, a better match." */}
-        <StartBar button={false} title="Less searching, a better match." className="relative z-10 -mt-[2px]" />
+        {/* owner, 6 Oct 2026: on laptops and desktops the words start at the same left edge as "How it works"
+            (".bar-align-how-row" in globals.css), like the other two navy bars; "Your needs, your area, your accountant." sits
+            centred under the man in the photo above (".bar-sub-under-man", owner 6 Oct 2026) */}
+        <StartBar button={false} title="Less searching, a better match." className="bar-align-how-row bar-sub-under-man relative z-10 -mt-[2px]" />
       </div>
     </section>
   );

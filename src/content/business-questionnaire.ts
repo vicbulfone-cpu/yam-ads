@@ -3,7 +3,7 @@
  * Owner's wording (5 Oct 2026) and the owner's "business" ad design picture. Edit the words here.
  *
  * Flow: one page per ticked category → summary (confirm) → in person or remote → postcode/suburb → short pause →
- * "great news" box with email → mobile → name → email the match details? → match page (/ad-6).
+ * "great news" box with email → mobile → name → email the match details? → match page (/match).
  */
 
 export interface BizOption {
@@ -241,7 +241,7 @@ export const BIZ_Q = {
 /** Browser-tab storage key: the customer's own answers, passed from the questionnaire to the match page. */
 export const BIZ_MATCH_KEY = "yam:biz-match";
 
-/** The match page (/ad-6). */
+/** The match page (/match). */
 export const BIZ_MATCH = {
   eyebrow: "Your match is ready",
   title: "Meet your local business accountant",

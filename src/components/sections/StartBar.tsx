@@ -16,16 +16,16 @@ const ArrowRight = () => (
  * side); `words` then replaces the bar's words (the hero bar has its own, owner 6 Oct 2026).
  */
 export default function StartBar({
-  button = true, hero = false, className = "", words, title = "Ready to meet your accountant?",
-}: { button?: boolean; hero?: boolean; className?: string; words?: ReactNode; /** the bold words (owner, 6 Oct 2026: the bar under the tradie photo has its own) */ title?: string }) {
+  button = true, buttonOnPhone = true, hero = false, className = "", words, title = "Ready to meet your accountant?",
+}: { button?: boolean; /** false hides the button below laptop width (owner, 6 Oct 2026: home "Ready to meet" bar) */ buttonOnPhone?: boolean; hero?: boolean; className?: string; words?: ReactNode; /** the bold words (owner, 6 Oct 2026: the bar under the tradie photo has its own) */ title?: string }) {
   const row = "flex flex-col items-center gap-4 text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:text-left";
   const content = (
     <>
-      <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">{title}</p>
-      <span aria-hidden className="hidden h-[2.6vw] w-px bg-white/40 lg:block" />
-      <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
+      <p className="sb-title font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">{title}</p>
+      <span aria-hidden className="sb-div hidden h-[2.6vw] w-px bg-white/40 lg:block" />
+      <p className="sb-sub text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
       {button && (
-        <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)]">
+        <Link href={QUESTIONNAIRE_URL} className={`btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)] ${buttonOnPhone ? "" : "max-lg:hidden"}`}>
           Start My Match <ArrowRight />
         </Link>
       )}

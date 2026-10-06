@@ -22,9 +22,18 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       // the bar under the hero photo counts too (owner, 6 Oct 2026: content moves down to make room for it)
       const bar = document.querySelector<HTMLElement>(".hero-bar");
       bar?.style.removeProperty("--hb-clear");
+      bar?.classList.remove("hb-mid");
       if (window.innerWidth < 1024 || !pic || !box) return;
       // the bar's words are centred across the whole bar, so they start below the match box where it overlaps the bar
       if (bar) bar.style.setProperty("--hb-clear", `${Math.max(0, box.getBoundingClientRect().bottom - bar.getBoundingClientRect().top)}px`);
+      // "We don't just list accountants, we match you." sits centred under the match box (owner, 6 Oct 2026):
+      // --hb-box-mid is the box's centre, measured from the left of the bar's words (".hb-mid" in globals.css)
+      const words = bar?.querySelector<HTMLElement>(".hero-bar-words");
+      if (bar && words) {
+        const b = box.getBoundingClientRect();
+        bar.style.setProperty("--hb-box-mid", `${b.left + b.width / 2 - words.getBoundingClientRect().left}px`);
+        bar.classList.add("hb-mid");
+      }
       const heroBottom = Math.max(pic.getBoundingClientRect().bottom, box.getBoundingClientRect().bottom, bar ? bar.getBoundingClientRect().bottom : 0);
       const pull = content.getBoundingClientRect().top - heroBottom - GAP;
       if (pull !== 0) section.style.marginTop = `${-pull}px`;

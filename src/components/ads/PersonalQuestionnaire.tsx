@@ -22,14 +22,14 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's personal-tax questions:
  *   ["help me choose"] → follow-up for the main reason → "Does your return include any of these?" (returns only) →
  *   name → summary (confirm, optional note) → in person or remote → postcode/suburb → 3-second search →
- *   "great news" box asking for email → mobile → email the match details? → match page (/ad-6).
+ *   "great news" box asking for email → mobile → email the match details? → match page (/match).
  * Each page counts as one step in the progress bar. Opened by the personal match box (OPEN_PERSONAL_QUESTIONNAIRE event,
  * detail = the chosen reason, or "choose" for "Not sure — help me choose").
  */
 
 import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 export { OPEN_PERSONAL_QUESTIONNAIRE };
-const MATCH_PAGE = "/ad-6";
+const MATCH_PAGE = "/match";
 
 type Kind = "choose" | "followup" | "income" | "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe";
 

@@ -4,7 +4,7 @@
  *
  * Flow: one page per ticked category (match box) → new or existing business? (+ optional note) → name → summary (confirm)
  * → in person or remote → postcode/suburb → short pause → "great news" box with email → mobile → email the match
- * details? → match page (/ad-6). Each page counts as one step in the progress bar (max 5 milestones).
+ * details? → match page (/match). Each page counts as one step in the progress bar (max 5 milestones).
  */
 import { BIZ_LANDING, BIZ_MODES, BIZ_Q, type BizCategory, type BizOption } from "./business-questionnaire";
 
@@ -149,7 +149,7 @@ export const REG_Q = {
   },
 };
 
-/** Match page (/ad-6) wording that differs for registration customers (the rest is BIZ_MATCH). */
+/** Match page (/match) wording that differs for registration customers (the rest is BIZ_MATCH). */
 export const REG_MATCH = {
   title: "Meet your local accountant",
   next: [

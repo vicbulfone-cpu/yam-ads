@@ -19,13 +19,13 @@ import PhoneFit from "../ui/PhoneFit";
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's SMSF questions:
  *   one page per ticked category → a few quick questions (SMSF now? when? optional note) → name → summary (confirm) →
  *   in person or remote → postcode/suburb → 3-second search → "great news" box asking for email → mobile →
- *   email the match details? → match page (/ad-6).
+ *   email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the SMSF match box (OPEN_SMSF_QUESTIONNAIRE).
  */
 
 import { OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 export { OPEN_SMSF_QUESTIONNAIRE };
-const MATCH_PAGE = "/ad-6";
+const MATCH_PAGE = "/match";
 
 type CatAnswer = { ids: string[]; other: string };
 type Step = { kind: "cat"; id: string } | { kind: "qualify" | "summary" | "mode" | "location" | "email" | "phone" | "name" | "emailMe" };

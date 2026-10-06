@@ -4,7 +4,7 @@
  *
  * Flow: one page per ticked category (match box) → "a few quick questions" (SMSF now? when? optional note) → name →
  * summary (confirm) → in person or remote → postcode/suburb → short pause → "great news" box with email → mobile →
- * email the match details? → match page (/ad-6). Each page counts as one step in the progress bar (max 5 milestones).
+ * email the match details? → match page (/match). Each page counts as one step in the progress bar (max 5 milestones).
  */
 import { BIZ_LANDING, BIZ_MODES, BIZ_Q, type BizCategory, type BizOption } from "./business-questionnaire";
 
@@ -158,7 +158,7 @@ export const SMSF_Q = {
   found: { ...BIZ_Q.found, placeholder: "you@example.com" },
 };
 
-/** Match page (/ad-6) wording that differs for SMSF customers (the rest is BIZ_MATCH). */
+/** Match page (/match) wording that differs for SMSF customers (the rest is BIZ_MATCH). */
 export const SMSF_MATCH = {
   title: "Meet your local SMSF accountant",
   next: [
