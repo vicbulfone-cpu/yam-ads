@@ -12,6 +12,19 @@ export const FAQ_TEASERS = [
   "A step-by-step look at how we match you with the right local accountant.",
   "Find out what to do if it’s not the right fit for your needs.",
   "See where our network of accountants is available across Australia.",
+  "See what the short questionnaire asks and where your details go.",
+];
+
+/**
+ * Extra home page FAQ added after the old site's eight (owner, 6 Oct 2026: "make up 1 more q&a so we have nine").
+ * Uses only facts already stated on the site. Shown in the FAQ section AND added to the home page's FAQPage
+ * structured data (src/lib/seo.ts), so the two always match.
+ */
+export const HOME_EXTRA_FAQS: { q: string; a: string }[] = [
+  {
+    q: "What details do I need to provide to get matched?",
+    a: "Just your postcode, the services you need help with, and your name, mobile number and email so your matched accountant can contact you. The questionnaire takes about 60 seconds, and your details go to one local accountant only. They are never sold or distributed to multiple firms.",
+  },
 ];
 
 /** The owner's eight FAQ icons (hero section/8 icons faq), copied to public/images/home/faq; same order as the questions. */
@@ -24,4 +37,5 @@ export const FAQ_ICONS = [
   "06-gear-matching-process",
   "07-people-accountant-fit",
   "08-pin-regional-coverage",
+  "09-clipboard-your-details", // drawn to match the owner's set (not owner-supplied)
 ].map((n) => `/images/home/faq/${n}.png`);

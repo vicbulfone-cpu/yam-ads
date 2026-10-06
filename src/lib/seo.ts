@@ -6,6 +6,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import { SITE_URL } from "@/config/site.config";
 import { BUSINESS } from "@/content/business";
+import { HOME_EXTRA_FAQS } from "@/content/faq-teasers";
 import seoCopy from "@/content/seo-copy.json";
 import { applyWording } from "@/content/wording";
 import { cityOf, typeOf, INDEXABLE_PATHS, isNoindex } from "@/lib/pages";
@@ -141,7 +142,11 @@ export function jsonLdFor(p: string): Record<string, unknown> {
     for (const n of list) {
       const type = String(n["@type"]);
       if (DROP.has(type) || (type === "FAQPage" && !hasVisibleFaq)) continue;
-      if (type === "Service") {
+      if (type === "FAQPage" && p === "/") {
+        // home page: the extra question(s) shown in its FAQ section (src/content/faq-teasers.ts)
+        const extra = HOME_EXTRA_FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }));
+        nodes.push({ ...n, mainEntity: [...((n.mainEntity as unknown[]) ?? []), ...extra] });
+      } else if (type === "Service") {
         nodes.push({
           ...n,
           "@id": n["@id"] ?? `${pageUrl(p)}#service`,

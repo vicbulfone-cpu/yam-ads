@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
-import { FAQ_ICONS, FAQ_TEASERS } from "@/content/faq-teasers";
+import { FAQ_ICONS, FAQ_TEASERS, HOME_EXTRA_FAQS } from "@/content/faq-teasers";
 
 /**
  * Home page: "Frequently Asked Questions".
@@ -19,12 +19,13 @@ function homeFaqs(): Faq[] {
 }
 
 /**
- * Layout from the owner's "faq example" picture (6 Oct 2026): centred heading with a rule each side of the eyebrow,
- * then the eight questions as white cards in two columns (1–4 left, 5–8 right; one column on phones and tablets).
- * Each card: the owner's round icon, a mint number badge, the question, a short line under it and a round plus that
- * turns into a green minus when the answer is open. Styles: ".faq8" in globals.css.
+ * Layout from the owner's "faq example" picture (6 Oct 2026), condensed: the heading is styled like the other home
+ * sections' intros ("How it works" / "Meet your accountant match": eyebrow with a rule after it, two-line heading,
+ * the line beside it behind a divider), then nine smaller cards, three per row on laptops and desktops (two on
+ * tablets, one on phones). Each card: round icon, mint number badge, the question, a short line under it and a round
+ * plus that turns into a green minus when the answer is open. Styles: ".faq8" in globals.css.
  * The number and the short line are drawn by CSS (::before), so each card's text is exactly the question and answer
- * in the FAQPage structured data.
+ * in the FAQPage structured data (the ninth comes from HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
  */
 function FaqCard({ f, i }: { f: Faq; i: number }) {
   return (
@@ -45,29 +46,28 @@ function FaqCard({ f, i }: { f: Faq; i: number }) {
 }
 
 export default function FAQSection() {
-  const faqs = homeFaqs();
-  const half = Math.ceil(faqs.length / 2);
+  const faqs = [...homeFaqs(), ...HOME_EXTRA_FAQS];
   return (
     <section className="bg-white py-12 md:py-14 lg:py-[clamp(3.5rem,4vw,6rem)]">
       <div className="container-page home-wide">
-        <div className="text-center">
-          <p className="inline-flex items-center gap-4 text-[0.78rem] font-bold uppercase tracking-[0.18em] text-green-700 fs-eyebrow">
-            <span aria-hidden="true" className="h-[2px] w-10 rounded-full bg-green-700 sm:w-14 lg:w-[clamp(3.5rem,4.5vw,7rem)]" />
-            Common questions
-            <span aria-hidden="true" className="h-[2px] w-10 rounded-full bg-green-700 sm:w-14 lg:w-[clamp(3.5rem,4.5vw,7rem)]" />
+        <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-[4vw]">
+          <div>
+            <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow">
+              Common questions
+              <span aria-hidden="true" className="h-px w-16 bg-green-700 lg:w-[clamp(4rem,6vw,9rem)]" />
+            </p>
+            <h2 className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
+              <span className="block text-navy-900">Frequently Asked</span>
+              <span className="block text-green-700">Questions</span>
+            </h2>
+          </div>
+          <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
+            Answers to common questions about finding your accountant.
           </p>
-          <h2 className="mt-3 font-sans text-[2.1rem] font-extrabold leading-[1.05]! tracking-[-0.04em] text-navy-900 sm:text-[2.6rem] lg:mt-[0.8vw] lg:text-[clamp(2.6rem,3.4vw,5.2rem)]">
-            Frequently Asked <span className="text-green-700">Questions</span>
-          </h2>
-          <p className="mt-2 text-[1rem] text-navy-900/80 lg:mt-[0.5vw] lg:text-[clamp(1rem,1.3vw,1.95rem)]">Answers to common questions about finding your accountant.</p>
         </div>
 
         <div className="faq8">
-          {[faqs.slice(0, half), faqs.slice(half)].map((col, c) => (
-            <div key={c} className="faq8-col">
-              {col.map((f, j) => <FaqCard key={f.q} f={f} i={c * half + j} />)}
-            </div>
-          ))}
+          {faqs.map((f, i) => <FaqCard key={f.q} f={f} i={i} />)}
         </div>
         {/* (photo collage and its green squares removed, owner 6 Oct 2026) */}
       </div>

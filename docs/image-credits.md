@@ -33,6 +33,7 @@ tradie-van, woman-laptop-home, woman-laptop-office, couple-laptop, house-front, 
 Source: owner-supplied files in `hero section/8 icons faq/` (owner's own images, supplied for use on this site), copied unchanged
 (96 × 96 PNG) to `public/images/home/faq/`: 01-clock-contact-time, 02-shield-qualified-accountants, 03-coins-matching-cost,
 04-document-accounting-services, 05-phone-online-service, 06-gear-matching-process, 07-people-accountant-fit, 08-pin-regional-coverage.
+09-clipboard-your-details was drawn for this site (original artwork, no third-party source) to match the owner's set.
 
 ## Data
 
