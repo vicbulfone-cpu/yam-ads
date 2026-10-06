@@ -142,8 +142,10 @@ export function HeroTrustStrip() {
     <section className="home-trust">
       <ul className="home-trust-list">
         {HERO_COPY.points.map((p) => (
-          <li key={p.strong}>
-            <Image src={p.icon} alt="" width={160} height={160} className="h-11 w-11 shrink-0 2xl:h-[3.75rem] 2xl:w-[3.75rem]" />
+          <li key={p.strong} className="min-h-11 2xl:min-h-[3.75rem]">
+            {/* icons at 80% of their earlier size (owner, 6 Oct 2026: 2.75rem / 3.75rem before); the row keeps its
+                earlier height (min-height above) so nothing else moves */}
+            <Image src={p.icon} alt="" width={160} height={160} className="h-[2.2rem] w-[2.2rem] shrink-0 2xl:h-[3rem] 2xl:w-[3rem]" />
             <span className="text-[0.95rem] leading-tight text-navy-900 2xl:text-[1.15rem]">
               <strong className="block font-extrabold">{p.strong}</strong> {p.text}
             </span>
