@@ -29,6 +29,11 @@ Icons are drawn as small inline SVGs in `src/components/ui/Icons.tsx` (original,
 Source: owner-supplied files in `hero section/` (owner's own images, supplied for use on this site), converted to WebP by `scripts/make-home-assets.mjs` into `public/images/home/`:
 tradie-van, woman-laptop-home, woman-laptop-office, couple-laptop, house-front, client-meeting, city-desk-laptop, cafe-owner-man, cafe-owner-woman, rural-couple-portrait, rural-couple-fence, retirees-coast, family-walk, couple-house, team-meeting, market-team, family-table, coast, accountant-client-desk; icons in `public/images/home/icons/`.
 
+## Home page FAQ icons supplied by the owner (6 Oct 2026)
+Source: owner-supplied files in `hero section/8 icons faq/` (owner's own images, supplied for use on this site), copied unchanged
+(96 × 96 PNG) to `public/images/home/faq/`: 01-clock-contact-time, 02-shield-qualified-accountants, 03-coins-matching-cost,
+04-document-accounting-services, 05-phone-online-service, 06-gear-matching-process, 07-people-accountant-fit, 08-pin-regional-coverage.
+
 ## Data
 
 - `public/data/au-postcodes.txt` (postcode and suburb suggestions in the business questionnaire): GeoNames Australian postal codes, https://download.geonames.org/export/zip/ — Creative Commons Attribution 4.0 (commercial use allowed with credit; credit shown under the postcode box).

@@ -151,7 +151,7 @@ export default function HomeMatchIntro() {
             </p>
             <div className="mt-6 inline-flex flex-col items-center lg:mt-[1.8vw]">
               <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[16rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(16rem,22vw,32rem)]">
-                Find My Accountant <ArrowRight />
+                Get Matched Now <ArrowRight />
               </Link>
               <p className="mt-2.5 text-[0.82rem] text-navy-900/80 fs-xs">
                 Free matching <span aria-hidden className="mx-1.5">&bull;</span> No obligation

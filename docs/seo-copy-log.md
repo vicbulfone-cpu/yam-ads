@@ -1243,3 +1243,5 @@ New (src/content/home-copy.ts, MATCH_CARD_NOTE): "Tell us what you need help wit
 - Mid-page "Ready to find your accountant?" band button (src/components/sections/HomeMidCta.tsx). Old: "Find My Accountant". New: "Find my Match".
 - Closing "Ready to find your accountant?" band above the footer (src/components/sections/HomeClosingCta.tsx). Old button: "Find My Accountant". New: "Match Me Now".
 - Navy bar under the "A local accountant. A better match." photo: its "Start My Match" button removed (the bar further down keeps its button).
+- "Meet Your Accountant Match" section button (src/components/sections/HomeMatchIntro.tsx). Old: "Find My Accountant". New: "Get Matched Now".
+- FAQ section redesigned from the owner's "faq example" picture: a short line added under each of the eight questions (new words, from the owner's picture; src/content/faq-teasers.ts). Questions and answers unchanged. The heading's eyebrow "Common questions" is unchanged.
