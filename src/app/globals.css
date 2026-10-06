@@ -1322,3 +1322,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .sel-tile-link a:hover { background: #0e7a32; }
 .sel-tile-link a:hover svg { color: #fff; }
 @media (min-width: 1024px) { .sel-tile-link a { padding: clamp(0.85rem, 1vw, 1.5rem) clamp(1.1rem, 1.3vw, 1.9rem); border-radius: clamp(0.85rem, 0.9vw, 1.3rem); } }
+/* Privacy page (owner, 6 Oct 2026): no match box, and the statement starts straight under 'Last updated' */
+.page-privacy > section:first-child > .container-page { padding-bottom: 0; }
+.page-privacy > section:nth-child(2) { padding-top: 2.5rem; }
+@media (min-width: 768px) { .page-privacy > section:nth-child(2) { padding-top: 3rem; } }
+.page-privacy > section:first-child > div[aria-hidden].rounded-full { display: none; } /* the soft green glow would be cut off by the shorter header */

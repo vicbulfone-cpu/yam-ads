@@ -153,7 +153,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
 
   return (
     <>
-      <main>
+      <main className={path === "/privacy" ? "page-privacy" : undefined}>
         {isHome ? (
           <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} mobilePicture={homeMobileHeroPicture} desktopPicture={homeDeskHeroPicture} showTrust={false} />
         ) : isCity && image && rewritten ? (
@@ -168,7 +168,8 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
             showTrust={false}
           />
         ) : (
-          <PageHero parts={parts} card={card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
+          // the Privacy page has no match box: its statement starts straight under "Last updated" (owner, 6 Oct 2026)
+          <PageHero parts={parts} card={path === "/privacy" ? null : card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
         )}
         {/* home and city pages: the page's own introduction and trust points sit straight under the hero */}
         {(isHome || (isCity && image && rewritten)) && (parts.lead.length > 0 || parts.chips.length > 0) && (

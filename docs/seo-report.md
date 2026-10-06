@@ -1,6 +1,6 @@
 # SEO audit — 2026-10-06
 
-Pages crawled (from sitemap): **7** · internal links checked: 131
+Pages crawled (from sitemap): **7** · internal links checked: 129
 
 Heading outline vs old pages: 0 extra heading(s), 0 old heading(s) not found.
 
