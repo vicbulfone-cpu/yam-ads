@@ -112,8 +112,8 @@ export default function HomeMatchIntro() {
         </div>
 
         {/* navy start bar under the steps: full screen width (owner, 5 Oct 2026: 1cm extra space above it;
-            6 Oct 2026: moved up 1cm, so none) */}
-        <div className="mt-[2.5rem] lg:mt-[1.4vw]">
+            6 Oct 2026: moved up 1cm, so none; later 6 Oct 2026: moved down 1cm again, everything below follows) */}
+        <div className="mt-[calc(2.5rem+1cm)] lg:mt-[calc(1.4vw+1cm)]">
           <StartBar />
         </div>
 
