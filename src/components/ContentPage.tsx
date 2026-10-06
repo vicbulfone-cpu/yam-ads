@@ -122,7 +122,18 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack bar={<StartBar button={false} hero title="More than a directory. A match for your needs." sub="We don’t just list accountants, we match you." />} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack bar={
+            <StartBar
+              button={false}
+              hero
+              words={
+                <>
+                  <p className="hb-line1"><strong>More than a directory.</strong> <span>We don’t just list accountants, we match you.</span></p>
+                  <p className="hb-line2"><strong>A match for your needs.</strong></p>
+                </>
+              }
+            />
+          } />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />

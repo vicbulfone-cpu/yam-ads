@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
 
@@ -11,23 +12,16 @@ const ArrowRight = () => (
  * Full-width navy "Ready to meet your accountant?" bar, optionally with the "Start My Match" button.
  * Used twice in the home page's "How it works" / "Meet your accountant match" section, and once straight under the
  * hero photo (owner, 6 Oct 2026). 3mm more space inside at the top and bottom, margins unchanged (owner, 6 Oct 2026).
- * `hero`: laptops/desktops line the words up with the hero's headline column (the match box overlaps the bar's right side),
- * the two lines stacked and centred. `title` / `sub` replace the words (the hero bar has its own, owner 6 Oct 2026).
+ * `hero`: laptops/desktops line the words up with the hero's headline column (the match box overlaps the bar's right
+ * side); `words` then replaces the bar's words (the hero bar has its own, owner 6 Oct 2026).
  */
-export default function StartBar({
-  button = true, hero = false, className = "", title = "Ready to meet your accountant?", sub = "Your needs, your area, your accountant.",
-}: { button?: boolean; hero?: boolean; className?: string; title?: string; sub?: string }) {
+export default function StartBar({ button = true, hero = false, className = "", words }: { button?: boolean; hero?: boolean; className?: string; words?: ReactNode }) {
   const row = "flex flex-col items-center gap-4 text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:text-left";
   const content = (
     <>
-      <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">
-        {/* hero bar: phones and tablets put each sentence on its own line */}
-        {hero && title.includes(". ")
-          ? title.split(/(?<=\.) /).map((s, i) => <span key={i} className="block lg:inline">{i > 0 && <span className="hidden lg:inline"> </span>}{s}</span>)
-          : title}
-      </p>
+      <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">Ready to meet your accountant?</p>
       <span aria-hidden className="hidden h-[2.6vw] w-px bg-white/40 lg:block" />
-      <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">{sub}</p>
+      <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
       {button && (
         <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)]">
           Start My Match <ArrowRight />
@@ -39,7 +33,7 @@ export default function StartBar({
     return (
       <div className={`bg-navy-900 px-6 py-[calc(1.75rem+3mm)] lg:px-0 lg:py-[calc(0.9vw+3mm)] ${className}`}>
         <div className="desk-hero-grid hero-bar-grid">
-          <div className={row}>{content}</div>
+          <div className="hero-bar-words">{words ?? content}</div>
         </div>
       </div>
     );

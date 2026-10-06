@@ -1216,18 +1216,38 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .cov-label { font-size: clamp(1.05rem, 1.3vw, 1.95rem); }
 }
 
-/* Home page: bar straight under the hero photo (owner, 6 Oct 2026; DeskHero `bar`): "More than a directory. A match for
-   your needs." with "We don't just list accountants, we match you." under it, both centred.
+/* Home page: bar straight under the hero photo (owner, 6 Oct 2026; DeskHero `bar`), centred:
+     line 1: "More than a directory." (bold) and "We don't just list accountants, we match you." on the same line
+     line 2: "A match for your needs." (bold)
    Laptops/desktops: its top sits on the photo's bottom edge (the photo's top is 2.2vw under the hero's top and it is
    39.99vw tall; 1px overlap so no seam shows); the words are centred in the headline column, where the match box (which
-   overlaps the bar's right side) never covers them. Phones and tablets: straight after the hero. */
+   overlaps the bar's right side) never covers them, each line kept to one line (sized to fit the column).
+   Phones and tablets: straight after the hero; line 1 wraps naturally. */
+.hero-bar-words { text-align: center; color: #fff; }
+.hero-bar-words strong { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em; font-size: 1.45rem; line-height: 1.2; }
+.hb-line1 > span { color: rgba(255, 255, 255, 0.9); font-size: 1.02rem; }
+.hb-line2 { margin-top: 0.15rem; }
 @media (min-width: 1024px) {
   .hero-bar { position: absolute; left: 0; right: 0; top: calc(2.2vw + 39.99vw - 1px); z-index: 1; }
   .desk-hero .desk-hero-card { position: relative; z-index: 2; }
   .desk-hero-grid.hero-bar-grid { padding-bottom: 0; grid-template-rows: auto; }
-  .hero-bar-grid > div { grid-column: 1; container-type: inline-size; flex-direction: column; text-align: center; gap: clamp(0.2rem, 0.35vw, 0.5rem); }
-  .hero-bar-grid > div > span { display: none; }
-  /* the bold line stays on one line, sized to fit the column */
-  .hero-bar-grid > div > p:first-child { white-space: nowrap; font-size: min(clamp(1.6rem, 2.1vw, 3.2rem), 4.3cqi); }
-  .hero-bar-grid > div > p:last-of-type { font-size: clamp(1rem, 1.2vw, 1.8rem); }
+  .hero-bar-words { grid-column: 1; container-type: inline-size; }
+  .hero-bar-words p { white-space: nowrap; }
+  .hero-bar-words strong { font-size: min(clamp(1.6rem, 2.1vw, 3.2rem), 3.8cqi); }
+  .hb-line1 > span { font-size: min(clamp(1rem, 1.2vw, 1.8rem), 2.3cqi); }
+  .hb-line2 { margin-top: clamp(0.1rem, 0.25vw, 0.4rem); }
+}/* phones, tablets and small laptops (below 1280px) have no room for line 1 on one line: the smaller words get their own
+   line, at full size and evenly balanced */
+@media (max-width: 1279px) {
+  .hb-line1 > span { display: block; margin-top: 0.2rem; text-wrap: balance; }
+  .hero-bar-words p { white-space: normal; }
+  .hero-bar-words strong { display: inline-block; }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-bar-words strong { font-size: min(1.6rem, 5.2cqi); }
+  .hb-line1 > span { font-size: 1rem; }
+  .hb-line1 { display: flex; flex-direction: column; align-items: center; }
+  .hb-line1 > span { order: 2; }
+  .hb-line2 { margin-top: 0; }
+}
+@media (max-width: 1279px) { .hb-line1 > span { line-height: 1.4; } }
