@@ -13,9 +13,8 @@ import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import RegistrationMatchCard from "./RegistrationMatchCard";
 import { LazyRegistrationQuestionnaire } from "./LazyQuestionnaires";
-import { PeopleSolid, PersonSolid, ShieldCheck } from "./BizIcons";
-
-const BENEFIT_ICONS = { people: PeopleSolid, person: PersonSolid, shield: ShieldCheck };
+import AdHomeSections from "./AdHomeSections";
+import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 
 /** "Starting a *business* or" -> the words between asterisks in green */
 const greenWords = (line: string) =>
@@ -25,7 +24,8 @@ export default function RegistrationAdPage() {
   return (
     <div className="bz-page sz-page rz-page">
       <AdHeader />
-      <main className="bz-hero">
+      <main>
+        <div className="bz-hero">
         {/* the desk photograph at the home page's height and shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
           <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
@@ -42,7 +42,7 @@ export default function RegistrationAdPage() {
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 
-          <div className="bz-card-col">
+          <div id={AD_MATCH_BOX_ID} className="bz-card-col scroll-mt-24">
             <RegistrationMatchCard />
             <MatchFitScript />
           </div>
@@ -53,23 +53,12 @@ export default function RegistrationAdPage() {
                 <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
               ))}
             </ol>
-            <ul className="bz-benefits">
-              {L.benefits.map((b) => {
-                const Icon = BENEFIT_ICONS[b.icon as keyof typeof BENEFIT_ICONS];
-                return (
-                  <li key={b.text.join(" ")}>
-                    <span aria-hidden className="bz-benefit-icon"><Icon className="h-[55%] w-[55%]" /></span>
-                    <span>{b.text[0]}<br />{b.text[1]}</span>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
-
-          <p className="bz-disclaimer sz-disclaimer">{L.disclaimer}</p>
         </div>
+        </div>
+        <AdHomeSections />
       </main>
-      <AdFooter variant="registration" />
+      <AdFooter />
       <LazyRegistrationQuestionnaire />
     </div>
   );

@@ -110,3 +110,15 @@ on `BizMatchCard`. Every other ad page keeps the home box size.
 headline (middle line green), "fade behind words" behind the line under it, the steps and the handwriting
 (`.bz-script-biz`), plain steps with arrows, solid green benefit circles, the small print on one paragraph, and the wider
 Ad 1 match box (`.bz-grid-wide` / `.bz-card-wide`; they have no long row names, so `.bz-long` does not apply).
+
+## Under the hero and footer (owner, 6 Oct 2026)
+- Under the hero, every ad page shows the home page's own sections (`AdHomeSections.tsx`): How it works, Meet your
+  accountant match, the three trust icons, Why it matters, Common questions and the "One quick match…" closing band.
+  Their Start buttons scroll back to the ad's own match box (`#match-box`), so ad leads stay Paid. The old benefit
+  circles and small print under the photo are removed.
+- "How it works" starts 1cm below the match box on every screen (`AdGap.tsx` on laptops/desktops, CSS on phones/tablets).
+- Footer (`AdFooter` in `AdChrome.tsx`): no trust icons; logo + credential note, information links (no "How it works";
+  the page itself is kept), copyright band. The links open the real page in a popup over the ad page (`AdInfoPopup.tsx`),
+  without its match boxes or "Find My Accountant" buttons; they are real links with a new-tab fallback.
+- Home page: the "Tell us your needs → Enter your postcode → Get matched with one accountant" line sits under the three
+  hero icons.

@@ -10,15 +10,15 @@ import HeroPoints from "../sections/HeroPoints";
 import BizMatchCard from "./BizMatchCard";
 import MatchFitScript from "../sections/MatchFitScript";
 import { LazyBusinessQuestionnaire } from "./LazyQuestionnaires";
-import { HandshakeSolid, PeopleSolid, PinSolid } from "./BizIcons";
-
-const BENEFIT_ICONS = { pin: PinSolid, people: PeopleSolid, handshake: HandshakeSolid };
+import AdHomeSections from "./AdHomeSections";
+import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 
 export default function BusinessAdPage() {
   return (
     <div className="bz-page">
       <AdHeader />
-      <main className="bz-hero">
+      <main>
+        <div className="bz-hero">
         {/* the desk photograph sits along the bottom of the hero at its natural shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
           <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
@@ -37,7 +37,7 @@ export default function BusinessAdPage() {
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 
-          <div className="bz-card-col">
+          <div id={AD_MATCH_BOX_ID} className="bz-card-col scroll-mt-24">
             <BizMatchCard longText className="bz-card-wide" />
             <MatchFitScript />
           </div>
@@ -48,21 +48,10 @@ export default function BusinessAdPage() {
                 <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
               ))}
             </ol>
-            <ul className="bz-benefits">
-              {L.benefits.map((b) => {
-                const Icon = BENEFIT_ICONS[b.icon as keyof typeof BENEFIT_ICONS];
-                return (
-                  <li key={b.text.join(" ")}>
-                    <span aria-hidden className="bz-benefit-icon"><Icon className="h-[55%] w-[55%]" /></span>
-                    <span>{b.text[0]}<br />{b.text[1]}</span>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
-
-          <p className="bz-disclaimer">{L.disclaimer}</p>
         </div>
+        </div>
+        <AdHomeSections />
       </main>
       <AdFooter />
       <LazyBusinessQuestionnaire />

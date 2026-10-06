@@ -19,6 +19,7 @@ import SiteFooter from "./layout/SiteFooter";
 import { auFind } from "./sections/au-media";
 import Tagline from "./sections/Tagline";
 import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
+import { BIZ_LANDING } from "@/content/business-questionnaire";
 import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
 import HomeSelection from "./sections/HomeSelection";
@@ -122,7 +123,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack bar={
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={
             <StartBar
               button={false}
               hero

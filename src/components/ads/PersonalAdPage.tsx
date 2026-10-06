@@ -11,15 +11,15 @@ import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import PersonalMatchCard from "./PersonalMatchCard";
 import { LazyPersonalQuestionnaire } from "./LazyQuestionnaires";
-import { PeopleOutline, PinSolid, ShieldCheck } from "./BizIcons";
-
-const BENEFIT_ICONS = { pin: PinSolid, people: PeopleOutline, shield: ShieldCheck };
+import AdHomeSections from "./AdHomeSections";
+import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 
 export default function PersonalAdPage() {
   return (
     <div className="bz-page pz-page">
       <AdHeader />
-      <main className="bz-hero">
+      <main>
+        <div className="bz-hero">
         {/* the desk photograph at the home page's height and shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
           <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
@@ -40,7 +40,7 @@ export default function PersonalAdPage() {
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
           </div>
 
-          <div className="bz-card-col">
+          <div id={AD_MATCH_BOX_ID} className="bz-card-col scroll-mt-24">
             <PersonalMatchCard />
             <MatchFitScript />
           </div>
@@ -51,23 +51,12 @@ export default function PersonalAdPage() {
                 <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
               ))}
             </ol>
-            <ul className="bz-benefits">
-              {L.benefits.map((b) => {
-                const Icon = BENEFIT_ICONS[b.icon as keyof typeof BENEFIT_ICONS];
-                return (
-                  <li key={b.text.join(" ")}>
-                    <span aria-hidden className="bz-benefit-icon"><Icon className="h-[55%] w-[55%]" /></span>
-                    <span>{b.text[0]}<br />{b.text[1]}</span>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
-
-          <p className="bz-disclaimer">{L.disclaimer.join(" ")}</p>
         </div>
+        </div>
+        <AdHomeSections />
       </main>
-      <AdFooter variant="personal" />
+      <AdFooter />
       <LazyPersonalQuestionnaire />
     </div>
   );

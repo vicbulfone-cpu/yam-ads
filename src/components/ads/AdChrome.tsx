@@ -1,12 +1,18 @@
 // Header and footer of the ad pages (owner's "business" design picture): logo and "Free matching. No obligation." at the
-// top; trust strip, copyright and the information links at the bottom. The site's own header and phone CTA bar are
+// top; logo, trust note, information links and copyright at the bottom. The site's own header and phone CTA bar are
 // hidden on pages that use these (".bz-page" in globals.css).
 import Image from "next/image";
 import Link from "next/link";
 import { logo } from "@/config/site.config";
 import { BIZ_LANDING as L } from "@/content/business-questionnaire";
 import { CREDENTIAL } from "@/content/wording";
-import { HandshakeSolid, LockIcon, PeopleOutline, PeopleSolid, PinSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
+import { ShieldCheck } from "./BizIcons";
+import AdInfoPopup from "./AdInfoPopup";
+
+/** Footer links (owner, 6 Oct 2026): "How it works" left out, as that section is now on every ad page. */
+const FOOTER_LINKS = L.links.filter((l) => l.href !== "/how-it-works");
+/** Footer links open in the popup over the ad page (AdInfoPopup.tsx); without it, in a new tab. */
+const POPUP_LINK = { "data-info": "", target: "_blank", rel: "noopener" } as const;
 
 export function AdHeader({ className = "" }: { className?: string }) {
   return (
@@ -21,76 +27,43 @@ export function AdHeader({ className = "" }: { className?: string }) {
   );
 }
 
-const TRUST_ICONS = { shield: ShieldCheck, people: PeopleSolid, thumb: ThumbSolid };
-// owner's "personal" design picture: padlock, people outline and handshake
-const PERSONAL_TRUST_ICONS = [LockIcon, PeopleOutline, HandshakeSolid];
-// owner's "smsf" design picture: padlock, people and map pin
-const SMSF_TRUST_ICONS = [LockIcon, PeopleSolid, PinSolid];
-// owner's "registration" design picture: padlock, map pin and people
-const REG_TRUST_ICONS = [LockIcon, PinSolid, PeopleSolid];
-
 /** Trust note in every ad page footer (owner, 6 Oct 2026; Google Ads landing page transparency): the approved credential
  *  claim, the cost line and the referral-service disclaimer, all existing approved wording. */
 function AdAssure() {
   return (
     <p className="bz-assure">
-      <Link href="/how-we-select-accountants">{CREDENTIAL}</Link>{" "}
+      <Link href="/how-we-select-accountants" {...POPUP_LINK}>{CREDENTIAL}</Link>{" "}
       <span>Matching is free. Accountant fees are agreed separately. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm.</span>
     </p>
   );
 }
 
-export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" | "smsf" | "registration" }) {
-  if (variant !== "business") {
-    const icons = variant === "smsf" ? SMSF_TRUST_ICONS : variant === "registration" ? REG_TRUST_ICONS : PERSONAL_TRUST_ICONS;
-    // trust strip across the page, then one line: copyright on the left, information links on the right
-    return (
-      <footer className="bz-footer pz-footer">
-        <div className="bz-wrap">
-          <ul className="bz-trust pz-trust">
-            {L.trust.map((t, i) => {
-              const Icon = icons[i];
-              return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
-            })}
-          </ul>
-          <AdAssure />
-        </div>
-        <div className="pz-footer-line">
-          <div className="bz-wrap flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-[0.82rem] leading-snug text-navy-900">
-              © {new Date().getFullYear()} {L.copyright}.<span className="ml-2">{L.based[0]} <span aria-hidden>•</span> {L.based[1]}.</span>
-            </p>
-            <nav aria-label="Information" className="bz-links pz-links">
-              <p>{L.links.map((l) => <Link key={l.href} href={l.href}>{l.text}</Link>)}</p>
-            </nav>
-          </div>
-        </div>
-      </footer>
-    );
-  }
+/**
+ * Footer of every ad page and the shared /match page (owner, 6 Oct 2026: the three trust icons removed, a cleaner design).
+ * Logo and the trust note on the left, the information links on the right (they open in a popup), then a thin copyright line.
+ * All ad pages share this one footer. Styles: ".adf" in ads.css.
+ */
+export function AdFooter() {
   return (
-    <footer className="bz-footer">
-      <div className="bz-wrap grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
-        <div>
-          <ul className="bz-trust">
-            {L.trust.map((t) => {
-              const Icon = TRUST_ICONS[t.icon as keyof typeof TRUST_ICONS];
-              return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
-            })}
-          </ul>
+    <footer className="adf">
+      <div className="bz-wrap adf-main">
+        <div className="adf-brand">
+          <Link href="/" aria-label="Your Accountant Match — Home" className="inline-block">
+            <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} className="adf-logo" />
+          </Link>
           <AdAssure />
-          <p className="mt-4 text-[0.82rem] leading-snug text-navy-900">
-            <strong className="font-bold">© {new Date().getFullYear()} {L.copyright}</strong>
-            <span className="block text-muted">{L.based[0]} <span aria-hidden>•</span> {L.based[1]}</span>
-          </p>
         </div>
-        <nav aria-label="Information" className="bz-links">
-          {/* two rows of three, as in the design */}
-          {[L.links.slice(0, 3), L.links.slice(3)].map((row, i) => (
-            <p key={i}>{row.map((l) => <Link key={l.href} href={l.href}>{l.text}</Link>)}</p>
-          ))}
+        <nav aria-label="Information" className="adf-links">
+          <ul>{FOOTER_LINKS.map((l) => <li key={l.href}><Link href={l.href} {...POPUP_LINK}>{l.text}</Link></li>)}</ul>
         </nav>
       </div>
+      <div className="adf-base">
+        <p className="bz-wrap">
+          <span>© {new Date().getFullYear()} {L.copyright}</span>
+          <span>{L.based[0]} <span aria-hidden>•</span> {L.based[1]}</span>
+        </p>
+      </div>
+      <AdInfoPopup />
     </footer>
   );
 }

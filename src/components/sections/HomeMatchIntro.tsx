@@ -61,7 +61,8 @@ const Eyebrow = ({ children }: { children: string }) => (
   </p>
 );
 
-export default function HomeMatchIntro() {
+/** `startHref`: where the Start buttons go (ad pages pass their own match box, so ad leads stay with the ad questionnaire). */
+export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { startHref?: string }) {
   return (
     <section aria-labelledby="home-match-intro" className="relative overflow-hidden bg-white pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]">
       {/* starts 0.5cm lower than the usual 2.5cm under the hero (owner, 5 Oct 2026: 2cm lower, then 1.5cm back up);
@@ -115,7 +116,7 @@ export default function HomeMatchIntro() {
             6 Oct 2026: moved up 1cm, so none; later 6 Oct 2026: moved down 1cm again, everything below follows) */}
         <div className="mt-[calc(2.5rem+1cm)] lg:mt-[calc(1.4vw+1cm)]">
           {/* words start in line with "How it works" on laptops and desktops (owner, 6 Oct 2026) */}
-          <StartBar buttonOnPhone={false} className="bar-align-how-row" />
+          <StartBar startHref={startHref} buttonOnPhone={false} className="bar-align-how-row" />
         </div>
 
         {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
@@ -138,7 +139,7 @@ export default function HomeMatchIntro() {
               connect you with one local accountant from our Australia-wide partner network.
             </p>
             <div className="mt-6 inline-flex flex-col items-center lg:mt-[1.8vw]">
-              <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[16rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(16rem,22vw,32rem)]">
+              <Link href={startHref} className="btn btn-primary min-w-[16rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(16rem,22vw,32rem)]">
                 Get Matched Now <ArrowRight />
               </Link>
               <p className="mt-2.5 text-[0.82rem] text-navy-900/80 fs-xs">
