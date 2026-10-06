@@ -128,8 +128,9 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
               hero
               words={
                 <>
-                  <p className="hb-line1"><strong>More than a directory.</strong> <span>We don’t just list accountants, we match you.</span></p>
-                  <p className="hb-line2"><strong>A match for your needs.</strong></p>
+                  <p className="hb-title">More than a directory. A match for your needs.</p>
+                  <span aria-hidden className="hb-div" />
+                  <p className="hb-sub"><span>We don’t just list accountants,</span> <span>we match you.</span></p>
                 </>
               }
             />
