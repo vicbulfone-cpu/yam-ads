@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { QUESTIONNAIRE_URL, logo } from "@/config/site.config";
 import { BIZ_CATEGORIES, BIZ_MATCH_KEY, BIZ_MODES, BIZ_SOFTWARE, type BizCategory } from "@/content/business-questionnaire";
@@ -209,6 +209,15 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   }, []);
   const close = useCallback(() => { setOpen(false); setConfirmLeave(false); }, []);
   const requestClose = () => (phase === "box" ? close() : setConfirmLeave(true));
+
+  // this popup lives in the site layout, so it would stay on top of the next page: once the match page (or any other
+  // page) has replaced the one it was opened on, close it
+  const pathname = usePathname();
+  const [openedOn, setOpenedOn] = useState(pathname);
+  if (pathname !== openedOn) {
+    setOpenedOn(pathname);
+    setOpen(false); setConfirmLeave(false); setSending(false);
+  }
 
   // every link to the questionnaire address opens the popup; the site box's Start carries ?service=…
   useEffect(() => {
