@@ -23,7 +23,6 @@ import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
 import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
-import HomeMidCta from "./sections/HomeMidCta";
 import HomeTagline from "./sections/HomeTagline";
 import HomeClosingCta from "./sections/HomeClosingCta";
 
@@ -127,7 +126,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           <HeroTrustStrip />
           <WhyItMatters />
           <FAQSection />
-          <HomeMidCta /> {/* under the FAQ (owner, 6 Oct 2026) */}
+          {/* (mid-page "Ready to find your accountant?" banner removed, owner 6 Oct 2026) */}
           <CoverageSection />
           <HomeTagline text={TAGLINES[8]} />
           <HomeClosingCta />
