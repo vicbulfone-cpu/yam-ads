@@ -232,6 +232,16 @@ The ad landing pages and their four questionnaires are unchanged.
 - **Lead:** `questionnaire: "site"`, no `adType`, so it stays **Organic** (postcode owner); `answers` grouped per service.
 - **Removed:** `QuestionnaireModal.tsx`, `src/content/questionnaire.ts` and `scripts/extract-questionnaire.mjs` (the old
   per-category questionnaire). Old `?category=` links still open the new questionnaire for that service.
+- **Fix (6 Oct):** the popup now closes when the match page opens (it lives in the site layout and was left on top of
+  the match page, stuck on "Preparing your match…").
+
+## "Searching for your match" screen before the match page (owner, 6 Oct 2026)
+
+All five questionnaires (site popup and Ads 1–4): after "Show my match", a personal screen shows for 5 seconds:
+"{first name}, we are now searching for a local accountant who is well matched for the services you requested."
+(owner's wording; `src/content/match-search.ts`), with the radar icon and a 5-second progress bar. The lead is sent
+meanwhile; the match page opens once both are done. If sending fails, the screen closes and the usual error shows.
+Component `MatchSearching` in `src/components/ads/QuestionnaireParts.tsx`; styles `.bq-matching*` in `src/app/ads.css`.
 
 ## New hero, header and logo for the home and city pages (owner's design, 4 Oct 2026)
 

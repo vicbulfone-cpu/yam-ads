@@ -15,7 +15,7 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 
 /**
  * The personal tax questionnaire (personal ad page /ad-2). Same popup, progress header and option cards as the business
@@ -90,6 +90,7 @@ export default function PersonalQuestionnaire() {
   const [honeypot, setHoneypot] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
 
   // financial years are worked out from today's date (the newest completed year first)
@@ -267,6 +268,10 @@ export default function PersonalQuestionnaire() {
     if (!place || !need) return;
     setSending(true);
     setError(null);
+    // the personal "searching" screen stays up for 5 seconds while the lead is sent
+    const holdSearching = startSearchTimer();
+    setMatching(true);
+    router.prefetch(MATCH_PAGE);
     const title = needTitle(need);
     const details = detailLines();
     const inc = RETURN_NEEDS.includes(need) ? incomeLabels() : [];
@@ -308,8 +313,10 @@ export default function PersonalQuestionnaire() {
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "personal" });
       // the popup stays open ("Preparing your match…") until the match page replaces this page
+      await holdSearching();
       openMatchPage(router, `${MATCH_PAGE}?lead=${data.leadId}`);
     } catch {
+      setMatching(false);
       setSending(false);
       setError(Q.errors.send);
     }
@@ -518,6 +525,9 @@ export default function PersonalQuestionnaire() {
           </div>
 
           {/* 3-second search after the postcode */}
+          {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
+          {matching && <MatchSearching firstName={firstName} />}
+
           {searching && place && (
             <div className="q-leave" role="status" aria-live="polite">
               <div className="q-leave-box bq-search">

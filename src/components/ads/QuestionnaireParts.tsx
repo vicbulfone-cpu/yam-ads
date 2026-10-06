@@ -1,5 +1,6 @@
 "use client";
 
+import { MATCH_SEARCH, MATCH_WAIT_MS } from "@/content/match-search";
 import { progressMilestones } from "@/lib/progress";
 import { Check, Sparkle } from "../ui/Icons";
 
@@ -30,6 +31,29 @@ export function openMatchPage(router: { push: (href: string) => void }, href: st
   const path = href.split("?")[0];
   router.push(href);
   window.setTimeout(() => { if (window.location.pathname !== path) window.location.assign(href); }, 3000);
+}
+
+/** Starts the "searching" screen's clock; the returned function waits until it has been up for MATCH_WAIT_MS. */
+export function startSearchTimer() {
+  const since = Date.now();
+  return () => new Promise((r) => window.setTimeout(r, Math.max(0, MATCH_WAIT_MS - (Date.now() - since))));
+}
+
+/**
+ * Personal "searching" screen shown over the questionnaire after the last question, until the match page replaces it:
+ * "John, we are now searching for a local accountant who is well matched for the services you requested."
+ */
+export function MatchSearching({ firstName }: { firstName: string }) {
+  return (
+    <div className="q-leave" role="status" aria-live="polite">
+      <div className="q-leave-box bq-search bq-matching">
+        <span aria-hidden className="bq-radar"><Sparkle width={30} height={30} strokeWidth={2} /></span>
+        {firstName && <p className="bq-matching-name">{firstName},</p>}
+        <p className="q-leave-title bq-matching-text">{firstName ? MATCH_SEARCH.text : MATCH_SEARCH.textNoName}</p>
+        <span aria-hidden className="bq-search-bar is-match"><span /></span>
+      </div>
+    </div>
+  );
 }
 
 /** Navy progress header: at most 5 milestones, the real pages shared out evenly across them (src/lib/progress.ts). */

@@ -17,7 +17,7 @@ import { toServiceKeys, type ServiceKey } from "@/lib/service-routes";
 import { getVisitorRecord, noteAbandon, noteComplete, noteOpen } from "@/lib/visitor";
 import { BIZ_CATEGORY_ICONS, PERSONAL_NEED_ICONS, REG_CATEGORY_ICONS, SMSF_CATEGORY_ICONS } from "../ads/BizIcons";
 import PostcodeBox, { type Place } from "../ads/PostcodeBox";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "../ads/QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "../ads/QuestionnaireParts";
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
@@ -163,6 +163,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const [honeypot, setHoneypot] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
 
   const fy = useMemo(() => financialYears(5), []);
@@ -201,7 +202,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     setNeed(null); setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
     setHave(null); setWhen(null); setSmsfNotes(""); setStage(null); setRegNotes("");
     setStepIdx(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
-    setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setConfirmLeave(false);
+    setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setMatching(false); setConfirmLeave(false);
     setServices(keys);
     setPhase(keys.length ? "questions" : "box");
     setOpen(true);
@@ -216,7 +217,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const [openedOn, setOpenedOn] = useState(pathname);
   if (pathname !== openedOn) {
     setOpenedOn(pathname);
-    setOpen(false); setConfirmLeave(false); setSending(false);
+    setOpen(false); setConfirmLeave(false); setSending(false); setMatching(false);
   }
 
   // every link to the questionnaire address opens the popup; the site box's Start carries ?service=…
@@ -408,6 +409,10 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     if (!place) return;
     setSending(true);
     clear();
+    // the personal "searching" screen stays up for 5 seconds while the lead is sent
+    const holdSearching = startSearchTimer();
+    setMatching(true);
+    router.prefetch(MATCH_PAGE);
     const groups: { category: string; items: string[] }[] = [];
     const lines: string[] = [];
     const leadAnswers: Record<string, unknown> = { services };
@@ -468,8 +473,10 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         emailMe: emailMe === true, mode: modeLabel, place, services: groups,
       }));
       noteComplete();
+      await holdSearching();
       openMatchPage(router, `${MATCH_PAGE}?lead=${data.leadId}`);
     } catch {
+      setMatching(false);
       setSending(false);
       setError(Q.errors.send);
     }
@@ -755,6 +762,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
               </div>
             </div>
           )}
+
+          {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
+          {matching && <MatchSearching firstName={firstName} />}
 
           {/* good news: ask for the email address */}
           {phase === "questions" && step.kind === "email" && !confirmLeave && (

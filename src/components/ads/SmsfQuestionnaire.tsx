@@ -9,7 +9,7 @@ import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_WHEN } from "
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 import { SMSF_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
@@ -82,6 +82,7 @@ export default function SmsfQuestionnaire() {
   const [honeypot, setHoneypot] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
 
   const steps: Step[] = useMemo(() => [
@@ -230,6 +231,10 @@ export default function SmsfQuestionnaire() {
     if (!place) return;
     setSending(true);
     setError(null);
+    // the personal "searching" screen stays up for 5 seconds while the lead is sent
+    const holdSearching = startSearchTimer();
+    setMatching(true);
+    router.prefetch(MATCH_PAGE);
     const about = aboutLines();
     const services = [
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
@@ -266,8 +271,10 @@ export default function SmsfQuestionnaire() {
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "smsf" });
       // the popup stays open ("Preparing your match…") until the match page replaces this page
+      await holdSearching();
       openMatchPage(router, `${MATCH_PAGE}?lead=${data.leadId}`);
     } catch {
+      setMatching(false);
       setSending(false);
       setError(Q.errors.send);
     }
@@ -399,6 +406,9 @@ export default function SmsfQuestionnaire() {
           </div>
 
           {/* 3-second search after the postcode */}
+          {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
+          {matching && <MatchSearching firstName={firstName} />}
+
           {searching && place && (
             <div className="q-leave" role="status" aria-live="polite">
               <div className="q-leave-box bq-search">
