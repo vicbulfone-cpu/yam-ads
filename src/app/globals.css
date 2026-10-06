@@ -1216,29 +1216,18 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .cov-label { font-size: clamp(1.05rem, 1.3vw, 1.95rem); }
 }
 
-/* Home page: "Ready to meet your accountant?" bar straight under the hero photo (owner, 6 Oct 2026; DeskHero `bar`).
+/* Home page: bar straight under the hero photo (owner, 6 Oct 2026; DeskHero `bar`): "More than a directory. A match for
+   your needs." with "We don't just list accountants, we match you." under it, both centred.
    Laptops/desktops: its top sits on the photo's bottom edge (the photo's top is 2.2vw under the hero's top and it is
-   39.99vw tall; 1px overlap so no seam shows), the words line up with the headline column, the match box overlaps its
-   right side. Phones and tablets: straight after the hero. */
+   39.99vw tall; 1px overlap so no seam shows); the words are centred in the headline column, where the match box (which
+   overlaps the bar's right side) never covers them. Phones and tablets: straight after the hero. */
 @media (min-width: 1024px) {
   .hero-bar { position: absolute; left: 0; right: 0; top: calc(2.2vw + 39.99vw - 1px); z-index: 1; }
   .desk-hero .desk-hero-card { position: relative; z-index: 2; }
   .desk-hero-grid.hero-bar-grid { padding-bottom: 0; grid-template-rows: auto; }
-  .hero-bar-grid > div { grid-column: 1; }
-}
-@media (min-width: 1024px) {
-  /* the words stay on one line inside the headline column (sized from the column's width) */
-  .hero-bar-grid > div { container-type: inline-size; gap: min(3vw, 3cqi); }
-  .hero-bar-grid > div > p { white-space: nowrap; }
-  .hero-bar-grid > div > p:first-child { font-size: min(clamp(1.6rem, 2.1vw, 3.2rem), 3.35cqi); }
-  .hero-bar-grid > div > p:last-of-type { font-size: min(clamp(1rem, 1.2vw, 1.8rem), 2.05cqi); }
-  .hero-bar-grid > div > span { height: min(2.6vw, 3.4cqi); }
-}
-@media (min-width: 1024px) { .hero-bar-grid > div > span { flex: none; width: 1px; } }
-/* small laptops: the column is narrow, so the two lines stack (normal sizes, no divider) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .hero-bar-grid > div { flex-direction: column; gap: 0.2rem; }
+  .hero-bar-grid > div { grid-column: 1; container-type: inline-size; flex-direction: column; text-align: center; gap: clamp(0.2rem, 0.35vw, 0.5rem); }
   .hero-bar-grid > div > span { display: none; }
-  .hero-bar-grid > div > p:first-child { font-size: min(1.6rem, 5.6cqi); }
-  .hero-bar-grid > div > p:last-of-type { font-size: 1rem; }
+  /* the bold line stays on one line, sized to fit the column */
+  .hero-bar-grid > div > p:first-child { white-space: nowrap; font-size: min(clamp(1.6rem, 2.1vw, 3.2rem), 4.3cqi); }
+  .hero-bar-grid > div > p:last-of-type { font-size: clamp(1rem, 1.2vw, 1.8rem); }
 }
