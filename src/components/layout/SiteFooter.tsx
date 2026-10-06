@@ -54,7 +54,9 @@ function HomeFooter({ showAds }: { showAds?: boolean }) {
             <p className="text-[1.45rem] font-extrabold tracking-tight text-navy-900">
               Your Accountant <span className="text-green-700">Match</span>
             </p>
-            <p className="mt-1 text-[0.62rem] font-bold uppercase tracking-[0.32em] text-navy-900/70">Smarter matching. Better outcomes.</p>
+            {/* letter spacing set so this line is exactly as wide as "Your Accountant Match" above (owner, 6 Oct 2026); the negative
+                right margin cancels the spacing after the last letter */}
+            <p className="mt-1 mr-[-0.1445em] text-[0.62rem] font-bold uppercase tracking-[0.1445em] text-navy-900/70">Smarter matching. Better outcomes.</p>
             <p className="mt-4 max-w-[17rem] text-[0.88rem] leading-relaxed text-body">Connecting Australians with one local accountant who suits their needs.</p>
             <p className="mt-3 text-[0.88rem]">
               <a href={`mailto:${BUSINESS.email}`} className="font-semibold text-navy-900 transition hover:text-green-700">{BUSINESS.email}</a>
