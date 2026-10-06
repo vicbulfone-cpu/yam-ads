@@ -4,8 +4,6 @@ import Link from "next/link";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { Check } from "@/components/ui/Icons";
 import CtaBand from "@/components/sections/CtaBand";
-import MatchCard, { getHomeMatchCard } from "@/components/sections/MatchCard";
-import MatchFitScript from "@/components/sections/MatchFitScript";
 import SectionView from "@/components/sections/SectionRenderer";
 import { QUESTIONNAIRE_URL, ctaLabel } from "@/config/site.config";
 import { howWeSelect as hw } from "@/content/how-we-select";
@@ -26,7 +24,6 @@ export default function HowWeSelectPage() {
   const shared = splitOnHeadings(toSections(nodes))
     .filter((s) => s.tag !== "header" && s.tag !== "footer" && s.tag !== "main")
     .filter((s) => s.nodes.some((n) => n.t === "text" && /better way to find your accountant/i.test(n.text)));
-  const matchCard = getHomeMatchCard();
 
   return (
     <>
@@ -34,17 +31,11 @@ export default function HowWeSelectPage() {
       <main>
         {/* Hero */}
         <section className="relative isolate overflow-hidden bg-gradient-to-b from-navy-50 via-white to-white">
-          <div aria-hidden className="pointer-events-none absolute -right-32 -top-32 -z-10 h-[30rem] w-[30rem] rounded-full bg-green-500/10 blur-3xl" />
-          <div className="container-page mc-hero-wrap pb-10 pt-12 md:pb-16 md:pt-20">
-            <div className="mc-hero-grid grid items-start gap-10">
-              <div className="mc-hero-text max-w-3xl">
-                <h1 className="h-display">{hw.title}</h1>
-                <p className="lead mt-6">{hw.intro}</p>
-              </div>
-              <div className="mc-hero-card lg:col-start-2 lg:row-start-1">
-                <MatchCard data={matchCard} titleTag="p" />
-                <MatchFitScript />
-              </div>
+          {/* no match box here (owner, 6 Oct 2026): the seven checks start straight under the introduction */}
+          <div className="container-page pb-8 pt-12 md:pb-10 md:pt-20">
+            <div className="max-w-3xl">
+              <h1 className="h-display">{hw.title}</h1>
+              <p className="lead mt-6">{hw.intro}</p>
             </div>
           </div>
         </section>
