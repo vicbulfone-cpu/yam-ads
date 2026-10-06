@@ -1254,3 +1254,71 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .home-trust-list > li:first-child { padding-left: 0; }
   .home-trust-list > li:last-child { padding-right: 0; }
 }
+
+/* Home page trust section "How we select accountants" (owner, 6 Oct 2026; HomeSelection.tsx): one soft card with a
+   shield badge, eyebrow, heading and the approved credential claim; the seven checks as ticked tiles (4 + 3 on laptops);
+   the cost/referral note and a link to the full page along the bottom. */
+.sel { background: #fff; padding-block: 3rem; }
+@media (min-width: 1024px) { .sel { padding-block: clamp(3.5rem, 4.5vw, 6.5rem); } }
+.sel-card {
+  border: 1px solid #d5e3da; border-radius: 1.25rem; padding: 1.4rem;
+  background: linear-gradient(180deg, #f6fbf8 0%, #ffffff 70%);
+  box-shadow: 0 1px 2px rgba(7, 50, 101, 0.04), 0 24px 48px -36px rgba(7, 50, 101, 0.35);
+}
+@media (min-width: 768px) { .sel-card { padding: 2rem 2.2rem; } }
+@media (min-width: 1024px) { .sel-card { padding: clamp(2rem, 2.6vw, 3.8rem) clamp(2.2rem, 3vw, 4.4rem); border-radius: clamp(1.25rem, 1.4vw, 2rem); } }
+.sel-head { display: flex; align-items: flex-start; gap: 1rem; }
+@media (min-width: 1024px) { .sel-head { gap: clamp(1rem, 1.5vw, 2.2rem); } }
+.sel-badge {
+  flex: none; display: grid; place-items: center; width: 3.25rem; height: 3.25rem; border-radius: 999px;
+  background: #0e7a32; color: #0e7a32; box-shadow: 0 10px 22px -12px rgba(14, 122, 50, 0.7);
+}
+.sel-badge svg { width: 58%; height: 58%; color: #ffffff; }
+.sel-badge svg path:first-child { fill: #ffffff; }
+.sel-badge svg path:last-child { stroke: #0e7a32; }
+@media (min-width: 1024px) { .sel-badge { width: clamp(3.25rem, 4vw, 5.8rem); height: clamp(3.25rem, 4vw, 5.8rem); } }
+.sel-eyebrow { color: #0e7a32; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem; }
+.sel-h2 { margin-top: 0.35rem; color: var(--navy-900); font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.03em !important; line-height: 1.08; font-size: 1.75rem; }
+.sel-lead { margin-top: 0.5rem; color: #3f5068; font-size: 1rem; line-height: 1.5; max-width: 46rem; }
+@media (min-width: 1024px) {
+  .sel-eyebrow { font-size: clamp(0.72rem, 0.78vw, 1.15rem); }
+  .sel-h2 { font-size: clamp(1.9rem, 2.6vw, 3.9rem); }
+  .sel-lead { font-size: clamp(1rem, 1.15vw, 1.7rem); max-width: 60em; }
+}
+.sel-checks { display: grid; gap: 0.6rem; margin-top: 1.4rem; }
+@media (min-width: 640px) { .sel-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .sel-checks { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(0.6rem, 0.8vw, 1.2rem); margin-top: clamp(1.4rem, 2vw, 3rem); } }
+.sel-checks li {
+  display: flex; align-items: center; gap: 0.7rem; padding: 0.85rem 0.95rem; border-radius: 0.85rem;
+  background: #fff; border: 1px solid #dfe7ee; color: var(--navy-900); font-weight: 700; font-size: 0.92rem; line-height: 1.3;
+}
+@media (min-width: 1024px) { .sel-checks li { padding: clamp(0.85rem, 1vw, 1.5rem) clamp(0.95rem, 1.1vw, 1.6rem); font-size: clamp(0.9rem, 0.95vw, 1.4rem); border-radius: clamp(0.85rem, 0.9vw, 1.3rem); } }
+.sel-tick { flex: none; width: 1.35rem; height: 1.35rem; color: #0e7a32; }
+@media (min-width: 1024px) { .sel-tick { width: clamp(1.35rem, 1.5vw, 2.2rem); height: clamp(1.35rem, 1.5vw, 2.2rem); } }
+.sel-foot { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid #e3eae6; }
+@media (min-width: 1024px) { .sel-foot { flex-direction: row; align-items: center; justify-content: space-between; gap: 2.5rem; margin-top: clamp(1.4rem, 2vw, 3rem); padding-top: clamp(1.2rem, 1.5vw, 2.2rem); } }
+.sel-note { color: #55667f; font-size: 0.86rem; line-height: 1.5; }
+.sel-note strong { color: var(--navy-900); font-weight: 700; }
+@media (min-width: 1024px) { .sel-note { font-size: clamp(0.86rem, 0.92vw, 1.35rem); } }
+.sel-link {
+  flex: none; align-self: flex-start; display: inline-flex; align-items: center; gap: 0.6rem; min-height: 2.9rem; padding-inline: 1.3rem;
+  border-radius: 999px; border: 1.5px solid #0e7a32; color: #0e7a32; font-weight: 800; font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.sel-link svg { width: 1.1em; height: 1.1em; }
+.sel-link:hover { background: #0e7a32; color: #fff; }
+@media (min-width: 1024px) { .sel-link { align-self: center; min-height: clamp(2.9rem, 3.2vw, 4.6rem); padding-inline: clamp(1.3rem, 1.6vw, 2.4rem); font-size: clamp(0.95rem, 1vw, 1.45rem); } }
+/* match boxes: a small Privacy link after 'Your details go to one local accountant only.' (owner, 6 Oct 2026: trust) */
+.mc-privacy { margin-left: 0.15em; color: #0b6b2c; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+.mc-privacy:hover { color: var(--navy-900); }
+/* ad page footers: credential claim (links to how we select) and the cost / referral note (owner, 6 Oct 2026) */
+.bz-assure { margin-top: 1rem; max-width: 62rem; color: #55667f; font-size: 0.8rem; line-height: 1.5; }
+.bz-assure a { color: var(--navy-900); font-weight: 700; text-decoration: underline; text-decoration-color: rgba(14, 122, 50, 0.45); text-underline-offset: 3px; }
+.bz-assure a:hover { color: #0e7a32; }
+@media (min-width: 1024px) { .bz-assure { font-size: clamp(0.8rem, 0.82vw, 1.2rem); } }
+.sel-checks li.sel-tile-link { padding: 0; border: 0; background: transparent; }
+.sel-tile-link a { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; width: 100%; height: 100%; min-height: 3.2rem; padding: 0.85rem 1.1rem; border-radius: inherit; border-radius: 0.85rem; background: var(--navy-900); color: #fff; font-weight: 800; transition: background-color 0.2s ease; }
+.sel-tile-link a svg { flex: none; width: 1.15em; height: 1.15em; color: #3ddc84; }
+.sel-tile-link a:hover { background: #0e7a32; }
+.sel-tile-link a:hover svg { color: #fff; }
+@media (min-width: 1024px) { .sel-tile-link a { padding: clamp(0.85rem, 1vw, 1.5rem) clamp(1.1rem, 1.3vw, 1.9rem); border-radius: clamp(0.85rem, 0.9vw, 1.3rem); } }

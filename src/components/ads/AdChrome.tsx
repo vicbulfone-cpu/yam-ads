@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { logo } from "@/config/site.config";
 import { BIZ_LANDING as L } from "@/content/business-questionnaire";
+import { CREDENTIAL } from "@/content/wording";
 import { HandshakeSolid, LockIcon, PeopleOutline, PeopleSolid, PinSolid, ShieldCheck, ThumbSolid } from "./BizIcons";
 
 export function AdHeader({ className = "" }: { className?: string }) {
@@ -28,6 +29,17 @@ const SMSF_TRUST_ICONS = [LockIcon, PeopleSolid, PinSolid];
 // owner's "registration" design picture: padlock, map pin and people
 const REG_TRUST_ICONS = [LockIcon, PinSolid, PeopleSolid];
 
+/** Trust note in every ad page footer (owner, 6 Oct 2026; Google Ads landing page transparency): the approved credential
+ *  claim, the cost line and the referral-service disclaimer, all existing approved wording. */
+function AdAssure() {
+  return (
+    <p className="bz-assure">
+      <Link href="/how-we-select-accountants">{CREDENTIAL}</Link>{" "}
+      <span>Matching is free. Accountant fees are agreed separately. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm.</span>
+    </p>
+  );
+}
+
 export function AdFooter({ variant = "business" }: { variant?: "business" | "personal" | "smsf" | "registration" }) {
   if (variant !== "business") {
     const icons = variant === "smsf" ? SMSF_TRUST_ICONS : variant === "registration" ? REG_TRUST_ICONS : PERSONAL_TRUST_ICONS;
@@ -41,6 +53,7 @@ export function AdFooter({ variant = "business" }: { variant?: "business" | "per
               return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
             })}
           </ul>
+          <AdAssure />
         </div>
         <div className="pz-footer-line">
           <div className="bz-wrap flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
@@ -65,6 +78,7 @@ export function AdFooter({ variant = "business" }: { variant?: "business" | "per
               return <li key={t.text}><Icon className="bz-trust-icon" /><span>{t.text}</span></li>;
             })}
           </ul>
+          <AdAssure />
           <p className="mt-4 text-[0.82rem] leading-snug text-navy-900">
             <strong className="font-bold">© {new Date().getFullYear()} {L.copyright}</strong>
             <span className="block text-muted">{L.based[0]} <span aria-hidden>•</span> {L.based[1]}</span>

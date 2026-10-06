@@ -21,6 +21,7 @@ import Tagline from "./sections/Tagline";
 import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
 import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
+import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
 import StartBar from "./sections/StartBar";
 import CoverageSection from "./sections/CoverageSection";
@@ -138,6 +139,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />
+          <HomeSelection /> {/* trust: how we select accountants (owner, 6 Oct 2026) */}
           <FAQSection />
           {/* (mid-page "Ready to find your accountant?" banner removed, owner 6 Oct 2026) */}
           <CoverageSection />

@@ -84,7 +84,7 @@ export default function PersonalMatchCard() {
       {/* mint band along the bottom, as on the home page box */}
       <p className="mc-foot">
         <ShieldCheck className="mc-shield" />
-        <span>{C.footer}</span>
+        <span>{C.footer} <a href="/privacy" className="mc-privacy">Privacy</a></span>
       </p>
     </div>
   );
