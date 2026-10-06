@@ -835,6 +835,14 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .desk-hero-grid { padding-bottom: calc(var(--hero-open) + 1.5cm + 2.5rem); } /* + 2.5rem: the trust banner is 150% of its 5rem row */  .desk-hero-picture { margin-bottom: calc(-1 * var(--hero-open)); }
   .desk-hero-photo { bottom: calc(min(0px, calc((100% - var(--hero-open) - 39.99vw) * 0.62)) + var(--hero-open)); }
   .desk-hero-photo img.desk-hero-img { transform: translateY(calc(var(--hero-nudge) - 1cm)); } /* owner, 5 Oct 2026: picture only moved up 1cm (banner stays put) */
+  /* owner, 6 Oct 2026: the photo sits in exactly the same place on every page that shows it (home, Ad 5 and Ads 1-4):
+     its top 2.2vw under the header at every laptop/desktop width, as on the Ad 1 page (.bz-photo in ads.css). The frame
+     (.desk-hero-picture) is lifted 5.2cm, so the photo's top is set 5.2cm + 2.2vw down inside it. Only the photo and the
+     handwriting on its arrow move; the frame, words, match box and banner keep their places. */
+  .desk-hero-photo { top: calc(5.2cm + 2.2vw); bottom: auto; }
+  .desk-hero-photo img.desk-hero-img { transform: none; }
+  /* the handwriting stays just above the photo's arrow: 35.7% across and 57.14% down the photo (its place at 1440px wide) */
+  .hero-tagline-overlay { top: calc(5.2cm + 2.2vw + 39.99vw * 0.5714); transform: translateX(-50%) translateY(-50%) rotate(-8deg); }
   .desk-hero-trust { grid-column: 1 / -1; justify-self: stretch; width: 100%; height: 5.625rem; transform: translateY(calc(var(--hero-open) + 1.5cm)); grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: stretch; gap: clamp(2rem, 4vw, 5rem); }
   .desk-hero-trust > li { justify-content: center; }
   .desk-hero-trust > li + li { border-left: 1px solid rgba(7, 50, 101, 0.12); padding-left: 0; }
