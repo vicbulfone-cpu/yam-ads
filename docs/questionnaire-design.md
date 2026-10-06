@@ -15,7 +15,7 @@ Every page leads to it, and every questionnaire page should make the visitor wan
 9. **Ask the name first, then use it (owner, 5 Oct 2026).** In every questionnaire, ask for the visitor's name straight after the service selection pages. Every question box after that is personalised with their first name (e.g. "John, could I please have your mobile number so your accountant can reach you?"). Write the wording with a {name} placeholder; if the name is somehow missing, the sentence must still read naturally without it.
 
 ## Where it lives
-`src/components/layout/QuestionnaireModal.tsx` (steps, progress, option cards), `src/app/globals.css` (popup size, Next glow), wording in `src/content/questionnaire.ts`.
+`src/components/layout/SiteQuestionnaire.tsx` (steps, progress, option cards; the four ad questionnaires combined), `src/app/globals.css` (popup size, Next glow), wording in the ad wording files via `src/content/site-questionnaire.ts`.
 Summary and contact pages are still placeholders until the questionnaire stage (Stage 4) and must follow the same rules.
 
 ## Phones: full screen, not a popup (owner, 5 Oct 2026)

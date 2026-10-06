@@ -212,19 +212,26 @@ Later (after the main build): Google Ads landing pages and ads questionnaire on 
 - **SEO:** the popup's contents are only created after a click, so no page's HTML, headings or word count changes. The CTA links remain ordinary links. `/questionnaire` itself is a noindex page (also blocked in robots.txt and absent from the sitemap) showing the match card; with `?category=` it opens the popup at page 1.
 - **Closing:** the � button or Esc closes the popup and clears the answers. Clicking the blurred background closes it only on the service-choice step, so answers are never lost by a stray click. Back on page 1 closes the popup when it was opened from a page's match box (the ticks stay on the card); when it was opened from another CTA, Back returns to the match box in the popup with the ticks kept.
 
-## Site match box mapped to the four ad questionnaires (owner, 6 Oct 2026)
+## Site questionnaire = the four ad questionnaires combined (owner, 6 Oct 2026)
 
-- The site match box (home hero, every page that shows it, and the popup) is now **pick one service**. Each service opens
-  its ad's own match box in the popup, then that ad's questionnaire: Personal Tax & Planning → Ad 2, Business Services →
-  Ad 1, SMSF & Wealth Advisory → Ad 3, Registration Services → Ad 4. Map: `src/lib/service-routes.ts`.
-- Start on the site box links to `/questionnaire?service=<personal|business|smsf|registration>` (still an ordinary link
-  for no-JavaScript visitors); the popup shows that ad's box, with a Back button to change service.
-- The four ad questionnaires are mounted site-wide from the layout (`SiteAdQuestionnaires`), loaded only once the popup
-  shows their box; ad pages keep their own copy.
-- **Lead source unchanged for the main site:** leads from these questionnaires started on the main site send no `adType`,
-  so they stay "Organic" (postcode owner). On the ad pages `adType` is still sent, so they stay "Paid". Every lead now
-  also carries `questionnaire` (business / personal / smsf / registration).
-- The old per-category questionnaire (`?category=` links) still works but is no longer reached from the match box.
+Replaces the old site questionnaire (and the "Questionnaire popup" pages described above). Applies to every site page with
+the match box (home, Melbourne, How it works, How we select, About, Contact, Privacy, Terms) and every questionnaire link.
+The ad landing pages and their four questionnaires are unchanged.
+
+- **Match box:** tick one or more of the four services. Start links to `/questionnaire?service=…` (one per service).
+- **Popup** (`src/components/layout/SiteQuestionnaire.tsx`): for each ticked service, in the box's order, that ad's
+  sub-section page (the ad match box's question and choices) and then that ad's own pages:
+  Personal (Ad 2): main reason → follow-up page → "Does your return include any of these?" (returns only);
+  Business (Ad 1): one page per ticked category; SMSF (Ad 3): category pages → quick questions;
+  Registrations (Ad 4): category pages → new or existing business?
+  Then once: name → summary (Change links per page and per service) → in person/remote → postcode → search → email →
+  mobile → email my match? → match page (/ad-6). Back on page 1 returns to the box with the ticks kept.
+- **Wording:** all from the ad wording files (`src/content/site-questionnaire.ts` gathers it); the progress badge
+  "Your Match in Progress" is the old site questionnaire's. Match page: one service → that ad's wording; several → the
+  general (business) wording.
+- **Lead:** `questionnaire: "site"`, no `adType`, so it stays **Organic** (postcode owner); `answers` grouped per service.
+- **Removed:** `QuestionnaireModal.tsx`, `src/content/questionnaire.ts` and `scripts/extract-questionnaire.mjs` (the old
+  per-category questionnaire). Old `?category=` links still open the new questionnaire for that service.
 
 ## New hero, header and logo for the home and city pages (owner's design, 4 Oct 2026)
 

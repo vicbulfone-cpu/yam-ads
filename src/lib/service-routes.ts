@@ -1,14 +1,14 @@
-import { OPEN_BIZ_QUESTIONNAIRE, OPEN_PERSONAL_QUESTIONNAIRE, OPEN_REG_QUESTIONNAIRE, OPEN_SMSF_QUESTIONNAIRE } from "./questionnaire-events";
-
 /**
- * The site match box's four services, each mapped to its ad questionnaire (owner, 6 Oct 2026):
- * Personal → Ad 2, Business → Ad 1, SMSF → Ad 3, Registrations → Ad 4.
- * The visitor picks ONE service on the site box; the popup then shows that ad's own match box (its sub-services) and
- * that ad's questionnaire. Leads started on the main site stay "Organic" (see leadOrigin in ads/QuestionnaireParts.tsx).
+ * The site match box's four services (owner, 6 Oct 2026). Each one uses its ad questionnaire's sub-sections and
+ * questions inside the site questionnaire (SiteQuestionnaire.tsx): Personal → Ad 2, Business → Ad 1, SMSF → Ad 3,
+ * Registrations → Ad 4. The visitor may tick several; their pages follow each other, then the shared steps.
  */
 export type ServiceKey = "personal" | "business" | "smsf" | "registration";
 
-/** Service name on the site match box (old questionnaire wording) → ad questionnaire. */
+/** In the match box's order. */
+export const SERVICE_KEYS: ServiceKey[] = ["personal", "business", "smsf", "registration"];
+
+/** Service name on the site match box (old questionnaire wording) → service. */
 export const SERVICE_OF: Record<string, ServiceKey> = {
   "Personal Tax Returns and Planning": "personal",
   "Business Services": "business",
@@ -16,15 +16,10 @@ export const SERVICE_OF: Record<string, ServiceKey> = {
   "Registration Services": "registration",
 };
 
-/** The event that opens each ad questionnaire. */
-export const OPEN_EVENT_OF: Record<ServiceKey, string> = {
-  personal: OPEN_PERSONAL_QUESTIONNAIRE,
-  business: OPEN_BIZ_QUESTIONNAIRE,
-  smsf: OPEN_SMSF_QUESTIONNAIRE,
-  registration: OPEN_REG_QUESTIONNAIRE,
-};
+export const isServiceKey = (s: string | null | undefined): s is ServiceKey => !!s && (SERVICE_KEYS as string[]).includes(s);
 
-/** Fired when the popup shows an ad's match box, so that ad's questionnaire code starts loading before Start is pressed. */
-export const preloadEvent = (openEvent: string) => `${openEvent}:preload`;
-
-export const isServiceKey = (s: string | null | undefined): s is ServiceKey => !!s && s in OPEN_EVENT_OF;
+/** Service keys from link/event values (service keys or the box's service names), in the match box's order. */
+export function toServiceKeys(values: string[]): ServiceKey[] {
+  const keys = values.map((v) => (isServiceKey(v) ? v : SERVICE_OF[v])).filter(Boolean);
+  return SERVICE_KEYS.filter((k) => keys.includes(k));
+}

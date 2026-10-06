@@ -7,7 +7,6 @@ import ReturnToTop from "@/components/layout/ReturnToTop";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 import LazyQuestionnaireModal from "@/components/layout/LazyQuestionnaireModal";
 import QuestionnaireAutoOpen from "@/components/layout/QuestionnaireAutoOpen";
-import { SiteAdQuestionnaires } from "@/components/ads/LazyQuestionnaires";
 import { getHomeMatchCard } from "@/components/sections/MatchCard";
 import { SITE_URL } from "@/config/site.config";
 import "./globals.css";
@@ -51,8 +50,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollToTop />
         <LazyQuestionnaireModal card={getHomeMatchCard()} />
         <QuestionnaireAutoOpen />
-        {/* the four ad questionnaires, opened from the site match box (each service maps to its ad, docs/ad-pages.md) */}
-        <SiteAdQuestionnaires />
         {(GA4_ID || GADS_ID) && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID || GADS_ID}`} strategy="afterInteractive" />

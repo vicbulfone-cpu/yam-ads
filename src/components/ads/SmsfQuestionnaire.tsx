@@ -9,7 +9,7 @@ import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_WHEN } from "
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, leadOrigin, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 import { SMSF_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
@@ -241,7 +241,7 @@ export default function SmsfQuestionnaire() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...leadOrigin("smsf"),
+          adType: "smsf",
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,

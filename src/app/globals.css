@@ -481,7 +481,7 @@ a { text-underline-offset: 3px; }
   mask-composite: intersect;
 }
 
-/* ---------- Questionnaire popup (QuestionnaireModal.tsx) ----------
+/* ---------- Questionnaire popup (SiteQuestionnaire.tsx; ad questionnaires reuse it) ----------
    Phones: almost full screen. Tablet/desktop: as wide as the match box plus 2cm each side; 3/4 of the screen tall on desktop for the questionnaire pages. Page behind is blurred. */
 .q-modal {
   width: calc(100vw - 1rem);

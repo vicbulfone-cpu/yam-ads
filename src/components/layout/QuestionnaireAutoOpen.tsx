@@ -1,25 +1,22 @@
 "use client";
 
 import { useEffect } from "react";
-import { OPEN_QUESTIONNAIRE_EVENT, OPEN_SERVICE_BOX } from "@/lib/questionnaire-events";
-import { isServiceKey } from "@/lib/service-routes";
+import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
 
 /**
  * Opens the questionnaire popup when a page is loaded as /?start=1 (that is where /questionnaire sends visitors):
- * with ?category=… it goes straight to questionnaire page 1, otherwise it shows the match box first.
+ * with ?service=… it goes straight to the questions for those services, otherwise it shows the match box first.
  * Lives in the site layout, so it works on any page.
  */
 export default function QuestionnaireAutoOpen() {
   useEffect(() => {
     const url = new URL(window.location.href);
     if (!url.searchParams.has("start")) return;
-    const categories = url.searchParams.getAll("category");
-    // ?service=… (the site match box's Start): open on that service's ad match box
-    const service = url.searchParams.get("service");
+    // ?service=… (the match box's Start) or the older ?category=…: straight to the questions for those services
+    const categories = [...url.searchParams.getAll("service"), ...url.searchParams.getAll("category")];
     // wait one tick so the popup (mounted next to this in the layout) is listening
     const t = window.setTimeout(() => {
-      if (isServiceKey(service)) window.dispatchEvent(new CustomEvent(OPEN_SERVICE_BOX, { detail: service }));
-      else window.dispatchEvent(new CustomEvent(OPEN_QUESTIONNAIRE_EVENT, { detail: categories }));
+      window.dispatchEvent(new CustomEvent(OPEN_QUESTIONNAIRE_EVENT, { detail: categories }));
       // drop the helper parameter so a refresh does not reopen the popup (other parameters stay for tracking)
       url.searchParams.delete("start");
       window.history.replaceState(null, "", url.pathname + (url.search ? url.search : "") + url.hash);

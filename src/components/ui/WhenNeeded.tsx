@@ -16,18 +16,13 @@ type Loaded<P> = { default: ComponentType<P> };
 const ACTIVITY = ["pointermove", "pointerdown", "touchstart", "keydown", "scroll", "focusin"] as const;
 const IDLE_FALLBACK_MS = 8000;
 
-export default function WhenNeeded<P extends object>({ load, props, events = [], linkPath, preloadEvents = [], waitForEvent = false }: {
+export default function WhenNeeded<P extends object>({ load, props, events = [], linkPath }: {
   load: () => Promise<Loaded<P>>;
   props: P;
   /** events that open this questionnaire (held and replayed if they arrive early) */
   events?: string[];
   /** questionnaire address: early clicks on links to it are held and replayed */
   linkPath?: string;
-  /** events that only start loading the code (nothing is held or replayed) */
-  preloadEvents?: string[];
-  /** true: load only on an open/preload event or link click, not at the first sign of activity (for questionnaires a
-   *  page rarely opens, e.g. the ad questionnaires on the main site) */
-  waitForEvent?: boolean;
 }) {
   const [Comp, setComp] = useState<ComponentType<P> | null>(null);
   const started = useRef(false);
@@ -41,9 +36,8 @@ export default function WhenNeeded<P extends object>({ load, props, events = [],
       void load().then((m) => setComp(() => m.default)).catch(() => { started.current = false; });
     };
     const onActivity = () => start();
-    if (!waitForEvent) ACTIVITY.forEach((t) => window.addEventListener(t, onActivity, { once: true, passive: true, capture: true }));
-    const idle = waitForEvent ? undefined : window.setTimeout(start, IDLE_FALLBACK_MS);
-    preloadEvents.forEach((t) => window.addEventListener(t, onActivity));
+    ACTIVITY.forEach((t) => window.addEventListener(t, onActivity, { once: true, passive: true, capture: true }));
+    const idle = window.setTimeout(start, IDLE_FALLBACK_MS);
 
     // an "open" event that arrives before the questionnaire is ready: hold it
     const onOpen = (e: Event) => {
@@ -71,7 +65,6 @@ export default function WhenNeeded<P extends object>({ load, props, events = [],
     return () => {
       ACTIVITY.forEach((t) => window.removeEventListener(t, onActivity, { capture: true }));
       window.clearTimeout(idle);
-      preloadEvents.forEach((t) => window.removeEventListener(t, onActivity));
       events.forEach((t) => window.removeEventListener(t, onOpen));
       if (target) window.removeEventListener("click", onClick, true);
     };

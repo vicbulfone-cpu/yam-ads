@@ -97,7 +97,7 @@ Every sample page was loaded at 375px, 768px and 1280px: all returned successful
 (checked by script) and no errors. Screenshots were reviewed by eye for the home page, the Sydney page and the
 how-we-select page at phone and desktop widths.
 
-## Questionnaire popup (`QuestionnaireModal.tsx`, styles `.q-modal*` in globals.css)
+## Questionnaire popup (`SiteQuestionnaire.tsx`, styles `.q-modal*` in globals.css)
 
 | Breakpoint | Size | Notes |
 |---|---|---|

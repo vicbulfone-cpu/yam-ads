@@ -15,7 +15,7 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, leadOrigin, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, StepHead, TextField } from "./QuestionnaireParts";
 
 /**
  * The personal tax questionnaire (personal ad page /ad-2). Same popup, progress header and option cards as the business
@@ -282,7 +282,7 @@ export default function PersonalQuestionnaire() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...leadOrigin("personal"),
+          adType: "personal",
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
