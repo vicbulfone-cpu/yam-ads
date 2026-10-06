@@ -1241,3 +1241,5 @@ New (src/content/home-copy.ts, MATCH_CARD_NOTE): "Tell us what you need help wit
 ## 6 Oct 2026 — owner request: home page wording
 - "How it works" step 3 (src/components/sections/HomeMatchIntro.tsx). Old: "Your matched accountant contacts you directly to discuss your needs." New: "Your match calls you, or you call for immediate assistance."
 - Mid-page "Ready to find your accountant?" band button (src/components/sections/HomeMidCta.tsx). Old: "Find My Accountant". New: "Find my Match".
+- Closing "Ready to find your accountant?" band above the footer (src/components/sections/HomeClosingCta.tsx). Old button: "Find My Accountant". New: "Match Me Now".
+- Navy bar under the "A local accountant. A better match." photo: its "Start My Match" button removed (the bar further down keeps its button).

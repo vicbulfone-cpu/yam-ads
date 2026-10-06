@@ -32,7 +32,7 @@ export default function HomeClosingCta() {
           </h2>
           <p className="mt-2 text-base text-white/90 sm:text-[1.1rem] fs-lead">Your needs. Your area. Your accountant.</p>
           <Link href={QUESTIONNAIRE_URL} className="btn btn-primary mt-6 min-w-[17rem] rounded-full px-8 text-base btn-fluid lg:min-w-[clamp(17rem,19vw,27rem)]">
-            Find My Accountant
+            Match Me Now
             <svg aria-hidden width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>

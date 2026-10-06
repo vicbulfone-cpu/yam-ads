@@ -44,14 +44,16 @@ const ArrowRight = () => (
 );
 
 /** Full-width navy "Ready to meet your accountant?" bar with the start button (used twice in this section) */
-const StartBar = () => (
-  <div className="flex flex-col items-center gap-4 bg-navy-900 px-6 py-7 text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:px-[3vw] lg:py-[0.9vw] lg:text-left">
+const StartBar = ({ button = true, className = "" }: { button?: boolean; className?: string }) => (
+  <div className={`flex flex-col items-center gap-4 bg-navy-900 px-6 py-7 text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:px-[3vw] lg:py-[0.9vw] lg:text-left ${className}`}>
     <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">Ready to meet your accountant?</p>
     <span aria-hidden className="hidden h-[2.6vw] w-px bg-white/40 lg:block" />
     <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
-    <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)]">
-      Start My Match <ArrowRight />
-    </Link>
+    {button && (
+      <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)]">
+        Start My Match <ArrowRight />
+      </Link>
+    )}
   </div>
 );
 
@@ -150,8 +152,9 @@ export default function HomeMatchIntro() {
         </div>
 
         {/* navy start bar straight under the words and photo (owner, 5 Oct 2026: replaces the three reassurance points);
-            sits right against the bottom of the photo with no gap (owner, 6 Oct 2026) */}
-        <StartBar />
+            sits right against the bottom of the photo with no gap (owner, 6 Oct 2026); it overlaps the photo by 2px so
+            no thin line of white shows at the seam, and has no button, just the two lines centred (owner, 6 Oct 2026) */}
+        <StartBar button={false} className="relative z-10 -mt-[2px]" />
 
         {/* 2 — how it works (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
         <div className="container-page home-wide pt-[calc(2.5rem+1.85cm)] lg:pt-[calc(2vw+1.85cm)]">
