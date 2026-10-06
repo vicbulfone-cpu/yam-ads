@@ -22,6 +22,7 @@ import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
 import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
 import FAQSection from "./sections/FAQSection";
+import StartBar from "./sections/StartBar";
 import CoverageSection from "./sections/CoverageSection";
 import HomeTagline from "./sections/HomeTagline";
 import HomeClosingCta from "./sections/HomeClosingCta";
@@ -121,7 +122,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack bar={<StartBar button={false} hero />} />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />

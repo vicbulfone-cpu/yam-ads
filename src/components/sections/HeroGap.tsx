@@ -20,9 +20,11 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       const pic = document.querySelector(".desk-hero-img");
       const box = document.querySelector(".desk-hero-card .mc");
       if (window.innerWidth < 1024 || !pic || !box) return;
-      const heroBottom = Math.max(pic.getBoundingClientRect().bottom, box.getBoundingClientRect().bottom);
+      // the bar under the hero photo counts too (owner, 6 Oct 2026: content moves down to make room for it)
+      const bar = document.querySelector(".hero-bar");
+      const heroBottom = Math.max(pic.getBoundingClientRect().bottom, box.getBoundingClientRect().bottom, bar ? bar.getBoundingClientRect().bottom : 0);
       const pull = content.getBoundingClientRect().top - heroBottom - GAP;
-      if (pull > 0) section.style.marginTop = `${-pull}px`;
+      if (pull !== 0) section.style.marginTop = `${-pull}px`;
     };
     // after the match box has scaled itself to the window
     const run = () => requestAnimationFrame(() => requestAnimationFrame(place));

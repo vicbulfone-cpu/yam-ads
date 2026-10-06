@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
 import HeroGap from "./HeroGap";
+import StartBar from "./StartBar";
 
 /**
  * Home page, straight under the hero (owner's "example 1" picture, 5 Oct 2026):
@@ -42,21 +43,6 @@ const ArrowRight = () => (
   <svg aria-hidden width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="h-[1.1em] w-[1.1em]">
     <path d="M5 12h14M13 6l6 6-6 6" />
   </svg>
-);
-
-/** Full-width navy "Ready to meet your accountant?" bar with the start button (used twice in this section);
- *  3mm more space inside at the top and bottom, margins unchanged (owner, 6 Oct 2026) */
-const StartBar = ({ button = true, className = "" }: { button?: boolean; className?: string }) => (
-  <div className={`flex flex-col items-center gap-4 bg-navy-900 px-6 py-[calc(1.75rem+3mm)] text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:px-[3vw] lg:py-[calc(0.9vw+3mm)] lg:text-left ${className}`}>
-    <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">Ready to meet your accountant?</p>
-    <span aria-hidden className="hidden h-[2.6vw] w-px bg-white/40 lg:block" />
-    <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
-    {button && (
-      <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[14rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(14rem,17vw,25rem)]">
-        Start My Match <ArrowRight />
-      </Link>
-    )}
-  </div>
 );
 
 /** Hand-drawn curved arrow between the step photos */

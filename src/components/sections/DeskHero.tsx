@@ -5,6 +5,7 @@
 //            then the match box, then the three reassurance lines.
 // The page CODE starts with the headline (best for search engines). Wording: src/content/hero-copy.ts and, for the city
 // headlines, src/content/seo-copy.json.
+import type { ReactNode } from "react";
 import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import { deskHeroPicture } from "@/config/site.config";
@@ -17,11 +18,14 @@ export type DeskHeroHeadline = { before: string; green: string; after?: string; 
 type Pic = { src: string; width: number; height: number };
 
 export default function DeskHero({
-  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false,
+  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false, bar,
 }: { headline: DeskHeroHeadline; crumbs?: { label: string; href?: string }[]; card: MatchCardData | null; cardTitleTag?: "h2" | "p"; mobilePicture?: Pic; desktopPicture?: Pic; showTrust?: boolean;
   /** Home page on phones (owner's "zz" design, 6 Oct 2026): logo, then the desk picture with the headline over its top,
       then the match box straight underneath. Phones use the same desk picture as desktop. */
-  phoneStack?: boolean }) {
+  phoneStack?: boolean;
+  /** Home page (owner, 6 Oct 2026): a bar that sits right against the bottom of the photo on laptops/desktops (the match
+      box overlaps it), and straight after the hero on phones and tablets. */
+  bar?: ReactNode }) {
   const mobilePicture = phoneStack ? undefined : mobilePictureProp;
   const desk = desktopPicture ?? deskHeroPicture;
   const desktopSrcSet = mobilePicture
@@ -127,6 +131,7 @@ export default function DeskHero({
           </ul>
         )}
       </div>
+      {bar && <div className="hero-bar">{bar}</div>}
     </section>
   );
 }
