@@ -126,8 +126,8 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />
-          <HomeMidCta />
           <FAQSection />
+          <HomeMidCta /> {/* under the FAQ (owner, 6 Oct 2026) */}
           <CoverageSection />
           <HomeTagline text={TAGLINES[8]} />
           <HomeClosingCta />
