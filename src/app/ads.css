@@ -184,7 +184,19 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .pz-unsure { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: clamp(0.15rem, calc(var(--u) * 0.6), 0.3rem); font-size: clamp(0.85rem, calc(var(--u) * 2.6), 1.22rem); font-weight: 600; color: #0e7a32; text-decoration: underline; text-underline-offset: 3px; }
 .pz-unsure:hover { color: var(--navy-900); }
 @media (min-width: 1024px) { .pz-unsure { min-height: 2.2rem; } }
-.pz-card .btn.mc-start { margin-top: clamp(0.2rem, calc(var(--u) * 0.8), 0.4rem); }
+@media (max-width: 767px) { .pz-card .btn.mc-start { margin-top: clamp(0.2rem, calc(var(--u) * 0.8), 0.4rem); } }
+/* tablets, laptops and desktops: the box is exactly the Ad 1 box's size and position (owner, 6 Oct 2026). The "Not sure"
+   link moves up to the right end of the "Choose one option" line, so the box holds the same rows and height as Ad 1;
+   the start button keeps the home box spacing. Phones keep the link under the rows (the boxes already match there).
+   The link stays after the rows in the page code, so the keyboard and screen-reader order is unchanged. */
+@media (min-width: 768px) {
+  .pz-card .mc-in { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 0.5rem; align-items: baseline; }
+  .pz-card .mc-in > * { grid-column: 1 / -1; }
+  /* on a narrow box (small laptops) both are drawn a little smaller (from the box's own width) so they always share one line */
+  .pz-card .mc-in > .mc-hint { grid-column: 1; grid-row: 2; white-space: nowrap; font-size: min(clamp(0.9rem, calc(var(--u) * 2.9), 1.35rem), 3cqw);
+    min-height: calc(1.3 * clamp(0.9rem, calc(var(--u) * 2.9), 1.35rem)); /* the line keeps its full height, so the box height still matches Ad 1 */ }
+  .pz-card .mc-in > .pz-unsure { grid-column: 2; grid-row: 2; display: inline; min-height: 0; line-height: 1.3; white-space: nowrap; margin-top: clamp(0.15rem, calc(var(--u) * 0.6), 0.3rem); font-size: min(clamp(0.85rem, calc(var(--u) * 2.6), 1.22rem), 2.8cqw); }
+}
 
 /* personal footer: trust strip across the page, then a single line with copyright and links */
 .pz-footer { padding-block: 0.9rem 0; }
