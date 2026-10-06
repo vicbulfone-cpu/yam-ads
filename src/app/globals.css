@@ -1045,74 +1045,92 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .desk-hero-sub { font-size: 1.3vw; }
 }
 
-/* Home page FAQ (owner's "faq example" picture, 6 Oct 2026; FAQSection.tsx). Nine white cards: three per row from 1024px,
-   two on tablets, one on phones. Card: the owner's round icon | question with a short line under it |
-   round plus (green minus when open), and a short coloured tab on its top edge (green, then blue, alternating).
-   Sizes are 80% of the first full-size version (owner, 6 Oct 2026), text never below a comfortable reading size.
-   All words are real page text; solid colours and no moving text keep everything crisp. */
-.faq8 {
-  display: grid; align-items: stretch; gap: 1rem 0.7rem; margin-top: 1.5rem;
-  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;
-}
-@media (min-width: 768px) { .faq8 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Home page FAQ (owner's "faq example" picture, hero section/ad landing pages, 6 Oct 2026; FAQSection.tsx).
+   Laptops and desktops: heading + line + large map on the left behind a thin divider, questions in two columns on the
+   right. Tablets: heading on top, two columns under it. Phones: one column, map hidden (decorative only).
+   Row: the owner's icon (background made transparent by scripts/faq-icons.mjs) | question | green plus.
+   Open row: mint panel, green minus, answer under the question. All words are real page text. */
+.faqx { padding-block: 3rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@media (min-width: 1024px) { .faqx { padding-block: clamp(3.5rem, 4.2vw, 6.5rem); } }
+.faqx-grid { display: grid; gap: 1.5rem; }
 @media (min-width: 1024px) {
-  .faq8 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(0.9rem, 1.3vw, 1.9rem) clamp(0.6rem, 0.6vw, 0.9rem); margin-top: clamp(1.5rem, 1.8vw, 2.6rem); }
+  .faqx-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 2.25fr); gap: 0; align-items: start; }
 }
-.faq8-card {
-  --pad: 0.75rem; --icon: 2.9rem; --gap: 0.75rem; --plus: 1.75rem; --tab-l: 1.1rem; --tab-w: 2.1rem; --tab-h: 4px;
-  position: relative; background: #fff; border: 1px solid #c9d3e0; border-radius: 0.9rem;
-  box-shadow: 0 1px 2px rgba(7, 50, 101, 0.05), 0 10px 24px -20px rgba(7, 50, 101, 0.35);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-@media (min-width: 640px) { .faq8-card { --icon: 3.5rem; --pad: 0.9rem; } }
+.faqx-intro { min-width: 0; }
 @media (min-width: 1024px) {
-  .faq8-card { --pad: clamp(0.7rem, 0.8vw, 1.2rem); --icon: clamp(3.7rem, 5.3vw, 7.6rem); --gap: clamp(0.75rem, 0.9vw, 1.35rem);
-    --plus: clamp(1.6rem, 1.84vw, 2.64rem);
-    --tab-l: clamp(1.1rem, 1.6vw, 2.4rem); --tab-w: clamp(2.1rem, 2.3vw, 3.4rem); border-radius: clamp(0.9rem, 0.85vw, 1.3rem); }
+  .faqx-intro { padding-right: clamp(1.5rem, 2.4vw, 3.5rem); border-right: 1px solid #d5dde8; align-self: stretch; padding-top: 0.6vw; }
 }
-/* the coloured tab on the top edge */
-.faq8-card::before {
-  content: ""; position: absolute; top: calc(var(--tab-h) / -2); left: var(--tab-l); width: var(--tab-w); height: var(--tab-h);
-  border-radius: 999px; background: #22b35e;
+.faqx-eyebrow {
+  display: flex; align-items: center; gap: 0.9rem; color: #0e7a32; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.24em; font-size: 0.72rem;
 }
-.faq8-card:nth-child(even)::before { background: #3a86e8; }
-.faq8-card:hover { border-color: #aebbd0; box-shadow: 0 1px 2px rgba(7, 50, 101, 0.06), 0 14px 30px -18px rgba(7, 50, 101, 0.4); }
-.faq8-card[open] { border-color: #8fc9a3; }
+.faqx-eyebrow-rule { height: 1px; width: 4rem; background: #0e7a32; }
+.faqx-h2 {
+  margin-top: 0.7rem; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.045em; line-height: 1.02 !important;
+  font-size: 2.3rem;
+}
+.faqx-sub { margin-top: 0.8rem; color: #3f5068; line-height: 1.4; font-size: 1.05rem; max-width: 26rem; }
+.faqx-map { display: none; }
+@media (min-width: 640px) { .faqx-h2 { font-size: 2.8rem; } }
+@media (min-width: 1024px) {
+  .faqx-eyebrow { font-size: clamp(0.72rem, 0.68vw, 1rem); }
+  .faqx-eyebrow-rule { width: clamp(4rem, 5vw, 7.5rem); }
+  .faqx-h2 { font-size: clamp(2.4rem, 3.05vw, 4.6rem); margin-top: clamp(0.7rem, 1vw, 1.5rem); }
+  .faqx-sub { font-size: clamp(1rem, 1.12vw, 1.65rem); margin-top: clamp(0.8rem, 1.1vw, 1.6rem); max-width: none; }
+  .faqx-map { display: block; width: 92%; height: auto; margin-top: clamp(1.5rem, 2.6vw, 4rem); }
+}
 
-/* icon | question with its short line | plus (the number badges were removed, owner 6 Oct 2026) */
-.faq8-sum {
-  display: grid; grid-template-columns: var(--icon) minmax(0, 1fr) var(--plus); grid-template-rows: 1fr auto auto 1fr;
-  column-gap: var(--gap); align-items: center; padding: var(--pad); cursor: pointer; list-style: none;
+.faqx-cols { display: grid; min-width: 0; }
+@media (min-width: 768px) { .faqx-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; } }
+@media (min-width: 1024px) { .faqx-cols { column-gap: clamp(2rem, 3vw, 4.5rem); padding-left: clamp(1.5rem, 2.4vw, 3.5rem); } }
+.faqx-col { display: flex; flex-direction: column; min-width: 0; }
+
+.faqx-row {
+  --icon: 4.6rem; --gap: 0.9rem; --pad: 0.75rem; --plus: 1.6rem;
+  position: relative; border-radius: 0.9rem; transition: background-color 0.2s ease;
 }
-.faq8-card:not([open]) > .faq8-sum { height: 100%; } /* cards in a row share one height, words centred */
-.faq8-sum::-webkit-details-marker { display: none; }
-.faq8-sum:focus-visible { outline: 2px solid #0e7a32; outline-offset: 3px; border-radius: inherit; }
-.faq8-icon { grid-column: 1; grid-row: 1 / -1; width: var(--icon); height: var(--icon); align-self: center; }
-.faq8-q {
-  grid-column: 2; grid-row: 2; align-self: start; font-family: var(--font-sans); font-weight: 800; color: #0a2a57;
-  letter-spacing: -0.015em; line-height: 1.25; font-size: 0.95rem;
+/* the thin line between rows */
+.faqx-row + .faqx-row::before {
+  content: ""; position: absolute; top: 0; left: var(--pad); right: var(--pad); height: 1px; background: #d9e1ec;
+  transition: opacity 0.2s ease;
 }
-.faq8-teaser { grid-column: 2; grid-row: 3; align-self: start; margin-top: 0.3rem; color: #55667f; line-height: 1.4; font-size: 0.82rem; }
-.faq8-plus {
-  grid-column: 3; grid-row: 1 / -1; position: relative; display: grid; place-items: center;
-  width: var(--plus); height: var(--plus); border-radius: 999px; background: #dcf5e5; color: #0b6b2c;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-.faq8-bar { position: absolute; width: 40%; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease; }
-.faq8-bar-v { transform: rotate(90deg); }
-.faq8-card[open] .faq8-plus { background: #0e7a32; color: #fff; }
-.faq8-card[open] .faq8-bar-v { transform: rotate(90deg) scaleX(0); }
-.faq8-a { padding: 0 var(--pad) var(--pad); color: #3f5068; line-height: 1.55; font-size: 0.88rem; }
-@media (min-width: 640px) {
-  /* the answer lines up under the question */
-  .faq8-a { padding-left: calc(var(--pad) + var(--icon) + var(--gap)); padding-right: calc(var(--pad) + var(--plus) + var(--gap)); }
-}
+.faqx-row[open] { background: #e8f6ee; }
+.faqx-row[open]::before, .faqx-row[open] + .faqx-row::before { opacity: 0; }
 @media (min-width: 1024px) {
-  .faq8-sum { padding-block: clamp(0.96rem, 1.52vw, 2.24rem); }
-  .faq8-q { font-size: clamp(0.92rem, 0.86vw, 1.28rem); }
-  .faq8-teaser { font-size: clamp(0.8rem, 0.72vw, 1.08rem); margin-top: 0.35rem; }
-  .faq8-a { font-size: clamp(0.85rem, 0.75vw, 1.1rem); }
+  .faqx-row { --icon: clamp(4.8rem, 6.4vw, 9.6rem); --gap: clamp(1rem, 1.6vw, 2.4rem); --pad: clamp(0.7rem, 0.9vw, 1.35rem);
+    --plus: clamp(1.6rem, 1.7vw, 2.5rem); border-radius: clamp(0.9rem, 0.8vw, 1.2rem); }
 }
+
+.faqx-sum {
+  display: grid; grid-template-columns: var(--icon) minmax(0, 1fr) var(--plus); column-gap: var(--gap); align-items: center;
+  padding: var(--pad); cursor: pointer; list-style: none; border-radius: inherit;
+}
+@media (min-width: 1024px) { .faqx-sum { padding-block: clamp(0.8rem, 1.1vw, 1.65rem); } }
+.faqx-sum::-webkit-details-marker { display: none; }
+.faqx-sum:focus-visible { outline: 2px solid #0e7a32; outline-offset: 2px; }
+.faqx-icon { width: var(--icon); height: calc(var(--icon) * 0.72); object-fit: contain; transition: transform 0.25s ease; }
+@media (hover: hover) and (min-width: 1024px) { .faqx-sum:hover .faqx-icon { transform: translateY(-2px) scale(1.04); } }
+@media (prefers-reduced-motion: reduce) { .faqx-icon { transition: none; } .faqx-sum:hover .faqx-icon { transform: none; } }
+.faqx-q {
+  font-family: var(--font-sans); font-weight: 700; color: #0a2a57; letter-spacing: -0.01em; line-height: 1.3; font-size: 1rem;
+}
+.faqx-sum:hover .faqx-q { color: #073265; }
+@media (min-width: 1024px) { .faqx-q { font-size: clamp(1rem, 1.1vw, 1.65rem); } }
+
+/* plus that becomes a minus */
+.faqx-plus { position: relative; display: grid; place-items: center; width: var(--plus); height: var(--plus); color: #0e7a32; }
+.faqx-bar { position: absolute; width: 70%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease; }
+.faqx-bar-v { transform: rotate(90deg); }
+.faqx-row[open] .faqx-plus { color: #0a2a57; }
+.faqx-row[open] .faqx-bar-v { transform: rotate(90deg) scaleX(0); }
+
+/* the answer lines up under the question */
+.faqx-a {
+  margin-top: calc(var(--pad) * -0.4); padding: 0 calc(var(--pad) + var(--plus)) var(--pad) calc(var(--pad) + var(--icon) + var(--gap));
+  color: #34465f; line-height: 1.5; font-size: 0.92rem;
+}
+@media (max-width: 479px) { .faqx-a { padding-left: var(--pad); padding-right: var(--pad); } }
+@media (min-width: 1024px) { .faqx-a { font-size: clamp(0.9rem, 0.92vw, 1.38rem); } }
 
 /* Home page "Our coverage" (owner's "australia wide" picture, 6 Oct 2026; CoverageSection.tsx): navy band, framed panels of
    place chips on the left, a large map of Australia with a pin and "Australia wide" on the right, a rule and a note below.

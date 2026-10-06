@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
-import { FAQ_ICONS, FAQ_TEASERS, HOME_EXTRA_FAQS } from "@/content/faq-teasers";
+import { FAQ_ICONS, FAQ_MAP, HOME_EXTRA_FAQS } from "@/content/faq-teasers";
 
 /**
- * Home page: "Frequently Asked Questions".
+ * Home page: the FAQ section.
  * Questions and answers are read word for word from the home page's FAQ data (the same source as its FAQPage
  * structured data), so the visible FAQ and the structured data always match.
  */
@@ -19,58 +19,58 @@ function homeFaqs(): Faq[] {
 }
 
 /**
- * Layout from the owner's "faq example" picture (6 Oct 2026), condensed: the heading is styled like the other home
- * sections' intros ("How it works" / "Meet your accountant match": eyebrow with a rule after it, two-line heading,
- * the line beside it behind a divider), then nine smaller cards, three per row on laptops and desktops (two on
- * tablets, one on phones). Each card: round icon, the question (numbers removed, owner 6 Oct 2026), a short line under it and a round
- * plus that turns into a green minus when the answer is open. Styles: ".faq8" in globals.css.
+ * Layout from the owner's "faq example" picture (hero section/ad landing pages, 6 Oct 2026): on laptops and desktops the
+ * heading, the line under it and a large map illustration sit on the left behind a thin divider, and the questions run in
+ * two columns on the right (five, then four). Each question is an open row: the owner's icon (transparent background, scripts/faq-icons.mjs) | the question | a green
+ * plus, with a thin line between rows. An open row turns mint, the plus becomes a minus and the answer shows under the
+ * question. Tablets keep the two columns under the heading; phones show one column. Styles: ".faqx" in globals.css.
  * Every word is real text in the page (crawlable). The question and answer carry data-faq-question / data-faq-answer;
  * those two match the FAQPage structured data word for word (scripts/seo-audit.mjs checks them; the ninth comes from
  * HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
  */
-function FaqCard({ f, i }: { f: Faq; i: number }) {
+function FaqRow({ f, i }: { f: Faq; i: number }) {
   return (
-    <details className="faq8-card group">
-      <summary className="faq8-sum">
-        {/* the owner's original PNG, served as is (no recompression) so it stays crisp */}
-        <Image src={FAQ_ICONS[i]} alt="" width={118} height={118} unoptimized className="faq8-icon" />
-        <span className="faq8-q" data-faq-question="">{f.q}</span>
-        <span className="faq8-teaser">{FAQ_TEASERS[i]}</span>
-        <span aria-hidden="true" className="faq8-plus">
-          <span className="faq8-bar" />
-          <span className="faq8-bar faq8-bar-v" />
+    <details className="faqx-row" open={i === 0}>
+      <summary className="faqx-sum">
+        <Image src={FAQ_ICONS[i]} alt="" width={360} height={260} sizes="(min-width: 1024px) 9vw, 6rem" className="faqx-icon" />
+        <span className="faqx-q" data-faq-question="">{f.q}</span>
+        <span aria-hidden="true" className="faqx-plus">
+          <span className="faqx-bar" />
+          <span className="faqx-bar faqx-bar-v" />
         </span>
       </summary>
-      <p className="faq8-a" data-faq-answer="">{f.a}</p>
+      <p className="faqx-a" data-faq-answer="">{f.a}</p>
     </details>
   );
 }
 
 export default function FAQSection() {
   const faqs = [...homeFaqs(), ...HOME_EXTRA_FAQS];
+  const half = Math.ceil(faqs.length / 2);
+  const cols = [faqs.slice(0, half), faqs.slice(half)];
   return (
-    <section className="bg-white py-12 md:py-14 lg:py-[clamp(3.5rem,4vw,6rem)]">
-      <div className="container-page home-wide">
-        <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-[4vw]">
-          <div>
-            <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow">
-              Common questions
-              <span aria-hidden="true" className="h-px w-16 bg-green-700 lg:w-[clamp(4rem,6vw,9rem)]" />
-            </p>
-            <h2 className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
-              <span className="block text-navy-900">Frequently Asked</span>
-              <span className="block text-green-700">Questions</span>
-            </h2>
-          </div>
-          <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
-            Answers to common questions about finding your accountant.
+    <section className="faqx bg-white">
+      <div className="container-page home-wide faqx-grid">
+        <div className="faqx-intro">
+          <p className="faqx-eyebrow fs-eyebrow">
+            Common questions
+            <span aria-hidden="true" className="faqx-eyebrow-rule" />
           </p>
+          <h2 className="faqx-h2">
+            <span className="block text-navy-900">A few questions.</span>
+            <span className="block text-green-700">Clear answers.</span>
+          </h2>
+          <p className="faqx-sub">Everything you need to know about finding your accountant.</p>
+          <Image src={FAQ_MAP} alt="" width={354} height={233} sizes="(min-width: 1024px) 22vw, 1px" className="faqx-map" />
         </div>
 
-        <div className="faq8">
-          {faqs.map((f, i) => <FaqCard key={f.q} f={f} i={i} />)}
+        <div className="faqx-cols">
+          {cols.map((col, c) => (
+            <div key={c} className="faqx-col">
+              {col.map((f, j) => <FaqRow key={f.q} f={f} i={c * half + j} />)}
+            </div>
+          ))}
         </div>
-        {/* (photo collage and its green squares removed, owner 6 Oct 2026) */}
       </div>
     </section>
   );
