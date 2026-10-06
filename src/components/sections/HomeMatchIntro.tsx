@@ -5,10 +5,11 @@ import HeroGap from "./HeroGap";
 
 /**
  * Home page, straight under the hero (owner's "example 1" picture, 5 Oct 2026):
- * 1. "A local accountant. A better match." — words and button on the left, photo on the right with a handwritten
- *    note and a navy badge, then three reassurance points.
- * 2. "Finding your accountant, made simple." — three numbered photo steps joined by curved arrows.
- * 3. A navy "Ready to meet your accountant?" bar with the start button.
+ * 1. "Finding your accountant, made simple." — three numbered photo steps joined by curved arrows, then a navy
+ *    "Ready to meet your accountant?" bar with the start button.
+ * 2. "A local accountant. A better match." — words and button on the left, photo on the right with a handwritten
+ *    note and a navy badge, then the navy bar without a button, touching the photo and ending the section.
+ * (Order swapped by the owner, 6 Oct 2026.)
  * Phones and tablets stack everything in one column; the photo moves under the button.
  */
 
@@ -80,8 +81,57 @@ export default function HomeMatchIntro() {
           phones/tablets get the 0.5cm in the padding above */}
       <HeroGap cm={3} />
       <div>
-        {/* 1 — words and photo */}
-        <div className="container-page home-wide grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-0">
+
+        {/* 1 — how it works (owner, 6 Oct 2026: swapped with "Meet your accountant match", which now follows it;
+            the spacing between the blocks is unchanged) */}
+        <div className="container-page home-wide">
+          <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-[4vw]">
+            <div>
+              <Eyebrow>How it works</Eyebrow>
+              <h2 className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
+                <span className="block text-navy-900">Finding your accountant,</span>
+                <span className="block text-green-700">made simple.</span>
+              </h2>
+            </div>
+            <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
+              About 60 seconds to get started.
+              <br />
+              Three simple steps to your local match.
+            </p>
+          </div>
+
+          <ol className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[1.4vw] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
+            {steps.flatMap((s, i) => [
+              <li key={s.title} className="relative">
+                <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
+                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
+                </div>
+                <span
+                  aria-hidden
+                  className="absolute left-0 top-0 grid h-12 w-12 place-items-center rounded-full bg-green-700 font-sans text-[1.4rem] font-extrabold text-white ring-[5px] ring-white lg:h-[clamp(3rem,3.6vw,5.2rem)] lg:w-[clamp(3rem,3.6vw,5.2rem)] lg:text-[clamp(1.4rem,1.9vw,2.8rem)]"
+                >
+                  {i + 1}
+                </span>
+                <h3 className="mt-3 font-sans text-[1.3rem] font-extrabold tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.3rem,1.75vw,2.6rem)]">{s.title}</h3>
+                <p className="mt-1 text-[0.98rem] leading-snug text-navy-900/80 lg:text-[clamp(0.98rem,1.2vw,1.8rem)]">{s.text}</p>
+              </li>,
+              i < steps.length - 1 && (
+                <li key={`arrow-${i}`} aria-hidden className="hidden pt-[6.5vw] lg:block">
+                  <StepArrow />
+                </li>
+              ),
+            ])}
+          </ol>
+        </div>
+
+        {/* navy start bar under the steps: full screen width (owner, 5 Oct 2026: 1cm extra space above it;
+            6 Oct 2026: moved up 1cm, so none) */}
+        <div className="mt-[2.5rem] lg:mt-[1.4vw]">
+          <StartBar />
+        </div>
+
+        {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
+        <div className="container-page home-wide grid items-center gap-8 pt-[calc(2.5rem+1.85cm)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-0 lg:pt-[calc(2vw+1.85cm)]">
           <div className="relative z-10 lg:py-[1vw]">
             <Eyebrow>Meet Your Accountant Match</Eyebrow>
             <h2
@@ -155,53 +205,6 @@ export default function HomeMatchIntro() {
             sits right against the bottom of the photo with no gap (owner, 6 Oct 2026); it overlaps the photo by 2px so
             no thin line of white shows at the seam, and has no button, just the two lines centred (owner, 6 Oct 2026) */}
         <StartBar button={false} className="relative z-10 -mt-[2px]" />
-
-        {/* 2 — how it works (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
-        <div className="container-page home-wide pt-[calc(2.5rem+1.85cm)] lg:pt-[calc(2vw+1.85cm)]">
-          <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-[4vw]">
-            <div>
-              <Eyebrow>How it works</Eyebrow>
-              <h2 className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
-                <span className="block text-navy-900">Finding your accountant,</span>
-                <span className="block text-green-700">made simple.</span>
-              </h2>
-            </div>
-            <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
-              About 60 seconds to get started.
-              <br />
-              Three simple steps to your local match.
-            </p>
-          </div>
-
-          <ol className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[1.4vw] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
-            {steps.flatMap((s, i) => [
-              <li key={s.title} className="relative">
-                <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
-                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
-                </div>
-                <span
-                  aria-hidden
-                  className="absolute left-0 top-0 grid h-12 w-12 place-items-center rounded-full bg-green-700 font-sans text-[1.4rem] font-extrabold text-white ring-[5px] ring-white lg:h-[clamp(3rem,3.6vw,5.2rem)] lg:w-[clamp(3rem,3.6vw,5.2rem)] lg:text-[clamp(1.4rem,1.9vw,2.8rem)]"
-                >
-                  {i + 1}
-                </span>
-                <h3 className="mt-3 font-sans text-[1.3rem] font-extrabold tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.3rem,1.75vw,2.6rem)]">{s.title}</h3>
-                <p className="mt-1 text-[0.98rem] leading-snug text-navy-900/80 lg:text-[clamp(0.98rem,1.2vw,1.8rem)]">{s.text}</p>
-              </li>,
-              i < steps.length - 1 && (
-                <li key={`arrow-${i}`} aria-hidden className="hidden pt-[6.5vw] lg:block">
-                  <StepArrow />
-                </li>
-              ),
-            ])}
-          </ol>
-        </div>
-
-        {/* 3 — navy start bar: full screen width, no space below it, so the gaps above and below the icon strip
-            that follows match (owner, 5 Oct 2026: 1cm extra space above it; 6 Oct 2026: moved up 1cm, so none) */}
-        <div className="mt-[2.5rem] lg:mt-[1.4vw]">
-          <StartBar />
-        </div>
       </div>
     </section>
   );
