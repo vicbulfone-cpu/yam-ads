@@ -45,9 +45,10 @@ const ArrowRight = () => (
 );
 
 /** Full-width navy "Ready to meet your accountant?" bar with the start button (used twice in this section);
- *  3mm more space inside at the top and bottom, margins unchanged (owner, 6 Oct 2026) */
+ *  3mm more space inside at the top and bottom, margins unchanged (owner, 6 Oct 2026);
+ *  same navy-into-green gradient on the right as the "Ready to find your accountant?" band (HomeMidCta, owner 6 Oct 2026) */
 const StartBar = ({ button = true, className = "" }: { button?: boolean; className?: string }) => (
-  <div className={`flex flex-col items-center gap-4 bg-navy-900 px-6 py-[calc(1.75rem+3mm)] text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:px-[3vw] lg:py-[calc(0.9vw+3mm)] lg:text-left ${className}`}>
+  <div className={`flex flex-col items-center gap-4 bg-[linear-gradient(100deg,#0a3a7c_0%,#0b4583_45%,#0b6b6a_75%,#0f9a4a_100%)] px-6 py-[calc(1.75rem+3mm)] text-center lg:flex-row lg:justify-center lg:gap-[3vw] lg:px-[3vw] lg:py-[calc(0.9vw+3mm)] lg:text-left ${className}`}>
     <p className="font-sans text-[1.6rem] font-extrabold leading-tight tracking-[-0.02em] text-white lg:text-[clamp(1.6rem,2.1vw,3.2rem)]">Ready to meet your accountant?</p>
     <span aria-hidden className="hidden h-[2.6vw] w-px bg-white/40 lg:block" />
     <p className="text-[1.02rem] text-white/90 lg:text-[clamp(1rem,1.2vw,1.8rem)]">Your needs, your area, your accountant.</p>
