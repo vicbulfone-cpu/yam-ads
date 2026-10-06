@@ -1113,3 +1113,26 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 }/* cards in a row share one height; a closed card keeps its words centred in it */
 .faq8 { align-items: stretch; }
 .faq8-card:not([open]) > .faq8-sum { height: 100%; }
+/* owner's updated "faq example" picture (6 Oct 2026): the owner's colourful icons drawn larger (about a fifth of the card's
+   width), roomier cards, wider gaps between rows, and a short coloured tab on the top edge of each card (green, then blue,
+   alternating). */
+.faq8-card { position: relative; --icon: 3.6rem; }
+@media (min-width: 640px) { .faq8-card { --icon: 4.4rem; } }
+.faq8-card::before {
+  content: ""; position: absolute; top: -3px; left: 1.4rem; width: 2.6rem; height: 5px; border-radius: 999px; background: #2fc46a;
+}
+.faq8-card:nth-child(even)::before { background: #3a86e8; }
+.faq8 { row-gap: 1.1rem; }
+@media (min-width: 1024px) {
+  .faq8 { column-gap: clamp(0.7rem, 0.75vw, 1.1rem); row-gap: clamp(1.1rem, 1.6vw, 2.4rem); }
+  .faq8-card { --pad: clamp(0.85rem, 1vw, 1.5rem); --icon: clamp(4.6rem, 6.6vw, 9.5rem); --gap: clamp(0.7rem, 0.8vw, 1.2rem);
+    --num: clamp(1.9rem, 2.1vw, 3rem); --plus: clamp(2rem, 2.3vw, 3.3rem); }
+  .faq8-card::before { left: clamp(1.4rem, 2vw, 3rem); width: clamp(2.6rem, 2.9vw, 4.2rem); height: clamp(4px, 0.3vw, 6px); top: calc(-0.5 * clamp(4px, 0.3vw, 6px)); }
+  .faq8-sum { padding-block: clamp(1.2rem, 1.9vw, 2.8rem); }
+  .faq8-q { font-size: clamp(0.98rem, 1.07vw, 1.6rem); }
+  .faq8-teaser { font-size: clamp(0.82rem, 0.9vw, 1.35rem); margin-top: 0.45rem; }
+}
+@media (min-width: 1024px) {
+  /* the card grid runs a little wider than the heading, as in the owner's picture (centred, up to 96% of the screen) */
+  .faq8 { width: min(96vw, calc(100% + 8vw)); margin-left: calc((100% - min(96vw, calc(100% + 8vw))) / 2); }
+}

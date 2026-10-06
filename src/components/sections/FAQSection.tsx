@@ -31,7 +31,7 @@ function FaqCard({ f, i }: { f: Faq; i: number }) {
   return (
     <details className="faq8-card group">
       <summary className="faq8-sum">
-        <Image src={FAQ_ICONS[i]} alt="" width={96} height={96} className="faq8-icon" />
+        <Image src={FAQ_ICONS[i]} alt="" width={118} height={118} className="faq8-icon" />
         <span aria-hidden="true" className="faq8-num" />
         <span className="faq8-q">{f.q}</span>
         <span aria-hidden="true" className="faq8-teaser" data-teaser={FAQ_TEASERS[i]} />

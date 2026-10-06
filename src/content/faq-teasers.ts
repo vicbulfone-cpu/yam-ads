@@ -27,15 +27,15 @@ export const HOME_EXTRA_FAQS: { q: string; a: string }[] = [
   },
 ];
 
-/** The owner's eight FAQ icons (hero section/8 icons faq), copied to public/images/home/faq; same order as the questions. */
+/** The owner's nine FAQ icons (hero section/icons faq, 6 Oct 2026), copied to public/images/home/faq; same order as the questions. */
 export const FAQ_ICONS = [
-  "01-clock-contact-time",
-  "02-shield-qualified-accountants",
-  "03-coins-matching-cost",
-  "04-document-accounting-services",
-  "05-phone-online-service",
-  "06-gear-matching-process",
-  "07-people-accountant-fit",
-  "08-pin-regional-coverage",
-  "09-clipboard-your-details", // drawn to match the owner's set (not owner-supplied)
+  "01-clock",
+  "02-shield",
+  "03-coins",
+  "04-document",
+  "05-phone",
+  "06-gears",
+  "07-people",
+  "08-location-pin",
+  "09-clipboard",
 ].map((n) => `/images/home/faq/${n}.png`);

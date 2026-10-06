@@ -30,10 +30,9 @@ Source: owner-supplied files in `hero section/` (owner's own images, supplied fo
 tradie-van, woman-laptop-home, woman-laptop-office, couple-laptop, house-front, client-meeting, city-desk-laptop, cafe-owner-man, cafe-owner-woman, rural-couple-portrait, rural-couple-fence, retirees-coast, family-walk, couple-house, team-meeting, market-team, family-table, coast, accountant-client-desk; icons in `public/images/home/icons/`.
 
 ## Home page FAQ icons supplied by the owner (6 Oct 2026)
-Source: owner-supplied files in `hero section/8 icons faq/` (owner's own images, supplied for use on this site), copied unchanged
-(96 × 96 PNG) to `public/images/home/faq/`: 01-clock-contact-time, 02-shield-qualified-accountants, 03-coins-matching-cost,
-04-document-accounting-services, 05-phone-online-service, 06-gear-matching-process, 07-people-accountant-fit, 08-pin-regional-coverage.
-09-clipboard-your-details was drawn for this site (original artwork, no third-party source) to match the owner's set.
+Source: owner-supplied files in `hero section/icons faq/` (owner's own images, supplied for use on this site), copied unchanged
+(118 × 118 PNG) to `public/images/home/faq/`: 01-clock, 02-shield, 03-coins, 04-document, 05-phone, 06-gears, 07-people,
+08-location-pin, 09-clipboard. (They replace the earlier eight-icon set and the ninth icon drawn for the site.)
 
 ## Data
 
