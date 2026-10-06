@@ -19,9 +19,12 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       section.style.marginTop = "";
       const pic = document.querySelector(".desk-hero-img");
       const box = document.querySelector(".desk-hero-card .mc");
-      if (window.innerWidth < 1024 || !pic || !box) return;
       // the bar under the hero photo counts too (owner, 6 Oct 2026: content moves down to make room for it)
-      const bar = document.querySelector(".hero-bar");
+      const bar = document.querySelector<HTMLElement>(".hero-bar");
+      bar?.style.removeProperty("--hb-clear");
+      if (window.innerWidth < 1024 || !pic || !box) return;
+      // the bar's words are centred across the whole bar, so they start below the match box where it overlaps the bar
+      if (bar) bar.style.setProperty("--hb-clear", `${Math.max(0, box.getBoundingClientRect().bottom - bar.getBoundingClientRect().top)}px`);
       const heroBottom = Math.max(pic.getBoundingClientRect().bottom, box.getBoundingClientRect().bottom, bar ? bar.getBoundingClientRect().bottom : 0);
       const pull = content.getBoundingClientRect().top - heroBottom - GAP;
       if (pull !== 0) section.style.marginTop = `${-pull}px`;
