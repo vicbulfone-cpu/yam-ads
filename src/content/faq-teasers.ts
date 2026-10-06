@@ -1,7 +1,7 @@
 /**
  * Home page FAQ: the short line under each question, word for word from the owner's "faq example" design picture
- * (hero section/ad landing pages/faq example.png, 6 Oct 2026). Same order as the FAQ questions; drawn by CSS
- * (FAQSection.tsx) so each question's text stays identical to the FAQPage structured data.
+ * (hero section/ad landing pages/faq example.png, 6 Oct 2026). Same order as the FAQ questions; shown as real page text
+ * under each question (FAQSection.tsx).
  */
 export const FAQ_TEASERS = [
   "Find out typical timeframes and what to expect after you submit your details.",

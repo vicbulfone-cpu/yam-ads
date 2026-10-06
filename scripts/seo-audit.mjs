@@ -95,8 +95,12 @@ for (const p of paths) {
     schemaCounts.faq++;
     if (!faq.mainEntity?.length || faq.mainEntity.length !== summaryCount) add(problems, p, `FAQ schema has ${faq.mainEntity?.length ?? 0} answers but ${summaryCount} visible questions`);
     const visibleFaqs = [...h.matchAll(/<details\b[^>]*>([\s\S]*?)<\/details>/gi)].map(([, detail]) => {
-      const summary = (detail.match(/<summary\b[^>]*>([\s\S]*?)<\/summary>/i) || [])[1] || "";
-      const answer = detail.slice(detail.indexOf("</summary>") + "</summary>".length);
+      // a card may hold extra visible text (number, short line); then the question and answer are the elements marked
+      // data-faq-question / data-faq-answer, and only those are compared with the FAQPage structured data
+      const marked = (attr, html) => (html.match(new RegExp(`<([a-z0-9]+)\\b[^>]*\\b${attr}\\b[^>]*>([\\s\\S]*?)<\\/\\1>`, "i")) || [])[2];
+      const summaryHtml = (detail.match(/<summary\b[^>]*>([\s\S]*?)<\/summary>/i) || [])[1] || "";
+      const summary = marked("data-faq-question", summaryHtml) ?? summaryHtml;
+      const answer = marked("data-faq-answer", detail) ?? detail.slice(detail.indexOf("</summary>") + "</summary>".length);
       return { question: norm(plainText(summary)), answer: norm(plainText(answer)) };
     });
     for (const [i, entry] of (faq.mainEntity || []).entries()) {

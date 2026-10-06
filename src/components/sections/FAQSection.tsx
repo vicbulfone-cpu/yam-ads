@@ -24,23 +24,25 @@ function homeFaqs(): Faq[] {
  * the line beside it behind a divider), then nine smaller cards, three per row on laptops and desktops (two on
  * tablets, one on phones). Each card: round icon, mint number badge, the question, a short line under it and a round
  * plus that turns into a green minus when the answer is open. Styles: ".faq8" in globals.css.
- * The number and the short line are drawn by CSS (::before), so each card's text is exactly the question and answer
- * in the FAQPage structured data (the ninth comes from HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
+ * Every word is real text in the page (crawlable). The question and answer carry data-faq-question / data-faq-answer;
+ * those two match the FAQPage structured data word for word (scripts/seo-audit.mjs checks them; the ninth comes from
+ * HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
  */
 function FaqCard({ f, i }: { f: Faq; i: number }) {
   return (
     <details className="faq8-card group">
       <summary className="faq8-sum">
-        <Image src={FAQ_ICONS[i]} alt="" width={118} height={118} className="faq8-icon" />
-        <span aria-hidden="true" className="faq8-num" />
-        <span className="faq8-q">{f.q}</span>
-        <span aria-hidden="true" className="faq8-teaser" data-teaser={FAQ_TEASERS[i]} />
+        {/* the owner's original PNG, served as is (no recompression) so it stays crisp */}
+        <Image src={FAQ_ICONS[i]} alt="" width={118} height={118} unoptimized className="faq8-icon" />
+        <span aria-hidden="true" className="faq8-num">{String(i + 1).padStart(2, "0")}</span>
+        <span className="faq8-q" data-faq-question="">{f.q}</span>
+        <span className="faq8-teaser">{FAQ_TEASERS[i]}</span>
         <span aria-hidden="true" className="faq8-plus">
           <span className="faq8-bar" />
           <span className="faq8-bar faq8-bar-v" />
         </span>
       </summary>
-      <p className="faq8-a">{f.a}</p>
+      <p className="faq8-a" data-faq-answer="">{f.a}</p>
     </details>
   );
 }
