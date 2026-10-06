@@ -205,7 +205,8 @@ export default function HomeMatchIntro() {
         {/* navy start bar straight under the words and photo (owner, 5 Oct 2026: replaces the three reassurance points);
             sits right against the bottom of the photo with no gap (owner, 6 Oct 2026); it overlaps the photo by 2px so
             no thin line of white shows at the seam, and has no button, just the two lines centred (owner, 6 Oct 2026) */}
-        <StartBar button={false} className="relative z-10 -mt-[2px]" />
+        {/* a further 3mm inside at the top and bottom of this bar only, margin unchanged (owner, 6 Oct 2026) */}
+        <StartBar button={false} className="relative z-10 -mt-[2px] py-[calc(1.75rem+6mm)]! lg:py-[calc(0.9vw+6mm)]!" />
       </div>
     </section>
   );
