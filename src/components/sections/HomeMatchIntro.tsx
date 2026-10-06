@@ -194,8 +194,8 @@ export default function HomeMatchIntro() {
             sits right against the bottom of the photo with no gap (owner, 6 Oct 2026); it overlaps the photo by 2px so
             no thin line of white shows at the seam, and has no button, just the two lines centred (owner, 6 Oct 2026) */}
         {/* (its extra 3mm top and bottom was taken off again, owner 6 Oct 2026: same height as the other bar) */}
-        {/* owner, 6 Oct 2026: its bold words read "Beyond the search, matched to you" */}
-        <StartBar button={false} title="Beyond the search, matched to you" className="relative z-10 -mt-[2px]" />
+        {/* owner, 6 Oct 2026: its bold words read "Less searching, a better match." */}
+        <StartBar button={false} title="Less searching, a better match." className="relative z-10 -mt-[2px]" />
       </div>
     </section>
   );
