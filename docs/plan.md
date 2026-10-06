@@ -56,6 +56,7 @@ Cities (13): Sydney, Newcastle - Maitland, Melbourne, Geelong, Brisbane, Gold Co
 |---|---|---|
 | `/ghl-redirect` | The old questionnaire page; its address is a leftover from the old GoHighLevel test setup. | New questionnaire at `/questionnaire` (noindex); permanent redirect from `/ghl-redirect`. It was never in the sitemap. |
 | `/admin-login`, `/admin-dashboard` | Old browser-only admin; not rebuilt. | Return "not found" (or redirect to home). |
+| `/locations/melbourne` | Removed at the owner's request (6 Oct 2026); it was this site's only city page. | Permanent redirect (308) to the home page (`next.config.ts`); out of the sitemap; footer "Locations" column and the coverage-section link removed (Melbourne stays listed, unlinked). |
 | `/privacy` | In the old site this page has **no meta tags of its own**: its title is the home page title, its canonical points to `/`, and it has no robots tag. | I recommend giving it its own title and a canonical to itself. This is a fix, so needs your OK. |
 
 ## Approved exceptions to "no word changes"
@@ -215,7 +216,7 @@ Later (after the main build): Google Ads landing pages and ads questionnaire on 
 ## Site questionnaire = the four ad questionnaires combined (owner, 6 Oct 2026)
 
 Replaces the old site questionnaire (and the "Questionnaire popup" pages described above). Applies to every site page with
-the match box (home, Melbourne, How it works, How we select, About, Contact, Privacy, Terms) and every questionnaire link.
+the match box (home, How it works, How we select, About, Contact, Privacy, Terms) and every questionnaire link.
 The ad landing pages and their four questionnaires are unchanged.
 
 - **Match box:** tick one or more of the four services. Start links to `/questionnaire?service=…` (one per service).

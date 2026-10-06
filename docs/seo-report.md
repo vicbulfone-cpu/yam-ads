@@ -1,10 +1,10 @@
 # SEO audit — 2026-10-06
 
-Pages crawled (from sitemap): **8** · internal links checked: 153
+Pages crawled (from sitemap): **7** · internal links checked: 124
 
 Heading outline vs old pages: 0 extra heading(s), 0 old heading(s) not found.
 
-Structured data totals: 2 Service pages · 7 BreadcrumbList pages · 2 FAQPage blocks (visible answers checked).
+Structured data totals: 1 Service pages · 6 BreadcrumbList pages · 1 FAQPage blocks (visible answers checked).
 
 ## Result: PASS
 
@@ -24,7 +24,7 @@ Structured data totals: 2 Service pages · 7 BreadcrumbList pages · 2 FAQPage b
 - PASS — Googlebot receives the real page (200, has its H1)
 - PASS — Bingbot receives the real page (200)
 - PASS — redirects keep gclid / utm query strings
-- PASS — upper-case URL /Locations/Melbourne redirects to lowercase (308)
+- PASS — upper-case URL /How-It-Works redirects to lowercase (308)
 - PASS — robots.txt names Amazonbot
 - PASS — robots.txt names Applebot
 - PASS — robots.txt names DuckAssistBot

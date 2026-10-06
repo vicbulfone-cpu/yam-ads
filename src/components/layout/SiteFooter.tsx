@@ -29,12 +29,7 @@ const HOME_FOOTER_COLUMNS: { title: string; links: { text: string; href?: string
       { text: "Contact", href: "/contact" },
     ],
   },
-  {
-    title: "Locations",
-    links: [
-      { text: "Melbourne", href: "/locations/melbourne" },
-    ],
-  },
+  // (the "Locations" column held only Melbourne; removed with that page, owner 6 Oct 2026)
   {
     title: "Information",
     links: [
@@ -54,7 +49,7 @@ function HomeFooter({ showAds }: { showAds?: boolean }) {
   return (
     <footer className="border-t border-line bg-[#f7f9fb]">
       <div className="container-page pb-6 pt-12 md:pt-14">
-        <div className={`grid gap-10 ${showAds ? "md:grid-cols-[1.4fr_0.8fr_1.3fr_1fr_0.7fr]" : "md:grid-cols-[1.4fr_0.8fr_1.3fr_1fr]"}`}>
+        <div className={`grid gap-10 ${showAds ? "md:grid-cols-[1.4fr_0.8fr_1fr_0.7fr]" : "md:grid-cols-[1.4fr_0.8fr_1fr]"}`}>
           <div>
             <p className="text-[1.45rem] font-extrabold tracking-tight text-navy-900">
               Your Accountant <span className="text-green-700">Match</span>

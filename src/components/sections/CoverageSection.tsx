@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /**
  * Home page: "Connecting Australians with local accountants".
- * The areas served; Melbourne is the only one with its own page on this site, so it is the only link.
+ * The areas served. None has its own page on this site (the Melbourne page was removed, owner 6 Oct 2026), so none is a link.
  */
 
 const rows: { label: string; places: { name: string; href?: string }[] }[] = [
@@ -10,7 +10,7 @@ const rows: { label: string; places: { name: string; href?: string }[] }[] = [
     label: "Capital cities",
     places: [
       { name: "Sydney" },
-      { name: "Melbourne", href: "/locations/melbourne" },
+      { name: "Melbourne" },
       { name: "Brisbane" },
       { name: "Perth" },
       { name: "Adelaide" },

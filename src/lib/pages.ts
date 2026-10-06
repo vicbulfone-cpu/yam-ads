@@ -8,8 +8,9 @@ const PRIVATE_PREFIXES = ["/api", "/match", "/accountant-demo-x7k2", "/questionn
 const isPrivatePath = (p: string) => PRIVATE_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`));
 
 /** YAM ads is a scaled-back copy of the main site (owner, 5 Oct 2026). Only these content pages are kept from the old site;
- *  /how-we-select-accountants and /questionnaire have their own route files. Add a path here to bring a page back. */
-const KEPT_PAGES = ["/", "/locations/melbourne", "/how-it-works", "/about", "/contact", "/privacy", "/terms"];
+ *  /how-we-select-accountants and /questionnaire have their own route files. Add a path here to bring a page back.
+ *  /locations/melbourne was removed (owner, 6 Oct 2026) and permanently redirects to the home page (next.config.ts). */
+const KEPT_PAGES = ["/", "/how-it-works", "/about", "/contact", "/privacy", "/terms"];
 
 /** Ad landing pages /ad-1 … /ad-6: home page hero, blank space below (owner will decide their content). noindex. */
 export const AD_PAGES = [1, 2, 3, 4, 5, 6].map((n) => `/ad-${n}`);

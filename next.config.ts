@@ -14,6 +14,14 @@ const nextConfig: NextConfig = {
   // Picture quality levels the site may serve: 75 for ordinary pictures, 85 for the phone hero, 92 for the hero photograph (kept sharp).
   images: { qualities: [75, 85, 92] },
 
+  // Removed pages keep their old address working with a permanent redirect (listed in docs/plan.md).
+  async redirects() {
+    return [
+      // Melbourne city page removed (owner, 6 Oct 2026)
+      { source: "/locations/melbourne", destination: "/", permanent: true },
+    ];
+  },
+
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
