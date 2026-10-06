@@ -148,10 +148,9 @@ export default function HomeMatchIntro() {
           </div>
         </div>
 
-        {/* navy start bar straight under the words and photo (owner, 5 Oct 2026: replaces the three reassurance points) */}
-        <div className="pt-2 sm:pt-5 lg:pt-[1.1vw]">
-          <StartBar />
-        </div>
+        {/* navy start bar straight under the words and photo (owner, 5 Oct 2026: replaces the three reassurance points);
+            sits right against the bottom of the photo with no gap (owner, 6 Oct 2026) */}
+        <StartBar />
 
         {/* 2 — how it works (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
         <div className="container-page home-wide pt-[calc(2.5rem+1.85cm)] lg:pt-[calc(2vw+1.85cm)]">
