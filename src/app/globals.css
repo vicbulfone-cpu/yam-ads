@@ -761,6 +761,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* city pages: breadcrumbs lifted above the headline; net height 0 so the headline sits where it does on the home page */
 .desk-hero-crumbs { height: 1.25rem; margin-top: -2rem; margin-bottom: 0.75rem; }
 .desk-hero-sub { margin-top: 0.7rem; font-size: clamp(1.05rem, 4.4vw, 1.3rem); line-height: 1.3; color: var(--navy-900); }
+/* home page only: headline and supporting line lifted 5mm; nothing else moves (owner, 7 Oct 2026) */
+.zz-phone .desk-hero-h1, .zz-phone .desk-hero-sub { position: relative; top: -5mm; }
 .desk-hero-points { transform: translateY(0.5cm); margin-top: 1.25rem; display: grid; gap: 0.8rem; position: relative; isolation: isolate; }
 .desk-hero-points::before {
   content: "";
@@ -1001,6 +1003,14 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* home page hero match box (owner, 5 Oct 2026): 1cm taller, shared out as 1.25mm more space above and below each of the
    four service rows. The box sits 0.5cm higher and may come within 1mm of the screen bottom, so it fits without shrinking. */
 .desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+/* home page, laptops and desktops only (owner, 7 Oct 2026): the match box 0.8cm shorter (1mm less above and below each of
+   the four rows; its top stays put) and the three hero icons at 70% of their size */
+@media (min-width: 1024px) {
+  .zz-phone .desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.025cm); }
+  .zz-phone .desk-hero-points img { width: calc(2.75rem * 0.7); height: calc(2.75rem * 0.7); }
+  .zz-phone .desk-hero-points { top: -1cm; } /* the three points under the headline lifted 1cm (owner, 7 Oct 2026) */
+}
+@media (min-width: 1536px) { .zz-phone .desk-hero-points img { width: calc(3.75rem * 0.7); height: calc(3.75rem * 0.7); } }
 .mc-row.is-on { background: #eefaf2; }
 .mc-tile { flex: none; display: grid; place-items: center; width: clamp(3.3rem, calc(var(--u) * 12), 5.7rem); aspect-ratio: 1; border-radius: clamp(0.7rem, calc(var(--u) * 2.4), 1.1rem); }
 .mc-tile.is-blue { background: #e7f0fe; color: #1565f5; }
@@ -1221,7 +1231,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .home-trust-list > li:first-child { padding-left: 0; }
   .home-trust-list > li:last-child { padding-right: 0; }
 }
-
 /* Home page trust section "How we select accountants" (owner, 6 Oct 2026; HomeSelection.tsx), laid out like the Common
    questions section: heading, credential line and link on the left behind a thin divider (laptops and up);
    the seven checks on the right in two columns (one on phones) as filled boxes with no border and no icons, the cost note under them. Each box: the
