@@ -846,9 +846,21 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .mc-hero-wrap { max-width: calc(1575px + 2 * max(var(--gutter), 3.6vw)); padding-inline: max(var(--gutter), 3.6vw); padding-top: 0; }
   .mc-hero-grid { grid-template-columns: minmax(0, 1fr) calc(clamp(26rem, 31.6vw, 39.2rem) + var(--mc-extra-w)); column-gap: clamp(1.75rem, 3vw, 4.5rem); }
   .mc-hero-text { padding-top: 3rem; }
-  .mc-hero-card { margin-top: 1.25rem;
+  .mc-hero-card { margin-top: calc(1.25rem - 0.5cm);
     transform: translateX(min(1.6cm, calc(max(var(--gutter), 3.6vw) - 0.5rem + max(0px, (100vw - 1575px - 2 * max(var(--gutter), 3.6vw)) / 2)))); }
 }
+/* Every match box on the site has the Ad 1 page's size and position (owner, 6 Oct 2026; .bz-grid-wide / .bz-card-wide in
+   ads.css): from 1200px the box column is 36.5vw wide with the text still sized from the home box's width, and the rows
+   get the same extra 1.25mm above and below. */
+.mc-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+@media (min-width: 1200px) {
+  .desk-hero-grid, .mc-hero-grid { grid-template-columns: minmax(0, 1fr) calc(clamp(27rem, 36.5vw, 46rem) + var(--mc-extra-w)); }
+  :is(.desk-hero-card, .mc-hero-card) .mc * { --u: calc(clamp(26rem, 31.6vw, 39.2rem) / 100 * 1.045); }
+  :is(.desk-hero-card, .mc-hero-card) .mc-rows { min-inline-size: 0; grid-template-columns: minmax(0, 1fr); }
+  :is(.desk-hero-card, .mc-hero-card) .mc-row { min-width: 0; }
+}
+/* phones: the box runs to 0.6rem from the screen edges, as on the ad pages */
+@media (max-width: 767px) { .mc-hero-card, .desk-hero-card { margin-inline: calc(0.6rem - var(--gutter)); } }
 /* Home page on phones only (below 768px; owner, 4 Oct 2026): its own picture ("mobile hero") shown whole, full width, under the
    headline and the three points; the match box starts just below it so the picture's badges stay visible. */
 @media (max-width: 767px) {
@@ -1011,8 +1023,13 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .mc-dot { margin-inline: clamp(0.45rem, 1.6cqw, 0.8rem); }
 /* Small laptops (1024–1279px): less room beside the match box, so the three benefit points use two rows, and below
    1200px the headline and line under it are a little smaller, keeping every word clear of the box. */
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
   .desk-hero-points { grid-template-columns: repeat(2, max-content); }
+}
+/* the Ad 1-size match box (from 1200px) leaves a little less room: the headline is drawn 8% smaller so it stays clear of it */
+@media (min-width: 1200px) {
+  .desk-hero-h1 { font-size: calc(clamp(2.3rem, 4.15vw, 4.95rem) * 0.92); }
+  .desk-hero-h1.is-city { font-size: calc(clamp(2.3rem, 4.15vw, 4.95rem) * 0.86 * 0.92); }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .desk-hero-h1 { font-size: 3.5vw; }
