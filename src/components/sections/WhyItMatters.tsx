@@ -25,38 +25,48 @@ const iconProps = {
 const ClockIcon = () => (
   <svg {...iconProps}>
     <circle cx="12" cy="12" r="9" />
-    <path d="M12 7v5l3 2" />
+    {/* hands move separately (animated on desktops: ".wim-" in globals.css) */}
+    <path className="wim-hand-h" d="M12 12l3 2" />
+    <path className="wim-hand-m" d="M12 12V7" />
   </svg>
 );
 
 const CoinsIcon = () => (
   <svg {...iconProps}>
-    <ellipse cx="9" cy="6" rx="6" ry="2.5" />
-    <path d="M3 6v4c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V6" />
-    <path d="M3 10v4c0 1.4 2.7 2.5 6 2.5" />
-    <path d="M3 14v4c0 1.4 2.7 2.5 6 2.5" />
-    <ellipse cx="15" cy="14" rx="6" ry="2.5" />
-    <path d="M9 14v4c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4" />
+    <g className="wim-coins-a">
+      <ellipse cx="9" cy="6" rx="6" ry="2.5" />
+      <path d="M3 6v4c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V6" />
+      <path d="M3 10v4c0 1.4 2.7 2.5 6 2.5" />
+      <path d="M3 14v4c0 1.4 2.7 2.5 6 2.5" />
+    </g>
+    <g className="wim-coins-b">
+      <ellipse cx="15" cy="14" rx="6" ry="2.5" />
+      <path d="M9 14v4c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4" />
+    </g>
   </svg>
 );
 
 const PeopleIcon = () => (
   <svg {...iconProps}>
-    <circle cx="8.5" cy="8" r="3" />
-    <circle cx="16" cy="8.5" r="2.6" />
-    <path d="M2.5 19.5c.4-3.4 2.9-5.5 6-5.5s5.6 2.1 6 5.5" />
-    <path d="M15 14.1c.3 0 .6-.1 1-.1 2.7 0 4.9 1.9 5.3 4.9" />
+    <g className="wim-person-a">
+      <circle cx="8.5" cy="8" r="3" />
+      <path d="M2.5 19.5c.4-3.4 2.9-5.5 6-5.5s5.6 2.1 6 5.5" />
+    </g>
+    <g className="wim-person-b">
+      <circle cx="16" cy="8.5" r="2.6" />
+      <path d="M15 14.1c.3 0 .6-.1 1-.1 2.7 0 4.9 1.9 5.3 4.9" />
+    </g>
   </svg>
 );
 
 const ChartIcon = () => (
   <svg {...iconProps}>
     <path d="M4 20h16" />
-    <rect x="5" y="13" width="3" height="5" rx="0.6" />
-    <rect x="10.5" y="10" width="3" height="8" rx="0.6" />
-    <rect x="16" y="7" width="3" height="11" rx="0.6" />
-    <path d="M4 10l5-4 4 2 6-5" />
-    <path d="M16 3h3v3" />
+    <rect className="wim-bar" style={{ "--b": 0 } as React.CSSProperties} x="5" y="13" width="3" height="5" rx="0.6" />
+    <rect className="wim-bar" style={{ "--b": 1 } as React.CSSProperties} x="10.5" y="10" width="3" height="8" rx="0.6" />
+    <rect className="wim-bar" style={{ "--b": 2 } as React.CSSProperties} x="16" y="7" width="3" height="11" rx="0.6" />
+    <path className="wim-trend" pathLength={1} d="M4 10l5-4 4 2 6-5" />
+    <path className="wim-trend-head" d="M16 3h3v3" />
   </svg>
 );
 
