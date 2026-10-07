@@ -72,38 +72,27 @@ export function MatchSearching({ firstName }: { firstName: string }) {
 }
 
 /** Navy progress header: at most 5 milestones, the real pages shared out evenly across them (src/lib/progress.ts). */
+/**
+ * Progress at the top of every questionnaire page (owner, 7 Oct 2026): a slim, quiet strip on white, about a quarter of
+ * the old navy panel's height: a green bar with one circle per step (done = solid green with a tick, current = green
+ * ring, still to come = light ring). The words ("Your Match in Progress", "Step N of M") stay for screen readers.
+ */
 export function AdProgress({ stepNumber, total, badge, stepOf }: { stepNumber: number; total: number; badge: string; stepOf: string }) {
-  const pct = Math.round((stepNumber / total) * 100);
   const { shown, current } = progressMilestones(stepNumber, total);
+  const filled = shown > 1 ? ((current - 1) / (shown - 1)) * 100 : 100;
+  const label = `${badge}: ${stepOf.replace("{n}", String(current)).replace("{total}", String(shown))}`;
   return (
-    <div className="q-hero relative overflow-hidden bg-navy-900 px-4 pb-4 pt-3.5 text-white sm:px-8">
-      <div aria-hidden className="absolute inset-0 opacity-70 [background:radial-gradient(55%_120%_at_90%_-10%,rgba(0,174,65,.5),transparent_60%),radial-gradient(45%_100%_at_0%_110%,rgba(26,90,166,.8),transparent_60%)]" />
-      <div aria-hidden className="dots absolute inset-0 opacity-15 [filter:invert(1)]" />
-      <div className="relative mx-auto max-w-2xl text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[0.7rem] font-bold uppercase tracking-[0.14em] text-green-200 backdrop-blur">
-          <span aria-hidden className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-400 motion-reduce:animate-none" />
-          {badge}
-        </span>
-        <div className="mx-auto mt-3 flex max-w-md items-center" aria-hidden>
-          {Array.from({ length: shown }, (_, i) => {
-            const done = current > i + 1;
-            const here = current === i + 1;
-            const last = i === shown - 1;
-            const size = last ? "h-9 w-9" : "h-8 w-8 text-[0.8rem]";
-            return (
-              <div key={i} className={`flex items-center ${last ? "" : "flex-1"}`}>
-                <span className={`grid shrink-0 place-items-center rounded-full font-bold transition-all duration-500 ${size} ${
-                  done ? "bg-green-500 text-white" : here ? "bg-white text-navy-900 shadow-[0_0_0_4px_rgba(0,174,65,.45)]" : "bg-white/15 text-white/70"}`}>
-                  {last ? <Sparkle width={16} height={16} /> : done ? <Check width={12} height={12} strokeWidth={3.4} /> : i + 1}
-                </span>
-                {!last && <span className="mx-1.5 h-1 flex-1 overflow-hidden rounded-full bg-white/20"><span className="block h-full rounded-full bg-gradient-to-r from-green-400 to-green-500 transition-all duration-700" style={{ width: done ? "100%" : "0%" }} /></span>}
-              </div>
-            );
-          })}
-        </div>
-        <p className="mt-2.5 text-xs font-semibold text-navy-100">
-          {stepOf.replace("{n}", String(current)).replace("{total}", String(shown))} <span className="text-green-300">· {pct}%</span>
-        </p>
+    <div className="q-progress" role="progressbar" aria-valuemin={1} aria-valuemax={shown} aria-valuenow={current} aria-label={label}>
+      <div className="q-progress-track" aria-hidden>
+        <span className="q-progress-fill" style={{ width: `${filled}%` }} />
+        {Array.from({ length: shown }, (_, i) => {
+          const state = current > i + 1 ? "done" : current === i + 1 ? "here" : "todo";
+          return (
+            <span key={i} className={`q-progress-dot is-${state}`} style={{ left: `${shown > 1 ? (i / (shown - 1)) * 100 : 50}%` }}>
+              {state === "done" && <Check width={9} height={9} strokeWidth={4} />}
+            </span>
+          );
+        })}
       </div>
     </div>
   );
