@@ -59,12 +59,9 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                 )}
 
                 {/* no hover effect (owner, 7 Oct 2026); the words always get the wider column, so "We match you by area" fits on one line */}
-                <article className={`hiw-card grid overflow-hidden rounded-[1.4rem] border border-navy-900/10 bg-white shadow-[0_24px_50px_-30px_rgba(7,50,101,0.45)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"} lg:grid-cols-2`}>
+                <article className={`hiw-card grid overflow-hidden rounded-[1.4rem] border border-navy-900/10 bg-white shadow-[0_24px_50px_-30px_rgba(7,50,101,0.45)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"}`}>
                   {home && (
-                    // tablets/desktops (owner, 7 Oct 2026): the picture keeps its earlier size however tall the words make the box:
-                    // inset with a white margin and rounded corners, centred top-to-bottom. Phones: full width at the top of the box.
-                    <div className={`md:flex md:items-center md:p-3 lg:p-[clamp(1.25rem,1.6vw,2rem)] ${flip ? "md:order-2" : ""}`}>
-                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-white md:aspect-[4/5] md:rounded-[1rem] lg:aspect-[5/3]">
+                    <div className={`relative aspect-[16/9] overflow-hidden bg-white md:aspect-auto md:min-h-[17rem] ${flip ? "md:order-2" : ""}`}>
                       <Image
                         // the map (step 2) uses a tightly trimmed copy, so it fills its box without being cropped
                         src={home.image.includes("map") ? "/images/home/australia-map-pin-tight.webp" : home.image}
@@ -74,7 +71,6 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                         className={`${home.image.includes("map") ? "object-contain" : "object-cover"}`} /* no hover zoom (owner, 7 Oct 2026) */
                         style={{ objectPosition: home.position, transform: home.shift }}
                       />
-                    </div>
                     </div>
                   )}
                   {/* desktops (owner, 7 Oct 2026): the words in the step boxes at 140% of their earlier size */}
