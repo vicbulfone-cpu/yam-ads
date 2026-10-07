@@ -1,7 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { howWeSelect } from "@/content/how-we-select";
 import { CREDENTIAL } from "@/content/wording";
+import { SELECT_ICONS } from "./SelectIcons";
+import WimReveal from "./WimReveal";
 
 /**
  * Home page trust section (owner, 6 Oct 2026: "for SEO trust ... make look professional"): points to
@@ -15,10 +16,7 @@ import { CREDENTIAL } from "@/content/wording";
  * on phones. The full description of each check is on /how-we-select-accountants. The cost note sits under the grid.
  * Every word is real page text. Styles: ".sel-" in globals.css.
  */
-const ICONS = [
-  "01-identity-card", "02-professional-registration", "03-services-briefcase", "04-location-pin",
-  "05-insurance-shield", "06-information-review", "07-customer-concerns",
-].map((n) => `/images/home/select-icons/${n}.webp`);
+// (owner, 7 Oct 2026: the icons are now animated line icons, SelectIcons.tsx; the earlier picture icons are retired)
 
 export default function HomeSelection() {
   return (
@@ -37,10 +35,11 @@ export default function HomeSelection() {
         </div>
 
         <div className="sel-right">
+          <WimReveal list=".sel-checks" />
           <ul className="sel-checks">
             {howWeSelect.checks.map((k, i) => (
-              <li key={k.n} className="sel-cell">
-                <Image src={ICONS[i]} alt="" width={110} height={110} className="sel-icon" />
+              <li key={k.n} className="sel-cell" style={{ "--i": i } as React.CSSProperties}>
+                {SELECT_ICONS[i]}
                 <p className="sel-title">{k.title}</p>
               </li>
             ))}

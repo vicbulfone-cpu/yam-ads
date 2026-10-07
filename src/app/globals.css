@@ -1813,3 +1813,71 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @keyframes wim-draw2 { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 @keyframes wim-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes wim-fade-in2 { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- "Vetted partner network" animated icons (owner, 7 Oct 2026; SelectIcons.tsx) ----------
+   Line icons in the tile colour. Desktops: each animates once as the grid scrolls into view (one after another) and
+   again on hover. ID card: a scan line sweeps down. Seal: it turns and the ribbons settle. Target: the arrow flies in
+   and the target pulses. Map: it unfolds and a dotted route draws. Umbrella: it opens and drops fall. Review: the arrows
+   turn and a tick draws. Chat: typing dots bounce. Off for reduced motion. */
+.si { color: var(--c); overflow: visible; }
+.si * { transform-box: view-box; }
+.si-scan { opacity: 0; }
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .si-rosette { transform-origin: 12px 9.5px; }
+  .si-ribbons { transform-origin: 12px 14px; }
+  .si-arrow, .si-ring { transform-origin: 11px 13px; }
+  .si-map-sheet, .si-canopy, .si-cycle { transform-origin: 12px 12px; }
+  .si-tick { stroke-dasharray: 1; }
+
+  .sel-checks.is-in .sel-cell { --d: calc(var(--i) * 150ms + 250ms); }
+  /* arrival (once) */
+  .sel-checks.is-in .si-scan { animation: si-scan 1.4s ease-in-out var(--d) both; }
+  .sel-checks.is-in .si-rosette { animation: si-turn 1.3s cubic-bezier(.3,1.3,.5,1) var(--d) both; }
+  .sel-checks.is-in .si-ribbons { animation: si-sway 1.3s ease-in-out var(--d) both; }
+  .sel-checks.is-in .si-arrow { animation: si-fly .7s cubic-bezier(.2,.8,.2,1) var(--d) both; }
+  .sel-checks.is-in .si-ring { animation: si-shake .45s ease-out calc(var(--d) + .65s) both; }
+  .sel-checks.is-in .si-map-sheet { animation: si-unfold .8s cubic-bezier(.3,1.3,.5,1) var(--d) both; }
+  .sel-checks.is-in .si-route { animation: si-route 1s ease-out calc(var(--d) + .5s) both; }
+  .sel-checks.is-in .si-canopy { animation: si-open .8s cubic-bezier(.3,1.4,.5,1) var(--d) both; }
+  .sel-checks.is-in .si-drop { animation: si-drop .9s ease-in calc(var(--d) + .6s + var(--k) * 180ms) 2 both; }
+  .sel-checks.is-in .si-cycle { animation: si-spin 1.2s cubic-bezier(.45,0,.25,1) var(--d) both; }
+  .sel-checks.is-in .si-tick { animation: si-draw .5s ease-out calc(var(--d) + 1s) both; }
+  .sel-checks.is-in .si-dot { animation: si-dot .9s ease-in-out calc(var(--d) + var(--k) * 150ms) 2 both; }
+  /* hover: the same again (other animation names, so they restart) */
+  .sel-cell:hover .si-scan { animation: si-scan2 1.4s ease-in-out both !important; }
+  .sel-cell:hover .si-rosette { animation: si-turn2 1.3s cubic-bezier(.3,1.3,.5,1) both !important; }
+  .sel-cell:hover .si-ribbons { animation: si-sway2 1.3s ease-in-out both !important; }
+  .sel-cell:hover .si-arrow { animation: si-fly2 .7s cubic-bezier(.2,.8,.2,1) both !important; }
+  .sel-cell:hover .si-ring { animation: si-shake2 .45s ease-out .65s both !important; }
+  .sel-cell:hover .si-map-sheet { animation: si-unfold2 .8s cubic-bezier(.3,1.3,.5,1) both !important; }
+  .sel-cell:hover .si-route { animation: si-route2 1s ease-out .5s both !important; }
+  .sel-cell:hover .si-canopy { animation: si-open2 .8s cubic-bezier(.3,1.4,.5,1) both !important; }
+  .sel-cell:hover .si-drop { animation: si-drop2 .9s ease-in calc(.6s + var(--k) * 180ms) 2 both !important; }
+  .sel-cell:hover .si-cycle { animation: si-spin2 1.2s cubic-bezier(.45,0,.25,1) both !important; }
+  .sel-cell:hover .si-tick { animation: si-draw2 .5s ease-out 1s both !important; }
+  .sel-cell:hover .si-dot { animation: si-dot2 .9s ease-in-out calc(var(--k) * 150ms) 2 both !important; }
+}
+@keyframes si-scan { 0% { opacity: 0; transform: translateY(0); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(11px); } }
+@keyframes si-scan2 { 0% { opacity: 0; transform: translateY(0); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(11px); } }
+@keyframes si-turn { from { transform: rotate(-120deg) scale(.6); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes si-turn2 { from { transform: rotate(-120deg) scale(.6); } to { transform: none; } }
+@keyframes si-sway { 0% { transform: translateY(-3px); opacity: 0; } 40% { opacity: 1; transform: rotate(4deg); } 70% { transform: rotate(-3deg); } 100% { transform: none; opacity: 1; } }
+@keyframes si-sway2 { 0% { transform: translateY(-3px); } 40% { transform: rotate(4deg); } 70% { transform: rotate(-3deg); } 100% { transform: none; } }
+@keyframes si-fly { from { transform: translate(9px, -9px); opacity: 0; } 60% { opacity: 1; } to { transform: none; opacity: 1; } }
+@keyframes si-fly2 { from { transform: translate(9px, -9px); opacity: 0; } 60% { opacity: 1; } to { transform: none; opacity: 1; } }
+@keyframes si-shake { 0%, 100% { transform: none; } 30% { transform: scale(1.06); } 60% { transform: scale(.98); } }
+@keyframes si-shake2 { 0%, 100% { transform: none; } 30% { transform: scale(1.06); } 60% { transform: scale(.98); } }
+@keyframes si-unfold { from { transform: scaleX(.15); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes si-unfold2 { from { transform: scaleX(.15); } to { transform: none; } }
+@keyframes si-route { from { stroke-dashoffset: 1; opacity: 0; } 10% { opacity: 1; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes si-route2 { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes si-open { from { transform: scaleX(.2) scaleY(.6); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes si-open2 { from { transform: scaleX(.2) scaleY(.6); } to { transform: none; } }
+@keyframes si-drop { 0% { transform: translateY(-5px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(3px); opacity: 0; } }
+@keyframes si-drop2 { 0% { transform: translateY(-5px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(3px); opacity: 0; } }
+@keyframes si-spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+@keyframes si-spin2 { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+@keyframes si-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes si-draw2 { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes si-dot { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }
+@keyframes si-dot2 { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }

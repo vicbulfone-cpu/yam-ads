@@ -7,10 +7,11 @@ import { useEffect, useRef } from "react";
  * band scrolls into view, so they rise in one after another (styles: ".wim-" in globals.css). Without JavaScript, on
  * phones/tablets or with reduced motion nothing is hidden.
  */
-export default function WimReveal() {
+/** `list`: the list to reveal (default: the "Why it matters" cards); also used by the "Vetted partner network" icons. */
+export default function WimReveal({ list: selector = ".wim-cards" }: { list?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    const list = ref.current?.parentElement?.querySelector<HTMLElement>(".wim-cards");
+    const list = ref.current?.parentElement?.querySelector<HTMLElement>(selector);
     if (!list) return;
     if (!window.matchMedia("(min-width: 1024px) and (prefers-reduced-motion: no-preference)").matches) return;
     list.classList.add("wim-anim");
@@ -19,6 +20,6 @@ export default function WimReveal() {
     }, { threshold: 0.25 });
     io.observe(list);
     return () => io.disconnect();
-  }, []);
+  }, [selector]);
   return <span ref={ref} hidden />;
 }
