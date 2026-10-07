@@ -172,7 +172,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             {/* phones (owner, 7 Oct 2026): the owner's "home page tradie" picture, tall, with the handwriting and the navy
                 badge already drawn into it (so the page's own note and badge below are hidden on phones) */}
             <Image
-              src="/images/home/tradie-mobile.webp"
+              src="/images/home/tradie-mobile-v2.webp"
               alt="Real people. Local accountants. One local accountant, matched to your needs: a smiling tradesman holding a drill and tool bag beside his ute"
               fill
               sizes="100vw"

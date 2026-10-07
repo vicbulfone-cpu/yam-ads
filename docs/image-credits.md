@@ -50,7 +50,7 @@ all ad pages; phones keep `tradie-drill-ute.webp`.
 
 ## "Meet Your Accountant Match" tradie picture, phones (owner, 7 Oct 2026)
 Source: owner-supplied `hero section/ad landing pages/home page tradie.png` (owner's own image, with the handwriting and
-the navy badge drawn in), converted to WebP (941 × 1672, quality 80) as `public/images/home/tradie-mobile.webp`. Shown
+the navy badge drawn in), converted to WebP (941 × 1672, quality 80) as `public/images/home/tradie-mobile-v2.webp` (8 Oct 2026: the drawn-in "Real people. Local accountants." scaled to 55% and re-centred above the arrow; the sky behind it is plain white). Shown
 below 768px on the home page and all ad pages (the page's own note and badge are hidden there). `tradie-drill-ute.webp`
 is no longer shown.
 

@@ -28,7 +28,7 @@ import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
 import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
-import { ONE_MATCH_BUTTON, ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS, STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT } from "@/content/how-it-works";
+import { ONE_MATCH_BUTTON, ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS, STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT, STEP1_FROM, STEP1_TO } from "@/content/how-it-works";
 
 type N = Exclude<Node, { t: "sec" }>;
 const SHARED_MATCH_CARD = getHomeMatchCard();
@@ -119,7 +119,8 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     // steps 2 and 3: the owner's new paragraphs (7 Oct 2026)
     if (para && STEP2_OLD_START.test(para.text)) return { title: h.text, html: STEP2_TEXT, text: STEP2_TEXT };
     if (para && STEP3_OLD_START.test(para.text)) return { title: h.text, html: STEP3_TEXT, text: STEP3_TEXT };
-    return { title: h.text, html: para?.html ?? "", text: para?.text ?? "" };
+    // step 1: "or area" dropped (owner, 8 Oct 2026)
+    return { title: h.text, html: (para?.html ?? "").replace(STEP1_FROM, STEP1_TO), text: (para?.text ?? "").replace(STEP1_FROM, STEP1_TO) };
   });
 
   let shown = 0;

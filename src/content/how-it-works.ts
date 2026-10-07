@@ -27,7 +27,11 @@ export const STEP3_TEXT =
 // step's paragraph is shown as two icon rows. These are the opening words of each row, taken from the paragraph itself;
 // the row's bold title is that opening, the rest of the paragraph up to the next row is the line under it.
 export const STEP_ROW_STARTS: string[][] = [
-  ["Share your postcode or area and the accounting help you're looking for", "It takes about 60 seconds"],
+  ["Share your postcode and the accounting help you're looking for", "It takes about 60 seconds"],
   ["Your postcode connects you with one local accountant", "Tell us what you need help with"],
   ["No chasing accountants. No multiple enquiries.", "Your details go directly to your matched local accountant"],
 ];
+
+// Step 1 "Tell us what you need" (owner, 8 Oct 2026): "Share your postcode or area and…" → "Share your postcode and…"
+export const STEP1_FROM = "Share your postcode or area and";
+export const STEP1_TO = "Share your postcode and";

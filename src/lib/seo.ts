@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/config/site.config";
 import { BUSINESS } from "@/content/business";
 import { HOME_EXTRA_FAQS } from "@/content/faq-teasers";
-import { STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT } from "@/content/how-it-works";
+import { STEP1_FROM, STEP1_TO, STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT } from "@/content/how-it-works";
 import seoCopy from "@/content/seo-copy.json";
 import { applyWording } from "@/content/wording";
 import { cityOf, typeOf, INDEXABLE_PATHS, isNoindex } from "@/lib/pages";
@@ -150,7 +150,7 @@ export function jsonLdFor(p: string): Record<string, unknown> {
       } else if (type === "HowTo") {
         // /how-it-works: the steps' wording follows the page (steps 2 and 3 rewritten by the owner, 7 Oct 2026)
         const steps = ((n.step as Record<string, unknown>[] | undefined) ?? []).map((s) =>
-          STEP2_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP2_TEXT } : STEP3_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP3_TEXT } : s,
+          STEP2_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP2_TEXT } : STEP3_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP3_TEXT } : { ...s, text: String(s.text ?? "").replace(STEP1_FROM, STEP1_TO) },
         );
         nodes.push({ ...n, step: steps });
       } else if (type === "Service") {

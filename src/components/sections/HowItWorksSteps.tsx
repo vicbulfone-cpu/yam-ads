@@ -88,7 +88,9 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
 
         {/* desktops (owner, 7 Oct 2026): the three step boxes at 75% of their size (everything in them scales together),
             lined up on the left with the heading (owner: centred, then back to the left) */}
-        <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
+        {/* owner, 8 Oct 2026: the boxes 3cm wider (4cm here, as the list is drawn at 75%) and shorter (less padding above and
+            below the words); same left edge and top */}
+        <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[calc(75%+4cm)] lg:max-w-full lg:[zoom:0.75]">
           {steps.map((s, i) => {
             const home = HOME_STEPS[i];
             const flip = false; // picture on the left in every box (owner, 8 Oct 2026; step 2 used to have it on the right)
@@ -128,7 +130,7 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                     </div>
                   )}
                   {/* desktops (owner, 7 Oct 2026): the words in the step boxes at 140% of their earlier size */}
-                  <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-[clamp(2rem,2.8vw,3.75rem)]">
+                  <div className="flex flex-col justify-center p-6 sm:p-8 lg:px-[clamp(2rem,2.8vw,3.75rem)] lg:py-[clamp(1.1rem,1.4vw,2rem)]">
                     <h2 className="font-sans text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em] text-navy-900 sm:text-[1.75rem] md:text-[1.5rem] lg:text-[clamp(2.45rem,2.8vw,3.85rem)]">
                       <StepTitle title={s.title} />
                     </h2>
