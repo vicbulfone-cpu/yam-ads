@@ -573,3 +573,16 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 /* laptops: the steps wrap (as on the home page) within the stretched column; where the three points sit in one row the
    steps are sized to end under them instead (HomeStepsFit) */
 @media (min-width: 1024px) { .bz-page .bz-hero .bz-steps { flex-wrap: wrap; white-space: normal; max-width: calc(100% / 1.125); } }
+/* "How we select accountants" in the ad pages' popup (owner, 7 Oct 2026): the seven check boxes two side by side (tablets
+   and up; one column on phones) instead of the page's zig-zag timeline, so the line and number circles are left out
+   ("Check 1"… still labels each box). Each box's heading is light green on the box's dark picture (hover), so it reads
+   clearly; on the plain white box it stays navy. The page itself is unchanged. */
+@media (min-width: 640px) {
+  .adi-content .hws-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: none; align-items: stretch; }
+  .adi-content .hws-line, .adi-content .hws-num { display: none; }
+  .adi-content .hws-item { padding: 0 !important; display: flex; }
+  .adi-content .hws-card { width: auto !important; margin: 0 !important; flex: 1; }
+}
+@media (hover: hover) and (min-width: 1024px) {
+  .adi-content .hws-card:hover .hws-title { color: #8ff0b0 !important; }
+}

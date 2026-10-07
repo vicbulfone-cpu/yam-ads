@@ -4,10 +4,9 @@ import Link from "next/link";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { Check } from "@/components/ui/Icons";
 import CtaBand from "@/components/sections/CtaBand";
-import SectionView from "@/components/sections/SectionRenderer";
 import { QUESTIONNAIRE_URL, ctaLabel } from "@/config/site.config";
 import { howWeSelect as hw } from "@/content/how-we-select";
-import { loadContent, mergeViews, splitOnHeadings, toSections } from "@/lib/content";
+import { loadContent, mergeViews } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
 import { pageMetadata } from "@/lib/seo";
 import { ArrowRight } from "@/components/ui/Icons";
@@ -19,11 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function HowWeSelectPage() {
-  // Shared blocks from the old page ("What is Your Accountant Match?" etc.) and its footer
+  // The old page's footer wording. (Its shared "What is Your Accountant Match?" block is no longer shown here, owner
+  // 7 Oct 2026, so it is not in the page or in the ad pages' popup.)
   const nodes = mergeViews(loadContent(PATH));
-  const shared = splitOnHeadings(toSections(nodes))
-    .filter((s) => s.tag !== "header" && s.tag !== "footer" && s.tag !== "main")
-    .filter((s) => s.nodes.some((n) => n.t === "text" && /better way to find your accountant/i.test(n.text)));
 
   return (
     <>
@@ -43,26 +40,26 @@ export default function HowWeSelectPage() {
         {/* Seven checks — numbered timeline */}
         <section className="pb-8 md:pb-16">
           <div className="container-page">
-            <ol className="relative mx-auto max-w-5xl">
+            <ol className="hws-checks relative mx-auto max-w-5xl">
               {/* the line (grows as you scroll, where supported) */}
-              <span aria-hidden className="absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-line lg:left-1/2 lg:-translate-x-1/2" />
-              <span aria-hidden className="grow-y absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-gradient-to-b from-green-500 to-navy-900 lg:left-1/2 lg:-translate-x-1/2" />
+              <span aria-hidden className="hws-line absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-line lg:left-1/2 lg:-translate-x-1/2" />
+              <span aria-hidden className="hws-line grow-y absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-gradient-to-b from-green-500 to-navy-900 lg:left-1/2 lg:-translate-x-1/2" />
               {hw.checks.map((c, i) => {
                 const left = i % 2 === 0;
                 return (
-                  <li key={c.n} className="reveal relative pb-10 pl-16 last:pb-0 lg:pb-14 lg:pl-0">
+                  <li key={c.n} className="hws-item reveal relative pb-10 pl-16 last:pb-0 lg:pb-14 lg:pl-0">
                     {/* number marker on the line */}
-                    <span className="absolute left-0 top-2 grid h-[2.9rem] w-[2.9rem] place-items-center rounded-full border-4 border-white bg-navy-900 font-serif text-lg font-semibold text-white shadow-[var(--shadow-md)] lg:left-1/2 lg:-translate-x-1/2">
+                    <span className="hws-num absolute left-0 top-2 grid h-[2.9rem] w-[2.9rem] place-items-center rounded-full border-4 border-white bg-navy-900 font-serif text-lg font-semibold text-white shadow-[var(--shadow-md)] lg:left-1/2 lg:-translate-x-1/2">
                       {c.n}
                     </span>
-                    <article className={`group card card-lift relative overflow-hidden ${left ? "lg:mr-auto lg:w-[calc(50%-3.25rem)]" : "lg:ml-auto lg:w-[calc(50%-3.25rem)]"}`}>
+                    <article className={`hws-card group card card-lift relative overflow-hidden ${left ? "lg:mr-auto lg:w-[calc(50%-3.25rem)]" : "lg:ml-auto lg:w-[calc(50%-3.25rem)]"}`}>
                       <div className="relative h-40 overflow-hidden sm:h-48 hoverable:absolute hoverable:inset-0 hoverable:h-auto hoverable:opacity-0 hoverable:transition-opacity hoverable:duration-500 hoverable:group-hover:opacity-100">
                         <Image src={`/images/stock/${c.image}.webp`} alt="" fill sizes="(min-width:1024px) 480px, 92vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div className="absolute inset-0 hidden bg-gradient-to-t from-navy-950/90 via-navy-950/70 to-navy-950/50 hoverable:block" />
                       </div>
                       <div className="relative p-6 md:p-8 hoverable:group-hover:text-white">
                         <p className="eyebrow hoverable:group-hover:bg-white/15 hoverable:group-hover:text-green-200">Check {c.n}</p>
-                        <h2 className="h-card mt-4 hoverable:group-hover:text-white">{c.title}</h2>
+                        <h2 className="hws-title h-card mt-4 hoverable:group-hover:text-white">{c.title}</h2>
                         <p className="mt-3 text-[0.97rem] leading-relaxed text-body hoverable:group-hover:text-navy-100">{c.body}</p>
                       </div>
                     </article>
@@ -97,7 +94,6 @@ export default function HowWeSelectPage() {
           </div>
         </section>
 
-        {shared.map((s, i) => (<SectionView key={s.id} section={s} index={i + 1} />))}
         <CtaBand />
       </main>
       <SiteFooter nodes={nodes} />
