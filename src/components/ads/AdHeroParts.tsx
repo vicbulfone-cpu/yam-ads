@@ -2,18 +2,15 @@
 // four ad pages; styles: "AD HERO = HOME HERO" in ads.css. Phones look exactly as before.
 import { homeDeskHeroArrow, homeDeskHeroNoArrowPicture } from "@/config/site.config";
 import HomeHeroBar from "../sections/HomeHeroBar";
+import HandArrow from "../ui/HandArrow";
 
 /** The desk photo has no arrow of its own; the green arrow is laid on top in its place (as on the home page), so on
  *  tablets and up it can sit 4mm lower like the home arrow. On phones it sits exactly where the photo's arrow was. */
 export function AdHeroArrow() {
   const pic = homeDeskHeroNoArrowPicture;
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={homeDeskHeroArrow.src}
-      alt=""
-      width={homeDeskHeroArrow.width}
-      height={homeDeskHeroArrow.height}
+    // the tradie-style arrow (owner, 8 Oct 2026) in the old arrow picture's box: same start and tip
+    <HandArrow viewBox="0 0 176 57" from={[8, 25]} to={[170, 11]} flip
       className="bz-arrow"
       style={{
         left: `${(homeDeskHeroArrow.left / pic.width) * 100}%`,

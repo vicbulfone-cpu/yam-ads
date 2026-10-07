@@ -11,6 +11,7 @@ import HomeStepsFit from "../sections/HomeStepsFit";
 import { REG_CARD, REG_LANDING as L } from "@/content/registration-questionnaire";
 import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
+import HandArrow from "../ui/HandArrow";
 import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import RegistrationMatchCard from "./RegistrationMatchCard";
@@ -70,7 +71,7 @@ export default function RegistrationAdPage() {
           <div className="bz-more">
             <ol className="bz-steps bz-steps-shade fade-behind">
               {L.steps.map((s, i) => (
-                <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
+                <li key={s}>{i > 0 && <HandArrow viewBox="0 0 24 24" from={[4, 14]} to={[20, 10]} className="bz-step-arrow" />}<span>{s}</span></li>
               ))}
             </ol>
             <HomeStepsFit />

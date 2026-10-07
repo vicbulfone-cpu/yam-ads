@@ -3,6 +3,7 @@ import Link from "next/link";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
 import { ABOUT_POPUP } from "@/content/about-popup";
 import HeroGap from "./HeroGap";
+import HandArrow from "../ui/HandArrow";
 import StartBar from "./StartBar";
 
 /**
@@ -50,13 +51,8 @@ const ArrowRight = () => (
   </svg>
 );
 
-/** Hand-drawn curved arrow between the step photos */
-const StepArrow = () => (
-  <svg viewBox="0 0 60 40" aria-hidden fill="none" stroke="#0e7a32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-[clamp(2.5rem,3.6vw,5rem)]">
-    <path d="M4 33C16 18 32 12 54 12" />
-    <path d="M44 4l10 8-11 6" />
-  </svg>
-);
+/** Curved arrow between the step photos: the tradie arrow's style (owner, 8 Oct 2026), same start and tip as before */
+const StepArrow = () => <HandArrow viewBox="0 0 60 40" from={[4, 33]} to={[54, 12]} className="w-[clamp(2.5rem,3.6vw,5rem)]" />;
 
 /** Eyebrow with a short rule after it */
 const Eyebrow = ({ children }: { children: string }) => (
@@ -199,7 +195,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
                 <br />
                 <span className="pl-3">Local accountants.</span>
               </p>
-              <svg viewBox="0 0 70 60" fill="none" stroke="#0e7a32" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="absolute left-1/2 top-[92%] hidden w-12 sm:block lg:w-[clamp(3rem,4.4vw,6.5rem)]">
+              {/* the tradie arrow: the model for every arrow on the site (HandArrow.tsx) */}
+              <svg viewBox="0 0 70 60" fill="none" stroke="#0e7a32" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="hand-arrow absolute left-1/2 top-[92%] hidden w-12 sm:block lg:w-[clamp(3rem,4.4vw,6.5rem)]">
                 <path d="M4 8c22-4 46 6 56 40" />
                 <path d="M50 42l10 8 4-12" />
               </svg>

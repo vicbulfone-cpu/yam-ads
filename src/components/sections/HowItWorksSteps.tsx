@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Breadcrumbs from "./Breadcrumbs";
+import HandArrow from "../ui/HandArrow";
 import { HOME_STEPS } from "./HomeMatchIntro";
 import { Html } from "./Blocks";
 import StartBar from "./StartBar";
@@ -95,8 +96,8 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
             const home = HOME_STEPS[i];
             const flip = false; // picture on the left in every box (owner, 8 Oct 2026; step 2 used to have it on the right)
             return (
-              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
-                {/* boxes 1cm further apart (owner, 7 Oct 2026; 1.333cm on desktops, where the list is drawn at 75%) */}
+              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+3cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+4cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
+                {/* boxes 1cm further apart (owner, 7 Oct 2026), then 2cm more for the arrows (8 Oct 2026); desktop figures are 4/3 bigger as the list is drawn at 75% */}
                 {/* step rail (owner, 7 Oct 2026): a "STEP 1/2/3" tag per step, joined by a dashed line; phones show the tag above
                     its box. Tag restyled and 30% bigger (owner, 7 Oct 2026): white pill, navy "STEP", number in a green disc. */}
                 <div aria-hidden className="mb-3 sm:absolute sm:left-0 sm:top-0 sm:mb-0 sm:flex sm:w-32 sm:justify-center lg:w-[clamp(9.1rem,9.9vw,12.35rem)]">
@@ -159,6 +160,12 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                     })()}
                   </div>
                 </article>
+                {/* arrow in the gap to the next box: the tradie arrow style (owner, 8 Oct 2026) */}
+                {i < steps.length - 1 && (
+                  <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 right-0 flex h-[calc(2.5rem+3cm)] items-center justify-center sm:left-36 lg:left-[clamp(11rem,12.3vw,15.5rem)] lg:h-[calc(clamp(3rem,4vw,5rem)+4cm)]">
+                    <HandArrow viewBox="0 0 60 100" from={[18, 8]} to={[34, 92]} className="h-[70%] w-auto" />
+                  </div>
+                )}
               </li>
             );
           })}
