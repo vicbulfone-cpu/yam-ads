@@ -799,6 +799,19 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
     mask-composite: intersect;
   }
 }
+/* Tablets and up, the owner's new tradie photo (owner, 7 Oct 2026): no fade along its top, and drawn 1cm taller, growing
+   upwards from the same bottom edge (the bottom margin is unchanged). Laptops/desktops: it also grows about 1.5cm to the left (its box keeps the photo's own shape)
+   so it keeps its proportions and right-hand edge; the left fade into the words stays as above. Phones are untouched. */
+@media (min-width: 768px) {
+  .intro-photo-tall { top: -1cm !important; height: calc(100% + 1cm) !important; -webkit-mask-image: none; mask-image: none; }
+}
+@media (min-width: 1024px) {
+  .intro-photo-tall {
+    left: auto !important; right: 0 !important; width: calc(99.45% + 1.49cm) !important; max-width: none; object-position: 100% 100%; /* the photo's shape (1532 x 1027) at the frame's height + 1cm (frame = 1.5:1) */
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent max(0%, 23% - 4cm), rgba(0, 0, 0, .55) max(13%, 36% - 4cm), #000 max(31%, 54% - 4cm));
+    mask-image: linear-gradient(to right, transparent 0, transparent max(0%, 23% - 4cm), rgba(0, 0, 0, .55) max(13%, 36% - 4cm), #000 max(31%, 54% - 4cm));
+  }
+}
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
 /* the navy badge: + 5mm right (owner, 7 Oct 2026), then (tablets and up) another 5mm right and 1.2cm up with its note */
 @media (min-width: 768px) { .intro-badge { translate: 5mm -1.2cm; } }
