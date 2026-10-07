@@ -1,7 +1,6 @@
 "use client";
 
 import { MATCH_SEARCH, MATCH_WAIT_MS } from "@/content/match-search";
-import { progressMilestones } from "@/lib/progress";
 import { Check, Sparkle } from "../ui/Icons";
 
 /**
@@ -71,25 +70,30 @@ export function MatchSearching({ firstName }: { firstName: string }) {
   );
 }
 
-/** Navy progress header: at most 5 milestones, the real pages shared out evenly across them (src/lib/progress.ts). */
+/** The named stages on the progress strip (owner, 7 Oct 2026). Every questionnaire ends with the same pages, so the
+ *  stage comes from the page's kind; any other kind is one of that questionnaire's own service questions. */
+export const PROGRESS_STAGES = ["Your needs", "About you", "Your area", "Your details", "Your match"];
+const STAGE_OF: Record<string, number> = { name: 1, summary: 1, mode: 2, location: 2, email: 3, phone: 3, emailMe: 3 };
+
 /**
- * Progress at the top of every questionnaire page (owner, 7 Oct 2026): a slim, quiet strip on white, about a quarter of
- * the old navy panel's height: a green bar with one circle per step (done = solid green with a tick, current = green
- * ring, still to come = light ring). The words ("Your Match in Progress", "Step N of M") stay for screen readers.
+ * Progress at the top of every questionnaire page (owner, 7 Oct 2026): a slim, quiet strip on white: a green bar with a
+ * circle per stage, each named underneath (done = solid green with a tick, current = green ring, still to come = light
+ * ring). "Your match" is the finish (the match page). "Your Match in Progress" and "Step N of M" stay for screen readers.
  */
-export function AdProgress({ stepNumber, total, badge, stepOf }: { stepNumber: number; total: number; badge: string; stepOf: string }) {
-  const { shown, current } = progressMilestones(stepNumber, total);
-  const filled = shown > 1 ? ((current - 1) / (shown - 1)) * 100 : 100;
-  const label = `${badge}: ${stepOf.replace("{n}", String(current)).replace("{total}", String(shown))}`;
+export function AdProgress({ stepNumber, total, badge, stepOf, kind }: { stepNumber: number; total: number; badge: string; stepOf: string; /** the page's kind (name, summary, ...): picks the stage */ kind: string }) {
+  const current = STAGE_OF[kind] ?? 0; // counted from 0
+  const last = PROGRESS_STAGES.length - 1;
+  const label = `${badge}: ${PROGRESS_STAGES[current]}. ${stepOf.replace("{n}", String(stepNumber)).replace("{total}", String(total))}`;
   return (
-    <div className="q-progress" role="progressbar" aria-valuemin={1} aria-valuemax={shown} aria-valuenow={current} aria-label={label}>
+    <div className="q-progress" role="progressbar" aria-valuemin={1} aria-valuemax={total} aria-valuenow={stepNumber} aria-label={label}>
       <div className="q-progress-track" aria-hidden>
-        <span className="q-progress-fill" style={{ width: `${filled}%` }} />
-        {Array.from({ length: shown }, (_, i) => {
-          const state = current > i + 1 ? "done" : current === i + 1 ? "here" : "todo";
+        <span className="q-progress-fill" style={{ width: `${(current / last) * 100}%` }} />
+        {PROGRESS_STAGES.map((name, i) => {
+          const state = i < current ? "done" : i === current ? "here" : "todo";
           return (
-            <span key={i} className={`q-progress-dot is-${state}`} style={{ left: `${shown > 1 ? (i / (shown - 1)) * 100 : 50}%` }}>
-              {state === "done" && <Check width={9} height={9} strokeWidth={4} />}
+            <span key={name} className={`q-progress-step is-${state}`} style={{ left: `${(i / last) * 100}%` }}>
+              <span className="q-progress-dot">{state === "done" && <Check width={9} height={9} strokeWidth={4} />}</span>
+              <span className="q-progress-name">{name}</span>
             </span>
           );
         })}

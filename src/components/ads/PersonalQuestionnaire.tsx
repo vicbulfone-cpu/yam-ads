@@ -358,7 +358,7 @@ export default function PersonalQuestionnaire() {
 
           <div ref={scrollRef} data-bg="biz" className="q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
             <PhoneFit>
-            <AdProgress stepNumber={stepIdx + 1} total={total} badge={Q.badge} stepOf={Q.stepOf} />
+            <AdProgress stepNumber={stepIdx + 1} total={total} badge={Q.badge} stepOf={Q.stepOf} kind={kind} />
             <form
               className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
               onSubmit={(e) => { e.preventDefault(); next(); }}
