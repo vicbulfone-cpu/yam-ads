@@ -176,6 +176,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
               sizes="(min-width: 1024px) 60vw, 100vw"
               className="intro-photo intro-photo-tall hidden object-cover object-[50%_6%] md:block md:translate-x-[3cm] lg:object-contain lg:object-right"
             />
+            {/* laptops/desktops: the white veil that fades the photo's left side into the words (globals.css .intro-photo-veil) */}
+            <div aria-hidden className="intro-photo-veil hidden lg:block md:translate-x-[3cm]" />
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}
             {/* owner, 7 Oct 2026: the note, its arrow and the navy badge a further 5mm right; then (tablets and up) all three

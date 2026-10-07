@@ -821,15 +821,19 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (min-width: 1024px) {
   .intro-photo-tall {
     left: auto !important; right: 0 !important; width: calc(99.45% + 1.49cm) !important; max-width: none; object-position: 100% 100%; /* the photo's shape (1532 x 1027) at the frame's height + 1cm (frame = 1.5:1) */
-    /* left fade: from --fs (fully faded) to --fe (full photo), eased in and out so its start never shows as a faint
-       vertical line (owner, 7 Oct 2026); same strength as before at its middle */
-    --fs: max(0%, 23% - 4cm); --fe: max(31%, 54% - 4cm);
-    /* everything left of where the fade starts is fully faded anyway: cut it away, so a graphics card can never draw a
-       hairline along the photo's edge (owner, 7 Oct 2026: a faint vertical line was visible) */
-    clip-path: inset(0 0 0 max(3px, calc(var(--fs) - 1px)));
-    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
-    mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
   }
+  /* The photo's left fade into the words (owner, 7 Oct 2026). Drawn as a white veil laid over the photo, not as a mask:
+     a masked or trimmed photo edge showed as a faint vertical line on some screens (graphics cards). The veil is solid
+     white over the photo's edge (and 6cm beyond it, over the white page), then clears gradually from --fs to --fe, so
+     the photo appears very gradually and no edge can show. Same box and nudge as the photo. */
+  .intro-photo-veil {
+    position: absolute; top: -1cm; height: calc(100% + 1cm); right: 0; width: calc(99.45% + 1.49cm); pointer-events: none;
+    --fs: max(0%, 23% - 5.5cm); --fe: max(31%, 54% - 4cm);
+    background: linear-gradient(to right, #fff 0, #fff var(--fs), rgba(255, 255, 255, 0.994) calc(var(--fs) + 0.06 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.98) calc(var(--fs) + 0.12 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.955) calc(var(--fs) + 0.18 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.91) calc(var(--fs) + 0.25 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.83) calc(var(--fs) + 0.33 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.7) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.53) calc(var(--fs) + 0.52 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.36) calc(var(--fs) + 0.62 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.21) calc(var(--fs) + 0.72 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.1) calc(var(--fs) + 0.82 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0.03) calc(var(--fs) + 0.91 * (var(--fe) - var(--fs))), rgba(255, 255, 255, 0) var(--fe));
+  }
+  .intro-photo-veil::before { content: ""; position: absolute; top: 0; bottom: 0; right: calc(100% - 1px); width: 6cm; background: #fff; }
 }
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
 /* the navy badge: + 5mm right (owner, 7 Oct 2026), then (tablets and up) another 5mm right and 1.2cm up with its note */
