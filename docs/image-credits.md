@@ -65,3 +65,5 @@ on /match until GoHighLevel supplies the real accountant's photo.
 `public/images/home/step-1-woman-phone-sofa.webp` and `public/images/home/step-3-accountant-client-desk.webp`: owner-supplied photos (7 Oct 2026, `hero section/10.png` and `11.png`), used in step boxes 1 and 3 of the "How it works" steps (home page, ad pages, /how-it-works). The second has a thin white strip trimmed from its left edge. The older `woman-phone-sofa` and `accountant-client-desk` files stay (the latter is still used in the questionnaires).
 
 `public/images/home/australia-map-pin-tight.webp`: a tighter crop of the site's own `australia-map-pin` illustration (white margins trimmed), used in step 2 on /how-it-works so the map fills its box.
+
+Home page step boxes 1 and 3 (owner, 7 Oct 2026: "zoom out"): back to the wider owner-supplied shots `woman-phone-sofa.webp` and `accountant-client-desk.webp`, so the phone, the desk and the papers show. /how-it-works keeps the `step-1-…` / `step-3-…` versions.

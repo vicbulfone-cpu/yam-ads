@@ -15,13 +15,15 @@ import StartBar from "./StartBar";
  * Phones and tablets stack everything in one column; the photo moves under the button.
  */
 
-export const HOME_STEPS: { title: string; text: string; image: string; alt: string; position: string; shift?: string }[] = [
+export const HOME_STEPS: { title: string; text: string; image: string; alt: string; position: string; /** home page picture and framing, if different (owner, 7 Oct 2026: the wider, zoomed-out shots) */ homeImage?: string; homePosition?: string; shift?: string }[] = [
   {
     title: "Tell us what you need",
     text: "Complete our short 60-second questionnaire.",
     image: "/images/home/step-1-woman-phone-sofa.webp", // owner's new photo, 7 Oct 2026 ("hero section/10.png")
     alt: "Woman relaxing on her sofa as she fills in the short questionnaire on her phone",
     position: "50% 24%", // portrait photo: framed on her face and shoulders
+    homeImage: "/images/home/woman-phone-sofa.webp", // home page: the wide shot, so she is seen typing on her phone
+    homePosition: "42% 20%", // her whole head and the phone show
   },
   {
     title: "We find your match",
@@ -37,6 +39,8 @@ export const HOME_STEPS: { title: string; text: string; image: string; alt: stri
     image: "/images/home/step-3-accountant-client-desk.webp", // owner's new photo, 7 Oct 2026 ("hero section/11.png")
     alt: "Accountant talking through paperwork with a new client at his desk",
     position: "50% 16%", // portrait photo: framed on both faces
+    homeImage: "/images/home/accountant-client-desk.webp", // home page: the wide shot, with the desk and papers
+    homePosition: "50% 45%", // both heads, the desk and the papers show
   },
 ];
 
@@ -94,8 +98,10 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
           <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
             {HOME_STEPS.flatMap((s, i) => [
               <li key={s.title} className="relative">
-                <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
-                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
+                {/* owner, 7 Oct 2026: the photo boxes 50% taller (2.35:1 → 1.567:1, tablets 1.6:1 → 1.067:1), framed so the tops of heads show, using the wider zoomed-out shots */}
+                <div className="relative ml-1 mt-4 aspect-[1.567/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.067/1] lg:aspect-[1.567/1]">
+                  {/* the map uses its trimmed copy, fitted inside the taller box so its coast is never cut off */}
+                  <Image src={s.image.includes("map") ? "/images/home/australia-map-pin-tight.webp" : (s.homeImage ?? s.image)} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className={s.image.includes("map") ? "object-contain" : "object-cover"} style={{ objectPosition: s.homePosition ?? s.position, transform: s.shift }} />
                 </div>
                 {/* "Step 1" tag over the photo's corner (owner, 7 Oct 2026: same style as the How It Works page): white pill,
                     navy "STEP", the number in a green disc */}
