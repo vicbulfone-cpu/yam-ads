@@ -777,6 +777,9 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .desk-hero-grid { width: 100%; max-width: calc(1575px + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); display: grid; grid-template-columns: minmax(0, 1fr); }
 /* the photograph is a grid item in the same cell as the words, stretched to the full width of the screen */
 .desk-hero-picture { position: relative; grid-column: 1 / -1; grid-row: 1; width: 100vw; margin-left: calc(50% - 50vw); z-index: -1; transform: translateY(-5.2cm); }
+/* tablets (768–1023px): the wide photo and the shifted words ran past the screen's right edge, so the page scrolled sideways (and touch tablets zoomed
+   the page out); anything out there was off screen anyway, so clipping it changes nothing visible (as .zz-phone on phones) */
+@media (max-width: 1023px) { .desk-hero { overflow-x: clip; } }
 /* The photograph inside its frame.
    Phones and tablets: as tall as the frame, showing the mug (left part of the picture).
    Laptop and desktop: full width at its own proportions, sitting on the bottom of the frame: never zoomed or stretched.
@@ -817,9 +820,12 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (min-width: 1024px) {
   .intro-photo-tall {
     left: auto !important; right: 0 !important; width: calc(99.45% + 1.49cm) !important; max-width: none; object-position: 100% 100%; /* the photo's shape (1532 x 1027) at the frame's height + 1cm (frame = 1.5:1) */
+    /* left fade: from --fs (fully faded) to --fe (full photo), eased in and out so its start never shows as a faint
+       vertical line (owner, 7 Oct 2026); same strength as before at its middle */
+    --fs: max(0%, 23% - 4cm); --fe: max(31%, 54% - 4cm);
     clip-path: inset(0 0 0 3px); /* its fully faded left edge, trimmed so no hairline shows where the fades meet */
-    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent max(0%, 23% - 4cm), rgba(0, 0, 0, .55) max(13%, 36% - 4cm), #000 max(31%, 54% - 4cm)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
-    mask-image: linear-gradient(to right, transparent 0, transparent max(0%, 23% - 4cm), rgba(0, 0, 0, .55) max(13%, 36% - 4cm), #000 max(31%, 54% - 4cm)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
   }
 }
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
