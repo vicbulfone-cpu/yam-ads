@@ -8,7 +8,7 @@ import { Fragment } from "react";
 import { homeDeskHeroNoArrowPicture } from "@/config/site.config";
 import { AdHeroArrow, AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
-import { REG_LANDING as L } from "@/content/registration-questionnaire";
+import { REG_CARD, REG_LANDING as L } from "@/content/registration-questionnaire";
 import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
 import HeroPoints from "../sections/HeroPoints";
@@ -44,6 +44,19 @@ export default function RegistrationAdPage() {
             <h1 className="bz-h1 rz-h1">
               {L.h1.map((line, i) => <Fragment key={line}>{i > 0 && " "}<span className="block">{greenWords(line)}</span></Fragment>)}
             </h1>
+            {/* phones (owner's "mobile look example", 8 Oct 2026): a large green button straight under the headline, taking the
+                visitor down to the match box, with the box's own note under it. Hidden from tablet width up. */}
+            <div className="rz-cta">
+              <a href={`#${AD_MATCH_BOX_ID}`} className="rz-cta-btn">
+                <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" className="rz-cta-icon">
+                  <circle cx="10.5" cy="10.5" r="6.5" />
+                  <path d="M15.5 15.5 21 21" />
+                </svg>
+                <span>{REG_CARD.start}</span>
+                <ArrowRight aria-hidden className="rz-cta-arrow" strokeWidth={2.6} />
+              </a>
+              <p className="rz-cta-note">{REG_CARD.note.join(" • ")}</p>
+            </div>
             {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
             <HeroPoints className="bz-points" />
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
