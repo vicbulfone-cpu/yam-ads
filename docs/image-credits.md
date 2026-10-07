@@ -47,3 +47,9 @@ supplied for use on this site, transparent background), converted to WebP in `pu
 Source: owner-supplied `hero section/ad landing pages/tradie.png` (owner's own image, supplied for use on this site), converted to
 WebP (1532 × 1027, quality 80) as `public/images/home/tradie-ute-driveway.webp`. Shown from 768px up on the home page and
 all ad pages; phones keep `tradie-drill-ute.webp`.
+
+## "Meet Your Accountant Match" tradie picture, phones (owner, 7 Oct 2026)
+Source: owner-supplied `hero section/ad landing pages/home page tradie.png` (owner's own image, with the handwriting and
+the navy badge drawn in), converted to WebP (941 × 1672, quality 80) as `public/images/home/tradie-mobile.webp`. Shown
+below 768px on the home page and all ad pages (the page's own note and badge are hidden there). `tradie-drill-ute.webp`
+is no longer shown.

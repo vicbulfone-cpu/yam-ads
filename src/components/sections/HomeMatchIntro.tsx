@@ -159,14 +159,15 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
           {/* laptops/desktops: sits on the bottom of the row, so the navy bar below always touches it (owner, 6 Oct 2026) */}
           {/* owner, 6 Oct 2026: photo (and the bar on it) 1cm lower; everything below follows */}
           {/* owner, 7 Oct 2026: laptops/desktops get a taller frame (1.5:1 instead of 1.95:1) so the photo is as tall as the longer words */}
-          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
-            {/* phones: the original photo (unchanged) */}
+          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[941/1672] md:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
+            {/* phones (owner, 7 Oct 2026): the owner's "home page tradie" picture, tall, with the handwriting and the navy
+                badge already drawn into it (so the page's own note and badge below are hidden on phones) */}
             <Image
-              src="/images/home/tradie-drill-ute.webp"
-              alt="Smiling tradesman holding a drill and tool bag beside his ute in a driveway"
+              src="/images/home/tradie-mobile.webp"
+              alt="Real people. Local accountants. One local accountant, matched to your needs: a smiling tradesman holding a drill and tool bag beside his ute"
               fill
               sizes="100vw"
-              className="intro-photo object-cover object-[50%_6%] md:hidden"
+              className="object-cover md:hidden"
             />
             {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo, 3cm to the right (1.8cm, then 1.2cm more; the note and badge stay put) */}
             <Image
@@ -183,7 +184,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             {/* owner, 7 Oct 2026: the note, its arrow and the navy badge a further 5mm right; then (tablets and up) all three
                 another 5mm right and 1.2cm up; later 7 Oct 2026: the note, arrow and badge 1cm higher on every screen size
                 (margins, so the existing translate/rotate/scale nudges are untouched) */}
-            <div aria-hidden className="absolute left-[5%] top-[10%] -mt-[1cm] md:translate-x-[0.5cm] md:-translate-y-[1.2cm] lg:left-[3%] lg:top-[22%] lg:translate-x-[1.5cm] lg:-translate-y-[0.7cm]">
+            <div aria-hidden className="absolute left-[5%] top-[10%] -mt-[1cm] max-md:hidden md:translate-x-[0.5cm] md:-translate-y-[1.2cm] lg:left-[3%] lg:top-[22%] lg:translate-x-[1.5cm] lg:-translate-y-[0.7cm]">
               <p className="-rotate-[12deg] [text-shadow:0_0_10px_#fff,0_0_4px_#fff] lg:[text-shadow:none] font-[family-name:var(--font-script)] text-[1.55rem] font-semibold leading-[1.05] text-green-700 sm:text-[2rem] lg:text-[clamp(1.6rem,2.2vw,3.3rem)]">
                 Real people.
                 <br />
@@ -198,7 +199,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             {/* drawn at 70% size (owner, 5 Oct 2026), anchored at its left edge so it stays in the same spot;
                 laptops/desktops: 0.5cm right of and 0.55cm below its frame position (owner, 5 Oct 2026) */}
             {/* 1cm higher (owner, 7 Oct 2026): bottom margin while it is anchored to the bottom (phones/tablets), top margin on laptops/desktops */}
-            <div className="absolute bottom-[8%] left-[5%] mb-[1cm] origin-bottom-left -rotate-[6deg] scale-[0.7] lg:bottom-auto lg:left-[9%] lg:top-[52%] lg:mb-0 lg:-mt-[1cm] lg:origin-top-left intro-badge">
+            <div className="absolute bottom-[8%] left-[5%] mb-[1cm] max-md:hidden origin-bottom-left -rotate-[6deg] scale-[0.7] lg:bottom-auto lg:left-[9%] lg:top-[52%] lg:mb-0 lg:-mt-[1cm] lg:origin-top-left intro-badge">
               <p className="flex items-center gap-3 rounded-[1rem] bg-[#041f42] py-3 pl-4 pr-6 text-white shadow-[0_18px_36px_-14px_rgba(7,50,101,0.6)] lg:gap-[1.2vw] lg:rounded-[1.1vw] lg:py-[1vw] lg:pl-[1.4vw] lg:pr-[1.8vw]">
                 <svg viewBox="0 0 24 24" aria-hidden className="h-8 w-8 shrink-0 lg:h-[clamp(2rem,2.6vw,3.8rem)] lg:w-[clamp(2rem,2.6vw,3.8rem)]">
                   <path d="M12 1.8c-4.4 0-7.9 3.4-7.9 7.7 0 5.6 7.9 13.3 7.9 13.3s7.9-7.7 7.9-13.3c0-4.3-3.5-7.7-7.9-7.7Z" fill="#fff" />
