@@ -204,8 +204,9 @@ export const BIZ_Q = {
     find: "Find my accountant",
   },
   searching: {
-    title: "Searching for your local accountant, {name}…",
-    near: "Checking our partner accountants near {place}",
+    /** owner, 7 Oct 2026: {place} = the customer's suburb */
+    title: "Hang tight {name}, we’re searching for an accountant perfectly suited to your needs, near {place}.",
+    near: "We’re checking our network of TPB-registered partner accountants to find your best match.",
   },
   found: {
     title: "Great news, {name} — we’ve found a local match for you.",

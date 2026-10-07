@@ -394,7 +394,7 @@ export default function RegistrationQuestionnaire() {
             <div className="q-leave" role="status" aria-live="polite">
               <div className="q-leave-box bq-search">
                 <span aria-hidden className="bq-radar"><Pin width={28} height={28} strokeWidth={2.2} /></span>
-                <p className="q-leave-title">{p(Q.searching.title)}</p>
+                <p className="q-leave-title">{p(Q.searching.title).replace("{place}", place.suburb)}</p>
                 <p className="mt-2 text-[0.98rem] font-medium text-muted">{Q.searching.near.replace("{place}", `${place.suburb} ${place.postcode}`)}</p>
                 <span aria-hidden className="bq-search-bar"><span /></span>
               </div>
