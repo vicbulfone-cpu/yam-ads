@@ -1884,3 +1884,26 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @keyframes si-dot2 { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }
 /* "Vetted partner network" tiles, desktops (owner, 7 Oct 2026): the seven boxes (and the button cell) at 75% of their size */
 @media (min-width: 1024px) { .sel-checks { zoom: 0.75; width: 75%; } }
+/* "Start here", laptops/desktops (owner, 7 Oct 2026): the pill moves to the middle of the popup's top bar, directly above
+   the match box (FitBox sets --pill-x), with a gentle pulse; the rest of the panel (words, points and the green arrow)
+   sits 2.2cm higher. Tablets keep the pill in the panel. */
+.start-here-pill { display: none; }
+@media (min-width: 1024px) {
+  .q-modal-top { position: relative; }
+  .start-here-pill {
+    display: inline-flex; position: absolute; top: 50%; left: var(--pill-x, 50%); transform: translate(-50%, -50%);
+    align-items: center; gap: 0.55rem; padding: 0.45rem 1.1rem; border-radius: 999px; white-space: nowrap;
+    background: var(--green-50); box-shadow: inset 0 0 0 1px rgba(0, 135, 58, 0.25), 0 6px 16px -10px rgba(14, 122, 50, 0.5);
+    color: var(--green-700); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+    animation: start-here-pill 2.4s ease-in-out infinite;
+  }
+  .start-here-pill .start-here-dot { position: relative; width: 0.55rem; height: 0.55rem; border-radius: 999px; background: var(--green-500); }
+  .start-here-pill .start-here-dot::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: var(--green-500); animation: start-here-ping 1.8s ease-out infinite; }
+  .start-here-label { display: none !important; }
+  .start-here { position: relative; top: -2.2cm; }
+}
+@keyframes start-here-pill {
+  0%, 100% { box-shadow: inset 0 0 0 1px rgba(0, 135, 58, 0.25), 0 6px 16px -10px rgba(14, 122, 50, 0.5), 0 0 0 0 rgba(0, 174, 65, 0.28); }
+  50% { box-shadow: inset 0 0 0 1px rgba(0, 135, 58, 0.25), 0 6px 16px -10px rgba(14, 122, 50, 0.5), 0 0 0 7px rgba(0, 174, 65, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .start-here-pill, .start-here-pill .start-here-dot::after { animation: none; } }

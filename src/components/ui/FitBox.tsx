@@ -23,12 +23,20 @@ export default function FitBox({ children }: { children: ReactNode }) {
       const s = window.innerWidth >= 768 && h > 0 && w > 0 && roomH > 0 ? Math.min(roomH / h, roomW / w) : 1;
       inner.style.transform = s !== 1 ? `scale(${s})` : "";
       inner.style.marginBottom = s !== 1 ? `${h * (s - 1)}px` : "";
+      // the "Start here" pill in the popup's top bar sits over the box's centre
+      const dlg = inner.closest("dialog");
+      if (dlg) {
+        const r = inner.getBoundingClientRect(), d = dlg.getBoundingClientRect();
+        dlg.style.setProperty("--pill-x", `${r.left + r.width / 2 - d.left}px`);
+      }
     };
     fit();
+    // again once the popup has finished opening (it scales in), so the pill sits exactly over the box
+    const late = window.setTimeout(fit, 450);
     const ro = new ResizeObserver(fit);
     ro.observe(outer);
     ro.observe(inner);
-    return () => ro.disconnect();
+    return () => { ro.disconnect(); window.clearTimeout(late); };
   }, []);
 
   return (

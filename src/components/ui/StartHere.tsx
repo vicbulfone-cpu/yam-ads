@@ -8,6 +8,17 @@ import { Check } from "./Icons";
  * Tablets show a slimmer version above the box (headline, line and a down arrow); phones keep the popup as before.
  * Styles: ".start-here" in globals.css.
  */
+/** Laptops/desktops (owner, 7 Oct 2026): the "Start here" pill sits in the middle of the popup's top bar, directly above
+ *  the match box (FitBox.tsx sets its position); the panel's own pill is shown on tablets only. */
+export function StartHerePill() {
+  return (
+    <p className="start-here-pill" aria-hidden>
+      <span className="start-here-dot" />
+      {S.label}
+    </p>
+  );
+}
+
 export default function StartHere() {
   return (
     <div className="start-here">

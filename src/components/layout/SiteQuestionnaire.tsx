@@ -21,7 +21,7 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import FitBox from "../ui/FitBox";
-import StartHere from "../ui/StartHere";
+import StartHere, { StartHerePill } from "../ui/StartHere";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
@@ -524,6 +524,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         <div className="relative flex h-full max-h-[inherit] flex-col">
           <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
+            {phase === "box" && <StartHerePill />}
             <button type="button" onClick={requestClose} aria-label="Close" className="q-modal-close" disabled={sending}>
               <Close width={20} height={20} strokeWidth={2.4} />
             </button>
