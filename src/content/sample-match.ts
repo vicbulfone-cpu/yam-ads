@@ -28,10 +28,12 @@ export const SAMPLE_MATCH: MatchDetails = {
   specialty: "Business accounting",
   location: "Melbourne VIC",
   years: 20,
-  phone: "03 XXXX XXXX",
-  email: "daniel@example.com",
-  website: "https://www.example.com",
-  address: "[Office address], Melbourne VIC",
+  // generic, safely fictional details (owner, 7 Oct 2026): 5550 numbers are set aside by ACMA for fictional use, and
+  // example.com is reserved for examples, so nobody real can be reached by mistake
+  phone: "(03) 5550 2148",
+  email: "daniel@harperaccounting.example.com",
+  website: "https://harperaccounting.example.com",
+  address: "Suite 3, 21 Wattle Lane, Melbourne VIC 3000",
   hours: "Monday–Friday, 9 am–5 pm",
   blurb:
     "A local accountant who looks after small businesses, sole traders and family companies: tax returns, BAS, bookkeeping and practical advice to help the business grow.",
