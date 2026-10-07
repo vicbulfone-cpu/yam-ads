@@ -1506,22 +1506,24 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 }
 /* "How it works" step badges (owner, 7 Oct 2026: "add 'step' in each step box, make look polished and professional"):
    a deep-green pill with a small spaced "STEP" label and the number in a white disc, on a white ring with a soft shadow,
-   sitting over the top-left corner of each step photo (HomeMatchIntro.tsx). Sizes follow the old number circle. */
+   sitting over the top-left corner of each step photo (HomeMatchIntro.tsx).
+   Owner, 7 Oct 2026: the badge at 60% of its first size (padding, gap, ring, number disc and number); the word "STEP"
+   keeps its size. */
 .step-badge {
-  display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.3rem 0.3rem 0.3rem 0.95rem; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 0.33rem; padding: 0.18rem 0.18rem 0.18rem 0.57rem; border-radius: 999px;
   background: linear-gradient(135deg, #0e8a3a 0%, var(--green-700) 55%, #08602a 100%); color: #fff;
-  box-shadow: 0 0 0 5px #fff, 0 12px 24px -10px rgba(7, 50, 101, 0.45);
+  box-shadow: 0 0 0 3px #fff, 0 8px 16px -8px rgba(7, 50, 101, 0.45);
 }
 .step-badge-word { font-family: var(--font-sans); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; line-height: 1; }
 .step-badge-num {
-  display: grid; place-items: center; width: 2.3rem; height: 2.3rem; border-radius: 999px; background: #fff; color: var(--green-700);
-  font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; line-height: 1; letter-spacing: -0.02em;
+  display: grid; place-items: center; width: 1.38rem; height: 1.38rem; border-radius: 999px; background: #fff; color: var(--green-700);
+  font-family: var(--font-sans); font-weight: 800; font-size: 0.75rem; line-height: 1; letter-spacing: -0.02em;
   box-shadow: inset 0 0 0 1px rgba(14, 122, 50, 0.15);
 }
 @media (min-width: 1024px) {
-  .step-badge { gap: clamp(0.55rem, 0.6vw, 0.9rem); padding: clamp(0.3rem, 0.32vw, 0.45rem) clamp(0.3rem, 0.32vw, 0.45rem) clamp(0.3rem, 0.32vw, 0.45rem) clamp(0.95rem, 1.05vw, 1.5rem); }
+  .step-badge { gap: clamp(0.33rem, 0.36vw, 0.54rem); padding: clamp(0.18rem, 0.19vw, 0.27rem) clamp(0.18rem, 0.19vw, 0.27rem) clamp(0.18rem, 0.19vw, 0.27rem) clamp(0.57rem, 0.63vw, 0.9rem); }
   .step-badge-word { font-size: clamp(0.7rem, 0.72vw, 1.05rem); }
-  .step-badge-num { width: clamp(2.3rem, 2.7vw, 3.9rem); height: clamp(2.3rem, 2.7vw, 3.9rem); font-size: clamp(1.25rem, 1.45vw, 2.1rem); }
+  .step-badge-num { width: clamp(1.38rem, 1.62vw, 2.34rem); height: clamp(1.38rem, 1.62vw, 2.34rem); font-size: clamp(0.75rem, 0.87vw, 1.26rem); }
 }
 /* "Vetted partner network" tiles on hover (owner, 7 Oct 2026: "highlight in each check box the heading in white, I can't
    read when hover changes box colour"): the hovered tile now fills with its own solid colour (blue or green), and its
