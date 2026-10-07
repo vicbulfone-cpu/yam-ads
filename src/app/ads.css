@@ -721,3 +721,12 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .q-modal:not(.adi) .q-modal-top img { width: 255px; }
 @media (min-width: 640px) { .q-modal:not(.adi) .q-modal-top img { width: 315px; } }
 @media (max-width: 767px) { .q-modal:not(.adi) .q-modal-top img { width: 225px; } }
+/* small phones: the ad header's logo is the home page size (owner, 7 Oct 2026), so its right-hand side gives way: the
+   "Free matching. No obligation." badge is hidden (the same words are in the trust points under the headline) and the
+   match page's "Match complete" pill becomes a green tick circle (the words stay for screen readers) */
+@media (max-width: 479px) {
+  .bz-header .bz-badge { display: none; }
+  .mp-complete { width: 2.25rem; height: 2.25rem; padding: 0; justify-content: center; flex: none; }
+  .mp-complete-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .mp-complete svg { width: 18px; height: 18px; }
+}

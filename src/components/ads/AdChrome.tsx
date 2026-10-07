@@ -8,6 +8,7 @@ import { BIZ_LANDING as L } from "@/content/business-questionnaire";
 import { CREDENTIAL } from "@/content/wording";
 import { ShieldCheck } from "./BizIcons";
 import AdInfoPopup from "./AdInfoPopup";
+import HeaderLogo from "../layout/HeaderLogo";
 import { Check } from "../ui/Icons";
 
 /** Footer links (owner, 6 Oct 2026): "How it works" left out, as that section is now on every ad page. */
@@ -20,12 +21,13 @@ const POPUP_LINK = { "data-info": "" } as const;
 export function AdHeader({ className = "", complete }: { className?: string; /** match page: a green "Match complete" pill instead of the badge */ complete?: string }) {
   return (
     <header className={`bz-header ${className}`}>
-      <div className="bz-wrap flex items-center justify-between gap-4">
-        <Link href="/" aria-label="Your Accountant Match — Home" className="shrink-0">
-          <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} priority className="bz-logo" />
+      {/* the logo exactly as in the site header (owner, 7 Oct 2026: same size and position on every page) */}
+      <div className="container-wide flex h-[var(--header-h)] items-center justify-between gap-4 xl:px-[max(var(--gutter),4.5vw)]">
+        <Link href="/" aria-label="Your Accountant Match — Home" className="flex shrink-0 items-center scale-120 origin-left">
+          <HeaderLogo className="h-auto w-[min(210px,calc(100vw-6.5rem))] md:w-[300px] xl:w-[clamp(300px,21.5vw,430px)]" />
         </Link>
         {complete ? (
-          <p className="mp-complete"><Check width={18} height={18} strokeWidth={3.2} aria-hidden /> {complete}</p>
+          <p className="mp-complete"><Check width={18} height={18} strokeWidth={3.2} aria-hidden /> <span className="mp-complete-text">{complete}</span></p>
         ) : (
           <p className="bz-badge"><ShieldCheck className="bz-badge-icon" /> <span>{L.badge}</span></p>
         )}
