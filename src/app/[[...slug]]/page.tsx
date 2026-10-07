@@ -4,6 +4,7 @@ import BusinessAdPage from "@/components/ads/BusinessAdPage";
 import PersonalAdPage from "@/components/ads/PersonalAdPage";
 import SmsfAdPage from "@/components/ads/SmsfAdPage";
 import RegistrationAdPage from "@/components/ads/RegistrationAdPage";
+import AboutPage from "@/components/AboutPage";
 import ContentPage from "@/components/ContentPage";
 import JsonLd from "@/components/JsonLd";
 import { PAGE_PATHS, adPageName } from "@/lib/pages";
@@ -65,6 +66,8 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
   if (path === "/ad-2") return <PersonalAdPage />;
   if (path === "/ad-3") return <SmsfAdPage />;
   if (path === "/ad-4") return <RegistrationAdPage />;
+  // owner, 7 Oct 2026: the About Us content shown in the ad pages' About popup
+  if (path === "/about") return (<><JsonLd path={path} /><AboutPage /></>);
   return (
     <>
       <JsonLd path={path} />

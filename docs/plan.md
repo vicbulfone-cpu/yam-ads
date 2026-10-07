@@ -370,3 +370,4 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
   with the 19+ figure) and "Why Choose Us?" (four cards). All screen sizes. Replaces the earlier combined version
   (About + How it works + How we select). The /about page itself keeps its own words.
 - Owner's wording used as supplied, except "specializes" spelt "specialises" (Australian spelling).
+- (later, 7 Oct 2026) The /about page itself now shows the same About Us content (src/components/AboutPage.tsx, rendered by the catch-all route for /about), with the site header, the closing call-to-action band and footer. Title, description, canonical and robots unchanged.

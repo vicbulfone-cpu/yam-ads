@@ -4,7 +4,7 @@ import { PeopleOutline } from "./BizIcons";
 
 /**
  * The "About" popup's content on the ad pages (owner, 7 Oct 2026): the owner's About Us wording, laid out in the site's
- * style. Story and promise first, then a navy expertise band with the 19+ figure, then the four reasons as cards.
+ * style (also the whole /about page, src/components/AboutPage.tsx). Story and promise first, then a navy expertise band with the 19+ figure, then the four reasons as cards.
  * Styles: ".abp" in ads.css. Wording: src/content/about-popup.ts.
  */
 const WHY_ICONS: Record<string, React.ReactNode> = {
@@ -14,11 +14,14 @@ const WHY_ICONS: Record<string, React.ReactNode> = {
   roots: <Star width={24} height={24} />,
 };
 
-export default function AboutPopup() {
+/** `level`: the popup uses h3 (under its "About Us" h2); the /about page uses h2 (under its h1). */
+export default function AboutPopup({ level = 3 }: { level?: 2 | 3 }) {
+  const H = level === 2 ? "h2" : "h3";
+  const H4 = level === 2 ? "h3" : "h4";
   return (
     <div className="abp">
       <section className="abp-intro">
-        <h3 className="abp-h">{A.intro.heading}</h3>
+        <H className="abp-h">{A.intro.heading}</H>
         <p className="abp-lead">{A.intro.lead}</p>
         <p className="abp-statement">{A.intro.statement}</p>
         <p className="abp-p">{A.intro.body}</p>
@@ -34,18 +37,18 @@ export default function AboutPopup() {
           <span className="abp-figure-label">{A.expertise.figureLabel}</span>
         </div>
         <div>
-          <h3 className="abp-h abp-h-light">{A.expertise.heading}</h3>
+          <H className="abp-h abp-h-light">{A.expertise.heading}</H>
           {A.expertise.paragraphs.map((p) => <p key={p} className="abp-p">{p}</p>)}
         </div>
       </section>
 
       <section className="abp-why">
-        <h3 className="abp-h">{A.why.heading}</h3>
+        <H className="abp-h">{A.why.heading}</H>
         <ul className="abp-cards">
           {A.why.items.map((w) => (
             <li key={w.id} className="abp-card">
               <span aria-hidden className="abp-card-icon">{WHY_ICONS[w.id]}</span>
-              <h4 className="abp-card-title">{w.title}</h4>
+              <H4 className="abp-card-title">{w.title}</H4>
               <p className="abp-card-text">{w.text}</p>
             </li>
           ))}
