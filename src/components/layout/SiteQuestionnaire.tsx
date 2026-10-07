@@ -534,7 +534,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
               {/* the site match box; its Start link begins the questions. Tablets and desktops (owner, 7 Oct 2026): drawn
                   to fit the popup with no scrolling, and on the home page a "Start here" message above it */}
               <div className="q-modal-card q-fit-card flex min-h-full items-center"><div className="w-full">
-                {pathname === "/" && <StartHere />}
+                <StartHere />
                 <FitBox><MatchCardView key={services.join()} data={card} initialSelected={services} /></FitBox>
               </div></div>
             </div>
