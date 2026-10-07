@@ -25,6 +25,14 @@ export const RULES: Rule[] = [
 
   [/we[’']ll match you with one (?:suitable )?vetted accountant/g, "you’ll be matched to one of our partner accountants"],
 
+  // ---- privacy: one matched accountant only (owner, 7 Oct 2026: "edit privacy page accordingly", to match the new
+  //      How we select accountants wording "shared only with your single best match—never blasted to multiple providers") ----
+  [/To match you with an accountant in our network who understands your needs and individual requirements\./g,
+    "To connect you directly with one local partner accountant who specialises in the help you asked for."],
+  [/Your information is never shared with multiple firms simultaneously\./g,
+    "Your information is kept private and shared only with your single matched accountant. It is never sent to multiple providers."],
+  [/Last updated: January 2026/g, "Last updated: October 2026"],
+
   // ---- credentials ----
   // "Every / All / Our … accountants hold active membership with recognised peak bodies (such as CPA Australia or the NTAA) and registration with the TPB."
   [/(?:Every|All|Our)[^.]*?active membership with recognised peak bodies \(such as CPA Australia or the NTAA\) and registration with the Tax Practitioners Board \(TPB\)\./g, CREDENTIAL],
