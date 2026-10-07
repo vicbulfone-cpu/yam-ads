@@ -134,8 +134,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
               <span className="block text-navy-900">A local accountant.</span>
               <span className="block text-green-700">A better match.</span>
             </h2>
-            {/* laptops/desktops: 1cm to the right (owner, 7 Oct 2026) */}
-            <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:translate-x-[1cm] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
+            {/* lined up with the heading on every screen size (owner, 7 Oct 2026: the earlier 1cm nudge right removed) */}
+            <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
               Your needs. Your area. Your accountant.
             </p>
             {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts) */}
