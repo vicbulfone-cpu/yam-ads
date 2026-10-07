@@ -361,3 +361,10 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
 - New wording (owner-requested): "Start here" / "Your match is about 60 seconds away" / "Choose what you need below to
   begin. It won't take long, and we're excited to match you with a local partner accountant." ("60 seconds" is the match
   box's own note.)
+
+## About popup content (owner, 7 Oct 2026)
+
+- The "About Your Accountant Match" popup (ad page and /match footers, `AdInfoPopup.tsx` `COMBINE`) no longer shows
+  "How we vet accountants" or "How the matching process works". In their place: the How it works page's words, then the
+  How we select accountants page's words, each under its own page headline. The /about page itself is unchanged.
+- In the popup, How it works' step numbers show as small "Step 1/2/3" badges (the page shows a plain number).

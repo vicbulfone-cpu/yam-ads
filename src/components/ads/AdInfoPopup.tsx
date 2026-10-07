@@ -53,6 +53,49 @@ function extract(text: string, base: URL): Page {
   return { title: h1?.textContent?.trim() ?? "", html: out.innerHTML };
 }
 
+/**
+ * About popup (owner, 7 Oct 2026): its "How we vet accountants" and "How the matching process works" sections are left
+ * out, and in their place come the How it works page's words, then the How we select accountants page's words (each
+ * under its own page headline). The About page itself is unchanged.
+ */
+const COMBINE: Record<string, { drop: string[]; add: string[] }> = {
+  "/about": { drop: ["How we vet accountants", "How the matching process works"], add: ["/how-it-works", "/how-we-select-accountants"] },
+};
+
+async function fetchPage(url: URL): Promise<Page> {
+  const key = norm(url.pathname);
+  const hit = cache.get(key);
+  if (hit) return hit;
+  const res = await fetch(url.pathname, { credentials: "same-origin" });
+  if (!res.ok) throw new Error(String(res.status));
+  const p = extract(await res.text(), url);
+  cache.set(key, p);
+  return p;
+}
+
+async function loadPage(url: URL): Promise<Page> {
+  const rule = COMBINE[norm(url.pathname)];
+  const own = await fetchPage(url);
+  if (!rule) return own;
+  const parts = await Promise.all(rule.add.map((p) => fetchPage(new URL(p, url))));
+  const box = document.createElement("div");
+  box.innerHTML = own.html;
+  const dropped = [...box.children].filter((c) => rule.drop.includes(c.querySelector("h2")?.textContent?.trim() ?? ""));
+  const added = parts.map((p) => {
+    const s = document.createElement("section");
+    s.className = "adi-part";
+    s.innerHTML = `<h2 class="adi-part-title"></h2>${p.html}`;
+    s.querySelector("h2")!.textContent = p.title;
+    // a step number on its own line ("1") is shown as a small badge
+    s.querySelectorAll("p").forEach((el) => { if (/^\d+$/.test(el.textContent?.trim() ?? "")) el.classList.add("adi-step-num"); });
+    return s;
+  });
+  if (dropped.length) dropped[0].before(...added);
+  else box.append(...added);
+  dropped.forEach((d) => d.remove());
+  return { title: own.title, html: box.innerHTML };
+}
+
 export default function AdInfoPopup() {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -72,18 +115,11 @@ export default function AdInfoPopup() {
   useEffect(() => {
     const load = async (href: string) => {
       const url = new URL(href, window.location.href);
-      const key = norm(url.pathname);
       setOpen(true);
       bodyRef.current?.scrollTo(0, 0);
-      const hit = cache.get(key);
-      if (hit) { setPage(hit); return; }
       setPage(null);
       try {
-        const res = await fetch(url.pathname, { credentials: "same-origin" });
-        if (!res.ok) throw new Error(String(res.status));
-        const p = extract(await res.text(), url);
-        cache.set(key, p);
-        setPage(p);
+        setPage(await loadPage(url));
       } catch {
         // never a dead end: open the normal page instead (same tab, owner 7 Oct 2026)
         setOpen(false);

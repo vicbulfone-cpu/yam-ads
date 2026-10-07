@@ -579,3 +579,14 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .adi-content .hws-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; max-width: none; }
 }
 .adi-content h2.hws-title { font-size: clamp(1.15rem, 1.6vw, 1.4rem) !important; margin-bottom: 0; }
+/* About popup (owner, 7 Oct 2026): the How it works and How we select accountants pages shown inside it, each under its
+   own page headline (AdInfoPopup.tsx COMBINE) */
+.adi-content > section.adi-part { padding-top: 1.75rem !important; }
+.adi-part-title { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.45rem, 2.4vw, 1.95rem); line-height: 1.15; color: var(--navy-900); }
+.adi-part-title::after { content: ""; display: block; width: 3rem; height: 3px; margin-top: 0.6rem; border-radius: 999px; background: #00ae41; }
+.adi-part > * + * { margin-top: 1rem; }
+.adi-part > section { background: transparent !important; padding-block: 1rem !important; }
+.adi-part > section + section { border-top: 1px solid var(--line); }
+.adi-part .mt-10 { margin-top: 0.75rem !important; }
+.adi-part p.adi-step-num { display: inline-flex; align-items: center; justify-content: center; margin: 0; min-width: 2.2rem; height: 2.2rem; padding: 0 0.6rem; border-radius: 999px; background: #0e7a32; color: #fff; font-weight: 800; font-size: 1rem; line-height: 1; }
+.adi-part p.adi-step-num::before { content: "Step\00a0"; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
