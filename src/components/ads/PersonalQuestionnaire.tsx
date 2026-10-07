@@ -21,7 +21,7 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
  * The personal tax questionnaire (personal ad page /ad-2). Same popup, progress header and option cards as the business
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's personal-tax questions:
  *   ["help me choose"] → follow-up for the main reason → "Does your return include any of these?" (returns only) →
- *   name → summary (confirm, optional note) → in person or remote → postcode/suburb → 3-second search →
+ *   name → summary (confirm, optional note) → in person or remote → postcode/suburb → 7-second search →
  *   "great news" box asking for email → mobile → email the match details? → match page (/match).
  * Each page counts as one step in the progress bar. Opened by the personal match box (OPEN_PERSONAL_QUESTIONNAIRE event,
  * detail = the chosen reason, or "choose" for "Not sure — help me choose").
@@ -224,7 +224,7 @@ export default function PersonalQuestionnaire() {
         setError(null);
         setSearching(true);
         // a short pause while we "look", then the good-news box asks for the email address
-        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 3000);
+        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 7000); // 7 seconds (owner, 7 Oct 2026)
         return;
       case "email":
         if (!EMAIL.test(email.trim())) return setError(Q.errors.email);
@@ -499,7 +499,7 @@ export default function PersonalQuestionnaire() {
             </div>
           </div>
 
-          {/* 3-second search after the postcode */}
+          {/* 7-second search after the postcode */}
           {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
           {matching && <MatchSearching firstName={firstName} />}
 

@@ -16,7 +16,7 @@ import PhoneFit from "../ui/PhoneFit";
 /**
  * The business questionnaire (business ad page /ad-1). Same popup, progress header and option cards as the site's
  * questionnaire (QuestionnaireModal.tsx, docs/questionnaire-design.md), with more steps:
- *   one page per ticked category → summary (confirm) → in person or remote → postcode/suburb → 3-second search →
+ *   one page per ticked category → summary (confirm) → in person or remote → postcode/suburb → 7-second search →
  *   "great news" box asking for email → mobile → name → email the match details? → match page (/match).
  * Each category counts as one step in the progress bar. Opened by the business match box (OPEN_BIZ_QUESTIONNAIRE event).
  */
@@ -188,7 +188,7 @@ export default function BusinessQuestionnaire() {
         setError(null);
         setSearching(true);
         // a short, honest pause while we "look", then the good-news box asks for the email address
-        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 3000);
+        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 7000); // 7 seconds (owner, 7 Oct 2026)
         return;
       case "email":
         if (!EMAIL.test(email.trim())) return setError(Q.errors.email);
@@ -358,7 +358,7 @@ export default function BusinessQuestionnaire() {
             </div>
           </div>
 
-          {/* 3-second search after the postcode */}
+          {/* 7-second search after the postcode */}
           {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
           {matching && <MatchSearching firstName={firstName} />}
 
