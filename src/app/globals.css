@@ -837,8 +837,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 }
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
 /* the navy badge: + 5mm right (owner, 7 Oct 2026), then (tablets and up) another 5mm right and 1.2cm up with its note */
-@media (min-width: 768px) { .intro-badge { translate: 5mm -1.2cm; } }
-@media (min-width: 1024px) { .intro-badge { translate: calc(0.5cm + 5mm + 5mm) calc(0.55cm - 1.2cm); } }
+@media (min-width: 768px) { .intro-badge { translate: 5mm calc(-1.2cm - 5mm); } }
+@media (min-width: 1024px) { .intro-badge { translate: calc(0.5cm + 5mm + 5mm) calc(0.55cm - 1.2cm - 5mm); } } /* + 5mm higher on tablets and up (owner, 7 Oct 2026) */
 .desk-hero-photo img.desk-hero-img { transform: translateY(-0.5cm); display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); }
 @media (min-width: 1024px) {
   .desk-hero-photo { width: 100%; height: auto; transform: none; bottom: min(0px, calc((100% - 39.99vw) * 0.62)); }
