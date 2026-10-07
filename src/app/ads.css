@@ -614,3 +614,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .abp-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
 }
 @media (prefers-reduced-motion: reduce) { .abp-card { transition: none; } .abp-card:hover { transform: none; } }
+/* the /about page shows the popup's content (AboutPage.tsx): same plain heading font as in the ad pages' popup (owner,
+   7 Oct 2026), rather than the site's serif headings */
+.about-page .abp-h, .about-page .abp-card-title, h1.about-title { font-family: var(--font-sans); }
+h1.about-title { font-weight: 800; letter-spacing: -0.02em; }

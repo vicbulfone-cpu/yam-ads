@@ -19,7 +19,7 @@ export default function AboutPage() {
         <section className="relative isolate overflow-hidden bg-gradient-to-b from-navy-50 via-white to-white">
           <div className="container-page pt-12 md:pt-20">
             <div className="max-w-4xl">
-              <h1 className="h-display">{A.title}</h1>
+              <h1 className="h-display about-title">{A.title}</h1>
             </div>
           </div>
         </section>
