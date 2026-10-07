@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/config/site.config";
 import { BUSINESS } from "@/content/business";
 import { HOME_EXTRA_FAQS } from "@/content/faq-teasers";
-import { STEP2_OLD_START, STEP2_TEXT } from "@/content/how-it-works";
+import { STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT } from "@/content/how-it-works";
 import seoCopy from "@/content/seo-copy.json";
 import { applyWording } from "@/content/wording";
 import { cityOf, typeOf, INDEXABLE_PATHS, isNoindex } from "@/lib/pages";
@@ -148,9 +148,9 @@ export function jsonLdFor(p: string): Record<string, unknown> {
         const extra = HOME_EXTRA_FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }));
         nodes.push({ ...n, mainEntity: [...((n.mainEntity as unknown[]) ?? []), ...extra] });
       } else if (type === "HowTo") {
-        // /how-it-works: the steps' wording follows the page (step 2's paragraph rewritten by the owner, 7 Oct 2026)
+        // /how-it-works: the steps' wording follows the page (steps 2 and 3 rewritten by the owner, 7 Oct 2026)
         const steps = ((n.step as Record<string, unknown>[] | undefined) ?? []).map((s) =>
-          STEP2_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP2_TEXT } : s,
+          STEP2_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP2_TEXT } : STEP3_OLD_START.test(String(s.text ?? "")) ? { ...s, text: STEP3_TEXT } : s,
         );
         nodes.push({ ...n, step: steps });
       } else if (type === "Service") {
