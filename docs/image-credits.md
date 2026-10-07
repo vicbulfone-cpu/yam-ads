@@ -61,3 +61,5 @@ on /match until GoHighLevel supplies the real accountant's photo.
 - (later, 7 Oct 2026) The sample accountant's photo is now `public/images/home/accountant-portrait-2.webp`: a crop
   (480 × 576) of one person from the owner-supplied `team-meeting` photo (owner's own image). `accountant-portrait.webp`
   is no longer shown.
+
+`public/images/home/step-1-woman-phone-sofa.webp` and `public/images/home/step-3-accountant-client-desk.webp`: owner-supplied photos (7 Oct 2026, `hero section/10.png` and `11.png`), used in step boxes 1 and 3 of the "How it works" steps (home page, ad pages, /how-it-works). The second has a thin white strip trimmed from its left edge. The older `woman-phone-sofa` and `accountant-client-desk` files stay (the latter is still used in the questionnaires).

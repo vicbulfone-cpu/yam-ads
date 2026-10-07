@@ -19,9 +19,9 @@ export const HOME_STEPS: { title: string; text: string; image: string; alt: stri
   {
     title: "Tell us what you need",
     text: "Complete our short 60-second questionnaire.",
-    image: "/images/home/woman-phone-sofa.webp",
+    image: "/images/home/step-1-woman-phone-sofa.webp", // owner's new photo, 7 Oct 2026 ("hero section/10.png")
     alt: "Woman relaxing on her sofa as she fills in the short questionnaire on her phone",
-    position: "50% 0%",
+    position: "50% 24%", // portrait photo: framed on her face and shoulders
   },
   {
     title: "We find your match",
@@ -34,9 +34,9 @@ export const HOME_STEPS: { title: string; text: string; image: string; alt: stri
   {
     title: "Connect and get started",
     text: "Your match calls you, or you call for immediate assistance.",
-    image: "/images/home/accountant-client-desk.webp",
+    image: "/images/home/step-3-accountant-client-desk.webp", // owner's new photo, 7 Oct 2026 ("hero section/11.png")
     alt: "Accountant talking through paperwork with a new client at his desk",
-    position: "50% 0%",
+    position: "50% 16%", // portrait photo: framed on both faces
   },
 ];
 
