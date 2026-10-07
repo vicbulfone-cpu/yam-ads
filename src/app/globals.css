@@ -1577,7 +1577,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
    the other tiles soften so the hovered one stands out. A faint blue-and-green glow sits behind the whole grid. */
 .sel-cell { --c: #0e7a32; --c-soft: #e9f8ef; --c-line: #c9ead6; --c-glow: rgba(14, 122, 50, 0.16); --c-shadow: rgba(14, 122, 50, 0.3); --icon-tint: none; }
 .sel-cell:nth-child(8n + 1), .sel-cell:nth-child(8n + 3), .sel-cell:nth-child(8n + 6), .sel-cell:nth-child(8n + 8) {
-  --c: #1565f5; --c-soft: #eaf2fe; --c-line: #cddff9; --c-glow: rgba(21, 101, 245, 0.16); --c-shadow: rgba(21, 101, 245, 0.3);
+  /* navy, the same as the home page headline (owner, 7 Oct 2026; was blue #1565f5) */
+  --c: #073265; --c-soft: #eef3f9; --c-line: #cfdbea; --c-glow: rgba(7, 50, 101, 0.14); --c-shadow: rgba(7, 50, 101, 0.3);
   --icon-tint: hue-rotate(78deg) saturate(1.25);
 }
 @media (hover: hover) and (min-width: 1024px) {
