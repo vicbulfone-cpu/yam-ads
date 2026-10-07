@@ -1,7 +1,7 @@
 "use client";
 
 import { MATCH_SEARCH, MATCH_WAIT_MS } from "@/content/match-search";
-import { Check, Pin, Sparkle } from "../ui/Icons";
+import { Check, Sparkle } from "../ui/Icons";
 
 /**
  * Pieces shared by every ad questionnaire (business /ad-1, personal /ad-2, ...): the navy progress header, the step
@@ -45,34 +45,6 @@ export function openMatchPage(router: { push: (href: string) => void }, href: st
   const path = href.split("?")[0];
   router.push(href);
   window.setTimeout(() => { if (window.location.pathname !== path) window.location.assign(href); }, 3000);
-}
-
-/**
- * The 3-second "Searching for your local accountant" box after the postcode (every questionnaire). Owner, 7 Oct 2026:
- * a selling line with the customer's own chosen services as chips (at most 6, then "+N more").
- */
-export function SearchingBox({ title, pitch, near, more, services }: { title: string; pitch: string; near: string; more: string; services: string[] }) {
-  const list = [...new Set(services.filter(Boolean))];
-  const shown = list.slice(0, 6);
-  return (
-    <div className="q-leave" role="status" aria-live="polite">
-      <div className="q-leave-box bq-search">
-        <span aria-hidden className="bq-radar"><Pin width={28} height={28} strokeWidth={2.2} /></span>
-        <p className="q-leave-title">{title}</p>
-        {list.length > 0 && (
-          <>
-            <p className="bq-pitch">{pitch}</p>
-            <ul className="bq-pitch-list">
-              {shown.map((s) => <li key={s}><Check aria-hidden width={13} height={13} strokeWidth={3.4} />{s}</li>)}
-              {list.length > shown.length && <li className="is-more">{more.replace("{n}", String(list.length - shown.length))}</li>}
-            </ul>
-          </>
-        )}
-        <p className="mt-3 text-[0.92rem] font-medium text-muted">{near}</p>
-        <span aria-hidden className="bq-search-bar"><span /></span>
-      </div>
-    </div>
-  );
 }
 
 /** Starts the "searching" screen's clock; the returned function waits until it has been up for MATCH_WAIT_MS. */
