@@ -45,8 +45,8 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
         </div>
 
         {/* desktops (owner, 7 Oct 2026): the three step boxes at 75% of their size (everything in them scales together),
-            centred on the page */}
-        <ol className="hiw-steps relative mt-10 lg:mx-auto lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
+            lined up on the left with the heading (owner: centred, then back to the left) */}
+        <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
           {steps.map((s, i) => {
             const home = HOME_STEPS[i];
             const flip = i % 2 === 1;
