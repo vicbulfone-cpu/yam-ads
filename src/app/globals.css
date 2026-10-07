@@ -1882,3 +1882,5 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @keyframes si-draw2 { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 @keyframes si-dot { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }
 @keyframes si-dot2 { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }
+/* "Vetted partner network" tiles, desktops (owner, 7 Oct 2026): the seven boxes (and the button cell) at 75% of their size */
+@media (min-width: 1024px) { .sel-checks { zoom: 0.75; width: 75%; } }
