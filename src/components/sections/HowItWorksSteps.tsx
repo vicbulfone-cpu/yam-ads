@@ -42,7 +42,8 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
             const home = HOME_STEPS[i];
             const flip = i % 2 === 1;
             return (
-              <li key={s.title} className="hiw-step relative pb-10 last:pb-0 sm:pl-28 lg:pb-[clamp(3rem,4vw,5rem)] lg:pl-[clamp(8.5rem,9.5vw,12rem)]">
+              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-28 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(8.5rem,9.5vw,12rem)]">
+                {/* boxes 1cm further apart (owner, 7 Oct 2026; 1.333cm on desktops, where the list is drawn at 75%) */}
                 {/* step rail (owner, 7 Oct 2026): a green "STEP 1/2/3" pill per step (in place of the numbered discs and the
                     pills that sat on the photos), joined by a dashed line; phones show the pill above its box */}
                 <div aria-hidden className="mb-3 sm:absolute sm:left-0 sm:top-0 sm:mb-0 sm:flex sm:w-24 sm:justify-center lg:w-[clamp(7rem,7.6vw,9.5rem)]">
@@ -64,7 +65,7 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                         alt={home.alt}
                         fill
                         sizes="(min-width: 768px) 40vw, 92vw"
-                        className={`${home.image.includes("map") ? "object-contain" : "object-cover"} transition duration-700 hoverable:group-hover:scale-[1.04]`}
+                        className={`${home.image.includes("map") ? "object-contain" : "object-cover"}`} /* no hover zoom (owner, 7 Oct 2026) */
                         style={{ objectPosition: home.position, transform: home.shift }}
                       />
                     </div>
