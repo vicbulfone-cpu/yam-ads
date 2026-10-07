@@ -89,10 +89,11 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             </p>
           </div>
 
-          <ol className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[1.4vw] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
+          {/* owner, 7 Oct 2026: the steps 5mm lower (everything below follows), and each photo box at 85% of its size */}
+          <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
             {steps.flatMap((s, i) => [
               <li key={s.title} className="relative">
-                <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
+                <div className="relative ml-1 mt-4 aspect-[2.35/1] w-[85%] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
                   <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
                 </div>
                 {/* "Step 1" badge (owner, 7 Oct 2026: "add 'step' in each step box"): a green pill with a small "STEP" label
