@@ -25,7 +25,7 @@ export const HOME_STEPS: { title: string; text: string; image: string; alt: stri
   },
   {
     title: "We find your match",
-    text: "Your postcode connects you with one local accountant from our partner network.",
+    text: "Enter your postcode and we’ll match you with one local accountant from our trusted partner network.", // owner, 7 Oct 2026
     image: "/images/home/australia-map-pin.webp",
     alt: "Map of Australia with a green location pin marking a local match",
     position: "50% 50%",
