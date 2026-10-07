@@ -90,18 +90,20 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             </p>
           </div>
 
-          {/* owner, 7 Oct 2026: the steps 5mm lower (everything below follows), and each photo box at 85% of its size */}
+          {/* owner, 7 Oct 2026: the steps 5mm lower (everything below follows); the photo boxes back to full size (they were at 85% for a while) */}
           <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
             {HOME_STEPS.flatMap((s, i) => [
               <li key={s.title} className="relative">
-                <div className="relative ml-1 mt-4 aspect-[2.35/1] w-[85%] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
+                <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
                   <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
                 </div>
-                {/* "Step 1" badge (owner, 7 Oct 2026: "add 'step' in each step box"): a green pill with a small "STEP" label
-                    and the number in a white disc, on a white ring so it sits cleanly over the photo's corner */}
-                <span aria-hidden className="step-badge absolute left-0 top-0">
-                  <span className="step-badge-word">Step</span>
-                  <span className="step-badge-num">{i + 1}</span>
+                {/* "Step 1" tag over the photo's corner (owner, 7 Oct 2026: same style as the How It Works page): white pill,
+                    navy "STEP", the number in a green disc */}
+                <span aria-hidden className="absolute left-0 top-0 inline-flex items-center gap-2.5 rounded-full bg-white py-1 pl-4 pr-1 shadow-[0_10px_24px_-14px_rgba(7,50,101,0.55)] ring-1 ring-navy-900/12 sm:[zoom:1.15] lg:[zoom:1.125]">
+                  <span className="font-sans text-[0.875rem] font-bold uppercase leading-none tracking-[0.2em] text-navy-900">Step</span>
+                  <span className="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-br from-[#0e8a3a] to-[#08602a] font-sans text-[0.95rem] font-extrabold leading-none text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
+                    {i + 1}
+                  </span>
                 </span>
                 <h3 className="mt-3 font-sans text-[1.3rem] font-extrabold tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.3rem,1.75vw,2.6rem)]">{s.title}</h3>
                 <p className="mt-1 text-[1rem] leading-snug text-navy-900/80 lg:text-[clamp(1rem,1.15vw,1.7rem)]">{s.text}</p>
