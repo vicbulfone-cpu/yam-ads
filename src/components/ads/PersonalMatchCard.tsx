@@ -69,7 +69,6 @@ export default function PersonalMatchCard() {
             );
           })}
         </fieldset>
-        <button type="button" onClick={() => open("choose")} className="pz-unsure">{C.unsure}</button>
         <button type="button" onClick={start} className="btn btn-primary mc-start">
           <span>{C.start}</span>
           <ArrowRight className="mc-start-arrow" strokeWidth={2.6} />

@@ -29,9 +29,9 @@ export interface BizCategory {
   options: BizOption[];
 }
 
+// ("Not sure — help me choose" removed from every question, owner 7 Oct 2026)
 const extras = (prefix: string): BizOption[] => [
   { id: `${prefix}_other`, label: "Other — tell us what you need", other: true },
-  { id: `${prefix}_unsure`, label: "Not sure — help me choose" },
 ];
 
 export const BIZ_CATEGORIES: BizCategory[] = [

@@ -55,7 +55,6 @@ export const ADVICE_TOPICS = [
   { id: "capital_gains", label: "Capital gains" },
   { id: "income_deductions", label: "Income and deductions" },
   { id: "other", label: "Other — tell us what you need", other: true },
-  { id: "unsure", label: "Not sure — help me choose" },
 ];
 
 export const RETURN_ITEMS = [

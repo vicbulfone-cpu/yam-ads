@@ -400,3 +400,13 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
   "Alex Morgan" with placeholder details, labelled "Illustrative profile • Sample details".
 - Note: "Your area — A local partner for your postcode." is an area claim (an earlier rule asked for neutral wording);
   it comes from the owner's design and is true because ad payers are also the postcode owners.
+- (later, 7 Oct 2026) Questionnaire changes:
+  - Site questionnaire, "Personal Tax & Planning / What do you need help with?": tick one or more (hint "Select all that
+    apply."); "I'm still not sure" only on its own. Each ticked reason gets its own follow-up page (this year's return,
+    amend, planning, in that order), then the shared "Does your return include any of these?" page; the summary shows one
+    card per reason. Lead answers: personal.needs (list), thisYear, amend, adviceTopics, returnIncludes. The Ad 2 box
+    still takes one choice.
+  - "Which financial years need lodging?" (overdue) removed from the site questionnaire and Ad 2.
+  - "Not sure — help me choose" removed from every question (business and SMSF category pages, planning topics) and
+    from under the Ad 2 match box.
+  - SMSF: "Establishing an SMSF after receiving advice" → "Establishing an SMSF".

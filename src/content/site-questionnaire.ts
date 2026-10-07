@@ -16,7 +16,7 @@ export const SITE_Q = { ...BIZ_Q, badge: "Your Match in Progress" };
 
 /** Each service's sub-section page: the name shown on the site box, and its ad match box's question and hint. */
 export const SERVICE_PICK: Record<ServiceKey, { name: string; question: string; hint: string; error: string }> = {
-  personal: { name: MATCH_CARD_COPY.rows["Personal Tax Returns and Planning"].title, question: PERSONAL_CARD.question, hint: PERSONAL_CARD.hint, error: PERSONAL_CARD.error },
+  personal: { name: MATCH_CARD_COPY.rows["Personal Tax Returns and Planning"].title, question: PERSONAL_CARD.question, hint: "Select all that apply.", error: PERSONAL_CARD.error },
   business: { name: MATCH_CARD_COPY.rows["Business Services"].title, question: BIZ_CARD.question, hint: BIZ_CARD.hint, error: BIZ_CARD.error },
   smsf: { name: MATCH_CARD_COPY.rows["SMSF and Financial Planning"].title, question: SMSF_CARD.question, hint: SMSF_CARD.hint, error: SMSF_CARD.error },
   registration: { name: MATCH_CARD_COPY.rows["Registration Services"].title, question: REG_CARD.question, hint: REG_CARD.hint, error: REG_CARD.error },

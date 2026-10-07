@@ -47,9 +47,13 @@ type CatAnswer = { ids: string[]; other: string; software: string | null };
 type Step =
   | { kind: "pick"; s: ServiceKey }
   | { kind: "cat"; s: CatService; id: string }
-  | { kind: "pfollow" | "pincome" }
+  | { kind: "pfollow"; n: FollowNeed }
+  | { kind: "pincome" }
   | { kind: "qualify"; s: "smsf" | "registration" }
   | { kind: "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe" };
+/** Personal reasons with a follow-up page, in this order (owner, 7 Oct 2026: "Overdue or multiple returns" no longer has one). */
+type FollowNeed = "this_year" | "amend" | "planning";
+const FOLLOW_UPS: FollowNeed[] = ["this_year", "amend", "planning"];
 type Edit = { one: true } | { block: ServiceKey; before: string } | null;
 
 const CATS: Record<CatService, BizCategory[]> = { business: BIZ_CATEGORIES, smsf: SMSF_CATEGORIES, registration: REG_CATEGORIES };
@@ -137,10 +141,11 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const [picks, setPicks] = useState<Record<CatService, string[]>>({ business: [], smsf: [], registration: [] });
   const [answers, setAnswers] = useState<Record<string, CatAnswer>>({});
   // personal (Ad 2)
-  const [need, setNeed] = useState<NeedId | null>(null);
+  // several reasons can be ticked; "I am still not sure" only on its own (owner, 7 Oct 2026)
+  const [needs, setNeeds] = useState<NeedId[]>([]);
+  const [amendYear, setAmendYear] = useState<string | null>(null);
   const [year, setYear] = useState<string | null>(null);
   const [first, setFirst] = useState<string | null>(null);
-  const [years, setYears] = useState<string[]>([]);
   const [amendNote, setAmendNote] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const [topicOther, setTopicOther] = useState("");
@@ -181,9 +186,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     for (const s of services) {
       out.push({ kind: "pick", s });
       if (s === "personal") {
-        const n = need ?? "this_year"; // before a reason is picked, count the pages a tax return needs (as on Ad 2)
-        if (n !== "unsure") out.push({ kind: "pfollow" });
-        if (RETURN_NEEDS.includes(n)) out.push({ kind: "pincome" });
+        const ns: NeedId[] = needs.length ? needs : ["this_year"]; // before a reason is picked, count the pages a tax return needs
+        for (const n of FOLLOW_UPS) if (ns.includes(n)) out.push({ kind: "pfollow", n });
+        if (ns.some((n) => RETURN_NEEDS.includes(n))) out.push({ kind: "pincome" });
       } else {
         out.push(...picks[s].map((id) => ({ kind: "cat" as const, s, id })));
         if (s !== "business") out.push({ kind: "qualify", s });
@@ -191,17 +196,17 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     }
     // the name comes straight after the service questions, so every later question can use it
     return [...out, { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" }, { kind: "emailMe" }];
-  }, [services, picks, need]);
+  }, [services, picks, needs]);
   const step = steps[Math.min(stepIdx, steps.length - 1)];
   const summaryIdx = steps.findIndex((x) => x.kind === "summary");
-  const pickKey = (s: ServiceKey) => (s === "personal" ? String(need) : picks[s].join());
+  const pickKey = (s: ServiceKey) => (s === "personal" ? needs.join() : picks[s].join());
 
   // ---------- opening and closing ----------
   const show = useCallback((keys: ServiceKey[]) => {
     noteOpen(); // counts the visit (src/lib/visitor.ts)
     // a fresh start every time
     setPicks({ business: [], smsf: [], registration: [] }); setAnswers({});
-    setNeed(null); setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
+    setNeeds([]); setYear(null); setFirst(null); setAmendYear(null); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
     setHave(null); setWhen(null); setSmsfNotes(""); setStage(null); setRegNotes("");
     setStepIdx(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
     setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setMatching(false); setConfirmLeave(false);
@@ -280,7 +285,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     : text.replace(/^\{name\}, (.)/, (_, c: string) => c.toUpperCase()).replace(/,? \{name\}/g, ""));
 
   // ---------- answers ----------
-  const resetFollowUp = () => { setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); };
+  const toggleNeed = (id: NeedId) => { setNeeds((l) => toggleIn(l, id) as NeedId[]); clear(); };
   const togglePick = (s: CatService, id: string) => {
     clear();
     setPicks((all) => {
@@ -307,12 +312,11 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   };
 
   /** What the visitor told us, per service, as label/value lines (summary, lead and match page). */
-  const personalLines = (): { label: string; value: string }[] => {
+  const personalLines = (n: NeedId): { label: string; value: string }[] => {
     const L = PERSONAL_Q.summaryLabels;
-    switch (need) {
+    switch (n) {
       case "this_year": return [{ label: L.year, value: labelOf(yearOptions.thisYear, year) }, { label: L.first, value: labelOf(YES_NO_UNSURE, first) }];
-      case "overdue": return [{ label: L.years, value: yearOptions.overdue.filter((o) => years.includes(o.id)).map((o) => o.label).join(", ") }];
-      case "amend": return [{ label: L.year, value: labelOf(yearOptions.amend, year) }, ...(amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [])];
+      case "amend": return [{ label: L.year, value: labelOf(yearOptions.amend, amendYear) }, ...(amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [])];
       case "planning": return [{ label: L.advice, value: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)).join(", ") }];
       default: return [];
     }
@@ -339,7 +343,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const next = () => {
     switch (step.kind) {
       case "pick":
-        if (step.s === "personal" ? !need : !picks[step.s].length) return setError(SERVICE_PICK[step.s].error);
+        if (step.s === "personal" ? !needs.length : !picks[step.s].length) return setError(SERVICE_PICK[step.s].error);
         return advance();
       case "cat": {
         const E = CAT_Q[step.s].errors;
@@ -350,12 +354,11 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       }
       case "pfollow": {
         const E = PERSONAL_Q.errors;
-        if (need === "this_year" && !year) return setError(E.year);
-        if (need === "this_year" && !first) return setError(E.first);
-        if (need === "overdue" && !years.length) return setError(E.years);
-        if (need === "amend" && !year) return setError(E.year);
-        if (need === "planning" && !topics.length) return setError(E.topics);
-        if (need === "planning" && topics.includes("other") && !topicOther.trim()) return setError(E.other);
+        if (step.n === "this_year" && !year) return setError(E.year);
+        if (step.n === "this_year" && !first) return setError(E.first);
+        if (step.n === "amend" && !amendYear) return setError(E.year);
+        if (step.n === "planning" && !topics.length) return setError(E.topics);
+        if (step.n === "planning" && topics.includes("other") && !topicOther.trim()) return setError(E.other);
         return advance();
       }
       case "pincome":
@@ -420,15 +423,17 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     const leadAnswers: Record<string, unknown> = { services };
     for (const s of services) {
       if (s === "personal") {
-        if (!need) continue;
-        const details = personalLines();
-        const inc = RETURN_NEEDS.includes(need) ? incomeLabels() : [];
-        lines.push(`Need: ${needTitle(need)}`, ...details.map((d) => `${d.label}: ${d.value}`), ...inc.map((i) => `${PERSONAL_Q.summaryLabels.income}: ${i}`),
-          ...(personalNotes.trim() ? [`${PERSONAL_Q.summaryLabels.notes}: ${personalNotes.trim()}`] : []));
-        groups.push({ category: needTitle(need), items: details.map((d) => `${d.label}: ${d.value}`) });
+        if (!needs.length) continue;
+        for (const n of needs) {
+          const details = personalLines(n).map((d) => `${d.label}: ${d.value}`);
+          lines.push(`Need: ${needTitle(n)}`, ...details);
+          groups.push({ category: needTitle(n), items: [needTitle(n), ...details] });
+        }
+        const inc = needs.some((n) => RETURN_NEEDS.includes(n)) ? incomeLabels() : [];
+        lines.push(...inc.map((i) => `${PERSONAL_Q.summaryLabels.income}: ${i}`), ...(personalNotes.trim() ? [`${PERSONAL_Q.summaryLabels.notes}: ${personalNotes.trim()}`] : []));
         if (inc.length) groups.push({ category: PERSONAL_Q.summaryLabels.income, items: inc });
         if (personalNotes.trim()) groups.push({ category: PERSONAL_Q.summaryLabels.notes, items: [personalNotes.trim()] });
-        leadAnswers.personal = { need, year, firstReturn: first, years, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: personalNotes.trim() };
+        leadAnswers.personal = { needs, thisYear: needs.includes("this_year") ? { year, firstReturn: first } : null, amend: needs.includes("amend") ? { year: amendYear, note: amendNote.trim() } : null, adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: personalNotes.trim() };
         continue;
       }
       for (const id of picks[s]) {
@@ -486,9 +491,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
 
   // ---------- drawing ----------
   const ready =
-    step.kind === "pick" ? (step.s === "personal" ? Boolean(need) : picks[step.s].length > 0)
+    step.kind === "pick" ? (step.s === "personal" ? needs.length > 0 : picks[step.s].length > 0)
       : step.kind === "cat" ? Boolean(sel?.ids.length)
-        : step.kind === "pfollow" ? (need === "this_year" ? Boolean(year && first) : need === "overdue" ? years.length > 0 : need === "amend" ? Boolean(year) : topics.length > 0)
+        : step.kind === "pfollow" ? (step.n === "this_year" ? Boolean(year && first) : step.n === "amend" ? Boolean(amendYear) : topics.length > 0)
           : step.kind === "pincome" ? income.length > 0
             : step.kind === "qualify" ? (step.s === "smsf" ? Boolean(have && when) : Boolean(stage))
               : step.kind === "mode" ? Boolean(mode)
@@ -503,7 +508,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const picture =
     body.kind === "pick" ? PICK_PICTURES[body.s]
       : body.kind === "cat" ? STEP_PICTURES[body.id]
-        : body.kind === "pfollow" ? STEP_PICTURES[need === "planning" ? "p_planning" : need ?? "this_year"]
+        : body.kind === "pfollow" ? STEP_PICTURES[body.n === "planning" ? "p_planning" : body.n]
           : body.kind === "qualify" ? STEP_PICTURES[`q_${body.s}`]
             : STEP_PICTURES[body.kind];
   const warn = Boolean(error);
@@ -548,13 +553,14 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                     {body.kind === "pick" && body.s === "personal" && (
                       <StepHead eyebrow={SERVICE_PICK.personal.name} title={SERVICE_PICK.personal.question} icon={<Sparkle width={26} height={26} />}>
                         <p className="text-[0.98rem] leading-snug text-ink/80">{SERVICE_PICK.personal.hint}</p>
-                        <div role="radiogroup" aria-label={SERVICE_PICK.personal.question} className="grid gap-2.5 sm:grid-cols-2">
+                        <fieldset className="grid gap-2.5 sm:grid-cols-2">
+                          <legend className="sr-only">{SERVICE_PICK.personal.question}</legend>
                           {[...PERSONAL_NEEDS, STILL_UNSURE].map((n) => (
-                            <PickCard key={n.id} radio checked={need === n.id} warn={warn && !need} tone={"tone" in n ? n.tone : "green"}
+                            <PickCard key={n.id} checked={needs.includes(n.id)} warn={warn && !needs.length} tone={"tone" in n ? n.tone : "green"}
                               icon={PERSONAL_NEED_ICONS[n.id]} title={n.title} desc={n.help}
-                              onToggle={() => { if (need !== n.id) resetFollowUp(); setNeed(n.id); clear(); }} />
+                              onToggle={() => toggleNeed(n.id)} />
                           ))}
-                        </div>
+                        </fieldset>
                       </StepHead>
                     )}
                     {body.kind === "pick" && body.s !== "personal" && (
@@ -575,34 +581,23 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                       <CategoryStep s={body.s} cat={cur} index={picks[body.s].indexOf(cur.id)} total={picks[body.s].length} sel={sel} toggle={toggleOption} patch={patch} error={error} />
                     )}
 
-                    {body.kind === "pfollow" && need && need !== "unsure" && (
+                    {body.kind === "pfollow" && (
                       <div className="space-y-4">
-                        <NeedHead need={need} eyebrow={PERSONAL_Q[need === "this_year" ? "thisYear" : need].eyebrow}
-                          title={need === "planning" ? PERSONAL_Q.planning.title : need === "overdue" ? PERSONAL_Q.overdue.years : PERSONAL_Q.thisYear.year} />
-                        {need === "this_year" && (
+                        <NeedHead need={body.n} eyebrow={PERSONAL_Q[body.n === "this_year" ? "thisYear" : body.n].eyebrow}
+                          title={body.n === "planning" ? PERSONAL_Q.planning.title : PERSONAL_Q.thisYear.year} />
+                        {body.n === "this_year" && (
                           <>
                             <ChoiceGroup label={PERSONAL_Q.thisYear.year} hideLabel options={yearOptions.thisYear} value={year} onChange={(v) => { setYear(v); clear(); }} warn={warn && !year} cols={3} />
                             <ChoiceGroup label={PERSONAL_Q.thisYear.first} options={YES_NO_UNSURE} value={first} onChange={(v) => { setFirst(v); clear(); }} warn={warn && Boolean(year) && !first} cols={3} />
                           </>
                         )}
-                        {need === "overdue" && (
+                        {body.n === "amend" && (
                           <>
-                            <p className="text-[0.95rem] text-muted">{PERSONAL_Q.overdue.hint}</p>
-                            <fieldset className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-2">
-                              <legend className="sr-only">{PERSONAL_Q.overdue.years}</legend>
-                              {yearOptions.overdue.map((o) => (
-                                <OptionCard key={o.id} checked={years.includes(o.id)} onToggle={() => { setYears((y) => toggleIn(y, o.id)); clear(); }} label={o.label} warn={warn && !years.length} />
-                              ))}
-                            </fieldset>
-                          </>
-                        )}
-                        {need === "amend" && (
-                          <>
-                            <ChoiceGroup label={PERSONAL_Q.amend.year} hideLabel options={yearOptions.amend} value={year} onChange={(v) => { setYear(v); clear(); }} warn={warn && !year} cols={2} />
+                            <ChoiceGroup label={PERSONAL_Q.amend.year} hideLabel options={yearOptions.amend} value={amendYear} onChange={(v) => { setAmendYear(v); clear(); }} warn={warn && !amendYear} cols={2} />
                             <NoteField label={PERSONAL_Q.amend.noteLabel} value={amendNote} onChange={setAmendNote} placeholder={PERSONAL_Q.amend.notePlaceholder} rows={3} />
                           </>
                         )}
-                        {need === "planning" && (
+                        {body.n === "planning" && (
                           <>
                             <p className="text-[0.95rem] text-muted">{PERSONAL_Q.planning.hint}</p>
                             <fieldset className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-2">
@@ -668,16 +663,18 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                               )}
                             </div>
                             <ul className="grid gap-3 sm:grid-cols-2">
-                              {s === "personal" && need && (
+                              {s === "personal" && needs.length > 0 && (
                                 <>
-                                  <SummaryCard title={PERSONAL_Q.summaryLabels.need} tone={PERSONAL_NEEDS.find((n) => n.id === need)?.tone ?? "green"} icon={PERSONAL_NEED_ICONS[need]} onEdit={() => editPick("personal")}>
-                                    <li className="font-bold text-navy-900">{needTitle(need)}</li>
-                                    {personalLines().map((d) => <Line key={d.label}><span className="font-semibold">{d.label}:</span> {d.value}</Line>)}
-                                    {need !== "unsure" && (
-                                      <li><button type="button" onClick={() => editPage(indexOf((x) => x.kind === "pfollow"))} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {PERSONAL_Q.summaryLabels.details.toLowerCase()}</button></li>
-                                    )}
-                                  </SummaryCard>
-                                  {RETURN_NEEDS.includes(need) && (
+                                  {needs.map((need) => (
+                                    <SummaryCard key={need} title={PERSONAL_Q.summaryLabels.need} tone={PERSONAL_NEEDS.find((n) => n.id === need)?.tone ?? "green"} icon={PERSONAL_NEED_ICONS[need]} onEdit={() => editPick("personal")}>
+                                      <li className="font-bold text-navy-900">{needTitle(need)}</li>
+                                      {personalLines(need).map((d) => <Line key={d.label}><span className="font-semibold">{d.label}:</span> {d.value}</Line>)}
+                                      {(FOLLOW_UPS as NeedId[]).includes(need) && (
+                                        <li><button type="button" onClick={() => editPage(indexOf((x) => x.kind === "pfollow" && x.n === need))} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {PERSONAL_Q.summaryLabels.details.toLowerCase()}</button></li>
+                                      )}
+                                    </SummaryCard>
+                                  ))}
+                                  {needs.some((n) => RETURN_NEEDS.includes(n)) && (
                                     <SummaryCard title={PERSONAL_Q.summaryLabels.income} tone="green" icon={PERSONAL_NEED_ICONS.this_year} onEdit={() => editPage(indexOf((x) => x.kind === "pincome"))}>
                                       {incomeLabels().map((l) => <Line key={l}>{l}</Line>)}
                                     </SummaryCard>

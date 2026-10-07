@@ -8,8 +8,8 @@
  */
 import { BIZ_LANDING, BIZ_MODES, BIZ_Q, type BizCategory, type BizOption } from "./business-questionnaire";
 
+// ("Not sure — help me choose" removed from every question, owner 7 Oct 2026)
 const extras = (prefix: string): BizOption[] => [
-  { id: `${prefix}_unsure`, label: "Not sure — help me choose" },
   { id: `${prefix}_other`, label: "Other — tell us what you need", other: true },
 ];
 
@@ -22,7 +22,7 @@ export const SMSF_CATEGORIES: BizCategory[] = [
     box: { title: "SMSF Setup & Accounting", desc: "Setup, annual accounts and admin" },
     tone: "blue",
     options: [
-      { id: "establish", label: "Establishing an SMSF after receiving advice" },
+      { id: "establish", label: "Establishing an SMSF" },
       { id: "annual_accounts", label: "Annual accounts & tax return" },
       { id: "ongoing_admin", label: "Ongoing administration" },
       { id: "overdue", label: "Overdue returns or catch-up work" },

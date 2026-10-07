@@ -104,7 +104,7 @@ export default function PersonalQuestionnaire() {
   const steps: Kind[] = useMemo(() => {
     const s: Kind[] = showChoose ? ["choose"] : [];
     const n = need ?? "this_year"; // before a reason is picked, count the pages a tax return needs
-    if (n !== "unsure") s.push("followup");
+    if (n !== "unsure" && n !== "overdue") s.push("followup"); // (overdue: its years question removed, owner 7 Oct 2026)
     if (RETURN_NEEDS.includes(n)) s.push("income");
     // the name comes straight after the service questions, so every later question can use it
     return [...s, "name", "summary", "mode", "location", "email", "phone", "emailMe"];
@@ -182,8 +182,6 @@ export default function PersonalQuestionnaire() {
     switch (need) {
       case "this_year":
         return [{ label: L.year, value: labelOf(yearOptions.thisYear, year) }, { label: L.first, value: labelOf(YES_NO_UNSURE, first) }];
-      case "overdue":
-        return [{ label: L.years, value: yearOptions.overdue.filter((o) => years.includes(o.id)).map((o) => o.label).join(", ") }];
       case "amend":
         return [{ label: L.year, value: labelOf(yearOptions.amend, year) }, ...(amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [])];
       case "planning":
@@ -457,7 +455,7 @@ export default function PersonalQuestionnaire() {
                             <span><span className="font-semibold">{d.label}:</span> {d.value}</span>
                           </li>
                         ))}
-                        {need !== "unsure" && (
+                        {need !== "unsure" && need !== "overdue" && (
                           <li><button type="button" onClick={() => edit("followup")} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {Q.summaryLabels.details.toLowerCase()}</button></li>
                         )}
                       </SummaryCard>
