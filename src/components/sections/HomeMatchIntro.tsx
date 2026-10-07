@@ -138,9 +138,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
               Your needs. Your area. Your accountant.
             </p>
-            {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts) */}
+            {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts), 7mm lower */}
             {ABOUT_POPUP.expertise.paragraphs.map((p, i) => (
-              <p key={p} className={`${i === 0 ? "mt-3 lg:mt-[0.8vw]" : "mt-2.5 lg:mt-[0.6vw]"} max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]`}>
+              <p key={p} className={`${i === 0 ? "mt-[calc(0.75rem+7mm)] lg:mt-[calc(0.8vw+7mm)]" : "mt-2.5 lg:mt-[0.6vw]"} max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]`}>
                 {p}
               </p>
             ))}
