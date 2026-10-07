@@ -5,6 +5,7 @@ import { ABOUT_POPUP as A } from "@/content/about-popup";
 import { loadContent, mergeViews } from "@/lib/content";
 import { TAGLINES } from "@/content/taglines";
 import AboutPopup from "./ads/AboutPopup";
+import Breadcrumbs from "./sections/Breadcrumbs";
 import HomeClosingCta from "./sections/HomeClosingCta";
 import SiteFooter from "./layout/SiteFooter";
 
@@ -17,6 +18,12 @@ export default function AboutPage() {
       <main>
         <section className="relative isolate overflow-hidden bg-gradient-to-b from-navy-50 via-white to-white">
           <div className="container-page pt-12 md:pt-20">
+            {/* breadcrumb (owner, 7 Oct 2026): same place on screen as on the How It Works page (that page's top space minus
+                1cm on phones / 1.5cm from tablets up), so the margins below make up for this section's larger top space */}
+            <Breadcrumbs
+              crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
+              className="-mt-[1cm] mb-6 md:-mt-[calc(1rem+1.5cm)] md:mb-8 lg:-mt-[calc(5rem+1.5cm-clamp(4rem,5vw,7rem))]"
+            />
             <div className="max-w-4xl">
               <h1 className="h-display about-title">{A.title}</h1>
             </div>
