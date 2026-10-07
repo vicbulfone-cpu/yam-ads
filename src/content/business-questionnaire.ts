@@ -209,7 +209,7 @@ export const BIZ_Q = {
     near: "We’re checking our network of qualified partner accountants to find your best match.",
   },
   found: {
-    title: "Great news, {name} — we’ve found a local match for you.",
+    title: "Great news, {name} — we’ve found your perfect local match in {place}.", // {place} = the customer's suburb (owner, 7 Oct 2026)
     text: "{name}, could I please have your email address so we can send you your match details",
     label: "Your email address",
     placeholder: "you@business.com.au",

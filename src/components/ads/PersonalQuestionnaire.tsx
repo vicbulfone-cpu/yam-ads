@@ -519,7 +519,7 @@ export default function PersonalQuestionnaire() {
             <div className="q-leave" role="dialog" aria-modal="true" aria-labelledby="pq-found-title">
               <form className="q-leave-box bq-found" onSubmit={(e) => { e.preventDefault(); next(); }} noValidate>
                 <span aria-hidden className="q-leave-icon bq-found-icon"><Sparkle width={30} height={30} strokeWidth={2} /></span>
-                <p id="pq-found-title" className="q-leave-title">{p(Q.found.title)}</p>
+                <p id="pq-found-title" className="q-leave-title">{p(Q.found.title).replace("{place}", place?.suburb ?? "your area")}</p>
                 <p className="mt-2 text-[1rem] leading-snug text-ink/80">{p(Q.found.text)}</p>
                 <div className="mt-5 text-left">
                   <TextField label={Q.found.label} type="email" autoComplete="email" inputMode="email" value={email} onChange={(v) => { setEmail(v); clear(); }} placeholder={Q.found.placeholder} invalid={warn} autoFocus />

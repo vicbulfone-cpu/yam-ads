@@ -138,7 +138,7 @@ export const REG_Q = {
   },
   found: {
     ...BIZ_Q.found,
-    title: "Great news, {name} — we’ve found a local accountant who’s a perfect match.",
+    title: "Great news, {name} — we’ve found your perfect local match in {place}.",
     text: "Now we just need your email address to send you your match details.",
     placeholder: "you@example.com",
   },
