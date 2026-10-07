@@ -98,8 +98,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
           <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
             {HOME_STEPS.flatMap((s, i) => [
               <li key={s.title} className="relative">
-                {/* owner, 7 Oct 2026: the photo boxes 50% taller (2.35:1 → 1.567:1, tablets 1.6:1 → 1.067:1), framed so the tops of heads show, using the wider zoomed-out shots */}
-                <div className="relative ml-1 mt-4 aspect-[1.567/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.067/1] lg:aspect-[1.567/1]">
+                {/* owner, 7 Oct 2026: the photo boxes 50% taller (2.35:1 → 1.567:1, tablets 1.6:1 → 1.067:1), framed so the tops of heads show, using the wider zoomed-out shots; set lower so the STEP tag only overlaps the
+                    picture's top edge and never touches anyone's hair */}
+                <div className="relative ml-1 mt-[1.65rem] aspect-[1.567/1] sm:mt-[1.95rem] lg:mt-[1.9rem] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.067/1] lg:aspect-[1.567/1]">
                   {/* the map uses its trimmed copy, fitted inside the taller box so its coast is never cut off */}
                   <Image src={s.image.includes("map") ? "/images/home/australia-map-pin-tight.webp" : (s.homeImage ?? s.image)} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className={s.image.includes("map") ? "object-contain" : "object-cover"} style={{ objectPosition: s.homePosition ?? s.position, transform: s.shift }} />
                 </div>

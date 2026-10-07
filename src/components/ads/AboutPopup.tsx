@@ -21,7 +21,17 @@ export default function AboutPopup({ level = 3 }: { level?: 2 | 3 }) {
   return (
     <div className="abp">
       <section className="abp-intro">
-        <H className="abp-h">{A.intro.heading}</H>
+        {/* /about page (owner, 7 Oct 2026): "Shouldn't Be a Game of Chance" in green; the ad pages' popup is unchanged */}
+        <H className="abp-h">
+          {level === 2 && A.intro.heading.includes("Shouldn't") ? (
+            <>
+              {A.intro.heading.slice(0, A.intro.heading.indexOf("Shouldn't"))}
+              <span className="text-green-700">{A.intro.heading.slice(A.intro.heading.indexOf("Shouldn't"))}</span>
+            </>
+          ) : (
+            A.intro.heading
+          )}
+        </H>
         <p className="abp-lead">{A.intro.lead}</p>
         <p className="abp-statement">{A.intro.statement}</p>
         <p className="abp-p">{A.intro.body}</p>

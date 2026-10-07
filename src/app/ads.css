@@ -617,6 +617,8 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 /* the /about page shows the popup's content (AboutPage.tsx): same plain heading font as in the ad pages' popup (owner,
    7 Oct 2026), rather than the site's serif headings */
 .about-page .abp-h, .about-page .abp-card-title, h1.about-title { font-family: var(--font-sans); }
+/* /about page (owner, 7 Oct 2026): the short line under "…Shouldn't Be a Game of Chance" in blue (navy) instead of green */
+.about-page .abp-intro .abp-h::after { background: var(--navy-900); }
 h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* Questionnaire pages, every questionnaire (owner, 7 Oct 2026): no pictures behind the questions. The question box is plain
    white, and the popup's faded desk picture is off on the question pages (the match box popup keeps its own). */

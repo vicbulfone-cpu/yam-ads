@@ -25,7 +25,10 @@ export default function AboutPage() {
               className="-mt-[1cm] mb-6 md:-mt-[calc(1rem+1.5cm)] md:mb-8 lg:-mt-[calc(5rem+1.5cm-clamp(4rem,5vw,7rem))]"
             />
             <div className="max-w-4xl">
-              <h1 className="h-display about-title">{A.title}</h1>
+              {/* "Us" in green (owner, 7 Oct 2026) */}
+              <h1 className="h-display about-title">
+                {A.title.replace(/\s*Us$/, "")} <span className="text-green-700">Us</span>
+              </h1>
             </div>
           </div>
         </section>
