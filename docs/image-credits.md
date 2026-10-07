@@ -58,3 +58,6 @@ is no longer shown.
 `public/images/home/accountant-portrait.webp`: a portrait crop (640 × 768) of the owner-supplied `accountant-client-desk`
 photo (owner's own image, see "Home page photos supplied by the owner"). Used for the sample accountant "Daniel Harper"
 on /match until GoHighLevel supplies the real accountant's photo.
+- (later, 7 Oct 2026) The sample accountant's photo is now `public/images/home/accountant-portrait-2.webp`: a crop
+  (480 × 576) of one person from the owner-supplied `team-meeting` photo (owner's own image). `accountant-portrait.webp`
+  is no longer shown.

@@ -48,6 +48,19 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
   const first = match.name.trim().split(/\s+/)[0];
   const fill = (t: string) => t.replaceAll("{first}", first).replaceAll("{years}", String(match.years ?? ""));
   const selected = saved?.services.flatMap((g) => g.items) ?? [];
+  // "Why this looks like a good fit" (owner, 7 Oct 2026: more detail): area (with the customer's own suburb), services,
+  // how they like to work, experience, registration, one accountant only. Points without data are left out.
+  const F = BIZ_MATCH.fitMore;
+  const place = saved?.place ? [saved.place.suburb, saved.place.state, saved.place.postcode].filter(Boolean).join(" ") : "";
+  const modeText = saved?.mode === "In person" ? F.mode.inPerson : saved?.mode === "Remotely" ? F.mode.remote : "";
+  const fitItems = [
+    { title: M.fit.area.title, text: place ? F.areaPlace.replace("{place}", place) : M.fit.area.text },
+    { title: M.fit.services.title, text: `${M.fit.services.text} ${F.servicesMore}` },
+    ...(modeText ? [{ title: F.mode.title, text: modeText }] : []),
+    ...(match.years != null ? [M.fit.experience] : []),
+    F.registered,
+    F.oneMatch,
+  ];
   const contactHref = match.phone ? `tel:${tel(match.phone)}` : match.email ? `mailto:${match.email}` : null;
 
   return (
@@ -122,7 +135,7 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
             <section className="mp-panel">
               <h2 className="mp-panel-title"><Bars aria-hidden width={26} height={26} className="text-[#0e7a32]" />{M.fitTitle}</h2>
               <ul className="mp-checks">
-                {[M.fit.area, M.fit.services, ...(match.years != null ? [M.fit.experience] : [])].map((f) => (
+                {fitItems.map((f) => (
                   <li key={f.title}><span aria-hidden className="mp-tick"><Check width={14} height={14} strokeWidth={3.4} /></span><span><strong>{f.title}</strong><span className="block">{fill(f.text)}</span></span></li>
                 ))}
               </ul>

@@ -24,10 +24,10 @@ export type MatchDetails = {
 export const SAMPLE_MATCH: MatchDetails = {
   name: "Daniel Harper",
   firm: "Harper Accounting",
-  photo: "/images/home/accountant-portrait.webp", // the owner's own photo (accountant at his desk), cropped
+  photo: "/images/home/accountant-portrait-2.webp", // the owner's own photo (team meeting), cropped to one person
   specialty: "Business accounting",
   location: "Melbourne VIC",
-  years: 20,
+  years: 12, // suits the photo (owner, 7 Oct 2026)
   // generic, safely fictional details (owner, 7 Oct 2026): 5550 numbers are set aside by ACMA for fictional use, and
   // example.com is reserved for examples, so nobody real can be reached by mistake
   phone: "(03) 5550 2148",

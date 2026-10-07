@@ -5,6 +5,7 @@
  * Flow: one page per ticked category → summary (confirm) → in person or remote → postcode/suburb → short pause →
  * "great news" box with email → mobile → name → email the match details? → match page (/match).
  */
+import { CREDENTIAL } from "./wording";
 
 export interface BizOption {
   id: string;
@@ -261,6 +262,15 @@ export const BIZ_MATCH = {
     area: { title: "Your area", text: "A local partner for your postcode." },
     services: { title: "Relevant services", text: "The firm offers the business services you selected." },
     experience: { title: "Experienced support", text: "{years} years working with business accounting clients." },
+  },
+  /** More detail in "Why this looks like a good fit" (owner, 7 Oct 2026), shared by every questionnaire. {place} = the
+   *  customer's suburb, state and postcode; only true, already-approved statements. */
+  fitMore: {
+    areaPlace: "A local partner for your postcode: {place}.",
+    servicesMore: "Your enquiry goes to someone who does this work every day.",
+    mode: { title: "How you like to work", inPerson: "You’d like to meet in person at their office.", remote: "You’d like to work remotely, by phone, video and email." },
+    registered: { title: "Professionally registered", text: CREDENTIAL },
+    oneMatch: { title: "One accountant, not a list", text: "Your details go to this accountant only, so there are no calls from multiple firms." },
   },
   fitNote: "Service suitability and availability are confirmed directly with the accountant.",
   nextTitle: "Ready to take the next step?",
