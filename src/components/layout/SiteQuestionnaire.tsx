@@ -51,9 +51,10 @@ type Step =
   | { kind: "pincome" }
   | { kind: "qualify"; s: "smsf" | "registration" }
   | { kind: "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe" };
-/** Personal reasons with a follow-up page, in this order (owner, 7 Oct 2026: "Overdue or multiple returns" no longer has one). */
-type FollowNeed = "this_year" | "amend" | "planning";
-const FOLLOW_UPS: FollowNeed[] = ["this_year", "amend", "planning"];
+/** Personal reasons with a follow-up page, in this order (owner, 7 Oct 2026: no year or first-return questions, so
+ *  "This year's tax return" and "Overdue or multiple returns" have none; "Amend" asks only what needs correcting). */
+type FollowNeed = "amend" | "planning";
+const FOLLOW_UPS: FollowNeed[] = ["amend", "planning"];
 type Edit = { one: true } | { block: ServiceKey; before: string } | null;
 
 const CATS: Record<CatService, BizCategory[]> = { business: BIZ_CATEGORIES, smsf: SMSF_CATEGORIES, registration: REG_CATEGORIES };
@@ -315,8 +316,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const personalLines = (n: NeedId): { label: string; value: string }[] => {
     const L = PERSONAL_Q.summaryLabels;
     switch (n) {
-      case "this_year": return [{ label: L.year, value: labelOf(yearOptions.thisYear, year) }, { label: L.first, value: labelOf(YES_NO_UNSURE, first) }];
-      case "amend": return [{ label: L.year, value: labelOf(yearOptions.amend, amendYear) }, ...(amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [])];
+      case "amend": return amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [];
       case "planning": return [{ label: L.advice, value: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)).join(", ") }];
       default: return [];
     }
@@ -354,9 +354,6 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       }
       case "pfollow": {
         const E = PERSONAL_Q.errors;
-        if (step.n === "this_year" && !year) return setError(E.year);
-        if (step.n === "this_year" && !first) return setError(E.first);
-        if (step.n === "amend" && !amendYear) return setError(E.year);
         if (step.n === "planning" && !topics.length) return setError(E.topics);
         if (step.n === "planning" && topics.includes("other") && !topicOther.trim()) return setError(E.other);
         return advance();
@@ -433,7 +430,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         lines.push(...inc.map((i) => `${PERSONAL_Q.summaryLabels.income}: ${i}`), ...(personalNotes.trim() ? [`${PERSONAL_Q.summaryLabels.notes}: ${personalNotes.trim()}`] : []));
         if (inc.length) groups.push({ category: PERSONAL_Q.summaryLabels.income, items: inc });
         if (personalNotes.trim()) groups.push({ category: PERSONAL_Q.summaryLabels.notes, items: [personalNotes.trim()] });
-        leadAnswers.personal = { needs, thisYear: needs.includes("this_year") ? { year, firstReturn: first } : null, amend: needs.includes("amend") ? { year: amendYear, note: amendNote.trim() } : null, adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: personalNotes.trim() };
+        leadAnswers.personal = { needs, amend: needs.includes("amend") ? { note: amendNote.trim() } : null, adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: personalNotes.trim() };
         continue;
       }
       for (const id of picks[s]) {
@@ -493,7 +490,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const ready =
     step.kind === "pick" ? (step.s === "personal" ? needs.length > 0 : picks[step.s].length > 0)
       : step.kind === "cat" ? Boolean(sel?.ids.length)
-        : step.kind === "pfollow" ? (step.n === "this_year" ? Boolean(year && first) : step.n === "amend" ? Boolean(amendYear) : topics.length > 0)
+        : step.kind === "pfollow" ? (step.n === "amend" || topics.length > 0)
           : step.kind === "pincome" ? income.length > 0
             : step.kind === "qualify" ? (step.s === "smsf" ? Boolean(have && when) : Boolean(stage))
               : step.kind === "mode" ? Boolean(mode)
@@ -583,17 +580,10 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
 
                     {body.kind === "pfollow" && (
                       <div className="space-y-4">
-                        <NeedHead need={body.n} eyebrow={PERSONAL_Q[body.n === "this_year" ? "thisYear" : body.n].eyebrow}
-                          title={body.n === "planning" ? PERSONAL_Q.planning.title : PERSONAL_Q.thisYear.year} />
-                        {body.n === "this_year" && (
-                          <>
-                            <ChoiceGroup label={PERSONAL_Q.thisYear.year} hideLabel options={yearOptions.thisYear} value={year} onChange={(v) => { setYear(v); clear(); }} warn={warn && !year} cols={3} />
-                            <ChoiceGroup label={PERSONAL_Q.thisYear.first} options={YES_NO_UNSURE} value={first} onChange={(v) => { setFirst(v); clear(); }} warn={warn && Boolean(year) && !first} cols={3} />
-                          </>
-                        )}
+                        <NeedHead need={body.n} eyebrow={PERSONAL_Q[body.n].eyebrow}
+                          title={body.n === "planning" ? PERSONAL_Q.planning.title : PERSONAL_Q.amend.title} />
                         {body.n === "amend" && (
                           <>
-                            <ChoiceGroup label={PERSONAL_Q.amend.year} hideLabel options={yearOptions.amend} value={amendYear} onChange={(v) => { setAmendYear(v); clear(); }} warn={warn && !amendYear} cols={2} />
                             <NoteField label={PERSONAL_Q.amend.noteLabel} value={amendNote} onChange={setAmendNote} placeholder={PERSONAL_Q.amend.notePlaceholder} rows={3} />
                           </>
                         )}

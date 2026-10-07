@@ -7,7 +7,6 @@ import { PERSONAL_MATCH } from "@/content/personal-questionnaire";
 import { SMSF_MATCH } from "@/content/smsf-questionnaire";
 import { REG_MATCH } from "@/content/registration-questionnaire";
 import { SAMPLE_MATCH_PERSONAL, SAMPLE_MATCH_REGISTRATION, SAMPLE_MATCH_SMSF, type MatchDetails } from "@/content/sample-match";
-import DataCredit from "../ui/DataCredit";
 import { Bars, Check, Clock, External, Globe, Handshake, ListCheck, Mail, Phone, Pin } from "../ui/Icons";
 
 /**
@@ -153,7 +152,6 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
             {FOOT_LINKS.map((l) => <a key={l.href} href={l.href} data-info="">{l.text}</a>)}
           </p>
         </div>
-        <p className="bz-wrap mp-credit"><DataCredit /></p>
       </footer>
     </main>
   );

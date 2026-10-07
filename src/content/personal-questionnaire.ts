@@ -65,7 +65,6 @@ export const RETURN_ITEMS = [
   { id: "sale", label: "Sale of property or investments" },
   { id: "sole_trader", label: "Sole trader or side-business income" },
   { id: "overseas", label: "Overseas income" },
-  { id: "unsure", label: "Not sure" },
 ];
 
 export const PERSONAL_MODES = BIZ_MODES;
@@ -123,10 +122,11 @@ export const PERSONAL_Q = {
   },
   amend: {
     eyebrow: "Amend a lodged return",
+    title: "What needs correcting?",
     year: "Which financial year?",
     earlier: "Earlier year",
     unsure: "Not sure",
-    noteLabel: "What needs correcting? (optional)",
+    noteLabel: "A few details (optional)",
     notePlaceholder: "A short description is plenty…",
   },
   planning: {
@@ -161,7 +161,7 @@ export const PERSONAL_Q = {
     first: "Please tell us if this is your first tax return.",
     years: "Please choose at least one financial year.",
     topics: "Please choose at least one option to continue.",
-    income: "Please choose at least one option, or “Not sure”.",
+    income: "Please choose at least one option.",
   },
   found: { ...BIZ_Q.found, placeholder: "you@example.com" },
 };

@@ -410,3 +410,9 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
   - "Not sure — help me choose" removed from every question (business and SMSF category pages, planning topics) and
     from under the Ad 2 match box.
   - SMSF: "Establishing an SMSF after receiving advice" → "Establishing an SMSF".
+- (later, 7 Oct 2026) No year or first-tax-return questions in any questionnaire ("This year's tax return" has no follow-up
+  page; "Amend a lodged return" asks only "What needs correcting?" with an optional note). "Not sure" options removed from
+  the question boxes ("Does your return include any of these?", "Not sure yet" on in person/remote, "Not sure which
+  company setup I need"); the big "I'm still not sure" card on the personal page is kept. The GeoNames credit is removed
+  site-wide at the owner's request (the CC BY 4.0 licence of the suburb list asks for a visible credit: owner's decision).
+  The "Start here" arrow is a larger curved green arrow (right on laptops/desktops, down on tablets).

@@ -8,7 +8,6 @@ import { BIZ_LANDING as L } from "@/content/business-questionnaire";
 import { CREDENTIAL } from "@/content/wording";
 import { ShieldCheck } from "./BizIcons";
 import AdInfoPopup from "./AdInfoPopup";
-import DataCredit from "../ui/DataCredit";
 import { Check } from "../ui/Icons";
 
 /** Footer links (owner, 6 Oct 2026): "How it works" left out, as that section is now on every ad page. */
@@ -67,7 +66,7 @@ export function AdFooter() {
       </div>
       <div className="adf-base">
         <p className="bz-wrap">
-          <span>© {new Date().getFullYear()} {L.copyright} <DataCredit className="ml-2 opacity-80" /></span>
+          <span>© {new Date().getFullYear()} {L.copyright}</span>
           <span>{L.based[0]} <span aria-hidden>•</span> {L.based[1]}</span>
         </p>
       </div>

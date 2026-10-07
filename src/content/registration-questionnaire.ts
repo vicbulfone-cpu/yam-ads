@@ -23,7 +23,6 @@ export const REG_CATEGORIES: BizCategory[] = [
       { id: "corporate_trustee", label: "Set up a corporate trustee company" },
       { id: "sole_to_company", label: "Move from sole trader to a company" },
       { id: "company_plus_tax", label: "Company registration plus ABN and tax registrations" },
-      { id: "company_unsure", label: "Not sure which company setup I need" },
       other("company"),
     ],
   },

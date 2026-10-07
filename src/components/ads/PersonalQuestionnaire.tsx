@@ -104,7 +104,8 @@ export default function PersonalQuestionnaire() {
   const steps: Kind[] = useMemo(() => {
     const s: Kind[] = showChoose ? ["choose"] : [];
     const n = need ?? "this_year"; // before a reason is picked, count the pages a tax return needs
-    if (n !== "unsure" && n !== "overdue") s.push("followup"); // (overdue: its years question removed, owner 7 Oct 2026)
+    // follow-up page only for amend (what needs correcting) and planning: no year or first-return questions (owner, 7 Oct 2026)
+    if (n === "amend" || n === "planning") s.push("followup");
     if (RETURN_NEEDS.includes(n)) s.push("income");
     // the name comes straight after the service questions, so every later question can use it
     return [...s, "name", "summary", "mode", "location", "email", "phone", "emailMe"];
@@ -180,10 +181,8 @@ export default function PersonalQuestionnaire() {
   const detailLines = (): { label: string; value: string }[] => {
     const L = Q.summaryLabels;
     switch (need) {
-      case "this_year":
-        return [{ label: L.year, value: labelOf(yearOptions.thisYear, year) }, { label: L.first, value: labelOf(YES_NO_UNSURE, first) }];
       case "amend":
-        return [{ label: L.year, value: labelOf(yearOptions.amend, year) }, ...(amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [])];
+        return amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [];
       case "planning":
         return [{ label: L.advice, value: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)).join(", ") }];
       default:
@@ -203,10 +202,6 @@ export default function PersonalQuestionnaire() {
         return goTo(stepIdx + 1);
       }
       case "followup": {
-        if (need === "this_year" && !year) return setError(Q.errors.year);
-        if (need === "this_year" && !first) return setError(Q.errors.first);
-        if (need === "overdue" && !years.length) return setError(Q.errors.years);
-        if (need === "amend" && !year) return setError(Q.errors.year);
         if (need === "planning" && !topics.length) return setError(Q.errors.topics);
         if (need === "planning" && topics.includes("other") && !topicOther.trim()) return setError(Q.errors.other);
         if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
@@ -289,7 +284,7 @@ export default function PersonalQuestionnaire() {
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
-          answers: { need, year, firstReturn: first, years, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: notes.trim() },
+          answers: { need, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: notes.trim() },
           workMode: modeLabel,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
@@ -324,7 +319,7 @@ export default function PersonalQuestionnaire() {
   const total = steps.length;
   const ready =
     kind === "choose" ? Boolean(need)
-      : kind === "followup" ? (need === "this_year" ? Boolean(year && first) : need === "overdue" ? years.length > 0 : need === "amend" ? Boolean(year) : topics.length > 0)
+      : kind === "followup" ? (need === "amend" || topics.length > 0)
         : kind === "income" ? income.length > 0
           : kind === "mode" ? Boolean(mode)
             : kind === "location" ? Boolean(place)
@@ -383,30 +378,12 @@ export default function PersonalQuestionnaire() {
                   </StepHead>
                 )}
 
-                {bodyKind === "followup" && need && need !== "unsure" && (
+                {bodyKind === "followup" && (need === "amend" || need === "planning") && (
                   <div className="space-y-4">
-                    <NeedHead need={need} eyebrow={Q[need === "this_year" ? "thisYear" : need].eyebrow}
-                      title={need === "planning" ? Q.planning.title : need === "overdue" ? Q.overdue.years : Q.thisYear.year} />
-                    {need === "this_year" && (
-                      <>
-                        <ChoiceGroup label={Q.thisYear.year} hideLabel options={yearOptions.thisYear} value={year} onChange={(v) => { setYear(v); clear(); }} warn={warn && !year} cols={3} />
-                        <ChoiceGroup label={Q.thisYear.first} options={YES_NO_UNSURE} value={first} onChange={(v) => { setFirst(v); clear(); }} warn={warn && Boolean(year) && !first} cols={3} />
-                      </>
-                    )}
-                    {need === "overdue" && (
-                      <>
-                        <p className="text-[0.95rem] text-muted">{Q.overdue.hint}</p>
-                        <fieldset className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-2">
-                          <legend className="sr-only">{Q.overdue.years}</legend>
-                          {yearOptions.overdue.map((o) => (
-                            <OptionCard key={o.id} checked={years.includes(o.id)} onToggle={() => { setYears((y) => toggleIn(y, o.id)); clear(); }} label={o.label} warn={warn && !years.length} />
-                          ))}
-                        </fieldset>
-                      </>
-                    )}
+                    <NeedHead need={need} eyebrow={Q[need].eyebrow}
+                      title={need === "planning" ? Q.planning.title : Q.amend.title} />
                     {need === "amend" && (
                       <>
-                        <ChoiceGroup label={Q.amend.year} hideLabel options={yearOptions.amend} value={year} onChange={(v) => { setYear(v); clear(); }} warn={warn && !year} cols={2} />
                         <NoteField label={Q.amend.noteLabel} value={amendNote} onChange={setAmendNote} placeholder={Q.amend.notePlaceholder} rows={3} />
                       </>
                     )}
@@ -455,7 +432,7 @@ export default function PersonalQuestionnaire() {
                             <span><span className="font-semibold">{d.label}:</span> {d.value}</span>
                           </li>
                         ))}
-                        {need !== "unsure" && need !== "overdue" && (
+                        {(need === "amend" || need === "planning") && (
                           <li><button type="button" onClick={() => edit("followup")} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {Q.summaryLabels.details.toLowerCase()}</button></li>
                         )}
                       </SummaryCard>

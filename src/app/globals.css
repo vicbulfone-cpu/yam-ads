@@ -631,10 +631,13 @@ html.q-modal-open { overflow: hidden; }
   }
   .start-here-title em { font-style: italic; color: #0e7a32; white-space: nowrap; }
   .start-here-line { margin: 0.35rem auto 0; max-width: 34rem; color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
-  .start-here-arrow { display: block; width: 1.4rem; height: 1.4rem; margin: 0.3rem auto 0; color: var(--green-500); animation: start-here-nudge 1.6s ease-in-out infinite; }
+  /* curved arrow towards the match box (StartHere.tsx): tablets show the downward one, laptops/desktops the rightward one */
+  .start-here-arrow { display: block; color: #0e7a32; filter: drop-shadow(0 6px 10px rgba(14, 122, 50, 0.18)); }
+  .start-here-arrow.is-right { display: none; }
+  .start-here-arrow.is-down { width: 4.4rem; height: auto; margin: 0.1rem auto 0; transform: translateX(1.6rem); animation: start-here-nudge 1.8s ease-in-out infinite; }
 }
 @keyframes start-here-ping { 0% { transform: scale(1); opacity: 0.7; } 80%, 100% { transform: scale(2.6); opacity: 0; } }
-@keyframes start-here-nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+@keyframes start-here-nudge { 0%, 100% { transform: translate(1.6rem, 0); } 50% { transform: translate(1.6rem, 5px); } }
 @media (prefers-reduced-motion: reduce) {
   .start-here-dot::after, .start-here-arrow { animation: none; }
 }
@@ -645,10 +648,11 @@ html.q-modal-open { overflow: hidden; }
   .start-here { flex: 0 1 19rem; max-width: 19rem; margin: 0; text-align: left; }
   .start-here-title { font-size: clamp(1.9rem, 1.2rem + 1.1vw, 2.5rem); }
   .start-here-line { margin-left: 0; font-size: 1.02rem; }
-  .start-here-arrow { margin: 0.9rem 0 0; width: 1.8rem; height: 1.8rem; transform: rotate(-90deg); animation-name: start-here-nudge-x; }
+  .start-here-arrow.is-down { display: none; }
+  .start-here-arrow.is-right { display: block; width: 9.5rem; height: auto; margin: 1rem 0 0 1.5rem; animation: start-here-nudge-x 1.8s ease-in-out infinite; }
   .q-fit-card > div:has(> .start-here) > .fit-box { height: 100%; }
 }
-@keyframes start-here-nudge-x { 0%, 100% { transform: rotate(-90deg) translateY(0); } 50% { transform: rotate(-90deg) translateY(4px); } }
+@keyframes start-here-nudge-x { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
 /* short screens: a slimmer message so the box keeps more room (all its words stay) */
 @media (min-width: 768px) and (max-width: 1023px) and (max-height: 760px) {
   .start-here-title { margin-top: 0.35rem; font-size: 1.35rem; }

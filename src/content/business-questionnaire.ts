@@ -111,7 +111,6 @@ export const BIZ_SOFTWARE = ["Xero", "MYOB", "QuickBooks", "Other", "Help me cho
 export const BIZ_MODES = [
   { id: "in_person", label: "In person", desc: "Meet face to face at their office." },
   { id: "remote", label: "Remotely", desc: "Phone, video and email." },
-  { id: "not_sure", label: "Not sure yet", desc: "Happy to work it out together." },
 ];
 
 /** The landing page (owner's "business" design picture). */

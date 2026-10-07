@@ -134,7 +134,6 @@ export default function PostcodeBox({ value, onChange, invalid }: { value: Place
           )}
         </ul>
       )}
-      {/* (the suburb list's CC BY 4.0 credit is in the footers' small print: DataCredit.tsx, owner 7 Oct 2026) */}
     </div>
   );
 }
