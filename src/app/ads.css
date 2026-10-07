@@ -716,3 +716,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (prefers-reduced-motion: reduce) { .mp-btn { transition: none; } }
 /* phones: a compact "Match complete" pill so it fits beside the logo */
 @media (max-width: 639px) { .mp-complete { gap: 0.3rem; padding: 0.4rem 0.7rem; font-size: 0.62rem; letter-spacing: 0.03em; } .mp-complete svg { width: 14px; height: 14px; } }
+/* the logo in every questionnaire popup's top bar at 150% (owner, 7 Oct 2026): 255px / 315px (was 170 / 210), phones 225px
+   (was 150); the information popups (.adi) keep theirs */
+.q-modal:not(.adi) .q-modal-top img { width: 255px; }
+@media (min-width: 640px) { .q-modal:not(.adi) .q-modal-top img { width: 315px; } }
+@media (max-width: 767px) { .q-modal:not(.adi) .q-modal-top img { width: 225px; } }

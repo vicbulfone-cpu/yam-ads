@@ -209,7 +209,7 @@ export const BIZ_Q = {
   },
   found: {
     title: "Great news, {name} — we’ve found a local match for you.",
-    text: "{name}, could I please have your email address so we can send you your match details?",
+    text: "{name}, could I please have your email address so we can send you your match details",
     label: "Your email address",
     placeholder: "you@business.com.au",
     button: "Continue",
