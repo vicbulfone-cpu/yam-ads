@@ -579,14 +579,38 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
   .adi-content .hws-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; max-width: none; }
 }
 .adi-content h2.hws-title { font-size: clamp(1.15rem, 1.6vw, 1.4rem) !important; margin-bottom: 0; }
-/* About popup (owner, 7 Oct 2026): the How it works and How we select accountants pages shown inside it, each under its
-   own page headline (AdInfoPopup.tsx COMBINE) */
-.adi-content > section.adi-part { padding-top: 1.75rem !important; }
-.adi-part-title { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.45rem, 2.4vw, 1.95rem); line-height: 1.15; color: var(--navy-900); }
-.adi-part-title::after { content: ""; display: block; width: 3rem; height: 3px; margin-top: 0.6rem; border-radius: 999px; background: #00ae41; }
-.adi-part > * + * { margin-top: 1rem; }
-.adi-part > section { background: transparent !important; padding-block: 1rem !important; }
-.adi-part > section + section { border-top: 1px solid var(--line); }
-.adi-part .mt-10 { margin-top: 0.75rem !important; }
-.adi-part p.adi-step-num { display: inline-flex; align-items: center; justify-content: center; margin: 0; min-width: 2.2rem; height: 2.2rem; padding: 0 0.6rem; border-radius: 999px; background: #0e7a32; color: #fff; font-weight: 800; font-size: 1rem; line-height: 1; }
-.adi-part p.adi-step-num::before { content: "Step\00a0"; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+/* About popup (owner, 7 Oct 2026; AboutPopup.tsx): the owner's About Us wording in the site's style. Story first, a navy
+   expertise band with the 19+ figure, then the four reasons as cards (two across from tablets up). */
+.abp { margin-top: 1.25rem; color: var(--body); }
+.abp > section + section { margin-top: 1.75rem; }
+.abp-h { font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.015em; line-height: 1.15; color: var(--navy-900); font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem); }
+.abp-h::after { content: ""; display: block; width: 3rem; height: 3px; margin-top: 0.7rem; border-radius: 999px; background: #00ae41; }
+.abp-lead { margin-top: 1rem; font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem); line-height: 1.6; color: var(--ink, var(--navy-900)); }
+.abp-p { margin-top: 0.85rem; font-size: 1rem; line-height: 1.65; }
+.abp-statement { position: relative; margin-top: 1.25rem; padding: 0.9rem 1.1rem 0.9rem 1.25rem; border-left: 4px solid #00ae41; border-radius: 0 1rem 1rem 0; background: linear-gradient(90deg, var(--green-50), rgba(233, 251, 241, 0)); font-family: var(--font-serif); font-style: italic; font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem); line-height: 1.3; color: #0e7a32; }
+.abp-promise { display: flex; gap: 0.75rem; align-items: flex-start; margin-top: 1.25rem; padding: 0.95rem 1.1rem; border-radius: 1rem; background: #fff; border: 1px solid var(--line); box-shadow: 0 14px 32px -24px rgba(7, 50, 101, 0.45); font-weight: 600; line-height: 1.5; color: var(--navy-900); }
+.abp-promise-icon { display: grid; place-items: center; flex: none; width: 1.9rem; height: 1.9rem; border-radius: 999px; background: #0e7a32; color: #fff; }
+
+.abp-expertise { position: relative; overflow: hidden; display: grid; gap: 1.25rem; padding: 1.5rem 1.25rem; border-radius: 1.5rem; color: rgba(255, 255, 255, 0.86);
+  background: radial-gradient(28rem 16rem at 100% 0%, rgba(0, 174, 65, 0.22), transparent 65%), linear-gradient(150deg, #0a3f7c 0%, var(--navy-900) 55%, #052549 100%);
+  box-shadow: 0 28px 60px -30px rgba(4, 26, 54, 0.7); }
+.abp-expertise .abp-p { color: rgba(255, 255, 255, 0.86); }
+.abp-h-light { color: #fff; }
+.abp-figure { display: flex; align-items: center; gap: 0.9rem; }
+.abp-figure-num { font-family: var(--font-serif); font-weight: 600; font-size: clamp(3.4rem, 2.6rem + 3vw, 5.2rem); line-height: 0.9; letter-spacing: -0.03em; color: #5fe08f; }
+.abp-figure-label { max-width: 8rem; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1.35; color: rgba(255, 255, 255, 0.8); }
+
+.abp-cards { display: grid; gap: 0.9rem; margin-top: 1.25rem; }
+.abp-card { position: relative; padding: 1.2rem 1.2rem 1.25rem; border-radius: 1.25rem; background: #fff; border: 1px solid var(--line); box-shadow: 0 16px 36px -28px rgba(7, 50, 101, 0.5); transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.abp-card-icon { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: 0.9rem; background: var(--green-50); color: #0e7a32; }
+.abp-card-title { margin-top: 0.8rem; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--navy-900); }
+.abp-card-text { margin-top: 0.4rem; font-size: 0.97rem; line-height: 1.6; }
+@media (hover: hover) and (min-width: 1024px) {
+  .abp-card:hover { transform: translateY(-4px); border-color: rgba(0, 174, 65, 0.45); box-shadow: 0 24px 44px -26px rgba(7, 50, 101, 0.55); }
+}
+@media (min-width: 768px) {
+  .abp-expertise { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 2rem; padding: 2rem 2rem; }
+  .abp-figure { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding-right: 2rem; border-right: 1px solid rgba(255, 255, 255, 0.18); }
+  .abp-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .abp-card { transition: none; } .abp-card:hover { transform: none; } }

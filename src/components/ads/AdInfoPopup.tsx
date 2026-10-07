@@ -1,11 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
 import { logo, QUESTIONNAIRE_URL } from "@/config/site.config";
 import { ArrowRight } from "../ui/Icons";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { OPEN_AD_BOX } from "@/lib/questionnaire-events";
+import { ABOUT_POPUP } from "@/content/about-popup";
+import AboutPopup from "./AboutPopup";
 
 /**
  * Ad pages (owner, 6 Oct 2026): the footer's information links (About, Contact, Privacy, Terms, How we select
@@ -20,7 +22,7 @@ import { OPEN_AD_BOX } from "@/lib/questionnaire-events";
 const INFO_PATHS = new Set(["/about", "/contact", "/privacy", "/terms", "/how-we-select-accountants", "/how-it-works"]);
 const norm = (p: string) => p.replace(/\/$/, "") || "/";
 
-type Page = { title: string; html: string };
+type Page = { title: string; html: string; own?: ReactNode };
 const cache = new Map<string, Page>();
 
 function extract(text: string, base: URL): Page {
@@ -53,17 +55,12 @@ function extract(text: string, base: URL): Page {
   return { title: h1?.textContent?.trim() ?? "", html: out.innerHTML };
 }
 
-/**
- * About popup (owner, 7 Oct 2026): its "How we vet accountants" and "How the matching process works" sections are left
- * out, and in their place come the How it works page's words, then the How we select accountants page's words (each
- * under its own page headline). The About page itself is unchanged.
- */
-const COMBINE: Record<string, { drop: string[]; add: string[] }> = {
-  "/about": { drop: ["How we vet accountants", "How the matching process works"], add: ["/how-it-works", "/how-we-select-accountants"] },
-};
+/** About popup (owner, 7 Oct 2026): the owner's own About Us wording (AboutPopup.tsx), not the /about page's words. */
+const OWN_CONTENT: Record<string, Page> = { "/about": { title: ABOUT_POPUP.title, html: "", own: <AboutPopup /> } };
 
-async function fetchPage(url: URL): Promise<Page> {
+async function loadPage(url: URL): Promise<Page> {
   const key = norm(url.pathname);
+  if (OWN_CONTENT[key]) return OWN_CONTENT[key];
   const hit = cache.get(key);
   if (hit) return hit;
   const res = await fetch(url.pathname, { credentials: "same-origin" });
@@ -71,29 +68,6 @@ async function fetchPage(url: URL): Promise<Page> {
   const p = extract(await res.text(), url);
   cache.set(key, p);
   return p;
-}
-
-async function loadPage(url: URL): Promise<Page> {
-  const rule = COMBINE[norm(url.pathname)];
-  const own = await fetchPage(url);
-  if (!rule) return own;
-  const parts = await Promise.all(rule.add.map((p) => fetchPage(new URL(p, url))));
-  const box = document.createElement("div");
-  box.innerHTML = own.html;
-  const dropped = [...box.children].filter((c) => rule.drop.includes(c.querySelector("h2")?.textContent?.trim() ?? ""));
-  const added = parts.map((p) => {
-    const s = document.createElement("section");
-    s.className = "adi-part";
-    s.innerHTML = `<h2 class="adi-part-title"></h2>${p.html}`;
-    s.querySelector("h2")!.textContent = p.title;
-    // a step number on its own line ("1") is shown as a small badge
-    s.querySelectorAll("p").forEach((el) => { if (/^\d+$/.test(el.textContent?.trim() ?? "")) el.classList.add("adi-step-num"); });
-    return s;
-  });
-  if (dropped.length) dropped[0].before(...added);
-  else box.append(...added);
-  dropped.forEach((d) => d.remove());
-  return { title: own.title, html: box.innerHTML };
 }
 
 export default function AdInfoPopup() {
@@ -166,7 +140,7 @@ export default function AdInfoPopup() {
           {page ? (
             <>
               <h2 id="adi-title" className="adi-title">{page.title}</h2>
-              <div className="adi-content" dangerouslySetInnerHTML={{ __html: page.html }} />
+              {page.own ?? <div className="adi-content" dangerouslySetInnerHTML={{ __html: page.html }} />}
             </>
           ) : (
             <div className="adi-loading" role="status" aria-label="Loading"><span aria-hidden /></div>

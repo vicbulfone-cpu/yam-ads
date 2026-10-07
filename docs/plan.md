@@ -364,7 +364,9 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
 
 ## About popup content (owner, 7 Oct 2026)
 
-- The "About Your Accountant Match" popup (ad page and /match footers, `AdInfoPopup.tsx` `COMBINE`) no longer shows
-  "How we vet accountants" or "How the matching process works". In their place: the How it works page's words, then the
-  How we select accountants page's words, each under its own page headline. The /about page itself is unchanged.
-- In the popup, How it works' step numbers show as small "Step 1/2/3" badges (the page shows a plain number).
+- The "About" popup opened from the ad pages' footers (and the /match page footer) shows ONLY the owner's new "About Us"
+  wording (`src/content/about-popup.ts`, laid out by `src/components/ads/AboutPopup.tsx`, styles ".abp" in ads.css):
+  "Finding the Right Accountant Shouldn't Be a Game of Chance", "Backed by 19+ Years of Industry Expertise" (navy band
+  with the 19+ figure) and "Why Choose Us?" (four cards). All screen sizes. Replaces the earlier combined version
+  (About + How it works + How we select). The /about page itself keeps its own words.
+- Owner's wording used as supplied, except "specializes" spelt "specialises" (Australian spelling).
