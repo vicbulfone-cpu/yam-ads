@@ -1943,13 +1943,38 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (min-width: 1024px) { :root { --hand-stroke: calc(2.6 * clamp(3rem, 4.4vw, 6.5rem) / 70); } }
 .hand-arrow path { stroke: #0e7a32; stroke-width: var(--hand-stroke); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .ico-tick path { stroke-width: var(--hand-stroke); vector-effect: non-scaling-stroke; }
-/* Home hero (owner, 8 Oct 2026): the new photo ("hero home.png") has a bigger mug, so the handwriting and its green
-   arrow sit 5.5% of the photo's width further right, clear of the mug's own lettering */
-@media (min-width: 768px) {
-  .zz-phone .hero-tagline-overlay { left: calc(35.7% + 5.5%); }
-  .zz-phone .hero-arrow-overlay { margin-left: 5.5%; }
+/* Home hero only (owner, 8 Oct 2026): no fade effects on the picture behind the headline, line, three points and steps:
+   no white wash, no clouds behind the points or the steps, and the photo is not faded out at its top edge */
+.zz-phone .desk-hero-wash { display: none; }
+.zz-phone .desk-hero-points::before, .zz-phone .home-steps::before { content: none; }
+.zz-phone .desk-hero-photo img.desk-hero-img { -webkit-mask-image: none; mask-image: none; }
+/* Home hero on tablets (768-1023px; owner, 8 Oct 2026): the whole picture shows, full width and sitting on the bottom of
+   the hero, instead of being drawn taller than the hero with its top third cut off (as on phones and computers) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .zz-phone .desk-hero-photo { width: 100%; height: auto; aspect-ratio: 1983 / 793; transform: none; bottom: 0; }
+  .zz-phone .desk-hero-photo img.desk-hero-img { height: auto; transform: none; }
+  /* the words first, on white, then the whole picture underneath them (as on phones): the picture frame is not lifted
+     and the words are not stretched sideways, so nothing runs off the screen */
+  .zz-phone .desk-hero-picture { transform: none; }
+  .zz-phone .desk-hero-text { transform: none; padding-bottom: calc(100vw * 793 / 1983 + 1.5rem); }
+  /* handwriting over the picture, between the mug and the laptop, with its arrow */
+  .zz-phone .hero-tagline-overlay { top: auto; bottom: calc(100vw * 793 / 1983 * 0.44); transform: translateX(-50%) rotate(-8deg); }
+  /* the match box starts just under the picture */
+  .zz-phone .desk-hero-card { margin-top: 1rem; }
 }
+/* Home hero on phones (owner, 8 Oct 2026): the picture starts at its very left edge (branch end and pot plant on
+   screen) instead of being nudged 12.5vw left; the handwriting moves with it so it stays on its arrow */
 @media (max-width: 767px) {
-  .zz-phone .hero-tagline-overlay { left: 68vw; }
-  .zz-phone .hero-arrow-overlay { margin-left: 5.5%; }
+  .zz-phone .desk-hero-photo { transform: none; }
+  .zz-phone .hero-tagline-overlay { left: calc(61vw + 12.5vw); }
 }
+/* Home hero on laptops/desktops (owner, 8 Oct 2026): the photo starts right at the bottom edge of the header (no 2.2vw
+   gap) and is drawn 2.2vw taller, so its bottom stays on the navy bar. Words, match box and banner keep their places. */
+@media (min-width: 1024px) {
+  .zz-phone .desk-hero-photo { top: 5.2cm; height: calc(39.99vw + 2.2vw); }
+  /* the headline, line, three points and steps 4mm higher (still 1cm to the right, as above) */
+  .zz-phone .desk-hero-text { translate: 1cm -4mm; }
+}
+/* Home hero (owner, 8 Oct 2026): no handwriting ("The smarter way to find an accountant."), no arrow and no fade behind
+   the handwriting, on every screen size (the arrow layer is simply not drawn: ContentPage.tsx) */
+.zz-phone .hero-tagline-overlay { display: none; }
