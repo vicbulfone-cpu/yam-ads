@@ -23,8 +23,9 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
       <div aria-hidden className="pointer-events-none absolute -right-40 bottom-40 h-[30rem] w-[30rem] rounded-full bg-navy-900/[0.06] blur-3xl" />
 
       <div className="container-page relative">
-        {/* breadcrumb: 1.5cm higher (1cm on phones, so it stays clear of the top bar); the heading below stays where it was (owner, 7 Oct 2026) */}
-        {crumbs && <Breadcrumbs crumbs={crumbs} className="-mt-[1cm] mb-[calc(1.5rem+1cm)] md:-mt-[1.5cm] md:mb-[calc(2rem+1.5cm)]" />}
+        {/* breadcrumb: 1.5cm higher (1cm on phones, so it stays clear of the top bar); the heading and everything below it a
+            further 1.2cm higher (owner, 7 Oct 2026) */}
+        {crumbs && <Breadcrumbs crumbs={crumbs} className="-mt-[1cm] mb-[calc(1.5rem-0.2cm)] md:-mt-[1.5cm] md:mb-[calc(2rem+0.3cm)]" />}
         <div className={`max-w-3xl ${intro ? "pb-[1cm]" : ""}`}>{/* 1cm extra under the intro (padding, so it adds to the gap above the steps) */}
           {/* owner, 7 Oct 2026 (for SEO): replaces the "How it works" eyebrow and "Finding your accountant, made simple." */}
           <Heading className="font-sans! text-[2.1rem] font-extrabold! leading-[1.02]! tracking-[-0.04em]! sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.4vw,4.8rem)]">
