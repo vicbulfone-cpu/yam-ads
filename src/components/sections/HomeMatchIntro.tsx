@@ -82,7 +82,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
                 <span className="block text-green-700">made simple.</span>
               </h2>
             </div>
-            <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
+            <p className="text-[1.05rem] leading-snug text-navy-900/85 md:text-[0.98rem] lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(0.98rem,1.2vw,1.8rem)]">
               {/* owner's wording, 7 Oct 2026 (replaces "About 60 seconds to get started. Three simple steps to your local match.") */}
               Our quick 60-second, 3-step matching process is designed to be fast, specific and local, so you reach the right
               firm without sifting through generic directories. Here&apos;s exactly what happens from the moment you start to the
