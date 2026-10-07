@@ -1,18 +1,17 @@
 // The /about page (owner, 7 Oct 2026): the same "About Us" content as the ad pages' About popup (one copy of the words:
-// src/content/about-popup.ts, laid out by AboutPopup.tsx), under the site header, then the closing call-to-action band
+// src/content/about-popup.ts, laid out by AboutPopup.tsx), under the site header, then the home page's closing band
 // and the page's own footer. The page keeps its URL, title, description and canonical (from the old extraction).
 import { ABOUT_POPUP as A } from "@/content/about-popup";
 import { loadContent, mergeViews } from "@/lib/content";
-import { getCtaBandWords } from "@/lib/site-data";
+import { TAGLINES } from "@/content/taglines";
 import AboutPopup from "./ads/AboutPopup";
-import CtaBand from "./sections/CtaBand";
+import HomeClosingCta from "./sections/HomeClosingCta";
 import SiteFooter from "./layout/SiteFooter";
 
 const PATH = "/about";
 
 export default function AboutPage() {
   const nodes = mergeViews(loadContent(PATH)); // the old page's footer wording
-  const ctaWords = getCtaBandWords();
   return (
     <>
       <main>
@@ -30,7 +29,8 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <CtaBand {...(ctaWords ?? {})} asHeading={false} />
+        {/* owner, 7 Oct 2026: the home page closing band ("One quick match...") in place of the blue call-to-action box */}
+        <HomeClosingCta tagline={TAGLINES[8]} />
       </main>
       <SiteFooter nodes={nodes} />
     </>

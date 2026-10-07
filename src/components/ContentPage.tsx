@@ -28,6 +28,7 @@ import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
 import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
+import { ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS } from "@/content/how-it-works";
 
 type N = Exclude<Node, { t: "sec" }>;
 const SHARED_MATCH_CARD = getHomeMatchCard();
@@ -126,7 +127,10 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
       if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} />); shown++; }
       // anything after the step's own paragraph (e.g. "One match, by postcode") keeps its usual layout
       const pIdx = s.nodes.findIndex((n) => n.t === "p");
-      const after = pIdx === -1 ? [] : s.nodes.slice(pIdx + 1);
+      // the old "free matching and referral service" paragraph gives way to the owner's three paragraphs (7 Oct 2026)
+      const after = (pIdx === -1 ? [] : s.nodes.slice(pIdx + 1)).flatMap((n) =>
+        n.t === "p" && ONE_MATCH_OLD_START.test(n.text) ? ONE_MATCH_PARAGRAPHS.map((t) => ({ ...n, html: t, text: t })) : [n],
+      );
       if (toBlocks(after).length === 0) return;
       rendered.push(<SectionView key={`${s.id}-${i}-after`} section={{ ...s, nodes: after }} index={shown} seed={i * 3} home={false} />);
       shown++;
