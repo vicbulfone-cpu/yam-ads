@@ -811,9 +811,10 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (min-width: 768px) {
   .intro-photo-tall {
     top: -1cm !important; height: calc(100% + 1cm) !important;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 36% 34% at 16% 6%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, rgba(0, 0, 0, .1) 0.4cm, rgba(0, 0, 0, .45) 1cm, rgba(0, 0, 0, .85) 1.6cm, #000 2.2cm), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 36% 34% at 16% 6%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 36% 34% at 16% 6%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    mask-image: linear-gradient(to right, transparent 0, rgba(0, 0, 0, .1) 0.4cm, rgba(0, 0, 0, .45) 1cm, rgba(0, 0, 0, .85) 1.6cm, #000 2.2cm), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 36% 34% at 16% 6%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
+    /* tablets: a short soft fade on the photo's left edge too, so it never shows as a hard vertical line (owner, 7 Oct 2026) */
     mask-composite: intersect;
   }
 }
@@ -823,7 +824,9 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
     /* left fade: from --fs (fully faded) to --fe (full photo), eased in and out so its start never shows as a faint
        vertical line (owner, 7 Oct 2026); same strength as before at its middle */
     --fs: max(0%, 23% - 4cm); --fe: max(31%, 54% - 4cm);
-    clip-path: inset(0 0 0 3px); /* its fully faded left edge, trimmed so no hairline shows where the fades meet */
+    /* everything left of where the fade starts is fully faded anyway: cut it away, so a graphics card can never draw a
+       hairline along the photo's edge (owner, 7 Oct 2026: a faint vertical line was visible) */
+    clip-path: inset(0 0 0 max(3px, calc(var(--fs) - 1px)));
     -webkit-mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
     mask-image: linear-gradient(to right, transparent 0, transparent var(--fs), rgba(0, 0, 0, 0.03) calc(var(--fs) + 0.1 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.12) calc(var(--fs) + 0.2 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.27) calc(var(--fs) + 0.3 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.55) calc(var(--fs) + 0.42 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.76) calc(var(--fs) + 0.55 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.9) calc(var(--fs) + 0.7 * (var(--fe) - var(--fs))), rgba(0, 0, 0, 0.97) calc(var(--fs) + 0.85 * (var(--fe) - var(--fs))), #000 var(--fe)), linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .55) 9%, #000 24%), radial-gradient(ellipse 30% 30% at 15% 16%, transparent 0, rgba(0, 0, 0, .35) 55%, #000 100%);
   }
