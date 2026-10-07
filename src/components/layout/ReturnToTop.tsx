@@ -12,8 +12,9 @@ export default function ReturnToTop() {
       if (frame) return;
       frame = window.requestAnimationFrame(() => {
         frame = 0;
-        const scrollableDistance = document.documentElement.scrollHeight - window.innerHeight;
-        setVisible(window.scrollY > 0 && window.scrollY >= scrollableDistance / 2);
+        // shows as soon as the whole first screen has scrolled out of view (owner, 7 Oct 2026; laptops and desktops only,
+        // see the "lg:grid" class below)
+        setVisible(window.scrollY > 0 && window.scrollY >= window.innerHeight);
       });
     };
 

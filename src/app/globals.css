@@ -766,18 +766,20 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* home page only: headline and supporting line lifted 5mm; nothing else moves (owner, 7 Oct 2026) */
 .zz-phone .desk-hero-h1, .zz-phone .desk-hero-sub { position: relative; top: -5mm; }
 .desk-hero-points { transform: translateY(0.5cm); margin-top: 1.25rem; display: grid; gap: 0.8rem; position: relative; isolation: isolate; }
+/* the three points' cloud: the same style as the cloud behind the "Tell us your needs → …" steps line (owner, 7 Oct 2026),
+   on every page and screen size that shows the points (home, city and ad pages) */
 .desk-hero-points::before {
   content: "";
   position: absolute;
-  inset: -60% -12%;
+  inset: -2.6rem -12%;
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 26% 44% at 14% 48%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 26% 42% at 48% 54%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 26% 44% at 82% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.72) 55%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 18% 30% at 31% 38%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 18% 30% at 66% 62%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 28% 32% at 52% 38%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 24% 28% at 82% 44%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(ellipse 26% 26% at 16% 62%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0) 100%),
     radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
   filter: blur(18px);
 }

@@ -1,4 +1,4 @@
-# SEO audit — 2026-10-06
+# SEO audit — 2026-10-07
 
 Pages crawled (from sitemap): **7** · internal links checked: 125
 

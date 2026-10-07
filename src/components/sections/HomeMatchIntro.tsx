@@ -82,9 +82,10 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
               </h2>
             </div>
             <p className="text-[1.05rem] leading-snug text-navy-900/85 lg:mt-[1.2vw] lg:self-start lg:border-l lg:border-navy-900/25 lg:py-[0.4vw] lg:pl-[3.5vw] lg:text-[clamp(1.05rem,1.3vw,1.95rem)]">
-              About 60 seconds to get started.
-              <br />
-              Three simple steps to your local match.
+              {/* owner's wording, 7 Oct 2026 (replaces "About 60 seconds to get started. Three simple steps to your local match.") */}
+              Our quick 60-second, 3-step matching process is designed to be fast, specific and local, so you reach the right
+              firm without sifting through generic directories. Here&apos;s exactly what happens from the moment you start to the
+              moment you receive your matched details
             </p>
           </div>
 
@@ -164,8 +165,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}
             {/* owner, 7 Oct 2026: the note, its arrow and the navy badge a further 5mm right; then (tablets and up) all three
-                another 5mm right and 1.2cm up */}
-            <div aria-hidden className="absolute left-[5%] top-[10%] md:translate-x-[0.5cm] md:-translate-y-[1.2cm] lg:left-[3%] lg:top-[22%] lg:translate-x-[1.5cm] lg:-translate-y-[0.7cm]">
+                another 5mm right and 1.2cm up; later 7 Oct 2026: the note, arrow and badge 1cm higher on every screen size
+                (margins, so the existing translate/rotate/scale nudges are untouched) */}
+            <div aria-hidden className="absolute left-[5%] top-[10%] -mt-[1cm] md:translate-x-[0.5cm] md:-translate-y-[1.2cm] lg:left-[3%] lg:top-[22%] lg:translate-x-[1.5cm] lg:-translate-y-[0.7cm]">
               <p className="-rotate-[12deg] [text-shadow:0_0_10px_#fff,0_0_4px_#fff] lg:[text-shadow:none] font-[family-name:var(--font-script)] text-[1.55rem] font-semibold leading-[1.05] text-green-700 sm:text-[2rem] lg:text-[clamp(1.6rem,2.2vw,3.3rem)]">
                 Real people.
                 <br />
@@ -179,7 +181,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             {/* navy badge */}
             {/* drawn at 70% size (owner, 5 Oct 2026), anchored at its left edge so it stays in the same spot;
                 laptops/desktops: 0.5cm right of and 0.55cm below its frame position (owner, 5 Oct 2026) */}
-            <div className="absolute bottom-[8%] left-[5%] origin-bottom-left -rotate-[6deg] scale-[0.7] lg:bottom-auto lg:left-[9%] lg:top-[52%] lg:origin-top-left intro-badge">
+            {/* 1cm higher (owner, 7 Oct 2026): bottom margin while it is anchored to the bottom (phones/tablets), top margin on laptops/desktops */}
+            <div className="absolute bottom-[8%] left-[5%] mb-[1cm] origin-bottom-left -rotate-[6deg] scale-[0.7] lg:bottom-auto lg:left-[9%] lg:top-[52%] lg:mb-0 lg:-mt-[1cm] lg:origin-top-left intro-badge">
               <p className="flex items-center gap-3 rounded-[1rem] bg-[#041f42] py-3 pl-4 pr-6 text-white shadow-[0_18px_36px_-14px_rgba(7,50,101,0.6)] lg:gap-[1.2vw] lg:rounded-[1.1vw] lg:py-[1vw] lg:pl-[1.4vw] lg:pr-[1.8vw]">
                 <svg viewBox="0 0 24 24" aria-hidden className="h-8 w-8 shrink-0 lg:h-[clamp(2rem,2.6vw,3.8rem)] lg:w-[clamp(2rem,2.6vw,3.8rem)]">
                   <path d="M12 1.8c-4.4 0-7.9 3.4-7.9 7.7 0 5.6 7.9 13.3 7.9 13.3s7.9-7.7 7.9-13.3c0-4.3-3.5-7.7-7.9-7.7Z" fill="#fff" />
