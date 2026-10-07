@@ -158,13 +158,23 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
           {/* laptops/desktops: shifted 0.5cm to the left (owner, 5 Oct 2026: 2.5cm right, then 3cm left) */}
           {/* laptops/desktops: sits on the bottom of the row, so the navy bar below always touches it (owner, 6 Oct 2026) */}
           {/* owner, 6 Oct 2026: photo (and the bar on it) 1cm lower; everything below follows */}
-          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.95/1] lg:-translate-x-[0.5cm]">
+          {/* owner, 7 Oct 2026: laptops/desktops get a taller frame (1.5:1 instead of 1.95:1) so the photo is as tall as the longer words */}
+          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[4/3] sm:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
+            {/* phones: the original photo (unchanged) */}
             <Image
               src="/images/home/tradie-drill-ute.webp"
               alt="Smiling tradesman holding a drill and tool bag beside his ute in a driveway"
               fill
+              sizes="100vw"
+              className="intro-photo object-cover object-[50%_6%] md:hidden"
+            />
+            {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo */}
+            <Image
+              src="/images/home/tradie-ute-driveway.webp"
+              alt="Smiling tradesman holding a drill and tool bag beside his ute in front of his garage workshop"
+              fill
               sizes="(min-width: 1024px) 60vw, 100vw"
-              className="intro-photo object-cover object-[50%_6%] lg:object-contain lg:object-right"
+              className="intro-photo hidden object-cover object-[50%_6%] md:block lg:object-contain lg:object-right"
             />
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}

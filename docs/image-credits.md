@@ -42,3 +42,8 @@ supplied for use on this site). `scripts/faq-icons.mjs` makes their white backgr
 ## Home page "How we select accountants" icons supplied by the owner (6 Oct 2026)
 Source: owner-supplied files in `hero section/ad landing pages/` (01-identity-card … 07-customer-concerns; owner's own images,
 supplied for use on this site, transparent background), converted to WebP in `public/images/home/select-icons/`.
+
+## "Meet Your Accountant Match" tradie photo, tablets and desktops (owner, 7 Oct 2026)
+Source: owner-supplied `hero section/ad landing pages/tradie.png` (owner's own image, supplied for use on this site), converted to
+WebP (1532 × 1027, quality 80) as `public/images/home/tradie-ute-driveway.webp`. Shown from 768px up on the home page and
+all ad pages; phones keep `tradie-drill-ute.webp`.
