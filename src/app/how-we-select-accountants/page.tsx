@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import SiteFooter from "@/components/layout/SiteFooter";
-import CtaBand from "@/components/sections/CtaBand";
+import HomeClosingCta from "@/components/sections/HomeClosingCta";
+import { TAGLINES } from "@/content/taglines";
 import { howWeSelect as hw } from "@/content/how-we-select";
 import { loadContent, mergeViews } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
@@ -94,7 +95,8 @@ export default function HowWeSelectPage() {
           </div>
         </section>
 
-        <CtaBand />
+        {/* owner, 7 Oct 2026: the home page closing band ("One quick match...") in place of the blue call-to-action box */}
+        <HomeClosingCta tagline={TAGLINES[8]} />
       </main>
       <SiteFooter nodes={nodes} />
     </>
