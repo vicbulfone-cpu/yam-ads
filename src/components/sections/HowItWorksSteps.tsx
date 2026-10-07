@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { HOME_STEPS } from "./HomeMatchIntro";
 import { Html } from "./Blocks";
 import StartBar from "./StartBar";
@@ -11,7 +12,10 @@ export type HowStep = { title: string; html: string };
  * heading (kept as an H2, so the heading outline is unchanged) and its detailed paragraph. A numbered rail links the
  * steps; on laptops and desktops the photo and words alternate sides. The navy start bar closes the section.
  */
-export default function HowItWorksSteps({ steps }: { steps: HowStep[] }) {
+/** `crumbs`: on /how-it-works this section opens the page (owner, 7 Oct 2026: the old hero removed), so it carries the
+ *  breadcrumb and its heading is the page's H1. */
+export default function HowItWorksSteps({ steps, crumbs }: { steps: HowStep[]; crumbs?: { label: string; href?: string }[] }) {
+  const Heading = crumbs ? "h1" : "p";
   return (
     <section aria-label="How it works, step by step" className="relative overflow-hidden bg-[#f7f9fb] pt-12 md:pt-16 lg:pt-[clamp(4rem,5vw,7rem)]">
       {/* soft green and navy glows behind the steps */}
@@ -19,15 +23,25 @@ export default function HowItWorksSteps({ steps }: { steps: HowStep[] }) {
       <div aria-hidden className="pointer-events-none absolute -right-40 bottom-40 h-[30rem] w-[30rem] rounded-full bg-navy-900/[0.06] blur-3xl" />
 
       <div className="container-page relative">
+        {crumbs && crumbs.length > 0 && (
+          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-x-2 text-sm font-medium text-muted md:mb-8">
+            {crumbs.map((c, i) => (
+              <span key={i} className="flex items-center gap-2">
+                {i > 0 && <span aria-hidden className="text-line">/</span>}
+                {c.href && i < crumbs.length - 1 ? <Link href={c.href} className="transition hover:text-green-700">{c.label}</Link> : <span className="text-ink">{c.label}</span>}
+              </span>
+            ))}
+          </nav>
+        )}
         <div className="max-w-3xl">
           <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow">
             How it works
             <span aria-hidden className="h-px w-16 bg-green-700" />
           </p>
-          <p className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02] tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.4vw,4.8rem)]">
+          <Heading className="mt-2 font-sans! text-[2.1rem] font-extrabold! leading-[1.02]! tracking-[-0.04em]! sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.4vw,4.8rem)]">
             <span className="block text-navy-900">Finding your accountant,</span>
             <span className="block text-green-700">made simple.</span>
-          </p>
+          </Heading>
         </div>
 
         <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)]">

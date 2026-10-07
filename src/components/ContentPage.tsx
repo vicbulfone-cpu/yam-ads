@@ -124,7 +124,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
   rest2.forEach((s, i) => {
     if (i === ctaIdx) return;
     if (stepIdx.includes(i)) {
-      if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} />); shown++; }
+      if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} crumbs={parts.crumbs} />); shown++; }
       // anything after the step's own paragraph (e.g. "One match, by postcode") keeps its usual layout
       const pIdx = s.nodes.findIndex((n) => n.t === "p");
       // the old "free matching and referral service" paragraph gives way to the owner's three paragraphs (7 Oct 2026)
@@ -187,7 +187,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
             desktopPicture={homeDeskHeroPicture}
             showTrust={false}
           />
-        ) : (
+        ) : isHowItWorks ? null /* owner, 7 Oct 2026: the old hero (eyebrow, H1, intro) removed; the steps section opens the page */ : (
           // the Privacy page has no match box: its statement starts straight under "Last updated" (owner, 6 Oct 2026);
           // nor has How It Works (owner, 7 Oct 2026)
           <PageHero parts={parts} card={path === "/privacy" || isHowItWorks ? null : card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
