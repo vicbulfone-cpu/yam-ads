@@ -1884,6 +1884,9 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @keyframes si-dot2 { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-2.4px); } }
 /* "Vetted partner network" tiles, desktops (owner, 7 Oct 2026): the seven boxes (and the button cell) at 75% of their size */
 @media (min-width: 1024px) { .sel-checks { zoom: 0.75; width: 75%; } }
+/* (owner, 7 Oct 2026, later) tablets and desktops: the grid reaches the right of the page and the icons are larger */
+@media (min-width: 768px) and (max-width: 1023px) { .sel-checks .sel-icon { width: 4.9rem; height: 4.9rem; } }
+@media (min-width: 1024px) { .sel-checks { width: 100%; } .sel-checks .sel-icon { width: clamp(5.6rem, 6.6vw, 9.6rem); height: clamp(5.6rem, 6.6vw, 9.6rem); } }
 /* "Start here", laptops/desktops (owner, 7 Oct 2026): the pill moves to the middle of the popup's top bar, directly above
    the match box (FitBox sets --pill-x), with a gentle pulse; the rest of the panel (words, points and the green arrow)
    sits 2.2cm higher. Tablets keep the pill in the panel. */
