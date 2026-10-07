@@ -1717,3 +1717,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .start-here-go { margin-top: 0.9rem; }
   .start-here-script { font-size: 1.7rem; }
 }
+/* "Start here" panel, laptops/desktops (owner, 7 Oct 2026): the line, the three points and "Let's get started" with its
+   arrow 6mm lower; the label and headline stay put */
+@media (min-width: 1024px) { .start-here-line, .start-here-points, .start-here-go { position: relative; top: 6mm; } }
