@@ -53,3 +53,8 @@ Source: owner-supplied `hero section/ad landing pages/home page tradie.png` (own
 the navy badge drawn in), converted to WebP (941 × 1672, quality 80) as `public/images/home/tradie-mobile.webp`. Shown
 below 768px on the home page and all ad pages (the page's own note and badge are hidden there). `tradie-drill-ute.webp`
 is no longer shown.
+
+## Match page sample accountant photo (owner, 7 Oct 2026)
+`public/images/home/accountant-portrait.webp`: a portrait crop (640 × 768) of the owner-supplied `accountant-client-desk`
+photo (owner's own image, see "Home page photos supplied by the owner"). Used for the sample accountant "Daniel Harper"
+on /match until GoHighLevel supplies the real accountant's photo.

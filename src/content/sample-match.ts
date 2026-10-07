@@ -22,14 +22,14 @@ export type MatchDetails = {
 };
 
 export const SAMPLE_MATCH: MatchDetails = {
-  name: "Alex Morgan",
-  firm: "Morgan Business Accounting",
-  photo: "/images/stock/general-woman-professional.webp",
+  name: "Daniel Harper",
+  firm: "Harper Accounting",
+  photo: "/images/home/accountant-portrait.webp", // the owner's own photo (accountant at his desk), cropped
   specialty: "Business accounting",
   location: "Melbourne VIC",
   years: 20,
   phone: "03 XXXX XXXX",
-  email: "alex@example.com",
+  email: "daniel@example.com",
   website: "https://www.example.com",
   address: "[Office address], Melbourne VIC",
   hours: "Monday–Friday, 9 am–5 pm",
