@@ -1910,3 +1910,25 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   50% { box-shadow: inset 0 0 0 1px rgba(0, 135, 58, 0.25), 0 6px 16px -10px rgba(14, 122, 50, 0.5), 0 0 0 7px rgba(0, 174, 65, 0); }
 }
 @media (prefers-reduced-motion: reduce) { .start-here-pill, .start-here-pill .start-here-dot::after { animation: none; } }
+
+/* /how-we-select-accountants "Our commitment" (owner, 7 Oct 2026: redesigned, no button): a navy panel with a shield
+   badge and the heading, beside the two paragraphs; the privacy promise in a highlighted mint card with a lock. */
+.hwc { display: grid; overflow: hidden; border-radius: 1.75rem; background: #fff; border: 1px solid #dfe7ee;
+  box-shadow: 0 30px 60px -36px rgba(7, 50, 101, 0.45), 0 4px 12px -8px rgba(7, 50, 101, 0.12); }
+.hwc-side { position: relative; isolation: isolate; overflow: hidden; padding: 1.75rem 1.5rem; color: #fff;
+  background: radial-gradient(26rem 18rem at 110% -10%, rgba(0, 174, 65, 0.28), transparent 60%), linear-gradient(155deg, #0a3f7c 0%, var(--navy-900) 55%, #052549 100%); }
+.hwc-side::after { content: ""; position: absolute; right: -3.5rem; bottom: -3.5rem; z-index: -1; width: 11rem; height: 11rem; border-radius: 999px; border: 1.5rem solid rgba(255, 255, 255, 0.05); }
+.hwc-badge { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: rgba(255, 255, 255, 0.1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18); color: #5fe08f; }
+.hwc-badge svg { width: 1.9rem; height: 1.9rem; }
+.hwc-title { margin-top: 1.1rem; font-family: var(--font-serif) !important; font-weight: 600; letter-spacing: -0.015em; line-height: 1.12; color: #fff !important; font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.35rem) !important; }
+.hwc-rule { display: block; width: 3.5rem; height: 3px; margin-top: 1.1rem; border-radius: 999px; background: linear-gradient(90deg, #00ae41, #5fe08f); }
+.hwc-body { display: grid; align-content: center; gap: 1.25rem; padding: 1.75rem 1.5rem; }
+.hwc-lead { font-size: 1.05rem; line-height: 1.7; color: #3a4a5e; }
+.hwc-promise { display: flex; align-items: flex-start; gap: 0.9rem; padding: 1.1rem 1.2rem; border-radius: 1.1rem; background: linear-gradient(135deg, #effaf3 0%, #f7fcf9 100%); border: 1px solid #cfe9d9; border-left: 4px solid #00ae41; font-weight: 600; line-height: 1.6; color: var(--navy-900); }
+.hwc-promise-icon { display: grid; place-items: center; flex: none; width: 2.3rem; height: 2.3rem; border-radius: 999px; background: #0e7a32; color: #fff; box-shadow: 0 8px 18px -10px rgba(14, 122, 50, 0.8); }
+.hwc-promise-icon svg { width: 1.15rem; height: 1.15rem; }
+@media (min-width: 768px) {
+  .hwc { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr); }
+  .hwc-side { padding: 2.5rem 2.25rem; display: flex; flex-direction: column; justify-content: center; }
+  .hwc-body { padding: 2.5rem 2.75rem; }
+}

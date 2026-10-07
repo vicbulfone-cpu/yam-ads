@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import SiteFooter from "@/components/layout/SiteFooter";
-import { Check } from "@/components/ui/Icons";
 import CtaBand from "@/components/sections/CtaBand";
-import { QUESTIONNAIRE_URL, ctaLabel } from "@/config/site.config";
 import { howWeSelect as hw } from "@/content/how-we-select";
 import { loadContent, mergeViews } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
 import { pageMetadata } from "@/lib/seo";
-import { ArrowRight } from "@/components/ui/Icons";
 
 const PATH = "/how-we-select-accountants";
 
@@ -68,25 +64,31 @@ export default function HowWeSelectPage() {
           </div>
         </section>
 
-        {/* Commitment panel */}
+        {/* Commitment (owner, 7 Oct 2026: redesigned, no button): a navy panel with the heading beside the two
+            paragraphs; the privacy promise sits in a highlighted card. Same words. Styles: ".hwc-" in globals.css. */}
         <section className="pb-12 md:pb-20">
           <div className="container-page">
-            <div className="relative overflow-hidden rounded-[2rem] border border-green-100 bg-gradient-to-br from-green-50 via-white to-navy-50 p-7 shadow-[var(--shadow-md)] md:p-12">
-              <span aria-hidden className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-green-500/10 blur-2xl" />
-              <div className="relative flex flex-col gap-6 md:flex-row md:gap-10">
-                <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-green-600 text-white shadow-[var(--shadow-green)]">
-                  <Check width={30} height={30} strokeWidth={2.4} />
+            <div className="hwc">
+              <div className="hwc-side">
+                <span aria-hidden className="hwc-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2.6 4.5 5.5v5.6c0 4.8 3.2 8.8 7.5 10.3 4.3-1.5 7.5-5.5 7.5-10.3V5.5L12 2.6Z" />
+                    <path d="m8.4 11.8 2.5 2.5 4.8-4.9" />
+                  </svg>
                 </span>
-                <div>
-                  <h2 className="h-section !text-[clamp(1.6rem,2.4vw+0.8rem,2.4rem)]">{hw.commitment.title}</h2>
-                  {hw.commitment.paragraphs.map((p, i) => (
-                    <p key={i} className={`mt-4 ${i === 0 ? "text-[1.05rem] text-body" : "font-semibold text-ink"} leading-relaxed`}>{p}</p>
-                  ))}
-                  <Link href={QUESTIONNAIRE_URL} className="btn btn-primary btn-lg mt-8">
-                    <span>{ctaLabel}</span>
-                    <span className="btn-arrow"><ArrowRight width={16} height={16} strokeWidth={2.5} /></span>
-                  </Link>
-                </div>
+                <h2 className="hwc-title">{hw.commitment.title}</h2>
+                <span aria-hidden className="hwc-rule" />
+              </div>
+              <div className="hwc-body">
+                <p className="hwc-lead">{hw.commitment.paragraphs[0]}</p>
+                {hw.commitment.paragraphs.slice(1).map((p) => (
+                  <p key={p} className="hwc-promise">
+                    <span aria-hidden className="hwc-promise-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.2" /><path d="M8.2 10.5V8a3.8 3.8 0 0 1 7.6 0v2.5" /></svg>
+                    </span>
+                    <span>{p}</span>
+                  </p>
+                ))}
               </div>
             </div>
           </div>
