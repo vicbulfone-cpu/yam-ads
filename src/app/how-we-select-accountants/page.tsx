@@ -37,35 +37,33 @@ export default function HowWeSelectPage() {
           </div>
         </section>
 
-        {/* Seven checks — numbered timeline */}
-        <section className="pb-8 md:pb-16">
+        {/* Seven checks (owner, 7 Oct 2026: two boxes side by side, "amazing, professional and polished"): picture cards
+            in two columns (one on phones). Each card: the check's accounting photo under a navy fade, with the big
+            check number, the "Check N" label and the light green heading on it, then the description on white. The
+            seventh card runs the full width (photo left, words right) so the grid ends evenly. Styles: ".hws-" in
+            globals.css; the ad pages' popup shows the same cards. */}
+        <section className="hws pb-8 md:pb-16">
           <div className="container-page">
-            <ol className="hws-checks relative mx-auto max-w-5xl">
-              {/* the line (grows as you scroll, where supported) */}
-              <span aria-hidden className="hws-line absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-line lg:left-1/2 lg:-translate-x-1/2" />
-              <span aria-hidden className="hws-line grow-y absolute bottom-0 left-[1.4rem] top-2 w-[3px] rounded-full bg-gradient-to-b from-green-500 to-navy-900 lg:left-1/2 lg:-translate-x-1/2" />
-              {hw.checks.map((c, i) => {
-                const left = i % 2 === 0;
-                return (
-                  <li key={c.n} className="hws-item reveal relative pb-10 pl-16 last:pb-0 lg:pb-14 lg:pl-0">
-                    {/* number marker on the line */}
-                    <span className="hws-num absolute left-0 top-2 grid h-[2.9rem] w-[2.9rem] place-items-center rounded-full border-4 border-white bg-navy-900 font-serif text-lg font-semibold text-white shadow-[var(--shadow-md)] lg:left-1/2 lg:-translate-x-1/2">
-                      {c.n}
-                    </span>
-                    <article className={`hws-card group card card-lift relative overflow-hidden ${left ? "lg:mr-auto lg:w-[calc(50%-3.25rem)]" : "lg:ml-auto lg:w-[calc(50%-3.25rem)]"}`}>
-                      <div className="relative h-40 overflow-hidden sm:h-48 hoverable:absolute hoverable:inset-0 hoverable:h-auto hoverable:opacity-0 hoverable:transition-opacity hoverable:duration-500 hoverable:group-hover:opacity-100">
-                        <Image src={`/images/stock/${c.image}.webp`} alt="" fill sizes="(min-width:1024px) 480px, 92vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                        <div className="absolute inset-0 hidden bg-gradient-to-t from-navy-950/90 via-navy-950/70 to-navy-950/50 hoverable:block" />
+            <ol className="hws-checks">
+              {hw.checks.map((c) => (
+                <li key={c.n} className="hws-item reveal">
+                  <article className="hws-card group">
+                    <div className="hws-media">
+                      <Image src={`/images/stock/${c.image}.webp`} alt="" fill sizes="(min-width:1024px) 560px, (min-width:768px) 46vw, 92vw" className="hws-img" />
+                      <span aria-hidden className="hws-shade" />
+                      <span aria-hidden className="hws-n">{String(c.n).padStart(2, "0")}</span>
+                      <div className="hws-head">
+                        <p className="hws-eyebrow">Check {c.n}</p>
+                        <h2 className="hws-title">{c.title}</h2>
                       </div>
-                      <div className="relative p-6 md:p-8 hoverable:group-hover:text-white">
-                        <p className="eyebrow hoverable:group-hover:bg-white/15 hoverable:group-hover:text-green-200">Check {c.n}</p>
-                        <h2 className="hws-title h-card mt-4 hoverable:group-hover:text-white">{c.title}</h2>
-                        <p className="mt-3 text-[0.97rem] leading-relaxed text-body hoverable:group-hover:text-navy-100">{c.body}</p>
-                      </div>
-                    </article>
-                  </li>
-                );
-              })}
+                    </div>
+                    <div className="hws-body">
+                      <span aria-hidden className="hws-rule" />
+                      <p>{c.body}</p>
+                    </div>
+                  </article>
+                </li>
+              ))}
             </ol>
           </div>
         </section>
@@ -73,7 +71,7 @@ export default function HowWeSelectPage() {
         {/* Commitment panel */}
         <section className="pb-12 md:pb-20">
           <div className="container-page">
-            <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-green-100 bg-gradient-to-br from-green-50 via-white to-navy-50 p-7 shadow-[var(--shadow-md)] md:p-12">
+            <div className="relative overflow-hidden rounded-[2rem] border border-green-100 bg-gradient-to-br from-green-50 via-white to-navy-50 p-7 shadow-[var(--shadow-md)] md:p-12">
               <span aria-hidden className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-green-500/10 blur-2xl" />
               <div className="relative flex flex-col gap-6 md:flex-row md:gap-10">
                 <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-green-600 text-white shadow-[var(--shadow-green)]">
