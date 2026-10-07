@@ -371,3 +371,15 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
   (About + How it works + How we select). The /about page itself keeps its own words.
 - Owner's wording used as supplied, except "specializes" spelt "specialises" (Australian spelling).
 - (later, 7 Oct 2026) The /about page itself now shows the same About Us content (src/components/AboutPage.tsx, rendered by the catch-all route for /about), with the site header, the closing call-to-action band and footer. Title, description, canonical and robots unchanged.
+
+## Lead source rule (owner, 7 Oct 2026)
+
+- `leadSource` is **Paid** only when the visit came from a Google Ads click: the lead carries a `gclid` (or `gbraid` /
+  `wbraid`, used on some iPhone traffic). Otherwise **Organic**, including visitors who reach an ad page from the home
+  page footer's "Services" links. `adType` is still sent and only says which ad questionnaire was used.
+  (Before: any lead from an ad page questionnaire was Paid.) `src/app/api/lead/route.ts`.
+- The tracking values (utm_*, the click IDs, ref) are remembered for the visit in the browser tab (sessionStorage), so
+  they survive moving between pages before the questionnaire is finished (`readTracking` in QuestionnaireParts.tsx).
+- GoHighLevel can branch on `leadSource` alone. The owner's ad payer is the postcode owner, so routing is unaffected;
+  the rule keeps reports and any source-based billing accurate.
+- (Owner, 7 Oct 2026: there are no further build stages; from now on the work is page edits.)

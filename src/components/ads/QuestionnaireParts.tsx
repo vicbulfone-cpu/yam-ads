@@ -13,14 +13,29 @@ export const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 export const MOBILE = /^(?:\+?61|0)4\d{8}$/;
 export const cleanPhone = (p: string) => p.replace(/[\s()-]/g, "");
 
-/** utm_*, gclid and ref from the page address, carried into the lead. */
+/** Google Ads click IDs: gclid, or gbraid / wbraid on some iPhone traffic. Any one of them makes the lead "Paid". */
+export const AD_CLICK_IDS = ["gclid", "gbraid", "wbraid"];
+const TRACKING_KEY = "yam:tracking";
+
+/**
+ * utm_*, the Google Ads click IDs and ref from the page address, carried into the lead. Remembered for the visit (this
+ * browser tab), so they are not lost if the visitor moves to another page before finishing the questionnaire.
+ */
 export function readTracking() {
-  const out: Record<string, string> = {};
+  let out: Record<string, string> = {};
+  try { out = JSON.parse(sessionStorage.getItem(TRACKING_KEY) ?? "{}"); } catch {}
+  const fresh: Record<string, string> = {};
   new URLSearchParams(window.location.search).forEach((v, k) => {
-    if (k.startsWith("utm_") || k === "gclid" || k === "ref") out[k] = v;
+    if (k.startsWith("utm_") || AD_CLICK_IDS.includes(k) || k === "ref") fresh[k] = v;
   });
+  if (Object.keys(fresh).length) {
+    out = fresh; // a new visit from a link replaces what was remembered
+    try { sessionStorage.setItem(TRACKING_KEY, JSON.stringify(out)); } catch {}
+  }
   return out;
 }
+// remember the landing page's tracking as soon as this code loads
+if (typeof window !== "undefined") readTracking();
 
 /**
  * Opens the match page. The quick in-app switch is tried first (the popup stays on "Preparing your match…" until the

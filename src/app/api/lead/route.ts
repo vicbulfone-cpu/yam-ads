@@ -41,7 +41,10 @@ export async function POST(request: Request) {
   }
 
   const tracking = (body.tracking ?? {}) as Record<string, unknown>;
-  const paid = Boolean(str(tracking.gclid) || str(body.adType));
+  // Paid only when the visit came from a Google Ads click (a gclid, or gbraid / wbraid on some iPhone traffic). A visitor
+  // who reaches an ad page some other way (e.g. the home page footer links) stays Organic; adType still says which
+  // questionnaire was used (owner, 7 Oct 2026).
+  const paid = Boolean(str(tracking.gclid) || str(tracking.gbraid) || str(tracking.wbraid));
   const lead = {
     leadId,
     name,
@@ -61,6 +64,8 @@ export async function POST(request: Request) {
     questionnaire: str(body.questionnaire, 40),
     campaign: str(tracking.utm_campaign, 200),
     gclid: str(tracking.gclid, 300),
+    gbraid: str(tracking.gbraid, 300),
+    wbraid: str(tracking.wbraid, 300),
     ref: str(tracking.ref, 200),
     utm: Object.fromEntries(Object.entries(tracking).filter(([k]) => k.startsWith("utm_")).map(([k, v]) => [k, str(v, 200)])),
     visitor: body.visitor ?? null,
