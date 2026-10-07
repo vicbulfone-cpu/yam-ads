@@ -168,13 +168,13 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
               sizes="100vw"
               className="intro-photo object-cover object-[50%_6%] md:hidden"
             />
-            {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo, 1.8cm to the right (the note and badge stay put) */}
+            {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo, 3cm to the right (1.8cm, then 1.2cm more; the note and badge stay put) */}
             <Image
               src="/images/home/tradie-ute-driveway.webp"
               alt="Smiling tradesman holding a drill and tool bag beside his ute in front of his garage workshop"
               fill
               sizes="(min-width: 1024px) 60vw, 100vw"
-              className="intro-photo intro-photo-tall hidden object-cover object-[50%_6%] md:block md:translate-x-[1.8cm] lg:object-contain lg:object-right"
+              className="intro-photo intro-photo-tall hidden object-cover object-[50%_6%] md:block md:translate-x-[3cm] lg:object-contain lg:object-right"
             />
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}
