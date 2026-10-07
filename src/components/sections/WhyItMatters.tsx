@@ -119,7 +119,7 @@ export default function WhyItMatters() {
             <li
               key={b.title}
               style={{ "--i": i } as React.CSSProperties}
-              className="wim-card rounded-2xl border border-white/15 bg-white/[0.06] p-6 backdrop-blur-sm transition duration-300 motion-reduce:transition-none hoverable:hover:-translate-y-1 hoverable:hover:border-white/30 hoverable:hover:bg-white/[0.09] lg:p-[clamp(1.75rem,2vw,3rem)]"
+              className="wim-card rounded-2xl border border-white/15 bg-white/[0.06] p-6 backdrop-blur-sm transition duration-300 motion-reduce:transition-none hoverable:hover:-translate-y-1 hoverable:hover:border-white/30 lg:p-[clamp(1.75rem,2vw,3rem)]"
             >
               <span className="wim-icon mb-4 inline-flex h-14 items-center text-[#3cc35a] lg:h-auto lg:[&_svg]:h-auto lg:[&_svg]:w-[clamp(2.9rem,3vw,4.4rem)] drop-shadow-[0_0_10px_rgba(0,174,65,0.35)]">
                 {b.icon}

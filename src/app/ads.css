@@ -732,3 +732,6 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 }
 /* the name box's hint: light but readable */
 .q-modal input::placeholder { color: #8a97a8; opacity: 1; }
+/* searching boxes (owner, 7 Oct 2026): more room around the radar so its rings never reach the words underneath (the
+   rings grow to about 2.1 times the icon: 2.5rem beyond it) */
+.bq-search .bq-radar { margin: 1.6rem auto 3rem; }
