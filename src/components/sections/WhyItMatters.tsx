@@ -7,6 +7,7 @@
  * utilities use the Tailwind 4 important suffix (`!`) to win.
  */
 import type { ReactNode } from "react";
+import WimReveal from "./WimReveal";
 
 /* ---------- Inline line icons (stroke = currentColor) ---------- */
 const iconProps = {
@@ -102,13 +103,15 @@ export default function WhyItMatters() {
           saves you <span className="text-[#4fd06a]">time, money and stress.</span>
         </h2>
 
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-[1.6vw]">
-          {benefits.map((b) => (
+        <WimReveal />
+        <ul className="wim-cards grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-[1.6vw]">
+          {benefits.map((b, i) => (
             <li
               key={b.title}
-              className="rounded-2xl border border-white/15 bg-white/[0.06] p-6 backdrop-blur-sm transition duration-300 motion-reduce:transition-none hoverable:hover:-translate-y-1 hoverable:hover:border-white/30 hoverable:hover:bg-white/[0.09] lg:p-[clamp(1.75rem,2vw,3rem)]"
+              style={{ "--i": i } as React.CSSProperties}
+              className="wim-card rounded-2xl border border-white/15 bg-white/[0.06] p-6 backdrop-blur-sm transition duration-300 motion-reduce:transition-none hoverable:hover:-translate-y-1 hoverable:hover:border-white/30 hoverable:hover:bg-white/[0.09] lg:p-[clamp(1.75rem,2vw,3rem)]"
             >
-              <span className="mb-4 inline-flex h-14 items-center text-[#3cc35a] lg:h-auto lg:[&_svg]:h-auto lg:[&_svg]:w-[clamp(2.9rem,3vw,4.4rem)] drop-shadow-[0_0_10px_rgba(0,174,65,0.35)]">
+              <span className="wim-icon mb-4 inline-flex h-14 items-center text-[#3cc35a] lg:h-auto lg:[&_svg]:h-auto lg:[&_svg]:w-[clamp(2.9rem,3vw,4.4rem)] drop-shadow-[0_0_10px_rgba(0,174,65,0.35)]">
                 {b.icon}
               </span>
               <h3 className="mb-2 font-sans! text-lg leading-snug! font-bold tracking-tight! text-white! lg:text-xl fs-card">

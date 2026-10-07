@@ -1725,3 +1725,37 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .q-modal-body[data-bg="biz"]:not(.q-scroll) { overflow: hidden; }
   .q-fit { transform-origin: top left; }
 }
+
+/* ---------- "Why it matters" cards, desktops (owner, 7 Oct 2026; WhyItMatters.tsx + WimReveal.tsx) ----------
+   Entrance: the cards rise and fade in one after another, a soft light sweeps across each, the icon pops in with a glow.
+   Hover: the card lifts, a green line draws across its top and the glow deepens. Off for reduced motion. */
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .wim-card { position: relative; overflow: hidden; isolation: isolate;
+    transition: transform .45s cubic-bezier(.2,.8,.2,1), border-color .35s, background-color .35s, box-shadow .45s; }
+  /* green accent line along the top, drawn on hover */
+  .wim-card::before { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 100%; border-radius: 3px;
+    background: linear-gradient(90deg, #00ae41, #5fe08f); transform: scaleX(0); transform-origin: left; transition: transform .55s cubic-bezier(.2,.8,.2,1); }
+  /* soft light sweep */
+  .wim-card::after { content: ""; position: absolute; inset: -20% auto -20% -60%; width: 45%; z-index: -1; pointer-events: none;
+    background: linear-gradient(105deg, transparent, rgba(255,255,255,.10), transparent); transform: skewX(-12deg); opacity: 0; }
+  .wim-card:hover { transform: translateY(-6px); border-color: rgba(95,224,143,.45); background-color: rgba(255,255,255,.1);
+    box-shadow: 0 26px 50px -24px rgba(0,0,0,.55), 0 0 0 1px rgba(95,224,143,.12), 0 0 36px -10px rgba(0,174,65,.35); }
+  .wim-card:hover::before { transform: scaleX(1); }
+  .wim-card:hover::after { animation: wim-sweep 1s ease-out; }
+  .wim-icon { transition: transform .45s cubic-bezier(.2,.8,.2,1), filter .45s; }
+  .wim-card:hover .wim-icon { transform: translateY(-3px) scale(1.06); filter: drop-shadow(0 0 16px rgba(0,174,65,.6)); }
+
+  /* entrance (only once JavaScript has marked the list) */
+  .wim-anim .wim-card { opacity: 0; transform: translateY(28px) scale(.98); }
+  .wim-anim .wim-icon { opacity: 0; transform: scale(.6); }
+  /* "backwards" fill: hidden while waiting, then back to the normal styles, so the hover effects still work afterwards */
+  .wim-anim.is-in .wim-card { opacity: 1; transform: none; animation: wim-rise .9s cubic-bezier(.2,.8,.2,1) backwards; animation-delay: calc(var(--i) * 140ms); }
+  .wim-anim.is-in .wim-card::after { animation: wim-sweep 1.2s ease-out backwards; animation-delay: calc(var(--i) * 140ms + 450ms); }
+  .wim-anim.is-in .wim-icon { opacity: 1; transform: none; animation: wim-pop .7s cubic-bezier(.3,1.5,.5,1) backwards; animation-delay: calc(var(--i) * 140ms + 300ms); }
+  .wim-anim.is-in .wim-card:hover { transform: translateY(-6px); }
+  .wim-anim.is-in .wim-card:hover .wim-icon { transform: translateY(-3px) scale(1.06); }
+  .wim-anim.is-in .wim-card:hover::after { animation: wim-sweep 1s ease-out; }
+}
+@keyframes wim-rise { from { opacity: 0; transform: translateY(28px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes wim-pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: none; } }
+@keyframes wim-sweep { 0% { opacity: 0; left: -60%; } 20% { opacity: 1; } 100% { opacity: 0; left: 120%; } }
