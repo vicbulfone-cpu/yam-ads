@@ -9,7 +9,7 @@ import { AdHeroArrow, AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
 import { SMSF_LANDING as L } from "@/content/smsf-questionnaire";
 import { AdFooter, AdHeader } from "./AdChrome";
-import HandArrow from "../ui/HandArrow";
+import { ArrowRight } from "../ui/Icons";
 import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import SmsfMatchCard from "./SmsfMatchCard";
@@ -56,7 +56,7 @@ export default function SmsfAdPage() {
           <div className="bz-more">
             <ol className="bz-steps bz-steps-shade fade-behind">
               {L.steps.map((s, i) => (
-                <li key={s.icon}>{i > 0 && <HandArrow viewBox="0 0 24 24" from={[4, 14]} to={[20, 10]} className="bz-step-arrow" />}<span>{s.text.join(" ")}</span></li>
+                <li key={s.icon}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s.text.join(" ")}</span></li>
               ))}
             </ol>
             <HomeStepsFit />
