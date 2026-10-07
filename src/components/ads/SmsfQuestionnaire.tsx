@@ -9,7 +9,7 @@ import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_WHEN } from "
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
+import { AdProgress, SearchingBox, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 import { SMSF_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
@@ -410,14 +410,8 @@ export default function SmsfQuestionnaire() {
           {matching && <MatchSearching firstName={firstName} />}
 
           {searching && place && (
-            <div className="q-leave" role="status" aria-live="polite">
-              <div className="q-leave-box bq-search">
-                <span aria-hidden className="bq-radar"><Pin width={28} height={28} strokeWidth={2.2} /></span>
-                <p className="q-leave-title">{p(Q.searching.title)}</p>
-                <p className="mt-2 text-[0.98rem] font-medium text-muted">{Q.searching.near.replace("{place}", `${place.suburb} ${place.postcode}`)}</p>
-                <span aria-hidden className="bq-search-bar"><span /></span>
-              </div>
-            </div>
+            <SearchingBox title={p(Q.searching.title)} pitch={Q.searching.pitch} more={Q.searching.more} services={cats.flatMap((id) => chosenLabels(catById(id), answers[id]))}
+              near={Q.searching.near.replace("{place}", `${place.suburb} ${place.postcode}`)} />
           )}
 
           {/* good news: ask for the email address */}

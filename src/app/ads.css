@@ -730,3 +730,12 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .mp-complete-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .mp-complete svg { width: 18px; height: 18px; }
 }
+/* "Searching for your local accountant" box (SearchingBox in QuestionnaireParts.tsx; owner, 7 Oct 2026): selling line and
+   the customer's own services as green chips */
+.bq-pitch { margin-top: 0.75rem; font-size: 0.98rem; font-weight: 600; line-height: 1.45; color: #3a4a5e; }
+.bq-pitch-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; margin-top: 0.7rem; }
+.bq-pitch-list li { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.3rem 0.7rem; border-radius: 999px; background: #e9f7ef; color: #0e7a32; font-size: 0.82rem; font-weight: 700; line-height: 1.2; box-shadow: inset 0 0 0 1px rgba(14, 122, 50, 0.2); }
+.bq-pitch-list li.is-more { background: #f1f4f8; color: #4b5b70; box-shadow: none; }
+.q-modal .bq-search .q-leave-box, .bq-search { max-width: 30rem; }
+/* the name box's hint: light but readable */
+.q-modal input::placeholder { color: #8a97a8; opacity: 1; }

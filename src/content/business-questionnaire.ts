@@ -206,6 +206,9 @@ export const BIZ_Q = {
   searching: {
     title: "Searching for your local accountant, {name}…",
     near: "Checking our partner accountants near {place}",
+    /** the selling line above the customer's own services (owner, 7 Oct 2026) */
+    pitch: "We’re searching our partner network for an outstanding local accountant who is highly experienced and proficient in:",
+    more: "+{n} more",
   },
   found: {
     title: "Great news, {name} — we’ve found a local match for you.",
@@ -224,8 +227,9 @@ export const BIZ_Q = {
   name: {
     eyebrow: "About you",
     title: "Hi, what is your name please",
-    label: "Full name",
-    placeholder: "",
+    label: "Your name",
+    /** light grey hint inside the box (owner, 7 Oct 2026) */
+    placeholder: "First name only? Sure, that’s fine.",
   },
   emailMe: {
     eyebrow: "Last step",

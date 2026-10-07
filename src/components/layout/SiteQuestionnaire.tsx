@@ -17,7 +17,7 @@ import { toServiceKeys, type ServiceKey } from "@/lib/service-routes";
 import { getVisitorRecord, noteAbandon, noteComplete, noteOpen } from "@/lib/visitor";
 import { BIZ_CATEGORY_ICONS, PERSONAL_NEED_ICONS, REG_CATEGORY_ICONS, SMSF_CATEGORY_ICONS } from "../ads/BizIcons";
 import PostcodeBox, { type Place } from "../ads/PostcodeBox";
-import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "../ads/QuestionnaireParts";
+import { AdProgress, SearchingBox, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "../ads/QuestionnaireParts";
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import FitBox from "../ui/FitBox";
@@ -321,6 +321,10 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       default: return [];
     }
   };
+  /** Everything the customer chose, for the searching box: personal reasons and advice topics, then the category answers. */
+  const searchServices = () => services.flatMap((s) => s === "personal"
+    ? [...needs.filter((n) => n !== "unsure").map(needTitle), ...ADVICE_TOPICS.filter((o) => topics.includes(o.id) && o.id !== "other").map((o) => o.label)]
+    : picks[s].flatMap((id) => chosenLabels(catOf(s, id), answers[id])));
   const incomeLabels = () => RETURN_ITEMS.filter((o) => income.includes(o.id)).map((o) => o.label);
   const aboutLines = (s: "smsf" | "registration") => s === "smsf"
     ? [{ label: SMSF_Q.summaryLabels.have, value: labelOf(SMSF_HAVE, have) }, { label: SMSF_Q.summaryLabels.when, value: labelOf(SMSF_WHEN, when) },
@@ -744,14 +748,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
 
           {/* 3-second search after the postcode */}
           {searching && place && (
-            <div className="q-leave" role="status" aria-live="polite">
-              <div className="q-leave-box bq-search">
-                <span aria-hidden className="bq-radar"><Pin width={28} height={28} strokeWidth={2.2} /></span>
-                <p className="q-leave-title">{p(Q.searching.title)}</p>
-                <p className="mt-2 text-[0.98rem] font-medium text-muted">{Q.searching.near.replace("{place}", `${place.suburb} ${place.postcode}`)}</p>
-                <span aria-hidden className="bq-search-bar"><span /></span>
-              </div>
-            </div>
+            <SearchingBox title={p(Q.searching.title)} pitch={Q.searching.pitch} more={Q.searching.more} services={searchServices()}
+              near={Q.searching.near.replace("{place}", `${place.suburb} ${place.postcode}`)} />
           )}
 
           {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
