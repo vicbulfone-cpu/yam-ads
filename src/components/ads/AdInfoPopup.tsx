@@ -8,12 +8,13 @@ import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 
 /**
  * Ad pages (owner, 6 Oct 2026): the footer's information links (About, Contact, Privacy, Terms, How we select
- * accountants) open in a popup over the ad page instead of leaving it. The links stay real links (target="_blank"), so
- * Google Ads' checker and visitors without JavaScript still reach the normal pages, and a new-tab click works as usual.
+ * accountants) open in a popup over the ad page instead of leaving it. The links stay real links in the page HTML, so
+ * search engines, Google Ads' checker and visitors without JavaScript still reach the normal pages; nothing opens in a
+ * new tab (owner, 7 Oct 2026).
  * The popup fetches the real page and shows its own words (headline, introduction and sections); the page's match boxes
  * and "Find My Accountant" buttons are left out, and any other questionnaire link goes back to the ad's own match box,
  * so ad visitors stay in the ad questionnaire (paid lead). One copy of every page's wording, nothing duplicated.
- * Links marked data-info open here; links to other pages inside the popup open in a new tab. Styles: ".adi" in ads.css.
+ * Links marked data-info open here; links to other pages inside the popup open normally. Styles: ".adi" in ads.css.
  */
 const INFO_PATHS = new Set(["/about", "/contact", "/privacy", "/terms", "/how-we-select-accountants", "/how-it-works"]);
 const norm = (p: string) => p.replace(/\/$/, "") || "/";
@@ -46,8 +47,7 @@ function extract(text: string, base: URL): Page {
     }
     if (same && url.hash && norm(url.pathname) === norm(base.pathname)) return; // in-page jump
     if (same && INFO_PATHS.has(norm(url.pathname))) a.setAttribute("data-info", "");
-    a.target = "_blank";
-    a.rel = "noopener";
+    a.removeAttribute("target"); // never a new tab (owner, 7 Oct 2026)
   });
   return { title: h1?.textContent?.trim() ?? "", html: out.innerHTML };
 }
@@ -80,9 +80,9 @@ export default function AdInfoPopup() {
         cache.set(key, p);
         setPage(p);
       } catch {
-        // never a dead end: open the normal page in a new tab instead
+        // never a dead end: open the normal page instead (same tab, owner 7 Oct 2026)
         setOpen(false);
-        window.open(url.href, "_blank", "noopener");
+        window.location.assign(url.href);
       }
     };
     const onClick = (e: MouseEvent) => {

@@ -12,7 +12,9 @@ const DISALLOWED = [...new Set([
   "/match",
   "/accountant-demo-x7k2",
   "/questionnaire",
-  ...NOINDEX_PATHS,
+  // the ad landing pages are NOT blocked (owner, 7 Oct 2026): search engines must be able to visit them to read their
+  // "noindex, follow" tag and follow their footer links (e.g. How we select accountants); they stay out of search results
+  ...NOINDEX_PATHS.filter((p) => !/^\/ad-\d+$/.test(p)),
 ])];
 
 export default function robots(): MetadataRoute.Robots {

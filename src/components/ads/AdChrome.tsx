@@ -11,8 +11,10 @@ import AdInfoPopup from "./AdInfoPopup";
 
 /** Footer links (owner, 6 Oct 2026): "How it works" left out, as that section is now on every ad page. */
 const FOOTER_LINKS = L.links.filter((l) => l.href !== "/how-it-works");
-/** Footer links open in the popup over the ad page (AdInfoPopup.tsx); without it, in a new tab. */
-const POPUP_LINK = { "data-info": "", target: "_blank", rel: "noopener" } as const;
+/** Footer links open in the popup over the ad page (AdInfoPopup.tsx). They are ordinary links in the page HTML, so search
+ *  engines follow them to the real (indexed) pages; never a new tab (owner, 7 Oct 2026). Plain <a> links, not <Link>:
+ *  Next.js's Link would take the click for its own page change before the popup can open it. */
+const POPUP_LINK = { "data-info": "" } as const;
 
 export function AdHeader({ className = "" }: { className?: string }) {
   return (
@@ -32,7 +34,7 @@ export function AdHeader({ className = "" }: { className?: string }) {
 function AdAssure() {
   return (
     <p className="bz-assure">
-      <Link href="/how-we-select-accountants" {...POPUP_LINK}>{CREDENTIAL}</Link>{" "}
+      <a href="/how-we-select-accountants" {...POPUP_LINK}>{CREDENTIAL}</a>{" "}
       <span>Matching is free. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm. Accountant fees are agreed separately.</span>
     </p>
   );
@@ -54,7 +56,7 @@ export function AdFooter() {
           <AdAssure />
         </div>
         <nav aria-label="Information" className="adf-links">
-          <ul>{FOOTER_LINKS.map((l) => <li key={l.href}><Link href={l.href} {...POPUP_LINK}>{l.text}</Link></li>)}</ul>
+          <ul>{FOOTER_LINKS.map((l) => <li key={l.href}><a href={l.href} {...POPUP_LINK}>{l.text}</a></li>)}</ul>
         </nav>
       </div>
       <div className="adf-base">
