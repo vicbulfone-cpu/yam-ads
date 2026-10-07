@@ -1943,3 +1943,13 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (min-width: 1024px) { :root { --hand-stroke: calc(2.6 * clamp(3rem, 4.4vw, 6.5rem) / 70); } }
 .hand-arrow path { stroke: #0e7a32; stroke-width: var(--hand-stroke); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .ico-tick path { stroke-width: var(--hand-stroke); vector-effect: non-scaling-stroke; }
+/* Home hero (owner, 8 Oct 2026): the new photo ("hero home.png") has a bigger mug, so the handwriting and its green
+   arrow sit 5.5% of the photo's width further right, clear of the mug's own lettering */
+@media (min-width: 768px) {
+  .zz-phone .hero-tagline-overlay { left: calc(35.7% + 5.5%); }
+  .zz-phone .hero-arrow-overlay { margin-left: 5.5%; }
+}
+@media (max-width: 767px) {
+  .zz-phone .hero-tagline-overlay { left: 68vw; }
+  .zz-phone .hero-arrow-overlay { margin-left: 5.5%; }
+}

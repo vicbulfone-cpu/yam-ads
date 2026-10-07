@@ -1,6 +1,6 @@
 // Builds a whole page from the old site's extracted content: hero, body sections, call-to-action band, footer.
 import type { ReactNode } from "react";
-import { cityPicture, homeDeskHeroPicture, homeDeskHeroNoArrowPicture, homeMobileHeroPicture } from "@/config/site.config";
+import { cityPicture, homeDeskHeroPicture, homePageHeroPicture, homeMobileHeroPicture } from "@/config/site.config";
 import { explodeLinkGroups, loadContent, mergeViews, splitOnHeadings, toSections, type Node, type Section } from "@/lib/content";
 import { cityOf, isLivePage, typeOf } from "@/lib/pages";
 import { copyFor } from "@/lib/seo";
@@ -159,7 +159,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroNoArrowPicture} arrowOverlay showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homePageHeroPicture} arrowOverlay showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />

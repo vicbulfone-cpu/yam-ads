@@ -56,6 +56,9 @@ export const homeDeskHeroPicture = { src: "/images/hero/hero-no-writing.png", wi
 /** Home page hero only (owner, 7 Oct 2026): the same photo with its green arrow removed, and the arrow as its own
  *  cut-out laid back on top (left/top = its place in the 1983 x 793 photo), so the arrow can be moved with the handwriting. */
 export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png", width: 1983, height: 793 };
+/** Home page hero picture (owner, 8 Oct 2026): "hero section/ad landing pages/hero home.png", cropped to the hero's
+ *  1983 x 793 shape (top 236px of sky trimmed). The ad pages keep homeDeskHeroNoArrowPicture above. */
+export const homePageHeroPicture = { src: "/images/hero/home-v8-1983.webp", width: 1983, height: 793 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
