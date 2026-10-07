@@ -34,13 +34,10 @@ export default function HowItWorksSteps({ steps, crumbs }: { steps: HowStep[]; c
           </nav>
         )}
         <div className="max-w-3xl">
-          <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow">
-            How it works
-            <span aria-hidden className="h-px w-16 bg-green-700" />
-          </p>
-          <Heading className="mt-2 font-sans! text-[2.1rem] font-extrabold! leading-[1.02]! tracking-[-0.04em]! sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.4vw,4.8rem)]">
-            <span className="block text-navy-900">Finding your accountant,</span>
-            <span className="block text-green-700">made simple.</span>
+          {/* owner, 7 Oct 2026 (for SEO): replaces the "How it works" eyebrow and "Finding your accountant, made simple." */}
+          <Heading className="font-sans! text-[2.1rem] font-extrabold! leading-[1.02]! tracking-[-0.04em]! sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.4vw,4.8rem)]">
+            <span className="block text-navy-900">How does it work?</span>{" "}
+            <span className="block text-green-700">Finding your accountant is easy</span>
           </Heading>
         </div>
 
