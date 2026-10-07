@@ -102,21 +102,17 @@ The no-word-changes rule below is lifted. Rewritten titles, descriptions, H1s an
 - JSON-LD: Organization + WebSite on all pages; Service (provider = Your Accountant Match, areaServed = the city) on city and industry pages; FAQPage only where FAQs exist; BreadcrumbList. Never LocalBusiness for accountants.
 - Create /llms.txt describing the site, the service, how matching works and key page URLs.
 
-## HIDDEN ACCOUNTANTS PAGE
-- "Accountant Demo" at /accountant-demo-x7k2: not in any menu, header, footer, internal link or the sitemap. NO login or password anywhere on the site, no "Accountant's Area" footer link.
-- Meta robots "noindex, nofollow" plus X-Robots-Tag header. Do not list it in robots.txt. Open to anyone with the link.
-- Layout: H1 "Book Your Personal Demo"; text "Choose a time that suits you and we'll walk you through how the platform sends you new clients."; empty section with placeholder "Content coming soon"; the GHL booking calendar embedded full width from env NEXT_PUBLIC_GHL_DEMO_CALENDAR_URL (placeholder if unset); standard site footer.
+## NO ACCOUNTANTS DEMO PAGE (owner, 7 Oct 2026)
+- The hidden "Accountant Demo" page (/accountant-demo-x7k2) and its GHL booking calendar are dropped: the owner no longer has a demo page. It was never built; every reference (robots.txt, index-status, X-Robots-Tag header, env var, scripts) has been removed. Do not build it unless the owner asks again.
+- Still true: NO login or password anywhere on the site, no "Accountant's Area" footer link.
 
 ## GOHIGHLEVEL SETUP GUIDE (Stage 7: docs/ghl-setup.md, plain English)
 - Lead workflow: inbound webhook → read lead source → ORGANIC: find postcode-owner accountant (recommend best storage method for territories); PAID: assign to the advertiser → assign lead → create opportunity → notify accountant by email and SMS with services → confirm to customer by SMS/email (plain confirmation only, no marketing) → outbound webhook to /api/match-result with secret header.
 - Where to store each accountant's match details, with exact field names the code expects (docs/ghl-fields.md).
-- Calendar "Accountant Demo – 30 min": 30-minute appointments; Australia/Melbourne time zone, shown in the visitor's time zone; Mon–Fri 9:00am–5:00pm; 15-minute buffer; minimum 24 hours' notice; up to 30 days ahead; max 4 per day; Google Meet (or Zoom) link added automatically.
-- Booking form (all required except the last): Full name; Practice / firm name; Email; Mobile number; Postcode of practice; Areas of specialty (tick boxes: Individual tax returns, Business tax, SMSF, Trust returns, BAS, Financial statements); Anything you'd like us to know? (optional).
-- Confirmation email and SMS on booking; reminders 24 hours and 1 hour before; reschedule/cancel link in every message; email the user for every booking, reschedule and cancellation; tag new contacts "Accountant – Demo Booked".
+- (The "Accountant Demo – 30 min" calendar, its booking form and reminders are no longer needed: the demo page was dropped, owner 7 Oct 2026.)
 
 ## FINAL CHECKS (Stage 7)
 - docs/seo-check.md: every /source page — old URL, new URL, title/meta/headings/body unchanged. Flag differences.
-- Hidden page absent from menus and sitemap, carries noindex. Calendar embed shows.
 - Full lead flow (organic and paid) works end to end in mock mode.
 - Every image listed in docs/image-credits.md with a commercial-use licence.
 - Site works at 375px, 768px and 1280px. npm run build passes with no errors.
@@ -150,18 +146,18 @@ The user's later instructions override anything above where they conflict.
 
 - **Framework:** Next.js 16.3.8 (App Router, Turbopack), React 19.2, TypeScript, Tailwind CSS 4. Server components by default; client code only in `MobileMenu`. Middleware is called "Proxy" in Next 16 — read `node_modules/next/dist/docs/` before using new APIs. `params` is a Promise in pages.
 - **Routing:** one catch-all `src/app/[[...slug]]/page.tsx` renders every content page listed in `SAMPLE_PATHS` in `src/lib/pages.ts` (`dynamicParams = false`); `src/app/how-we-select-accountants/page.tsx` is the one custom page. Title, meta description, canonical and robots come from the old extraction (`data/extracted/pages/*.json`).
-- **Hosting and data (planned):** Vercel; GoHighLevel (GHL) for lead allocation, notifications and the demo calendar; Upstash Redis (Vercel Marketplace) for 24-hour match results; Google Analytics tag `G-W28MK4GXCT` (env var); Google Ads conversion via env vars. Billing is handled in GHL, not the website.
+- **Hosting and data (planned):** Vercel; GoHighLevel (GHL) for lead allocation and notifications; Upstash Redis (Vercel Marketplace) for 24-hour match results; Google Analytics tag `G-W28MK4GXCT` (env var); Google Ads conversion via env vars. Billing is handled in GHL, not the website.
 - **Tooling:** Playwright (extraction, screenshots, word checks) and sharp (image compression). Dev preview: `npm run dev -- -p 3217` (phone on the same Wi-Fi: `http://<computer IP>:3217`; `allowedDevOrigins` is set in `next.config.ts`).
 - **Scripts** (`scripts/`): `extract-source.mjs` (page-level extraction) then `build-inventory.mjs`; `extract-structure.mjs` (structured extraction; needs the built working copy in `.work/source-build`); `optimise-images.mjs`; `make-logo.mjs` (logo files + browser icons from `assets/this is final logo.png`); `compare-words.mjs <port>` and `compare-views.mjs`; `shots.mjs`, `shot-section.mjs`, `split.cjs` (screenshots). `.work/`, `/source`, `/assets`, `/clone-of-this-one` and `/yam-scaffold` are git-ignored; `data/` and `public/images` are committed.
 - **Gotchas learned:** (1) when writing regexes through node heredocs the backslashes get lost, so use the Edit/Write tools for regex code; (2) the Next image cache can show stale pictures, so delete `.next` and restart; (3) an `overflow-hidden` ancestor breaks `position: sticky`; (4) the old pages' CSS hides some words from `innerText` (uppercase transforms, stacked spans), so structured extraction records both HTML and text.
 
 ## Decisions already made (do not re-ask)
 
-13 city pages only (no suburb pages); 104 industry pages kept; no accountant login or footer link (hidden `/accountant-demo-x7k2`, noindex, no password); organic leads go to the postcode owner via GHL, Google Ads leads go to the accountant who paid (no fallback); no consent tick-box; confirmation SMS/email is handled in GHL; no reference site for design; no language switcher; phone wording wins where the old phone and desktop wording differed; `/privacy` gets its own title and canonical; the old `/ghl-redirect` becomes `/questionnaire` with a permanent redirect; admin pages are not rebuilt; Google Ads landing pages and the ads questionnaire (4 ad types, subdomains) come after the main build.
+13 city pages only (no suburb pages); 104 industry pages kept; no accountant login or footer link, and no accountants demo page (dropped by the owner, 7 Oct 2026); organic leads go to the postcode owner via GHL, Google Ads leads go to the accountant who paid (no fallback); no consent tick-box; confirmation SMS/email is handled in GHL; no reference site for design; no language switcher; phone wording wins where the old phone and desktop wording differed; `/privacy` gets its own title and canonical; the old `/ghl-redirect` becomes `/questionnaire` with a permanent redirect; admin pages are not rebuilt; Google Ads landing pages and the ads questionnaire (4 ad types, subdomains) come after the main build.
 
 ## What needs to be done next
 
-**Waiting on the user:** review Stage 2 and say "go Stage 3". Open items: where to use `assets/comparison table.png` (its new wording needs approval); Australian photos for the 21 placeholder stock images; the Google Ads conversion ID/label (later); the GHL webhook URL, secret and calendar URL, plus Vercel and Upstash accounts (Stages 5–7).
+**Waiting on the user:** review Stage 2 and say "go Stage 3". Open items: where to use `assets/comparison table.png` (its new wording needs approval); Australian photos for the 21 placeholder stock images; the Google Ads conversion ID/label (later); the GHL webhook URL and secret, plus Vercel and Upstash accounts (Stages 5–7).
 
 **Stage 3 — all pages (next).** Widen `SAMPLE_PATHS` to every page in `data/extracted/page-types.json` (13 cities, 104 industry pages using their city picture, 18 services, 14 guides, 16 articles, hubs, about/contact/how-it-works/privacy/terms). Keep exact URLs, titles, meta descriptions, canonicals and robots tags. Add permanent redirects (12 retired locations and their industry URLs from the old `vercel.json`; `/ghl-redirect` to `/questionnaire`) and make the admin URLs return not-found. Generate `sitemap.xml` and `robots.txt` from the page list (the hidden demo page is excluded and not listed in robots.txt). Build the site-wide search from real page content (old header search with the "/" shortcut; this also restores the "Search for something else" button). Write `docs/seo-check.md` (old URL, new URL, title/meta/headings/body match) and fix any word differences. Run `npm run build`, commit and push, then report how many pages match exactly, any that do not, and which picture each location page uses.
 
@@ -169,7 +165,7 @@ The user's later instructions override anything above where they conflict.
 
 **Stage 5 — matching connection.** `/api/lead` to the GHL inbound webhook (with lead source Organic/Paid); `/api/match-result` (secret header) to Upstash Redis for 24 hours; the `/match/[leadId]` polling screen (every 2 seconds for up to 30, friendly fallback, neutral wording, noindex); `MOCK_GHL=true`; `docs/ghl-fields.md`; test the organic and paid journeys in mock mode.
 
-**Stage 6 — hidden accountants page.** `/accountant-demo-x7k2` with the exact heading, text, "Content coming soon" placeholder and the GHL calendar embed (`NEXT_PUBLIC_GHL_DEMO_CALENDAR_URL`); noindex plus `X-Robots-Tag`; no menu, sitemap or robots.txt entry; no login.
+**Stage 6 — hidden accountants page: DROPPED** (owner, 7 Oct 2026: no demo page).
 
 **Stage 7 — finish and go live.** JSON-LD (Organization, WebSite, Service on city/industry pages, FAQPage where FAQs exist, BreadcrumbList; never LocalBusiness for accountants), `/llms.txt`, `docs/ghl-setup.md` (plain English), the final checks above, Lighthouse mobile 95+, and a Vercel go-live walkthrough with environment variables. After the main build: Google Ads landing pages and the ads questionnaire on subdomains.
 
@@ -209,7 +205,7 @@ The whole purpose of the website is to get visitors to complete the questionnair
 - **Markup first.** SEO work is markup, metadata, structure and performance. Wording changes are allowed only as set out in the 2 Oct owner update; log each change in `docs/seo-copy-log.md`.
 - **Static HTML.** Every page has all text, headings and links in the page source with JavaScript disabled (AI crawlers mostly don't run JS).
 - **URLs.** Keep existing URLs; any changed URL gets a permanent (301/308) redirect, listed in `docs/plan.md`.
-- **One indexing file: `seo/index-status.json`** (page path -> "index" | "noindex"). Sitemap, robots tags and `seo-check` all read it. `npm run seo-status` adds new pages and keeps your edits. Always noindex: questionnaire, match pages, `/accountant-demo-x7k2`, test and thank-you pages. noindex pages use `noindex, follow` and stay out of the sitemap. `/api` and `/match` are also blocked in robots.txt (owner direction); the hidden demo page is never listed in robots.txt.
+- **One indexing file: `seo/index-status.json`** (page path -> "index" | "noindex"). Sitemap, robots tags and `seo-check` all read it. `npm run seo-status` adds new pages and keeps your edits. Always noindex: questionnaire, match pages, the ad landing pages, test and thank-you pages. noindex pages use `noindex, follow` and stay out of the sitemap. `/api`, `/match` and `/questionnaire` are also blocked in robots.txt (owner direction); the noindex ad landing pages are NOT blocked, so crawlers can read their noindex tag and follow their footer links (owner, 7 Oct 2026).
 - **City pages stay `index`** (owner, 3 Oct). There are NO suburb pages, so no suburb links or suburb breadcrumbs.
 - **Every page:** unique title (<= 60) and description (<= 155); exactly one H1 with H2/H3 in order; self-referencing absolute canonical; `lang="en-AU"`; Open Graph and Twitter tags; BreadcrumbList; descriptive link text (never "click here"); images with alt text, width/height, WebP, lazy-load below the fold.
 - **Structured data (visible content only):** Organization + WebSite on all pages; Service with areaServed on city/industry/service pages; FAQPage only where FAQs exist. Never LocalBusiness for accountants.

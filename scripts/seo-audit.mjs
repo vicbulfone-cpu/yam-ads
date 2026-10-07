@@ -161,7 +161,7 @@ for (const p of paths) {
   for (const m of h.matchAll(/<a [^>]*href="(\/[^"#?]*)[^"]*"/g)) {
     linkCount++;
     const href = m[1].replace(/\/$/, "") || "/";
-    if (known.has(href) || /^\/(_next|images|api|llms\.txt|sitemap\.xml|robots\.txt|how-we-select-accountants|questionnaire|match|accountant-demo)/.test(href)) continue;
+    if (known.has(href) || /^\/(_next|images|api|llms\.txt|sitemap\.xml|robots\.txt|how-we-select-accountants|questionnaire|match)/.test(href)) continue;
     if (!redirectsSeen.has(href)) { const r = await get(href); redirectsSeen.set(href, r.status); }
     const st = redirectsSeen.get(href);
     if (st >= 400) add(problems, p, `broken internal link ${href} (${st})`);
@@ -176,14 +176,14 @@ const site = [];
 const robotsTxt = await text("/robots.txt");
 site.push(["robots.txt blocks /api/ and lists the sitemap", /Disallow: \/api\//.test(robotsTxt) && /Sitemap:/.test(robotsTxt)]);
 site.push(["robots.txt names all required AI crawlers", ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Bingbot", "Applebot-Extended"].every((b) => robotsTxt.includes(b))]);
-site.push(["robots.txt blocks hidden and noindex areas", ["/match", "/accountant-demo-x7k2", "/questionnaire"].every((p) => robotsTxt.includes(`Disallow: ${p}`))]);
+site.push(["robots.txt blocks hidden and noindex areas", ["/match", "/questionnaire"].every((p) => robotsTxt.includes(`Disallow: ${p}`))]);
 const status = JSON.parse(fs.readFileSync("seo/index-status.json", "utf8"));
-const wantIndexed = Object.keys(status).filter((p) => status[p] === "index" && !/^\/(match|accountant-demo|questionnaire)/.test(p)).sort();
+const wantIndexed = Object.keys(status).filter((p) => status[p] === "index" && !/^\/(match|questionnaire)/.test(p)).sort();
 site.push(["sitemap matches seo/index-status.json (index pages only)", JSON.stringify([...paths].sort()) === JSON.stringify(wantIndexed)]);
-site.push(["sitemap excludes hidden and noindex routes", !paths.some((p) => /^\/(match|accountant-demo-x7k2|questionnaire|ghl-redirect)(\/|$)/.test(p))]);
+site.push(["sitemap excludes hidden and noindex routes", !paths.some((p) => /^\/(match|questionnaire|ghl-redirect)(\/|$)/.test(p))]);
 site.push(["llms.txt exists", (await get("/llms.txt")).status === 200]);
 const llmsTxt = await text("/llms.txt");
-site.push(["llms.txt does not reveal hidden routes", !/accountant-demo-x7k2|\/match\/|\/questionnaire/.test(llmsTxt)]);
+site.push(["llms.txt does not reveal hidden routes", !/\/match\/|\/questionnaire/.test(llmsTxt)]);
 const gb = await fetch(BASE + "/how-it-works", { headers: { "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" } });
 site.push(["Googlebot receives the real page (200, has its H1)", gb.status === 200 && /<h1/.test(await gb.text())]);
 const bb = await fetch(BASE + "/how-it-works", { headers: { "User-Agent": "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" } });

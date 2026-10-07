@@ -25,11 +25,10 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
-      // never index the private routes (match results, API, hidden accountants' demo page)
+      // never index the private routes (match results and API)
       { source: "/match/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/api/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       { source: "/match", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
-      { source: "/accountant-demo-x7k2", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
       // preview deployments and the *.vercel.app address must never be indexed
       {
         source: "/:path*",

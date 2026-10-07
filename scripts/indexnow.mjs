@@ -8,7 +8,7 @@ const ROOT = process.cwd();
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://youraccountantmatch.com.au").replace(/\/+$/, "");
 const KEY = "3a81b6cd6a1b7fad384d8f16789b0fb3";
 const SKIP_TYPES = new Set(["admin (not rebuilt)", "questionnaire", "retired location (redirect)"]);
-const PRIVATE_PREFIXES = ["/api", "/match", "/accountant-demo-x7k2", "/questionnaire"];
+const PRIVATE_PREFIXES = ["/api", "/match", "/questionnaire"];
 const isPrivatePath = (route) => PRIVATE_PREFIXES.some((prefix) => route === prefix || route.startsWith(`${prefix}/`));
 
 function indexablePaths() {

@@ -10,7 +10,6 @@ const AI_BOTS = [
 const DISALLOWED = [...new Set([
   "/api/",
   "/match",
-  "/accountant-demo-x7k2",
   "/questionnaire",
   // the ad landing pages are NOT blocked (owner, 7 Oct 2026): search engines must be able to visit them to read their
   // "noindex, follow" tag and follow their footer links (e.g. How we select accountants); they stay out of search results

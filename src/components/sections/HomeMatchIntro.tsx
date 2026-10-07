@@ -95,11 +95,11 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
                 <div className="relative ml-1 mt-4 aspect-[2.35/1] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
                   <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
                 </div>
-                <span
-                  aria-hidden
-                  className="absolute left-0 top-0 grid h-12 w-12 place-items-center rounded-full bg-green-700 font-sans text-[1.4rem] font-extrabold text-white ring-[5px] ring-white lg:h-[clamp(3rem,3.6vw,5.2rem)] lg:w-[clamp(3rem,3.6vw,5.2rem)] lg:text-[clamp(1.4rem,1.9vw,2.8rem)]"
-                >
-                  {i + 1}
+                {/* "Step 1" badge (owner, 7 Oct 2026: "add 'step' in each step box"): a green pill with a small "STEP" label
+                    and the number in a white disc, on a white ring so it sits cleanly over the photo's corner */}
+                <span aria-hidden className="step-badge absolute left-0 top-0">
+                  <span className="step-badge-word">Step</span>
+                  <span className="step-badge-num">{i + 1}</span>
                 </span>
                 <h3 className="mt-3 font-sans text-[1.3rem] font-extrabold tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.3rem,1.75vw,2.6rem)]">{s.title}</h3>
                 <p className="mt-1 text-[0.98rem] leading-snug text-navy-900/80 lg:text-[clamp(0.98rem,1.2vw,1.8rem)]">{s.text}</p>

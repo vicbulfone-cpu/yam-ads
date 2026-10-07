@@ -10,7 +10,7 @@ import { AD_PAGES, PAGE_PATHS } from "../src/lib/pages.ts";
 const FILE = "seo/index-status.json";
 const rows = JSON.parse(fs.readFileSync("data/extracted/page-types.json", "utf8"));
 const SKIP = new Set(["admin (not rebuilt)", "questionnaire", "retired location (redirect)"]);
-const ALWAYS_NOINDEX = ["/questionnaire", "/match", "/accountant-demo-x7k2", ...AD_PAGES];
+const ALWAYS_NOINDEX = ["/questionnaire", "/match", ...AD_PAGES];
 const EXTRA_INDEX = ["/how-we-select-accountants"]; // has its own route file, not in PAGE_PATHS
 const built = new Set([...PAGE_PATHS, ...EXTRA_INDEX]);
 const prior = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf8")) : {};

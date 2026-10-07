@@ -41,7 +41,7 @@ Rules live in `CLAUDE.md`. The user commands each stage; only that stage is done
 | Questionnaire (old `/ghl-redirect`, noindex, not in sitemap) | 1 | Rebuilt (Stage 4) |
 | Retired location URLs (redirect to a live city) | 12 | Redirects kept |
 | Admin login / dashboard | 2 | **No** (not rebuilt) |
-| **New pages** (specified in CLAUDE.md): hidden accountants page `/accountant-demo-x7k2`, `/match/[leadId]`, `/llms.txt` | — | Stages 5–7 |
+| **New pages** (specified in CLAUDE.md): `/match/[leadId]`, `/llms.txt` (the hidden accountants demo page was dropped by the owner, 7 Oct 2026) | — | Stages 5–7 |
 
 Cities (13): Sydney, Newcastle - Maitland, Melbourne, Geelong, Brisbane, Gold Coast, Sunshine Coast, Perth, Adelaide, Hobart, Launceston, Canberra - Queanbeyan, Darwin. **No suburb pages** exist or will be built. The city, state/region and picture-file mapping is in `docs/page-inventory.md` and in `scripts/build-inventory.mjs`.
 
@@ -121,7 +121,7 @@ cd ../..  && npm run extract && npm run inventory
 3. **All pages** — apply the design to every remaining page, city pictures, keep exact URLs/titles/meta/canonical/robots, sitemap and robots.txt, `docs/seo-check.md`, `npm run build`.
 4. **Questionnaire** — rebuild the questionnaire, remove old matching, one questionnaire address setting, hero postcode box, utm/gclid/ref carry-through, temporary `/api/lead`.
 5. **Matching connection** — `/api/lead` to GoHighLevel, `/api/match-result` webhook, Upstash Redis (24 hours), `/match/[leadId]`, mock mode, `docs/ghl-fields.md`.
-6. **Hidden accountants page** — `/accountant-demo-x7k2` with the GoHighLevel calendar embed (no login).
+6. **Hidden accountants page** — DROPPED (owner, 7 Oct 2026: no demo page; never built, all references removed).
 7. **Finish and go live** — logo/hero final, structured data and `llms.txt`, `docs/ghl-setup.md`, final checks and Lighthouse, Vercel go-live walkthrough.
 
 Later (after the main build): Google Ads landing pages and ads questionnaire on subdomains.

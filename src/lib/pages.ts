@@ -4,7 +4,7 @@ import path from "node:path";
 
 type TypeRow = { path: string; type: string };
 const PAGE_ROWS = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "extracted", "page-types.json"), "utf8")) as TypeRow[];
-const PRIVATE_PREFIXES = ["/api", "/match", "/accountant-demo-x7k2", "/questionnaire"];
+const PRIVATE_PREFIXES = ["/api", "/match", "/questionnaire"];
 const isPrivatePath = (p: string) => PRIVATE_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`));
 
 /** YAM ads is a scaled-back copy of the main site (owner, 5 Oct 2026). Only these content pages are kept from the old site;
