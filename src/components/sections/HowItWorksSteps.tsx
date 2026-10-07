@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Breadcrumbs from "./Breadcrumbs";
-import HandArrow from "../ui/HandArrow";
+import { ArrowRight } from "../ui/Icons";
 import { HOME_STEPS } from "./HomeMatchIntro";
 import { Html } from "./Blocks";
 import StartBar from "./StartBar";
@@ -160,10 +160,11 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                     })()}
                   </div>
                 </article>
-                {/* arrow in the gap to the next box: the tradie arrow style (owner, 8 Oct 2026) */}
+                {/* arrow in the gap to the next box (owner, 8 Oct 2026) */}
                 {i < steps.length - 1 && (
                   <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 right-0 flex h-[calc(2.5rem+3cm)] items-center justify-center sm:left-36 lg:left-[clamp(11rem,12.3vw,15.5rem)] lg:h-[calc(clamp(3rem,4vw,5rem)+4cm)]">
-                    <HandArrow viewBox="0 0 60 100" from={[18, 8]} to={[34, 92]} className="h-[70%] w-auto" />
+                    {/* the same straight green arrow as the step words, turned to point down (owner, 8 Oct 2026) */}
+                    <ArrowRight aria-hidden strokeWidth={2.4} className="h-auto w-12 rotate-90 text-[#0e7a32] lg:w-[clamp(4rem,4.4vw,5.5rem)]" />
                   </div>
                 )}
               </li>

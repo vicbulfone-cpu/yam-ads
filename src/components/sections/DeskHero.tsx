@@ -15,7 +15,6 @@ import MatchFitScript from "./MatchFitScript";
 import HeroPoints from "./HeroPoints";
 import HomeStepsFit from "./HomeStepsFit";
 import { ArrowRight } from "../ui/Icons";
-import HandArrow from "../ui/HandArrow";
 
 export type DeskHeroHeadline = { before: string; green: string; after?: string; sub?: string; greenOnOwnLine?: boolean };
 
@@ -77,8 +76,12 @@ export default function DeskHero({
           {arrowOverlay && (
             // the green arrow on its own layer (the photo's size and place), above the handwriting's white cloud
             <div aria-hidden className="desk-hero-photo hero-arrow-layer">
-              {/* the tradie-style arrow (owner, 8 Oct 2026) in the old arrow picture's box: same start and tip */}
-              <HandArrow viewBox="0 0 176 57" from={[8, 25]} to={[170, 11]} flip
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={homeDeskHeroArrow.src}
+                alt=""
+                width={homeDeskHeroArrow.width}
+                height={homeDeskHeroArrow.height}
                 className="hero-arrow-overlay"
                 style={{
                   left: `${(homeDeskHeroArrow.left / desk.width) * 100}%`,

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
+import { ArrowRight as ArrowRightIcon } from "../ui/Icons";
 import { ABOUT_POPUP } from "@/content/about-popup";
 import HeroGap from "./HeroGap";
-import HandArrow from "../ui/HandArrow";
 import StartBar from "./StartBar";
 
 /**
@@ -51,8 +51,9 @@ const ArrowRight = () => (
   </svg>
 );
 
-/** Curved arrow between the step photos: the tradie arrow's style (owner, 8 Oct 2026), same start and tip as before */
-const StepArrow = () => <HandArrow viewBox="0 0 60 40" from={[4, 33]} to={[54, 12]} className="w-[clamp(2.5rem,3.6vw,5rem)]" />;
+/** Arrow between the step photos: the same straight green arrow as the step words ("Tell us your needs → …"), larger
+ *  (owner, 8 Oct 2026) */
+const StepArrow = () => <ArrowRightIcon aria-hidden strokeWidth={2.4} className="h-auto w-[clamp(2.25rem,2.9vw,4rem)] text-[#0e7a32]" />;
 
 /** Eyebrow with a short rule after it */
 const Eyebrow = ({ children }: { children: string }) => (
