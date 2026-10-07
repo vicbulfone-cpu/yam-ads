@@ -9,7 +9,7 @@ export const START_HERE = {
   /** Heading: the words in `em` are shown in green italics with a soft underline. */
   title: { before: "Your match is about ", em: "60 seconds", after: " away." },
   /** Line under the heading. */
-  line: "Choose what you need below to begin. It won’t take long, and we’re excited to match you with a local partner accountant.",
+  line: "Choose what you need help with, and we’ll find the right local accountant for you.",
   /** Three ticked points (laptops and desktops). */
   points: [
     { title: "Quick and easy", text: "Takes about 60 seconds." },
