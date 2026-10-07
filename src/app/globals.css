@@ -605,6 +605,57 @@ html.q-modal-open { overflow: hidden; }
   .q-modal[open], .q-modal[open]::backdrop { animation: none; }
   .q-modal-close:hover { transform: none; }
 }
+/* ---------- Match box popups, tablets and desktops (owner, 7 Oct 2026) ----------
+   The whole box fits the popup with no scrolling: the "Start here" message on top, the box below it drawn just small
+   enough to fit the space left (FitBox.tsx). Phones are unchanged (message hidden, box at its normal size). */
+.fit-box-in { display: flow-root; transform-origin: top center; }
+.start-here { display: none; }
+@media (min-width: 768px) {
+  .q-fit-body { overflow: hidden; }
+  .q-modal[data-step="select"] .q-fit-card { height: 100%; min-height: 0; padding-block: 1rem 1.1rem; }
+  .q-fit-card > div { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+  .fit-box { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
+  .fit-box .mc { margin-top: 0.25rem; }
+
+  .start-here { display: block; flex: none; position: relative; max-width: 38rem; margin: 0 auto 0.35rem; text-align: center; }
+  .start-here-label {
+    display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.85rem; border-radius: 999px;
+    background: var(--green-50); box-shadow: inset 0 0 0 1px rgba(0, 135, 58, 0.22);
+    color: var(--green-700); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+  }
+  .start-here-dot { position: relative; width: 0.5rem; height: 0.5rem; border-radius: 999px; background: var(--green-500); }
+  .start-here-dot::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: var(--green-500); animation: start-here-ping 1.8s ease-out infinite; }
+  .start-here-title {
+    margin-top: 0.5rem; font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.015em; line-height: 1.12;
+    color: var(--navy-900); font-size: clamp(1.4rem, 1.1rem + 0.9vw, 1.95rem);
+  }
+  .start-here-title em { font-style: italic; color: #0e7a32; white-space: nowrap; }
+  .start-here-line { margin: 0.35rem auto 0; max-width: 34rem; color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
+  .start-here-arrow { display: block; width: 1.4rem; height: 1.4rem; margin: 0.3rem auto 0; color: var(--green-500); animation: start-here-nudge 1.6s ease-in-out infinite; }
+}
+@keyframes start-here-ping { 0% { transform: scale(1); opacity: 0.7; } 80%, 100% { transform: scale(2.6); opacity: 0; } }
+@keyframes start-here-nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+@media (prefers-reduced-motion: reduce) {
+  .start-here-dot::after, .start-here-arrow { animation: none; }
+}
+/* laptops and desktops: the message beside the box (left), so the box can use the popup's full height and stays larger */
+@media (min-width: 1024px) {
+  .q-modal[data-step="select"] .q-fit-card { padding-inline: 2.75rem; }
+  .q-fit-card > div:has(> .start-here) { flex-direction: row; align-items: center; gap: 2.75rem; }
+  .start-here { flex: 0 1 19rem; max-width: 19rem; margin: 0; text-align: left; }
+  .start-here-title { font-size: clamp(1.9rem, 1.2rem + 1.1vw, 2.5rem); }
+  .start-here-line { margin-left: 0; font-size: 1.02rem; }
+  .start-here-arrow { margin: 0.9rem 0 0; width: 1.8rem; height: 1.8rem; transform: rotate(-90deg); animation-name: start-here-nudge-x; }
+  .q-fit-card > div:has(> .start-here) > .fit-box { height: 100%; }
+}
+@keyframes start-here-nudge-x { 0%, 100% { transform: rotate(-90deg) translateY(0); } 50% { transform: rotate(-90deg) translateY(4px); } }
+/* short screens: a slimmer message so the box keeps more room (all its words stay) */
+@media (min-width: 768px) and (max-width: 1023px) and (max-height: 760px) {
+  .start-here-title { margin-top: 0.35rem; font-size: 1.35rem; }
+  .start-here-line { font-size: 0.88rem; }
+  .start-here-arrow { display: none; }
+}
+
 /* The page behind never scrolls while a questionnaire is open (back to normal when it closes or the match page loads). */
 html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavior: none; }
 

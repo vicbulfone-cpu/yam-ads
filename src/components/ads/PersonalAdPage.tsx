@@ -15,6 +15,8 @@ import PersonalMatchCard from "./PersonalMatchCard";
 import { LazyPersonalQuestionnaire } from "./LazyQuestionnaires";
 import AdHomeSections from "./AdHomeSections";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import AdBoxPopup from "./AdBoxPopup";
 
 export default function PersonalAdPage() {
   return (
@@ -63,6 +65,8 @@ export default function PersonalAdPage() {
         <AdHomeSections />
       </main>
       <AdFooter />
+      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
+      <AdBoxPopup openEvent={OPEN_PERSONAL_QUESTIONNAIRE}><PersonalMatchCard /></AdBoxPopup>
       <LazyPersonalQuestionnaire />
     </div>
   );

@@ -17,6 +17,8 @@ import RegistrationMatchCard from "./RegistrationMatchCard";
 import { LazyRegistrationQuestionnaire } from "./LazyQuestionnaires";
 import AdHomeSections from "./AdHomeSections";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { OPEN_REG_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import AdBoxPopup from "./AdBoxPopup";
 
 /** "Starting a *business* or" -> the words between asterisks in green */
 const greenWords = (line: string) =>
@@ -65,6 +67,8 @@ export default function RegistrationAdPage() {
         <AdHomeSections />
       </main>
       <AdFooter />
+      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
+      <AdBoxPopup openEvent={OPEN_REG_QUESTIONNAIRE}><RegistrationMatchCard /></AdBoxPopup>
       <LazyRegistrationQuestionnaire />
     </div>
   );

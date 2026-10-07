@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { matchFit } from "@/lib/match-fit";
 import { PERSONAL_CARD as C, PERSONAL_NEEDS } from "@/content/personal-questionnaire";
 import { ArrowRight, Check } from "../ui/Icons";
@@ -16,6 +16,7 @@ export default function PersonalMatchCard() {
   const [selected, setSelected] = useState<string | null>(null);
   const [error, setError] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
+  const group = useId(); // the page box and its popup copy keep separate choices
 
   // laptops/desktops: drawn just small enough to fit the visible browser area, exactly as the home page match box
   useEffect(() => {
@@ -55,7 +56,7 @@ export default function PersonalMatchCard() {
             const on = selected === n.id;
             return (
               <label key={n.id} className={`mc-row${on ? " is-on" : ""}`}>
-                <input type="radio" name="pz-need" checked={on} onChange={() => { setSelected(n.id); setError(false); }} aria-label={n.box.title} className="peer sr-only" />
+                <input type="radio" name={group} checked={on} onChange={() => { setSelected(n.id); setError(false); }} aria-label={n.box.title} className="peer sr-only" />
                 <span aria-hidden className={`mc-tile is-${n.tone}`}>
                   <svg viewBox="0 0 24 24" className="mc-tile-icon">{PERSONAL_NEED_ICONS[n.id]}</svg>
                 </span>

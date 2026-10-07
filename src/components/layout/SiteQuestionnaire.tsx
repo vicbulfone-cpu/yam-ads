@@ -20,6 +20,8 @@ import PostcodeBox, { type Place } from "../ads/PostcodeBox";
 import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "../ads/QuestionnaireParts";
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
+import FitBox from "../ui/FitBox";
+import StartHere from "../ui/StartHere";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
@@ -526,10 +528,12 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
           </div>
 
           {phase === "box" ? (
-            <div ref={scrollRef} data-bg="select" className="q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
-              {/* the site match box at the same size as on the pages; its Start link begins the questions */}
-              <div className="q-modal-card flex min-h-full items-center"><div className="w-full">
-                <MatchCardView key={services.join()} data={card} initialSelected={services} />
+            <div ref={scrollRef} data-bg="select" className="q-modal-body q-fit-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
+              {/* the site match box; its Start link begins the questions. Tablets and desktops (owner, 7 Oct 2026): drawn
+                  to fit the popup with no scrolling, and on the home page a "Start here" message above it */}
+              <div className="q-modal-card q-fit-card flex min-h-full items-center"><div className="w-full">
+                {pathname === "/" && <StartHere />}
+                <FitBox><MatchCardView key={services.join()} data={card} initialSelected={services} /></FitBox>
               </div></div>
             </div>
           ) : (

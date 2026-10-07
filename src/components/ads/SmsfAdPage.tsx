@@ -16,6 +16,8 @@ import SmsfMatchCard from "./SmsfMatchCard";
 import { LazySmsfQuestionnaire } from "./LazyQuestionnaires";
 import AdHomeSections from "./AdHomeSections";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import AdBoxPopup from "./AdBoxPopup";
 
 export default function SmsfAdPage() {
   return (
@@ -64,6 +66,8 @@ export default function SmsfAdPage() {
         <AdHomeSections />
       </main>
       <AdFooter />
+      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
+      <AdBoxPopup openEvent={OPEN_SMSF_QUESTIONNAIRE}><SmsfMatchCard /></AdBoxPopup>
       <LazySmsfQuestionnaire />
     </div>
   );

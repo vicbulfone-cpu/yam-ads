@@ -8,3 +8,5 @@ export const OPEN_BIZ_QUESTIONNAIRE = "yam:open-biz-questionnaire";
 export const OPEN_PERSONAL_QUESTIONNAIRE = "yam:open-personal-questionnaire";
 export const OPEN_SMSF_QUESTIONNAIRE = "yam:open-smsf-questionnaire";
 export const OPEN_REG_QUESTIONNAIRE = "yam:open-registration-questionnaire";
+/** Ad pages, tablets and desktops: opens the ad's match box in a popup (AdBoxPopup.tsx). Cancelled when handled. */
+export const OPEN_AD_BOX = "yam:open-ad-box";

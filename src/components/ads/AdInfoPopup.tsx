@@ -5,6 +5,7 @@ import Image from "next/image";
 import { logo, QUESTIONNAIRE_URL } from "@/config/site.config";
 import { ArrowRight } from "../ui/Icons";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { OPEN_AD_BOX } from "@/lib/questionnaire-events";
 
 /**
  * Ad pages (owner, 6 Oct 2026): the footer's information links (About, Contact, Privacy, Terms, How we select
@@ -58,10 +59,14 @@ export default function AdInfoPopup() {
   const [page, setPage] = useState<Page | null>(null);
   const [open, setOpen] = useState(false);
 
-  // close the popup and go back up to the ad's own match box
+  // close the popup and go back to the ad's own match box: tablets and desktops open it in its own popup
+  // (AdBoxPopup.tsx cancels the event); phones scroll back up to it
   const backToBox = useCallback(() => {
     setOpen(false);
-    requestAnimationFrame(() => document.getElementById(AD_MATCH_BOX_ID)?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    requestAnimationFrame(() => {
+      if (!window.dispatchEvent(new Event(OPEN_AD_BOX, { cancelable: true }))) return;
+      document.getElementById(AD_MATCH_BOX_ID)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }, []);
 
   useEffect(() => {

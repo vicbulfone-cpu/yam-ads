@@ -345,3 +345,19 @@ return "page not found"). The match page every questionnaire finishes on now liv
 noindex/nofollow, X-Robots-Tag header, blocked in robots.txt, not in the sitemap or llms.txt. `seo/index-status.json`
 lists only pages the site builds; `npm run seo-status` now reads the page list from `src/lib/pages.ts` (it used to re-add
 ~160 removed pages) and always keeps the ad pages noindex.
+
+## Match box popup from CTAs, tablets and desktops (owner, 7 Oct 2026)
+
+- **Home page and the four ad pages (/ad-1 to /ad-4), 768px and wider:** every call-to-action button that is not the
+  match box itself opens a popup showing that page's match box, with a "Start here" message (`src/content/start-here.ts`,
+  `src/components/ui/StartHere.tsx`). Laptops/desktops: message on the left, box on the right; tablets: message above.
+- **Fits with no scrolling:** `src/components/ui/FitBox.tsx` draws the box just small enough to fit the popup (checked
+  at 768×1024, 1024×768, 1280×720, 1440×900, 1920×1080).
+- **Home:** the existing site popup (`SiteQuestionnaire.tsx`, box step) gains the message (home page only) and the fit
+  (every site page's box popup). **Ad pages:** `src/components/ads/AdBoxPopup.tsx` catches the `#match-box` CTA links
+  and the information popup's "Start My Match"; Start opens the ad's own questionnaire (paid lead), so the four ad
+  questionnaires are unchanged.
+- **Phones (below 768px) unchanged:** home CTAs open the full-screen box as before; ad CTAs still scroll up to the box.
+- New wording (owner-requested): "Start here" / "Your match is about 60 seconds away" / "Choose what you need below to
+  begin. It won't take long, and we're excited to match you with a local partner accountant." ("60 seconds" is the match
+  box's own note.)

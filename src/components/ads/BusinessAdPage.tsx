@@ -14,6 +14,8 @@ import MatchFitScript from "../sections/MatchFitScript";
 import { LazyBusinessQuestionnaire } from "./LazyQuestionnaires";
 import AdHomeSections from "./AdHomeSections";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import AdBoxPopup from "./AdBoxPopup";
 
 export default function BusinessAdPage() {
   return (
@@ -60,6 +62,8 @@ export default function BusinessAdPage() {
         <AdHomeSections />
       </main>
       <AdFooter />
+      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
+      <AdBoxPopup openEvent={OPEN_BIZ_QUESTIONNAIRE}><BizMatchCard /></AdBoxPopup>
       <LazyBusinessQuestionnaire />
     </div>
   );
