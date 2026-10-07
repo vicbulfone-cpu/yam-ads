@@ -117,9 +117,9 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     const h = ns.find((n) => n.t === "h") as Extract<Node, { t: "h" }>;
     const para = ns.find((n) => n.t === "p") as Extract<Node, { t: "p" }> | undefined;
     // steps 2 and 3: the owner's new paragraphs (7 Oct 2026)
-    if (para && STEP2_OLD_START.test(para.text)) return { title: h.text, html: STEP2_TEXT };
-    if (para && STEP3_OLD_START.test(para.text)) return { title: h.text, html: STEP3_TEXT };
-    return { title: h.text, html: para?.html ?? "" };
+    if (para && STEP2_OLD_START.test(para.text)) return { title: h.text, html: STEP2_TEXT, text: STEP2_TEXT };
+    if (para && STEP3_OLD_START.test(para.text)) return { title: h.text, html: STEP3_TEXT, text: STEP3_TEXT };
+    return { title: h.text, html: para?.html ?? "", text: para?.text ?? "" };
   });
 
   let shown = 0;

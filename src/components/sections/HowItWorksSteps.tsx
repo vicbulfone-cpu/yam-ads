@@ -3,8 +3,58 @@ import Breadcrumbs from "./Breadcrumbs";
 import { HOME_STEPS } from "./HomeMatchIntro";
 import { Html } from "./Blocks";
 import StartBar from "./StartBar";
+import { STEP_ROW_STARTS } from "@/content/how-it-works";
 
-export type HowStep = { title: string; html: string };
+export type HowStep = { title: string; html: string; /** the paragraph as plain text, split into the box's icon rows */ text: string };
+
+/** Splits a step's paragraph into icon rows at the given opening words. Every word comes from the paragraph; returns null
+ *  (the paragraph is shown as it is) if an opening isn't found, so a wording change can never lose text. */
+function toRows(text: string, starts: string[] | undefined): { title: string; text: string }[] | null {
+  if (!starts) return null;
+  const at = starts.map((st) => text.indexOf(st));
+  if (at.some((x) => x < 0) || at[0] !== 0) return null;
+  return starts.map((st, k) => {
+    const chunk = text.slice(at[k], k + 1 < at.length ? at[k + 1] : undefined).trim();
+    const rest = chunk.slice(st.length).replace(/^[\s,—–-]+/, "").trim();
+    return { title: st.replace(/,$/, ""), text: rest };
+  });
+}
+
+/** Line icons for the rows (24px grid, drawn in the current colour). */
+const ICON_PATHS: string[][] = [
+  ["M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z", "M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"], // pin
+  ["M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z", "M12 7v5l3 2"], // clock
+  ["M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z", "M2.5 20a6.5 6.5 0 0 1 13 0", "M16 4.6a3.5 3.5 0 0 1 0 6.8", "M18 14a6.5 6.5 0 0 1 3.5 6"], // people
+  ["M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z", "M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z", "M12 12h.01"], // target
+  ["M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z", "M14 3v5h5", "M9 13h6", "M9 17h6"], // document
+  ["M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.3A8.5 8.5 0 1 1 21 11.5z"], // chat
+];
+const RowIcon = ({ n }: { n: number }) => (
+  <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" className="h-[46%] w-[46%]">
+    {ICON_PATHS[n].map((d) => <path key={d} d={d} />)}
+  </svg>
+);
+
+/** Heading: the last two words in green, the last word with a hand-drawn green underline (as in the owner's design). */
+function StepTitle({ title }: { title: string }) {
+  const words = title.split(" ");
+  const lead = words.slice(0, -2).join(" ");
+  const [g1, g2] = words.slice(-2);
+  return (
+    <>
+      {lead}{lead && " "}
+      <span className="text-green-700">
+        {g1}{" "}
+        <span className="relative inline-block">
+          {g2}
+          <svg aria-hidden viewBox="0 0 120 12" preserveAspectRatio="none" className="absolute -bottom-[0.32em] left-[-4%] h-[0.32em] w-[112%] text-green-700">
+            <path d="M3 8.5C30 4 72 2.5 117 5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" vectorEffect="non-scaling-stroke" />
+          </svg>
+        </span>
+      </span>
+    </>
+  );
+}
 
 /**
  * How It Works page: the three steps, explained in full (owner, 7 Oct 2026: "combine the extra content with the home
@@ -60,7 +110,9 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                 )}
 
                 {/* no hover effect (owner, 7 Oct 2026); the words always get the wider column, so "We match you by area" fits on one line */}
-                <article className={`hiw-card grid overflow-hidden rounded-[1.4rem] border border-navy-900/10 bg-white shadow-[0_24px_50px_-30px_rgba(7,50,101,0.45)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"}`}>
+                {/* box design (owner's "match box design" picture, 7 Oct 2026): photo with a navy and green wave along its foot,
+                    two-tone heading with a hand-drawn underline, grey summary, then the paragraph as two icon rows */}
+                <article className={`hiw-card grid overflow-hidden rounded-[1.6rem] border border-navy-900/[0.07] bg-white shadow-[0_30px_60px_-34px_rgba(7,50,101,0.5),0_2px_6px_-2px_rgba(7,50,101,0.08)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"}`}>
                   {home && (
                     <div className={`relative aspect-[16/9] overflow-hidden bg-white md:aspect-auto md:min-h-[17rem] ${flip ? "md:order-2" : ""}`}>
                       <Image
@@ -72,18 +124,42 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                         className={`${home.image.includes("map") ? "object-contain" : "object-cover"}`} /* no hover zoom (owner, 7 Oct 2026) */
                         style={{ objectPosition: home.position, transform: home.shift }}
                       />
+                      {/* navy and green wave across the foot of the picture */}
+                      <svg aria-hidden viewBox="0 0 400 60" preserveAspectRatio="none" className="absolute inset-x-0 bottom-0 h-[15%] min-h-[2.4rem] w-full">
+                        <path d="M0 36C95 62 205 8 400 32V60H0Z" fill="#fff" />
+                        <path d="M0 33C95 59 205 5 400 29" fill="none" stroke="#073265" strokeWidth="7" vectorEffect="non-scaling-stroke" />
+                        <path d="M0 23C95 49 205 -5 400 19" fill="none" stroke="#00ae41" strokeWidth="4.5" vectorEffect="non-scaling-stroke" />
+                      </svg>
                     </div>
                   )}
                   {/* desktops (owner, 7 Oct 2026): the words in the step boxes at 140% of their earlier size */}
                   <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-[clamp(2rem,2.8vw,3.75rem)]">
                     <h2 className="font-sans text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em] text-navy-900 sm:text-[1.75rem] md:text-[1.5rem] lg:text-[clamp(2.45rem,2.8vw,3.85rem)]">
-                      {s.title}
+                      <StepTitle title={s.title} />
                     </h2>
                     {home && (
-                      // (the short green line before these words removed, owner 7 Oct 2026: they line up with the paragraph)
-                      <p className="mt-3 text-[1.05rem] font-bold leading-snug text-green-700 lg:text-[clamp(1.47rem,1.68vw,2.24rem)]">{home.text}</p>
+                      <p className="mt-4 text-[1.08rem] leading-snug text-navy-900/70 lg:text-[clamp(1.47rem,1.68vw,2.24rem)]">{home.text}</p>
                     )}
-                    <Html html={s.html} className="mt-4 text-[1rem] leading-[1.65] text-body lg:text-[clamp(1.4rem,1.54vw,2.03rem)]" />
+                    {(() => {
+                      const rows = toRows(s.text, STEP_ROW_STARTS[i]);
+                      if (!rows) return <Html html={s.html} className="mt-4 text-[1rem] leading-[1.65] text-body lg:text-[clamp(1.4rem,1.54vw,2.03rem)]" />;
+                      return (
+                        <ul className="mt-5 divide-y divide-navy-900/10 lg:mt-[clamp(1.5rem,1.8vw,2.5rem)]">
+                          {rows.map((r, k) => (
+                            <li key={r.title} className="flex items-center gap-4 py-4 first:pt-1 last:pb-0 lg:gap-[clamp(1.25rem,1.5vw,2rem)] lg:py-[clamp(1.1rem,1.3vw,1.75rem)]">
+                              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-green-50 text-green-700 ring-1 ring-green-100 lg:h-[clamp(4rem,4.4vw,5.5rem)] lg:w-[clamp(4rem,4.4vw,5.5rem)]">
+                                <RowIcon n={i * 2 + k} />
+                              </span>
+                              <span aria-hidden className="w-px self-stretch bg-navy-900/12" />
+                              <div>
+                                <p className="font-sans text-[1rem] font-bold leading-snug text-navy-900 lg:text-[clamp(1.4rem,1.54vw,2.03rem)]">{r.title}</p>
+                                {r.text && <p className="mt-1 text-[0.95rem] leading-relaxed text-body lg:text-[clamp(1.3rem,1.42vw,1.9rem)]">{r.text}</p>}
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    })()}
                   </div>
                 </article>
               </li>

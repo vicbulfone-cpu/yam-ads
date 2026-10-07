@@ -22,3 +22,12 @@ export const STEP2_TEXT =
 export const STEP3_OLD_START = /^Your enquiry is sent directly and exclusively/;
 export const STEP3_TEXT =
   "No chasing accountants. No multiple enquiries. Your details go directly to your matched local accountant, so they can get in touch and start the conversation about how they can help.";
+
+// Step boxes (owner, 7 Oct 2026: "look like the match box design", "only use words currently in the 3 step boxes"): each
+// step's paragraph is shown as two icon rows. These are the opening words of each row, taken from the paragraph itself;
+// the row's bold title is that opening, the rest of the paragraph up to the next row is the line under it.
+export const STEP_ROW_STARTS: string[][] = [
+  ["Share your postcode or area and the accounting help you're looking for", "It takes about 60 seconds"],
+  ["Your postcode connects you with one local accountant", "Tell us what you need help with"],
+  ["No chasing accountants. No multiple enquiries.", "Your details go directly to your matched local accountant"],
+];
