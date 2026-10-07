@@ -184,7 +184,7 @@ export const BIZ_Q = {
   },
   summary: {
     eyebrow: "Your summary",
-    title: "{name}, here’s what you need help with",
+    title: "{name}, here’s what you told us you need help with",
     text: "Please check your selections, {name}. You can change anything before we look for your accountant.",
     edit: "Change",
     softwarePrefix: "Software:",
@@ -223,9 +223,9 @@ export const BIZ_Q = {
   },
   name: {
     eyebrow: "About you",
-    title: "Your name please",
+    title: "Hi, what is your name please",
     label: "Full name",
-    placeholder: "First and last name",
+    placeholder: "",
   },
   emailMe: {
     eyebrow: "Last step",
@@ -242,27 +242,32 @@ export const BIZ_Q = {
 export const BIZ_MATCH_KEY = "yam:biz-match";
 
 /** The match page (/match). */
+/** Match page wording (owner's "match page" design, 7 Oct 2026). {first} = the accountant's first name, {years} = their
+ *  years of experience, {email} = the customer's email. The other questionnaires override the words that differ. */
 export const BIZ_MATCH = {
-  eyebrow: "Your match is ready",
-  title: "Meet your local business accountant",
-  hello: "Hi {name}, here’s your match.",
-  sub: "Your accountant has your details and the services you asked about.",
+  complete: "Match complete",
+  sampleTag: ["Illustrative profile", "Sample details"],
+  titleLead: "Meet your",
+  titleEm: "business accountant.",
+  sub: "One local accountant. Ready to discuss your business needs.",
   emailed: "We’ve also emailed these details to {email}.",
-  servicesTitle: "What you asked for",
-  aboutTitle: "About your accountant",
-  specialtiesTitle: "They can help with",
-  contactTitle: "Contact details",
-  callLabel: "Call",
-  emailLabel: "Email",
-  webLabel: "Website",
-  nextTitle: "What happens next",
-  next: [
-    "Your accountant reviews what you need.",
-    "They may call to understand your business better before giving a quote.",
-    "You decide whether to go ahead. Matching is free and there’s no obligation.",
-  ],
-  workMode: "Prefers to work:",
-  area: "Your area:",
+  experience: "{years} years’ experience",
+  sampleClaim: "(sample profile claim)",
+  callLabel: "Call {first}",
+  emailLabel: "Email {first}",
+  webLabel: "Visit accountant’s website",
+  selectedTitle: "Your selected services",
+  fitTitle: "Why this looks like a good fit",
+  fit: {
+    area: { title: "Your area", text: "A local partner for your postcode." },
+    services: { title: "Relevant services", text: "The firm offers the business services you selected." },
+    experience: { title: "Experienced support", text: "{years} years working with business accounting clients." },
+  },
+  fitNote: "Service suitability and availability are confirmed directly with the accountant.",
+  nextTitle: "Ready to take the next step?",
+  nextLead: "Please feel free to contact your accountant directly for immediate assistance.",
+  nextText: "Discuss your needs, confirm availability and agree on fees before proceeding.",
+  contactDirect: "Contact {first} directly",
   sample: "Sample accountant shown — the real match appears here once the lead system is connected.",
-  disclaimer: "We provide the matching service. Your accountant provides the accounting services. Accountant fees are agreed separately.",
+  disclaimer: "Your enquiry is shared with this accountant only. Matching is free; accountant fees are agreed separately.",
 };

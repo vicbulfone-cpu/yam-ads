@@ -151,11 +151,12 @@ export const REG_Q = {
 
 /** Match page (/match) wording that differs for registration customers (the rest is BIZ_MATCH). */
 export const REG_MATCH = {
-  title: "Meet your local accountant",
-  next: [
-    "Your accountant reviews what you need.",
-    "They may call to understand your business and registrations better before giving a quote.",
-    "You decide whether to go ahead. Matching is free and there’s no obligation.",
-  ],
-  disclaimer: "We provide the matching service. Your accountant provides the accounting services. Accountant fees are agreed separately and government fees may apply.",
+  titleEm: "accountant.",
+  sub: "One local accountant. Ready to discuss setting up your business.",
+  fit: {
+    area: { title: "Your area", text: "A local partner for your postcode." },
+    services: { title: "Relevant services", text: "The firm offers the registration services you selected." },
+    experience: { title: "Experienced support", text: "{years} years working with new and growing businesses." },
+  },
+  disclaimer: "Your enquiry is shared with this accountant only. Matching is free; accountant fees are agreed separately and government fees may apply.",
 };

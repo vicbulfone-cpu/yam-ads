@@ -383,3 +383,20 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
 - GoHighLevel can branch on `leadSource` alone. The owner's ad payer is the postcode owner, so routing is unaffected;
   the rule keeps reports and any source-based billing accurate.
 - (Owner, 7 Oct 2026: there are no further build stages; from now on the work is page edits.)
+
+## Questionnaire wording and match page (owner, 7 Oct 2026)
+
+- Name page: "Your name please" → "Hi, what is your name please"; the box's "First and last name" placeholder removed.
+  Summary: "{name}, here's what you need help with" → "{name}, here's what you told us you need help with". (Shared by all
+  five questionnaires, src/content/business-questionnaire.ts.)
+- "Suburb data © GeoNames (CC BY 4.0)" removed from under the postcode box. The licence requires a visible credit, so it
+  now sits in the footers' small print (src/components/ui/DataCredit.tsx: site footers, ad page footer, match page).
+- Match page (/match) rebuilt from the owner's "match page" design (hero section/ad landing pages/match page.png):
+  "Match complete" pill in the header, "Meet your business accountant." headline, the accountant's card (photo, firm,
+  specialty and location, years' experience, blurb, phone/email/website/address/hours, Call/Email buttons, website link,
+  service chips), "Your selected services" (the customer's own answers), "Why this looks like a good fit", a "Ready to
+  take the next step?" band with "Contact {first} directly", and a slim footer line. New optional accountant fields for
+  GoHighLevel: specialty, location, years, address, hours (empty fields are hidden). The sample accountant is now
+  "Alex Morgan" with placeholder details, labelled "Illustrative profile • Sample details".
+- Note: "Your area — A local partner for your postcode." is an area claim (an earlier rule asked for neutral wording);
+  it comes from the owner's design and is true because ad payers are also the postcode owners.

@@ -8,6 +8,8 @@ import { BIZ_LANDING as L } from "@/content/business-questionnaire";
 import { CREDENTIAL } from "@/content/wording";
 import { ShieldCheck } from "./BizIcons";
 import AdInfoPopup from "./AdInfoPopup";
+import DataCredit from "../ui/DataCredit";
+import { Check } from "../ui/Icons";
 
 /** Footer links (owner, 6 Oct 2026): "How it works" left out, as that section is now on every ad page. */
 const FOOTER_LINKS = L.links.filter((l) => l.href !== "/how-it-works");
@@ -16,14 +18,18 @@ const FOOTER_LINKS = L.links.filter((l) => l.href !== "/how-it-works");
  *  Next.js's Link would take the click for its own page change before the popup can open it. */
 const POPUP_LINK = { "data-info": "" } as const;
 
-export function AdHeader({ className = "" }: { className?: string }) {
+export function AdHeader({ className = "", complete }: { className?: string; /** match page: a green "Match complete" pill instead of the badge */ complete?: string }) {
   return (
     <header className={`bz-header ${className}`}>
       <div className="bz-wrap flex items-center justify-between gap-4">
         <Link href="/" aria-label="Your Accountant Match — Home" className="shrink-0">
           <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} priority className="bz-logo" />
         </Link>
-        <p className="bz-badge"><ShieldCheck className="bz-badge-icon" /> <span>{L.badge}</span></p>
+        {complete ? (
+          <p className="mp-complete"><Check width={18} height={18} strokeWidth={3.2} aria-hidden /> {complete}</p>
+        ) : (
+          <p className="bz-badge"><ShieldCheck className="bz-badge-icon" /> <span>{L.badge}</span></p>
+        )}
       </div>
     </header>
   );
@@ -61,7 +67,7 @@ export function AdFooter() {
       </div>
       <div className="adf-base">
         <p className="bz-wrap">
-          <span>© {new Date().getFullYear()} {L.copyright}</span>
+          <span>© {new Date().getFullYear()} {L.copyright} <DataCredit className="ml-2 opacity-80" /></span>
           <span>{L.based[0]} <span aria-hidden>•</span> {L.based[1]}</span>
         </p>
       </div>

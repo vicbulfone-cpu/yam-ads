@@ -134,8 +134,7 @@ export default function PostcodeBox({ value, onChange, invalid }: { value: Place
           )}
         </ul>
       )}
-      {/* the suburb list's licence (CC BY 4.0) asks for this credit */}
-      <p className="mt-2 text-[0.7rem] text-muted">Suburb data © <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer" className="underline">GeoNames</a> (CC BY 4.0)</p>
+      {/* (the suburb list's CC BY 4.0 credit is in the footers' small print: DataCredit.tsx, owner 7 Oct 2026) */}
     </div>
   );
 }

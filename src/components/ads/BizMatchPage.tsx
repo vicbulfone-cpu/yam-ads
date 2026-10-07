@@ -7,12 +7,15 @@ import { PERSONAL_MATCH } from "@/content/personal-questionnaire";
 import { SMSF_MATCH } from "@/content/smsf-questionnaire";
 import { REG_MATCH } from "@/content/registration-questionnaire";
 import { SAMPLE_MATCH_PERSONAL, SAMPLE_MATCH_REGISTRATION, SAMPLE_MATCH_SMSF, type MatchDetails } from "@/content/sample-match";
-import { ArrowRight, Check, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
+import DataCredit from "../ui/DataCredit";
+import { Bars, Check, Clock, External, Globe, Handshake, ListCheck, Mail, Phone, Pin } from "../ui/Icons";
 
 /**
- * The customer's match page (/match), shown after every ad questionnaire (business, personal, ...). The accountant's details come from the
- * server (the sample accountant until GoHighLevel is connected); the customer's own answers come from this browser tab.
- * Empty fields are hidden. Wording is neutral (no claims about why this accountant was chosen).
+ * The customer's match page (/match), shown after every questionnaire. Laid out as the owner's "match page" design
+ * (7 Oct 2026): headline, the accountant's card (photo, details, contact buttons, service chips) beside "Your selected
+ * services" and "Why this looks like a good fit", then a "Ready to take the next step?" band. The accountant's details
+ * come from the server (the sample accountant until GoHighLevel is connected); the customer's own answers come from
+ * this browser tab. Empty fields are hidden. Styles: ".mp-" in ads.css.
  */
 type Saved = {
   adType?: string; leadId: string; name: string; email: string; emailMe: boolean; mode: string;
@@ -24,6 +27,7 @@ const noSubscribe = () => () => {};
 function readSaved() {
   try { return sessionStorage.getItem(BIZ_MATCH_KEY); } catch { return null; } // storage switched off: the match still shows
 }
+const FOOT_LINKS = [{ text: "Contact", href: "/contact" }, { text: "Privacy", href: "/privacy" }, { text: "Terms", href: "/terms" }];
 const tel = (p: string) => p.replace(/[^\d+]/g, "");
 const host = (u: string) => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
@@ -34,8 +38,6 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
     try { return raw ? (JSON.parse(raw) as Saved) : null; } catch { return null; }
   }, [raw]);
 
-  const firstWord = saved?.name.trim().split(/\s+/)[0];
-  const firstName = firstWord ? firstWord[0].toUpperCase() + firstWord.slice(1) : undefined;
   // wording (and, until GoHighLevel is connected, the sample accountant) for the questionnaire the customer came from
   const adType = saved?.adType;
   const WORDS = { personal: PERSONAL_MATCH, smsf: SMSF_MATCH, registration: REG_MATCH } as const;
@@ -44,100 +46,116 @@ export default function BizMatchPage({ match: serverMatch, isSample }: { match: 
   const M = key ? { ...BIZ_MATCH, ...WORDS[key] } : BIZ_MATCH;
   const match = isSample && key ? SAMPLES[key] : serverMatch;
 
+  const first = match.name.trim().split(/\s+/)[0];
+  const fill = (t: string) => t.replaceAll("{first}", first).replaceAll("{years}", String(match.years ?? ""));
+  const selected = saved?.services.flatMap((g) => g.items) ?? [];
+  const contactHref = match.phone ? `tel:${tel(match.phone)}` : match.email ? `mailto:${match.email}` : null;
+
   return (
-    <main className="bz-match">
-      <section className="bz-match-hero">
-        <div aria-hidden className="absolute inset-0 opacity-70 [background:radial-gradient(55%_120%_at_90%_-10%,rgba(0,174,65,.5),transparent_60%),radial-gradient(45%_100%_at_0%_110%,rgba(26,90,166,.8),transparent_60%)]" />
-        <div aria-hidden className="dots absolute inset-0 opacity-15 [filter:invert(1)]" />
-        <div className="bz-wrap relative pb-28 pt-10 text-center text-white sm:pt-14">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.16em] text-green-200">
-            <Sparkle aria-hidden width={14} height={14} /> {M.eyebrow}
-          </span>
-          <h1 className="mx-auto mt-4 max-w-3xl text-[2.1rem] font-extrabold leading-[1.05] tracking-[-0.035em] sm:text-[3rem]">{M.title}</h1>
-          {firstName && <p className="mt-3 text-lg font-semibold text-green-200 sm:text-xl">{M.hello.replace("{name}", firstName)}</p>}
-          <p className="mx-auto mt-2 max-w-2xl text-[1.02rem] text-navy-100">{M.sub}</p>
-          {saved?.emailMe && <p className="mx-auto mt-2 inline-flex items-center gap-2 text-sm text-white/85"><Mail aria-hidden width={16} height={16} />{M.emailed.replace("{email}", saved.email)}</p>}
-        </div>
-      </section>
+    <main className="mp">
+      <div className="bz-wrap mp-wrap">
+        <header className="mp-head">
+          {isSample && <p className="mp-tag">{M.sampleTag[0]} <span aria-hidden>•</span> {M.sampleTag[1]}</p>}
+          <h1 className="mp-h1">{M.titleLead} <span className="text-[#0e7a32]">{M.titleEm}</span></h1>
+          <p className="mp-sub">{M.sub}</p>
+          {saved?.emailMe && <p className="mp-emailed"><Mail aria-hidden width={16} height={16} />{M.emailed.replace("{email}", saved.email)}</p>}
+        </header>
 
-      <div className="bz-wrap relative -mt-20 grid gap-6 pb-14 lg:grid-cols-[1.35fr_1fr]">
-        {/* the accountant */}
-        <article className="bz-match-card">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-            {match.photo && (
-              <Image src={match.photo} alt={`${match.name}, ${match.firm}`} width={176} height={176} className="h-32 w-32 shrink-0 rounded-3xl object-cover shadow-[0_18px_40px_-18px_rgba(7,50,101,.55)] ring-4 ring-white sm:h-40 sm:w-40" />
-            )}
-            <div className="min-w-0">
-              <p className="text-[0.72rem] font-bold uppercase tracking-[0.16em] text-green-700">{M.aboutTitle}</p>
-              <h2 className="mt-1 text-[1.9rem] font-extrabold leading-tight tracking-[-0.03em] text-navy-900">{match.name}</h2>
-              <p className="text-lg font-semibold text-green-700">{match.firm}</p>
-            </div>
-          </div>
-          {match.blurb && <p className="mt-5 text-[1.02rem] leading-relaxed text-ink/85">{match.blurb}</p>}
-
-          {(match.phone || match.email || match.website) && (
-            <div className="mt-6">
-              <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-navy-900">{M.contactTitle}</h3>
-              <div className="grid gap-2.5 sm:grid-cols-3">
-                {match.phone && (
-                  <a href={`tel:${tel(match.phone)}`} className="bz-contact is-primary"><Phone aria-hidden width={20} height={20} /><span><span className="bz-contact-k">{M.callLabel}</span>{match.phone}</span></a>
+        <div className="mp-grid">
+          {/* the accountant */}
+          <article className="mp-card">
+            <div className="mp-card-top">
+              {match.photo && (
+                <div className="mp-photo">
+                  <Image src={match.photo} alt={`${match.name}, ${match.firm}`} fill sizes="(min-width: 1024px) 300px, (min-width: 640px) 40vw, 90vw" className="object-cover" />
+                </div>
+              )}
+              <div className="min-w-0">
+                <h2 className="mp-name">{match.name}</h2>
+                <p className="mp-firm">{match.firm}</p>
+                {(match.specialty || match.location) && (
+                  <p className="mp-meta">{[match.specialty, match.location].filter(Boolean).join(" • ")}</p>
                 )}
-                {match.email && (
-                  <a href={`mailto:${match.email}`} className="bz-contact"><Mail aria-hidden width={20} height={20} /><span><span className="bz-contact-k">{M.emailLabel}</span>{match.email}</span></a>
+                {match.years != null && (
+                  <p className="mp-exp-row">
+                    <span className="mp-exp">{fill(M.experience)}</span>
+                    {isSample && <span className="mp-claim">{M.sampleClaim}</span>}
+                  </p>
+                )}
+                {match.blurb && <p className="mp-blurb">{match.blurb}</p>}
+
+                <ul className="mp-contact">
+                  {match.phone && <li><Phone aria-hidden width={19} height={19} /><a href={`tel:${tel(match.phone)}`} className="font-bold">{match.phone}</a></li>}
+                  {match.email && <li><Mail aria-hidden width={19} height={19} /><a href={`mailto:${match.email}`}>{match.email}</a></li>}
+                  {match.website && <li><Globe aria-hidden width={19} height={19} /><a href={match.website} target="_blank" rel="noopener noreferrer">{host(match.website)}</a></li>}
+                  {match.address && <li><Pin aria-hidden width={19} height={19} /><span>{match.address}</span></li>}
+                  {match.hours && <li><Clock aria-hidden width={19} height={19} /><span>{match.hours}</span></li>}
+                </ul>
+
+                {(match.phone || match.email) && (
+                  <div className="mp-buttons">
+                    {match.phone && <a href={`tel:${tel(match.phone)}`} className="mp-btn is-primary"><Phone aria-hidden width={20} height={20} />{fill(M.callLabel)}</a>}
+                    {match.email && <a href={`mailto:${match.email}`} className="mp-btn"><Mail aria-hidden width={20} height={20} />{fill(M.emailLabel)}</a>}
+                  </div>
                 )}
                 {match.website && (
-                  <a href={match.website} target="_blank" rel="noopener noreferrer" className="bz-contact"><ArrowRight aria-hidden width={20} height={20} /><span><span className="bz-contact-k">{M.webLabel}</span>{host(match.website)}</span></a>
+                  <a href={match.website} target="_blank" rel="noopener noreferrer" className="mp-web">{M.webLabel}<External aria-hidden width={16} height={16} /></a>
                 )}
               </div>
             </div>
-          )}
 
-          {!!match.services?.length && (
-            <div className="mt-6">
-              <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-navy-900">{M.specialtiesTitle}</h3>
-              <ul className="flex flex-wrap gap-2">
-                {match.services.map((s) => <li key={s} className="rounded-full bg-green-50 px-3.5 py-1.5 text-sm font-semibold text-green-800 ring-1 ring-green-200">{s}</li>)}
-              </ul>
-            </div>
-          )}
-          {isSample && <p className="mt-6 rounded-xl bg-amber-50 px-4 py-2.5 text-xs font-medium text-amber-900 ring-1 ring-amber-200">{M.sample}</p>}
-        </article>
+            {!!match.services?.length && (
+              <ul className="mp-chips">{match.services.map((s) => <li key={s}>{s}</li>)}</ul>
+            )}
+            {isSample && <p className="mp-sample">{M.sample}</p>}
+          </article>
 
-        <div className="grid content-start gap-6">
-          {saved && (
-            <section className="bz-match-side">
-              <h2 className="text-lg font-extrabold tracking-[-0.02em] text-navy-900">{M.servicesTitle}</h2>
-              <ul className="mt-3 space-y-3">
-                {saved.services.map((g) => (
-                  <li key={g.category}>
-                    <p className="text-sm font-bold text-green-700">{g.category}</p>
-                    <ul className="mt-1 space-y-1">
-                      {g.items.map((it) => <li key={it} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85"><Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />{it}</li>)}
-                    </ul>
-                  </li>
+          <div className="mp-side">
+            {selected.length > 0 && (
+              <section className="mp-panel is-mint">
+                <h2 className="mp-panel-title"><ListCheck aria-hidden width={26} height={26} className="text-[#0e7a32]" />{M.selectedTitle}</h2>
+                <ul className="mp-checks">
+                  {selected.map((s) => <li key={s}><span aria-hidden className="mp-tick"><Check width={14} height={14} strokeWidth={3.4} /></span><span>{s}</span></li>)}
+                </ul>
+              </section>
+            )}
+
+            <section className="mp-panel">
+              <h2 className="mp-panel-title"><Bars aria-hidden width={26} height={26} className="text-[#0e7a32]" />{M.fitTitle}</h2>
+              <ul className="mp-checks">
+                {[M.fit.area, M.fit.services, ...(match.years != null ? [M.fit.experience] : [])].map((f) => (
+                  <li key={f.title}><span aria-hidden className="mp-tick"><Check width={14} height={14} strokeWidth={3.4} /></span><span><strong>{f.title}</strong><span className="block">{fill(f.text)}</span></span></li>
                 ))}
               </ul>
-              <dl className="mt-4 grid gap-1.5 border-t border-line pt-3 text-sm">
-                {saved.mode && <div className="flex gap-2"><dt className="font-semibold text-navy-900">{M.workMode}</dt><dd className="text-ink/80">{saved.mode}</dd></div>}
-                <div className="flex gap-2"><dt className="font-semibold text-navy-900">{M.area}</dt><dd className="inline-flex items-center gap-1 text-ink/80"><Pin aria-hidden width={14} height={14} />{saved.place.suburb} {saved.place.state} {saved.place.postcode}</dd></div>
-              </dl>
+              <p className="mp-note">{M.fitNote}</p>
             </section>
-          )}
-
-          <section className="bz-match-side">
-            <h2 className="text-lg font-extrabold tracking-[-0.02em] text-navy-900">{M.nextTitle}</h2>
-            <ol className="mt-3 space-y-3">
-              {M.next.map((n, i) => (
-                <li key={n} className="flex gap-3 text-[0.95rem] leading-snug text-ink/85">
-                  <span aria-hidden className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-navy-900 text-xs font-bold text-white">{i + 1}</span>{n}
-                </li>
-              ))}
-            </ol>
-          </section>
+          </div>
         </div>
 
-        <p className="text-center text-sm text-muted lg:col-span-2">{M.disclaimer}</p>
+        {/* next step band */}
+        <section className="mp-next">
+          <span aria-hidden className="mp-next-icon"><Handshake width={46} height={46} strokeWidth={1.6} /></span>
+          <div className="mp-next-text">
+            <h2>{M.nextTitle}</h2>
+            <p className="font-semibold text-navy-900">{M.nextLead}</p>
+            <p>{M.nextText}</p>
+          </div>
+          {contactHref && <a href={contactHref} className="mp-btn is-primary mp-next-btn"><Phone aria-hidden width={20} height={20} />{fill(M.contactDirect)}</a>}
+        </section>
       </div>
+
+      {/* slim footer line (owner's design): the disclaimer on the left, © and the information links (they open in the popup) on the right */}
+      <footer className="mp-foot">
+        <div className="bz-wrap mp-foot-in">
+          <p>{M.disclaimer}</p>
+          <p className="mp-foot-links">
+            <span>© {new Date().getFullYear()} Your Accountant Match</span>
+            {FOOT_LINKS.map((l) => <a key={l.href} href={l.href} data-info="">{l.text}</a>)}
+          </p>
+        </div>
+        <p className="bz-wrap mp-credit"><DataCredit /></p>
+      </footer>
     </main>
   );
 }
+

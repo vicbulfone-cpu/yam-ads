@@ -169,10 +169,11 @@ export const PERSONAL_Q = {
 
 /** Match page (/match) wording that differs for personal tax customers (the rest is BIZ_MATCH). */
 export const PERSONAL_MATCH = {
-  title: "Meet your local tax accountant",
-  next: [
-    "Your accountant reviews what you need.",
-    "They may call to understand your situation better before giving a quote.",
-    "You decide whether to go ahead. Matching is free and there’s no obligation.",
-  ],
+  titleEm: "tax accountant.",
+  sub: "One local accountant. Ready to discuss your tax needs.",
+  fit: {
+    area: { title: "Your area", text: "A local partner for your postcode." },
+    services: { title: "Relevant services", text: "The firm offers the tax services you selected." },
+    experience: { title: "Experienced support", text: "{years} years working with personal tax clients." },
+  },
 };

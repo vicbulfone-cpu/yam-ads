@@ -29,3 +29,8 @@ export const Mail = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><rect x="
 export const Sparkle = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" /></svg>);
 export const Layers = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5" /></svg>);
 export const Star = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z" /></svg>);
+export const Globe = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" /></svg>);
+export const External = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>);
+export const ListCheck = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><rect x="3.5" y="3.5" width="17" height="17" rx="3" /><path d="m7 9 1.4 1.4L11 8M7 15l1.4 1.4L11 14M13.5 9.5H17M13.5 15.5H17" /></svg>);
+export const Bars = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M5 20v-6M12 20V9M19 20V4" strokeWidth={3} /></svg>);
+export const Handshake = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="m11 17 2 2a1.4 1.4 0 0 0 2-2M14 14l2.5 2.5a1.4 1.4 0 0 0 2-2l-3.9-3.9a2 2 0 0 0-2.8 0l-.9.9a1.4 1.4 0 0 1-2-2l2.8-2.8a4 4 0 0 1 4.6-.8l.7.4H21v7h-2M3 6h3.5l.7-.4a4 4 0 0 1 4.6.8M3 13h2l3.5 3.5a1.4 1.4 0 0 0 2-2" /></svg>);

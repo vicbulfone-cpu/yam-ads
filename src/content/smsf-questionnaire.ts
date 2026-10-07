@@ -160,11 +160,12 @@ export const SMSF_Q = {
 
 /** Match page (/match) wording that differs for SMSF customers (the rest is BIZ_MATCH). */
 export const SMSF_MATCH = {
-  title: "Meet your local SMSF accountant",
-  next: [
-    "Your accountant reviews what you need.",
-    "They may call to understand your fund and goals better before giving a quote.",
-    "You decide whether to go ahead. Matching is free and there’s no obligation.",
-  ],
-  disclaimer: "We provide the matching service. Your accountant provides the accounting services and can discuss access to appropriately licensed financial advice. Professional fees are agreed separately.",
+  titleEm: "SMSF accountant.",
+  sub: "One local accountant. Ready to discuss your SMSF and super needs.",
+  fit: {
+    area: { title: "Your area", text: "A local partner for your postcode." },
+    services: { title: "Relevant services", text: "The firm offers the SMSF services you selected." },
+    experience: { title: "Experienced support", text: "{years} years working with SMSF clients." },
+  },
+  disclaimer: "Your enquiry is shared with this accountant only. Matching is free; professional fees are agreed separately. Your accountant can discuss access to appropriately licensed financial advice.",
 };

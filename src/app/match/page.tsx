@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { AdFooter, AdHeader } from "@/components/ads/AdChrome";
+import { AdHeader } from "@/components/ads/AdChrome";
+import AdInfoPopup from "@/components/ads/AdInfoPopup";
+import { BIZ_MATCH } from "@/content/business-questionnaire";
 import BizMatchPage from "@/components/ads/BizMatchPage";
 import { SAMPLE_MATCH } from "@/content/sample-match";
 
@@ -16,9 +18,10 @@ export default function MatchPage() {
   const isSample = !process.env.GHL_INBOUND_WEBHOOK_URL || process.env.MOCK_GHL === "true";
   return (
     <div className="bz-page">
-      <AdHeader />
+      {/* owner's "match page" design: a "Match complete" pill in the header and a slim footer line (inside BizMatchPage) */}
+      <AdHeader complete={BIZ_MATCH.complete} />
       <BizMatchPage match={SAMPLE_MATCH} isSample={isSample} />
-      <AdFooter />
+      <AdInfoPopup />
     </div>
   );
 }
