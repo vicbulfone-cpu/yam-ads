@@ -82,6 +82,12 @@ export const SMSF_CATEGORIES: BizCategory[] = [
 ];
 
 /** The short qualifying questions (owner, 5 Oct 2026). */
+/** Ticking "Establishing an SMSF" means they don't have one yet (owner, 8 Oct 2026): the "Do you currently have an SMSF?"
+ *  question is then skipped and answered "No" for them. */
+export const SMSF_SETUP_OPTION = { category: "smsf_setup", option: "establish", have: "no" };
+export const isSettingUpSmsf = (answers: Record<string, { ids: string[] } | undefined>) =>
+  Boolean(answers[SMSF_SETUP_OPTION.category]?.ids.includes(SMSF_SETUP_OPTION.option));
+
 export const SMSF_HAVE = [
   { id: "yes", label: "Yes" },
   { id: "no", label: "No" },

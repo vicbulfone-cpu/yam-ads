@@ -15,7 +15,7 @@ export const ONE_MATCH_BUTTON = "Meet my match";
 // "Your postcode determines your match..." (logged in docs/seo-copy-log.md).
 export const STEP2_OLD_START = /^Your postcode determines your match/;
 export const STEP2_TEXT =
-  "Your postcode connects you with one local accountant from our carefully selected partner network. Tell us what you need help with, and we’ll make sure you’re matched with an accountant that’s exactly what you’re looking for.";
+  "Your postcode connects you with one local accountant from our carefully selected partner network. Tell us what you need help with, and we’ll make sure you’re matched with an accountant perfectly aligned with your needs.";
 
 // Step 3 "Your matched accountant contacts you", detailed paragraph (owner's words, 7 Oct 2026). Replaces the old paragraph
 // that began "Your enquiry is sent directly and exclusively..." (logged in docs/seo-copy-log.md).

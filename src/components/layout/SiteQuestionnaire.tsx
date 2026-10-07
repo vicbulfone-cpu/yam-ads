@@ -9,7 +9,7 @@ import {
   ADVICE_TOPICS, financialYears, PERSONAL_NEEDS, RETURN_ITEMS, RETURN_NEEDS, STILL_UNSURE, YES_NO_UNSURE, type NeedId,
 } from "@/content/personal-questionnaire";
 import { REG_CATEGORIES, REG_STAGE } from "@/content/registration-questionnaire";
-import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_WHEN } from "@/content/smsf-questionnaire";
+import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_SETUP_OPTION, isSettingUpSmsf } from "@/content/smsf-questionnaire";
 import { BIZ_Q, PERSONAL_Q, REG_Q, SERVICE_PICK, SITE_Q as Q, SMSF_Q } from "@/content/site-questionnaire";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
@@ -154,7 +154,6 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const [personalNotes, setPersonalNotes] = useState("");
   // SMSF (Ad 3) and registrations (Ad 4) quick questions
   const [have, setHave] = useState<string | null>(null);
-  const [when, setWhen] = useState<string | null>(null);
   const [smsfNotes, setSmsfNotes] = useState("");
   const [stage, setStage] = useState<string | null>(null);
   const [regNotes, setRegNotes] = useState("");
@@ -208,7 +207,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     // a fresh start every time
     setPicks({ business: [], smsf: [], registration: [] }); setAnswers({});
     setNeeds([]); setYear(null); setFirst(null); setAmendYear(null); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
-    setHave(null); setWhen(null); setSmsfNotes(""); setStage(null); setRegNotes("");
+    setHave(null); setSmsfNotes(""); setStage(null); setRegNotes("");
     setStepIdx(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
     setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setMatching(false); setConfirmLeave(false);
     setServices(keys);
@@ -322,8 +321,11 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     }
   };
   const incomeLabels = () => RETURN_ITEMS.filter((o) => income.includes(o.id)).map((o) => o.label);
+  // "Establishing an SMSF" ticked: they don't have one yet, so that question is skipped and answered "No" (owner, 8 Oct 2026)
+  const settingUpSmsf = isSettingUpSmsf(answers);
+  const haveAnswer = settingUpSmsf ? SMSF_SETUP_OPTION.have : have;
   const aboutLines = (s: "smsf" | "registration") => s === "smsf"
-    ? [{ label: SMSF_Q.summaryLabels.have, value: labelOf(SMSF_HAVE, have) }, { label: SMSF_Q.summaryLabels.when, value: labelOf(SMSF_WHEN, when) },
+    ? [{ label: SMSF_Q.summaryLabels.have, value: labelOf(SMSF_HAVE, haveAnswer) },
       ...(smsfNotes.trim() ? [{ label: SMSF_Q.summaryLabels.notes, value: smsfNotes.trim() }] : [])]
     : [{ label: REG_Q.summaryLabels.stage, value: labelOf(REG_STAGE, stage) }, ...(regNotes.trim() ? [{ label: REG_Q.summaryLabels.notes, value: regNotes.trim() }] : [])];
 
@@ -362,8 +364,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         if (!income.length) return setError(PERSONAL_Q.errors.income);
         return advance();
       case "qualify":
-        if (step.s === "smsf" && !have) return setError(SMSF_Q.errors.have);
-        if (step.s === "smsf" && !when) return setError(SMSF_Q.errors.when);
+        if (step.s === "smsf" && !haveAnswer) return setError(SMSF_Q.errors.have);
         if (step.s === "registration" && !stage) return setError(REG_Q.errors.stage);
         return advance();
       case "name":
@@ -446,7 +447,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         lines.push(...about.map((a) => `${a.label}: ${a.value}`));
         groups.push({ category: CAT_Q[s].summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) });
         leadAnswers[s] = s === "smsf"
-          ? { ...catAnswers, haveSmsf: have, timing: when, notes: smsfNotes.trim() }
+          ? { ...catAnswers, haveSmsf: haveAnswer, notes: smsfNotes.trim() }
           : { ...catAnswers, businessStage: stage, notes: regNotes.trim() };
       }
     }
@@ -492,7 +493,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       : step.kind === "cat" ? Boolean(sel?.ids.length)
         : step.kind === "pfollow" ? (step.n === "amend" || topics.length > 0)
           : step.kind === "pincome" ? income.length > 0
-            : step.kind === "qualify" ? (step.s === "smsf" ? Boolean(have && when) : Boolean(stage))
+            : step.kind === "qualify" ? (step.s === "smsf" ? Boolean(haveAnswer) : Boolean(stage))
               : step.kind === "mode" ? Boolean(mode)
                 : step.kind === "location" ? Boolean(place)
                   : step.kind === "phone" ? MOBILE.test(cleanPhone(phone))
@@ -617,8 +618,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
 
                     {body.kind === "qualify" && body.s === "smsf" && (
                       <StepHead eyebrow={SMSF_Q.qualify.eyebrow} title={SMSF_Q.qualify.title} icon={<Doc width={26} height={26} />}>
-                        <ChoiceGroup label={SMSF_Q.qualify.have} options={SMSF_HAVE} value={have} onChange={(v) => { setHave(v); clear(); }} warn={warn && !have} cols={3} />
-                        <ChoiceGroup label={SMSF_Q.qualify.when} options={SMSF_WHEN} value={when} onChange={(v) => { setWhen(v); clear(); }} warn={warn && Boolean(have) && !when} cols={3} />
+                        {!settingUpSmsf && <ChoiceGroup label={SMSF_Q.qualify.have} options={SMSF_HAVE} value={have} onChange={(v) => { setHave(v); clear(); }} warn={warn && !have} cols={3} />}
+                        {/* ("When do you need help?" removed, owner 8 Oct 2026) */}
                         <NoteField label={SMSF_Q.qualify.noteLabel} value={smsfNotes} onChange={setSmsfNotes} placeholder={SMSF_Q.qualify.notePlaceholder} rows={2} />
                       </StepHead>
                     )}

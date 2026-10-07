@@ -110,7 +110,7 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                 )}
 
                 {/* no hover effect (owner, 7 Oct 2026); the words always get the wider column, so "We match you by area" fits on one line */}
-                {/* box design (owner's "match box design" picture, 7 Oct 2026): photo with a navy and green wave along its foot,
+                {/* box design (owner's "match box design" picture, 7 Oct 2026): photo (its wave later removed),
                     two-tone heading with a hand-drawn underline, grey summary, then the paragraph as two icon rows */}
                 <article className={`hiw-card grid overflow-hidden rounded-[1.6rem] border border-navy-900/[0.07] bg-white shadow-[0_30px_60px_-34px_rgba(7,50,101,0.5),0_2px_6px_-2px_rgba(7,50,101,0.08)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"}`}>
                   {home && (
@@ -124,12 +124,7 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                         className={`${home.image.includes("map") ? "object-contain" : "object-cover"}`} /* no hover zoom (owner, 7 Oct 2026) */
                         style={{ objectPosition: home.position, transform: home.shift }}
                       />
-                      {/* navy and green wave across the foot of the picture */}
-                      <svg aria-hidden viewBox="0 0 400 60" preserveAspectRatio="none" className="absolute inset-x-0 bottom-0 h-[15%] min-h-[2.4rem] w-full">
-                        <path d="M0 36C95 62 205 8 400 32V60H0Z" fill="#fff" />
-                        <path d="M0 33C95 59 205 5 400 29" fill="none" stroke="#073265" strokeWidth="7" vectorEffect="non-scaling-stroke" />
-                        <path d="M0 23C95 49 205 -5 400 19" fill="none" stroke="#00ae41" strokeWidth="4.5" vectorEffect="non-scaling-stroke" />
-                      </svg>
+                      {/* (the navy and green wave across the foot of the picture removed, owner 8 Oct 2026: the full picture shows) */}
                     </div>
                   )}
                   {/* desktops (owner, 7 Oct 2026): the words in the step boxes at 140% of their earlier size */}

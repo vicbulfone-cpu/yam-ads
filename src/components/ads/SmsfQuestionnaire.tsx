@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { logo } from "@/config/site.config";
 import { BIZ_MATCH_KEY, type BizCategory } from "@/content/business-questionnaire";
-import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_WHEN } from "@/content/smsf-questionnaire";
+import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_SETUP_OPTION, isSettingUpSmsf } from "@/content/smsf-questionnaire";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
@@ -17,7 +17,7 @@ import PhoneFit from "../ui/PhoneFit";
 /**
  * The SMSF & wealth questionnaire (SMSF ad page /ad-3). Same popup, progress header and option cards as the business
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's SMSF questions:
- *   one page per ticked category → a few quick questions (SMSF now? when? optional note) → name → summary (confirm) →
+ *   one page per ticked category → a few quick questions (SMSF now? optional note; "when do you need help?" removed, owner 8 Oct 2026) → name → summary (confirm) →
  *   in person or remote → postcode/suburb → 11-second search → "great news" box asking for email → mobile →
  *   email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the SMSF match box (OPEN_SMSF_QUESTIONNAIRE).
@@ -68,7 +68,6 @@ export default function SmsfQuestionnaire() {
   const [cats, setCats] = useState<string[]>([]);
   const [answers, setAnswers] = useState<Record<string, CatAnswer>>({});
   const [have, setHave] = useState<string | null>(null);
-  const [when, setWhen] = useState<string | null>(null);
   const [notes, setNotes] = useState("");
   const [stepIdx, setStepIdx] = useState(0);
   const [backToSummary, setBackToSummary] = useState(false);
@@ -97,7 +96,7 @@ export default function SmsfQuestionnaire() {
   const show = useCallback((ids: string[]) => {
     setCats(ids);
     setAnswers({});
-    setHave(null); setWhen(null); setNotes("");
+    setHave(null); setNotes("");
     setStepIdx(0);
     setBackToSummary(false);
     setMode(null);
@@ -171,10 +170,13 @@ export default function SmsfQuestionnaire() {
     patch({ ids });
   };
 
+  // "Establishing an SMSF" ticked: they don't have one yet, so that question is skipped and answered "No" (owner, 8 Oct 2026)
+  const settingUp = isSettingUpSmsf(answers);
+  const haveAnswer = settingUp ? SMSF_SETUP_OPTION.have : have;
+
   /** About-you lines (qualifying answers) for the summary, the lead and the match page. */
   const aboutLines = () => [
-    { label: Q.summaryLabels.have, value: labelOf(SMSF_HAVE, have) },
-    { label: Q.summaryLabels.when, value: labelOf(SMSF_WHEN, when) },
+    { label: Q.summaryLabels.have, value: labelOf(SMSF_HAVE, haveAnswer) },
     ...(notes.trim() ? [{ label: Q.summaryLabels.notes, value: notes.trim() }] : []),
   ];
 
@@ -188,8 +190,7 @@ export default function SmsfQuestionnaire() {
         return goTo(stepIdx + 1);
       }
       case "qualify":
-        if (!have) return setError(Q.errors.have);
-        if (!when) return setError(Q.errors.when);
+        if (!haveAnswer) return setError(Q.errors.have);
         if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
         return goTo(stepIdx + 1);
       case "name":
@@ -250,7 +251,7 @@ export default function SmsfQuestionnaire() {
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
-          answers: { ...answers, haveSmsf: have, timing: when, notes: notes.trim() },
+          answers: { ...answers, haveSmsf: haveAnswer, notes: notes.trim() },
           workMode: modeLabel,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
@@ -285,7 +286,7 @@ export default function SmsfQuestionnaire() {
   const stepNumber = stepIdx + 1;
   const ready =
     step.kind === "cat" ? Boolean(sel?.ids.length)
-      : step.kind === "qualify" ? Boolean(have && when)
+      : step.kind === "qualify" ? Boolean(haveAnswer)
         : step.kind === "mode" ? Boolean(mode)
           : step.kind === "location" ? Boolean(place)
             : step.kind === "phone" ? MOBILE.test(cleanPhone(phone))
@@ -328,6 +329,7 @@ export default function SmsfQuestionnaire() {
                 )}
                 {bodyKind === "qualify" && (
                   <StepHead eyebrow={Q.qualify.eyebrow} title={Q.qualify.title} icon={<Doc width={26} height={26} />}>
+                    {!settingUp && (
                     <div className="space-y-2">
                       <h4 className="text-[1.05rem] font-bold text-navy-900">{Q.qualify.have}</h4>
                       <div role="radiogroup" aria-label={Q.qualify.have} className="grid gap-2.5 sm:grid-cols-3">
@@ -336,14 +338,8 @@ export default function SmsfQuestionnaire() {
                         ))}
                       </div>
                     </div>
-                    <div className="space-y-2">
-                      <h4 className="text-[1.05rem] font-bold text-navy-900">{Q.qualify.when}</h4>
-                      <div role="radiogroup" aria-label={Q.qualify.when} className="grid gap-2.5 sm:grid-cols-3">
-                        {SMSF_WHEN.map((o) => (
-                          <ChoiceCard key={o.id} checked={when === o.id} onSelect={() => { setWhen(o.id); setError(null); }} label={o.label} warn={Boolean(error) && Boolean(have) && !when} />
-                        ))}
-                      </div>
-                    </div>
+                    )}
+                    {/* ("When do you need help?" removed, owner 8 Oct 2026) */}
                     <NoteField label={Q.qualify.noteLabel} value={notes} onChange={setNotes} placeholder={Q.qualify.notePlaceholder} rows={2} />
                   </StepHead>
                 )}
