@@ -28,7 +28,7 @@ import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
 import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
-import { ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS } from "@/content/how-it-works";
+import { ONE_MATCH_BUTTON, ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS } from "@/content/how-it-works";
 
 type N = Exclude<Node, { t: "sec" }>;
 const SHARED_MATCH_CARD = getHomeMatchCard();
@@ -129,7 +129,12 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
       const pIdx = s.nodes.findIndex((n) => n.t === "p");
       // the old "free matching and referral service" paragraph gives way to the owner's three paragraphs (7 Oct 2026)
       const after = (pIdx === -1 ? [] : s.nodes.slice(pIdx + 1)).flatMap((n) =>
-        n.t === "p" && ONE_MATCH_OLD_START.test(n.text) ? ONE_MATCH_PARAGRAPHS.map((t) => ({ ...n, html: t, text: t })) : [n],
+        n.t === "p" && ONE_MATCH_OLD_START.test(n.text)
+          ? ONE_MATCH_PARAGRAPHS.map((t, k) => ({ ...n, html: k === ONE_MATCH_PARAGRAPHS.length - 1 ? `<strong>${t}</strong>` : t, text: t }))
+          // the button under it (owner, 7 Oct 2026): "Find My Accountant" renamed
+          : (n.t === "link" || n.t === "button") && n.text === "Find My Accountant"
+            ? [{ ...n, text: ONE_MATCH_BUTTON, html: ONE_MATCH_BUTTON, parts: [ONE_MATCH_BUTTON], lines: [ONE_MATCH_BUTTON] }]
+            : [n],
       );
       if (toBlocks(after).length === 0) return;
       rendered.push(<SectionView key={`${s.id}-${i}-after`} section={{ ...s, nodes: after }} index={shown} seed={i * 3} home={false} />);

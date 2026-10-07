@@ -7,3 +7,6 @@ export const ONE_MATCH_PARAGRAPHS = [
   "Your enquiry goes directly to your matched accounting firm — never to multiple accountants. From there, your accountant works directly with you to provide the accounting and taxation services you need.",
   "One enquiry. One matched accountant. No shopping around.",
 ];
+
+// The button under those paragraphs (owner, 7 Oct 2026). Old: "Find My Accountant". The last paragraph is shown in bold.
+export const ONE_MATCH_BUTTON = "Meet my match";

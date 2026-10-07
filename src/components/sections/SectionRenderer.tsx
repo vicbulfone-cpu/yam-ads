@@ -32,7 +32,7 @@ type Block =
   | { k: "img"; src: string; alt: string }
   | { k: "linkcards"; cards: { href: string; nodes: N[] }[] };
 
-const CTA_RX = /find my accountant|get match|start my match|start matching/i;
+const CTA_RX = /find my accountant|get match|start my match|start matching|meet my match/i;
 const isUpper = (s: string) => s.length > 2 && s === s.toUpperCase() && /[A-Z]/.test(s) && s.split(" ").length <= 7;
 const onlyAnchors = (html: string) => /^(\s*<a href="[^"]*">[^<]*<\/a>\s*)+$/.test(html);
 const anchorsOf = (html: string) => [...html.matchAll(/<a href="([^"]*)">([^<]*)<\/a>/g)].map((m) => ({ href: m[1], text: m[2] }));
