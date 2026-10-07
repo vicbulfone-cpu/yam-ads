@@ -13,14 +13,9 @@ export type HowStep = { title: string; html: string };
  */
 export default function HowItWorksSteps({ steps }: { steps: HowStep[] }) {
   return (
-    // laptops/desktops (owner, 7 Oct 2026): the whole section 5cm higher, into the empty space under the intro beside the
-    // match box.
-    // The grey background starts where the hero ends, so the hero and its match box are never covered, and the section
-    // ignores clicks except on the steps and the bar, so the match box stays usable.
-    <section aria-label="How it works, step by step" className="relative overflow-hidden pt-12 md:pt-16 lg:pointer-events-none lg:-mt-[5cm] lg:pt-[clamp(4rem,5vw,7rem)]">
-      <div aria-hidden className="absolute inset-x-0 bottom-0 top-0 bg-[#f7f9fb] lg:top-[5cm]" />
+    <section aria-label="How it works, step by step" className="relative overflow-hidden bg-[#f7f9fb] pt-12 md:pt-16 lg:pt-[clamp(4rem,5vw,7rem)]">
       {/* soft green and navy glows behind the steps */}
-      <div aria-hidden className="pointer-events-none absolute -left-40 top-10 h-[28rem] w-[28rem] rounded-full bg-green-500/[0.07] blur-3xl lg:top-[calc(5cm+2.5rem)]" />
+      <div aria-hidden className="pointer-events-none absolute -left-40 top-10 h-[28rem] w-[28rem] rounded-full bg-green-500/[0.07] blur-3xl" />
       <div aria-hidden className="pointer-events-none absolute -right-40 bottom-40 h-[30rem] w-[30rem] rounded-full bg-navy-900/[0.06] blur-3xl" />
 
       <div className="container-page relative">
@@ -35,7 +30,7 @@ export default function HowItWorksSteps({ steps }: { steps: HowStep[] }) {
           </p>
         </div>
 
-        <ol className="hiw-steps relative mt-10 lg:pointer-events-auto lg:mt-[clamp(3rem,4vw,5.5rem)]">
+        <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)]">
           {steps.map((s, i) => {
             const home = HOME_STEPS[i];
             const flip = i % 2 === 1;
@@ -85,7 +80,7 @@ export default function HowItWorksSteps({ steps }: { steps: HowStep[] }) {
         </ol>
       </div>
 
-      <div className="relative mt-12 lg:pointer-events-auto lg:mt-[clamp(3rem,4vw,5rem)]">
+      <div className="mt-12 lg:mt-[clamp(3rem,4vw,5rem)]">
         <StartBar />
       </div>
     </section>

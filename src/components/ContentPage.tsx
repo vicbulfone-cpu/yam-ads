@@ -188,8 +188,9 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
             showTrust={false}
           />
         ) : (
-          // the Privacy page has no match box: its statement starts straight under "Last updated" (owner, 6 Oct 2026)
-          <PageHero parts={parts} card={path === "/privacy" ? null : card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
+          // the Privacy page has no match box: its statement starts straight under "Last updated" (owner, 6 Oct 2026);
+          // nor has How It Works (owner, 7 Oct 2026)
+          <PageHero parts={parts} card={path === "/privacy" || isHowItWorks ? null : card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
         )}
         {/* home and city pages: the page's own introduction and trust points sit straight under the hero */}
         {(isHome || (isCity && image && rewritten)) && (parts.lead.length > 0 || parts.chips.length > 0) && (
