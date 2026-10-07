@@ -14,7 +14,7 @@ export type HowStep = { title: string; html: string };
  */
 /** `crumbs`: on /how-it-works this section opens the page (owner, 7 Oct 2026: the old hero removed), so it carries the
  *  breadcrumb and its heading is the page's H1. */
-export default function HowItWorksSteps({ steps, crumbs }: { steps: HowStep[]; crumbs?: { label: string; href?: string }[] }) {
+export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowStep[]; crumbs?: { label: string; href?: string }[]; /** the page's own intro paragraph (HTML), shown under the heading */ intro?: string }) {
   const Heading = crumbs ? "h1" : "p";
   return (
     <section aria-label="How it works, step by step" className="relative overflow-hidden bg-[#f7f9fb] pt-12 md:pt-16 lg:pt-[clamp(4rem,5vw,7rem)]">
@@ -40,10 +40,13 @@ export default function HowItWorksSteps({ steps, crumbs }: { steps: HowStep[]; c
             <span className="block text-navy-900">How does it work?</span>{" "}
             <span className="block text-green-700">Finding your accountant is easy</span>
           </Heading>
+          {/* intro to the three steps (owner, 7 Oct 2026): the page's own intro, moved here when the old hero was removed */}
+          {intro && <Html html={intro} className="mt-5 max-w-[46rem] text-[1.05rem] leading-relaxed text-navy-900/85 lg:mt-[1.4vw] lg:text-[clamp(1.05rem,1.2vw,1.6rem)]" />}
         </div>
 
-        {/* desktops (owner, 7 Oct 2026): the three step boxes at 75% of their size (everything in them scales together) */}
-        <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
+        {/* desktops (owner, 7 Oct 2026): the three step boxes at 75% of their size (everything in them scales together),
+            centred on the page */}
+        <ol className="hiw-steps relative mt-10 lg:mx-auto lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
           {steps.map((s, i) => {
             const home = HOME_STEPS[i];
             const flip = i % 2 === 1;

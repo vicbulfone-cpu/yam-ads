@@ -124,7 +124,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
   rest2.forEach((s, i) => {
     if (i === ctaIdx) return;
     if (stepIdx.includes(i)) {
-      if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} crumbs={parts.crumbs} />); shown++; }
+      if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} crumbs={parts.crumbs} intro={parts.lead[0]} />); shown++; }
       // anything after the step's own paragraph (e.g. "One match, by postcode") keeps its usual layout
       const pIdx = s.nodes.findIndex((n) => n.t === "p");
       // the old "free matching and referral service" paragraph gives way to the owner's three paragraphs (7 Oct 2026)
