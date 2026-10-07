@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { QUESTIONNAIRE_URL } from "@/config/site.config";
+import { ABOUT_POPUP } from "@/content/about-popup";
 import HeroGap from "./HeroGap";
 import StartBar from "./StartBar";
 
@@ -137,10 +138,12 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:translate-x-[1cm] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
               Your needs. Your area. Your accountant.
             </p>
-            <p className="mt-3 max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:mt-[0.8vw] lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]">
-              We take the guesswork out of finding an accountant. Tell us your postcode and what you need help with, and we
-              connect you with one local accountant from our Australia-wide partner network.
-            </p>
+            {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts) */}
+            {ABOUT_POPUP.expertise.paragraphs.map((p, i) => (
+              <p key={p} className={`${i === 0 ? "mt-3 lg:mt-[0.8vw]" : "mt-2.5 lg:mt-[0.6vw]"} max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]`}>
+                {p}
+              </p>
+            ))}
             <div className="mt-6 inline-flex flex-col items-center lg:mt-[1.8vw]">
               <Link href={startHref} className="btn btn-primary min-w-[16rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(16rem,22vw,32rem)]">
                 Get Matched Now <ArrowRight />
