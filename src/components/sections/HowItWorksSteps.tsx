@@ -23,8 +23,9 @@ export default function HowItWorksSteps({ steps, crumbs }: { steps: HowStep[]; c
       <div aria-hidden className="pointer-events-none absolute -right-40 bottom-40 h-[30rem] w-[30rem] rounded-full bg-navy-900/[0.06] blur-3xl" />
 
       <div className="container-page relative">
+        {/* breadcrumb: 1.5cm higher (1cm on phones, so it stays clear of the top bar); the heading below stays where it was (owner, 7 Oct 2026) */}
         {crumbs && crumbs.length > 0 && (
-          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-x-2 text-sm font-medium text-muted md:mb-8">
+          <nav aria-label="Breadcrumb" className="-mt-[1cm] mb-[calc(1.5rem+1cm)] md:-mt-[1.5cm] flex flex-wrap items-center gap-x-2 text-sm font-medium text-muted md:mb-[calc(2rem+1.5cm)]">
             {crumbs.map((c, i) => (
               <span key={i} className="flex items-center gap-2">
                 {i > 0 && <span aria-hidden className="text-line">/</span>}
