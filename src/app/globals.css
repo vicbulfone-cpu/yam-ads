@@ -784,16 +784,17 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .desk-hero-photo { position: absolute; bottom: 0; left: 0; height: 100%; aspect-ratio: 1983 / 793; transform: translateX(calc((100vw - 100%) * 0.09)); }
 /* Home "A local accountant. A better match." photo: a very slight 16px fade into the white at its top (owner, 6 Oct 2026:
    the earlier 48px fade was too much), none at the bottom; laptops and desktops show the whole photo height
-   (right-aligned, so it starts ~23% in from the frame's left) and fade its left side into the words (both fades combined) */
+   (right-aligned, so it starts ~23% in from the frame's left) and fade its left side into the words (both fades combined);
+   owner, 7 Oct 2026: the left fade starts 2cm further left (same length), showing 2cm more of the photo */
 .intro-photo {
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
 }
 @media (min-width: 1024px) {
   .intro-photo {
-    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent calc(23% - 2cm), rgba(0, 0, 0, .55) calc(36% - 2cm), #000 calc(54% - 2cm)), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent 0, transparent 23%, rgba(0, 0, 0, .55) 36%, #000 54%), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
+    mask-image: linear-gradient(to right, transparent 0, transparent calc(23% - 2cm), rgba(0, 0, 0, .55) calc(36% - 2cm), #000 calc(54% - 2cm)), linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, #000 16px);
     mask-composite: intersect;
   }
 }
