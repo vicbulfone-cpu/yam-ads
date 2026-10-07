@@ -91,7 +91,7 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
         <ol className="hiw-steps relative mt-10 lg:mt-[clamp(3rem,4vw,5.5rem)] lg:w-[75%] lg:[zoom:0.75]">
           {steps.map((s, i) => {
             const home = HOME_STEPS[i];
-            const flip = i % 2 === 1;
+            const flip = false; // picture on the left in every box (owner, 8 Oct 2026; step 2 used to have it on the right)
             return (
               <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
                 {/* boxes 1cm further apart (owner, 7 Oct 2026; 1.333cm on desktops, where the list is drawn at 75%) */}
