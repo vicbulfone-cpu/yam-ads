@@ -95,8 +95,8 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
             const home = HOME_STEPS[i];
             const flip = false; // picture on the left in every box (owner, 8 Oct 2026; step 2 used to have it on the right)
             return (
-              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+3cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+4cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
-                {/* boxes 1cm further apart (owner, 7 Oct 2026), then 2cm more (8 Oct 2026); desktop figures are 4/3 bigger as the list is drawn at 75% */}
+              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
+                {/* boxes 1cm further apart (owner, 7 Oct 2026; 1.333cm on desktops, where the list is drawn at 75%) */}
                 {/* step rail (owner, 7 Oct 2026): a "STEP 1/2/3" tag per step, joined by a dashed line; phones show the tag above
                     its box. Tag restyled and 30% bigger (owner, 7 Oct 2026): white pill, navy "STEP", number in a green disc. */}
                 <div aria-hidden className="mb-3 sm:absolute sm:left-0 sm:top-0 sm:mb-0 sm:flex sm:w-32 sm:justify-center lg:w-[clamp(9.1rem,9.9vw,12.35rem)]">
@@ -159,19 +159,6 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                     })()}
                   </div>
                 </article>
-                {/* arrow in the gap, centred under the box, pointing down to the next step (owner, 8 Oct 2026) */}
-                {i < steps.length - 1 && (
-                  <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 right-0 flex h-[calc(2.5rem+3cm)] items-center justify-center sm:left-36 lg:left-[clamp(11rem,12.3vw,15.5rem)] lg:h-[calc(clamp(3rem,4vw,5rem)+4cm)]">
-                    <span className="grid h-14 w-14 place-items-center rounded-full bg-white text-green-700 shadow-[0_14px_28px_-12px_rgba(7,50,101,0.45)] ring-1 ring-navy-900/10 lg:h-[clamp(4.5rem,5vw,6rem)] lg:w-[clamp(4.5rem,5vw,6rem)]">
-                      <span className="grid h-[78%] w-[78%] place-items-center rounded-full bg-gradient-to-b from-[#129a44] to-[#08602a] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="h-[48%] w-[48%]">
-                          <path d="M12 4v15" />
-                          <path d="M6 13l6 6 6-6" />
-                        </svg>
-                      </span>
-                    </span>
-                  </div>
-                )}
               </li>
             );
           })}
