@@ -18,7 +18,7 @@ import PhoneFit from "../ui/PhoneFit";
  * The SMSF & wealth questionnaire (SMSF ad page /ad-3). Same popup, progress header and option cards as the business
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's SMSF questions:
  *   one page per ticked category → a few quick questions (SMSF now? when? optional note) → name → summary (confirm) →
- *   in person or remote → postcode/suburb → 9-second search → "great news" box asking for email → mobile →
+ *   in person or remote → postcode/suburb → 11-second search → "great news" box asking for email → mobile →
  *   email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the SMSF match box (OPEN_SMSF_QUESTIONNAIRE).
  */
@@ -205,7 +205,7 @@ export default function SmsfQuestionnaire() {
         setError(null);
         setSearching(true);
         // a short pause while we "look", then the good-news box asks for the email address
-        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 9000); // 9 seconds (owner, 7 Oct 2026: 7, then 2 more)
+        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 11000); // 11 seconds (owner, 7 Oct 2026: 7, then 2 more, then 2 more)
         return;
       case "email":
         if (!EMAIL.test(email.trim())) return setError(Q.errors.email);
@@ -405,7 +405,7 @@ export default function SmsfQuestionnaire() {
             </div>
           </div>
 
-          {/* 9-second search after the postcode */}
+          {/* 11-second search after the postcode */}
           {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
           {matching && <MatchSearching firstName={firstName} />}
 

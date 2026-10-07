@@ -111,7 +111,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .bq-radar::after { animation-delay: 0.8s; }
 @keyframes bq-ping { from { transform: scale(1); opacity: 0.8; } to { transform: scale(2.1); opacity: 0; } }
 .bq-search-bar { display: block; height: 6px; margin-top: 1.4rem; overflow: hidden; border-radius: 999px; background: var(--green-50); }
-.bq-search-bar span { display: block; height: 100%; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--green-500), var(--navy-700)); transform-origin: left; animation: bq-fill 9s linear forwards; }
+.bq-search-bar span { display: block; height: 100%; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--green-500), var(--navy-700)); transform-origin: left; animation: bq-fill 11s linear forwards; }
 @keyframes bq-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 /* 5-second "searching for your match" screen after the last question (MatchSearching in QuestionnaireParts.tsx) */
 .bq-matching { max-width: 29rem; }

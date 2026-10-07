@@ -18,7 +18,7 @@ import PhoneFit from "../ui/PhoneFit";
  * The registration questionnaire (registration ad page /ad-4). Same popup, progress header and option cards as the
  * business and SMSF questionnaires, with the owner's registration questions (6 Oct 2026):
  *   one page per ticked category (exact requirements) → new or existing business? (+ optional note) → name →
- *   summary (confirm) → in person or remote → postcode/suburb → 9-second search → "great news" box asking for email →
+ *   summary (confirm) → in person or remote → postcode/suburb → 11-second search → "great news" box asking for email →
  *   mobile → email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the registration match box (OPEN_REG_QUESTIONNAIRE).
  */
@@ -197,7 +197,7 @@ export default function RegistrationQuestionnaire() {
         setError(null);
         setSearching(true);
         // a short pause while we "look", then the good-news box asks for the email address
-        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 9000); // 9 seconds (owner, 7 Oct 2026: 7, then 2 more)
+        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 11000); // 11 seconds (owner, 7 Oct 2026: 7, then 2 more, then 2 more)
         return;
       case "email":
         if (!EMAIL.test(email.trim())) return setError(Q.errors.email);
@@ -386,7 +386,7 @@ export default function RegistrationQuestionnaire() {
             </div>
           </div>
 
-          {/* 9-second search after the postcode */}
+          {/* 11-second search after the postcode */}
           {/* after the last question: 5 seconds of "John, we are now searching…" until the match page opens */}
           {matching && <MatchSearching firstName={firstName} />}
 

@@ -34,7 +34,7 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
  *     Business (Ad 1): one page per ticked category
  *     SMSF (Ad 3): one page per ticked category → the two quick questions
  *     Registrations (Ad 4): one page per ticked category → new or existing business?
- *   → name → summary (Change links) → in person or remote → postcode/suburb → 9-second search → email → mobile →
+ *   → name → summary (Change links) → in person or remote → postcode/suburb → 11-second search → email → mobile →
  *   email my match details? → match page (/match).
  * Leads from here send no adType, so they stay "Organic" (the postcode owner gets them).
  * Links carrying ?service=… (the site box's Start) skip the box; other CTAs show the box first.
@@ -379,7 +379,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         clear();
         setSearching(true);
         // a short pause while we "look", then the good-news box asks for the email address
-        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 9000); // 9 seconds (owner, 7 Oct 2026: 7, then 2 more)
+        window.setTimeout(() => { setSearching(false); setStepIdx((i) => i + 1); }, 11000); // 11 seconds (owner, 7 Oct 2026: 7, then 2 more, then 2 more)
         return;
       case "email":
         if (!EMAIL.test(email.trim())) return setError(Q.errors.email);
@@ -742,7 +742,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
             </>
           )}
 
-          {/* 9-second search after the postcode */}
+          {/* 11-second search after the postcode */}
           {searching && place && (
             <div className="q-leave" role="status" aria-live="polite">
               <div className="q-leave-box bq-search">
