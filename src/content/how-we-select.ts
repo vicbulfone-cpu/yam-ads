@@ -33,7 +33,7 @@ export const howWeSelect = {
     },
     {
       n: 5,
-      title: "Professional indemnity insurance checked where applicable",
+      title: "Professional indemnity insurance checked",
       body: "Where professional indemnity insurance is applicable to the accountant's services or registration, we request confirmation of appropriate cover. Requirements may vary according to the accountant's registrations, professional memberships and the services they provide. Accountants remain responsible for maintaining any insurance required for their business and professional activities.",
       image: "general-calculator-desk",
     },
