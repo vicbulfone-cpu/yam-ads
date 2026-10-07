@@ -226,7 +226,7 @@ export const BIZ_Q = {
     title: "Hi, what is your name please",
     label: "Your name",
     /** light grey hint inside the box (owner, 7 Oct 2026) */
-    placeholder: "First name only? Sure, that’s fine.",
+    placeholder: "First name only, that’s fine",
   },
   emailMe: {
     eyebrow: "Last step",

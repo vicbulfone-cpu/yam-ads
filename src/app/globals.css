@@ -1720,3 +1720,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* "Start here" panel, laptops/desktops (owner, 7 Oct 2026): the line, the three points and "Let's get started" with its
    arrow 6mm lower; the label and headline stay put */
 @media (min-width: 1024px) { .start-here-line, .start-here-points, .start-here-go { position: relative; top: 6mm; } }
+/* questionnaire pages, laptops/desktops (owner, 7 Oct 2026): every page is drawn to fit (PhoneFit.tsx), never scrolled */
+@media (min-width: 1024px) {
+  .q-modal-body[data-bg="biz"]:not(.q-scroll) { overflow: hidden; }
+  .q-fit { transform-origin: top left; }
+}

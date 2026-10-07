@@ -304,8 +304,8 @@ export default function RegistrationQuestionnaire() {
             </button>
           </div>
 
-          <div ref={scrollRef} data-bg="biz" className="q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain">
-            <PhoneFit>
+          <div ref={scrollRef} data-bg="biz" className={`q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain${step.kind === "summary" ? " q-scroll" : ""}`}>
+            <PhoneFit desktop={step.kind !== "summary"}>
             <AdProgress stepNumber={stepNumber} total={total} badge={Q.badge} stepOf={Q.stepOf} kind={step.kind} />
             <form
               className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
