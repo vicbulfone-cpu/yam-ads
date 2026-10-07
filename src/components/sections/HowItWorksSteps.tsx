@@ -42,21 +42,24 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
             const home = HOME_STEPS[i];
             const flip = i % 2 === 1;
             return (
-              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-28 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(8.5rem,9.5vw,12rem)]">
+              <li key={s.title} className="hiw-step relative pb-[calc(2.5rem+1cm)] last:pb-0 sm:pl-36 lg:pb-[calc(clamp(3rem,4vw,5rem)+1.333cm)] lg:pl-[clamp(11rem,12.3vw,15.5rem)]">
                 {/* boxes 1cm further apart (owner, 7 Oct 2026; 1.333cm on desktops, where the list is drawn at 75%) */}
-                {/* step rail (owner, 7 Oct 2026): a green "STEP 1/2/3" pill per step (in place of the numbered discs and the
-                    pills that sat on the photos), joined by a dashed line; phones show the pill above its box */}
-                <div aria-hidden className="mb-3 sm:absolute sm:left-0 sm:top-0 sm:mb-0 sm:flex sm:w-24 sm:justify-center lg:w-[clamp(7rem,7.6vw,9.5rem)]">
-                  <span className="step-badge sm:[zoom:1.15] lg:[zoom:1.5]">
-                    <span className="step-badge-word">Step</span>
-                    <span className="step-badge-num">{i + 1}</span>
+                {/* step rail (owner, 7 Oct 2026): a "STEP 1/2/3" tag per step, joined by a dashed line; phones show the tag above
+                    its box. Tag restyled and 30% bigger (owner, 7 Oct 2026): white pill, navy "STEP", number in a green disc. */}
+                <div aria-hidden className="mb-3 sm:absolute sm:left-0 sm:top-0 sm:mb-0 sm:flex sm:w-32 sm:justify-center lg:w-[clamp(9.1rem,9.9vw,12.35rem)]">
+                  <span className="inline-flex items-center gap-2.5 rounded-full bg-white py-1 pl-4 pr-1 shadow-[0_10px_24px_-14px_rgba(7,50,101,0.55)] ring-1 ring-navy-900/12 sm:[zoom:1.15] lg:[zoom:1.5]">
+                    <span className="font-sans text-[0.875rem] font-bold uppercase leading-none tracking-[0.2em] text-navy-900">Step</span>
+                    <span className="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-br from-[#0e8a3a] to-[#08602a] font-sans text-[0.95rem] font-extrabold leading-none text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
+                      {i + 1}
+                    </span>
                   </span>
                 </div>
                 {i < steps.length - 1 && (
-                  <span aria-hidden className="absolute bottom-0 top-12 hidden w-0 border-l-2 border-dashed border-green-700/35 sm:left-12 sm:block lg:left-[clamp(3.5rem,3.8vw,4.75rem)] lg:top-[clamp(4rem,4.4vw,5.75rem)]" />
+                  <span aria-hidden className="absolute bottom-0 hidden w-0 border-l-2 border-dashed border-green-700/35 sm:left-16 sm:top-16 sm:block lg:left-[clamp(4.55rem,4.95vw,6.175rem)] lg:top-[clamp(5.5rem,6vw,7.75rem)]" />
                 )}
 
-                <article className="hiw-card group grid overflow-hidden rounded-[1.4rem] border border-navy-900/10 bg-white shadow-[0_24px_50px_-30px_rgba(7,50,101,0.45)] transition duration-300 hoverable:hover:-translate-y-1 hoverable:hover:shadow-[0_30px_60px_-28px_rgba(7,50,101,0.5)] md:grid-cols-[0.85fr_1.15fr]">
+                {/* no hover effect (owner, 7 Oct 2026); the words always get the wider column, so "We match you by area" fits on one line */}
+                <article className={`hiw-card grid overflow-hidden rounded-[1.4rem] border border-navy-900/10 bg-white shadow-[0_24px_50px_-30px_rgba(7,50,101,0.45)] ${flip ? "md:grid-cols-[1.15fr_0.85fr]" : "md:grid-cols-[0.85fr_1.15fr]"}`}>
                   {home && (
                     <div className={`relative aspect-[16/9] overflow-hidden bg-white md:aspect-auto md:min-h-[17rem] ${flip ? "md:order-2" : ""}`}>
                       <Image
@@ -72,14 +75,12 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                   )}
                   {/* desktops (owner, 7 Oct 2026): the words in the step boxes at 140% of their earlier size */}
                   <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-[clamp(2rem,2.8vw,3.75rem)]">
-                    <h2 className="font-sans text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em] text-navy-900 sm:text-[1.75rem] lg:text-[clamp(2.45rem,2.8vw,3.85rem)]">
+                    <h2 className="font-sans text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em] text-navy-900 sm:text-[1.75rem] md:text-[1.5rem] lg:text-[clamp(2.45rem,2.8vw,3.85rem)]">
                       {s.title}
                     </h2>
                     {home && (
-                      <p className="mt-3 flex items-start gap-2.5 text-[1.05rem] font-bold leading-snug text-green-700 lg:text-[clamp(1.47rem,1.68vw,2.24rem)]">
-                        <span aria-hidden className="mt-[0.55em] h-[3px] w-6 shrink-0 rounded-full bg-green-600" />
-                        {home.text}
-                      </p>
+                      // (the short green line before these words removed, owner 7 Oct 2026: they line up with the paragraph)
+                      <p className="mt-3 text-[1.05rem] font-bold leading-snug text-green-700 lg:text-[clamp(1.47rem,1.68vw,2.24rem)]">{home.text}</p>
                     )}
                     <Html html={s.html} className="mt-4 text-[1rem] leading-[1.65] text-body lg:text-[clamp(1.4rem,1.54vw,2.03rem)]" />
                   </div>
