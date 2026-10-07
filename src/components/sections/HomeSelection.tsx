@@ -53,8 +53,8 @@ export default function HomeSelection() {
           </ul>
 
           <p className="sel-note">
-            <strong>Matching is free. Accountant fees are agreed separately.</strong>{" "}
-            Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm.
+            <strong>Matching is free.</strong>{" "}
+            Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm. Accountant fees are agreed separately.
           </p>
         </div>
       </div>

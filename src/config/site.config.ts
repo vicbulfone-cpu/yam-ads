@@ -53,6 +53,10 @@ export const deskHeroPicture = { src: "/images/hero/desk-v7-1983.webp", width: 1
 /** Home page hero on phones only (below 768px). Built from "hero section/mobile hero.png" by scripts/make-home-assets.mjs. */
 /** Home page hero on tablets, laptops and desktops (768px and wider; owner, 4 Oct 2026). "hero no writing.png" from hero section. */
 export const homeDeskHeroPicture = { src: "/images/hero/hero-no-writing.png", width: 1983, height: 793 };
+/** Home page hero only (owner, 7 Oct 2026): the same photo with its green arrow removed, and the arrow as its own
+ *  cut-out laid back on top (left/top = its place in the 1983 x 793 photo), so the arrow can be moved with the handwriting. */
+export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png", width: 1983, height: 793 };
+export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
 /** Earlier hero pictures (no longer shown on the home or city pages; kept so they can be reused). */

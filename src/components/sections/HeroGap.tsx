@@ -20,7 +20,7 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       const pic = document.querySelector(".desk-hero-img");
       const box = document.querySelector(".desk-hero-card .mc");
       // the bar under the hero photo counts too (owner, 6 Oct 2026: content moves down to make room for it)
-      const bar = document.querySelector<HTMLElement>(".hero-bar");
+      const bar = document.querySelector<HTMLElement>(".desk-hero .hero-bar"); // the home hero bar only (ad pages place theirs in AdGap.tsx)
       bar?.style.removeProperty("--hb-clear");
       bar?.classList.remove("hb-mid");
       if (window.innerWidth < 1024 || !pic || !box) return;

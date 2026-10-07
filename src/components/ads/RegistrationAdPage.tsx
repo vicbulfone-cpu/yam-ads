@@ -5,7 +5,9 @@
 // Styles: ".rz-" (on top of ".sz-" and ".bz-") in ads.css.
 import Image from "next/image";
 import { Fragment } from "react";
-import { homeDeskHeroPicture } from "@/config/site.config";
+import { homeDeskHeroNoArrowPicture } from "@/config/site.config";
+import { AdHeroArrow, AdHeroBar } from "./AdHeroParts";
+import HomeStepsFit from "../sections/HomeStepsFit";
 import { REG_LANDING as L } from "@/content/registration-questionnaire";
 import { ArrowRight } from "../ui/Icons";
 import { AdFooter, AdHeader } from "./AdChrome";
@@ -28,9 +30,12 @@ export default function RegistrationAdPage() {
         <div className="bz-hero">
         {/* the desk photograph at the home page's height and shape, so the handwriting lines up with its arrow */}
         <div aria-hidden className="bz-photo">
-          <Image src={homeDeskHeroPicture.src} alt="" width={homeDeskHeroPicture.width} height={homeDeskHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
+          <Image src={homeDeskHeroNoArrowPicture.src} alt="" width={homeDeskHeroNoArrowPicture.width} height={homeDeskHeroNoArrowPicture.height} priority sizes="100vw" className="h-auto w-full" />
+          <AdHeroArrow />
           <p className="bz-script bz-script-biz fade-behind">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
         </div>
+        {/* tablets and up: the home page navy bar under the photo (owner, 7 Oct 2026) */}
+        <AdHeroBar />
 
         <div className="bz-wrap bz-grid bz-grid-wide sz-grid">
           <div className="bz-text">
@@ -53,6 +58,7 @@ export default function RegistrationAdPage() {
                 <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
               ))}
             </ol>
+            <HomeStepsFit />
           </div>
         </div>
         </div>

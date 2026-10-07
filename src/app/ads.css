@@ -80,7 +80,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 /* ...and the space that saves is given back below the heading, so the box stays the home box's size */
 @media (min-width: 768px) { .bz-card .mc-head { padding-bottom: calc(clamp(1.05rem, calc(var(--u) * 4.6), 2.1rem) + var(--u) * 2.35); } }
 /* 1cm taller, as the home page box (1.25mm more above and below each row) */
-.bz-card-col .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+.bz-card-col .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm - 0.15cm); }
 .bz-tile { flex: none; display: grid; place-items: center; width: 3.25rem; aspect-ratio: 1; border-radius: 0.8rem; }
 .bz-tile svg { width: 56%; height: auto; }
 .bz-tile.is-blue { background: #e4effe; color: #1f6ff2; }
@@ -390,3 +390,186 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .bz-page .home-v2 > section:first-child { margin-top: var(--ad-gap, 0px); } /* set by AdGap.tsx on laptops/desktops */
 /* the hero sits above "How it works" and only trims sideways, so the match box's soft shadow is not cut off below it */
 .bz-page .bz-hero { position: relative; z-index: 1; overflow-x: clip; overflow-y: visible; }
+/* Laptops and desktops (owner, 7 Oct 2026): the match box, headline and words under it sit exactly where they are on the
+   home page: the box 1.5cm to the right; the headline's left edge on the home headline's (the page edge + 1.8cm from
+   1200px, + 3.3cm below that) and its top on the home headline's (the steps move up with it) */
+@media (min-width: 1024px) {
+  .bz-card-col { translate: calc(1.5cm - 6mm - 1.2mm) 0; } /* same as the home box */
+  .bz-text, .bz-more { padding-left: 1.8cm; position: relative; top: calc(clamp(1.9rem, 3vw, 3.75rem) - clamp(1.5rem, 2.6vw, 3.4rem) - 22.8px); }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .bz-text, .bz-more { padding-left: 3.3cm; }
+  .bz-steps { flex-wrap: wrap; white-space: normal; } /* the steps wrap so they never run under the match box */
+}
+
+/* =====================================================================================
+   AD HERO = HOME HERO (owner, 7 Oct 2026: "make all ad pages hero section look like home page, do not change words on ad
+   pages, desktop and tablet view only"). The ad pages keep their own words; on tablets and up their hero takes the home
+   hero's look: headline, then the line under it, then the three points, then the steps (all drawn 12.5% wider, as the
+   home words), the home sizes and spacing, the handwriting in the home style and place over the arrow (the arrow is laid
+   over the photo and sits 4mm lower, as on the home page), the home light over the photo, and the home navy bar under
+   the photo (HomeHeroBar.tsx). Phones (below 768px) are unchanged. Home rules copied: .desk-hero-* in globals.css.
+   ===================================================================================== */
+.bz-arrow { position: absolute; height: auto; pointer-events: none; }
+.bz-hero-bar { display: none; }
+@media (min-width: 768px) {
+  .bz-arrow { translate: 0 4mm; z-index: 2; }
+}
+@media (min-width: 1024px) {
+  /* the words: home order and the home 12.5% stretch (from the words' left edge, so they stay in line) */
+  .bz-page .bz-hero .bz-text { display: flex; flex-direction: column; transform: scaleX(1.125); transform-origin: 1.8cm 50%; }
+  .bz-page .bz-hero .bz-more { transform: scaleX(1.125); transform-origin: 1.8cm 50%; }
+  .bz-page .bz-hero .bz-h1 { order: 0; font-size: calc(clamp(2.3rem, 4.15vw, 4.95rem) * 0.92); line-height: 0.97; letter-spacing: -0.035em; color: var(--navy-900); }
+  .bz-page .bz-hero .bz-h1 .text-\[\#0e7a32\] { color: var(--green-700); }
+  .bz-page .bz-hero .bz-sub { order: 1; margin-top: clamp(0.4rem, 0.4vw, 0.55rem); max-width: none; font-size: clamp(1.05rem, 1.5vw, 1.85rem); line-height: 1.3; color: var(--navy-900); }
+  .bz-page .bz-hero .bz-sub-fade::before { content: none; } /* no cloud behind the line under the headline (as home) */
+  .bz-page .bz-hero .bz-points { order: 2; margin-top: clamp(0.9rem, 1.1vw, 1.4rem); margin-bottom: 0; }
+  .bz-page .bz-hero .bz-points img { width: calc(2.75rem * 0.7); height: calc(2.75rem * 0.7); }
+  .bz-page .bz-hero .bz-more { margin-top: clamp(1rem, 1.3vw, 1.6rem); }
+  .bz-page .bz-hero .bz-steps { width: fit-content; gap: 0.35rem 0.45rem; font-size: clamp(0.8rem, 0.92vw, 1.3rem); color: #0b2160; }
+  .bz-page .bz-hero .bz-steps li { gap: 0.45rem; }
+  /* the steps' cloud: the home one (the handwriting's cloud) */
+  .bz-page .bz-hero .bz-steps-shade.fade-behind::before {
+    inset: -2.6rem -12%;
+    background:
+      radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 28% 32% at 52% 38%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 24% 28% at 82% 44%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 26% 26% at 16% 62%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(18px);
+  }
+  /* the handwriting: home style and place (35.7% across and 57.14% down the photo, then 8mm lower), home cloud */
+  .bz-page .bz-hero .bz-script {
+    left: 35.7%; top: 57.14%; bottom: auto; z-index: 1;
+    transform: translate(-50%, -50%) rotate(-8deg); transform-origin: center; translate: 0 8mm;
+    font-family: var(--font-script); font-size: clamp(1.44rem, 3.6vw, 1.84rem); font-weight: 600; line-height: 0.95;
+    letter-spacing: -0.01em; text-align: center; white-space: nowrap; color: var(--navy-900); text-shadow: none;
+  }
+  .bz-page .bz-hero .bz-script span:nth-child(2) { padding-left: 0; }
+  .bz-page .bz-hero .bz-script-biz.fade-behind::before {
+    inset: -70% -35%;
+    background:
+      radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 28% 32% at 52% 38%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 24% 28% at 82% 44%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 26% 26% at 16% 62%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(18px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+    mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+  }
+  .bz-page .bz-hero .bz-script-biz.fade-behind::after { content: none; }
+  /* the photo: home fade at its top and the home light over it */
+  .bz-page .bz-hero .bz-photo { -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 26%); mask-image: linear-gradient(180deg, transparent 0, #000 26%); }
+  .bz-page .bz-hero .bz-photo::after { background: linear-gradient(180deg, rgba(255,255,255,.66) 0%, rgba(255,255,255,.5) 46%, rgba(255,255,255,.06) 68%, rgba(255,255,255,0) 100%); }
+  /* the home navy bar right under the photo; the match box lies over it */
+  .bz-hero-bar { display: block; }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .bz-page .bz-hero .bz-text, .bz-page .bz-hero .bz-more { transform-origin: 3.3cm 50%; }
+  .bz-page .bz-hero .bz-h1 { font-size: 3.5vw; }
+  .bz-page .bz-hero .bz-sub { font-size: 1.3vw; }
+}
+@media (min-width: 1536px) { .bz-page .bz-hero .bz-points img { width: calc(3.75rem * 0.7); height: calc(3.75rem * 0.7); } }
+/* the words above stay in front of the steps' cloud (each block is its own layer because of the stretch), and the
+   points' cloud stops at the bottom of the points so it never lightens the steps */
+@media (min-width: 1024px) {
+  .bz-page .bz-hero .bz-text { z-index: 2; }
+  .bz-page .bz-hero .bz-points::before { inset: -60% -12% 0; -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 0.6rem), transparent 100%); mask-image: linear-gradient(to bottom, #000 calc(100% - 0.6rem), transparent 100%); }
+}
+/* the match box stays in front of the words' clouds */
+@media (min-width: 1024px) { .bz-page .bz-hero .bz-card-col { position: relative; z-index: 3; } }
+/* Each ad headline's longest line must fit beside the match box once stretched: the home size, but never wider than
+   the words' column (--h1-k: that line's width in font sizes, measured per page; 100cqi = the column) */
+@media (min-width: 1024px) {
+  .bz-page .bz-hero .bz-text { container-type: inline-size; --h1-k: 9.6; }
+  .pz-page .bz-hero .bz-text { --h1-k: 11.25; }
+  .sz-page .bz-hero .bz-text { --h1-k: 7.2; }
+  .rz-page .bz-hero .bz-text { --h1-k: 9.8; }
+  .bz-page .bz-hero .bz-h1 { font-size: min(calc(clamp(2.3rem, 4.15vw, 4.95rem) * 0.92), calc(100cqi / (1.125 * var(--h1-k)))); }
+  /* the points' cloud lies under all the words (it is not shut in its own layer), so it never fades the line above */
+  .bz-page .bz-hero .bz-points { isolation: auto; }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .bz-page .bz-hero .bz-h1 { font-size: min(3.5vw, calc(100cqi / (1.125 * var(--h1-k)))); }
+}
+/* small laptops: the ad handwriting is longer than the home one, so it is drawn a little smaller to stay clear of the box */
+@media (min-width: 1024px) and (max-width: 1279.98px) { .bz-page .bz-hero .bz-script { font-size: 1.85vw; } }
+/* Tablets (768–1023px): the home hero's look, laid out cleanly: the words (home sizes, 12.5% wider) over the faded top of
+   the desk photo, the handwriting on its arrow below them, then the match box, then the home navy bar. As on phones, the
+   grid and the steps wrapper are unboxed (display: contents) so the parts can be put in that order. */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .bz-page .bz-hero { --tp-w: 200vw; --tp-h: calc(var(--tp-w) * 793 / 1983); display: flex; flex-direction: column; background: #fff; }
+  .bz-page .bz-hero .bz-grid, .bz-page .bz-hero .bz-more { display: contents; }
+  .bz-page .bz-hero .bz-text { order: 1; position: relative; z-index: 2; display: flex; flex-direction: column; padding: 1rem var(--gutter) 0 calc(var(--gutter) + 2.3cm);
+    transform: scaleX(1.125); transform-origin: calc(var(--gutter) + 2.3cm) 50%; container-type: inline-size; --h1-k: 9.6; }
+  .pz-page .bz-hero .bz-text { --h1-k: 11.25; }
+  .sz-page .bz-hero .bz-text { --h1-k: 7.2; }
+  .rz-page .bz-hero .bz-text { --h1-k: 9.8; }
+  .bz-page .bz-hero .bz-h1 { order: 0; font-size: min(3.4rem, calc(100cqi / (1.125 * var(--h1-k)))); line-height: 1.02; letter-spacing: -0.035em; color: var(--navy-900); }
+  .bz-page .bz-hero .bz-h1 .text-\[\#0e7a32\] { color: var(--green-700); }
+  .bz-page .bz-hero .bz-sub { order: 1; margin-top: 0.7rem; max-width: none; font-size: 1.3rem; line-height: 1.3; color: var(--navy-900); }
+  .bz-page .bz-hero .bz-sub-fade::before { content: none; }
+  .bz-page .bz-hero .bz-points { order: 2; isolation: auto; margin-top: 1.25rem; margin-bottom: 0; grid-template-columns: repeat(3, auto); justify-content: start; gap: 1.5rem 2rem; }
+  .bz-page .bz-hero .bz-points::before { inset: -60% -12% 0; -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 0.6rem), transparent 100%); mask-image: linear-gradient(to bottom, #000 calc(100% - 0.6rem), transparent 100%); }
+  .bz-page .bz-hero .bz-steps { order: 2; position: relative; z-index: 1; width: fit-content; margin-top: 1.1rem; padding-inline: 0; margin-left: calc(var(--gutter) + 2.3cm);
+    transform: scaleX(1.125); transform-origin: left center; font-size: 0.95rem; flex-wrap: wrap; white-space: normal; }
+  .bz-page .bz-hero .bz-steps-shade.fade-behind::before {
+    inset: -2.6rem -12%;
+    background:
+      radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(18px);
+  }
+  /* the photo: twice the screen width (the home tablet size), its top half behind the words, the arrow and handwriting
+     just below the steps */
+  .bz-page .bz-hero .bz-photo { order: 3; position: relative; width: var(--tp-w); margin-left: -9vw; margin-top: calc(var(--tp-h) * -0.5);
+    -webkit-mask-image: none; mask-image: none; }
+  .bz-page .bz-hero .bz-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.84) 0%, rgba(255,255,255,.72) 42%, rgba(255,255,255,.10) 58%, rgba(255,255,255,0) 70%); }
+  .bz-page .bz-hero .bz-script {
+    left: 35.7%; top: 57.14%; bottom: auto; z-index: 1;
+    transform: translate(-50%, -50%) rotate(-8deg); transform-origin: center; translate: 0 8mm;
+    font-family: var(--font-script); font-size: 1.84rem; font-weight: 600; line-height: 0.95;
+    letter-spacing: -0.01em; text-align: center; white-space: nowrap; color: var(--navy-900); text-shadow: none;
+  }
+  .bz-page .bz-hero .bz-script span:nth-child(2) { padding-left: 0; }
+  .bz-page .bz-hero .bz-script-biz.fade-behind::before {
+    inset: -70% -35%;
+    background:
+      radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(18px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+    mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+  }
+  .bz-page .bz-hero .bz-script-biz.fade-behind::after { content: none; }
+  /* the match box straight under the photo, then the navy bar */
+  .bz-page .bz-hero .bz-card-col { order: 4; position: relative; z-index: 2; margin-top: -1.5rem; padding-inline: var(--gutter); }
+  .bz-page .bz-hero .bz-card-col .mc { margin-top: 0; }
+  .bz-page .bz-hero .bz-hero-bar { display: block; order: 5; margin-top: 1.75rem; }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  /* the words wrap within 1/1.125 of the room, so once stretched they end at the right margin */
+  .bz-page .bz-hero .bz-text { padding-right: calc(var(--gutter) + (100vw - 2 * var(--gutter) - 2.3cm) * 0.125 / 1.125); }
+  .bz-page .bz-hero .bz-h1 { font-size: min(3.4rem, calc(100cqi / var(--h1-k))); }
+  .bz-page .bz-hero .bz-steps { max-width: calc((100vw - 2 * var(--gutter) - 2.3cm) / 1.125); }
+  /* the photo's top edge fades into the white under the header */
+  .bz-page .bz-hero .bz-photo { -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%); mask-image: linear-gradient(180deg, transparent 0, #000 14%); }
+}
+/* tablets: the photo never reaches up behind the page header (shorter headlines leave it higher) */
+@media (min-width: 768px) and (max-width: 1023.98px) { .bz-page .bz-hero { overflow: clip; } }
+/* the handwriting and its arrow moved down together where the ad words reach them (--hw-drop, set by AdGap.tsx) */
+@media (min-width: 1024px) {
+  .bz-page .bz-hero .bz-script { translate: 0 calc(8mm + var(--hw-drop, 0px)); }
+  .bz-page .bz-hero .bz-arrow { translate: 0 calc(4mm + var(--hw-drop, 0px)); }
+}
+/* the ad handwriting is longer than the home one: it sits 5mm higher above its arrow so the two never touch */
+@media (min-width: 1024px) { .bz-page .bz-hero .bz-script { translate: 0 calc(8mm - 5mm + var(--hw-drop, 0px)); } }
+/* laptops: the steps wrap (as on the home page) within the stretched column; where the three points sit in one row the
+   steps are sized to end under them instead (HomeStepsFit) */
+@media (min-width: 1024px) { .bz-page .bz-hero .bz-steps { flex-wrap: wrap; white-space: normal; max-width: calc(100% / 1.125); } }

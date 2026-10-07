@@ -82,7 +82,7 @@ function HomeFooter({ showAds }: { showAds?: boolean }) {
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-5 text-[0.78rem] text-muted md:flex-row md:justify-between">
           <p>&copy; Your Accountant Match. All rights reserved.</p>
-          <p>Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm.</p>
+          <p>Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm. Accountant fees are agreed separately.</p>
         </div>
       </div>
     </footer>

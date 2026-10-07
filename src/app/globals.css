@@ -558,7 +558,7 @@ a { text-underline-offset: 3px; }
   /* phones: tighten the match box so all of it fits the full-height popup with no scrolling */
   .q-modal[data-step="select"] .q-modal-body { overflow-y: auto; }
   /* phones: slightly shorter service rows inside the popup so more of the box fits without scrolling */
-  .q-modal-card .mc-row { min-height: 4.7rem; }
+  .q-modal-card .mc-row { min-height: calc(4.7rem - 0.3cm); } /* 1.2cm shorter box (owner, 7 Oct 2026) */
 }
 .q-modal-footer { box-shadow: 0 -10px 24px -18px rgba(7, 50, 101, 0.35); }
 html.q-modal-open { overflow: hidden; }
@@ -747,7 +747,9 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   }
 }
 /* same section's navy "One local accountant" badge: laptops/desktops nudge (owner, 5 Oct 2026) */
-@media (min-width: 1024px) { .intro-badge { translate: 0.5cm 0.55cm; } }
+/* the navy badge: + 5mm right (owner, 7 Oct 2026), then (tablets and up) another 5mm right and 1.2cm up with its note */
+@media (min-width: 768px) { .intro-badge { translate: 5mm -1.2cm; } }
+@media (min-width: 1024px) { .intro-badge { translate: calc(0.5cm + 5mm + 5mm) calc(0.55cm - 1.2cm); } }
 .desk-hero-photo img.desk-hero-img { transform: translateY(-0.5cm); display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); mask-image: linear-gradient(to bottom, transparent 0, #000 3.6cm); }
 @media (min-width: 1024px) {
   .desk-hero-photo { width: 100%; height: auto; transform: none; bottom: min(0px, calc((100% - 39.99vw) * 0.62)); }
@@ -862,7 +864,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* Every match box on the site has the Ad 1 page's size and position (owner, 6 Oct 2026; .bz-grid-wide / .bz-card-wide in
    ads.css): from 1200px the box column is 36.5vw wide with the text still sized from the home box's width, and the rows
    get the same extra 1.25mm above and below. */
-.mc-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+.mc-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm - 0.15cm); }
 @media (min-width: 1200px) {
   .desk-hero-grid, .mc-hero-grid { grid-template-columns: minmax(0, 1fr) calc(clamp(27rem, 36.5vw, 46rem) + var(--mc-extra-w)); }
   :is(.desk-hero-card, .mc-hero-card) .mc * { --u: calc(clamp(26rem, 31.6vw, 39.2rem) / 100 * 1.045); }
@@ -998,17 +1000,40 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .mc-foot { display: flex; align-items: center; justify-content: center; gap: clamp(0.6rem, calc(var(--u) * 2.6), 1.2rem); padding: clamp(0.55rem, calc(var(--u) * 1.8), 0.85rem) 1rem; background: #e3f8ea; color: var(--navy-900); line-height: 1.3; font-size: clamp(0.8rem, calc(var(--u) * 2.35), 1.1rem); }
 /* service rows: no boxes, a thin divider between rows (as in the picture); a selected row is tinted green */
 .mc-row { display: flex; align-items: center; gap: clamp(0.75rem, calc(var(--u) * 3.5), 1.6rem); padding: clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) clamp(0.2rem, calc(var(--u) * 0.8), 0.5rem); margin-inline: calc(-1 * clamp(0.2rem, calc(var(--u) * 0.8), 0.5rem)); border-radius: 0.9rem; cursor: pointer; transition: background-color .18s; }
+/* every match box 1.2cm shorter (owner, 7 Oct 2026): 1.5mm less above and below each of the four rows; the rules for the
+   page boxes above and below carry the same "- 0.15cm" */
+.mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) - 0.15cm); }
 .mc-row + .mc-row { border-top: 1.5px solid #e6ebf2; }
 .mc-row:hover { background: #f6f9fc; }
 /* home page hero match box (owner, 5 Oct 2026): 1cm taller, shared out as 1.25mm more space above and below each of the
    four service rows. The box sits 0.5cm higher and may come within 1mm of the screen bottom, so it fits without shrinking. */
-.desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm); }
+.desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.125cm - 0.15cm); }
 /* home page, laptops and desktops only (owner, 7 Oct 2026): the match box 0.8cm shorter (1mm less above and below each of
    the four rows; its top stays put) and the three hero icons at 70% of their size */
 @media (min-width: 1024px) {
-  .zz-phone .desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.025cm); }
+  .zz-phone .desk-hero-card .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.025cm - 0.15cm); }
   .zz-phone .desk-hero-points img { width: calc(2.75rem * 0.7); height: calc(2.75rem * 0.7); }
-  .zz-phone .desk-hero-points { top: -1cm; } /* the three points under the headline lifted 1cm (owner, 7 Oct 2026) */
+  /* the three points lifted 1cm, then 2mm back down; the steps lifted 1cm, then 4mm back down (owner, 7 Oct 2026): see below */
+  /* the white clouds behind the three points and the steps (owner, 7 Oct 2026). The steps use the same cloud as the
+     handwriting "The smarter way to find an accountant." (.hero-tagline-overlay::before). Both lines are moved with
+     "top" (not transform), so neither has a layer of its own: both clouds lie under ALL the hero words and never wash
+     any of them out. */
+  .zz-phone .desk-hero-points { transform: none; top: calc(-1cm + 2mm + 0.5cm); isolation: auto; }
+  .zz-phone .home-steps { transform: none; top: calc(-1cm + 4mm + 0.5cm); isolation: auto; width: fit-content; }
+  .zz-phone .home-steps::before {
+    inset: -2.6rem -12%;
+    background:
+      radial-gradient(ellipse 40% 44% at 30% 46%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 36% 38% at 66% 56%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 28% 32% at 52% 38%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 24% 28% at 82% 44%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 26% 26% at 16% 62%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(ellipse 58% 52% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.35) 60%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(18px);
+  }
+  /* every match box on every page the same size (owner, 7 Oct 2026): the home box's rows, plus 2mm on the whole box
+     (0.25mm more above and below each of the four rows); the box top stays where it is */
+  .zz-phone .desk-hero-card .mc-row, main :is(.mc-hero-card, .bz-card-col) .mc-row { padding-block: calc(clamp(0.65rem, calc(var(--u) * 2.2), 1.05rem) + 0.05cm - 0.15cm); }
 }
 @media (min-width: 1536px) { .zz-phone .desk-hero-points img { width: calc(3.75rem * 0.7); height: calc(3.75rem * 0.7); } }
 .mc-row.is-on { background: #eefaf2; }
@@ -1394,7 +1419,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
    The thin divider is hidden because the two lines are now far apart. */
 @media (min-width: 1024px) {
   .bar-sub-under-man .sb-div { display: none; }
-  .bar-sub-under-man .sb-sub { position: absolute; left: calc(76.86vw - 0.5cm); top: 50%; transform: translate(-50%, -50%); white-space: nowrap; }
+  .bar-sub-under-man .sb-sub { position: absolute; left: calc(76.86vw - 0.5cm + 1cm); /* + 1cm right (owner, 7 Oct 2026) */ top: 50%; transform: translate(-50%, -50%); white-space: nowrap; }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   /* small laptops: both take two short lines, so they stay well apart */
@@ -1405,3 +1430,75 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
    (owner, 6 Oct 2026); styled by .bz-steps in ads.css, moved down with the points (.desk-hero-points translateY) */
 .home-steps { margin-top: 1.1rem; transform: translateY(0.5cm); padding-inline: 0 !important; flex-wrap: wrap !important; white-space: normal !important; }
 @media (min-width: 1024px) { .home-steps { margin-top: clamp(1rem, 1.3vw, 1.6rem); gap: 0.35rem 0.45rem; font-size: clamp(0.8rem, 0.92vw, 1.3rem) !important; } .home-steps li { gap: 0.45rem; } }
+/* Home hero (owner, 7 Oct 2026): the green arrow is laid over the photo (which has its own arrow removed) and follows the
+   photo's own nudges; the arrow and the handwriting "The smarter way to find an accountant." both sit 4mm lower. */
+.hero-arrow-overlay { position: absolute; height: auto; pointer-events: none; transform: translateY(-0.5cm); translate: 0 4mm; }
+@media (min-width: 1024px) { .hero-arrow-overlay { transform: none; } }
+@media (max-width: 767px) { .zz-phone .hero-arrow-overlay { transform: none; } }
+.zz-phone .hero-tagline-overlay { translate: 0 8mm; } /* 4mm, then another 4mm down on its own (arrow stays) */
+/* Home hero (owner, 7 Oct 2026): the handwriting's white cloud stops before the mug, so it never lightens the mug's
+   "Accountant" lettering (its left side fades out over its first quarter) */
+.zz-phone .hero-tagline-overlay::before {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+  mask-image: linear-gradient(to right, transparent 0, transparent 15%, #000 26%);
+}
+/* the arrow's layer sits above the handwriting (z-index 20), so the handwriting's white cloud never lightens the arrow */
+.hero-arrow-layer { z-index: 21; pointer-events: none; }
+/* phones: the arrow runs under the handwriting itself, so there it stays beneath the words (as before) */
+@media (max-width: 767px) { .hero-arrow-layer { z-index: auto; } }
+/* Home page, laptops and desktops (owner, 7 Oct 2026): the headline, line, three points and steps 1cm to the right, and
+   the match box 1.5cm to the right */
+@media (min-width: 1024px) {
+  .zz-phone .desk-hero-text { translate: 1cm 0; }
+  .zz-phone .desk-hero-card { translate: calc(1.5cm - 6mm - 1.2mm) 0; } /* 1.5cm right, then 6mm and 1.2mm back left (owner, 7 Oct 2026) */
+  .zz-phone { overflow-x: clip; } /* the moved box column never makes the page scroll sideways */
+}
+/* Every page with a match box, laptops and desktops (owner, 7 Oct 2026): the match box and the headline sit exactly where
+   they are on the home page.
+   - the box: 1.5cm to the right, as on the home page (.zz-phone .desk-hero-card above);
+   - the headline: its left edge on the home headline's (home = the page edge + 1.8cm from 1200px, + 3.3cm below that) and
+     its top on the home headline's (73.4px + the home padding clamp(1.9rem, 3vw, 3.75rem)). Ad pages: ads.css.
+     Content pages (About, Contact, How it works…) start their breadcrumb there, so the breadcrumb stays clear of the header. */
+@media (min-width: 1024px) {
+  .mc-hero-card { translate: calc(1.5cm - 6mm - 1.2mm) 0; } /* same as the home box */
+  .mc-hero-text { position: relative; padding-left: 1.8cm; top: calc(clamp(1.9rem, 3vw, 3.75rem) - 55.6px); }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) { .mc-hero-text { padding-left: 3.3cm; } }
+/* "Vetted partner network" tiles, laptops/desktops with a mouse (owner, 7 Oct 2026: "more dynamic, alternate hover colours
+   blue then green, make the area look amazing"). The seven tiles take blue and green in a checkerboard (1, 3, 6 blue;
+   2, 4, 5, 7 green). On hover a tinted glass card lifts with a coloured top edge and a soft glow under the icon, the icon
+   springs up with a little tilt (blue tiles tint their icon blue), the title and its underline take the tile colour, and
+   the other tiles soften so the hovered one stands out. A faint blue-and-green glow sits behind the whole grid. */
+.sel-cell { --c: #0e7a32; --c-soft: #e9f8ef; --c-line: #c9ead6; --c-glow: rgba(14, 122, 50, 0.16); --c-shadow: rgba(14, 122, 50, 0.3); --icon-tint: none; }
+.sel-cell:nth-child(8n + 1), .sel-cell:nth-child(8n + 3), .sel-cell:nth-child(8n + 6), .sel-cell:nth-child(8n + 8) {
+  --c: #1565f5; --c-soft: #eaf2fe; --c-line: #cddff9; --c-glow: rgba(21, 101, 245, 0.16); --c-shadow: rgba(21, 101, 245, 0.3);
+  --icon-tint: hue-rotate(78deg) saturate(1.25);
+}
+@media (hover: hover) and (min-width: 1024px) {
+  .sel-right { position: relative; isolation: isolate; }
+  .sel-right::before {
+    content: ""; position: absolute; inset: -1.5rem -1rem; z-index: -1; pointer-events: none; border-radius: 2rem;
+    background:
+      radial-gradient(ellipse 45% 60% at 18% 30%, rgba(21, 101, 245, 0.05), transparent 70%),
+      radial-gradient(ellipse 45% 60% at 82% 70%, rgba(14, 122, 50, 0.06), transparent 70%);
+  }
+  .sel-checks .sel-cell { transition: opacity 0.35s ease, filter 0.35s ease; }
+  .sel-checks:has(.sel-cell:not(.sel-cell-cta):hover) .sel-cell:not(:hover):not(.sel-cell-cta) { opacity: 0.55; filter: saturate(0.6); }
+  .sel-cell:not(.sel-cell-cta)::after {
+    inset: 0.3rem; border-radius: 1.1rem; border: 1px solid var(--c-line); border-top: 3px solid var(--c);
+    background:
+      radial-gradient(ellipse 55% 40% at 50% 26%, var(--c-glow), transparent 70%),
+      linear-gradient(180deg, #fff 0%, var(--c-soft) 100%);
+    box-shadow: 0 26px 44px -24px var(--c-shadow), 0 3px 8px -4px rgba(7, 50, 101, 0.1);
+    transform: translateY(8px) scale(0.94);
+    transition: opacity 0.3s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .sel-icon { transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease; }
+  .sel-cell:not(.sel-cell-cta):hover::after { opacity: 1; transform: translateY(-6px) scale(1); }
+  .sel-cell:not(.sel-cell-cta):hover .sel-icon { transform: translateY(-10px) scale(1.12) rotate(-5deg); filter: var(--icon-tint) drop-shadow(0 8px 10px var(--c-glow)); }
+  .sel-cell:not(.sel-cell-cta):hover .sel-title { color: var(--c); font-weight: 700; transform: translateY(-6px); }
+  .sel-cell:not(.sel-cell-cta) .sel-title::after { width: 2.4rem; height: 3px; background: linear-gradient(90deg, var(--c), color-mix(in srgb, var(--c) 35%, #fff)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sel-checks .sel-cell { transition: none !important; }
+}

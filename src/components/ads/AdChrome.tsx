@@ -33,7 +33,7 @@ function AdAssure() {
   return (
     <p className="bz-assure">
       <Link href="/how-we-select-accountants" {...POPUP_LINK}>{CREDENTIAL}</Link>{" "}
-      <span>Matching is free. Accountant fees are agreed separately. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm.</span>
+      <span>Matching is free. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm. Accountant fees are agreed separately.</span>
     </p>
   );
 }

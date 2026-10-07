@@ -1,6 +1,6 @@
 // Builds a whole page from the old site's extracted content: hero, body sections, call-to-action band, footer.
 import type { ReactNode } from "react";
-import { cityPicture, homeDeskHeroPicture, homeMobileHeroPicture } from "@/config/site.config";
+import { cityPicture, homeDeskHeroPicture, homeDeskHeroNoArrowPicture, homeMobileHeroPicture } from "@/config/site.config";
 import { explodeLinkGroups, loadContent, mergeViews, splitOnHeadings, toSections, type Node, type Section } from "@/lib/content";
 import { cityOf, isLivePage, typeOf } from "@/lib/pages";
 import { copyFor } from "@/lib/seo";
@@ -9,6 +9,7 @@ import CityShowcase from "./sections/CityShowcase";
 import CtaBand from "./sections/CtaBand";
 import { extractMatchCard, getHomeMatchCard } from "./sections/MatchCard";
 import DeskHero, { HeroTrustStrip } from "./sections/DeskHero";
+import HomeHeroBar from "./sections/HomeHeroBar";
 import PageHero, { chipIcon, heroParts } from "./sections/PageHero";
 import { Html } from "./sections/Blocks";
 import Link from "next/link";
@@ -24,7 +25,6 @@ import HomeMatchIntro from "./sections/HomeMatchIntro";
 import WhyItMatters from "./sections/WhyItMatters";
 import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
-import StartBar from "./sections/StartBar";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
 
@@ -123,20 +123,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={
-            <StartBar
-              button={false}
-              hero
-              className="bar-align-how" /* words in line with "How it works" on laptops and desktops (owner, 6 Oct 2026) */
-              words={
-                <>
-                  <p className="hb-title">More than a directory. A match for your needs.</p>
-                  <span aria-hidden className="hb-div" />
-                  <p className="hb-sub"><span>We don’t just list accountants,</span> <span>we match you.</span></p>
-                </>
-              }
-            />
-          } />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeDeskHeroNoArrowPicture} arrowOverlay showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />

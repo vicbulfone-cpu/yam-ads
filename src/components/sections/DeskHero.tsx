@@ -8,11 +8,12 @@
 import type { ReactNode } from "react";
 import Image, { getImageProps } from "next/image";
 import Link from "next/link";
-import { deskHeroPicture } from "@/config/site.config";
+import { deskHeroPicture, homeDeskHeroArrow } from "@/config/site.config";
 import { HERO_COPY } from "@/content/hero-copy";
 import MatchCard, { type MatchCardData } from "./MatchCard";
 import MatchFitScript from "./MatchFitScript";
 import HeroPoints from "./HeroPoints";
+import HomeStepsFit from "./HomeStepsFit";
 import { ArrowRight } from "../ui/Icons";
 
 export type DeskHeroHeadline = { before: string; green: string; after?: string; sub?: string; greenOnOwnLine?: boolean };
@@ -20,12 +21,14 @@ export type DeskHeroHeadline = { before: string; green: string; after?: string; 
 type Pic = { src: string; width: number; height: number };
 
 export default function DeskHero({
-  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false, bar, steps,
+  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false, bar, steps, arrowOverlay = false,
 }: { headline: DeskHeroHeadline; crumbs?: { label: string; href?: string }[]; card: MatchCardData | null; cardTitleTag?: "h2" | "p"; mobilePicture?: Pic; desktopPicture?: Pic; showTrust?: boolean;
   /** Home page on phones (owner's "zz" design, 6 Oct 2026): logo, then the desk picture with the headline over its top,
       then the match box straight underneath. Phones use the same desk picture as desktop. */
   /** "Tell us your needs → Enter your postcode → …" line under the three points (home page, as on the ad pages; owner, 6 Oct 2026) */
   steps?: string[];
+  /** Home page: the photo has no arrow of its own; the green arrow is laid on top so it moves with the handwriting. */
+  arrowOverlay?: boolean;
   phoneStack?: boolean;
   /** Home page (owner, 6 Oct 2026): a bar that sits right against the bottom of the photo on laptops/desktops (the match
       box overlaps it), and straight after the hero on phones and tablets. */
@@ -70,6 +73,24 @@ export default function DeskHero({
               />
             )}
           </div>
+          {arrowOverlay && (
+            // the green arrow on its own layer (the photo's size and place), above the handwriting's white cloud
+            <div aria-hidden className="desk-hero-photo hero-arrow-layer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={homeDeskHeroArrow.src}
+                alt=""
+                width={homeDeskHeroArrow.width}
+                height={homeDeskHeroArrow.height}
+                className="hero-arrow-overlay"
+                style={{
+                  left: `${(homeDeskHeroArrow.left / desk.width) * 100}%`,
+                  top: `${(homeDeskHeroArrow.top / desk.height) * 100}%`,
+                  width: `${(homeDeskHeroArrow.width / desk.width) * 100}%`,
+                }}
+              />
+            </div>
+          )}
           {/* soft light behind the words so they stay easy to read */}
           <div aria-hidden className="desk-hero-wash absolute inset-0" />
         </div>
@@ -109,6 +130,7 @@ export default function DeskHero({
               ))}
             </ol>
           )}
+          {steps && <HomeStepsFit />}
         </div>
 
         {/* 2 — the match box (desktop: right column, running over the white strip) */}

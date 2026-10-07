@@ -229,3 +229,10 @@ one shared layer under all the words (`isolation: auto` on those elements, as `.
 keep a fade off words or picture details it must not touch with `--fade-inset` or a mask, and check it pixel by pixel
 (`node scripts/fade-check.mjs`). Used on the business ad page behind the line under the headline, the three steps and the
 handwriting (the handwriting's fade stops at the bottom of the words so the photo's green arrow is never lightened).
+
+## PREVIEW ALWAYS ON (owner, 7 Oct 2026)
+The owner must be able to preview the site at any time without asking. The dev preview runs on port 3217
+(http://localhost:3217, phone: http://<computer IP>:3217). A Claude Code hook (`.claude/settings.local.json` ->
+`.claude/hooks/ensure-preview.ps1`) checks it at session start and after every edit or shell command and restarts it if
+it is down (log: `.work/preview.log`). Never leave it stopped; if you stop it for a test, it must be running again before
+you finish the reply, and every report ends with the preview address.

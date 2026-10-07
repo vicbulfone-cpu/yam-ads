@@ -131,7 +131,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
               <span className="block text-navy-900">A local accountant.</span>
               <span className="block text-green-700">A better match.</span>
             </h2>
-            <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
+            {/* laptops/desktops: 1cm to the right (owner, 7 Oct 2026) */}
+            <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:translate-x-[1cm] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
               Your needs. Your area. Your accountant.
             </p>
             <p className="mt-3 max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:mt-[0.8vw] lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]">
@@ -162,7 +163,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             />
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}
-            <div aria-hidden className="absolute left-[5%] top-[10%] lg:left-[3%] lg:top-[22%] lg:translate-x-[0.5cm] lg:translate-y-[0.5cm]">
+            {/* owner, 7 Oct 2026: the note, its arrow and the navy badge a further 5mm right; then (tablets and up) all three
+                another 5mm right and 1.2cm up */}
+            <div aria-hidden className="absolute left-[5%] top-[10%] md:translate-x-[0.5cm] md:-translate-y-[1.2cm] lg:left-[3%] lg:top-[22%] lg:translate-x-[1.5cm] lg:-translate-y-[0.7cm]">
               <p className="-rotate-[12deg] [text-shadow:0_0_10px_#fff,0_0_4px_#fff] lg:[text-shadow:none] font-[family-name:var(--font-script)] text-[1.55rem] font-semibold leading-[1.05] text-green-700 sm:text-[2rem] lg:text-[clamp(1.6rem,2.2vw,3.3rem)]">
                 Real people.
                 <br />
