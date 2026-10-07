@@ -27,6 +27,7 @@ import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
+import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
 
 type N = Exclude<Node, { t: "sec" }>;
 const SHARED_MATCH_CARD = getHomeMatchCard();
@@ -105,10 +106,32 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
   const homeBackdropFile = isHome ? auFind(/landscape/)?.file : undefined;
   const homeBackdrop = homeBackdropFile ? { src: homeBackdropFile } : undefined;
 
+  // How It Works page: its three numbered step sections become one combined step-by-step section (owner, 7 Oct 2026)
+  const isHowItWorks = path === "/how-it-works";
+  const stepIdx = isHowItWorks
+    ? rest2.flatMap((s, i) => (s.nodes.some((n) => n.t === "text" && /^\d$/.test(n.text)) && s.nodes.some((n) => n.t === "h" && n.l === 2) ? [i] : []))
+    : [];
+  const howSteps: HowStep[] = stepIdx.map((i) => {
+    const ns = rest2[i].nodes;
+    const h = ns.find((n) => n.t === "h") as Extract<Node, { t: "h" }>;
+    const para = ns.find((n) => n.t === "p") as Extract<Node, { t: "p" }> | undefined;
+    return { title: h.text, html: para?.html ?? "" };
+  });
+
   let shown = 0;
   const rendered: ReactNode[] = [];
   rest2.forEach((s, i) => {
     if (i === ctaIdx) return;
+    if (stepIdx.includes(i)) {
+      if (i === stepIdx[0]) { rendered.push(<HowItWorksSteps key="how-steps" steps={howSteps} />); shown++; }
+      // anything after the step's own paragraph (e.g. "One match, by postcode") keeps its usual layout
+      const pIdx = s.nodes.findIndex((n) => n.t === "p");
+      const after = pIdx === -1 ? [] : s.nodes.slice(pIdx + 1);
+      if (toBlocks(after).length === 0) return;
+      rendered.push(<SectionView key={`${s.id}-${i}-after`} section={{ ...s, nodes: after }} index={shown} seed={i * 3} home={false} />);
+      shown++;
+      return;
+    }
     const blocks = toBlocks(s.nodes);
     if (blocks.length === 0) return;
     rendered.push(<SectionView key={`${s.id}-${i}`} section={s} index={shown} seed={i * 3} home={isHome} />);
@@ -194,7 +217,10 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
         {afterBody}
         <Tagline text={taglineFor(path)} />
         {/* a closing band with borrowed wording uses styled text, not a heading, so the page keeps its old heading outline */}
-        {ownCta ? (
+        {isHowItWorks ? (
+          // owner, 7 Oct 2026: the home page closing band ("One quick match...") in place of the blue call-to-action box
+          <HomeClosingCta tagline={TAGLINES[8]} />
+        ) : ownCta ? (
           <CtaBand
             title={(ownCta.find((b) => b.k === "heading") as { text: string }).text}
             text={proseOf(0)}

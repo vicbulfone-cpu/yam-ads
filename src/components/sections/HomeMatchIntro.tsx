@@ -15,7 +15,7 @@ import StartBar from "./StartBar";
  * Phones and tablets stack everything in one column; the photo moves under the button.
  */
 
-const steps: { title: string; text: string; image: string; alt: string; position: string; shift?: string }[] = [
+export const HOME_STEPS: { title: string; text: string; image: string; alt: string; position: string; shift?: string }[] = [
   {
     title: "Tell us what you need",
     text: "Complete our short 60-second questionnaire.",
@@ -92,7 +92,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
 
           {/* owner, 7 Oct 2026: the steps 5mm lower (everything below follows), and each photo box at 85% of its size */}
           <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
-            {steps.flatMap((s, i) => [
+            {HOME_STEPS.flatMap((s, i) => [
               <li key={s.title} className="relative">
                 <div className="relative ml-1 mt-4 aspect-[2.35/1] w-[85%] overflow-hidden rounded-[1.1rem] bg-white shadow-[0_14px_30px_-16px_rgba(7,50,101,0.35)] sm:aspect-[1.6/1] lg:aspect-[2.35/1]">
                   <Image src={s.image} alt={s.alt} fill sizes="(min-width: 640px) 28vw, 92vw" className="object-cover" style={{ objectPosition: s.position, transform: s.shift }} />
@@ -106,7 +106,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
                 <h3 className="mt-3 font-sans text-[1.3rem] font-extrabold tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.3rem,1.75vw,2.6rem)]">{s.title}</h3>
                 <p className="mt-1 text-[1rem] leading-snug text-navy-900/80 lg:text-[clamp(1rem,1.15vw,1.7rem)]">{s.text}</p>
               </li>,
-              i < steps.length - 1 && (
+              i < HOME_STEPS.length - 1 && (
                 <li key={`arrow-${i}`} aria-hidden className="hidden pt-[6.5vw] lg:block">
                   <StepArrow />
                 </li>
