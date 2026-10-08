@@ -505,3 +505,5 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   higher, at its original size, on one line (it was briefly 70%). The sub-line is exactly two lines (one sentence each)
   and its right edge stops 3cm short of the notepad in the photo (notepad left = 48.66% of the hero width; the font is
   sized from that width, 15.5–17.3px). Phones and tablets unchanged.
+- **Desktop headline (owner, 9 Oct 2026, later):** "Personal Tax Accountant" at 80% of its original size (still one line;
+  50–69px), and the label + headline moved up another 2cm (3.5cm in all).
