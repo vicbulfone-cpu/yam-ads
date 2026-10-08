@@ -881,8 +881,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (min-width: 768px) and (max-width: 1199px) {
   .pth { background: linear-gradient(180deg, #f5fafe 0%, #e3f0fc 55%, #cfe6fa 100%); }
   .pth::before { content: none; }
-  /* photo 7cm higher (owner, 9 Oct 2026; nothing else changed): the gap it leaves above the points strip is left empty */
-  .pth-pic { top: auto; bottom: calc(7.5rem + 7cm); height: 40vw; }
+  /* photo 8.5cm higher (owner, 9 Oct 2026: 7cm, then another 1.5cm; nothing else changed): the gap it leaves above the
+     points strip is left empty */
+  .pth-pic { top: auto; bottom: calc(7.5rem + 8.5cm); height: 40vw; }
   .pth-pic img { object-position: 50% 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 32%); mask-image: linear-gradient(180deg, transparent 0%, #000 32%); }
   .pth-inner { padding-top: 56px; }
   .pth-h1 { font-size: 4rem; }
@@ -899,10 +900,11 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   /* zoomed out (owner, 9 Oct 2026, replacing the earlier "4cm higher", which enlarged the photo): the whole photo at its own
      shape, full width along the bottom of the hero, its top edge fading into the same blue sky that fills the hero above it,
      so the scene is drawn smaller and nothing is cropped */
-  /* photo 7cm higher (owner, 9 Oct 2026): the 7cm strip under the table is left empty and white, for headline words the
+  /* photo 8.5cm higher (owner, 9 Oct 2026: 7cm, then another 1.5cm): the 8.5cm strip under the table is left empty and
+     white, for headline words the
      owner will add later */
-  .pth { background: linear-gradient(0deg, #fff 0 7cm, rgb(99, 185, 247) 7cm); }
-  .pth-pic { bottom: 7cm; }
+  .pth { background: linear-gradient(0deg, #fff 0 8.5cm, rgb(99, 185, 247) 8.5cm); }
+  .pth-pic { bottom: 8.5cm; }
   .pth-pic img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; object-fit: fill;
     -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 14%); mask-image: linear-gradient(180deg, transparent 0%, #000 14%); }
   /* soft white wash on the left; strong enough over the lower left that the supporting line and points read clearly where
