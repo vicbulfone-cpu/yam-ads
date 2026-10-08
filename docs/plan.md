@@ -444,3 +444,8 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   problems=0.
 - **Below the hero:** the owner's new wording for sections 2–6 (Personal Tax Services, Find the Right Accountant, Why Use
   an Accountant, How It Works, FAQ) was supplied with this request but is for later; nothing below the hero was changed.
+- **Phones redone to the owner's "mobile look" picture (9 Oct 2026, same folder):** short hero with the mobile photo
+  soft (slight blur, white wash) behind the words only — skyline behind the line under the headline, trees along the
+  bottom — and no tall photo strip under the words; magnifier at the start of the button; the three points on white
+  straight under the photo with larger icons. Wording kept as approved (the picture's own wording — "Personal Tax
+  Returns & Tax Accountants", "Find my match", "It only takes 60 seconds…" — was not used). Tablets and desktops unchanged.

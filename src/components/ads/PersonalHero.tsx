@@ -33,6 +33,11 @@ export default function PersonalHero() {
           </h1>
           <p className="pth-sub">{H.sub}</p>
           <a href={`#${AD_MATCH_BOX_ID}`} className="pth-cta">
+            {/* phones only (owner's "mobile look"): a magnifier at the start of the button */}
+            <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" className="pth-cta-icon">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="M15.5 15.5 21 21" />
+            </svg>
             <span>{H.cta}</span>
             <ArrowRight aria-hidden className="pth-cta-arrow" strokeWidth={2.6} />
           </a>
