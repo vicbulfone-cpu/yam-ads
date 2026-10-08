@@ -1972,8 +1972,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
    gap) and is drawn 2.2vw taller, so its bottom stays on the navy bar. Words, match box and banner keep their places. */
 @media (min-width: 1024px) {
   .zz-phone .desk-hero-photo { top: 5.2cm; height: calc(39.99vw + 2.2vw); width: calc((39.99vw + 2.2vw) * 1983 / 793); } /* width set too, so the photo is never stretched */
-  /* the headline, line, three points and steps 4mm higher (still 1cm to the right, as above) */
-  .zz-phone .desk-hero-text { translate: 1cm -4mm; }
+  /* the headline, line, three points and steps 4mm higher, then 1.5cm lower (still 1cm to the right, as above) */
+  .zz-phone .desk-hero-text { translate: 1cm calc(-4mm + 1.5cm); }
 }
 /* Home hero (owner, 8 Oct 2026): no handwriting ("The smarter way to find an accountant."), no arrow and no fade behind
    the handwriting, on every screen size (the arrow layer is simply not drawn: ContentPage.tsx) */
