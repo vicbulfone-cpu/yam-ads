@@ -88,7 +88,8 @@ export const PERSONAL_LANDING = {
  *  of the page. The button opens the personal match box in its popup. The h1 is two lines: "Personal Tax" + "Accountant" (green). */
 export const PERSONAL_HERO = {
   eyebrow: "Personal Tax",
-  h1: ["Personal Tax", "Accountant"],
+  /** three lines (owner, 9 Oct 2026): navy, then two green lines */
+  h1: ["Personal Tax", "Returns &", "Tax Accountants"],
   /** owner's hero wording (9 Oct 2026); the supporting line under the reassurance ("Personal tax made simpler." + its
    *  sentence) was removed */
   sub: "Get your personal tax return sorted with the help of a trusted, local accountant. We'll match you with the right professional for your individual needs.",

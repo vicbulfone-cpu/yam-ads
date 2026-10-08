@@ -1080,16 +1080,16 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
    at the inner column's left edge; the font is sized so the longer sentence (26.63 x the font size) fills that width. */
 @media (min-width: 1200px) {
   .pth { container-type: inline-size; }
-  .pth-eyebrow, .pth-h1 { position: relative; top: -3.5cm; } /* 1.5cm, then another 2cm (owner, 9 Oct 2026) */
-  /* on one line at 72% of its original size (80%, then 90% of that; owner, 9 Oct 2026) */
+  .pth-eyebrow, .pth-h1 { position: relative; top: -1.5cm; } /* up 1.5cm, another 2cm, then down 2cm (owner, 9 Oct 2026) */
+  /* 72% of its original size (80%, then 90% of that; owner, 9 Oct 2026); each part on its own line */
   .pth-h1 { font-size: clamp(2.592rem, 3.744vw, 3.888rem); white-space: nowrap; }
-  .pth-h1 > span { display: inline; }
+  .pth-h1 > span { display: block; } /* three lines (owner, 9 Oct 2026) */
   .pth-sub { --sub-w: calc(48.66cqw - 3cm - max((100cqw - 1320px) / 2, 0px) - clamp(32px, 4.5vw, 72px));
     width: var(--sub-w); max-width: none; font-size: calc(var(--sub-w) / 26.8); text-wrap: wrap; }
   /* then 130% larger and moved up to 1cm under the headline (owner, 9 Oct 2026, noc): the headline sits 3.5cm above its place
      and the line normally starts 20px under it, so it is lifted 2.5cm + 20px; it keeps its old height in the layout so
      the button and everything below stay where they were */
-  .pth-sub { width: calc(var(--sub-w) * 1.3); font-size: calc(var(--sub-w) / 26.8 * 1.3); position: relative; top: calc(-2.5cm - 20px);
+  .pth-sub { width: calc(var(--sub-w) * 1.3); font-size: calc(var(--sub-w) / 26.8 * 1.3); position: relative; top: calc(-0.33cm - 20px); /* down 2cm with the headline, gap kept at 1cm (owner, 9 Oct 2026) */
     height: calc(var(--sub-w) / 26.8 * 1.45 * 2); }
   .pth-sub-line { display: block; white-space: nowrap; }
   /* new wording (owner, 9 Oct 2026): the sentences wrap at the same size, every line ending at or before the notepad's
@@ -1099,3 +1099,5 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-sub { font-size: calc(var(--sub-w) / 26.8 * 1.3 * 0.85); }
   .pth-sub-line { display: inline; white-space: normal; }
 }
+/* /ad-2 desktop: the whole hero text block (headline, sub-line, button, note, points) 1.5cm higher (owner, 9 Oct 2026, noc) */
+@media (min-width: 1200px) { .pth-inner { position: relative; top: -1.5cm; } }

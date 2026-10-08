@@ -516,3 +516,7 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   accountant. We'll match you with the right professional for your individual needs." (all views). Desktop: it wraps (3
   lines) with every line ending at or before the notepad's left edge, then 85% of its size (17–19px), still 1cm under the
   headline; button and below unchanged. The "PERSONAL TAX" label above the headline removed (all views).
+- **Hero headline now three lines (owner, 9 Oct 2026, all views):** "Personal Tax" (navy) / "Returns &" (green) / "Tax
+  Accountants" (green). Desktop: headline moved down 2cm (sub-line moved down with it, gap kept at 1cm), then the whole
+  text block (headline, sub-line, button, note, points) moved up 1.5cm (noc). At 1440 wide the headline's top touches the
+  hero's top edge (~2px cut off).

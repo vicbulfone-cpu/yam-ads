@@ -29,7 +29,8 @@ export default function PersonalHero() {
         <div className="pth-text">
           <h1 id="pth-title" className="pth-h1">
             <span>{H.h1[0]}</span>{" "}
-            <span className="pth-green">{H.h1[1]}</span>
+            <span className="pth-green">{H.h1[1]}</span>{" "}
+            <span className="pth-green">{H.h1[2]}</span>
           </h1>
           {/* one span per sentence (desktop styles decide whether each is its own line) */}
           <p className="pth-sub">
