@@ -476,3 +476,12 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   above the hero's bottom; that 7cm strip is plain white and left empty for high-impact hero words the owner will add
   later (the photo's top sky is cut off by the hero's top). Tablet: the photo moved up 7cm with nothing else changed
   (the empty gap above the points strip is left; the supporting line now sits over the skyline, readability to revisit).
+- **Sections 2–6 added under the hero (owner, 9 Oct 2026; all views).** `PersonalSections.tsx` (wording exactly as supplied
+  in `src/content/personal-sections.ts`, styles `.pps-` in ads.css) sits between the hero and the page's existing
+  sections; nothing existing was removed or changed (the owner will delete or edit the older sections later).
+  2 "Personal Tax Services": eyebrow "What we can help you with", intro, six cards with the owner's green line icons
+  (`scripts/make-personal-icons.mjs` → `public/images/ad-personal/`); 3 "Find the Right Accountant for Your Tax Needs":
+  navy band, "Tell us what you need. / We'll do the matching." and "Find My Accountant →"; 4 "Why Use an Accountant for
+  Your Tax Return?": six ticks; 5 "Finding Your Accountant Is Simple" (eyebrow "How it works"): three numbered steps and
+  "Find My Tax Accountant →"; 6 "Personal Tax Questions": four questions in the site's FAQ boxes (no FAQPage markup; the
+  page is noindex). Both buttons open the personal match box popup. Phones one column, tablets two, desktops three cards.

@@ -924,3 +924,97 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-points li { flex-direction: row; gap: 0.6rem; text-align: left; font-size: clamp(0.88rem, 0.9vw, 1rem); white-space: nowrap; }
   .pth-point-icon { width: 2.6rem; height: 2.6rem; }
 }
+
+/* ===== Personal tax ad page (/ad-2) sections 2-6 (owner, 9 Oct 2026; PersonalSections.tsx) =====
+   Straight under the hero, above the page's existing sections. Phones: one column; tablets: two; desktops: three cards. */
+.pps { background: #fff; }
+.pps-sec { padding-block: clamp(3rem, 7vw, 5.5rem); }
+.pps-wrap { width: 100%; max-width: 1240px; margin-inline: auto; padding-inline: 20px; }
+@media (min-width: 768px) { .pps-wrap { padding-inline: clamp(32px, 4.5vw, 64px); } }
+.pps-eyebrow { display: flex; align-items: center; gap: 0.75rem; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-700); }
+.pps-eyebrow::after { content: ""; width: 3rem; height: 2px; border-radius: 2px; background: currentColor; opacity: 0.7; }
+.pps-h2 { margin-top: 0.7rem; font-family: var(--font-sans); font-weight: 800; font-size: clamp(1.85rem, 3.4vw, 2.9rem); line-height: 1.08; letter-spacing: -0.03em; color: var(--navy-900); }
+.pps-h3 { font-family: var(--font-sans); font-weight: 800; font-size: 1.15rem; line-height: 1.25; letter-spacing: -0.01em; color: var(--navy-900); }
+.pps-intro { margin-top: 0.9rem; max-width: 44rem; font-size: clamp(1.02rem, 1.3vw, 1.18rem); line-height: 1.55; color: rgb(7 50 101 / 0.85); }
+.pps-card-text { margin-top: 0.45rem; font-size: 0.98rem; line-height: 1.55; color: rgb(7 50 101 / 0.8); }
+
+/* buttons: the site's green pill, as the hero button */
+.pps-cta { display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem; min-height: 3.5rem; padding: 0.85rem 2rem;
+  border-radius: 999px; color: #fff; font-family: var(--font-sans); font-weight: 800; font-size: 1.12rem; letter-spacing: -0.01em; white-space: nowrap;
+  text-decoration: none; background: linear-gradient(180deg, #129a44 0%, #0e7a32 100%);
+  box-shadow: 0 16px 30px -14px rgba(14, 122, 50, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.22); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.pps-cta:active { transform: translateY(1px) scale(0.99); }
+.pps-cta:focus-visible { outline: 3px solid var(--navy-900); outline-offset: 3px; }
+.pps-cta-arrow { width: 1.3em; height: 1.3em; flex-shrink: 0; }
+@media (hover: hover) and (min-width: 1024px) { .pps-cta:hover { transform: translateY(-2px); box-shadow: 0 22px 36px -16px rgba(14, 122, 50, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.22); } }
+@media (max-width: 767px) { .pps-cta { display: flex; width: 100%; } }
+
+/* section 2: six service cards with the owner's green line icons */
+.pps-cards { margin-top: clamp(1.75rem, 3vw, 2.75rem); display: grid; gap: 1rem; }
+@media (min-width: 768px) { .pps-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; } }
+@media (min-width: 1200px) { .pps-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; } }
+.pps-card { padding: 1.5rem; border-radius: 1.25rem; background: #fff; border: 1px solid rgba(7, 50, 101, 0.09);
+  box-shadow: 0 18px 40px -30px rgba(7, 50, 101, 0.35); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+@media (hover: hover) and (min-width: 1024px) { .pps-card:hover { transform: translateY(-4px); border-color: rgba(14, 122, 50, 0.3); box-shadow: 0 26px 48px -30px rgba(7, 50, 101, 0.45); } }
+.pps-card-icon { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; margin-bottom: 1rem; border-radius: 1rem; background: var(--green-50); }
+.pps-card-icon img { width: 2rem; height: 2rem; }
+@media (max-width: 767px) {
+  .pps-card { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; padding: 1.15rem 1.15rem 1.25rem; }
+  .pps-card-icon { grid-row: span 2; margin-bottom: 0; width: 3rem; height: 3rem; }
+  .pps-card-icon img { width: 1.7rem; height: 1.7rem; }
+  .pps-card .pps-card-text { margin-top: 0.3rem; }
+}
+
+/* section 3: navy band, words on the left, the two short lines and the button on the right */
+.pps-fit { background: radial-gradient(120% 140% at 100% 0%, #0b3f7d 0%, var(--navy-900) 55%, #052449 100%); color: #fff; }
+.pps-on-navy { margin-top: 0; color: #fff; }
+.pps-fit-lead { margin-top: 1rem; font-size: clamp(1.1rem, 1.5vw, 1.3rem); font-weight: 700; color: #fff; }
+.pps-fit-text { margin-top: 0.6rem; max-width: 40rem; font-size: clamp(1rem, 1.3vw, 1.15rem); line-height: 1.6; color: rgba(255, 255, 255, 0.85); }
+.pps-fit-close { margin-top: 2rem; }
+.pps-fit-tag { font-family: var(--font-sans); font-weight: 800; font-size: clamp(1.45rem, 2.4vw, 2rem); line-height: 1.2; letter-spacing: -0.02em; color: #fff; }
+.pps-fit-tag > span { display: block; }
+.pps-fit-tag-green { color: #5fd38a; }
+.pps-fit .pps-cta { margin-top: 1.4rem; }
+@media (min-width: 1024px) {
+  .pps-fit-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 4rem; align-items: center; }
+  .pps-fit-close { margin-top: 0; padding-left: 3rem; border-left: 1px solid rgba(255, 255, 255, 0.18); }
+}
+
+/* section 4: checklist on a pale mint band, two columns of ticks from tablets up */
+.pps-why { background: linear-gradient(180deg, #f2faf5 0%, #fff 100%); }
+.pps-checks { margin-top: 1.75rem; display: grid; gap: 0.85rem; }
+.pps-checks li { display: flex; align-items: center; gap: 0.85rem; padding: 0.95rem 1.1rem; border-radius: 1rem; background: #fff;
+  border: 1px solid rgba(14, 122, 50, 0.14); font-weight: 600; font-size: 1.02rem; line-height: 1.35; color: var(--navy-900); }
+.pps-check { display: grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: 999px; background: #0e7a32; color: #fff; }
+.pps-tick { width: 1.1rem; height: 1.1rem; }
+@media (min-width: 768px) { .pps-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+@media (min-width: 1200px) {
+  .pps-why-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4rem; align-items: center; }
+  .pps-checks { margin-top: 0; }
+}
+
+/* section 5: three numbered steps joined by a line, button under them */
+.pps-steps { margin-top: clamp(1.75rem, 3vw, 2.75rem); display: grid; gap: 1rem; }
+.pps-step { position: relative; padding: 1.5rem; border-radius: 1.25rem; background: #f6f9fc; }
+.pps-step-num { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; margin-bottom: 1rem; border-radius: 999px;
+  background: #0e7a32; color: #fff; font-weight: 800; font-size: 1.15rem; box-shadow: 0 10px 22px -10px rgba(14, 122, 50, 0.7); }
+@media (min-width: 768px) {
+  .pps-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+  .pps-steps::before { content: ""; grid-column: 1 / -1; grid-row: 1; align-self: start; height: 2px; margin: calc(1.5rem + 1.375rem - 1px) 2.5rem 0;
+    background: repeating-linear-gradient(90deg, rgba(14, 122, 50, 0.45) 0 8px, transparent 8px 14px); }
+  .pps-step { grid-row: 1; background: transparent; padding-inline: 0.25rem; }
+  .pps-step:nth-child(1) { grid-column: 1; } .pps-step:nth-child(2) { grid-column: 2; } .pps-step:nth-child(3) { grid-column: 3; }
+}
+.pps-how-cta { margin-top: 2rem; }
+@media (min-width: 768px) { .pps-how-cta { text-align: center; } }
+
+/* section 6: FAQ, heading on the left and the questions on the right on desktops */
+.pps-faq { border-top: 1px solid rgba(7, 50, 101, 0.07); }
+.pps-faq-list { margin-top: 1.5rem; display: grid; gap: 0.75rem; }
+@media (min-width: 1024px) {
+  .pps-faq-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start; }
+  .pps-faq-grid .pps-h2 { margin-top: 0; }
+  .pps-faq-list { margin-top: 0; }
+  .pps-faq .sel-q { font-size: clamp(1rem, 1.05vw, 1.2rem); }
+  .pps-faq .sel-a { font-size: clamp(0.95rem, 0.95vw, 1.08rem); }
+}
