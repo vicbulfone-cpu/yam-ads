@@ -2,8 +2,8 @@
 // Desk photograph across the hero, headline and benefits on the left, the business match box on the right.
 // Phones: headline, match box, then the steps, benefits and picture. Styles: ".bz-" in globals.css.
 import Image from "next/image";
-import { homeDeskHeroNoArrowPicture } from "@/config/site.config";
-import { AdHeroArrow, AdHeroBar } from "./AdHeroParts";
+import { homePageHeroPicture } from "@/config/site.config";
+import { AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
 import { BIZ_LANDING as L } from "@/content/business-questionnaire";
 import { AdFooter, AdHeader } from "./AdChrome";
@@ -23,11 +23,9 @@ export default function BusinessAdPage() {
       <AdHeader />
       <main>
         <div className="bz-hero">
-        {/* the desk photograph sits along the bottom of the hero at its natural shape, so the handwriting lines up with its arrow */}
+        {/* the home page hero photo, placed as on the home page (owner, 8 Oct 2026: no handwriting or arrow) */}
         <div aria-hidden className="bz-photo">
-          <Image src={homeDeskHeroNoArrowPicture.src} alt="" width={homeDeskHeroNoArrowPicture.width} height={homeDeskHeroNoArrowPicture.height} priority sizes="100vw" className="h-auto w-full" />
-          <AdHeroArrow />
-          <p className="bz-script bz-script-biz fade-behind">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
+          <Image src={homePageHeroPicture.src} alt="" width={homePageHeroPicture.width} height={homePageHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
         </div>
         {/* tablets and up: the home page navy bar under the photo (owner, 7 Oct 2026) */}
         <AdHeroBar />

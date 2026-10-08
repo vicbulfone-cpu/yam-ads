@@ -770,3 +770,12 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   /* the headline flows as one sentence, so no word is left alone on a line */
   .rz-page .rz-h1 > .block { display: inline; }
 }
+/* Ad heroes = home hero photo (owner, 8 Oct 2026): the four ad pages show the home page's hero photo (no handwriting, no
+   arrow). On laptops and desktops it sits exactly as on the home page: its top right at the bottom edge of the header,
+   2.2vw taller than the old photo so its bottom meets the navy bar, never stretched, 10mm to the left, no fade at its top
+   edge and only the home page's very slight white wash over it. Tablets and phones keep their layout with the new photo. */
+@media (min-width: 1024px) {
+  .bz-page .bz-hero .bz-photo { top: 0; right: auto; height: calc(39.99vw + 2.2vw); width: calc((39.99vw + 2.2vw) * 1983 / 793); translate: -10mm 0; -webkit-mask-image: none; mask-image: none; }
+  .bz-page .bz-hero .bz-photo img { width: 100%; height: 100%; }
+  .bz-page .bz-hero .bz-photo::after { opacity: 0.4; }
+}

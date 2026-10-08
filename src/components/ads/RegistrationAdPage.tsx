@@ -5,8 +5,8 @@
 // Styles: ".rz-" (on top of ".sz-" and ".bz-") in ads.css.
 import Image from "next/image";
 import { Fragment } from "react";
-import { homeDeskHeroNoArrowPicture } from "@/config/site.config";
-import { AdHeroArrow, AdHeroBar } from "./AdHeroParts";
+import { homePageHeroPicture } from "@/config/site.config";
+import { AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
 import { REG_CARD, REG_LANDING as L } from "@/content/registration-questionnaire";
 import { ArrowRight } from "../ui/Icons";
@@ -30,11 +30,9 @@ export default function RegistrationAdPage() {
       <AdHeader />
       <main>
         <div className="bz-hero">
-        {/* the desk photograph at the home page's height and shape, so the handwriting lines up with its arrow */}
+        {/* the home page hero photo, placed as on the home page (owner, 8 Oct 2026: no handwriting or arrow) */}
         <div aria-hidden className="bz-photo">
-          <Image src={homeDeskHeroNoArrowPicture.src} alt="" width={homeDeskHeroNoArrowPicture.width} height={homeDeskHeroNoArrowPicture.height} priority sizes="100vw" className="h-auto w-full" />
-          <AdHeroArrow />
-          <p className="bz-script bz-script-biz fade-behind">{L.script.map((s) => <span key={s} className="block">{s}</span>)}</p>
+          <Image src={homePageHeroPicture.src} alt="" width={homePageHeroPicture.width} height={homePageHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
         </div>
         {/* tablets and up: the home page navy bar under the photo (owner, 7 Oct 2026) */}
         <AdHeroBar />
