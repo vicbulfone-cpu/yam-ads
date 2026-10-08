@@ -449,3 +449,8 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   bottom — and no tall photo strip under the words; magnifier at the start of the button; the three points on white
   straight under the photo with larger icons. Wording kept as approved (the picture's own wording — "Personal Tax
   Returns & Tax Accountants", "Find my match", "It only takes 60 seconds…" — was not used). Tablets and desktops unchanged.
+- **Desktop and tablets: owner's replaced "personal hero pic.png" (9 Oct 2026, 07:31; woman in a cream jumper, further
+  right)** → `public/images/hero/personal-desk-v2-1983.webp`. Desktop layout unchanged. Tablets (768–1199px) now use
+  this photo too instead of the phone photo: words on a light sky, then the photo in full width under them (its sky
+  fades into the light sky), then the three points on white in one row. Phones keep the mobile photo. (The other new file
+  in the folder, "desktop hero personal tax.jpg", is not used.)

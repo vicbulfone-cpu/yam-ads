@@ -1,7 +1,8 @@
 // The personal tax ad page's hero (/ad-2), from the owner's "personal example" picture (9 Oct 2026). It replaced the old
 // Ad 1-style hero (desk photo, three-line headline, steps and match box). The words sit on the photo's sky, never on the person:
-// desktops (1200px+) = the owner's desktop photo with the words on the left; phones and tablets = the mobile photo
-// (sky over the skyline) with the words at the top, the skyline and trees showing under them, then the three trust points.
+// desktops (1200px+) = the owner's desktop photo with the words on the left; tablets (768-1199px) = the same photo in full
+// under the words, its sky fading into the light sky behind them; phones = the mobile photo soft behind the words (owner's
+// "mobile look"). Then the three trust points.
 // The button is a #match-box link: AdBoxPopup opens the personal match box in its popup on every screen size.
 // Styles: ".pth-" in ads.css.
 import Image, { getImageProps } from "next/image";
@@ -19,7 +20,7 @@ export default function PersonalHero() {
   return (
     <section className="pth" aria-labelledby="pth-title">
       <picture className="pth-pic">
-        <source media="(min-width: 1200px)" srcSet={desktop} />
+        <source media="(min-width: 768px)" srcSet={desktop} />
         {/* eslint-disable-next-line jsx-a11y/alt-text -- decorative: alt="" comes from getImageProps */}
         <img {...img} srcSet={mobile} loading="eager" fetchPriority="high" />
       </picture>

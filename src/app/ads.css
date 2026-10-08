@@ -870,17 +870,20 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-points li { font-size: 0.92rem; font-weight: 600; line-height: 1.3; gap: 0.75rem; }
   .pth-point-icon { width: 3.6rem; height: 3.6rem; }
 }
-/* tablets: the same layout, a little larger */
+/* tablets: the words on a light sky, then the owner's desktop photo in full width under them (its sky fades into the light
+   sky, so it reads as one picture), then the three points on white (a fixed-height strip, so the photo ends above it) */
 @media (min-width: 768px) and (max-width: 1199px) {
+  .pth { background: linear-gradient(180deg, #f5fafe 0%, #e3f0fc 55%, #cfe6fa 100%); }
+  .pth::before { content: none; }
+  .pth-pic { top: auto; bottom: 7.5rem; height: 40vw; }
+  .pth-pic img { object-position: 50% 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 32%); mask-image: linear-gradient(180deg, transparent 0%, #000 32%); }
   .pth-inner { padding-top: 56px; }
-  /* tablets crop the tall photo top and bottom: this keeps the tower tops below the reassurance line */
-  .pth-pic img { object-position: 50% 52%; }
   .pth-h1 { font-size: 4rem; }
   .pth-sub { font-size: 1.3rem; }
   .pth-cta { width: auto; display: inline-flex; padding-inline: 2.4rem; font-size: 1.25rem; }
   .pth-note { text-align: left; padding-left: 1.4rem; }
-  .pth-visual { height: 420px; }
-  .pth-points { padding-inline: calc(50vw - 50%); }
+  .pth-visual { height: 40vw; margin-top: 0; }
+  .pth-points { height: 7.5rem; display: flex; align-items: center; justify-content: space-between; padding: 0 calc(50vw - 50%); }
   .pth-points li { flex-direction: row; text-align: left; gap: 0.75rem; font-size: 1rem; }
 }
 /* desktops (1200px+, owner's breakpoint): two columns over the desktop photo (words 45%, picture 55%) */
