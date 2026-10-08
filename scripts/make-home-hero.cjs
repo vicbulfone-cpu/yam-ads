@@ -4,7 +4,7 @@
 // shows at the top and that much less desk at the bottom.
 //   node scripts/make-home-hero.cjs
 const sharp = require('sharp');
-const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v21-1983.webp', W = 1983, H = 793, SHIFT = 15;
+const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v22-1983.webp', W = 1983, H = 793, SHIFT = 15;
 (async () => {
   const { width: sw, height: sh } = await sharp(SRC).metadata();
   const h = Math.round(sh * W / sw);
