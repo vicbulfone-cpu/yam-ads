@@ -58,7 +58,7 @@ export const homeDeskHeroPicture = { src: "/images/hero/hero-no-writing.png", wi
 export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png", width: 1983, height: 793 };
 /** Home page hero picture (owner, 8 Oct 2026): "hero section/ad landing pages/hero home5.png", the whole photo
  *  scaled to the hero's 1983 x 793 shape, with a soft blurred fill on the right (scripts/make-home-hero.cjs). The ad pages keep homeDeskHeroNoArrowPicture above. */
-export const homePageHeroPicture = { src: "/images/hero/home-v16-1983.webp", width: 1983, height: 793 };
+export const homePageHeroPicture = { src: "/images/hero/home-v17-1983.webp", width: 1983, height: 793 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 

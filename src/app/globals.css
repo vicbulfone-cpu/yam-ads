@@ -1978,3 +1978,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* Home hero (owner, 8 Oct 2026): no handwriting ("The smarter way to find an accountant."), no arrow and no fade behind
    the handwriting, on every screen size (the arrow layer is simply not drawn: ContentPage.tsx) */
 .zz-phone .hero-tagline-overlay { display: none; }
+/* Home hero (owner, 8 Oct 2026): the fades behind the headline, line, three points and steps are back, but very slight:
+   the same white wash and clouds as before, drawn at a fraction of their old strength */
+.zz-phone .desk-hero-wash { display: block; opacity: 0.4; }
+.zz-phone .desk-hero-points::before, .zz-phone .home-steps::before { content: ""; opacity: 0.45; }
