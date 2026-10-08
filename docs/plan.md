@@ -493,3 +493,6 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   person/screen added to `scripts/make-personal-icons.mjs`) — and the closing lines and button on the right. Then
   "How it works" and the FAQ, left edges lined up with the rows above. Same CSS grid reorders the sections (no
   duplicated words). Phones and tablets unchanged; no words removed.
+- **Hero wording (owner, 9 Oct 2026, later):** sub-line now "Find an accountant who can help with your tax return,
+  deductions, investments, rental property and other personal tax matters."; the supporting line under the reassurance
+  ("Personal tax made simpler." + that sentence) removed. Nothing else changed.

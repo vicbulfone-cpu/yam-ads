@@ -43,9 +43,6 @@ export default function PersonalHero() {
             <ArrowRight aria-hidden className="pth-cta-arrow" strokeWidth={2.6} />
           </a>
           <p className="pth-note">{H.note.join(" • ")}</p>
-          <p className="pth-support">
-            <strong>{H.support.title}</strong> {H.support.text}
-          </p>
         </div>
 
         {/* phones and tablets: the space where the skyline and trees show under the words */}
