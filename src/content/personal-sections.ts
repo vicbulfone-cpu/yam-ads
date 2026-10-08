@@ -24,6 +24,15 @@ export const PERSONAL_RIGHT_FIT = {
   text: "Whether you're an employee, investor, landlord, contractor or self-employed, Your Accountant Match helps you find an accountant suited to your circumstances.",
   close: ["Tell us what you need.", "We'll do the matching."],
   cta: "Find My Accountant",
+  /** desktops only (owner's "personal example" picture, 9 Oct 2026): tiles naming the people in the sentence above
+   *  (employee, investor, landlord, contractor, self-employed); decorative, as the sentence already says it */
+  tiles: [
+    { icon: "/images/ad-personal/person.webp", label: "Employees" },
+    { icon: "/images/ad-personal/investments.webp", label: "Investors" },
+    { icon: "/images/ad-personal/rental-property.webp", label: "Landlords" },
+    { icon: "/images/ad-personal/contractor.webp", label: "Contractors" },
+    { icon: "/images/ad-personal/self-employed.webp", label: "Self-employed" },
+  ],
 };
 
 export const PERSONAL_WHY = {

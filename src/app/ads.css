@@ -1018,3 +1018,61 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pps-faq .sel-q { font-size: clamp(1rem, 1.05vw, 1.2rem); }
   .pps-faq .sel-a { font-size: clamp(0.95rem, 0.95vw, 1.08rem); }
 }
+
+/* ===== /ad-2 sections, laptops and desktops (1200px+) laid out as the owner's "personal example" picture (9 Oct 2026) =====
+   Row 1: "Why use an accountant" (ticks) on the left, "Personal Tax Services" in a mint panel with a round icon badge on the
+   right (services as a compact two-column list). Row 2: "Find the right accountant" as a light panel with white tiles (the
+   example's "Who is it for?"). Then "How it works" and the FAQ as before. Phones and tablets are unchanged. */
+.pps-tiles, .pps-svc-badge { display: none; }
+@media (min-width: 1200px) {
+  .pps { display: grid; grid-template-columns: minmax(48px, 1fr) minmax(0, 580px) minmax(0, 640px) minmax(48px, 1fr); }
+  .pps-sec { grid-column: 1 / -1; }
+
+  /* row 1, left: why use an accountant */
+  .pps-why { grid-column: 2; grid-row: 1; align-self: center; background: none; padding: 64px 56px 56px 0; }
+  .pps-why .pps-wrap, .pps-services .pps-wrap { max-width: none; padding-inline: 0; }
+  .pps-why-grid { display: block; }
+  .pps-why .pps-h2 { font-size: clamp(2rem, 2.35vw, 2.5rem); }
+  .pps-checks { grid-template-columns: 1fr; gap: 0.8rem; margin-top: 1.4rem; }
+  .pps-checks li { padding: 0; border: 0; background: none; border-radius: 0; font-weight: 500; font-size: 1.05rem; gap: 0.75rem; }
+  .pps-check { width: 1.5rem; height: 1.5rem; background: none; color: #0e7a32; }
+  .pps-tick { width: 1.35rem; height: 1.35rem; }
+
+  /* row 1, right: personal tax services in a mint panel */
+  .pps-services { grid-column: 3; grid-row: 1; align-self: center; padding: 56px 0; }
+  .pps-services .pps-wrap { position: relative; padding: 34px 36px 34px; border-radius: 24px; background: #eef8f2; }
+  .pps-svc-badge { display: grid; place-items: center; position: absolute; left: 36px; top: 34px; width: 4.25rem; height: 4.25rem; border-radius: 999px;
+    background: #0e7a32; box-shadow: 0 12px 24px -12px rgba(14, 122, 50, 0.7); }
+  .pps-svc-badge img { width: 2.2rem; height: 2.2rem; filter: brightness(0) invert(1); }
+  .pps-services .pps-eyebrow, .pps-services .pps-h2, .pps-services .pps-intro { margin-left: 5.6rem; }
+  .pps-services .pps-eyebrow { font-size: 0.72rem; }
+  .pps-services .pps-h2 { margin-top: 0.3rem; font-size: 1.75rem; }
+  .pps-services .pps-intro { margin-top: 0.45rem; font-size: 0.98rem; line-height: 1.5; }
+  .pps-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15rem 1.75rem; margin-top: 1.6rem; }
+  .pps-card { display: grid; grid-template-columns: auto 1fr; grid-template-rows: min-content 1fr; column-gap: 0.75rem; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+  .pps-card:hover { transform: none; box-shadow: none; }
+  .pps-card-icon { grid-row: 1 / 3; width: 2.3rem; height: 2.3rem; margin: 0; border-radius: 0.65rem; background: #fff; }
+  .pps-card-icon img { width: 1.35rem; height: 1.35rem; }
+  .pps-card .pps-h3 { font-size: 1rem; }
+  .pps-card .pps-card-text { margin-top: 0.15rem; font-size: 0.88rem; line-height: 1.45; }
+
+  /* row 2: find the right accountant, a light panel with the five tiles */
+  .pps-fit { grid-row: 2; background: none; color: var(--navy-900); padding: 8px 0 16px; }
+  .pps-fit .pps-fit-grid { width: calc(100% - 96px); max-width: 1220px; padding: 40px 44px 36px; border-radius: 24px; background: #f2f6fb;
+    grid-template-columns: 1.3fr 1fr; gap: 0 3.5rem; }
+  .pps-on-navy { color: var(--navy-900); font-size: clamp(1.9rem, 2.2vw, 2.35rem); }
+  .pps-fit-lead { color: var(--navy-900); }
+  .pps-fit-text { color: rgb(7 50 101 / 0.82); }
+  .pps-fit-close { padding-left: 3rem; border-left: 1px solid rgba(7, 50, 101, 0.12); }
+  .pps-fit-tag { color: var(--navy-900); font-size: clamp(1.4rem, 1.7vw, 1.75rem); }
+  .pps-fit-tag-green { color: #0e7a32; }
+  .pps-tiles { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .pps-tile { display: flex; flex-direction: column; align-items: center; gap: 0.65rem; padding: 1.3rem 0.75rem 1.2rem; border-radius: 16px; background: #fff;
+    box-shadow: 0 12px 28px -22px rgba(7, 50, 101, 0.45); font-weight: 600; font-size: 0.98rem; color: var(--navy-900); text-align: center; }
+  .pps-tile-icon { width: 2.3rem; height: 2.3rem; }
+
+  .pps-how { grid-row: 3; }
+  /* left edges in line with the rows above */
+  .pps-how .pps-wrap, .pps-faq .pps-wrap { width: calc(100% - 96px); max-width: 1220px; padding-inline: 0; }
+  .pps-faq { grid-row: 4; }
+}

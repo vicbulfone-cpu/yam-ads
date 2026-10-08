@@ -18,6 +18,9 @@ const ICONS = {
   investments: "capital-gains.png", // rising chart
   contractor: "business-accounting.png", // briefcase
   complex: "financial-reporting.png", // bar chart
+  // desktop "who it's for" tiles (section 3): employees and self-employed (investors, landlords, contractors reuse the above)
+  person: "personal-tax.png", // person
+  "self-employed": "software-help.png", // screen
 };
 for (const [name, file] of Object.entries(ICONS)) {
   const dest = path.join(OUT, `${name}.webp`);

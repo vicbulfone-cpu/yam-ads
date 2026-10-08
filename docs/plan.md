@@ -485,3 +485,11 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   Your Tax Return?": six ticks; 5 "Finding Your Accountant Is Simple" (eyebrow "How it works"): three numbered steps and
   "Find My Tax Accountant →"; 6 "Personal Tax Questions": four questions in the site's FAQ boxes (no FAQPage markup; the
   page is noindex). Both buttons open the personal match box popup. Phones one column, tablets two, desktops three cards.
+- **Sections 2–6 on laptops and desktops (1200px+) laid out as the owner's "personal example" picture (9 Oct 2026).**
+  Row 1: "Why Use an Accountant…" with plain ticks on the left; "Personal Tax Services" in a mint panel with a round
+  green icon badge and the six services as a compact two-column list on the right. Row 2: "Find the Right Accountant…"
+  as a light panel (as the example's "Who is it for?") with five white tiles — Employees, Investors, Landlords,
+  Contractors, Self-employed (words taken from the section's own sentence; decorative, `aria-hidden`; icons
+  person/screen added to `scripts/make-personal-icons.mjs`) — and the closing lines and button on the right. Then
+  "How it works" and the FAQ, left edges lined up with the rows above. Same CSS grid reorders the sections (no
+  duplicated words). Phones and tablets unchanged; no words removed.

@@ -30,6 +30,8 @@ export default function PersonalSections() {
       {/* SECTION 2: what we can help you with */}
       <section className="pps-sec pps-services" aria-labelledby="pps-services-h">
         <div className="pps-wrap">
+          {/* desktops only: round icon badge beside the heading (owner's example) */}
+          <span aria-hidden className="pps-svc-badge"><Image src={S.cards[0].icon} alt="" width={160} height={160} /></span>
           <p className="pps-eyebrow">{S.eyebrow}</p>
           <h2 id="pps-services-h" className="pps-h2">{S.h2}</h2>
           <p className="pps-intro">{S.intro}</p>
@@ -57,6 +59,15 @@ export default function PersonalSections() {
             <p className="pps-fit-tag"><span>{R.close[0]}</span> <span className="pps-fit-tag-green">{R.close[1]}</span></p>
             <Cta label={R.cta} />
           </div>
+          {/* desktops only: the people the sentence names, as white tiles (owner's example "Who is it for?") */}
+          <ul className="pps-tiles" aria-hidden>
+            {R.tiles.map((t) => (
+              <li key={t.label} className="pps-tile">
+                <Image src={t.icon} alt="" width={160} height={160} className="pps-tile-icon" />
+                <span>{t.label}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
