@@ -165,7 +165,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
           {/* laptops/desktops: sits on the bottom of the row, so the navy bar below always touches it (owner, 6 Oct 2026) */}
           {/* owner, 6 Oct 2026: photo (and the bar on it) 1cm lower; everything below follows */}
           {/* owner, 7 Oct 2026: laptops/desktops get a taller frame (1.5:1 instead of 1.95:1) so the photo is as tall as the longer words */}
-          <div className="relative -mx-[var(--gutter)] mt-[1cm] aspect-[941/1672] md:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
+          {/* phones (owner, 8 Oct 2026): the tradie picture 3cm higher (1cm space, now -2cm), closing the gap above it; the words stay in front */}
+          <div className="relative -mx-[var(--gutter)] mt-[1cm] max-md:mt-[-2cm] aspect-[941/1672] md:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
             {/* phones (owner, 7 Oct 2026): the owner's "home page tradie" picture, tall, with the handwriting and the navy
                 badge already drawn into it (so the page's own note and badge below are hidden on phones) */}
             <Image
