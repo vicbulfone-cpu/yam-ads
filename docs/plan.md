@@ -454,3 +454,5 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   this photo too instead of the phone photo: words on a light sky, then the photo in full width under them (its sky
   fades into the light sky), then the three points on white in one row. Phones keep the mobile photo. (The other new file
   in the folder, "desktop hero personal tax.jpg", is not used.)
+- **Desktop and tablets: "personal hero pic.png" updated again by the owner (9 Oct 2026, 07:34; same scene with the logo
+  mug)** → `public/images/hero/personal-desk-v3-1983.webp`. Layout unchanged; phones unchanged.

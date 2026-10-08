@@ -70,5 +70,5 @@ Home page step boxes 1 and 3 (owner, 7 Oct 2026: "zoom out"): back to the wider 
 
 ## Personal tax ad page hero photos supplied by the owner (9 Oct 2026)
 Source: owner-supplied files in `hero section/ad landing pages/personal tax/` (owner's own images, supplied for use on
-this site): `personal hero pic.png` (replaced by the owner 9 Oct, 07:31) → `public/images/hero/personal-desk-v2-1983.webp` (desktop and tablets) and `personal hero pic
+this site): `personal hero pic.png` (replaced by the owner 9 Oct, 07:31) → `public/images/hero/personal-desk-v3-1983.webp` (desktop and tablets) and `personal hero pic
 mobile.png` → `public/images/hero/personal-mobile-941.webp` (phones and tablets), by `scripts/make-personal-hero.mjs`.
