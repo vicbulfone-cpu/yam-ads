@@ -32,7 +32,12 @@ export default function PersonalHero() {
             <span>{H.h1[0]}</span>{" "}
             <span className="pth-green">{H.h1[1]}</span>
           </h1>
-          <p className="pth-sub">{H.sub}</p>
+          {/* two sentences; on desktops each is one line (owner, 9 Oct 2026) */}
+          <p className="pth-sub">
+            {H.sub.split(/(?<=\?) /).map((s, i) => (
+              <span key={i} className="pth-sub-line">{i > 0 && " "}{s}</span>
+            ))}
+          </p>
           <a href={`#${AD_MATCH_BOX_ID}`} className="pth-cta">
             {/* phones only (owner's "mobile look"): a magnifier at the start of the button */}
             <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" className="pth-cta-icon">

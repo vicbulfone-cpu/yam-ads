@@ -1073,3 +1073,18 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pps-how .pps-wrap, .pps-faq .pps-wrap { width: calc(100% - 96px); max-width: 1220px; padding-inline: 0; }
   .pps-faq { grid-row: 4; }
 }
+
+/* /ad-2 hero, desktops (owner, 9 Oct 2026): "Personal Tax Accountant" 1.5cm higher (with the small
+   label above it); the line under it on exactly two lines (one sentence each), its right edge 3cm short of the notepad in
+   the photo. The photo spans the hero, so the notepad's left edge is at 48.66% of the hero's width (cqw); the text starts
+   at the inner column's left edge; the font is sized so the longer sentence (26.63 x the font size) fills that width. */
+@media (min-width: 1200px) {
+  .pth { container-type: inline-size; }
+  .pth-eyebrow, .pth-h1 { position: relative; top: -1.5cm; }
+  /* back to its original size, on one line (owner, 9 Oct 2026) */
+  .pth-h1 { font-size: clamp(3.6rem, 5.2vw, 5.4rem); white-space: nowrap; }
+  .pth-h1 > span { display: inline; }
+  .pth-sub { --sub-w: calc(48.66cqw - 3cm - max((100cqw - 1320px) / 2, 0px) - clamp(32px, 4.5vw, 72px));
+    width: var(--sub-w); max-width: none; font-size: calc(var(--sub-w) / 26.8); text-wrap: wrap; }
+  .pth-sub-line { display: block; white-space: nowrap; }
+}

@@ -501,3 +501,7 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   on desktop and tablet (desktop: the 6cm strip under the table is plain white). Hero sub-line back to "Looking for help
   with your personal tax return? Find an accountant matched to your individual tax needs." (the supporting line under
   the reassurance stays removed).
+- **Desktop hero headline and sub-line (owner, 9 Oct 2026).** "Personal Tax Accountant" (with the small label) 1.5cm
+  higher, at its original size, on one line (it was briefly 70%). The sub-line is exactly two lines (one sentence each)
+  and its right edge stops 3cm short of the notepad in the photo (notepad left = 48.66% of the hero width; the font is
+  sized from that width, 15.5–17.3px). Phones and tablets unchanged.
