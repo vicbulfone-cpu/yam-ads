@@ -458,3 +458,6 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   mug)** → `public/images/hero/personal-desk-v3-1983.webp`. Layout unchanged; phones unchanged.
 - **Desktop and tablets: "personal hero pic.png" updated again (9 Oct 2026, 07:39; woman smaller and further right)** →
   `public/images/hero/personal-desk-v4-1983.webp`. Layout unchanged; phones unchanged.
+- **Desktop: photo 4cm higher (owner, 9 Oct 2026).** The photo's box starts 4cm above the hero (`.pth-pic { top: -4cm }`,
+  1200px+ only), so the photo shows 4cm higher; to still fill the hero to its bottom edge it is drawn about 20% larger.
+  Tablets and phones unchanged.

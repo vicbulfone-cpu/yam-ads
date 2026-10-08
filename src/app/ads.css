@@ -889,6 +889,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* desktops (1200px+, owner's breakpoint): two columns over the desktop photo (words 45%, picture 55%) */
 @media (min-width: 1200px) {
   .pth { display: flex; align-items: center; min-height: clamp(650px, 46vw, 750px); }
+  /* the photo sits 4cm higher (owner, 9 Oct 2026): its box starts 4cm above the hero (that strip of sky is hidden) */
+  .pth-pic { top: -4cm; }
   .pth-pic img { object-position: 100% 50%; }
   .pth::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.2) 46%, rgba(255, 255, 255, 0) 56%); }
   .pth-inner { max-width: 1320px; padding: 64px clamp(32px, 4.5vw, 72px); }
