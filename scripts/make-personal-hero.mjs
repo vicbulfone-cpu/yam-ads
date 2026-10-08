@@ -1,6 +1,6 @@
 // Personal tax ad page (/ad-2) hero pictures (owner, 9 Oct 2026): the owner's "personal hero pic" (desktop) and
 // "personal hero pic mobile" (phones and tablets) from "hero section/ad landing pages/personal tax", made into WebP files
-// in public/images/hero (desktop photo replaced by the owner 9 Oct 2026, 07:31 "-v2" and 07:34 "-v3"). The originals are only read, never changed. Safe to re-run.
+// in public/images/hero (desktop photo replaced by the owner 9 Oct 2026, 07:31 "-v2", 07:34 "-v3", 07:39 "-v4"). The originals are only read, never changed. Safe to re-run.
 //   node scripts/make-personal-hero.mjs
 import sharp from "sharp";
 import fs from "node:fs";
@@ -12,7 +12,7 @@ const SRC = path.join(ROOT, "hero section", "ad landing pages", "personal tax");
 const OUT = path.join(ROOT, "public", "images", "hero");
 
 const jobs = [
-  { file: "personal hero pic.png", name: "personal-desk-v3", widths: [1983] },
+  { file: "personal hero pic.png", name: "personal-desk-v4", widths: [1983] },
   { file: "personal hero pic mobile.png", name: "personal-mobile", widths: [941] },
 ];
 for (const j of jobs) {

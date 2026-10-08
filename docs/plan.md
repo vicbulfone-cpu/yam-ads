@@ -456,3 +456,5 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   in the folder, "desktop hero personal tax.jpg", is not used.)
 - **Desktop and tablets: "personal hero pic.png" updated again by the owner (9 Oct 2026, 07:34; same scene with the logo
   mug)** → `public/images/hero/personal-desk-v3-1983.webp`. Layout unchanged; phones unchanged.
+- **Desktop and tablets: "personal hero pic.png" updated again (9 Oct 2026, 07:39; woman smaller and further right)** →
+  `public/images/hero/personal-desk-v4-1983.webp`. Layout unchanged; phones unchanged.
