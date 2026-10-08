@@ -496,3 +496,8 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
 - **Hero wording (owner, 9 Oct 2026, later):** sub-line now "Find an accountant who can help with your tax return,
   deductions, investments, rental property and other personal tax matters."; the supporting line under the reassurance
   ("Personal tax made simpler." + that sentence) removed. Nothing else changed.
+- **Photo back to its original position, then 6cm up (owner, 9 Oct 2026).** The 8.5cm lift was undone (desktop: zoomed-out
+  photo along the hero's bottom on the blue sky; tablet: photo straight under the words), then the photo was moved 6cm up
+  on desktop and tablet (desktop: the 6cm strip under the table is plain white). Hero sub-line back to "Looking for help
+  with your personal tax return? Find an accountant matched to your individual tax needs." (the supporting line under
+  the reassurance stays removed).

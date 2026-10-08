@@ -89,9 +89,9 @@ export const PERSONAL_LANDING = {
 export const PERSONAL_HERO = {
   eyebrow: "Personal Tax",
   h1: ["Personal Tax", "Accountant"],
-  /** owner's hero wording (9 Oct 2026): the supporting sentence is now the sub-line; the supporting line under the
-   *  reassurance ("Personal tax made simpler." + that sentence) was removed */
-  sub: "Find an accountant who can help with your tax return, deductions, investments, rental property and other personal tax matters.",
+  /** owner's hero wording (9 Oct 2026); the supporting line under the reassurance ("Personal tax made simpler." + its
+   *  sentence) was removed */
+  sub: "Looking for help with your personal tax return? Find an accountant matched to your individual tax needs.",
   cta: "Find My Tax Accountant",
   note: ["60 seconds", "Free", "No obligation"],
 };
