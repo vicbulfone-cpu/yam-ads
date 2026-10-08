@@ -1974,8 +1974,10 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .zz-phone .desk-hero-photo { top: 5.2cm; height: calc(39.99vw + 2.2vw); width: calc((39.99vw + 2.2vw) * 1983 / 793); } /* width set too, so the photo is never stretched */
   .zz-phone .desk-hero-photo { translate: -10mm 0; } /* 5mm, then another 5mm to the left (owner, 8 Oct 2026); its right edge still runs past the screen */
   /* the headline, line, three points and steps 4mm higher, then 1.5cm lower, then 0.8mm higher, then 1cm higher and
-     3mm further right (1cm to the right, as above, + 3mm) */
-  .zz-phone .desk-hero-text { translate: calc(1cm + 3mm) calc(-4mm + 1.5cm - 0.8mm - 1cm); }
+     3mm further right, then 5mm further right (1cm to the right, as above, + 3mm + 5mm) */
+  .zz-phone .desk-hero-text { translate: calc(1cm + 3mm + 5mm) calc(-4mm + 1.5cm - 0.8mm - 1cm); }
+  /* the match box 5mm further right than before (owner, 8 Oct 2026) */
+  .zz-phone .desk-hero-card { translate: calc(1.5cm - 6mm - 1.2mm + 5mm) 0; }
 }
 /* Home hero (owner, 8 Oct 2026): no handwriting ("The smarter way to find an accountant."), no arrow and no fade behind
    the handwriting, on every screen size (the arrow layer is simply not drawn: ContentPage.tsx) */
