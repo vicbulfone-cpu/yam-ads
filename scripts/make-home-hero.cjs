@@ -2,7 +2,7 @@
 // with a soft blurred continuation of the photo filling the right-hand strip (mostly behind the match box).
 //   node scripts/make-home-hero.cjs
 const sharp = require('sharp');
-const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v18-1983.webp', W = 1983, H = 793;
+const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v19-1983.webp', W = 1983, H = 793;
 (async () => {
   const { width: sw, height: sh } = await sharp(SRC).metadata();
   const pw = Math.min(W, Math.round(sw * H / sh)); // whole photo, scaled to the hero's height
