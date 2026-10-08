@@ -27,14 +27,13 @@ export default function PersonalHero() {
 
       <div className="pth-inner">
         <div className="pth-text">
-          <p className="pth-eyebrow">{H.eyebrow}</p>
           <h1 id="pth-title" className="pth-h1">
             <span>{H.h1[0]}</span>{" "}
             <span className="pth-green">{H.h1[1]}</span>
           </h1>
-          {/* two sentences; on desktops each is one line (owner, 9 Oct 2026) */}
+          {/* one span per sentence (desktop styles decide whether each is its own line) */}
           <p className="pth-sub">
-            {H.sub.split(/(?<=\?) /).map((s, i) => (
+            {H.sub.split(/(?<=[.?]) (?=[A-Z])/).map((s, i) => (
               <span key={i} className="pth-sub-line">{i > 0 && " "}{s}</span>
             ))}
           </p>

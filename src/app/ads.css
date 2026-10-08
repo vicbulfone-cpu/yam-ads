@@ -1092,4 +1092,10 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-sub { width: calc(var(--sub-w) * 1.3); font-size: calc(var(--sub-w) / 26.8 * 1.3); position: relative; top: calc(-2.5cm - 20px);
     height: calc(var(--sub-w) / 26.8 * 1.45 * 2); }
   .pth-sub-line { display: block; white-space: nowrap; }
+  /* new wording (owner, 9 Oct 2026): the sentences wrap at the same size, every line ending at or before the notepad's
+     left edge (48.66% of the hero width) */
+  .pth-sub { width: calc(48.66cqw - max((100cqw - 1320px) / 2, 0px) - clamp(32px, 4.5vw, 72px)); }
+  /* then 85% of that size (owner, 9 Oct 2026, noc) */
+  .pth-sub { font-size: calc(var(--sub-w) / 26.8 * 1.3 * 0.85); }
+  .pth-sub-line { display: inline; white-space: normal; }
 }

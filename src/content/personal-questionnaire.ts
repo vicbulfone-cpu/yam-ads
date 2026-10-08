@@ -91,7 +91,7 @@ export const PERSONAL_HERO = {
   h1: ["Personal Tax", "Accountant"],
   /** owner's hero wording (9 Oct 2026); the supporting line under the reassurance ("Personal tax made simpler." + its
    *  sentence) was removed */
-  sub: "Looking for help with your personal tax return? Find an accountant matched to your individual tax needs.",
+  sub: "Get your personal tax return sorted with the help of a trusted, local accountant. We'll match you with the right professional for your individual needs.",
   cta: "Find My Tax Accountant",
   note: ["60 seconds", "Free", "No obligation"],
 };

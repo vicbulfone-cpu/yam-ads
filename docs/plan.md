@@ -512,3 +512,7 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
 - **Desktop sub-line 130% larger and 1cm under the headline (owner, 9 Oct 2026, noc).** Still two lines (20–22px); lifted so
   the gap to the headline is exactly 1cm; keeps its old height in the layout so the button and everything below stay put.
   Side effect: it no longer stops 3cm short of the notepad (the longer line ends ~20px past the notepad's left edge, above it).
+- **Hero (owner, 9 Oct 2026, later):** sub-line now "Get your personal tax return sorted with the help of a trusted, local
+  accountant. We'll match you with the right professional for your individual needs." (all views). Desktop: it wraps (3
+  lines) with every line ending at or before the notepad's left edge, then 85% of its size (17–19px), still 1cm under the
+  headline; button and below unchanged. The "PERSONAL TAX" label above the headline removed (all views).
