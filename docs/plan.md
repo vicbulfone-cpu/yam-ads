@@ -468,3 +468,7 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   unchanged; the "PERSONAL TAX" eyebrow and the three trust points kept. Phones: the supporting line sits on a soft
   frosted white panel (it falls over the treetops). Desktop: supporting line max 25rem wide and a stronger white wash on
   the left so the words and points read clearly where the laptop reaches under them (the taller hero draws the photo larger).
+- **Desktop: photo zoomed out (owner, 9 Oct 2026; replaces "4cm higher").** The whole photo at its own shape, full width
+  along the bottom of the hero (no cropping, no enlarging); its top edge fades into the same blue sky (rgb 99,185,247)
+  that fills the hero above it. The scene is drawn smaller and the laptop no longer reaches under the words. Tablets and
+  phones unchanged.

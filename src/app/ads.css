@@ -895,9 +895,12 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* desktops (1200px+, owner's breakpoint): two columns over the desktop photo (words 45%, picture 55%) */
 @media (min-width: 1200px) {
   .pth { display: flex; align-items: center; min-height: clamp(650px, 46vw, 750px); }
-  /* the photo sits 4cm higher (owner, 9 Oct 2026): its box starts 4cm above the hero (that strip of sky is hidden) */
-  .pth-pic { top: -4cm; }
-  .pth-pic img { object-position: 100% 50%; }
+  /* zoomed out (owner, 9 Oct 2026, replacing the earlier "4cm higher", which enlarged the photo): the whole photo at its own
+     shape, full width along the bottom of the hero, its top edge fading into the same blue sky that fills the hero above it,
+     so the scene is drawn smaller and nothing is cropped */
+  .pth { background: rgb(99, 185, 247); }
+  .pth-pic img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; object-fit: fill;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 14%); mask-image: linear-gradient(180deg, transparent 0%, #000 14%); }
   /* soft white wash on the left; strong enough over the lower left that the supporting line and points read clearly where
      the laptop reaches under them */
   .pth::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.74) 32%, rgba(255, 255, 255, 0.42) 46%, rgba(255, 255, 255, 0) 58%); }
