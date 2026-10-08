@@ -21,7 +21,7 @@ export type DeskHeroHeadline = { before: string; green: string; after?: string; 
 type Pic = { src: string; width: number; height: number };
 
 export default function DeskHero({
-  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false, bar, steps, arrowOverlay = false,
+  headline, crumbs = [], card, cardTitleTag = "h2", mobilePicture: mobilePictureProp, desktopPicture, showTrust = true, phoneStack = false, bar, steps, arrowOverlay = false, phoneCta,
 }: { headline: DeskHeroHeadline; crumbs?: { label: string; href?: string }[]; card: MatchCardData | null; cardTitleTag?: "h2" | "p"; mobilePicture?: Pic; desktopPicture?: Pic; showTrust?: boolean;
   /** Home page on phones (owner's "zz" design, 6 Oct 2026): logo, then the desk picture with the headline over its top,
       then the match box straight underneath. Phones use the same desk picture as desktop. */
@@ -32,7 +32,9 @@ export default function DeskHero({
   phoneStack?: boolean;
   /** Home page (owner, 6 Oct 2026): a bar that sits right against the bottom of the photo on laptops/desktops (the match
       box overlaps it), and straight after the hero on phones and tablets. */
-  bar?: ReactNode }) {
+  bar?: ReactNode;
+  /** Phones only (owner, 8 Oct 2026): the large green button under the headline, down to the match box (PhoneMatchCta.tsx) */
+  phoneCta?: ReactNode }) {
   const mobilePicture = phoneStack ? undefined : mobilePictureProp;
   const desk = desktopPicture ?? deskHeroPicture;
   const desktopSrcSet = mobilePicture
@@ -121,6 +123,7 @@ export default function DeskHero({
               </>
             )}
           </h1>
+          {phoneCta}
           {headline.sub && <p className="desk-hero-sub">{headline.sub}</p>}
           <HeroPoints />
           {steps && (
@@ -135,7 +138,7 @@ export default function DeskHero({
 
         {/* 2 — the match box (desktop: right column, running over the white strip) */}
         {card && (
-          <div className="desk-hero-card">
+          <div className="desk-hero-card" id={phoneCta ? "hero-match-box" : undefined}>
             <MatchCard data={card} titleTag={cardTitleTag} />
             <MatchFitScript />
           </div>

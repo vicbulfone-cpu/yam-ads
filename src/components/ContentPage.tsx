@@ -22,6 +22,8 @@ import Tagline from "./sections/Tagline";
 import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
 import { BIZ_LANDING } from "@/content/business-questionnaire";
 import HomeMatchIntro from "./sections/HomeMatchIntro";
+import PhoneMatchCta from "./sections/PhoneMatchCta";
+import { MATCH_CARD_COPY } from "@/content/match-card-copy";
 import WhyItMatters from "./sections/WhyItMatters";
 import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
@@ -159,7 +161,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homePageHeroPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homePageHeroPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />

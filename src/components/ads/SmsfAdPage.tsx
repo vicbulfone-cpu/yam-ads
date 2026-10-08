@@ -7,9 +7,10 @@ import Image from "next/image";
 import { homePageHeroPicture } from "@/config/site.config";
 import { AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
-import { SMSF_LANDING as L } from "@/content/smsf-questionnaire";
+import { SMSF_LANDING as L, SMSF_CARD } from "@/content/smsf-questionnaire";
 import { AdFooter, AdHeader } from "./AdChrome";
 import { ArrowRight } from "../ui/Icons";
+import PhoneMatchCta from "../sections/PhoneMatchCta";
 import HeroPoints from "../sections/HeroPoints";
 import MatchFitScript from "../sections/MatchFitScript";
 import SmsfMatchCard from "./SmsfMatchCard";
@@ -41,6 +42,8 @@ export default function SmsfAdPage() {
               <span className="block text-[#0e7a32]">{L.h1[1]}</span>{" "}
               <span className="block">{L.h1[2]}</span>
             </h1>
+            {/* phones (owner's "mobile look example", 8 Oct 2026): large green button down to the match box, as on Ad 4 */}
+            <PhoneMatchCta href={`#${AD_MATCH_BOX_ID}`} label={SMSF_CARD.start} note={SMSF_CARD.note} />
             {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
             <HeroPoints className="bz-points" />
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>

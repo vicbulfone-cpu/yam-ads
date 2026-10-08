@@ -5,9 +5,10 @@ import Image from "next/image";
 import { homePageHeroPicture } from "@/config/site.config";
 import { AdHeroBar } from "./AdHeroParts";
 import HomeStepsFit from "../sections/HomeStepsFit";
-import { BIZ_LANDING as L } from "@/content/business-questionnaire";
+import { BIZ_LANDING as L, BIZ_CARD } from "@/content/business-questionnaire";
 import { AdFooter, AdHeader } from "./AdChrome";
 import { ArrowRight } from "../ui/Icons";
+import PhoneMatchCta from "../sections/PhoneMatchCta";
 import HeroPoints from "../sections/HeroPoints";
 import BizMatchCard from "./BizMatchCard";
 import MatchFitScript from "../sections/MatchFitScript";
@@ -37,6 +38,8 @@ export default function BusinessAdPage() {
               <span className="block text-[#0e7a32]">{L.h1[1]}</span>
               <span className="block">{L.h1[2]}</span>
             </h1>
+            {/* phones (owner's "mobile look example", 8 Oct 2026): large green button down to the match box, as on Ad 4 */}
+            <PhoneMatchCta href={`#${AD_MATCH_BOX_ID}`} label={BIZ_CARD.start} note={BIZ_CARD.note} />
             {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
             <HeroPoints className="bz-points" />
             <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>

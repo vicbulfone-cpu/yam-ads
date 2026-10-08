@@ -120,12 +120,13 @@ export default function HowItWorksSteps({ steps, crumbs, intro }: { steps: HowSt
                     <div className={`relative aspect-[16/9] overflow-hidden bg-white md:aspect-auto md:min-h-[17rem] ${flip ? "md:order-2" : ""}`}>
                       <Image
                         // the map (step 2) uses a tightly trimmed copy, so it fills its box without being cropped
-                        src={home.image.includes("map") ? "/images/home/australia-map-pin-tight.webp" : home.image}
+                        // step 1: the home page picture and framing (owner, 8 Oct 2026); step 2 (the map) already matches
+                        src={home.image.includes("map") ? "/images/home/australia-map-pin-tight.webp" : i === 0 ? (home.homeImage ?? home.image) : home.image}
                         alt={home.alt}
                         fill
                         sizes="(min-width: 768px) 40vw, 92vw"
                         className={`${home.image.includes("map") ? "object-contain" : "object-cover"}`} /* no hover zoom (owner, 7 Oct 2026) */
-                        style={{ objectPosition: home.position, transform: home.shift }}
+                        style={{ objectPosition: i === 0 ? (home.homePosition ?? home.position) : home.position, transform: home.shift }}
                       />
                       {/* (the navy and green wave across the foot of the picture removed, owner 8 Oct 2026: the full picture shows) */}
                     </div>
