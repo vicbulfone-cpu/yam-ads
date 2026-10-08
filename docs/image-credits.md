@@ -67,3 +67,8 @@ on /match until GoHighLevel supplies the real accountant's photo.
 `public/images/home/australia-map-pin-tight.webp`: a tighter crop of the site's own `australia-map-pin` illustration (white margins trimmed), used in step 2 on /how-it-works so the map fills its box.
 
 Home page step boxes 1 and 3 (owner, 7 Oct 2026: "zoom out"): back to the wider owner-supplied shots `woman-phone-sofa.webp` and `accountant-client-desk.webp`, so the phone, the desk and the papers show. /how-it-works keeps the `step-1-…` / `step-3-…` versions.
+
+## Personal tax ad page hero photos supplied by the owner (9 Oct 2026)
+Source: owner-supplied files in `hero section/ad landing pages/personal tax/` (owner's own images, supplied for use on
+this site): `personal hero pic.png` → `public/images/hero/personal-desk-1983.webp` (desktop) and `personal hero pic
+mobile.png` → `public/images/hero/personal-mobile-941.webp` (phones and tablets), by `scripts/make-personal-hero.mjs`.

@@ -65,6 +65,14 @@ export const homeHeroLightPicture = { src: "/images/hero/home-light-v4-1983.webp
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
+/** Personal tax ad page (/ad-2) hero (owner, 9 Oct 2026): desktop photo (woman at the laptop, sky on the left for the words)
+ *  and the phone/tablet photo (sky over the skyline). Built by scripts/make-personal-hero.mjs from the owner's files in
+ *  "hero section/ad landing pages/personal tax". */
+export const personalHeroPictures = {
+  desktop: { src: "/images/hero/personal-desk-1983.webp", width: 1983, height: 793 },
+  mobile: { src: "/images/hero/personal-mobile-941.webp", width: 941, height: 1672 },
+};
+
 /** Earlier hero pictures (no longer shown on the home or city pages; kept so they can be reused). */
 export const heroPicture = heroByNumber(3);
 /** Home page hero carousel. Ordered so the same kind of picture never follows itself, including the loop back to the

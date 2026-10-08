@@ -605,7 +605,7 @@ body:has(.bz-page) > header, body:has(.bz-page) .sticky-cta { display: none; }
 .abp-card-icon { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: 0.9rem; background: var(--green-50); color: #0e7a32; }
 .abp-card-title { margin-top: 0.8rem; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--navy-900); }
 .abp-card-text { margin-top: 0.4rem; font-size: 0.97rem; line-height: 1.6; }
-@media (hover: hover) and (min-width: 1024px) {
+@media (hover: hover) and (min-width: 1200px) {
   .abp-card:hover { transform: translateY(-4px); border-color: rgba(0, 174, 65, 0.45); box-shadow: 0 24px 44px -26px rgba(7, 50, 101, 0.55); }
 }
 @media (min-width: 768px) {
@@ -809,4 +809,73 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 }
 @media (min-width: 1024px) and (max-width: 1149px) {
   .bz-page .bz-hero .bz-points { zoom: 0.72; translate: 0 calc(8.5mm / 0.72); }
+}
+
+/* ===== Personal tax ad page (/ad-2) hero: the owner's new hero (PersonalHero.tsx, 9 Oct 2026) =====
+   Phones and tablets (below 1200px): the mobile photo fills the hero; the words sit on its sky at the top, the skyline and
+   trees show under them, then the three trust points on white. Desktops (1200px+): the desktop photo fills a 650-750px
+   hero, the words and points on its sky on the left (45%), the woman on the right; the words are never on her. */
+.pth { position: relative; isolation: isolate; overflow: hidden; background: #fff; }
+.pth-pic { position: absolute; inset: 0; z-index: -2; }
+.pth-pic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 86%; }
+/* a soft white wash at the top so the navy words read clearly on the blue sky */
+.pth::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 38%, rgba(255, 255, 255, 0) 62%); }
+.pth-inner { width: 100%; max-width: 40rem; margin-inline: auto; padding: clamp(30px, 9vw, 44px) 20px 0; }
+.pth-eyebrow { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-700); }
+.pth-h1 { margin-top: 12px; font-family: var(--font-sans); font-weight: 800; font-size: clamp(2.625rem, 11.6vw, 3.125rem); line-height: 1.02; letter-spacing: -0.035em; color: var(--navy-900); }
+.pth-h1 > span { display: block; }
+.pth-green { color: var(--green-700); }
+.pth-sub { margin-top: 18px; max-width: 30rem; text-wrap: balance; font-size: 1.125rem; line-height: 1.45; color: var(--navy-900); }
+.pth-cta { margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 0.7rem; width: 100%; min-height: 3.5rem;
+  padding: 0.85rem 1.5rem; border-radius: 999px; color: #fff; font-family: var(--font-sans); font-weight: 800; font-size: min(1.2rem, 5.2vw);
+  letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; background: linear-gradient(180deg, #129a44 0%, #0e7a32 100%);
+  box-shadow: 0 16px 30px -14px rgba(14, 122, 50, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.22); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.pth-cta:active { transform: translateY(1px) scale(0.99); }
+.pth-cta:focus-visible { outline: 3px solid var(--navy-900); outline-offset: 3px; }
+.pth-cta-arrow { width: 1.35em; height: 1.35em; flex-shrink: 0; }
+.pth-note { margin-top: 12px; text-align: center; font-size: 0.92rem; color: rgb(7 50 101 / 0.8); }
+.pth-visual { height: clamp(280px, 80vw, 400px); margin-top: 36px; }
+/* the three trust points: on white under the photo, side by side, each icon above its two short lines */
+.pth-points { position: relative; margin-inline: calc(50% - 50vw); padding: 1.5rem calc(50vw - 50% + 12px) 1.75rem; background: #fff;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.pth-points li { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-align: center; font-size: 0.9rem; line-height: 1.25; color: var(--navy-900); }
+.pth-points strong { display: block; font-weight: 800; }
+.pth-point-icon { width: 3rem; height: 3rem; flex-shrink: 0; }
+@media (hover: hover) and (min-width: 1200px) {
+  .pth-cta:hover { transform: translateY(-2px); box-shadow: 0 22px 36px -16px rgba(14, 122, 50, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.22); }
+}
+/* phones: the photo starts a little above the hero (only plain sky is cut off), so the skyline begins about 35px under the
+   reassurance line */
+@media (max-width: 767px) { .pth-pic { top: -80px; } }
+/* tablets: the same layout, a little larger */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .pth-inner { padding-top: 56px; }
+  /* tablets crop the tall photo top and bottom: this keeps the tower tops below the reassurance line */
+  .pth-pic img { object-position: 50% 52%; }
+  .pth-h1 { font-size: 4rem; }
+  .pth-sub { font-size: 1.3rem; }
+  .pth-cta { width: auto; display: inline-flex; padding-inline: 2.4rem; font-size: 1.25rem; }
+  .pth-note { text-align: left; padding-left: 1.4rem; }
+  .pth-visual { height: 420px; }
+  .pth-points { padding-inline: calc(50vw - 50%); }
+  .pth-points li { flex-direction: row; text-align: left; gap: 0.75rem; font-size: 1rem; }
+}
+/* desktops (1200px+, owner's breakpoint): two columns over the desktop photo (words 45%, picture 55%) */
+@media (min-width: 1200px) {
+  .pth { display: flex; align-items: center; min-height: clamp(650px, 46vw, 750px); }
+  .pth-pic img { object-position: 100% 50%; }
+  .pth::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.2) 46%, rgba(255, 255, 255, 0) 56%); }
+  .pth-inner { max-width: 1320px; padding: 64px clamp(32px, 4.5vw, 72px); }
+  .pth-text, .pth-points { width: 45%; min-width: 28rem; }
+  .pth-eyebrow { font-size: 0.9rem; }
+  .pth-h1 { margin-top: 14px; font-size: clamp(3.6rem, 5.2vw, 5.4rem); line-height: 0.98; }
+  .pth-sub { margin-top: 20px; font-size: clamp(1.2rem, 1.45vw, 1.45rem); }
+  .pth-cta { display: inline-flex; width: auto; margin-top: 32px; min-height: 3.75rem; padding: 0.9rem 2.4rem; font-size: clamp(1.2rem, 1.35vw, 1.35rem); }
+  .pth-note { margin-top: 12px; text-align: left; padding-left: 1.5rem; font-size: 0.95rem; }
+  .pth-visual { display: none; }
+  /* compact, two short lines each, so the row ends before the laptop in the photo */
+  .pth-points { margin: 36px 0 0; padding: 0; background: none; display: flex; gap: 1rem clamp(1rem, 1.6vw, 2rem); }
+  .pth-points li { flex-direction: row; gap: 0.6rem; text-align: left; font-size: clamp(0.88rem, 0.9vw, 1rem); white-space: nowrap; }
+  .pth-point-icon { width: 2.6rem; height: 2.6rem; }
 }

@@ -16,13 +16,14 @@ import { Close } from "../ui/Icons";
  * own questionnaire (paid lead) and this popup closes. Phones keep the jump back up to the page's box.
  * Same look as the home page's match box popup (".q-modal" in globals.css). The links stay ordinary #match-box links.
  */
-export default function AdBoxPopup({ openEvent, children }: { openEvent: string; children: ReactNode }) {
+export default function AdBoxPopup({ openEvent, phones = false, children }: { openEvent: string; phones?: boolean; children: ReactNode }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const handOff = useRef(false);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const wide = () => window.matchMedia("(min-width: 768px)").matches;
+    // phones: a page whose hero has no match box of its own (Ad 2 since 9 Oct 2026) opens the popup on phones too
+    const wide = () => phones || window.matchMedia("(min-width: 768px)").matches;
     const onClick = (e: MouseEvent) => {
       if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || !wide()) return;
       const a = (e.target as Element | null)?.closest?.(`a[href$="#${AD_MATCH_BOX_ID}"]`) as HTMLAnchorElement | null;
@@ -42,7 +43,7 @@ export default function AdBoxPopup({ openEvent, children }: { openEvent: string;
       window.removeEventListener(OPEN_AD_BOX, onOpen);
       window.removeEventListener(openEvent, onStart);
     };
-  }, [openEvent]);
+  }, [openEvent, phones]);
 
   // native dialog: focus trap, Esc key and top layer come for free; the page behind stays still
   useEffect(() => {

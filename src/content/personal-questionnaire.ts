@@ -84,6 +84,16 @@ export const PERSONAL_LANDING = {
   disclaimer: ["We provide the matching service.", "Your accountant provides the tax services."],
 };
 
+/** The /ad-2 hero (owner's new personal tax hero, 9 Oct 2026): replaces the old headline, steps and match box at the top
+ *  of the page. The button opens the personal match box in its popup. The h1 is two lines: "Personal Tax" + "Accountant" (green). */
+export const PERSONAL_HERO = {
+  eyebrow: "Personal Tax",
+  h1: ["Personal Tax", "Accountant"],
+  sub: "Find an accountant matched to your personal tax needs.",
+  cta: "Find My Tax Accountant",
+  note: ["60 seconds", "Free", "No obligation"],
+};
+
 /** The personal match box. */
 /** The personal match box: home page box layout (owner, 5 Oct 2026), personal wording. */
 export const PERSONAL_CARD = {

@@ -416,3 +416,31 @@ lists only pages the site builds; `npm run seo-status` now reads the page list f
   company setup I need"); the big "I'm still not sure" card on the personal page is kept. The GeoNames credit is removed
   site-wide at the owner's request (the CC BY 4.0 licence of the suburb list asks for a visible credit: owner's decision).
   The "Start here" arrow is a larger curved green arrow (right on laptops/desktops, down on tablets).
+
+## Ad 2 — new personal tax hero (owner, 9 Oct 2026)
+
+Owner's request, example picture `hero section/ad landing pages/personal tax/personal example.png` and two photos
+(`personal hero pic.png` desktop, `personal hero pic mobile.png` phones/tablets). Only the hero of `/ad-2` was replaced;
+everything under it (`AdHomeSections`), the header and the footer are unchanged.
+
+- **Removed from the /ad-2 hero:** the home desk photo, the navy bar, the three-line headline "Looking for a personal tax
+  accountant near you?", the phone Start button, the line under the headline, the steps and the match box beside them.
+- **New hero** (`src/components/ads/PersonalHero.tsx`, wording `PERSONAL_HERO` in `src/content/personal-questionnaire.ts`,
+  styles `.pth-` in `src/app/ads.css`, pictures `personalHeroPictures` in `site.config.ts`, made by
+  `scripts/make-personal-hero.mjs`): eyebrow "PERSONAL TAX", H1 "Personal Tax / Accountant" (green second line),
+  "Find an accountant matched to your personal tax needs.", button "Find My Tax Accountant →", "60 seconds • Free • No
+  obligation", then the home page's three trust points (owner chose to add them, as in the example).
+- **Owner's choices (9 Oct):** words ON the photo's sky as in the example (not a separate picture beside them); the short
+  sub-line (the longer line and the "Personal tax made simpler…" supporting line were not used); trust icon row added;
+  the button opens the personal match box popup.
+- **Layout:** desktop (1200px+): desktop photo fills a 650–750px hero, words on the left 45% over a soft white wash,
+  woman on the right. Phones and tablets (below 1200px): mobile photo, words at the top on the sky, skyline and trees
+  under them, then the three points on white. H1 45–50px on phones; button 60px tall, full width on phones.
+- **Button:** a `#match-box` link. The page no longer has a match box of its own, so `AdBoxPopup` takes a `phones` prop
+  (used only on /ad-2) and opens the personal match box popup on every screen size; the lower buttons on the page do the
+  same. Start → the personal questionnaire (paid lead, unchanged).
+- **Checked:** 390, 430, 768, 1024, 1200, 1440, 1920 wide, no sideways scroll; hero button and lower buttons open the box
+  and Start opens the questionnaire (phone and desktop), no browser errors; `npm run build` passes; `npm run seo-check`
+  problems=0.
+- **Below the hero:** the owner's new wording for sections 2–6 (Personal Tax Services, Find the Right Accountant, Why Use
+  an Accountant, How It Works, FAQ) was supplied with this request but is for later; nothing below the hero was changed.
