@@ -472,3 +472,7 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   along the bottom of the hero (no cropping, no enlarging); its top edge fades into the same blue sky (rgb 99,185,247)
   that fills the hero above it. The scene is drawn smaller and the laptop no longer reaches under the words. Tablets and
   phones unchanged.
+- **Desktop and tablet: photo 7cm higher (owner, 9 Oct 2026).** Desktop: the zoomed-out photo's bottom edge sits 7cm
+  above the hero's bottom; that 7cm strip is plain white and left empty for high-impact hero words the owner will add
+  later (the photo's top sky is cut off by the hero's top). Tablet: the photo moved up 7cm with nothing else changed
+  (the empty gap above the points strip is left; the supporting line now sits over the skyline, readability to revisit).
