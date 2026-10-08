@@ -233,3 +233,8 @@ The owner must be able to preview the site at any time without asking. The dev p
 `.claude/hooks/ensure-preview.ps1`) checks it at session start and after every edit or shell command and restarts it if
 it is down (log: `.work/preview.log`). Never leave it stopped; if you stop it for a test, it must be running again before
 you finish the reply, and every report ends with the preview address.
+
+## "NOC" = NO OTHER CHANGES (owner rule, 9 Oct 2026; this project only)
+When the owner writes **"noc"** in a request, it means **"no other changes"**: make exactly the change asked for and
+nothing else (no extra fixes, tidy-ups, spacing, wording or layout tweaks, on any screen size not named). If the change
+causes a side effect (e.g. words now sit over the photo), report it and offer a fix, but do not make it unless asked.

@@ -507,3 +507,5 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   sized from that width, 15.5–17.3px). Phones and tablets unchanged.
 - **Desktop headline (owner, 9 Oct 2026, later):** "Personal Tax Accountant" at 80% of its original size (still one line;
   50–69px), and the label + headline moved up another 2cm (3.5cm in all).
+- **Desktop headline at 90% of its 80% size (owner, 9 Oct 2026)** = 72% of the original (45–62px), still one line.
+- **Project rule added to CLAUDE.md:** "noc" in a request means "no other changes".

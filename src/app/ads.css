@@ -1081,8 +1081,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (min-width: 1200px) {
   .pth { container-type: inline-size; }
   .pth-eyebrow, .pth-h1 { position: relative; top: -3.5cm; } /* 1.5cm, then another 2cm (owner, 9 Oct 2026) */
-  /* on one line at 80% of its original size (owner, 9 Oct 2026) */
-  .pth-h1 { font-size: clamp(2.88rem, 4.16vw, 4.32rem); white-space: nowrap; }
+  /* on one line at 72% of its original size (80%, then 90% of that; owner, 9 Oct 2026) */
+  .pth-h1 { font-size: clamp(2.592rem, 3.744vw, 3.888rem); white-space: nowrap; }
   .pth-h1 > span { display: inline; }
   .pth-sub { --sub-w: calc(48.66cqw - 3cm - max((100cqw - 1320px) / 2, 0px) - clamp(32px, 4.5vw, 72px));
     width: var(--sub-w); max-width: none; font-size: calc(var(--sub-w) / 26.8); text-wrap: wrap; }
