@@ -4,8 +4,7 @@
  * ("60 seconds", "Matched to your exact needs" and "Free and no obligation" are existing site wording.)
  */
 export const START_HERE = {
-  /** Small green label. */
-  label: "Start here",
+  // ("Start here" label removed, owner 8 Oct 2026)
   /** Heading: the words in `em` are shown in green italics with a soft underline. */
   title: { before: "Your match is about ", em: "60 seconds", after: " away." },
   /** Line under the heading. */
@@ -16,6 +15,5 @@ export const START_HERE = {
     { title: "One local accountant", text: "Matched to your exact needs." },
     { title: "Free and no obligation", text: "You’re in control." },
   ],
-  /** Handwritten line beside the arrow to the match box. */
-  script: "Let’s get started",
+  // ("Let’s get started" and its arrow removed, owner 8 Oct 2026)
 };

@@ -5,10 +5,10 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { logo } from "@/config/site.config";
 import { BIZ_MATCH_KEY, type BizCategory } from "@/content/business-questionnaire";
-import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_MODES, SMSF_Q as Q, SMSF_SETUP_OPTION, isSettingUpSmsf } from "@/content/smsf-questionnaire";
+import { SMSF_CATEGORIES, SMSF_MODES, SMSF_Q as Q } from "@/content/smsf-questionnaire";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { getVisitorRecord } from "@/lib/visitor";
-import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
+import { ArrowRight, Check, Clock, Close, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 import { SMSF_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
@@ -17,7 +17,7 @@ import PhoneFit from "../ui/PhoneFit";
 /**
  * The SMSF & wealth questionnaire (SMSF ad page /ad-3). Same popup, progress header and option cards as the business
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's SMSF questions:
- *   one page per ticked category → a few quick questions (SMSF now? optional note; "when do you need help?" removed, owner 8 Oct 2026) → name → summary (confirm) →
+ *   one page per ticked category → name ("a few quick questions" page removed site-wide, owner 8 Oct 2026) → summary (confirm) →
  *   in person or remote → postcode/suburb → 11-second search → "great news" box asking for email → mobile →
  *   email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the SMSF match box (OPEN_SMSF_QUESTIONNAIRE).
@@ -28,7 +28,7 @@ export { OPEN_SMSF_QUESTIONNAIRE };
 const MATCH_PAGE = "/match";
 
 type CatAnswer = { ids: string[]; other: string };
-type Step = { kind: "cat"; id: string } | { kind: "qualify" | "summary" | "mode" | "location" | "email" | "phone" | "name" | "emailMe" };
+type Step = { kind: "cat"; id: string } | { kind: "summary" | "mode" | "location" | "email" | "phone" | "name" | "emailMe" };
 
 /** Faded picture in each step's box (credits: docs/image-credits*.md). */
 const STEP_PICTURES: Record<string, string> = {
@@ -36,7 +36,6 @@ const STEP_PICTURES: Record<string, string> = {
   smsf_audit: "/images/stock/topic-audit.webp",
   retirement: "/images/home/retirees-coast.webp",
   wealth: "/images/stock/topic-investing.webp",
-  qualify: "/images/stock/general-couple-finances.webp",
   name: "/images/stock/general-handshake.webp",
   summary: "/images/stock/general-documents-signing.webp",
   mode: "/images/home/accountant-client-desk.webp",
@@ -47,7 +46,6 @@ const STEP_PICTURES: Record<string, string> = {
 
 const emptyAnswer = (): CatAnswer => ({ ids: [], other: "" });
 const catById = (id: string) => SMSF_CATEGORIES.find((c) => c.id === id)!;
-const labelOf = (list: { id: string; label: string }[], id: string | null) => list.find((x) => x.id === id)?.label ?? "";
 /** "Not sure — help me choose" can't be ticked together with anything else on the same page. */
 const isUnsure = (id: string) => id.endsWith("_unsure");
 
@@ -67,8 +65,6 @@ export default function SmsfQuestionnaire() {
   const [open, setOpen] = useState(false);
   const [cats, setCats] = useState<string[]>([]);
   const [answers, setAnswers] = useState<Record<string, CatAnswer>>({});
-  const [have, setHave] = useState<string | null>(null);
-  const [notes, setNotes] = useState("");
   const [stepIdx, setStepIdx] = useState(0);
   const [backToSummary, setBackToSummary] = useState(false);
   const [mode, setMode] = useState<string | null>(null);
@@ -86,8 +82,8 @@ export default function SmsfQuestionnaire() {
 
   const steps: Step[] = useMemo(() => [
     ...cats.map((id) => ({ kind: "cat" as const, id })),
-    // the qualifying questions, then the name, so every later question can use it
-    { kind: "qualify" }, { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" }, { kind: "emailMe" },
+    // then the name, so every later question can use it (the "quick questions" page removed site-wide, owner 8 Oct 2026)
+    { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" }, { kind: "emailMe" },
   ], [cats]);
   const step = steps[Math.min(stepIdx, steps.length - 1)];
   const stepKey = step.kind === "cat" ? step.id : step.kind;
@@ -96,7 +92,6 @@ export default function SmsfQuestionnaire() {
   const show = useCallback((ids: string[]) => {
     setCats(ids);
     setAnswers({});
-    setHave(null); setNotes("");
     setStepIdx(0);
     setBackToSummary(false);
     setMode(null);
@@ -170,16 +165,6 @@ export default function SmsfQuestionnaire() {
     patch({ ids });
   };
 
-  // "Establishing an SMSF" ticked: they don't have one yet, so that question is skipped and answered "No" (owner, 8 Oct 2026)
-  const settingUp = isSettingUpSmsf(answers);
-  const haveAnswer = settingUp ? SMSF_SETUP_OPTION.have : have;
-
-  /** About-you lines (qualifying answers) for the summary, the lead and the match page. */
-  const aboutLines = () => [
-    { label: Q.summaryLabels.have, value: labelOf(SMSF_HAVE, haveAnswer) },
-    ...(notes.trim() ? [{ label: Q.summaryLabels.notes, value: notes.trim() }] : []),
-  ];
-
   // ---------- moving on ----------
   const next = () => {
     switch (step.kind) {
@@ -189,10 +174,6 @@ export default function SmsfQuestionnaire() {
         if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
         return goTo(stepIdx + 1);
       }
-      case "qualify":
-        if (!haveAnswer) return setError(Q.errors.have);
-        if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
-        return goTo(stepIdx + 1);
       case "name":
         if (name.trim().length < 2) return setError(Q.errors.name);
         return goTo(stepIdx + 1);
@@ -236,10 +217,8 @@ export default function SmsfQuestionnaire() {
     const holdSearching = startSearchTimer();
     setMatching(true);
     router.prefetch(MATCH_PAGE);
-    const about = aboutLines();
     const services = [
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
-      ...about.map((a) => `${a.label}: ${a.value}`),
     ];
     const modeLabel = SMSF_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
@@ -251,7 +230,7 @@ export default function SmsfQuestionnaire() {
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
-          answers: { ...answers, haveSmsf: haveAnswer, notes: notes.trim() },
+          answers,
           workMode: modeLabel,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
@@ -267,7 +246,6 @@ export default function SmsfQuestionnaire() {
         adType: "smsf", leadId: data.leadId, name: name.trim(), email: email.trim(), emailMe: emailMe === true, mode: modeLabel, place,
         services: [
           ...cats.map((id) => ({ category: catById(id).title, items: chosenLabels(catById(id), answers[id]) })),
-          { category: Q.summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) },
         ],
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "smsf" });
@@ -286,7 +264,6 @@ export default function SmsfQuestionnaire() {
   const stepNumber = stepIdx + 1;
   const ready =
     step.kind === "cat" ? Boolean(sel?.ids.length)
-      : step.kind === "qualify" ? Boolean(haveAnswer)
         : step.kind === "mode" ? Boolean(mode)
           : step.kind === "location" ? Boolean(place)
             : step.kind === "phone" ? MOBILE.test(cleanPhone(phone))
@@ -327,25 +304,9 @@ export default function SmsfQuestionnaire() {
                 {bodyKind === "cat" && cur && sel && (
                   <CategoryStep cat={cur} index={stepIdx} total={cats.length} sel={sel} toggle={toggle} patch={patch} error={error} />
                 )}
-                {bodyKind === "qualify" && (
-                  <StepHead eyebrow={Q.qualify.eyebrow} title={Q.qualify.title} icon={<Doc width={26} height={26} />}>
-                    {!settingUp && (
-                    <div className="space-y-2">
-                      <h4 className="text-[1.05rem] font-bold text-navy-900">{Q.qualify.have}</h4>
-                      <div role="radiogroup" aria-label={Q.qualify.have} className="grid gap-2.5 sm:grid-cols-3">
-                        {SMSF_HAVE.map((o) => (
-                          <ChoiceCard key={o.id} checked={have === o.id} onSelect={() => { setHave(o.id); setError(null); }} label={o.label} warn={Boolean(error) && !have} />
-                        ))}
-                      </div>
-                    </div>
-                    )}
-                    {/* ("When do you need help?" removed, owner 8 Oct 2026) */}
-                    <NoteField label={Q.qualify.noteLabel} value={notes} onChange={setNotes} placeholder={Q.qualify.notePlaceholder} rows={2} />
-                  </StepHead>
-                )}
                 {bodyKind === "summary" && (
-                  <SummaryStep cats={cats} answers={answers} about={aboutLines()} personalise={p}
-                    onEdit={(k) => { setBackToSummary(true); goTo(k === "qualify" ? idxOf("qualify") : k); }} />
+                  <SummaryStep cats={cats} answers={answers} personalise={p}
+                    onEdit={(k) => { setBackToSummary(true); goTo(k); }} />
                 )}
                 {bodyKind === "mode" && (
                   <StepHead eyebrow={Q.mode.eyebrow} title={p(Q.mode.title)} icon={<Sparkle width={26} height={26} />}>
@@ -490,9 +451,9 @@ function CategoryStep({ cat, index, total, sel, toggle, patch, error }: {
   );
 }
 
-function SummaryStep({ cats, answers, about, onEdit, personalise: p }: {
-  cats: string[]; answers: Record<string, CatAnswer>; about: { label: string; value: string }[];
-  onEdit: (stepIndex: number | "qualify") => void; personalise: (t: string) => string;
+function SummaryStep({ cats, answers, onEdit, personalise: p }: {
+  cats: string[]; answers: Record<string, CatAnswer>;
+  onEdit: (stepIndex: number) => void; personalise: (t: string) => string;
 }) {
   const card = "rounded-2xl border border-line bg-white/95 p-4 shadow-[0_10px_28px_-18px_rgba(7,50,101,.35)]";
   const editBtn = "min-h-10 rounded-full px-3 text-sm font-semibold text-green-700 underline-offset-2 hover:bg-green-50 hover:underline";
@@ -521,23 +482,6 @@ function SummaryStep({ cats, answers, about, onEdit, personalise: p }: {
             </li>
           );
         })}
-        <li className={card}>
-          <div className="mb-2 flex items-center gap-3">
-            <span aria-hidden className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.8rem] bg-green-50 text-green-700"><Doc width={22} height={22} /></span>
-            <p className="flex-1 font-bold leading-tight text-navy-900">{Q.summaryLabels.about}</p>
-            <button type="button" onClick={() => onEdit("qualify")} className={editBtn}>
-              {Q.summary.edit}<span className="sr-only"> {Q.summaryLabels.about}</span>
-            </button>
-          </div>
-          <dl className="space-y-1.5 text-[0.93rem] leading-snug">
-            {about.map((a) => (
-              <div key={a.label}>
-                <dt className="inline font-semibold text-navy-900">{a.label}: </dt>
-                <dd className="inline break-words text-ink/85">{a.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </li>
       </ul>
     </StepHead>
   );

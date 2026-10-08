@@ -136,7 +136,7 @@ export const BIZ_LANDING = {
   based: ["Based in Melbourne", "Connecting customers with accountants across Australia"],
   links: [
     { text: "How it works", href: "/how-it-works" },
-    { text: "About us", href: "/about" },
+    { text: "About", href: "/about" }, // same name as the site header and footer (owner, 8 Oct 2026)
     { text: "How we select accountants", href: "/how-we-select-accountants" },
     { text: "Contact & business details", href: "/contact" },
     { text: "Privacy", href: "/privacy" },
@@ -184,7 +184,7 @@ export const BIZ_Q = {
   },
   summary: {
     eyebrow: "Your summary",
-    title: "{name}, here’s what you told us you need help with",
+    title: "Thank you {name}, here’s what you told us you need help with",
     text: "Please check your selections, {name}. You can change anything before we look for your accountant.",
     edit: "Change",
     softwarePrefix: "Software:",
@@ -224,7 +224,7 @@ export const BIZ_Q = {
   },
   name: {
     eyebrow: "About you",
-    title: "Hi, what is your name please",
+    title: "Hi, thank you for letting us know what services you require, could I have your name please?",
     label: "Your name",
     /** light grey hint inside the box (owner, 7 Oct 2026) */
     placeholder: "First name only, that’s fine",

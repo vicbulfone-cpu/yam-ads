@@ -6,7 +6,7 @@ import { logo } from "@/config/site.config";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { OPEN_AD_BOX } from "@/lib/questionnaire-events";
 import FitBox from "../ui/FitBox";
-import StartHere, { StartHerePill } from "../ui/StartHere";
+import StartHere from "../ui/StartHere";
 import { Close } from "../ui/Icons";
 
 /**
@@ -69,7 +69,6 @@ export default function AdBoxPopup({ openEvent, children }: { openEvent: string;
         <div className="relative flex h-full max-h-[inherit] flex-col">
           <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
-            <StartHerePill />
             <button type="button" onClick={() => setOpen(false)} aria-label="Close" className="q-modal-close">
               <Close width={20} height={20} strokeWidth={2.4} />
             </button>

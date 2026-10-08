@@ -9,7 +9,7 @@ import {
   ADVICE_TOPICS, financialYears, PERSONAL_NEEDS, RETURN_ITEMS, RETURN_NEEDS, STILL_UNSURE, YES_NO_UNSURE, type NeedId,
 } from "@/content/personal-questionnaire";
 import { REG_CATEGORIES, REG_STAGE } from "@/content/registration-questionnaire";
-import { SMSF_CATEGORIES, SMSF_HAVE, SMSF_SETUP_OPTION, isSettingUpSmsf } from "@/content/smsf-questionnaire";
+import { SMSF_CATEGORIES } from "@/content/smsf-questionnaire";
 import { BIZ_Q, PERSONAL_Q, REG_Q, SERVICE_PICK, SITE_Q as Q, SMSF_Q } from "@/content/site-questionnaire";
 import { LEAVE_PROMPT } from "@/content/leave-prompt";
 import { OPEN_QUESTIONNAIRE_EVENT } from "@/lib/questionnaire-events";
@@ -21,7 +21,7 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import FitBox from "../ui/FitBox";
-import StartHere, { StartHerePill } from "../ui/StartHere";
+import StartHere from "../ui/StartHere";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
@@ -32,7 +32,7 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
  *   for each ticked service, in the box's order: that ad's sub-section page, then that ad's own questions
  *     Personal (Ad 2): main reason → its follow-up page → "Does your return include any of these?" (returns only)
  *     Business (Ad 1): one page per ticked category
- *     SMSF (Ad 3): one page per ticked category → the two quick questions
+ *     SMSF (Ad 3): one page per ticked category (no "quick questions" page, owner 8 Oct 2026)
  *     Registrations (Ad 4): one page per ticked category → new or existing business?
  *   → name → summary (Change links) → in person or remote → postcode/suburb → 11-second search → email → mobile →
  *   email my match details? → match page (/match).
@@ -152,9 +152,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const [topicOther, setTopicOther] = useState("");
   const [income, setIncome] = useState<string[]>([]);
   const [personalNotes, setPersonalNotes] = useState("");
-  // SMSF (Ad 3) and registrations (Ad 4) quick questions
-  const [have, setHave] = useState<string | null>(null);
-  const [smsfNotes, setSmsfNotes] = useState("");
+  // registrations (Ad 4) quick question
   const [stage, setStage] = useState<string | null>(null);
   const [regNotes, setRegNotes] = useState("");
   // shared steps
@@ -191,7 +189,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         if (ns.some((n) => RETURN_NEEDS.includes(n))) out.push({ kind: "pincome" });
       } else {
         out.push(...picks[s].map((id) => ({ kind: "cat" as const, s, id })));
-        if (s !== "business") out.push({ kind: "qualify", s });
+        if (s === "registration") out.push({ kind: "qualify", s }); // (SMSF "quick questions" page removed site-wide, owner 8 Oct 2026)
       }
     }
     // the name comes straight after the service questions, so every later question can use it
@@ -207,7 +205,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     // a fresh start every time
     setPicks({ business: [], smsf: [], registration: [] }); setAnswers({});
     setNeeds([]); setYear(null); setFirst(null); setAmendYear(null); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
-    setHave(null); setSmsfNotes(""); setStage(null); setRegNotes("");
+    setStage(null); setRegNotes("");
     setStepIdx(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
     setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setMatching(false); setConfirmLeave(false);
     setServices(keys);
@@ -321,12 +319,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     }
   };
   const incomeLabels = () => RETURN_ITEMS.filter((o) => income.includes(o.id)).map((o) => o.label);
-  // "Establishing an SMSF" ticked: they don't have one yet, so that question is skipped and answered "No" (owner, 8 Oct 2026)
-  const settingUpSmsf = isSettingUpSmsf(answers);
-  const haveAnswer = settingUpSmsf ? SMSF_SETUP_OPTION.have : have;
+  // ("Do you currently have an SMSF?" removed site-wide, owner 8 Oct 2026)
   const aboutLines = (s: "smsf" | "registration") => s === "smsf"
-    ? [{ label: SMSF_Q.summaryLabels.have, value: labelOf(SMSF_HAVE, haveAnswer) },
-      ...(smsfNotes.trim() ? [{ label: SMSF_Q.summaryLabels.notes, value: smsfNotes.trim() }] : [])]
+    ? []
     : [{ label: REG_Q.summaryLabels.stage, value: labelOf(REG_STAGE, stage) }, ...(regNotes.trim() ? [{ label: REG_Q.summaryLabels.notes, value: regNotes.trim() }] : [])];
 
   // ---------- moving on ----------
@@ -364,7 +359,6 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         if (!income.length) return setError(PERSONAL_Q.errors.income);
         return advance();
       case "qualify":
-        if (step.s === "smsf" && !haveAnswer) return setError(SMSF_Q.errors.have);
         if (step.s === "registration" && !stage) return setError(REG_Q.errors.stage);
         return advance();
       case "name":
@@ -445,9 +439,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       else {
         const about = aboutLines(s);
         lines.push(...about.map((a) => `${a.label}: ${a.value}`));
-        groups.push({ category: CAT_Q[s].summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) });
+        if (about.length) groups.push({ category: CAT_Q[s].summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) });
         leadAnswers[s] = s === "smsf"
-          ? { ...catAnswers, haveSmsf: haveAnswer, notes: smsfNotes.trim() }
+          ? catAnswers
           : { ...catAnswers, businessStage: stage, notes: regNotes.trim() };
       }
     }
@@ -493,7 +487,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       : step.kind === "cat" ? Boolean(sel?.ids.length)
         : step.kind === "pfollow" ? (step.n === "amend" || topics.length > 0)
           : step.kind === "pincome" ? income.length > 0
-            : step.kind === "qualify" ? (step.s === "smsf" ? Boolean(haveAnswer) : Boolean(stage))
+            : step.kind === "qualify" ? Boolean(stage)
               : step.kind === "mode" ? Boolean(mode)
                 : step.kind === "location" ? Boolean(place)
                   : step.kind === "phone" ? MOBILE.test(cleanPhone(phone))
@@ -525,7 +519,6 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         <div className="relative flex h-full max-h-[inherit] flex-col">
           <div className="q-modal-top flex shrink-0 items-center justify-between gap-3 border-b border-line/70 bg-white/90 px-4 py-2.5 sm:px-6">
             <Image src={logo.srcSmall} alt={logo.alt} width={680} height={91} className="h-auto w-[170px] sm:w-[210px]" />
-            {phase === "box" && <StartHerePill />}
             <button type="button" onClick={requestClose} aria-label="Close" className="q-modal-close" disabled={sending}>
               <Close width={20} height={20} strokeWidth={2.4} />
             </button>
@@ -616,13 +609,6 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                       </StepHead>
                     )}
 
-                    {body.kind === "qualify" && body.s === "smsf" && (
-                      <StepHead eyebrow={SMSF_Q.qualify.eyebrow} title={SMSF_Q.qualify.title} icon={<Doc width={26} height={26} />}>
-                        {!settingUpSmsf && <ChoiceGroup label={SMSF_Q.qualify.have} options={SMSF_HAVE} value={have} onChange={(v) => { setHave(v); clear(); }} warn={warn && !have} cols={3} />}
-                        {/* ("When do you need help?" removed, owner 8 Oct 2026) */}
-                        <NoteField label={SMSF_Q.qualify.noteLabel} value={smsfNotes} onChange={setSmsfNotes} placeholder={SMSF_Q.qualify.notePlaceholder} rows={2} />
-                      </StepHead>
-                    )}
                     {body.kind === "qualify" && body.s === "registration" && (
                       <StepHead eyebrow={REG_Q.qualify.eyebrow} title={REG_Q.qualify.title} icon={<Doc width={26} height={26} />}>
                         <div role="radiogroup" aria-label={REG_Q.qualify.title} className="grid gap-2.5 sm:grid-cols-2">
@@ -681,7 +667,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                                   </SummaryCard>
                                 );
                               })}
-                              {(s === "smsf" || s === "registration") && (
+                              {(s === "smsf" || s === "registration") && aboutLines(s).length > 0 && (
                                 <SummaryCard title={CAT_Q[s].summaryLabels.about} onEdit={() => editPage(indexOf((x) => x.kind === "qualify" && x.s === s))}>
                                   {aboutLines(s).map((a) => <Line key={a.label}><span className="font-semibold">{a.label}:</span> {a.value}</Line>)}
                                 </SummaryCard>
@@ -879,21 +865,6 @@ function NeedHead({ need, eyebrow, title }: { need: Exclude<NeedId, "unsure">; e
       <div className="min-w-0 space-y-1">
         <span className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-green-700">{eyebrow}</span>
         <h3 className="font-sans tracking-[-0.02em] text-[1.5rem] font-semibold leading-tight text-navy-900 sm:text-[1.8rem]">{title}</h3>
-      </div>
-    </div>
-  );
-}
-
-/** One question with single-choice cards (e.g. "Which financial year?"). */
-function ChoiceGroup({ label, hideLabel, options, value, onChange, warn, cols }: {
-  label: string; hideLabel?: boolean; options: { id: string; label: string; desc?: string }[]; value: string | null;
-  onChange: (id: string) => void; warn?: boolean; cols: 2 | 3;
-}) {
-  return (
-    <div className="space-y-2.5">
-      {!hideLabel && <h4 className="font-sans text-lg font-semibold tracking-[-0.02em] text-navy-900">{label}</h4>}
-      <div role="radiogroup" aria-label={label} className={`grid gap-2.5 ${cols === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
-        {options.map((o) => <ChoiceCard key={o.id} checked={value === o.id} onSelect={() => onChange(o.id)} label={o.label} desc={o.desc} warn={warn} />)}
       </div>
     </div>
   );

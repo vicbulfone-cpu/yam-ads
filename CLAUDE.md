@@ -86,6 +86,7 @@ The no-word-changes rule below is lifted. Rewritten titles, descriptions, H1s an
 - Hero postcode box: entering a postcode opens the questionnaire with ?postcode=XXXX pre-filled.
 - Carry utm_* parameters, gclid and ?ref= through every CTA into the lead data.
 - Add spam protection to the lead form (hidden field + rate limiting).
+- **Never ask "Do you currently have an SMSF?"** (owner, 8 Oct 2026): removed from the SMSF ad questionnaire (/ad-3) and the site questionnaire; do not add it anywhere on the site. The SMSF "A few quick questions" page (and its optional note) is removed site-wide too.
 - Google Ads: 4 ad types, each with its own landing page and questionnaire on subdomains, added AFTER the main build. Build the main site so they plug in without rework.
 
 ## MATCHING FLOW

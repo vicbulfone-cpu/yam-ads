@@ -57,8 +57,11 @@ export const homeDeskHeroPicture = { src: "/images/hero/hero-no-writing.png", wi
  *  cut-out laid back on top (left/top = its place in the 1983 x 793 photo), so the arrow can be moved with the handwriting. */
 export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png", width: 1983, height: 793 };
 /** Home page hero picture (owner, 8 Oct 2026): "hero section/ad landing pages/hero home5.png", scaled to fill the hero width, sky trimmed from the top
- *  (scripts/make-home-hero.cjs). The ad pages keep homeDeskHeroNoArrowPicture above. */
-export const homePageHeroPicture = { src: "/images/hero/home-v22-1983.webp", width: 1983, height: 793 };
+ *  (scripts/make-home-hero.cjs). Used by Ads 1-4 at every screen size (the home page uses homeHeroLightPicture below). */
+export const homePageHeroPicture = { src: "/images/hero/home-v30-1983.webp", width: 1983, height: 793 };
+/** The same picture with the view through the window (sky, skyline, trees) slightly lighter — home page only (owner, 8 Oct 2026).
+ *  Built by scripts/make-home-hero.cjs; the ad pages keep homePageHeroPicture. */
+export const homeHeroLightPicture = { src: "/images/hero/home-light-v4-1983.webp", width: 1983, height: 793 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 

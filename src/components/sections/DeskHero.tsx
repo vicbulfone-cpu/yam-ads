@@ -46,7 +46,7 @@ export default function DeskHero({
       )
     : undefined;
   return (
-    <section className={`desk-hero relative isolate -mt-[4cm]${mobilePicture ? " has-mobile-pic" : ""}${phoneStack ? " zz-phone" : ""}`}>
+    <section className={`desk-hero relative isolate -mt-[4cm]${headline.greenOnOwnLine ? "" : " is-home"}${mobilePicture ? " has-mobile-pic" : ""}${phoneStack ? " zz-phone" : ""}`}>
       <div className="desk-hero-grid">
         {/* the photograph: shares the first row with the words and stretches to the full width of the screen */}
         <div className="desk-hero-picture relative">
@@ -110,7 +110,7 @@ export default function DeskHero({
               ))}
             </nav>
           )}
-          <h1 className={`desk-hero-h1${headline.greenOnOwnLine ? " is-city" : ""}`}>
+          <h1 className={`desk-hero-h1${headline.greenOnOwnLine ? " is-city" : " is-home"}`}>
             {headline.greenOnOwnLine ? (
               <>
                 <span className="block whitespace-nowrap">{headline.before}</span>{" "}

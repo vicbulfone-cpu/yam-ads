@@ -2,7 +2,7 @@
  * SMSF & WEALTH AD QUESTIONNAIRE — wording for the SMSF ad landing page (/ad-3) and its own questionnaire.
  * Owner's wording (5 Oct 2026) and the owner's "smsf" ad design picture. Edit the words here.
  *
- * Flow: one page per ticked category (match box) → "a few quick questions" (SMSF now? when? optional note) → name →
+ * Flow: one page per ticked category (match box) → name →
  * summary (confirm) → in person or remote → postcode/suburb → short pause → "great news" box with email → mobile →
  * email the match details? → match page (/match). Each page counts as one step in the progress bar (max 5 milestones).
  */
@@ -81,18 +81,7 @@ export const SMSF_CATEGORIES: BizCategory[] = [
   },
 ];
 
-/** The short qualifying questions (owner, 5 Oct 2026). */
-/** Ticking "Establishing an SMSF" means they don't have one yet (owner, 8 Oct 2026): the "Do you currently have an SMSF?"
- *  question is then skipped and answered "No" for them. */
-export const SMSF_SETUP_OPTION = { category: "smsf_setup", option: "establish", have: "no" };
-export const isSettingUpSmsf = (answers: Record<string, { ids: string[] } | undefined>) =>
-  Boolean(answers[SMSF_SETUP_OPTION.category]?.ids.includes(SMSF_SETUP_OPTION.option));
-
-export const SMSF_HAVE = [
-  { id: "yes", label: "Yes" },
-  { id: "no", label: "No" },
-  { id: "considering", label: "Considering one" },
-];
+/** ("Do you currently have an SMSF?" removed site-wide, owner 8 Oct 2026; never ask it anywhere.) */
 export const SMSF_WHEN = [
   { id: "asap", label: "As soon as possible" },
   { id: "month", label: "Within a month" },
@@ -142,23 +131,14 @@ export const SMSF_Q = {
   ...BIZ_Q,
   badge: "Your SMSF Match in Progress",
   categoryHelp: "Select all that apply — we’ll use these to match you with a local accountant who looks after {category}.",
-  qualify: {
-    eyebrow: "A few quick questions",
-    title: "Just a couple of quick questions",
-    have: "Do you currently have an SMSF?",
-    when: "When do you need help?",
-    noteLabel: "Anything else you’d like your accountant to know? (optional)",
-    notePlaceholder: "For example: a deadline, an ATO letter, or the size of the fund…",
-  },
+  // ("A few quick questions" page removed site-wide, owner 8 Oct 2026)
   summaryLabels: {
     about: "About you",
-    have: "Currently have an SMSF",
     when: "Help needed",
     notes: "Note for your accountant",
   },
   errors: {
     ...BIZ_Q.errors,
-    have: "Please tell us if you currently have an SMSF.",
     when: "Please tell us when you need help.",
   },
   found: { ...BIZ_Q.found, placeholder: "you@example.com" },

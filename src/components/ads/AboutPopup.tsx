@@ -53,7 +53,16 @@ export default function AboutPopup({ level = 3 }: { level?: 2 | 3 }) {
       </section>
 
       <section className="abp-why">
-        <H className="abp-h">{A.why.heading}</H>
+        {/* /about page (owner, 8 Oct 2026): "Us?" in green; the ad pages' popup is unchanged */}
+        <H className="abp-h">
+          {level === 2 && /\sUs\?$/.test(A.why.heading) ? (
+            <>
+              {A.why.heading.replace(/\s*Us\?$/, "")} <span className="text-green-700">Us?</span>
+            </>
+          ) : (
+            A.why.heading
+          )}
+        </H>
         <ul className="abp-cards">
           {A.why.items.map((w) => (
             <li key={w.id} className="abp-card">

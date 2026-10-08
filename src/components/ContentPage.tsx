@@ -1,6 +1,6 @@
 // Builds a whole page from the old site's extracted content: hero, body sections, call-to-action band, footer.
 import type { ReactNode } from "react";
-import { cityPicture, homeDeskHeroPicture, homePageHeroPicture, homeMobileHeroPicture } from "@/config/site.config";
+import { cityPicture, homeHeroLightPicture } from "@/config/site.config";
 import { explodeLinkGroups, loadContent, mergeViews, splitOnHeadings, toSections, type Node, type Section } from "@/lib/content";
 import { cityOf, isLivePage, typeOf } from "@/lib/pages";
 import { copyFor } from "@/lib/seo";
@@ -15,6 +15,7 @@ import { Html } from "./sections/Blocks";
 import Link from "next/link";
 import { HERO_COPY } from "@/content/hero-copy";
 import QuickAnswer from "./sections/QuickAnswer";
+import Breadcrumbs from "./sections/Breadcrumbs";
 import SectionView, { toBlocks } from "./sections/SectionRenderer";
 import SiteFooter from "./layout/SiteFooter";
 import { auFind } from "./sections/au-media";
@@ -111,6 +112,9 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
 
   // How It Works page: its three numbered step sections become one combined step-by-step section (owner, 7 Oct 2026)
   const isHowItWorks = path === "/how-it-works";
+  // Privacy page: the home page's look (owner, 8 Oct 2026), laid out like the About page: breadcrumb, headline with its
+  // last word in green, "Last updated" line; then the home page's closing band. Wording unchanged.
+  const isPrivacy = path === "/privacy";
   const stepIdx = isHowItWorks
     ? rest2.flatMap((s, i) => (s.nodes.some((n) => n.t === "text" && /^\d$/.test(n.text)) && s.nodes.some((n) => n.t === "h" && n.l === 2) ? [i] : []))
     : [];
@@ -161,7 +165,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homePageHeroPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroLightPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
           <HomeMatchIntro />
           <HeroTrustStrip />
           <WhyItMatters />
@@ -181,7 +185,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     <>
       <main className={path === "/privacy" ? "page-privacy" : undefined}>
         {isHome ? (
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} mobilePicture={homeMobileHeroPicture} desktopPicture={homeDeskHeroPicture} showTrust={false} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroLightPicture} showTrust={false} />
         ) : isCity && image && rewritten ? (
           // city pages: identical hero to home page (same pictures, trust items, size, position), but with city's own H1 text
           <DeskHero
@@ -189,11 +193,22 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
             crumbs={parts.crumbs}
             card={card}
             cardTitleTag={pageCard ? "h2" : "p"}
-            mobilePicture={homeMobileHeroPicture}
-            desktopPicture={homeDeskHeroPicture}
+            desktopPicture={homeHeroLightPicture}
             showTrust={false}
           />
-        ) : isHowItWorks ? null /* owner, 7 Oct 2026: the old hero (eyebrow, H1, intro) removed; the steps section opens the page */ : (
+        ) : isHowItWorks ? null /* owner, 7 Oct 2026: the old hero (eyebrow, H1, intro) removed; the steps section opens the page */ : isPrivacy && parts.h1 ? (
+          <section className="relative isolate overflow-hidden bg-gradient-to-b from-navy-50 via-white to-white">
+            <div className="container-page pb-4 pt-8 md:pb-6 md:pt-12">
+              <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Privacy" }]} className="mb-6 md:mb-8" />
+              <div className="max-w-4xl">
+                <h1 className="h-display about-title">
+                  {parts.h1.text.replace(/\s*\S+$/, "")} <span className="text-green-700">{parts.h1.text.match(/\S+$/)?.[0]}</span>
+                </h1>
+                {parts.lead.map((l, i) => <Html key={i} html={l} className="prose-yam lead mt-5" />)}
+              </div>
+            </div>
+          </section>
+        ) : (
           // the Privacy page has no match box: its statement starts straight under "Last updated" (owner, 6 Oct 2026);
           // nor has How It Works (owner, 7 Oct 2026)
           <PageHero parts={parts} card={path === "/privacy" || isHowItWorks ? null : card} cardTitleTag={pageCard ? "h2" : "p"} image={image} showCta={Boolean(parts.cta) || type !== "other"} />
@@ -231,10 +246,10 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
         {isHome && <Tagline text={HOME_HERO_TAGLINE} />}
         {isHome ? <div className="home-warm">{rendered}</div> : rendered}
         {afterBody}
-        <Tagline text={taglineFor(path)} />
+        <Tagline text={taglineFor(path)} handwritten={isHowItWorks} />
         {/* a closing band with borrowed wording uses styled text, not a heading, so the page keeps its old heading outline */}
-        {isHowItWorks ? (
-          // owner, 7 Oct 2026: the home page closing band ("One quick match...") in place of the blue call-to-action box
+        {isHowItWorks || isPrivacy ? (
+          // owner, 7 Oct 2026 (Privacy: 8 Oct 2026): the home page closing band ("One quick match...") in place of the blue call-to-action box
           <HomeClosingCta tagline={TAGLINES[8]} />
         ) : ownCta ? (
           <CtaBand
