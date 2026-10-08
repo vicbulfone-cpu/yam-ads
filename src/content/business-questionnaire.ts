@@ -166,7 +166,7 @@ export const BIZ_Q = {
   categoryOf: "Category {n} of {total}",
   categoryHelp: "Select all that apply — we’ll use these to match you with a local accountant who looks after {category}.",
   otherLabel: "Tell us what you need",
-  otherPlaceholder: "A sentence or two is plenty…",
+  otherPlaceholder: "",
   softwareHeading: "Which software do you need help with?",
   back: "Back",
   next: "Next",
