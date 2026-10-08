@@ -509,3 +509,6 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
   50–69px), and the label + headline moved up another 2cm (3.5cm in all).
 - **Desktop headline at 90% of its 80% size (owner, 9 Oct 2026)** = 72% of the original (45–62px), still one line.
 - **Project rule added to CLAUDE.md:** "noc" in a request means "no other changes".
+- **Desktop sub-line 130% larger and 1cm under the headline (owner, 9 Oct 2026, noc).** Still two lines (20–22px); lifted so
+  the gap to the headline is exactly 1cm; keeps its old height in the layout so the button and everything below stay put.
+  Side effect: it no longer stops 3cm short of the notepad (the longer line ends ~20px past the notepad's left edge, above it).
