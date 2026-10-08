@@ -89,9 +89,14 @@ export const PERSONAL_LANDING = {
 export const PERSONAL_HERO = {
   eyebrow: "Personal Tax",
   h1: ["Personal Tax", "Accountant"],
-  sub: "Find an accountant matched to your personal tax needs.",
+  /** owner's hero wording (9 Oct 2026, later the same day): the longer sub-line and the supporting line */
+  sub: "Looking for help with your personal tax return? Find an accountant matched to your individual tax needs.",
   cta: "Find My Tax Accountant",
   note: ["60 seconds", "Free", "No obligation"],
+  support: {
+    title: "Personal tax made simpler.",
+    text: "Find an accountant who can help with your tax return, deductions, investments, rental property and other personal tax matters.",
+  },
 };
 
 /** The personal match box. */

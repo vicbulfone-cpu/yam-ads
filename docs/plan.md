@@ -461,3 +461,10 @@ everything under it (`AdHomeSections`), the header and the footer are unchanged.
 - **Desktop: photo 4cm higher (owner, 9 Oct 2026).** The photo's box starts 4cm above the hero (`.pth-pic { top: -4cm }`,
   1200px+ only), so the photo shows 4cm higher; to still fill the hero to its bottom edge it is drawn about 20% larger.
   Tablets and phones unchanged.
+- **Hero wording per the owner's hero instructions (9 Oct 2026, later):** sub-line now "Looking for help with your personal
+  tax return? Find an accountant matched to your individual tax needs."; supporting line added under the reassurance:
+  "Personal tax made simpler." (green, bold) + "Find an accountant who can help with your tax return, deductions,
+  investments, rental property and other personal tax matters." (`PERSONAL_HERO.support`). H1, button and reassurance
+  unchanged; the "PERSONAL TAX" eyebrow and the three trust points kept. Phones: the supporting line sits on a soft
+  frosted white panel (it falls over the treetops). Desktop: supporting line max 25rem wide and a stronger white wash on
+  the left so the words and points read clearly where the laptop reaches under them (the taller hero draws the photo larger).

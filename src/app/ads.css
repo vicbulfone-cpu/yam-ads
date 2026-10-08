@@ -835,6 +835,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .pth-cta:focus-visible { outline: 3px solid var(--navy-900); outline-offset: 3px; }
 .pth-cta-arrow { width: 1.35em; height: 1.35em; flex-shrink: 0; }
 .pth-note { margin-top: 12px; text-align: center; font-size: 0.92rem; color: rgb(7 50 101 / 0.8); }
+/* "Personal tax made simpler." + the sentence after it (owner, 9 Oct 2026): a short supporting paragraph under the reassurance */
+.pth-support { margin-top: 26px; max-width: 32rem; font-size: 1rem; line-height: 1.5; color: var(--navy-900); }
+.pth-support strong { display: block; margin-bottom: 0.2rem; font-size: 1.08rem; font-weight: 800; color: var(--green-700); }
 .pth-visual { height: clamp(280px, 80vw, 400px); margin-top: 36px; }
 /* the three trust points: on white under the photo, side by side, each icon above its two short lines */
 .pth-points { position: relative; margin-inline: calc(50% - 50vw); padding: 1.5rem calc(50vw - 50% + 12px) 1.75rem; background: #fff;
@@ -866,6 +869,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-cta-arrow { width: 1.3em; height: 1.3em; }
   .pth-note { margin-top: 10px; font-size: 0.85rem; font-weight: 500; color: var(--navy-900); text-shadow: 0 0 6px #fff, 0 0 2px #fff; }
   .pth-visual { height: 0; margin-top: 30px; }
+  /* over the treetops at the bottom of the photo: on a soft frosted panel so it stays easy to read */
+  .pth-support { margin-top: 22px; padding: 0.8rem 1rem; border-radius: 16px; font-size: 0.95rem; background: rgba(255, 255, 255, 0.82);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); box-shadow: 0 10px 24px -18px rgba(7, 50, 101, 0.45); }
   .pth-points { height: 11.5rem; padding: 1.75rem calc(50vw - 50% + 8px) 0; }
   .pth-points li { font-size: 0.92rem; font-weight: 600; line-height: 1.3; gap: 0.75rem; }
   .pth-point-icon { width: 3.6rem; height: 3.6rem; }
@@ -892,7 +898,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   /* the photo sits 4cm higher (owner, 9 Oct 2026): its box starts 4cm above the hero (that strip of sky is hidden) */
   .pth-pic { top: -4cm; }
   .pth-pic img { object-position: 100% 50%; }
-  .pth::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.2) 46%, rgba(255, 255, 255, 0) 56%); }
+  /* soft white wash on the left; strong enough over the lower left that the supporting line and points read clearly where
+     the laptop reaches under them */
+  .pth::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.74) 32%, rgba(255, 255, 255, 0.42) 46%, rgba(255, 255, 255, 0) 58%); }
   .pth-inner { max-width: 1320px; padding: 64px clamp(32px, 4.5vw, 72px); }
   .pth-text, .pth-points { width: 45%; min-width: 28rem; }
   .pth-eyebrow { font-size: 0.9rem; }
@@ -900,6 +908,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-sub { margin-top: 20px; font-size: clamp(1.2rem, 1.45vw, 1.45rem); }
   .pth-cta { display: inline-flex; width: auto; margin-top: 32px; min-height: 3.75rem; padding: 0.9rem 2.4rem; font-size: clamp(1.2rem, 1.35vw, 1.35rem); }
   .pth-note { margin-top: 12px; text-align: left; padding-left: 1.5rem; font-size: 0.95rem; }
+  .pth-support { max-width: 25rem; margin-top: 24px; }
   .pth-visual { display: none; }
   /* compact, two short lines each, so the row ends before the laptop in the photo */
   .pth-points { margin: 36px 0 0; padding: 0; background: none; display: flex; gap: 1rem clamp(1rem, 1.6vw, 2rem); }
