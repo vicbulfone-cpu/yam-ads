@@ -78,7 +78,10 @@ export default function PersonalSections() {
             <ul className="pps-helps">
               {W.points.map((p) => (
                 <li key={p.title} className="pps-help">
-                  <Image src={p.icon} alt="" width={160} height={160} className="pps-help-icon" />
+                  {/* a green tick in the CTA buttons' green instead of each point's own icon (owner, 9 Oct 2026) */}
+                  <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" className="pps-help-tick">
+                    <path d="M4.5 12.5l4.8 4.8L19.5 7" />
+                  </svg>
                   <span>
                     <strong className="pps-help-title">{p.title}</strong>
                     <span className="pps-help-text">{p.text}</span>
@@ -112,7 +115,7 @@ export default function PersonalSections() {
               );
             })}
           </ul>
-          {/* the same animation as the services cards (owner, 9 Oct 2026) */}
+          {/* the same animation as the services cards, as they scroll into view (owner, 9 Oct 2026) */}
           <PpsCardsReveal list=".pps-tiles" item=".pps-tile" />
         </div>
       </section>

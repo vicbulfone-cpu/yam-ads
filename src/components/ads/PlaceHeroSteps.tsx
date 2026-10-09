@@ -19,7 +19,7 @@ export default function PlaceHeroSteps() {
       steps.style.top = "";
       if (getComputedStyle(steps).display === "none") return;
       const base = parseFloat(getComputedStyle(steps).top) || 0;
-      const delta = pic.getBoundingClientRect().bottom - 1 * MM - steps.getBoundingClientRect().bottom; // 4mm, then 3mm lower (owner, 9 Oct 2026)
+      const delta = pic.getBoundingClientRect().bottom - (1 - 1.5 + 4) * MM - steps.getBoundingClientRect().bottom; // 4mm, then 3mm, then 1.5mm lower, then 4mm higher (owner, 9 Oct 2026)
       steps.style.top = `${base + delta}px`;
     };
     place();

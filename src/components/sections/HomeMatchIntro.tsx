@@ -61,7 +61,8 @@ const Eyebrow = ({ children }: { children: string }) => (
 
 /** `startHref`: where the Start buttons go (ad pages pass their own match box, so ad leads stay with the ad questionnaire). */
 /** `bar`: own words for the navy bar under the steps (owner, 9 Oct 2026: the personal tax ad page has its own) */
-export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean }) {
+/** `steps`: own steps in place of the photo steps (owner, 9 Oct 2026: the personal tax ad page's icon steps) */
+export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false, steps }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean; steps?: React.ReactNode }) {
   return (
     <section aria-labelledby="home-match-intro" className="relative overflow-hidden bg-white pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]">
       {/* starts 0.5cm lower than the usual 2.5cm under the hero (owner, 5 Oct 2026: 2cm lower, then 1.5cm back up);
@@ -89,7 +90,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
           </div>
 
           {/* owner, 7 Oct 2026: the steps 5mm lower (everything below follows); the photo boxes back to full size (they were at 85% for a while) */}
-          <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
+          {steps ?? <ol className="mt-[calc(2rem+5mm)] grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-[calc(1.4vw+5mm)] lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:gap-[1.2vw]">
             {HOME_STEPS.flatMap((s, i) => [
               <li key={s.title} className="relative">
                 {/* owner, 7 Oct 2026: the photo boxes 50% taller (2.35:1 → 1.567:1, tablets 1.6:1 → 1.067:1), framed so the tops of heads show, using the wider zoomed-out shots; set lower so the STEP tag only overlaps the
@@ -115,7 +116,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
                 </li>
               ),
             ])}
-          </ol>
+          </ol>}
         </div>
 
         {/* navy start bar under the steps: full screen width (owner, 5 Oct 2026: 1cm extra space above it;

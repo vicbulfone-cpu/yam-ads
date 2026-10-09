@@ -980,9 +980,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 }
 @media (min-width: 1100px) {
   .pps-why-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); gap: clamp(2.5rem, 3.5vw, 4rem); align-items: center; } /* the box wider for the owner's "s" design (9 Oct 2026) */
-  .pps-why-card { margin-top: 0; margin-bottom: 7mm; left: calc(5mm + 3mm); top: calc(1cm + 3mm); } /* then down 3mm more (owner, 9 Oct 2026) */ /* 5mm right, then 3mm more; then down 1cm (owner, 9 Oct 2026) */ /* margin-bottom keeps its laid-out height as before the 1.5cm cut, so its top stays put */
+  .pps-why-card { margin-top: 0; margin-bottom: calc(7mm + 1cm); /* +1cm: the box's top stays put after its 1cm cut (owner, 9 Oct 2026, noc) */ left: calc(5mm + 3mm); top: calc(1cm + 3mm); } /* then down 3mm more (owner, 9 Oct 2026) */ /* 5mm right, then 3mm more; then down 1cm (owner, 9 Oct 2026) */ /* margin-bottom keeps its laid-out height as before the 1.5cm cut, so its top stays put */
   .pps-why-text { position: relative; top: 0.3cm; } /* up 1cm, then down 1.3cm, beside the card (owner, 9 Oct 2026) */
-  .pps-why { --why-pt: calc(clamp(2.5rem, 5vw, 4rem) - 1.2cm + 1.5cm - 1cm - 4mm - 2mm - 3mm); padding-top: max(0px, var(--why-pt)); margin-top: min(0px, var(--why-pt)); } /* the second section: up 1.2cm, then down 1.5cm, then up 1cm, 4mm, 2mm and 3mm, with everything under it (owner, 9 Oct 2026); where that is more than its top space, the rest is taken from above it */
+  .pps-why { --why-pt: calc(clamp(2.5rem, 5vw, 4rem) - 1.2cm + 1.5cm - 1cm - 4mm - 2mm - 3mm - 1.5cm); padding-top: max(0px, var(--why-pt)); margin-top: min(0px, var(--why-pt)); } /* the second section: up 1.2cm, then down 1.5cm, then up 1cm, 4mm, 2mm, 3mm and 1.5cm, with everything under it (owner, 9 Oct 2026); where that is more than its top space, the rest is taken from above it */
 }
 
 /* section 3: six service cards: pale blue boxes, a round mint icon on the left, the words beside it */
@@ -1005,8 +1005,10 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
    bottom one), space below = section 2's bottom padding (added to section 3's top one), so each side keeps the old gap */
 .pps-bar-gap { background: #f1f8f4; padding-top: clamp(2.5rem, 5vw, 4rem); padding-bottom: clamp(2.5rem, 5vw, 4rem); }
 @media (min-width: 1100px) { .pps-bar-gap { padding-top: calc(clamp(2.5rem, 5vw, 4rem) - 1.2cm + 1.5cm); } }
-/* the "Your Ideal Accountant Awaits" bar up 5mm, then 3mm more, the space added below it, so nothing else moves (owner, 9 Oct 2026) */
-.pps-bar-gap.pps-bar-gap--ideal { margin-top: calc(-5mm - 3mm); padding-bottom: calc(clamp(2.5rem, 5vw, 4rem) + 5mm + 3mm); }
+/* the "Your Ideal Accountant Awaits" bar up 5mm, then 3mm more, then 3mm, the space added below it, so nothing else moves (owner, 9 Oct 2026) */
+.pps-bar-gap.pps-bar-gap--ideal { margin-top: calc(-5mm - 3mm - 3mm); padding-bottom: calc(clamp(2.5rem, 5vw, 4rem) + 5mm + 3mm + 3mm); }
+/* then 2cm more, then 3mm and 2mm back down (owner, 9 Oct 2026): 1100px+ only, as on smaller screens there is no room above it (it would cover the last service card) */
+@media (min-width: 1100px) { .pps-bar-gap.pps-bar-gap--ideal { margin-top: calc(-5mm - 3mm - 3mm - 2cm + 3mm + 2mm); padding-bottom: calc(clamp(2.5rem, 5vw, 4rem) + 5mm + 3mm + 3mm + 2cm - 3mm - 2mm); } }
 /* the same bar above "Who we help": above = its top padding, below = the Why section's bottom padding */
 .pps-bar-gap.pps-bar-gap--fit { padding-top: clamp(1rem, 2vw, 1.5rem); padding-bottom: clamp(3rem, 7vw, 5.5rem); }
 /* and above "How it works": above = that section's top padding, below = "Who we help"'s bottom padding */
@@ -1389,7 +1391,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .pps-why-card-bar { min-height: 3.7rem; padding-block: 0.4rem; }
 .pps-why-card-badge { width: 2.9rem; height: 2.9rem; }
 .pps-helps { margin-top: 0.5rem; }
-.pps-help { padding-block: calc(1rem + 1mm); gap: 0.8rem; } /* then 1cm taller again: 2mm a row (owner, 9 Oct 2026) */
+.pps-help { padding-block: calc(1rem + 1mm - 1mm - 0.5mm); gap: 0.8rem; } /* then 1cm taller again: 2mm a row; then 2cm shorter, then 1cm shorter (owner, 9 Oct 2026) */
+@media (min-width: 640px) { .pps-help { padding-block: calc(1rem + 1mm - 2mm - 1mm); } } /* 2cm, then 1cm, shorter: 4mm, then 2mm, a row over 5 rows (10 rows on phones: 2mm, then 1mm, a row) */
 .pps-help-title { font-size: 0.95rem; line-height: 1.22; }
 .pps-help-text { margin-top: 0.1rem; font-size: 0.84rem; line-height: 1.32; }
 .pps-help-icon { width: 2.7rem; height: 2.7rem; }
@@ -1410,3 +1413,73 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 }
 /* phones/tablets (box under the words): the same 3mm lower */
 @media (max-width: 1099px) { .pps-why-card { margin-top: calc(2rem + 3mm); } }
+
+/* /ad-2 "How it works": the owner's icon steps (PersonalHowSteps.tsx, owner's "steps/Untitled" picture, 9 Oct 2026).
+   Each step: a green number disc top left, the icon below it set in a little, the title and line under (the arrows
+   between the icons were removed and the icons cut to 70% of their first size, owner 9 Oct 2026). ".is-anim" (PersonalHowStepsAnim.tsx) moves a step's icon for 1s:
+   the questionnaire wiggles as if being written on, the puzzle hops and settles, the handshake shakes; the number
+   disc pulses with it. */
+.phs-step { position: relative; }
+.phs-num { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: 999px;
+  background: linear-gradient(145deg, #0e8a3a, #08602a); color: #fff; font-family: var(--font-sans); font-weight: 800; font-size: 1.3rem; line-height: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 8px 18px -10px rgba(8, 96, 42, 0.8); }
+.phs-icon-box { display: flex; align-items: flex-end; height: calc(10.5rem * 0.7); margin-top: -0.4rem; padding-left: 2.6rem; }
+.phs-icon { width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: left bottom; transform-origin: 50% 80%; }
+.phs-step:nth-child(1) .phs-icon { height: 94%; } /* the questionnaire is drawn taller; kept visually the same size as the others */
+@media (min-width: 640px) { .phs-icon-box { height: calc(9.5rem * 0.7); padding-left: 1.6rem; } }
+@media (min-width: 1024px) {
+  .phs-num { width: clamp(2.9rem, 3.3vw, 4.6rem); height: clamp(2.9rem, 3.3vw, 4.6rem); font-size: clamp(1.3rem, 1.6vw, 2.2rem); }
+  .phs-icon-box { height: calc(clamp(9rem, 12vw, 17rem) * 0.7); margin-top: -0.6vw; padding-left: clamp(2rem, 3vw, 4.5rem); }
+}
+
+.phs-step.is-anim .phs-icon-1 { animation: phs-write 1s ease-in-out; }
+.phs-step.is-anim .phs-icon-2 { animation: phs-hop 1s cubic-bezier(0.3, 0.7, 0.4, 1); }
+.phs-step.is-anim .phs-icon-3 { animation: phs-shake 1s ease-in-out; }
+.phs-step.is-anim .phs-num { animation: phs-pulse 1s ease-out; }
+@keyframes phs-write {
+  0%, 100% { transform: none; }
+  15% { transform: rotate(-5deg) scale(1.04); }
+  35% { transform: rotate(4deg) scale(1.06); }
+  55% { transform: rotate(-3deg) scale(1.05); }
+  75% { transform: rotate(2deg) scale(1.02); }
+}
+@keyframes phs-hop {
+  0%, 100% { transform: none; }
+  30% { transform: translateY(-12%) scale(1.06); }
+  55% { transform: translateY(0) scale(0.98, 1.02); }
+  72% { transform: translateY(-4%); }
+  86% { transform: translateY(0); }
+}
+@keyframes phs-shake {
+  0%, 100% { transform: none; }
+  12% { transform: translateY(-3%) rotate(-4deg) scale(1.04); }
+  28% { transform: translateY(2%) rotate(4deg) scale(1.04); }
+  44% { transform: translateY(-3%) rotate(-3deg) scale(1.03); }
+  60% { transform: translateY(2%) rotate(3deg) scale(1.02); }
+  76% { transform: translateY(-1%) rotate(-1deg); }
+}
+@keyframes phs-pulse {
+  0% { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 0 0 rgba(0, 174, 65, 0.45); transform: scale(1); }
+  35% { transform: scale(1.12); }
+  100% { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 0 14px rgba(0, 174, 65, 0); transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) { .phs-step.is-anim .phs-icon, .phs-step.is-anim .phs-num { animation: none; } }
+
+/* /ad-2 "What we can help you with" (owner's animation guide, 9 Oct 2026; replaces the 3-second loops): still starts
+   only when the cards scroll into view (PpsCardsReveal), one after another left to right (top to bottom on phones)
+   120ms apart; each icon's pop and its own move play together, once, in 350-400ms. The "Who we help" tiles the same
+   (owner, 9 Oct 2026). Hover moves are unchanged. */
+:is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in { --d: calc(var(--i, 0) * 120ms + 60ms); animation-duration: .45s; animation-delay: calc(var(--i, 0) * 120ms); }
+:is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in::after { animation-duration: .4s; animation-delay: calc(var(--i, 0) * 120ms + 60ms); }
+:is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in :is(.pps-svc-icon, .pps-tile-icon) { animation-duration: .35s; animation-delay: var(--d); }
+:is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in :is(.psi-head, .psi-body, .psi-code-l, .psi-code-r, .psi-house, .psi-roof, .psi-bar, .psi-trend, .psi-trend-head, .psi-case, .psi-clasp, .psi-pin, .psi-dot, .psi-gear) { animation-duration: .4s; animation-iteration-count: 1; }
+:is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-bar { animation-duration: .3s; animation-delay: calc(var(--d) + var(--b) * 50ms); } /* the chart's bars still grow in turn, all within 400ms */
+
+/* /ad-2: the "Why Use an Accountant" section may be pulled up under the "Your Ideal Accountant Awaits" bar's space
+   (MatchWhyGap.tsx); the bar itself always stays in front of it (owner, 9 Oct 2026) */
+.pps-bar-gap--ideal > * { position: relative; z-index: 1; }
+
+/* /ad-2 "An experienced accountant can help you:" box: the ten points' icons replaced by green ticks in the CTA buttons'
+   green (#087b12; owner, 9 Oct 2026); the title bar's badge is unchanged */
+.pps-help-tick { flex: none; width: 1.9rem; height: 1.9rem; color: #087b12; }
+@media (min-width: 1100px) { .pps-help-tick { width: 2.1rem; height: 2.1rem; } }

@@ -58,7 +58,7 @@ export const PERSONAL_WHY = {
     { icon: "/images/ad-personal/help/05_prepare_return.webp", title: "Prepare your tax return", text: "Get a complete, accurate and compliant tax return." },
     { icon: "/images/ad-personal/help/06_lodge_return.webp", title: "Lodge your return", text: "Have your tax return prepared and lodged correctly and on time." },
     { icon: "/images/ad-personal/help/07_complex_situations.webp", title: "Deal with more complex tax situations", text: "Get support for multiple income sources, investments or property." },
-    { icon: "/images/ad-personal/help/08_avoid_mistakes.webp", title: "Help you avoid common mistakes", text: "Reduce the risk of errors that could cost you money." },
+    { icon: "/images/ad-personal/help/08_avoid_mistakes_shield.webp" /* own shield icon: the design's chart was also used for "complex tax situations" (owner, 9 Oct 2026; scripts/make-personal-mistakes-icon.mjs) */, title: "Help you avoid common mistakes", text: "Reduce the risk of errors that could cost you money." },
     { icon: "/images/ad-personal/help/09_tax_rule_changes.webp", title: "Explain how changes in tax rules may affect you", text: "Stay informed and plan ahead with up-to-date advice." },
     { icon: "/images/ad-personal/help/10_tailored_advice.webp", title: "Provide advice tailored to your circumstances", text: "Get personalised advice based on your income, investments and goals." },
     { icon: "/images/ad-personal/help/11_ato_support.webp", title: "Help you respond to ATO questions or requests", text: "Have peace of mind with professional support if the ATO contacts you." },

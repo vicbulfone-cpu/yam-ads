@@ -11,11 +11,11 @@ import FAQSection from "../sections/FAQSection";
 import HomeClosingCta from "../sections/HomeClosingCta";
 import AdGap from "./AdGap";
 
-export default function AdHomeSections({ extraFaqs, stepsBar, closingButton }: { extraFaqs?: { q: string; a: string }[]; /** own words for the navy bar under "How it works" */ stepsBar?: { title: string; sub: string }; /** the closing "Less searching" bar with a button, laid out like the others */ closingButton?: boolean }) {
+export default function AdHomeSections({ extraFaqs, stepsBar, closingButton, steps }: { extraFaqs?: { q: string; a: string }[]; /** own words for the navy bar under "How it works" */ stepsBar?: { title: string; sub: string }; /** the closing "Less searching" bar with a button, laid out like the others */ closingButton?: boolean; /** own "How it works" steps in place of the photo steps */ steps?: React.ReactNode }) {
   const startHref = `#${AD_MATCH_BOX_ID}`;
   return (
     <div className="home-v2">
-      <HomeMatchIntro startHref={startHref} bar={stepsBar} closingButton={closingButton} />
+      <HomeMatchIntro startHref={startHref} bar={stepsBar} closingButton={closingButton} steps={steps} />
       {/* the three trust icons in the white band, as on the home page */}
       <HeroTrustStrip />
       <WhyItMatters />

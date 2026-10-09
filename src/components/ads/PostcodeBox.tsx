@@ -15,8 +15,10 @@ let cache: Promise<Place[]> | null = null;
 function loadPlaces() {
   cache ??= fetch("/data/au-postcodes.txt")
     .then((r) => r.text())
-    .then((t) => t.split("\n").filter(Boolean).map((l) => {
-      const [postcode, suburb, state] = l.split("|");
+    // Windows line endings are allowed for (a Windows checkout can add them): a stray "\r" on the state would be dropped
+    // by the text box, which then no longer matched the chosen place and cleared it ("choose your suburb" after choosing)
+    .then((t) => t.split(/\r?\n/).filter(Boolean).map((l) => {
+      const [postcode, suburb, state] = l.split("|").map((s) => s.trim());
       return { postcode, suburb, state };
     }))
     .catch(() => { cache = null; return []; });

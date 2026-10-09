@@ -9,10 +9,12 @@ import PersonalMatchCard from "./PersonalMatchCard";
 import { LazyPersonalQuestionnaire } from "./LazyQuestionnaires";
 import AdHomeSections from "./AdHomeSections";
 import PersonalSections from "./PersonalSections";
+import PersonalHowSteps from "./PersonalHowSteps";
 import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 import AdBoxPopup from "./AdBoxPopup";
 import AlignBarButtons from "./AlignBarButtons";
 import PlaceHeroSteps from "./PlaceHeroSteps";
+import MatchWhyGap from "./MatchWhyGap";
 import StartBar from "../sections/StartBar";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { PERSONAL_FAQ } from "@/content/personal-sections";
@@ -28,7 +30,8 @@ export default function PersonalAdPage() {
         <StartBar startHref={`#${AD_MATCH_BOX_ID}`} buttonOnPhone={false} className="bar-align-how-row pz-hero-bar" />
         <PersonalSections />
         {/* the four personal tax questions join the shared questions at the bottom (owner, 9 Oct 2026) */}
-        <AdHomeSections extraFaqs={PERSONAL_FAQ.items}
+        {/* "How it works" uses the owner's icon steps instead of the photo steps (owner, 9 Oct 2026) */}
+        <AdHomeSections extraFaqs={PERSONAL_FAQ.items} steps={<PersonalHowSteps />}
           stepsBar={{ title: "Less Searching. More Confidence.", sub: "Find an accountant who understands your tax needs." }} closingButton />
       </main>
       <AdFooter />
@@ -39,6 +42,8 @@ export default function PersonalAdPage() {
       <AlignBarButtons />
       {/* the hero's steps line 4mm above the bottom of the hero photo, just above the navy bar (owner, 9 Oct 2026) */}
       <PlaceHeroSteps />
+      {/* "Tax time, made easier" the same distance under its navy bar as "What we can help you with" (owner, 9 Oct 2026) */}
+      <MatchWhyGap />
     </div>
   );
 }
