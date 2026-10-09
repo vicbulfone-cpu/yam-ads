@@ -98,6 +98,7 @@ export default function BizMatchCard({
       {/* mint band along the bottom, as on the home page box */}
       <p className="mc-foot">
         <ShieldCheck className="mc-shield" />
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- plain link on purpose: on the ad pages AdInfoPopup opens it in a popup; <Link> would navigate first */}
         <span>{W.footer} <a href="/privacy" className="mc-privacy">Privacy</a></span>
       </p>
     </div>

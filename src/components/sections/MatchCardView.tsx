@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MATCH_CARD_COPY as COPY } from "@/content/match-card-copy";
 import type { ServiceKey } from "@/lib/service-routes";
 import MatchCardServices from "./MatchCardServices";
@@ -36,7 +37,7 @@ export default function MatchCardView({ data, titleTag = "h2", initialSelected }
           <path d="M12 2.4 4.4 5.3v5.8c0 4.7 3.1 8.7 7.6 10.1 4.5-1.4 7.6-5.4 7.6-10.1V5.3L12 2.4Z" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round" />
           <path d="m8.6 11.9 2.4 2.4 4.4-4.6" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-        <span>{COPY.footer} <a href="/privacy" className="mc-privacy">Privacy</a></span>
+        <span>{COPY.footer} <Link href="/privacy" className="mc-privacy">Privacy</Link></span>
       </p>
     </div>
   );

@@ -41,6 +41,7 @@ export function AdHeader({ className = "", complete }: { className?: string; /**
 function AdAssure() {
   return (
     <p className="bz-assure">
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- plain link on purpose: AdInfoPopup opens it in a popup; <Link> would navigate before the popup catches the click */}
       <a href="/how-we-select-accountants" {...POPUP_LINK}>{CREDENTIAL}</a>{" "}
       <span>Matching is free. Your Accountant Match is a referral service. Accounting and advisory services are provided by your matched firm. Accountant fees are agreed separately.</span>
     </p>
