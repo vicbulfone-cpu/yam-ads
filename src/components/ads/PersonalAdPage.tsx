@@ -19,19 +19,29 @@ import StartBar from "../sections/StartBar";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { PERSONAL_FAQ } from "@/content/personal-sections";
 
-export default function PersonalAdPage() {
+/** desktopHeroPicture, hero, services, why, fit, faqs: another ad page's own desktop hero photo, hero, section 2-4
+ *  wording and FAQ questions; pageClass: a class for that page's own style tweaks (owner, 9 Oct 2026: /ad-1) */
+export default function PersonalAdPage({ desktopHeroPicture, hero, services, why, fit, faqs = PERSONAL_FAQ.items, pageClass }: {
+  pageClass?: string;
+  desktopHeroPicture?: { src: string; width: number; height: number };
+  hero?: React.ComponentProps<typeof PersonalHero>["hero"];
+  services?: React.ComponentProps<typeof PersonalSections>["services"];
+  why?: React.ComponentProps<typeof PersonalSections>["why"];
+  fit?: React.ComponentProps<typeof PersonalSections>["fit"];
+  faqs?: { q: string; a: string }[];
+}) {
   return (
-    <div className="bz-page pz-page">
+    <div className={`bz-page pz-page ${pageClass ?? ""}`}>
       <AdHeader />
       <main>
-        <PersonalHero />
+        <PersonalHero desktopPicture={desktopHeroPicture} hero={hero} />
         {/* the home page's navy "Ready to meet your accountant?" bar straight under the hero photo, touching it (owner,
             9 Oct 2026). Start is a #match-box link, so it opens the personal match box popup. */}
         <StartBar startHref={`#${AD_MATCH_BOX_ID}`} buttonOnPhone={false} className="bar-align-how-row pz-hero-bar" />
-        <PersonalSections />
+        <PersonalSections services={services} why={why} fit={fit} />
         {/* the four personal tax questions join the shared questions at the bottom (owner, 9 Oct 2026) */}
         {/* "How it works" uses the owner's icon steps instead of the photo steps (owner, 9 Oct 2026) */}
-        <AdHomeSections extraFaqs={PERSONAL_FAQ.items} steps={<PersonalHowSteps />}
+        <AdHomeSections extraFaqs={faqs} steps={<PersonalHowSteps />}
           stepsBar={{ title: "Less Searching. More Confidence.", sub: "Find an accountant who understands your tax needs." }} closingButton />
       </main>
       <AdFooter />

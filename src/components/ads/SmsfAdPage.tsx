@@ -1,75 +1,11 @@
-// SMSF & wealth ad landing page (/ad-3), laid out as the owner's "smsf" design picture (hero section/ad landing pages).
-// Same structure as the business page (BusinessAdPage.tsx): the desk photograph sits exactly as on the home page (its top
-// just under the header), headline, steps (with icons, as the design) and benefits on the left, the SMSF match box on the
-// right (home page box style). Phones: headline, match box, then the steps, benefits, small print and picture.
-// Styles: ".sz-" (on top of ".bz-") in ads.css.
-import Image from "next/image";
-import { homePageHeroPicture } from "@/config/site.config";
-import { AdHeroBar } from "./AdHeroParts";
-import HomeStepsFit from "../sections/HomeStepsFit";
-import { SMSF_LANDING as L, SMSF_CARD } from "@/content/smsf-questionnaire";
-import { AdFooter, AdHeader } from "./AdChrome";
-import { ArrowRight } from "../ui/Icons";
-import PhoneMatchCta from "../sections/PhoneMatchCta";
-import HeroPoints from "../sections/HeroPoints";
-import MatchFitScript from "../sections/MatchFitScript";
-import SmsfMatchCard from "./SmsfMatchCard";
-import { LazySmsfQuestionnaire } from "./LazyQuestionnaires";
-import AdHomeSections from "./AdHomeSections";
-import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
-import { OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
-import AdBoxPopup from "./AdBoxPopup";
+// SMSF & wealth ad landing page (/ad-3). Everything below the header is now the personal tax page's (/ad-2) content, so
+// all four ad landing pages look identical (owner, 9 Oct 2026). The old /ad-3 hero and match box were removed.
+// The owner is changing the wording to SMSF one section at a time (src/content/smsf-sections.ts).
+// Desktops (1200px+) show the owner's SMSF hero photo instead of the personal one (owner, 9 Oct 2026).
+import PersonalAdPage from "./PersonalAdPage";
+import { smsfHeroDesktop } from "@/config/site.config";
+import { SMSF_HERO, SMSF_RIGHT_FIT, SMSF_SERVICES, SMSF_WHY } from "@/content/smsf-sections";
 
 export default function SmsfAdPage() {
-  return (
-    <div className="bz-page sz-page">
-      <AdHeader />
-      <main>
-        <div className="bz-hero">
-        {/* the home page hero photo, placed as on the home page (owner, 8 Oct 2026: no handwriting or arrow) */}
-        <div aria-hidden className="bz-photo">
-          <Image src={homePageHeroPicture.src} alt="" width={homePageHeroPicture.width} height={homePageHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
-        </div>
-        {/* tablets and up: the home page navy bar under the photo (owner, 7 Oct 2026) */}
-        <AdHeroBar />
-
-        {/* hero laid out exactly as Ad 1 (owner, 6 Oct 2026): three-line headline, faded line and steps (plain, with
-            arrows), solid benefit circles, the wider match box; wording unchanged */}
-        <div className="bz-wrap bz-grid bz-grid-wide sz-grid">
-          <div className="bz-text">
-            <h1 className="bz-h1">
-              <span className="block">{L.h1[0]}</span>{" "}
-              <span className="block text-[#0e7a32]">{L.h1[1]}</span>{" "}
-              <span className="block">{L.h1[2]}</span>
-            </h1>
-            {/* phones (owner's "mobile look example", 8 Oct 2026): large green button down to the match box, as on Ad 4 */}
-            <PhoneMatchCta href={`#${AD_MATCH_BOX_ID}`} label={SMSF_CARD.start} note={SMSF_CARD.note} />
-            {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
-            <HeroPoints className="bz-points" />
-            <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
-          </div>
-
-          <div id={AD_MATCH_BOX_ID} className="bz-card-col scroll-mt-24">
-            <SmsfMatchCard />
-            <MatchFitScript />
-          </div>
-
-          <div className="bz-more">
-            <ol className="bz-steps bz-steps-shade fade-behind">
-              {L.steps.map((s, i) => (
-                <li key={s.icon}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s.text.join(" ")}</span></li>
-              ))}
-            </ol>
-            <HomeStepsFit />
-          </div>
-        </div>
-        </div>
-        <AdHomeSections />
-      </main>
-      <AdFooter />
-      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
-      <AdBoxPopup openEvent={OPEN_SMSF_QUESTIONNAIRE}><SmsfMatchCard /></AdBoxPopup>
-      <LazySmsfQuestionnaire />
-    </div>
-  );
+  return <PersonalAdPage pageClass="pz-smsf" desktopHeroPicture={smsfHeroDesktop} hero={SMSF_HERO} services={SMSF_SERVICES} why={SMSF_WHY} fit={SMSF_RIGHT_FIT} />;
 }

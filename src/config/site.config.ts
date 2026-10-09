@@ -72,6 +72,12 @@ export const personalHeroPictures = {
   desktop: { src: "/images/hero/personal-desk-v5-1983.webp", width: 1983, height: 793 },
   mobile: { src: "/images/hero/personal-mobile-941.webp", width: 941, height: 1672 },
 };
+/** Business ad page (/ad-1) desktop hero photo (owner, 9 Oct 2026: "home hero desktop" in "hero section/ad landing
+ *  pages/business tax"; built by scripts/make-business-hero.mjs). Desktops (1200px+) only. */
+export const businessHeroDesktop = { src: "/images/hero/business-desk-1902.webp", width: 1902, height: 827 };
+/** SMSF ad page (/ad-3) desktop hero photo (owner, 9 Oct 2026: "Untitled" in "hero section/ad landing pages/smsf";
+ *  built by scripts/make-smsf-hero.mjs). Desktops (1200px+) only. */
+export const smsfHeroDesktop = { src: "/images/hero/smsf-desk-v3-1024.webp", width: 1024, height: 496 };
 
 /** Earlier hero pictures (no longer shown on the home or city pages; kept so they can be reused). */
 export const heroPicture = heroByNumber(3);

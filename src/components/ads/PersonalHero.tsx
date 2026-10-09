@@ -5,9 +5,10 @@
 // "mobile look"). Then the three trust points.
 // The button is a #match-box link: AdBoxPopup opens the personal match box in its popup on every screen size.
 // Styles: ".pth-" in ads.css.
+import { Fragment } from "react";
 import Image, { getImageProps } from "next/image";
 import { personalHeroPictures as P } from "@/config/site.config";
-import { PERSONAL_HERO as H } from "@/content/personal-questionnaire";
+import { PERSONAL_HERO } from "@/content/personal-questionnaire";
 import { HERO_COPY } from "@/content/hero-copy";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { ArrowRight } from "../ui/Icons";
@@ -16,14 +17,19 @@ import { ArrowRight } from "../ui/Icons";
  *  registration ad pages keep "Get matched with one accountant") */
 const STEPS = ["Tell us your needs", "Enter your postcode", "Get matched with one accountant from our partner network"];
 
-export default function PersonalHero() {
+/** desktopPicture: a page's own photo for desktops (1200px+) only; hero: its own headline and line under it (owner,
+ *  9 Oct 2026: the business ad page /ad-1) */
+export default function PersonalHero({ desktopPicture, hero }: { desktopPicture?: { src: string; width: number; height: number }; hero?: { h1: string[]; sub: string } }) {
+  const H = { ...PERSONAL_HERO, ...hero };
   const common = { alt: "", sizes: "100vw" };
   const { props: { srcSet: desktop } } = getImageProps({ ...common, ...P.desktop, quality: 80 });
   const { props: { srcSet: mobile, ...img } } = getImageProps({ ...common, ...P.mobile, quality: 75 });
+  const wide = desktopPicture && getImageProps({ ...common, ...desktopPicture, quality: 80 }).props.srcSet;
 
   return (
     <section className="pth" aria-labelledby="pth-title">
       <picture className="pth-pic">
+        {wide && <source media="(min-width: 1200px)" srcSet={wide} />}
         <source media="(min-width: 768px)" srcSet={desktop} />
         {/* eslint-disable-next-line jsx-a11y/alt-text -- decorative: alt="" comes from getImageProps */}
         <img {...img} srcSet={mobile} loading="eager" fetchPriority="high" />
@@ -32,9 +38,8 @@ export default function PersonalHero() {
       <div className="pth-inner">
         <div className="pth-text">
           <h1 id="pth-title" className="pth-h1">
-            <span>{H.h1[0]}</span>{" "}
-            <span className="pth-green">{H.h1[1]}</span>{" "}
-            <span className="pth-green">{H.h1[2]}</span>
+            {/* first line navy, the rest green (a page may have two lines: owner, 9 Oct 2026, /ad-3) */}
+            {H.h1.map((line, i) => <Fragment key={line}>{i > 0 && " "}<span className={i ? "pth-green" : undefined}>{line}</span></Fragment>)}
           </h1>
           {/* one span per sentence (desktop styles decide whether each is its own line) */}
           <p className="pth-sub">
@@ -51,7 +56,8 @@ export default function PersonalHero() {
             <span>{H.cta}</span>
             <ArrowRight aria-hidden className="pth-cta-arrow" strokeWidth={2.6} />
           </a>
-          <p className="pth-note">{H.note.join(" • ")}</p>
+          {/* the grey "60 seconds • Free • No obligation" line under the button was removed (owner, 9 Oct 2026: it
+              repeats what is already on screen) */}
         </div>
 
         {/* phones and tablets: the space where the skyline and trees show under the words */}

@@ -1,71 +1,11 @@
-// Business ad landing page (/ad-1), laid out as the owner's "business" design picture (hero section/ad landing pages).
-// Desk photograph across the hero, headline and benefits on the left, the business match box on the right.
-// Phones: headline, match box, then the steps, benefits and picture. Styles: ".bz-" in globals.css.
-import Image from "next/image";
-import { homePageHeroPicture } from "@/config/site.config";
-import { AdHeroBar } from "./AdHeroParts";
-import HomeStepsFit from "../sections/HomeStepsFit";
-import { BIZ_LANDING as L, BIZ_CARD } from "@/content/business-questionnaire";
-import { AdFooter, AdHeader } from "./AdChrome";
-import { ArrowRight } from "../ui/Icons";
-import PhoneMatchCta from "../sections/PhoneMatchCta";
-import HeroPoints from "../sections/HeroPoints";
-import BizMatchCard from "./BizMatchCard";
-import MatchFitScript from "../sections/MatchFitScript";
-import { LazyBusinessQuestionnaire } from "./LazyQuestionnaires";
-import AdHomeSections from "./AdHomeSections";
-import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
-import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
-import AdBoxPopup from "./AdBoxPopup";
+// Business ad landing page (/ad-1). Everything below the header is now the personal tax page's (/ad-2) content, so
+// all four ad landing pages look identical (owner, 9 Oct 2026). The old /ad-1 hero and match box were removed.
+// Desktops (1200px+) show the owner's business hero photo instead of the personal one (owner, 9 Oct 2026).
+// The owner is changing the wording to business one section at a time (src/content/business-sections.ts).
+import PersonalAdPage from "./PersonalAdPage";
+import { businessHeroDesktop } from "@/config/site.config";
+import { BUSINESS_FAQ, BUSINESS_HERO, BUSINESS_RIGHT_FIT, BUSINESS_SERVICES, BUSINESS_WHY } from "@/content/business-sections";
 
 export default function BusinessAdPage() {
-  return (
-    <div className="bz-page">
-      <AdHeader />
-      <main>
-        <div className="bz-hero">
-        {/* the home page hero photo, placed as on the home page (owner, 8 Oct 2026: no handwriting or arrow) */}
-        <div aria-hidden className="bz-photo">
-          <Image src={homePageHeroPicture.src} alt="" width={homePageHeroPicture.width} height={homePageHeroPicture.height} priority sizes="100vw" className="h-auto w-full" />
-        </div>
-        {/* tablets and up: the home page navy bar under the photo (owner, 7 Oct 2026) */}
-        <AdHeroBar />
-
-        <div className="bz-wrap bz-grid bz-grid-wide">
-          <div className="bz-text">
-            <h1 className="bz-h1">
-              <span className="block">{L.h1[0]}</span>
-              <span className="block text-[#0e7a32]">{L.h1[1]}</span>
-              <span className="block">{L.h1[2]}</span>
-            </h1>
-            {/* phones (owner's "mobile look example", 8 Oct 2026): large green button down to the match box, as on Ad 4 */}
-            <PhoneMatchCta href={`#${AD_MATCH_BOX_ID}`} label={BIZ_CARD.start} note={BIZ_CARD.note} />
-            {/* the home page's three trust points, straight under the headline (owner, 6 Oct 2026) */}
-            <HeroPoints className="bz-points" />
-            <p className="bz-sub bz-sub-fade fade-behind">{L.sub}</p>
-          </div>
-
-          <div id={AD_MATCH_BOX_ID} className="bz-card-col scroll-mt-24">
-            <BizMatchCard longText className="bz-card-wide" />
-            <MatchFitScript />
-          </div>
-
-          <div className="bz-more">
-            <ol className="bz-steps bz-steps-shade fade-behind">
-              {L.steps.map((s, i) => (
-                <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
-              ))}
-            </ol>
-            <HomeStepsFit />
-          </div>
-        </div>
-        </div>
-        <AdHomeSections />
-      </main>
-      <AdFooter />
-      {/* tablets and desktops: the page's CTA buttons open this box in a popup (owner, 7 Oct 2026) */}
-      <AdBoxPopup openEvent={OPEN_BIZ_QUESTIONNAIRE}><BizMatchCard /></AdBoxPopup>
-      <LazyBusinessQuestionnaire />
-    </div>
-  );
+  return <PersonalAdPage pageClass="pz-biz" desktopHeroPicture={businessHeroDesktop} hero={BUSINESS_HERO} services={BUSINESS_SERVICES} why={BUSINESS_WHY} fit={BUSINESS_RIGHT_FIT} faqs={BUSINESS_FAQ.items} />;
 }

@@ -127,7 +127,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
         </div>
 
         {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
-        <div className="container-page home-wide grid items-center gap-8 pt-[calc(2.5rem+1.85cm)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-0 lg:pt-[calc(2vw+1.85cm)]">
+        <div className="hmi-meet container-page home-wide grid items-center gap-8 pt-[calc(2.5rem+1.85cm)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-0 lg:pt-[calc(2vw+1.85cm)]">
           {/* lg:mb-[1cm] balances the photo's 1cm top margin, so the words stay where they were (owner, 6 Oct 2026) */}
           <div className="relative z-10 lg:mb-[1cm] lg:py-[1vw]">
             <Eyebrow>Meet Your Accountant Match</Eyebrow>
@@ -139,12 +139,13 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
               <span className="block text-green-700">A better match.</span>
             </h2>
             {/* lined up with the heading on every screen size (owner, 7 Oct 2026: the earlier 1cm nudge right removed) */}
-            <p className="mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
+            {/* removed on /ad-2 only (owner, 9 Oct 2026; ads.css .hmi-tagline) */}
+            <p className="hmi-tagline mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
               Your needs. Your area. Your accountant.
             </p>
             {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts), 7mm lower */}
             {ABOUT_POPUP.expertise.paragraphs.map((p, i) => (
-              <p key={p} className={`${i === 0 ? "mt-[calc(0.75rem+7mm)] lg:mt-[calc(0.8vw+7mm)]" : "mt-2.5 lg:mt-[0.6vw]"} max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]`}>
+              <p key={p} className={`${i === 0 ? "mt-[calc(0.75rem+7mm)] lg:mt-[calc(0.8vw+7mm)]" : "mt-2.5 lg:mt-[0.6vw]"} hmi-founder max-w-[36rem] text-[1rem] leading-[1.55] text-navy-900/85 lg:max-w-[38vw] lg:text-[clamp(1rem,1.15vw,1.7rem)]`}>
                 {p}
               </p>
             ))}

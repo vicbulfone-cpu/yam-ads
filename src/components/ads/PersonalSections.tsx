@@ -18,10 +18,14 @@ const WHO_ICONS: Record<string, () => React.JSX.Element> = {
   Contractors: BriefcaseIcon, // contractor_freelance_income.png
   "Self-employed": ScreenIcon, // tax_deductions.png
 };
-import { PERSONAL_SERVICES as S, PERSONAL_RIGHT_FIT as R, PERSONAL_WHY as W } from "@/content/personal-sections";
+import { PERSONAL_SERVICES, PERSONAL_RIGHT_FIT, PERSONAL_WHY } from "@/content/personal-sections";
 
+type Services = { eyebrow: string; h2: string; intro: string; cards: { title: string; text: string; /** use this personal card's icon */ iconOf?: string }[] };
 
-export default function PersonalSections() {
+type RightFit = Omit<typeof PERSONAL_RIGHT_FIT, "tiles"> & { tiles: { label: string; /** use this personal tile's icon */ iconOf?: string }[] };
+
+/** services, why, fit: another ad page's own wording for sections 2, 3 and 4 (owner, 9 Oct 2026: the business page /ad-1) */
+export default function PersonalSections({ services: S = PERSONAL_SERVICES, why: W = PERSONAL_WHY, fit: R = PERSONAL_RIGHT_FIT }: { services?: Services; why?: typeof PERSONAL_WHY; fit?: RightFit }) {
   return (
     <div className="pps">
       {/* SECTION 2: what we can help you with (swapped with section 3, owner 9 Oct 2026) */}
@@ -34,7 +38,7 @@ export default function PersonalSections() {
               PpsCardsReveal adds "wim-anim", then "is-in" to each card as it scrolls into view, once (".psi-" in ads.css) */}
           <ul className="pps-cards">
             {S.cards.map((c) => {
-              const Icon = SERVICE_ICONS[c.title];
+              const Icon = SERVICE_ICONS[c.iconOf ?? c.title];
               return (
                 <li key={c.title} className="pps-card">
                   <span className="pps-svc-icon"><Icon /></span>
@@ -78,10 +82,8 @@ export default function PersonalSections() {
             <ul className="pps-helps">
               {W.points.map((p) => (
                 <li key={p.title} className="pps-help">
-                  {/* a green tick in the CTA buttons' green instead of each point's own icon (owner, 9 Oct 2026) */}
-                  <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" className="pps-help-tick">
-                    <path d="M4.5 12.5l4.8 4.8L19.5 7" />
-                  </svg>
+                  {/* the owner's tick picture instead of each point's own icon (owner, 9 Oct 2026; scripts/make-personal-help-tick.mjs) */}
+                  <Image src="/images/ad-personal/help/tick.webp" alt="" width={146} height={118} className="pps-help-tick" />
                   <span>
                     <strong className="pps-help-title">{p.title}</strong>
                     <span className="pps-help-text">{p.text}</span>
@@ -106,7 +108,7 @@ export default function PersonalSections() {
           {/* the people the sentence names, as cards (decorative: the sentence already says it) */}
           <ul className="pps-tiles" aria-hidden>
             {R.tiles.map((t) => {
-              const Icon = WHO_ICONS[t.label];
+              const Icon = WHO_ICONS[t.iconOf ?? t.label];
               return (
                 <li key={t.label} className="pps-tile">
                   <span className="pps-tile-icon"><Icon /></span>
