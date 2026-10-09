@@ -1,4 +1,4 @@
-// Home page hero (owner, 8 Oct 2026): the "hero home5.png" photo scaled to fill the whole hero width (1983 x 793 frame),
+// Home page hero (owner, 8 Oct 2026; rebuilt from the re-saved file 9 Oct 2026, v31 / light-v5): the "hero home5.png" photo scaled to fill the whole hero width (1983 x 793 frame),
 // sharp all the way across (no blurred fill); the extra height is trimmed from the top, which is plain sky.
 // SHIFT moves the picture down inside the frame (owner: 3mm, then 5mm more on 8 Oct 2026; about 5 image px per mm at 1440px wide): that much more sky
 // shows at the top and that much less desk at the bottom.
@@ -7,8 +7,8 @@
 // LIGHTEN is the brightness of the view; the mask shapes are in the source picture's pixels (1672 x 941).
 //   node scripts/make-home-hero.cjs
 const sharp = require('sharp');
-const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v30-1983.webp',
-  OUT_HOME = 'public/images/hero/home-light-v4-1983.webp', W = 1983, H = 793, SHIFT = 40, LIGHTEN = 1.1;
+const SRC = 'hero section/ad landing pages/hero home5.png', OUT = 'public/images/hero/home-v31-1983.webp',
+  OUT_HOME = 'public/images/hero/home-light-v5-1983.webp', W = 1983, H = 793, SHIFT = 40, LIGHTEN = 1.1;
 const VIEW_MASK = (w, h) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
   <rect x="132" y="0" width="1182" height="772" fill="#fff"/>
   <polygon points="0,500 315,500 315,800 0,800" fill="#000"/>

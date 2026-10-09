@@ -238,3 +238,7 @@ you finish the reply, and every report ends with the preview address.
 When the owner writes **"noc"** in a request, it means **"no other changes"**: make exactly the change asked for and
 nothing else (no extra fixes, tidy-ups, spacing, wording or layout tweaks, on any screen size not named). If the change
 causes a side effect (e.g. words now sit over the photo), report it and offer a fix, but do not make it unless asked.
+
+## "CS" = CURRENT SIZE (owner rule, 9 Oct 2026; this project only)
+When the owner writes **"cs"** in a request, it means **"current size"**: the size the item has on screen right now,
+before this change (e.g. "make the headline 120% cs" = 1.2 x its present size).

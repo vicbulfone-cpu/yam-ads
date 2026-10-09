@@ -125,15 +125,20 @@ export default function DeskHero({
           </h1>
           {phoneCta}
           {headline.sub && <p className="desk-hero-sub">{headline.sub}</p>}
-          <HeroPoints />
+          {!steps && <HeroPoints />}
+          {/* home page: the points and steps in one box, so one even fade ("hero-veil" in globals.css) can sit behind both
+              where they cross the photo (owner, 9 Oct 2026) */}
           {steps && (
-            <ol className="bz-steps bz-steps-shade fade-behind home-steps">
-              {steps.map((s, i) => (
-                <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
-              ))}
-            </ol>
+            <div className="hero-veil">
+              <HeroPoints />
+              <ol className="bz-steps bz-steps-shade fade-behind home-steps">
+                {steps.map((s, i) => (
+                  <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}<span>{s}</span></li>
+                ))}
+              </ol>
+              <HomeStepsFit />
+            </div>
           )}
-          {steps && <HomeStepsFit />}
         </div>
 
         {/* 2 — the match box (desktop: right column, running over the white strip) */}

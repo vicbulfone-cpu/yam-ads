@@ -58,10 +58,10 @@ export const homeDeskHeroPicture = { src: "/images/hero/hero-no-writing.png", wi
 export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png", width: 1983, height: 793 };
 /** Home page hero picture (owner, 8 Oct 2026): "hero section/ad landing pages/hero home5.png", scaled to fill the hero width, sky trimmed from the top
  *  (scripts/make-home-hero.cjs). Used by Ads 1-4 at every screen size (the home page uses homeHeroLightPicture below). */
-export const homePageHeroPicture = { src: "/images/hero/home-v30-1983.webp", width: 1983, height: 793 };
+export const homePageHeroPicture = { src: "/images/hero/home-v31-1983.webp", width: 1983, height: 793 };
 /** The same picture with the view through the window (sky, skyline, trees) slightly lighter — home page only (owner, 8 Oct 2026).
  *  Built by scripts/make-home-hero.cjs; the ad pages keep homePageHeroPicture. */
-export const homeHeroLightPicture = { src: "/images/hero/home-light-v4-1983.webp", width: 1983, height: 793 };
+export const homeHeroLightPicture = { src: "/images/hero/home-light-v5-1983.webp", width: 1983, height: 793 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
@@ -69,7 +69,7 @@ export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", 
  *  and the phone/tablet photo (sky over the skyline). Built by scripts/make-personal-hero.mjs from the owner's files in
  *  "hero section/ad landing pages/personal tax". */
 export const personalHeroPictures = {
-  desktop: { src: "/images/hero/personal-desk-v4-1983.webp", width: 1983, height: 793 },
+  desktop: { src: "/images/hero/personal-desk-v5-1983.webp", width: 1983, height: 793 },
   mobile: { src: "/images/hero/personal-mobile-941.webp", width: 941, height: 1672 },
 };
 

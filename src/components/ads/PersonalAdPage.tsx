@@ -11,6 +11,11 @@ import AdHomeSections from "./AdHomeSections";
 import PersonalSections from "./PersonalSections";
 import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 import AdBoxPopup from "./AdBoxPopup";
+import AlignBarButtons from "./AlignBarButtons";
+import PlaceHeroSteps from "./PlaceHeroSteps";
+import StartBar from "../sections/StartBar";
+import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
+import { PERSONAL_FAQ } from "@/content/personal-sections";
 
 export default function PersonalAdPage() {
   return (
@@ -18,13 +23,22 @@ export default function PersonalAdPage() {
       <AdHeader />
       <main>
         <PersonalHero />
+        {/* the home page's navy "Ready to meet your accountant?" bar straight under the hero photo, touching it (owner,
+            9 Oct 2026). Start is a #match-box link, so it opens the personal match box popup. */}
+        <StartBar startHref={`#${AD_MATCH_BOX_ID}`} buttonOnPhone={false} className="bar-align-how-row pz-hero-bar" />
         <PersonalSections />
-        <AdHomeSections />
+        {/* the four personal tax questions join the shared questions at the bottom (owner, 9 Oct 2026) */}
+        <AdHomeSections extraFaqs={PERSONAL_FAQ.items}
+          stepsBar={{ title: "Less Searching. More Confidence.", sub: "Find an accountant who understands your tax needs." }} closingButton />
       </main>
       <AdFooter />
       {/* the page's CTA buttons open this box in a popup; phones too, as the page has no box of its own any more */}
       <AdBoxPopup openEvent={OPEN_PERSONAL_QUESTIONNAIRE} phones><PersonalMatchCard /></AdBoxPopup>
       <LazyPersonalQuestionnaire />
+      {/* every navy bar button lines up with the hero bar's (owner, 9 Oct 2026) */}
+      <AlignBarButtons />
+      {/* the hero's steps line 4mm above the bottom of the hero photo, just above the navy bar (owner, 9 Oct 2026) */}
+      <PlaceHeroSteps />
     </div>
   );
 }

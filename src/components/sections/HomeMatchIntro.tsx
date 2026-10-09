@@ -60,7 +60,8 @@ const Eyebrow = ({ children }: { children: string }) => (
 );
 
 /** `startHref`: where the Start buttons go (ad pages pass their own match box, so ad leads stay with the ad questionnaire). */
-export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { startHref?: string }) {
+/** `bar`: own words for the navy bar under the steps (owner, 9 Oct 2026: the personal tax ad page has its own) */
+export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean }) {
   return (
     <section aria-labelledby="home-match-intro" className="relative overflow-hidden bg-white pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]">
       {/* starts 0.5cm lower than the usual 2.5cm under the hero (owner, 5 Oct 2026: 2cm lower, then 1.5cm back up);
@@ -121,7 +122,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
             6 Oct 2026: moved up 1cm, so none; later 6 Oct 2026: moved down 1cm again, everything below follows) */}
         <div className="mt-[calc(2.5rem+1cm)] lg:mt-[calc(1.4vw+1cm)]">
           {/* words start in line with "How it works" on laptops and desktops (owner, 6 Oct 2026) */}
-          <StartBar startHref={startHref} buttonOnPhone={false} className="bar-align-how-row" />
+          <StartBar startHref={startHref} buttonOnPhone={false} className="bar-align-how-row" {...bar} />
         </div>
 
         {/* 2 — words and photo (1.85cm extra space above, owner 5 Oct 2026: 3.1cm, then 1.25cm back up) */}
@@ -227,7 +228,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL }: { star
         {/* owner, 6 Oct 2026: on laptops and desktops the words start at the same left edge as "How it works"
             (".bar-align-how-row" in globals.css), like the other two navy bars; "Your needs, your area, your accountant." sits
             centred under the man in the photo above (".bar-sub-under-man", owner 6 Oct 2026) */}
-        <StartBar button={false} title="Less searching, a better match." className="bar-align-how-row bar-sub-under-man relative z-10 -mt-[2px]" />
+        {closingButton
+          ? <StartBar startHref={startHref} buttonOnPhone={false} title="Less searching, a better match." className="bar-align-how-row relative z-10 -mt-[2px]" />
+          : <StartBar button={false} title="Less searching, a better match." className="bar-align-how-row bar-sub-under-man relative z-10 -mt-[2px]" />}
       </div>
     </section>
   );

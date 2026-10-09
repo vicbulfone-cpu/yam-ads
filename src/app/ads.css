@@ -825,7 +825,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .pth-eyebrow { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-700); }
 .pth-h1 { margin-top: 12px; font-family: var(--font-sans); font-weight: 800; font-size: clamp(2.625rem, 11.6vw, 3.125rem); line-height: 1.02; letter-spacing: -0.035em; color: var(--navy-900); }
 .pth-h1 > span { display: block; }
-.pth-green { color: var(--green-700); }
+.pth-green { color: #087b12; } /* the green of the hero's three trust icons (owner, 9 Oct 2026) */
 .pth-sub { margin-top: 18px; max-width: 30rem; text-wrap: balance; font-size: 1.125rem; line-height: 1.45; color: var(--navy-900); }
 .pth-cta { margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 0.7rem; width: 100%; min-height: 3.5rem;
   padding: 0.85rem 1.5rem; border-radius: 999px; color: #fff; font-family: var(--font-sans); font-weight: 800; font-size: min(1.2rem, 5.2vw);
@@ -935,143 +935,99 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .pps-intro { margin-top: 0.9rem; max-width: 44rem; font-size: clamp(1.02rem, 1.3vw, 1.18rem); line-height: 1.55; color: rgb(7 50 101 / 0.85); }
 .pps-card-text { margin-top: 0.45rem; font-size: 0.98rem; line-height: 1.55; color: rgb(7 50 101 / 0.8); }
 
-/* buttons: the site's green pill, as the hero button */
-.pps-cta { display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem; min-height: 3.5rem; padding: 0.85rem 2rem;
-  border-radius: 999px; color: #fff; font-family: var(--font-sans); font-weight: 800; font-size: 1.12rem; letter-spacing: -0.01em; white-space: nowrap;
-  text-decoration: none; background: linear-gradient(180deg, #129a44 0%, #0e7a32 100%);
-  box-shadow: 0 16px 30px -14px rgba(14, 122, 50, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.22); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.pps-cta:active { transform: translateY(1px) scale(0.99); }
-.pps-cta:focus-visible { outline: 3px solid var(--navy-900); outline-offset: 3px; }
-.pps-cta-arrow { width: 1.3em; height: 1.3em; flex-shrink: 0; }
-@media (hover: hover) and (min-width: 1024px) { .pps-cta:hover { transform: translateY(-2px); box-shadow: 0 22px 36px -16px rgba(14, 122, 50, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.22); } }
-@media (max-width: 767px) { .pps-cta { display: flex; width: 100%; } }
+/* sections 2 and 3 share one pale mint background, laid out as the owner's "z" picture (9 Oct 2026) */
+.pps-why, .pps-services { background: #f1f8f4; }
+.pps-why { overflow-x: clip; } /* the checklist box's glow never makes the page scroll sideways */
+/* the first of the two sections has the shorter gap below, the second the shorter gap above (kept by position when the
+   two were swapped, owner 9 Oct 2026) */
+.pps-services { padding-bottom: clamp(2.5rem, 5vw, 4rem); padding-top: calc(clamp(3rem, 7vw, 5.5rem) + 4mm); } /* +4mm: the section and everything below it 4mm lower (owner, 9 Oct 2026) */
+.pps-why { padding-top: clamp(2.5rem, 5vw, 4rem); }
 
-/* section 2: six service cards with the owner's green line icons */
-.pps-cards { margin-top: clamp(1.75rem, 3vw, 2.75rem); display: grid; gap: 1rem; }
-@media (min-width: 768px) { .pps-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; } }
-@media (min-width: 1200px) { .pps-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; } }
-.pps-card { padding: 1.5rem; border-radius: 1.25rem; background: #fff; border: 1px solid rgba(7, 50, 101, 0.09);
-  box-shadow: 0 18px 40px -30px rgba(7, 50, 101, 0.35); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
-@media (hover: hover) and (min-width: 1024px) { .pps-card:hover { transform: translateY(-4px); border-color: rgba(14, 122, 50, 0.3); box-shadow: 0 26px 48px -30px rgba(7, 50, 101, 0.45); } }
-.pps-card-icon { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; margin-bottom: 1rem; border-radius: 1rem; background: var(--green-50); }
-.pps-card-icon img { width: 2rem; height: 2rem; }
-@media (max-width: 767px) {
-  .pps-card { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; padding: 1.15rem 1.15rem 1.25rem; }
-  .pps-card-icon { grid-row: span 2; margin-bottom: 0; width: 3rem; height: 3rem; }
-  .pps-card-icon img { width: 1.7rem; height: 1.7rem; }
-  .pps-card .pps-card-text { margin-top: 0.3rem; }
+/* section 2: why use an accountant. Left: label, heading (last words green), intro, three trust points.
+   Right: the checklist in a white card, two columns of ticks from 640px up. */
+.pps-eyebrow-plain::after { display: none; }
+.pps-why-h2 { font-size: clamp(2rem, 3.4vw, 2.95rem); line-height: 1.04; }
+.pps-accent { color: #0e7a32; }
+/* the checklist card's shade (owner, 9 Oct 2026): layered soft navy shadows all round (a fine contact line, a close
+   soft shade and a wide, low drop) plus a hairline green ring, and a faint green glow behind it that fades into the mint */
+.pps-why-card { position: relative; margin-top: 2rem; padding: 1.1rem 1rem 2.05rem; border-radius: 1.25rem; background: #fff;
+  border: 1px solid rgba(14, 122, 50, 0.1);
+  box-shadow: 0 1px 2px rgba(7, 50, 101, 0.06), 0 6px 16px -6px rgba(7, 50, 101, 0.1), 0 24px 48px -16px rgba(7, 50, 101, 0.16),
+    0 48px 90px -30px rgba(7, 50, 101, 0.2); }
+.pps-why-grid { isolation: isolate; } /* keeps the glow above the mint background but behind the card */
+.pps-why-card::before { content: ""; position: absolute; inset: -28px; z-index: -1; border-radius: 2.5rem;
+  background: radial-gradient(60% 55% at 50% 58%, rgba(18, 154, 68, 0.16), transparent 72%); filter: blur(18px); pointer-events: none; }
+/* the card's inside as the owner's "s" design (9 Oct 2026): a navy title bar with the green round badge and "HELP YOU:"
+   in green; ten points, each a round green icon beside a bold title and a line under it, a fine rule between rows
+   (two columns from 640px, rules lined up across them; none under the last row) */
+.pps-why-card-bar { display: flex; align-items: center; gap: 1rem; min-height: 4.4rem; padding: 0.6rem 1.25rem 0.6rem 0.7rem; border-radius: 0.9rem;
+  background: linear-gradient(180deg, #0b3f7d 0%, var(--navy-900) 100%); box-shadow: 0 10px 22px -14px rgba(7, 50, 101, 0.8); }
+.pps-why-card-badge { flex: none; width: 3.4rem; height: 3.4rem; border-radius: 999px;
+  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.28), 0 8px 16px -8px rgba(0, 0, 0, 0.5); }
+.pps-why-card-h { font-size: 1.014rem; /* 130% (owner, 9 Oct 2026) */ font-weight: 800; line-height: 1.3; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; }
+.pps-why-card-accent { color: #5fd38a; }
+.pps-helps { margin-top: 0.9rem; display: grid; }
+.pps-help { display: flex; align-items: center; gap: 0.95rem; padding-block: 0.95rem; border-bottom: 1px solid rgba(7, 50, 101, 0.1); }
+.pps-helps .pps-help:last-child { border-bottom: 0; }
+.pps-help-icon { flex: none; width: 3.1rem; height: 3.1rem; }
+@media (min-width: 1100px) { .pps-help-icon { width: 3.5rem; height: 3.5rem; } .pps-help { gap: 1.1rem; } }
+.pps-help-title { display: block; font-weight: 700; font-size: 1rem; line-height: 1.3; letter-spacing: -0.005em; color: var(--navy-900); }
+.pps-help-text { display: block; margin-top: 0.2rem; font-size: 0.9rem; line-height: 1.45; color: rgb(7 50 101 / 0.72); }
+@media (min-width: 640px) {
+  .pps-why-card { padding: 1.75rem 1.9rem 1.1rem; } /* +8mm height, then 1.5cm shorter (owner, 9 Oct 2026) */
+  .pps-helps { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; }
+  .pps-helps .pps-help:nth-last-child(2):nth-child(odd) { border-bottom: 0; } /* the last row's left item */
+}
+@media (min-width: 1100px) {
+  .pps-why-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); gap: clamp(2.5rem, 3.5vw, 4rem); align-items: center; } /* the box wider for the owner's "s" design (9 Oct 2026) */
+  .pps-why-card { margin-top: 0; margin-bottom: 7mm; left: calc(5mm + 3mm); top: calc(1cm + 3mm); } /* then down 3mm more (owner, 9 Oct 2026) */ /* 5mm right, then 3mm more; then down 1cm (owner, 9 Oct 2026) */ /* margin-bottom keeps its laid-out height as before the 1.5cm cut, so its top stays put */
+  .pps-why-text { position: relative; top: 0.3cm; } /* up 1cm, then down 1.3cm, beside the card (owner, 9 Oct 2026) */
+  .pps-why { --why-pt: calc(clamp(2.5rem, 5vw, 4rem) - 1.2cm + 1.5cm - 1cm - 4mm - 2mm - 3mm); padding-top: max(0px, var(--why-pt)); margin-top: min(0px, var(--why-pt)); } /* the second section: up 1.2cm, then down 1.5cm, then up 1cm, 4mm, 2mm and 3mm, with everything under it (owner, 9 Oct 2026); where that is more than its top space, the rest is taken from above it */
 }
 
-/* section 3: navy band, words on the left, the two short lines and the button on the right */
-.pps-fit { background: radial-gradient(120% 140% at 100% 0%, #0b3f7d 0%, var(--navy-900) 55%, #052449 100%); color: #fff; }
-.pps-on-navy { margin-top: 0; color: #fff; }
-.pps-fit-lead { margin-top: 1rem; font-size: clamp(1.1rem, 1.5vw, 1.3rem); font-weight: 700; color: #fff; }
-.pps-fit-text { margin-top: 0.6rem; max-width: 40rem; font-size: clamp(1rem, 1.3vw, 1.15rem); line-height: 1.6; color: rgba(255, 255, 255, 0.85); }
-.pps-fit-close { margin-top: 2rem; }
-.pps-fit-tag { font-family: var(--font-sans); font-weight: 800; font-size: clamp(1.45rem, 2.4vw, 2rem); line-height: 1.2; letter-spacing: -0.02em; color: #fff; }
-.pps-fit-tag > span { display: block; }
-.pps-fit-tag-green { color: #5fd38a; }
-.pps-fit .pps-cta { margin-top: 1.4rem; }
-@media (min-width: 1024px) {
-  .pps-fit-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 4rem; align-items: center; }
-  .pps-fit-close { margin-top: 0; padding-left: 3rem; border-left: 1px solid rgba(255, 255, 255, 0.18); }
+/* section 3: six service cards: pale blue boxes, a round mint icon on the left, the words beside it */
+.pps-cards { margin-top: clamp(1.75rem, 3vw, 2.5rem); display: grid; gap: 1rem; }
+@media (min-width: 768px) { .pps-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; } }
+@media (min-width: 1100px) { .pps-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; } }
+.pps-card { display: flex; align-items: center; gap: 1.1rem; padding: 1.25rem 1.3rem; border-radius: 1rem;
+  background: linear-gradient(135deg, #f7fbff 0%, #edf5fb 100%); border: 1px solid rgba(7, 50, 101, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+@media (hover: hover) and (min-width: 1024px) { .pps-card:hover { transform: translateY(-3px); border-color: rgba(14, 122, 50, 0.25); box-shadow: 0 22px 40px -28px rgba(7, 50, 101, 0.45); } }
+.pps-card .pps-h3 { font-size: 1.05rem; }
+.pps-card .pps-card-text { margin-top: 0.3rem; font-size: 0.93rem; line-height: 1.5; }
+@media (min-width: 1100px) {
+  .pps-card { padding: 1.5rem 1.5rem; gap: 1.25rem; }
 }
 
-/* section 4: checklist on a pale mint band, two columns of ticks from tablets up */
-.pps-why { background: linear-gradient(180deg, #f2faf5 0%, #fff 100%); }
-.pps-checks { margin-top: 1.75rem; display: grid; gap: 0.85rem; }
-.pps-checks li { display: flex; align-items: center; gap: 0.85rem; padding: 0.95rem 1.1rem; border-radius: 1rem; background: #fff;
-  border: 1px solid rgba(14, 122, 50, 0.14); font-weight: 600; font-size: 1.02rem; line-height: 1.35; color: var(--navy-900); }
-.pps-check { display: grid; place-items: center; flex: none; width: 2rem; height: 2rem; border-radius: 999px; background: #0e7a32; color: #fff; }
-.pps-tick { width: 1.1rem; height: 1.1rem; }
-@media (min-width: 768px) { .pps-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+/* section 4: find the right accountant, styled as section 3 (owner, 9 Oct 2026): same mint background, label with a
+   line, heading and intro; the five people as pale blue cards with the round mint icon (the closing line and button were removed, owner 9 Oct 2026) */
+/* the navy start bar between sections 2 and 3 (owner, 9 Oct 2026): space above = section 3's top padding (added to section 2's
+   bottom one), space below = section 2's bottom padding (added to section 3's top one), so each side keeps the old gap */
+.pps-bar-gap { background: #f1f8f4; padding-top: clamp(2.5rem, 5vw, 4rem); padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+@media (min-width: 1100px) { .pps-bar-gap { padding-top: calc(clamp(2.5rem, 5vw, 4rem) - 1.2cm + 1.5cm); } }
+/* the "Your Ideal Accountant Awaits" bar up 5mm, then 3mm more, the space added below it, so nothing else moves (owner, 9 Oct 2026) */
+.pps-bar-gap.pps-bar-gap--ideal { margin-top: calc(-5mm - 3mm); padding-bottom: calc(clamp(2.5rem, 5vw, 4rem) + 5mm + 3mm); }
+/* the same bar above "Who we help": above = its top padding, below = the Why section's bottom padding */
+.pps-bar-gap.pps-bar-gap--fit { padding-top: clamp(1rem, 2vw, 1.5rem); padding-bottom: clamp(3rem, 7vw, 5.5rem); }
+/* and above "How it works": above = that section's top padding, below = "Who we help"'s bottom padding */
+.pps-bar-gap.pps-bar-gap--how { padding-top: 1cm; padding-bottom: clamp(3rem, 7vw, 5.5rem); } /* 1cm: that section's top padding on ad pages */
+@media (min-width: 1024px) { .pps-bar-gap.pps-bar-gap--how { padding-top: calc(1cm - 22px); } }
+.pps-fit { background: #f1f8f4; padding-top: clamp(1rem, 2vw, 1.5rem); }
+.pps-fit-lead { font-weight: 700; color: var(--navy-900); }
+.pps-tiles { margin-top: clamp(1.75rem, 3vw, 2.5rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 767px) { .pps-tile:last-child { grid-column: 1 / -1; } } /* phones: the fifth card full width */
+@media (min-width: 768px) { .pps-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; } }
+@media (min-width: 1100px) { .pps-tiles { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.25rem; } }
+.pps-tile { display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 1.4rem 0.75rem; border-radius: 1rem; text-align: center;
+  background: linear-gradient(135deg, #f7fbff 0%, #edf5fb 100%); border: 1px solid rgba(7, 50, 101, 0.06); }
+.pps-tile .pps-h3 { font-size: 1.02rem; font-weight: 500; } /* not bold (owner, 9 Oct 2026) */
+.pps-tile-icon { flex: none; display: block; width: 3.6rem; height: 3.6rem; } /* the owner's "r" folder icons (SVG), the size of the old mint circles (9 Oct 2026) */
+.pps-tile-icon .psi { display: block; width: 100%; height: 100%; }
+@media (min-width: 1100px) { .pps-tile-icon { width: 4.4rem; height: 4.4rem; } }
+
+/* ===== /ad-2 sections, laptops and desktops (1200px+): every row's left edge in line ===== */
 @media (min-width: 1200px) {
-  .pps-why-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4rem; align-items: center; }
-  .pps-checks { margin-top: 0; }
-}
-
-/* section 5: three numbered steps joined by a line, button under them */
-.pps-steps { margin-top: clamp(1.75rem, 3vw, 2.75rem); display: grid; gap: 1rem; }
-.pps-step { position: relative; padding: 1.5rem; border-radius: 1.25rem; background: #f6f9fc; }
-.pps-step-num { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; margin-bottom: 1rem; border-radius: 999px;
-  background: #0e7a32; color: #fff; font-weight: 800; font-size: 1.15rem; box-shadow: 0 10px 22px -10px rgba(14, 122, 50, 0.7); }
-@media (min-width: 768px) {
-  .pps-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-  .pps-steps::before { content: ""; grid-column: 1 / -1; grid-row: 1; align-self: start; height: 2px; margin: calc(1.5rem + 1.375rem - 1px) 2.5rem 0;
-    background: repeating-linear-gradient(90deg, rgba(14, 122, 50, 0.45) 0 8px, transparent 8px 14px); }
-  .pps-step { grid-row: 1; background: transparent; padding-inline: 0.25rem; }
-  .pps-step:nth-child(1) { grid-column: 1; } .pps-step:nth-child(2) { grid-column: 2; } .pps-step:nth-child(3) { grid-column: 3; }
-}
-.pps-how-cta { margin-top: 2rem; }
-@media (min-width: 768px) { .pps-how-cta { text-align: center; } }
-
-/* section 6: FAQ, heading on the left and the questions on the right on desktops */
-.pps-faq { border-top: 1px solid rgba(7, 50, 101, 0.07); }
-.pps-faq-list { margin-top: 1.5rem; display: grid; gap: 0.75rem; }
-@media (min-width: 1024px) {
-  .pps-faq-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start; }
-  .pps-faq-grid .pps-h2 { margin-top: 0; }
-  .pps-faq-list { margin-top: 0; }
-  .pps-faq .sel-q { font-size: clamp(1rem, 1.05vw, 1.2rem); }
-  .pps-faq .sel-a { font-size: clamp(0.95rem, 0.95vw, 1.08rem); }
-}
-
-/* ===== /ad-2 sections, laptops and desktops (1200px+) laid out as the owner's "personal example" picture (9 Oct 2026) =====
-   Row 1: "Why use an accountant" (ticks) on the left, "Personal Tax Services" in a mint panel with a round icon badge on the
-   right (services as a compact two-column list). Row 2: "Find the right accountant" as a light panel with white tiles (the
-   example's "Who is it for?"). Then "How it works" and the FAQ as before. Phones and tablets are unchanged. */
-.pps-tiles, .pps-svc-badge { display: none; }
-@media (min-width: 1200px) {
-  .pps { display: grid; grid-template-columns: minmax(48px, 1fr) minmax(0, 580px) minmax(0, 640px) minmax(48px, 1fr); }
-  .pps-sec { grid-column: 1 / -1; }
-
-  /* row 1, left: why use an accountant */
-  .pps-why { grid-column: 2; grid-row: 1; align-self: center; background: none; padding: 64px 56px 56px 0; }
-  .pps-why .pps-wrap, .pps-services .pps-wrap { max-width: none; padding-inline: 0; }
-  .pps-why-grid { display: block; }
-  .pps-why .pps-h2 { font-size: clamp(2rem, 2.35vw, 2.5rem); }
-  .pps-checks { grid-template-columns: 1fr; gap: 0.8rem; margin-top: 1.4rem; }
-  .pps-checks li { padding: 0; border: 0; background: none; border-radius: 0; font-weight: 500; font-size: 1.05rem; gap: 0.75rem; }
-  .pps-check { width: 1.5rem; height: 1.5rem; background: none; color: #0e7a32; }
-  .pps-tick { width: 1.35rem; height: 1.35rem; }
-
-  /* row 1, right: personal tax services in a mint panel */
-  .pps-services { grid-column: 3; grid-row: 1; align-self: center; padding: 56px 0; }
-  .pps-services .pps-wrap { position: relative; padding: 34px 36px 34px; border-radius: 24px; background: #eef8f2; }
-  .pps-svc-badge { display: grid; place-items: center; position: absolute; left: 36px; top: 34px; width: 4.25rem; height: 4.25rem; border-radius: 999px;
-    background: #0e7a32; box-shadow: 0 12px 24px -12px rgba(14, 122, 50, 0.7); }
-  .pps-svc-badge img { width: 2.2rem; height: 2.2rem; filter: brightness(0) invert(1); }
-  .pps-services .pps-eyebrow, .pps-services .pps-h2, .pps-services .pps-intro { margin-left: 5.6rem; }
-  .pps-services .pps-eyebrow { font-size: 0.72rem; }
-  .pps-services .pps-h2 { margin-top: 0.3rem; font-size: 1.75rem; }
-  .pps-services .pps-intro { margin-top: 0.45rem; font-size: 0.98rem; line-height: 1.5; }
-  .pps-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15rem 1.75rem; margin-top: 1.6rem; }
-  .pps-card { display: grid; grid-template-columns: auto 1fr; grid-template-rows: min-content 1fr; column-gap: 0.75rem; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
-  .pps-card:hover { transform: none; box-shadow: none; }
-  .pps-card-icon { grid-row: 1 / 3; width: 2.3rem; height: 2.3rem; margin: 0; border-radius: 0.65rem; background: #fff; }
-  .pps-card-icon img { width: 1.35rem; height: 1.35rem; }
-  .pps-card .pps-h3 { font-size: 1rem; }
-  .pps-card .pps-card-text { margin-top: 0.15rem; font-size: 0.88rem; line-height: 1.45; }
-
-  /* row 2: find the right accountant, a light panel with the five tiles */
-  .pps-fit { grid-row: 2; background: none; color: var(--navy-900); padding: 8px 0 16px; }
-  .pps-fit .pps-fit-grid { width: calc(100% - 96px); max-width: 1220px; padding: 40px 44px 36px; border-radius: 24px; background: #f2f6fb;
-    grid-template-columns: 1.3fr 1fr; gap: 0 3.5rem; }
-  .pps-on-navy { color: var(--navy-900); font-size: clamp(1.9rem, 2.2vw, 2.35rem); }
-  .pps-fit-lead { color: var(--navy-900); }
-  .pps-fit-text { color: rgb(7 50 101 / 0.82); }
-  .pps-fit-close { padding-left: 3rem; border-left: 1px solid rgba(7, 50, 101, 0.12); }
-  .pps-fit-tag { color: var(--navy-900); font-size: clamp(1.4rem, 1.7vw, 1.75rem); }
-  .pps-fit-tag-green { color: #0e7a32; }
-  .pps-tiles { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
-  .pps-tile { display: flex; flex-direction: column; align-items: center; gap: 0.65rem; padding: 1.3rem 0.75rem 1.2rem; border-radius: 16px; background: #fff;
-    box-shadow: 0 12px 28px -22px rgba(7, 50, 101, 0.45); font-weight: 600; font-size: 0.98rem; color: var(--navy-900); text-align: center; }
-  .pps-tile-icon { width: 2.3rem; height: 2.3rem; }
-
-  .pps-how { grid-row: 3; }
-  /* left edges in line with the rows above */
-  .pps-how .pps-wrap, .pps-faq .pps-wrap { width: calc(100% - 96px); max-width: 1220px; padding-inline: 0; }
-  .pps-faq { grid-row: 4; }
+  .pps-why .pps-wrap, .pps-services .pps-wrap, .pps-fit .pps-wrap { width: calc(100% - 96px); max-width: 1220px; padding-inline: 0; }
 }
 
 /* /ad-2 hero, desktops (owner, 9 Oct 2026): "Personal Tax Accountant" 1.5cm higher (with the small
@@ -1081,6 +1037,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (min-width: 1200px) {
   .pth { container-type: inline-size; }
   .pth-eyebrow, .pth-h1 { position: relative; top: -1.5cm; } /* up 1.5cm, another 2cm, then down 2cm (owner, 9 Oct 2026) */
+  .pth-h1 { top: -1cm; } /* then the headline alone down 5mm (owner, 9 Oct 2026, noc) */
   /* 72% of its original size (80%, then 90% of that; owner, 9 Oct 2026); each part on its own line */
   .pth-h1 { font-size: clamp(2.592rem, 3.744vw, 3.888rem); white-space: nowrap; }
   .pth-h1 > span { display: block; } /* three lines (owner, 9 Oct 2026) */
@@ -1098,6 +1055,358 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   /* then 85% of that size (owner, 9 Oct 2026, noc) */
   .pth-sub { font-size: calc(var(--sub-w) / 26.8 * 1.3 * 0.85); }
   .pth-sub-line { display: inline; white-space: normal; }
+  /* then out to the middle of the notepad (54.5% of the hero width), on exactly two lines, one sentence each: the first sentence
+     (the longer, 36.7 x the font size) just fits the width (owner, 9 Oct 2026) */
+  .pth-sub { --pad-w: calc(54.5cqw - max((100cqw - 1320px) / 2, 0px) - clamp(32px, 4.5vw, 72px));
+    width: var(--pad-w); font-size: calc(var(--pad-w) / 37); }
+  /* the button 1.5cm higher, then back down 2mm (owner, 9 Oct 2026, noc) */
+  .pth-cta { position: relative; top: -1.3cm; }
+  /* the button down another 2mm, then the line under the headline, the button, its note and the three points all up 2mm
+     (owner, 9 Oct 2026, noc) */
+  .pth-sub { top: calc(-0.33cm - 20px - 2mm - 4mm + 2mm + 1mm); } /* then up another 4mm, then back down 2mm, then down 1mm (owner, 9 Oct 2026, noc) */
+  .pth-sub { font-weight: 500; font-size: calc(var(--pad-w) / 37.5); } /* slightly bold (owner, 9 Oct 2026); the bolder first sentence is 37.19 x the font size, so 1.3% smaller to stay on two lines */
+  .pth-cta { top: calc(-1.1cm - 2mm); }
+  .pth-note, .pth-points { position: relative; top: -2mm; }
+  .pth-note { top: calc(-2mm - 1.5cm); } /* then the note up another 1.5cm (owner, 9 Oct 2026) */
+  /* the note as wide as the button's straight middle (its width less the two round ends; owner, 9 Oct 2026): the button is
+     12.77 x its font size + 88px wide and 1.69 x its font size + 28.8px high, so the straight part is 11.07 x + 59.2px and
+     starts half a height in; the note's words are 15.91 x their font size wide */
+  .pth-note { --cta-fs: clamp(1.2rem, 1.35vw, 1.35rem); padding-left: calc(var(--cta-fs) * 0.845 + 14.4px);
+    font-size: calc((var(--cta-fs) * 11.07 + 59.2px) / 15.91); }
+  /* then back to its old size (0.95rem) at the same width, the extra spread between its 33 letters; and down 3mm (owner,
+     9 Oct 2026) */
+  .pth-note { font-size: 0.95rem; letter-spacing: calc((var(--cta-fs) * 11.07 + 59.2px - 0.95rem * 15.91) / 32);
+    top: calc(-2mm - 1.5cm + 3mm); }
+  .pth-points { top: calc(-2mm - 2.5cm - 3mm + 1.5cm - 2mm - 2mm + 2.5mm); } /* the three points up another 2.5cm, then 3mm more, then down 1.5cm, then up 2mm, then up 2mm with the steps, then down 2.5mm (owner, 9 Oct 2026, noc) */
+  .pth-point-icon { width: calc(2.6rem * 1.3); height: calc(2.6rem * 1.3); } /* the three icons 130% (owner, 9 Oct 2026, noc) */
+  .pth-h1 { font-size: calc(clamp(2.592rem, 3.744vw, 3.888rem) * 1.2); } /* the headline 120% (owner, 9 Oct 2026) */
+  .pth-points li { font-size: calc(clamp(0.88rem, 0.9vw, 1rem) * 1.25); } /* the three points' words 125% cs, icons unchanged (owner, 9 Oct 2026) */
+  .pth-points { column-gap: calc(clamp(1rem, 1.6vw, 2rem) + 2mm); } /* 2mm more space between the three points (owner, 9 Oct 2026) */
+  .pth-points li { font-size: calc(clamp(0.88rem, 0.9vw, 1rem) * 1.25 * 0.9); } /* then the words 90% cs, icons unchanged (owner, 9 Oct 2026) */
+  /* the second point 5mm and the third 1cm to the right (owner, 9 Oct 2026, noc) */
+  .pth-points li:nth-child(2) { position: relative; left: calc(5mm + 2.5mm + 2mm); } /* then 2.5mm more, then 2mm more (owner, 9 Oct 2026, noc) */
+  .pth-points li:nth-child(3) { position: relative; left: calc(1cm + 4mm + 4mm); } /* then 4mm more, then 4mm more (owner, 9 Oct 2026, noc) */
 }
 /* /ad-2 desktop: the whole hero text block (headline, sub-line, button, note, points) 1.5cm higher (owner, 9 Oct 2026, noc) */
-@media (min-width: 1200px) { .pth-inner { position: relative; top: -1.5cm; } }
+@media (min-width: 1200px) { .pth-inner { position: relative; top: calc(-1.5cm + 1.5cm); left: -1cm; } } /* then back down 1.5cm; then 1cm to the left (owner, 9 Oct 2026, noc) */
+/* /ad-2 desktop: the owner's larger photo ("personal hero piclarge", 9 Oct 2026) fills the whole screen under the header:
+   the hero is the screen height less the 5rem header, the photo covers all of it (no plain white strip, no faded top),
+   cropped at the sides as the screen shape needs, kept to the right so the woman, laptop and mug stay in view */
+@media (min-width: 1200px) {
+  .pth { min-height: calc(100svh - 5rem - 1px); background: rgb(99, 185, 247); } /* 1px: the header's bottom border */
+  .pth-pic { inset: 0; }
+  .pth-pic img { position: static; width: 100%; height: 100%; object-fit: cover; object-position: 85% 100%;
+    -webkit-mask-image: none; mask-image: none; }
+}
+/* /ad-2: the home page's steps line ("Tell us your needs → Enter your postcode → Get matched with one accountant") under the
+   three points, desktops only, same look as the home page (owner, 9 Oct 2026, noc); it follows the points' 1.5cm lift */
+.pth-steps { display: none; }
+@media (min-width: 1200px) {
+  .pth-steps { display: flex; flex-wrap: nowrap; white-space: nowrap; position: relative; top: calc(-1.5cm - 2mm); margin-top: 1.1rem; /* up 2mm with the points (owner, 9 Oct 2026, noc) */
+    gap: 0.35rem 0.45rem; font-size: clamp(0.8rem, 0.92vw, 1.3rem); }
+  .pth-steps li { gap: 0.45rem; }
+  .pth-steps { font-size: calc(clamp(0.8rem, 0.92vw, 1.3rem) * 1.3 * 0.9 * 0.95); } /* 130% cs, then 90% cs, then 95% cs (owner, 9 Oct 2026) */
+}
+/* /ad-2 match box popup: the line under "Start here" and the three points 5mm lower (owner, 9 Oct 2026, noc) */
+@media (min-width: 1024px) {
+  body:has(.pth) .q-modal .start-here-line { position: relative; top: 5mm; }
+  body:has(.pth) .q-modal .start-here-points { top: calc(-3mm + 5mm); }
+}
+/* /ad-2 desktop: an even white fade behind the line under the headline, and one behind the three points and the steps
+   line together (owner, 9 Oct 2026, noc). Same veil as the home hero ("hero-veil" in globals.css): one flat tint,
+   feathered the same on all four sides. The points (16.5mm up) and steps (17mm up) keep their places: the 16.5mm is now
+   on their shared box, so the box, and its fade, sit where they show. The third point sits 1cm right of its box, so the
+   fade reaches 1cm further right. */
+.pth-veil { display: contents; }
+@media (min-width: 1200px) {
+  .pth-veil { display: block; position: relative; top: -16.5mm; width: max-content; isolation: isolate; }
+  .pth-veil .pth-points { top: 2mm; } /* down 2mm (owner, 9 Oct 2026, noc) */
+  .pth-veil .pth-steps { top: calc(-0.5mm + 2mm - 1.5mm - 1mm - 2mm + 1cm - 4mm); } /* then down 2mm, then up 1.5mm, 1mm, then 2mm, then down 1cm, then up 4mm (owner, 9 Oct 2026, noc) */
+  .pth-veil::before, .pth-sub::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    background: rgba(255, 255, 255, 0.72);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.4rem, #000 calc(100% - 1.4rem), transparent), linear-gradient(180deg, transparent, #000 1.1rem, #000 calc(100% - 1.1rem), transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent, #000 1.4rem, #000 calc(100% - 1.4rem), transparent), linear-gradient(180deg, transparent, #000 1.1rem, #000 calc(100% - 1.1rem), transparent);
+    mask-composite: intersect;
+  }
+  .pth-veil::before { inset: -1.1rem calc(-1cm - 1.4rem) -1.3rem -1.4rem; }
+  .pth-sub { isolation: isolate; }
+  .pth-sub::before { inset: -1rem -1.4rem; }
+}
+/* softer edges (about 3rem at the sides, 1.6rem top and bottom) so the fade never shows as a box over the laptop; the
+   fade reaches that much further so the words stay in its even middle */
+@media (min-width: 1200px) {
+  .pth-veil::before, .pth-sub::before {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 3rem, #000 calc(100% - 3rem), transparent), linear-gradient(180deg, transparent, #000 1.6rem, #000 calc(100% - 1.6rem), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 3rem, #000 calc(100% - 3rem), transparent), linear-gradient(180deg, transparent, #000 1.6rem, #000 calc(100% - 1.6rem), transparent);
+  }
+  .pth-veil::before { inset: -1.9rem calc(-1cm - 3.4rem) -2.1rem -3.4rem; }
+  .pth-sub::before { inset: -1.7rem -3.4rem; }
+}
+/* then one rounded, softly blurred patch instead of the crossed masks (whose square corners showed over the laptop):
+   the same even tint, round soft corners and edges all the way round */
+@media (min-width: 1200px) {
+  .pth-veil::before, .pth-sub::before { -webkit-mask-image: none; mask-image: none; border-radius: 2.5rem; filter: blur(22px);
+    background: rgba(255, 255, 255, 0.7); }
+  .pth-veil::before { inset: -1.2rem calc(-1cm - 2rem) calc(-1.4rem - 7.5mm) -2rem; } /* reaches lower with the steps line (now 7.5mm under its first place) */
+  .pth-sub::before { inset: -1rem -2rem; }
+}
+/* the points' fade stops before the laptop (owner, 9 Oct 2026): the photo covers the hero (scale --s, kept 85% to the
+   right), so the laptop's left corner (x 1035 in the 1983px photo) is at --lap-x on screen; the fade's box ends 40px
+   short of it (its blur reaches about that far) and never further right than before */
+@media (min-width: 1200px) {
+  .pth-veil::before {
+    --s: max(100cqw / 1983, (100svh - 5rem - 1px) / 793);
+    --lap-x: calc((100cqw - 1983 * var(--s)) * 0.85 + 1035 * var(--s));
+    --text-x: calc(max((100cqw - 1320px) / 2, 0px) + clamp(32px, 4.5vw, 72px) - 1cm);
+    right: auto; width: min(calc(100% + 1cm + 4rem), calc(var(--lap-x) - 40px - var(--text-x) + 2rem));
+  }
+}
+/* the fades sit under every word (no stacking box of their own), so they can never wash over the headline ("Tax
+   Accountants") or the note (owner, 9 Oct 2026) */
+@media (min-width: 1200px) {
+  .pth-veil, .pth-sub { isolation: auto; }
+}
+/* a light fade behind "accountant" at the end of the steps line, where it sits on the laptop past the main fade
+   (owner, 9 Oct 2026, noc): the same soft rounded patch, fainter */
+.pth-steps-last { position: relative; }
+@media (min-width: 1200px) {
+  .pth-steps-last::before { content: ""; position: absolute; z-index: -1; pointer-events: none; inset: -0.35em -0.6em;
+    border-radius: 1em; background: rgba(255, 255, 255, 0.5); filter: blur(10px); }
+}
+/* then stronger and reaching past the end of the word, where it sits on the darker part of the laptop; kept tight above
+   and below so it reads as a glow round the word, not a patch on the laptop (owner, 9 Oct 2026) */
+@media (min-width: 1200px) {
+  .pth-steps-last::before { inset: -0.2em -1em -0.2em -0.4em; border-radius: 0.8em; background: rgba(255, 255, 255, 0.72); filter: blur(9px); }
+}
+
+/* /ad-2 (owner, 9 Oct 2026): the shared "How it works" block (HomeMatchIntro's first column) uses the same column as the
+   page's own sections above it, so "How it works" starts in line with "Who we help" at every width (.pps-wrap's box) */
+.pz-page section[aria-labelledby="home-match-intro"] > div > .container-page:first-child { width: 100%; max-width: 1240px; margin-inline: auto; padding-inline: 20px; }
+@media (min-width: 768px) { .pz-page section[aria-labelledby="home-match-intro"] > div > .container-page:first-child { padding-inline: clamp(32px, 4.5vw, 64px); } }
+@media (min-width: 1200px) { .pz-page section[aria-labelledby="home-match-intro"] > div > .container-page:first-child { width: calc(100% - 96px); max-width: 1220px; padding-inline: 0; } }
+/* above 1440px that column stops widening, so the block's screen-width sizes are held at their 1440px values (owner's
+   alignment, 9 Oct 2026): otherwise the heading keeps growing and squeezes the paragraph into a thin column */
+@media (min-width: 1441px) {
+  .pz-page section[aria-labelledby="home-match-intro"] > div > .container-page:first-child {
+    & > div:first-child { column-gap: 57.6px; }
+    & h2 { font-size: 54px; }
+    & > div:first-child > p { margin-top: 17.28px; padding-block: 5.76px; padding-left: 50.4px; font-size: 16.56px; }
+    & > div:first-child > div > p > span { width: 86.4px; }
+    & ol { margin-top: calc(20.16px + 5mm); column-gap: 17.28px; }
+    & ol > li h3 { margin-top: 12.96px; font-size: 25.2px; }
+    & ol > li > p { font-size: 16.56px; }
+    & ol > li[aria-hidden] { padding-top: 93.6px; }
+    & ol > li[aria-hidden] svg { width: 41.76px; }
+  }
+}
+
+/* /ad-2 (owner, 9 Oct 2026): the page's mint behind "How it works" (down to the navy bar under the steps); everything
+   from that bar down stays white, as the "Meet your accountant match" photo fades into white. The later block paints a
+   white band behind itself, full width; the section's overflow-hidden keeps it inside the section. */
+.pz-page section[aria-labelledby="home-match-intro"] { background: #f1f8f4; }
+.pz-page section[aria-labelledby="home-match-intro"] > div > .container-page:not(:first-child) {
+  background: #fff; box-shadow: 0 0 0 100vmax #fff; clip-path: inset(0 -100vmax -100vmax); }
+
+/* /ad-2 (owner, 9 Oct 2026): every small green label heading on the page ("What we can help you with", "Tax time, made
+   easier", "Who we help", "How it works", "Meet Your Accountant Match", "Why it matters", "Common questions") at 130%
+   of its size, with its letter spacing and short rule scaled to match */
+.pz-page main :is(.pps-eyebrow, .fs-eyebrow) { zoom: 1.3; }
+/* phones: a little less letter spacing, so the longer ones still fit on one line with their short rule */
+@media (max-width: 479px) { .pz-page main :is(.pps-eyebrow, .fs-eyebrow) { letter-spacing: 0.08em; } }
+@media (max-width: 479px) {
+  .pz-page main .pps-eyebrow::after, .pz-page main .fs-eyebrow > span[aria-hidden] { width: 1.25rem; }
+  .pz-page main :is(.pps-eyebrow, .fs-eyebrow) { gap: 0.5rem; }
+}
+
+/* /ad-2 (owner, 9 Oct 2026): every green button (hero button, the navy bars' buttons, "Get Matched Now", "Match Me Now",
+   the match box and questionnaire buttons) in the exact green of the hero's three trust icons, #087b12 (flat, no
+   gradient). Hover effects are unchanged (the shared button still turns navy on hover). */
+.pz-page .pth-cta, .pz-page .btn-primary:not(:hover) { background: #087b12; }
+
+/* ===== /ad-2 "Personal Tax Services" and "Who we help" icons and cards (owner, 9 Oct 2026; PersonalServiceIcons.tsx, PpsCardsReveal.tsx) =====
+   The owner's round icons as SVG, the size of the old mint circles. On every screen size, in the "Why it matters"
+   style, once: as each card scrolls into view it rises in (cards arriving together go one after another), a soft light
+   sweeps across it, its icon pops in, then the icon's parts move. Laptops/desktops: hovering a card lifts it and plays
+   its icon again. Each card arrives in 1 second; its icon then moves for 2 seconds and stops; hover replays it in 1 second (owner, 9 Oct 2026). Reduced motion or no JavaScript: everything still, nothing hidden. */
+.pps-svc-icon { flex: none; display: block; width: 3.6rem; height: 3.6rem; }
+.pps-svc-icon .psi { display: block; width: 100%; height: 100%; overflow: visible; }
+.psi * { transform-box: view-box; }
+@media (min-width: 1100px) { .pps-svc-icon { width: 4.4rem; height: 4.4rem; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  :is(.pps-card, .pps-tile) { position: relative; overflow: hidden; isolation: isolate; }
+  :is(.pps-card, .pps-tile)::after { content: ""; position: absolute; inset: -20% auto -20% -60%; width: 45%; z-index: -1; pointer-events: none; opacity: 0;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.95), rgba(8, 124, 45, 0.08), transparent); transform: skewX(-18deg); }
+
+  /* entrance, once per card */
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile) { opacity: 0; transform: translateY(28px) scale(.98); }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-svc-icon, .pps-tile-icon) { opacity: 0; transform: scale(.6); }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in { opacity: 1; transform: none; animation: wim-rise .6s cubic-bezier(.2,.8,.2,1) backwards; animation-delay: calc(var(--i, 0) * 100ms); }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in::after { animation: wim-sweep .7s ease-out backwards; animation-delay: calc(var(--i, 0) * 100ms + 150ms); }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in :is(.pps-svc-icon, .pps-tile-icon) { opacity: 1; transform: none; animation: wim-pop .45s cubic-bezier(.3,1.5,.5,1) backwards; animation-delay: calc(var(--i, 0) * 100ms + 100ms); }
+
+  /* each icon's own move after its card arrives (--d) */
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in { --d: calc(var(--i, 0) * 100ms + 350ms); }
+  .psi-head { transform-origin: 50px 36.4px; }
+  .psi-body { transform-origin: 50px 76.5px; }
+  .psi-house { transform-origin: 50px 80.7px; }
+  .psi-roof { stroke-dasharray: 1; }
+  .psi-bar { transform-box: fill-box !important; transform-origin: bottom; }
+  .psi-trend { stroke-dasharray: 1; }
+  .psi-case { transform-origin: 50px 81.8px; }
+  .psi-clasp { transform-box: fill-box !important; transform-origin: center; }
+  .psi-pin { transform-origin: 50px 84.7px; }
+  .psi-dot { transform-box: fill-box !important; transform-origin: center; }
+  .psi-gear { transform-origin: 66.7px 66.7px; }
+
+  /* after its card arrives, each icon moves for 2 seconds (two 1-second cycles) and then stops at rest (owner, 9 Oct 2026) */
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-head { animation: psi-nod 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-body { animation: psi-breathe 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-code-l { animation: psi-open-l 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-code-r { animation: psi-open-r 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-house { animation: psi-house-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-roof { animation: psi-roof-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-bar { animation: psi-bar-loop 1s ease-out calc(var(--d) + var(--b) * 100ms) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-trend { animation: psi-trend-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-trend-head { animation: psi-head-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-case { animation: psi-lift 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-clasp { animation: psi-click 1s ease-in-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-pin { animation: psi-pin-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-dot { animation: psi-dot-loop 1s ease-out var(--d) 2 both; }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in .psi-gear { animation: psi-gear-loop 1s ease-in-out var(--d) 2 both; } /* 45deg a cycle: one tooth, so the two cycles join seamlessly */
+}
+
+/* laptops/desktops: hover lifts the card, sweeps the light and plays its icon again (the "2" keyframes restart it) */
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  :is(.pps-card, .pps-tile):hover::after { animation: wim-sweep .8s ease-out; }
+  :is(.pps-svc-icon, .pps-tile-icon) { transition: transform 0.45s cubic-bezier(.2,.8,.2,1), filter 0.45s; }
+  :is(.pps-card, .pps-tile):hover :is(.pps-svc-icon, .pps-tile-icon), :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in:hover :is(.pps-svc-icon, .pps-tile-icon) { transform: translateY(-3px) scale(1.06); filter: drop-shadow(0 8px 14px rgba(8, 124, 45, 0.35)); }
+  :is(.pps-cards, .pps-tiles).wim-anim :is(.pps-card, .pps-tile).is-in:hover { transform: translateY(-3px); }
+  :is(.pps-card, .pps-tile):hover .psi-head { animation: psi-nod2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-body { animation: psi-breathe2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-code-l { animation: psi-open-l2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-code-r { animation: psi-open-r2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-house { animation: psi-rise2 .5s cubic-bezier(.2,.8,.2,1) both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-roof { animation: wim-draw2 .55s ease-out .45s both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-bar { animation: wim-bar-grow2 .5s cubic-bezier(.2,.8,.2,1) calc(var(--b) * 120ms) both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-trend { animation: wim-draw2 .45s ease-out .4s both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-trend-head { animation: wim-fade-in2 .15s ease-out .85s both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-case { animation: psi-lift2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-clasp { animation: psi-click2 1s ease-in-out both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-pin { animation: psi-drop2 .6s cubic-bezier(.3,1.4,.5,1) both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-dot { animation: psi-pop2 .4s ease-out .6s both !important; }
+  :is(.pps-card, .pps-tile):hover .psi-gear { animation: psi-gear2 1s ease-in-out both !important; }
+}
+/* the looping versions: each part's timing within one 1-second cycle, so two cycles repeat cleanly and end at rest */
+@keyframes psi-house-loop { 0% { opacity: 0; transform: scaleY(.4); } 45%, 100% { opacity: 1; transform: none; } }
+@keyframes psi-roof-loop { 0%, 20% { stroke-dashoffset: 1; } 65%, 100% { stroke-dashoffset: 0; } }
+@keyframes psi-bar-loop { 0% { transform: scaleY(0); } 45%, 100% { transform: none; } }
+@keyframes psi-trend-loop { 0%, 20% { stroke-dashoffset: 1; } 65%, 100% { stroke-dashoffset: 0; } }
+@keyframes psi-head-loop { 0%, 60% { opacity: 0; } 75%, 100% { opacity: 1; } }
+@keyframes psi-pin-loop { 0% { opacity: 0; transform: translateY(-14px); } 35% { opacity: 1; transform: translateY(2px); } 50%, 100% { transform: none; } }
+@keyframes psi-dot-loop { 0%, 30% { transform: scale(0); } 50% { transform: scale(1.2); } 65%, 100% { transform: none; } }
+@keyframes psi-gear-loop { from { transform: none; } to { transform: rotate(45deg); } }
+@keyframes psi-gear2 { from { transform: none; } to { transform: rotate(90deg); } }
+@keyframes psi-nod { 0%, 100% { transform: none; } 35%, 55% { transform: translateY(2.5px); } }
+@keyframes psi-nod2 { 0%, 100% { transform: none; } 35%, 55% { transform: translateY(2.5px); } }
+@keyframes psi-breathe { 0%, 100% { transform: none; } 35%, 55% { transform: scaleY(.95); } }
+@keyframes psi-breathe2 { 0%, 100% { transform: none; } 35%, 55% { transform: scaleY(.95); } }
+@keyframes psi-open-l { 0%, 100% { transform: none; } 35%, 60% { transform: translateX(-4.5px); } }
+@keyframes psi-open-l2 { 0%, 100% { transform: none; } 35%, 60% { transform: translateX(-4.5px); } }
+@keyframes psi-open-r { 0%, 100% { transform: none; } 35%, 60% { transform: translateX(4.5px); } }
+@keyframes psi-open-r2 { 0%, 100% { transform: none; } 35%, 60% { transform: translateX(4.5px); } }
+@keyframes psi-rise { from { opacity: 0; transform: scaleY(.4); } to { opacity: 1; transform: none; } }
+@keyframes psi-rise2 { from { opacity: 0; transform: scaleY(.4); } to { opacity: 1; transform: none; } }
+@keyframes psi-lift { 0%, 100% { transform: none; } 30% { transform: translateY(-5px) rotate(-4deg); } 55% { transform: translateY(-5px) rotate(3deg); } 75% { transform: none; } }
+@keyframes psi-lift2 { 0%, 100% { transform: none; } 30% { transform: translateY(-5px) rotate(-4deg); } 55% { transform: translateY(-5px) rotate(3deg); } 75% { transform: none; } }
+@keyframes psi-click { 0%, 70%, 100% { transform: none; } 82% { transform: scale(1.25); } }
+@keyframes psi-click2 { 0%, 70%, 100% { transform: none; } 82% { transform: scale(1.25); } }
+@keyframes psi-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes psi-drop2 { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes psi-pop { 0% { transform: scale(0); } 60% { transform: scale(1.2); } 100% { transform: none; } }
+@keyframes psi-pop2 { 0% { transform: scale(0); } 60% { transform: scale(1.2); } 100% { transform: none; } }
+
+/* /ad-2 navy bars with their own longer words (owner, 9 Oct 2026): when the words need two lines, break them evenly */
+.pps-bar-gap :is(.sb-title, .sb-sub) { text-wrap: balance; }
+@media (min-width: 1024px) {
+  /* "Your Tax Accountant Is One Match Away." bar (owner, 9 Oct 2026): every part on one line, and its button in the same
+     place as the "Your Ideal Accountant Awaits" bar's: its words are about 23% longer, so they are set at 81% size, which
+     makes them take the same width */
+  /* (1024-1199px the other bar wraps its words too, so these may wrap there; one line from 1200px) */
+  /* (its heading: the shared /ad-2 bar heading size below, owner 9 Oct 2026) */
+  /* its line at the same size as the other bars' lines (owner, 9 Oct 2026) */
+}
+@media (min-width: 1200px) { .pps-bar-gap--fit :is(.sb-title, .sb-sub) { white-space: nowrap; } }
+
+/* /ad-2 navy bar under the hero (owner, 9 Oct 2026): its button 1.5cm, then 5mm and 3mm more, further right (laptops/desktops, where it shows) */
+.pz-hero-bar > a { position: relative; left: calc(1.5cm + 5mm + 3mm); }
+@media (max-width: 1279px) { .pz-hero-bar > a { left: 1.5cm; } } /* smaller laptops: no room for the extra 8mm without leaving the screen */
+
+/* /ad-2 hero line under the headline at 120% of its size (owner, 9 Oct 2026, noc). Laptops/desktops: its box 120% wider
+   too, so it stays on two lines, one sentence each; its place and everything around it are unchanged. */
+@media (max-width: 767px) { .pth-sub { font-size: calc(clamp(1.02rem, 4.3vw, 1.125rem) * 1.2); } }
+@media (min-width: 768px) and (max-width: 1199px) { .pth-sub { font-size: calc(1.3rem * 1.2); max-width: calc(30rem * 1.2); } }
+@media (min-width: 1200px) { .pth-sub { width: calc(var(--pad-w) * 1.2); font-size: calc(var(--pad-w) / 37.5 * 1.2); } }
+
+/* /ad-2 bar under "How it works" ("Less Searching. More Confidence."): heading and line on one line each from 1200px,
+   which fits before the lined-up button (owner, 9 Oct 2026) */
+@media (min-width: 1200px) {
+  .pz-page section[aria-labelledby="home-match-intro"] .bar-align-how-row:not(.bar-sub-under-man) :is(.sb-title, .sb-sub) { white-space: nowrap; }
+}
+
+/* /ad-2 (owner, 9 Oct 2026): every navy bar's heading (left side) the size of "Less Searching. More Confidence.":
+   83% of the standard bar heading from 1200px, the standard size below that */
+@media (min-width: 1200px) {
+  .pz-page main .bar-align-how-row { --bar-title-scale: 0.83; } /* read by AlignBarButtons.tsx */
+  .pz-page main .bar-align-how-row .sb-title { font-size: calc(clamp(1.6rem, 2.1vw, 3.2rem) * var(--bar-title-scale)); }
+}
+/* "Your Tax Accountant Is One Match Away." bar: its words are the longest, so from 1200px the spaces between heading,
+   divider and line are a little narrower (2.3vw, not 3vw) to keep everything on one line before the lined-up button */
+@media (min-width: 1200px) { .pps-bar-gap--fit > .bar-align-how-row { column-gap: 2.3vw; } }
+
+/* /ad-2 navy bar under the hero: "Your needs, your area, your accountant." 5mm further right (owner, 9 Oct 2026) */
+@media (min-width: 1024px) { .pz-hero-bar .sb-sub { position: relative; left: 5mm; } }
+
+/* /ad-2 hero steps line (owner, 9 Oct 2026): one even fade behind the whole line, so every word reads easily wherever
+   it sits on the photo. The same tint all along, edges blurred so it melts into the photo (no box); it replaces the
+   small glow behind the last word. Laptops/desktops, where the line shows. */
+@media (min-width: 1200px) {
+  .pth-steps-last::before { content: none; }
+  .pth-steps::before { content: ""; position: absolute; z-index: -1; pointer-events: none; inset: -0.85em -2.4em;
+    border-radius: 3em; background: rgba(255, 255, 255, 0.74); filter: blur(16px); }
+}
+
+/* /ad-2 hero, laptops/desktops (owner, 9 Oct 2026, noc): the headline, the line under it, the button, its note and the
+   three points 1cm lower, with their fades; the steps line stays 4mm above the photo's bottom (PlaceHeroSteps.tsx) */
+@media (min-width: 1200px) {
+  .pth-text, .pth-veil { translate: 0 1cm; }
+}
+
+/* /ad-2 "An experienced accountant can help you:" box 5cm shorter, then 1cm back (4cm; owner, 9 Oct 2026): tighter rows, a slimmer title
+   bar, and slightly smaller icons, titles and lines with less line spacing; nothing removed */
+.pps-why-card-bar { min-height: 3.7rem; padding-block: 0.4rem; }
+.pps-why-card-badge { width: 2.9rem; height: 2.9rem; }
+.pps-helps { margin-top: 0.5rem; }
+.pps-help { padding-block: calc(1rem + 1mm); gap: 0.8rem; } /* then 1cm taller again: 2mm a row (owner, 9 Oct 2026) */
+.pps-help-title { font-size: 0.95rem; line-height: 1.22; }
+.pps-help-text { margin-top: 0.1rem; font-size: 0.84rem; line-height: 1.32; }
+.pps-help-icon { width: 2.7rem; height: 2.7rem; }
+@media (min-width: 640px) { .pps-why-card { padding-top: 1.25rem; padding-bottom: 0.7rem; } .pps-helps { column-gap: 1.6rem; } }
+@media (min-width: 1100px) { .pps-help-icon { width: 2.9rem; height: 2.9rem; } .pps-help { gap: 0.85rem; } }
+
+/* /ad-2 "Why Use an Accountant" section: its two paragraphs 5mm lower, then 5mm more (owner, 9 Oct 2026); the label, heading and box
+   stay put. Beside the box (1100px+) they are shifted; stacked (phones/tablets) they get the 5mm as space above */
+.pps-why-h2 + .pps-intro { margin-top: calc(0.9rem + 5mm + 5mm - 3mm); } /* then both up 3mm (owner, 9 Oct 2026) */
+@media (min-width: 1100px) {
+  .pps-why-h2 + .pps-intro { margin-top: 0.9rem; }
+  .pps-why-text .pps-intro { position: relative; top: calc(5mm + 5mm - 3mm); }
+}
+/* then the second paragraph ("Get expert help…") 3mm further down on its own (owner, 9 Oct 2026) */
+.pps-why-text .pps-intro + .pps-intro { margin-top: calc(0.9rem + 3mm); }
+@media (min-width: 1100px) {
+  .pps-why-text .pps-intro + .pps-intro { margin-top: 0.9rem; top: calc(5mm + 5mm - 3mm + 3mm); }
+}
+/* phones/tablets (box under the words): the same 3mm lower */
+@media (max-width: 1099px) { .pps-why-card { margin-top: calc(2rem + 3mm); } }

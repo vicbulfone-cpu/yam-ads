@@ -12,6 +12,10 @@ import { HERO_COPY } from "@/content/hero-copy";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { ArrowRight } from "../ui/Icons";
 
+/** the steps line under the three points (owner, 9 Oct 2026: its last step names the partner network; the business and
+ *  registration ad pages keep "Get matched with one accountant") */
+const STEPS = ["Tell us your needs", "Enter your postcode", "Get matched with one accountant from our partner network"];
+
 export default function PersonalHero() {
   const common = { alt: "", sizes: "100vw" };
   const { props: { srcSet: desktop } } = getImageProps({ ...common, ...P.desktop, quality: 80 });
@@ -53,14 +57,29 @@ export default function PersonalHero() {
         {/* phones and tablets: the space where the skyline and trees show under the words */}
         <div aria-hidden className="pth-visual" />
 
-        <ul className="pth-points">
-          {HERO_COPY.points.map((p) => (
-            <li key={p.strong}>
-              <Image src={p.icon} alt="" width={160} height={160} className="pth-point-icon" />
-              <span><strong>{p.strong}</strong> {p.text}</span>
-            </li>
-          ))}
-        </ul>
+        {/* desktops: one box round the points and steps so one even fade can sit behind both (owner, 9 Oct 2026); on
+            smaller screens it is "display: contents" and changes nothing */}
+        <div className="pth-veil">
+          <ul className="pth-points">
+            {HERO_COPY.points.map((p) => (
+              <li key={p.strong}>
+                <Image src={p.icon} alt="" width={160} height={160} className="pth-point-icon" />
+                <span><strong>{p.strong}</strong> {p.text}</span>
+              </li>
+            ))}
+          </ul>
+          {/* desktops: the home page's steps line under the three points (owner, 9 Oct 2026) */}
+          <ol className="bz-steps pth-steps">
+            {STEPS.map((s, i, all) => (
+              <li key={s}>{i > 0 && <ArrowRight aria-hidden className="bz-step-arrow" strokeWidth={2.4} />}
+                {/* the last word ("accountant", on the laptop in the photo) in its own span for a small fade (owner, 9 Oct 2026) */}
+                {i === all.length - 1
+                  ? <span>{s.slice(0, s.lastIndexOf(" ") + 1)}<span className="pth-steps-last">{s.slice(s.lastIndexOf(" ") + 1)}</span></span>
+                  : <span>{s}</span>}
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

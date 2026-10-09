@@ -2044,3 +2044,25 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .page-privacy .h-section { font-family: var(--font-sans) !important; font-weight: 700 !important; letter-spacing: -0.02em !important; line-height: 1.15 !important;
   color: var(--navy-900); font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2.1rem) !important; }
 .page-privacy .h-section::after { content: ""; display: block; width: 3rem; height: 3px; margin-top: 0.7rem; border-radius: 999px; background: #00ae41; }
+
+/* HERO VEIL (owner, 9 Oct 2026): where the home hero's three points and steps line cross busy parts of the photo (window
+   frame, plant, skyline) on phones, tablets and small laptops, one even white veil sits behind them: a single flat tint,
+   feathered the same on all four sides (two crossing masks), so there are no blotches or hard edges. Wide screens, where
+   the words sit on clear sky, have none. This is separate from the removed "fade behind words" clouds above. */
+.hero-veil { position: relative; isolation: isolate; }
+@media (max-width: 1279px) {
+  .hero-veil::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    inset: var(--veil-inset, -1.1rem -1.4rem -1.6rem);
+    background: rgba(255, 255, 255, 0.72);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.4rem, #000 calc(100% - 1.4rem), transparent), linear-gradient(180deg, transparent, #000 1.1rem, #000 calc(100% - 1.1rem), transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent, #000 1.4rem, #000 calc(100% - 1.4rem), transparent), linear-gradient(180deg, transparent, #000 1.1rem, #000 calc(100% - 1.1rem), transparent);
+    mask-composite: intersect;
+  }
+}
+/* the steps line is shifted down by its own rules (translate/top), past the box's bottom (phones about 21px, tablets
+   about 37px, 1024-1279px about 17px), so the veil reaches that much further down */
+@media (max-width: 767px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 21px); } }
+@media (min-width: 768px) and (max-width: 1023px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 37px); } }
+@media (min-width: 1024px) and (max-width: 1279px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 17px); } }

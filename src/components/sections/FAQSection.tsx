@@ -27,23 +27,33 @@ function homeFaqs(): Faq[] {
  * those two match the FAQPage structured data word for word (scripts/seo-audit.mjs checks them; the ninth comes from
  * HOME_EXTRA_FAQS, added to the structured data in src/lib/seo.ts).
  */
-function FaqRow({ f, i }: { f: Faq; i: number }) {
+function FaqRow({ f, extra }: { f: Faq; extra?: boolean }) {
+  // a page's own extra questions are not in the home FAQPage structured data, so they carry no data-faq-question/answer markers
+  const markQ = extra ? {} : { "data-faq-question": "" };
+  const markA = extra ? {} : { "data-faq-answer": "" };
   return (
     <details className="sel-box" data-faq="">
       <summary className="sel-sum">
-        <span className="sel-q" data-faq-question="">{f.q}</span>
+        <span className="sel-q" {...markQ}>{f.q}</span>
         <span aria-hidden="true" className="sel-plus">
           <span className="sel-bar" />
           <span className="sel-bar sel-bar-v" />
         </span>
       </summary>
-      <p className="sel-a" data-faq-answer="">{f.a}</p>
+      <p className="sel-a" {...markA}>{f.a}</p>
     </details>
   );
 }
 
-export default function FAQSection() {
-  const faqs = [...homeFaqs(), ...HOME_EXTRA_FAQS];
+/** extra: a page's own questions added after the shared ones (e.g. /ad-2's personal tax questions); a question
+ *  already in the list is skipped so nothing shows twice */
+export default function FAQSection({ extra = [] }: { extra?: Faq[] }) {
+  const shared = [...homeFaqs(), ...HOME_EXTRA_FAQS];
+  const key = (f: Faq) => f.q.trim().toLowerCase();
+  const seen = new Set(shared.map(key));
+  const own = extra.filter((f) => !seen.has(key(f)) && !!seen.add(key(f)));
+  const ownQs = new Set(own.map((f) => f.q));
+  const faqs = [...shared, ...own];
   const half = Math.ceil(faqs.length / 2);
   const cols = [faqs.slice(0, half), faqs.slice(half)];
   return (
@@ -65,7 +75,7 @@ export default function FAQSection() {
           <div className="sel-cols">
           {cols.map((col, c) => (
             <div key={c} className="sel-col">
-              {col.map((f, j) => <FaqRow key={f.q} f={f} i={c * half + j} />)}
+              {col.map((f) => <FaqRow key={f.q} f={f} extra={ownQs.has(f.q)} />)}
             </div>
           ))}
           </div>
