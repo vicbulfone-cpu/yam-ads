@@ -104,12 +104,12 @@ export const PERSONAL_CARD = {
   title: ["Your personal tax", "match starts here."],
   sub: "One local accountant, never a list.",
   question: "What do you need help with?",
-  hint: "Choose one option to get started.",
+  hint: "Select all that apply.", // was "Choose one option to get started." (owner, 10 Oct 2026: tick several)
   unsure: "Not sure — help me choose",
   start: "Start My Tax Match",
   note: ["60 seconds", "Free", "No obligation"],
   footer: "Your details go to one local accountant only.",
-  error: "Please choose one option to continue.",
+  error: "Please choose at least one option to continue.",
 };
 
 /** Every questionnaire page. {name} is the visitor's first name (owner's name rule, 5 Oct 2026). */

@@ -21,8 +21,11 @@ import { PERSONAL_FAQ } from "@/content/personal-sections";
 
 /** desktopHeroPicture, hero, services, why, fit, faqs: another ad page's own desktop hero photo, hero, section 2-4
  *  wording and FAQ questions; pageClass: a class for that page's own style tweaks (owner, 9 Oct 2026: /ad-1) */
-export default function PersonalAdPage({ desktopHeroPicture, hero, services, why, fit, faqs = PERSONAL_FAQ.items, pageClass }: {
+export default function PersonalAdPage({ desktopHeroPicture, hero, services, why, fit, faqs = PERSONAL_FAQ.items, pageClass, box }: {
   pageClass?: string;
+  /** another ad page's own match box in the popup, the questionnaire it opens and that questionnaire's open event
+   *  (owner, 10 Oct 2026: the business page /ad-1 uses the business box and questions) */
+  box?: { card: React.ReactNode; questionnaire: React.ReactNode; openEvent: string };
   desktopHeroPicture?: { src: string; width: number; height: number };
   hero?: React.ComponentProps<typeof PersonalHero>["hero"];
   services?: React.ComponentProps<typeof PersonalSections>["services"];
@@ -46,8 +49,8 @@ export default function PersonalAdPage({ desktopHeroPicture, hero, services, why
       </main>
       <AdFooter />
       {/* the page's CTA buttons open this box in a popup; phones too, as the page has no box of its own any more */}
-      <AdBoxPopup openEvent={OPEN_PERSONAL_QUESTIONNAIRE} phones><PersonalMatchCard /></AdBoxPopup>
-      <LazyPersonalQuestionnaire />
+      <AdBoxPopup openEvent={box?.openEvent ?? OPEN_PERSONAL_QUESTIONNAIRE} phones>{box?.card ?? <PersonalMatchCard />}</AdBoxPopup>
+      {box?.questionnaire ?? <LazyPersonalQuestionnaire />}
       {/* every navy bar button lines up with the hero bar's (owner, 9 Oct 2026) */}
       <AlignBarButtons />
       {/* the hero's steps line 4mm above the bottom of the hero photo, just above the navy bar (owner, 9 Oct 2026) */}

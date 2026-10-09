@@ -83,7 +83,7 @@ export default function SmsfQuestionnaire() {
   const steps: Step[] = useMemo(() => [
     ...cats.map((id) => ({ kind: "cat" as const, id })),
     // then the name, so every later question can use it (the "quick questions" page removed site-wide, owner 8 Oct 2026)
-    { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" }, { kind: "emailMe" },
+    { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" },
   ], [cats]);
   const step = steps[Math.min(stepIdx, steps.length - 1)];
   const stepKey = step.kind === "cat" ? step.id : step.kind;
@@ -194,7 +194,7 @@ export default function SmsfQuestionnaire() {
         return goTo(stepIdx + 1);
       case "phone":
         if (!MOBILE.test(cleanPhone(phone))) return setError(Q.errors.phone);
-        return goTo(stepIdx + 1);
+        return void submit(); // straight to the match page, no step in between (owner, 10 Oct 2026)
       case "emailMe":
         if (emailMe === null) return setError(Q.errors.emailMe);
         return void submit();
@@ -213,7 +213,7 @@ export default function SmsfQuestionnaire() {
     if (!place) return;
     setSending(true);
     setError(null);
-    // the personal "searching" screen stays up for 5 seconds while the lead is sent
+    // a 3-second "your match is loading" screen while the lead is sent, then the match page (owner, 10 Oct 2026)
     const holdSearching = startSearchTimer();
     setMatching(true);
     router.prefetch(MATCH_PAGE);
@@ -270,7 +270,7 @@ export default function SmsfQuestionnaire() {
               : step.kind === "name" ? name.trim().length >= 2
                 : step.kind === "emailMe" ? emailMe !== null
                   : step.kind === "summary";
-  const nextLabel = step.kind === "summary" ? Q.summary.confirm : step.kind === "location" ? Q.location.find : step.kind === "emailMe" ? Q.emailMe.submit : Q.next;
+  const nextLabel = step.kind === "summary" ? Q.summary.confirm : step.kind === "location" ? Q.location.find : step.kind === "phone" ? Q.emailMe.submit : Q.next;
   // the postcode step stays on screen behind the email box
   const bodyKind = step.kind === "email" ? "location" : step.kind;
 

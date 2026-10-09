@@ -132,11 +132,12 @@ export function OptionCard({ checked, onToggle, label, warn }: { checked: boolea
   );
 }
 
-export function ChoiceCard({ checked, onSelect, label, desc, warn }: { checked: boolean; onSelect: () => void; label: string; desc?: string; warn?: boolean }) {
+/** multi: one of several that can be ticked together (a checkbox to screen readers; same look) */
+export function ChoiceCard({ checked, onSelect, label, desc, warn, multi = false }: { checked: boolean; onSelect: () => void; label: string; desc?: string; warn?: boolean; multi?: boolean }) {
   return (
     <button
       type="button"
-      role="radio"
+      role={multi ? "checkbox" : "radio"}
       aria-checked={checked}
       onClick={onSelect}
       className={`q-choice flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left transition duration-200 ${

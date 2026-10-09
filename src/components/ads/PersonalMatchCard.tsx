@@ -10,10 +10,11 @@ import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 /**
  * Personal tax match box. Same look and size as the home page box (".mc" in globals.css; owner, 5 Oct 2026: every ad
  * match box uses the home box style): navy heading panel with the map, open rows with dividers and round ticks, mint band.
- * Personal differences: one choice only, and a small "Not sure — help me choose" link under the rows.
+ * Personal differences: a small "Not sure — help me choose" link under the rows. Select all that apply (owner,
+ * 10 Oct 2026; was one choice only): the questionnaire asks the follow-ups for every ticked reason.
  */
 export default function PersonalMatchCard() {
-  const [selected, setSelected] = useState<string | null>(null);
+  const [selected, setSelected] = useState<string[]>([]);
   const [error, setError] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
   const group = useId(); // the page box and its popup copy keep separate choices
@@ -32,8 +33,9 @@ export default function PersonalMatchCard() {
     return () => window.removeEventListener("resize", fit);
   }, []);
 
-  const open = (need: string) => window.dispatchEvent(new CustomEvent(OPEN_PERSONAL_QUESTIONNAIRE, { detail: need }));
-  const start = () => (selected ? open(selected) : setError(true));
+  // detail: the ticked reasons, comma separated (in the box's order), or "choose"
+  const open = (needs: string) => window.dispatchEvent(new CustomEvent(OPEN_PERSONAL_QUESTIONNAIRE, { detail: needs }));
+  const start = () => (selected.length ? open(PERSONAL_NEEDS.filter((n) => selected.includes(n.id)).map((n) => n.id).join(",")) : setError(true));
 
   return (
     <div ref={boxRef} data-match-card="" className="mc bz-card pz-card bz-card-wide">
@@ -53,10 +55,10 @@ export default function PersonalMatchCard() {
         <fieldset className="mc-rows">
           <legend className="sr-only">{C.question}</legend>
           {PERSONAL_NEEDS.map((n) => {
-            const on = selected === n.id;
+            const on = selected.includes(n.id);
             return (
               <label key={n.id} className={`mc-row${on ? " is-on" : ""}`}>
-                <input type="radio" name={group} checked={on} onChange={() => { setSelected(n.id); setError(false); }} aria-label={n.box.title} className="peer sr-only" />
+                <input type="checkbox" name={group} checked={on} onChange={() => { setSelected((s) => (s.includes(n.id) ? s.filter((x) => x !== n.id) : [...s, n.id])); setError(false); }} aria-label={n.box.title} className="peer sr-only" />
                 <span aria-hidden className={`mc-tile is-${n.tone}`}>
                   <svg viewBox="0 0 24 24" className="mc-tile-icon">{PERSONAL_NEED_ICONS[n.id]}</svg>
                 </span>

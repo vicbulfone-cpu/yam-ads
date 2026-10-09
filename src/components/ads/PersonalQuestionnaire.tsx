@@ -20,18 +20,21 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 /**
  * The personal tax questionnaire (personal ad page /ad-2). Same popup, progress header and option cards as the business
  * questionnaire (BusinessQuestionnaire.tsx), with the owner's personal-tax questions:
- *   ["help me choose"] → follow-up for the main reason → "Does your return include any of these?" (returns only) →
+ *   ["help me choose"] → follow-up for each ticked reason that has one (amend, planning) → "Does your return include
+ *   any of these?" (if any ticked reason is a return) →
  *   name → summary (confirm, optional note) → in person or remote → postcode/suburb → 11-second search →
- *   "great news" box asking for email → mobile → email the match details? → match page (/match).
+ *   "great news" box asking for email → mobile → 3-second "your match is loading" → match page (/match).
  * Each page counts as one step in the progress bar. Opened by the personal match box (OPEN_PERSONAL_QUESTIONNAIRE event,
- * detail = the chosen reason, or "choose" for "Not sure — help me choose").
+ * detail = the ticked reasons, comma separated, or "choose" for "Not sure — help me choose"). Several reasons can be
+ * ticked (owner, 10 Oct 2026).
  */
 
 import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
 export { OPEN_PERSONAL_QUESTIONNAIRE };
 const MATCH_PAGE = "/match";
 
-type Kind = "choose" | "followup" | "income" | "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe";
+// "amend" and "planning" are each reason's own follow-up page; a visitor who ticked both sees both, one after the other
+type Kind = "choose" | "amend" | "planning" | "income" | "name" | "summary" | "mode" | "location" | "email" | "phone" | "emailMe";
 
 /** Faded picture in each step's box (credits: docs/image-credits*.md). The follow-up page uses its reason's picture. */
 const STEP_PICTURES: Record<string, string> = {
@@ -55,6 +58,10 @@ const toggleIn = (list: string[], id: string) =>
   id === "unsure" ? (list.includes(id) ? [] : [id])
     : list.includes(id) ? list.filter((x) => x !== id) : [...list.filter((x) => x !== "unsure"), id];
 const needTitle = (n: NeedId | null) => (n === "unsure" ? STILL_UNSURE.title : PERSONAL_NEEDS.find((x) => x.id === n)?.title ?? "");
+/** the ticked reasons in the box's order (owner, 10 Oct 2026: several can be ticked) */
+const NEED_ORDER: NeedId[] = [...PERSONAL_NEEDS.map((n) => n.id), STILL_UNSURE.id];
+const inOrder = (list: NeedId[]) => NEED_ORDER.filter((id) => list.includes(id));
+const sameNeeds = (a: NeedId[], b: NeedId[]) => a.length === b.length && a.every((x) => b.includes(x));
 const labelOf = (list: { id: string; label: string }[], id: string | null) => list.find((x) => x.id === id)?.label ?? "";
 
 export default function PersonalQuestionnaire() {
@@ -63,11 +70,12 @@ export default function PersonalQuestionnaire() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const stayRef = useRef<HTMLButtonElement>(null);
   const fieldRef = useRef<HTMLInputElement>(null);
-  const needBeforeEdit = useRef<NeedId | null>(null);
+  const needBeforeEdit = useRef<NeedId[]>([]);
 
   const [open, setOpen] = useState(false);
   const [showChoose, setShowChoose] = useState(false);
-  const [need, setNeed] = useState<NeedId | null>(null);
+  const [needs, setNeeds] = useState<NeedId[]>([]);
+  const firstNeed = needs[0] ?? null; // the first ticked reason (summary card colour and icon)
   // follow-up answers
   const [year, setYear] = useState<string | null>(null);
   const [first, setFirst] = useState<string | null>(null);
@@ -103,22 +111,23 @@ export default function PersonalQuestionnaire() {
 
   const steps: Kind[] = useMemo(() => {
     const s: Kind[] = showChoose ? ["choose"] : [];
-    const n = need ?? "this_year"; // before a reason is picked, count the pages a tax return needs
-    // follow-up page only for amend (what needs correcting) and planning: no year or first-return questions (owner, 7 Oct 2026)
-    if (n === "amend" || n === "planning") s.push("followup");
-    if (RETURN_NEEDS.includes(n)) s.push("income");
+    const n: NeedId[] = needs.length ? needs : ["this_year"]; // before a reason is picked, count the pages a tax return needs
+    // follow-up pages only for amend (what needs correcting) and planning: no year or first-return questions (owner, 7 Oct 2026)
+    if (n.includes("amend")) s.push("amend");
+    if (n.includes("planning")) s.push("planning");
+    if (n.some((x) => RETURN_NEEDS.includes(x))) s.push("income");
     // the name comes straight after the service questions, so every later question can use it
-    return [...s, "name", "summary", "mode", "location", "email", "phone", "emailMe"];
-  }, [showChoose, need]);
+    return [...s, "name", "summary", "mode", "location", "email", "phone"];
+  }, [showChoose, needs]);
   const kind = steps[Math.min(stepIdx, steps.length - 1)];
   const idxOf = (k: Kind) => steps.indexOf(k);
 
-  const resetFollowUp = () => { setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); };
 
   const show = useCallback((detail: string) => {
-    const chosen = detail === "choose" ? null : (detail as NeedId);
-    setShowChoose(!chosen);
-    setNeed(chosen);
+    // detail: the ticked reasons, comma separated, or "choose" ("Not sure — help me choose")
+    const chosen = detail === "choose" ? [] : inOrder(detail.split(",").filter((x): x is NeedId => NEED_ORDER.includes(x as NeedId)));
+    setShowChoose(!chosen.length);
+    setNeeds(chosen);
     setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setNotes("");
     setStepIdx(0);
     setBackToSummary(false);
@@ -180,30 +189,34 @@ export default function PersonalQuestionnaire() {
   // ---------- what the visitor told us, as label/value lines (summary, lead and match page) ----------
   const detailLines = (): { label: string; value: string }[] => {
     const L = Q.summaryLabels;
-    switch (need) {
-      case "amend":
-        return amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : [];
-      case "planning":
-        return [{ label: L.advice, value: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)).join(", ") }];
-      default:
-        return [];
-    }
+    return [
+      ...(needs.includes("amend") && amendNote.trim() ? [{ label: L.correcting, value: amendNote.trim() }] : []),
+      ...(needs.includes("planning")
+        ? [{ label: L.advice, value: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)).join(", ") }]
+        : []),
+    ];
   };
+  const needTitles = () => needs.map(needTitle).join(", ");
+  const hasReturn = needs.some((x) => RETURN_NEEDS.includes(x));
   const incomeLabels = () => RETURN_ITEMS.filter((o) => income.includes(o.id)).map((o) => o.label);
 
   // ---------- moving on ----------
   const next = () => {
     switch (kind) {
       case "choose": {
-        if (!need) return setError(Q.errors.need);
-        // editing from the summary with the same reason: straight back; a new reason needs its own questions first
-        if (backToSummary && need === needBeforeEdit.current) { setBackToSummary(false); return goTo(idxOf("summary")); }
+        if (!needs.length) return setError(Q.errors.need);
+        // editing from the summary with the same reasons: straight back; new reasons need their own questions first
+        if (backToSummary && sameNeeds(needs, needBeforeEdit.current)) { setBackToSummary(false); return goTo(idxOf("summary")); }
         setBackToSummary(false);
         return goTo(stepIdx + 1);
       }
-      case "followup": {
-        if (need === "planning" && !topics.length) return setError(Q.errors.topics);
-        if (need === "planning" && topics.includes("other") && !topicOther.trim()) return setError(Q.errors.other);
+      case "amend":
+        // editing from the summary: on to the tax planning page too if that was ticked, else straight back
+        if (backToSummary && !needs.includes("planning")) { setBackToSummary(false); return goTo(idxOf("summary")); }
+        return goTo(stepIdx + 1);
+      case "planning": {
+        if (!topics.length) return setError(Q.errors.topics);
+        if (topics.includes("other") && !topicOther.trim()) return setError(Q.errors.other);
         if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
         return goTo(stepIdx + 1);
       }
@@ -231,7 +244,7 @@ export default function PersonalQuestionnaire() {
         return goTo(stepIdx + 1);
       case "phone":
         if (!MOBILE.test(cleanPhone(phone))) return setError(Q.errors.phone);
-        return goTo(stepIdx + 1);
+        return void submit(); // straight to the match page, no step in between (owner, 10 Oct 2026)
       case "emailMe":
         if (emailMe === null) return setError(Q.errors.emailMe);
         return void submit();
@@ -247,10 +260,10 @@ export default function PersonalQuestionnaire() {
   };
 
   /** Summary "Change" links. Changing the main reason shows the "help me choose" page (added if it wasn't asked). */
-  const edit = (k: "choose" | "followup" | "income") => {
+  const edit = (k: "choose" | "amend" | "planning" | "income") => {
     setBackToSummary(true);
     if (k === "choose") {
-      needBeforeEdit.current = need;
+      needBeforeEdit.current = needs;
       setShowChoose(true);
       return goTo(0);
     }
@@ -258,16 +271,16 @@ export default function PersonalQuestionnaire() {
   };
 
   async function submit() {
-    if (!place || !need) return;
+    if (!place || !needs.length) return;
     setSending(true);
     setError(null);
-    // the personal "searching" screen stays up for 5 seconds while the lead is sent
+    // a 3-second "your match is loading" screen while the lead is sent, then the match page (owner, 10 Oct 2026)
     const holdSearching = startSearchTimer();
     setMatching(true);
     router.prefetch(MATCH_PAGE);
-    const title = needTitle(need);
+    const title = needTitles();
     const details = detailLines();
-    const inc = RETURN_NEEDS.includes(need) ? incomeLabels() : [];
+    const inc = hasReturn ? incomeLabels() : [];
     const services = [
       `Need: ${title}`,
       ...details.map((d) => `${d.label}: ${d.value}`),
@@ -284,7 +297,8 @@ export default function PersonalQuestionnaire() {
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
-          answers: { need, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: notes.trim() },
+          // need: the ticked reasons, comma separated (one or more since 10 Oct 2026); needs: the same as a list
+          answers: { need: needs.join(","), needs, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: notes.trim() },
           workMode: modeLabel,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
@@ -318,8 +332,9 @@ export default function PersonalQuestionnaire() {
   // ---------- progress ----------
   const total = steps.length;
   const ready =
-    kind === "choose" ? Boolean(need)
-      : kind === "followup" ? (need === "amend" || topics.length > 0)
+    kind === "choose" ? needs.length > 0
+      : kind === "amend" ? true
+        : kind === "planning" ? topics.length > 0
         : kind === "income" ? income.length > 0
           : kind === "mode" ? Boolean(mode)
             : kind === "location" ? Boolean(place)
@@ -327,10 +342,10 @@ export default function PersonalQuestionnaire() {
                 : kind === "name" ? name.trim().length >= 2
                   : kind === "emailMe" ? emailMe !== null
                     : kind === "summary";
-  const nextLabel = kind === "summary" ? Q.summary.confirm : kind === "location" ? Q.location.find : kind === "emailMe" ? Q.emailMe.submit : Q.next;
+  const nextLabel = kind === "summary" ? Q.summary.confirm : kind === "location" ? Q.location.find : kind === "phone" ? Q.emailMe.submit : Q.next;
   // the postcode step stays on screen behind the email box
   const bodyKind = kind === "email" ? "location" : kind;
-  const picture = STEP_PICTURES[bodyKind === "followup" ? need ?? "this_year" : bodyKind];
+  const picture = STEP_PICTURES[bodyKind];
   const warn = Boolean(error);
 
   return (
@@ -363,13 +378,15 @@ export default function PersonalQuestionnaire() {
                 {bodyKind === "choose" && (
                   <StepHead eyebrow={Q.choose.eyebrow} title={Q.choose.title} icon={<Sparkle width={26} height={26} />}>
                     <p className="text-[0.98rem] leading-snug text-ink/80">{Q.choose.text}</p>
-                    <div role="radiogroup" aria-label={Q.choose.title} className="grid gap-2.5 sm:grid-cols-2">
+                    {/* tick as many as apply; "I'm still not sure" can't be ticked with anything else (owner, 10 Oct 2026) */}
+                    <div role="group" aria-label={Q.choose.title} className="grid gap-2.5 sm:grid-cols-2">
                       {[...PERSONAL_NEEDS, STILL_UNSURE].map((n) => (
                         <ChoiceCard
                           key={n.id}
-                          checked={need === n.id}
-                          warn={warn && !need}
-                          onSelect={() => { if (need !== n.id) resetFollowUp(); setNeed(n.id); clear(); }}
+                          multi
+                          checked={needs.includes(n.id)}
+                          warn={warn && !needs.length}
+                          onSelect={() => { setNeeds((list) => inOrder(toggleIn(list, n.id) as NeedId[])); clear(); }}
                           label={n.title}
                           desc={n.help}
                         />
@@ -378,16 +395,16 @@ export default function PersonalQuestionnaire() {
                   </StepHead>
                 )}
 
-                {bodyKind === "followup" && (need === "amend" || need === "planning") && (
+                {(bodyKind === "amend" || bodyKind === "planning") && (
                   <div className="space-y-4">
-                    <NeedHead need={need} eyebrow={Q[need].eyebrow}
-                      title={need === "planning" ? Q.planning.title : Q.amend.title} />
-                    {need === "amend" && (
+                    <NeedHead need={bodyKind} eyebrow={Q[bodyKind].eyebrow}
+                      title={bodyKind === "planning" ? Q.planning.title : Q.amend.title} />
+                    {bodyKind === "amend" && (
                       <>
                         <NoteField label={Q.amend.noteLabel} value={amendNote} onChange={setAmendNote} placeholder={Q.amend.notePlaceholder} rows={3} />
                       </>
                     )}
-                    {need === "planning" && (
+                    {bodyKind === "planning" && (
                       <>
                         <p className="text-[0.95rem] text-muted">{Q.planning.hint}</p>
                         <fieldset className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:gap-2">
@@ -420,23 +437,23 @@ export default function PersonalQuestionnaire() {
                   </StepHead>
                 )}
 
-                {bodyKind === "summary" && need && (
+                {bodyKind === "summary" && firstNeed && (
                   <StepHead eyebrow={Q.summary.eyebrow} title={p(Q.summary.title)} icon={<Check width={26} height={26} strokeWidth={3} />}>
                     <p className="text-[0.98rem] leading-snug text-ink/80">{p(Q.summary.text)}</p>
                     <ul className="grid gap-3 sm:grid-cols-2">
-                      <SummaryCard title={Q.summaryLabels.need} onEdit={() => edit("choose")} need={need}>
-                        <li className="font-bold text-navy-900">{needTitle(need)}</li>
+                      <SummaryCard title={Q.summaryLabels.need} onEdit={() => edit("choose")} need={firstNeed}>
+                        {needs.map((n) => <li key={n} className="font-bold text-navy-900">{needTitle(n)}</li>)}
                         {detailLines().map((d) => (
                           <li key={d.label} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">
                             <Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />
                             <span><span className="font-semibold">{d.label}:</span> {d.value}</span>
                           </li>
                         ))}
-                        {(need === "amend" || need === "planning") && (
-                          <li><button type="button" onClick={() => edit("followup")} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {Q.summaryLabels.details.toLowerCase()}</button></li>
+                        {(needs.includes("amend") || needs.includes("planning")) && (
+                          <li><button type="button" onClick={() => edit(needs.includes("amend") ? "amend" : "planning")} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {Q.summaryLabels.details.toLowerCase()}</button></li>
                         )}
                       </SummaryCard>
-                      {RETURN_NEEDS.includes(need) && (
+                      {hasReturn && (
                         <SummaryCard title={Q.summaryLabels.income} onEdit={() => edit("income")}>
                           {incomeLabels().map((l) => (
                             <li key={l} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">

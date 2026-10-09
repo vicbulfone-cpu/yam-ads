@@ -1109,10 +1109,11 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pth-steps li { gap: 0.45rem; }
   .pth-steps { font-size: calc(clamp(0.8rem, 0.92vw, 1.3rem) * 1.3 * 0.9 * 0.95); } /* 130% cs, then 90% cs, then 95% cs (owner, 9 Oct 2026) */
 }
-/* /ad-2 match box popup: the line under "Start here" and the three points 5mm lower (owner, 9 Oct 2026, noc) */
+/* match box popups: the line under "Your match is about 60 seconds away" and the three points 5mm lower (owner, 9 Oct
+   2026, /ad-2; every match box popup site wide, the home page's too, spaced the same as the business ad's: 10 Oct 2026) */
 @media (min-width: 1024px) {
-  body:has(.pth) .q-modal .start-here-line { position: relative; top: 5mm; }
-  body:has(.pth) .q-modal .start-here-points { top: calc(-3mm + 5mm); }
+  .q-modal .start-here-line { position: relative; top: 5mm; }
+  .q-modal .start-here-points { top: calc(-3mm + 5mm); }
 }
 /* /ad-2 desktop: an even white fade behind the line under the headline, and one behind the three points and the steps
    line together (owner, 9 Oct 2026, noc). Same veil as the home hero ("hero-veil" in globals.css): one flat tint,
@@ -1582,3 +1583,11 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .home-v2:has(.phs) .hmi-founder { position: relative; top: -2.5mm; }
 /* /ad-2 only: "Your needs. Your area. Your accountant." under the heading removed (owner, 9 Oct 2026) */
 .home-v2:has(.phs) .hmi-tagline { display: none; }
+/* /ad-1 popup (owner, 10 Oct 2026): the business match box always shows its four rows' full names and lines */
+.mc-full-rows .bz-long { display: inline; }
+.mc-full-rows .bz-short { display: none; }
+/* the rows keep to the box and the longer lines wrap, so the tick circles always show (a form group and grid rows
+   otherwise grow to their longest line) */
+.mc-full-rows .mc-rows { min-inline-size: 0; grid-template-columns: minmax(0, 1fr); }
+.mc-full-rows .mc-row { min-width: 0; }
+.mc-full-rows .mc-row-title, .mc-full-rows .mc-row-desc { white-space: normal; overflow: visible; }
