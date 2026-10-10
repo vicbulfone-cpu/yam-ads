@@ -2166,7 +2166,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .hsv-card-who { margin-top: 0.15rem; font-size: 0.8rem; font-weight: 600; line-height: 1.3; color: var(--green-700); }
 .hsv-item { display: flex; align-items: flex-start; gap: 0.7rem; padding-block: 0.8rem; border-bottom: 1px solid rgba(7, 50, 101, 0.07); }
 .hsv-item:last-child { border-bottom: 0; }
-.hsv-arrow { flex: none; width: 1.05rem; height: 1.05rem; margin-top: 0.2rem; color: var(--green-700); }
 .hsv-item-title { font-family: var(--font-sans); font-weight: 700; font-size: 0.98rem; line-height: 1.3; letter-spacing: -0.005em; color: var(--navy-900); }
 .hsv-item-text { margin-top: 0.2rem; font-size: 0.88rem; line-height: 1.45; color: rgb(7 50 101 / 0.72); }
 @media (min-width: 1280px) {
@@ -2175,7 +2174,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .hsv-card-h { font-size: clamp(1.15rem, 1.2vw, 1.8rem); }
   .hsv-card-who { font-size: clamp(0.8rem, 0.8vw, 1.2rem); }
   .hsv-item { gap: clamp(0.7rem, 0.7vw, 1.05rem); padding-block: clamp(0.8rem, 0.8vw, 1.2rem); }
-  .hsv-arrow { width: clamp(1.05rem, 1vw, 1.5rem); height: clamp(1.05rem, 1vw, 1.5rem); }
   .hsv-item-title { font-size: clamp(0.98rem, 0.98vw, 1.45rem); }
   .hsv-item-text { font-size: clamp(0.88rem, 0.86vw, 1.3rem); }
 }
@@ -2313,9 +2311,12 @@ section.hsv .hsv-list { margin-top: 4mm; }
    under the box's navy title bar; each box 4mm taller (its top space unchanged), everything below moves down with it. */
 .whys-points { margin-top: 4mm; }
 
-/* "Who we help": the arrow sits centred on its one-line label (the services list aligns it to the first line of two) */
-.whof-item .hsv-arrow { margin-top: 0; }
 
 /* Home hero match box (owner, 10 Oct 2026: "faint white line around edge of match box"): its light grey 1.5px border showed as a
    pale outline against the blue sky (and round the navy top); none here, the shadow alone sets the box off the photo. */
 main.home-v2 > .desk-hero .desk-hero-card .mc { border: 0; }
+
+/* "What we can help you with" and "Who we help" (owner, 10 Oct 2026): the green tick of the "Why Use…" boxes (".whys-tick") in place
+   of the arrows; the "Who we help" labels in regular weight, not bold. */
+.whof-item .whys-tick { margin-top: 0; }
+.whof-item { font-weight: 400; }

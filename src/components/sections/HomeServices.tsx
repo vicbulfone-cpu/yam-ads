@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HOME_SERVICES, HOME_SERVICE_CARDS } from "@/content/home-services";
 import { HOME_WHY_SERVICES } from "@/content/home-why-specialist";
 import { SERVICE_ICONS } from "./HomeWhySpecialist";
@@ -44,9 +45,8 @@ export default function HomeServices() {
               <ul className="hsv-list">
                 {HOME_SERVICE_CARDS[s.key].map((c) => (
                   <li key={c.title} className="hsv-item">
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="hsv-arrow">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
+                    {/* the "Why Use a Specialist Accountant?" tick in place of the arrow (owner, 10 Oct 2026) */}
+                    <Image src="/images/ad-personal/help/tick.webp" alt="" width={146} height={118} className="whys-tick" />
                     <div>
                       <h4 className="hsv-item-title">{c.title}</h4>
                       <p className="hsv-item-text">{c.text}</p>

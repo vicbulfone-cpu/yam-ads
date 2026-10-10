@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HOME_WHO, HOME_WHO_TILES } from "@/content/home-who-we-help";
 import { HOME_WHY_SERVICES } from "@/content/home-why-specialist";
 import { SERVICE_ICONS } from "./HomeWhySpecialist";
@@ -37,10 +38,8 @@ export default function HomeWhoWeHelp() {
               <ul className="whof-list">
                 {HOME_WHO_TILES[s.key].map((label) => (
                   <li key={label} className="whof-item">
-                    {/* the green arrow of "What we can help you with" (HomeServices.tsx) in place of the round tick (owner, 10 Oct 2026) */}
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="hsv-arrow">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
+                    {/* the "Why Use a Specialist Accountant?" tick (owner, 10 Oct 2026; was a round tick, then an arrow) */}
+                    <Image src="/images/ad-personal/help/tick.webp" alt="" width={146} height={118} className="whys-tick" />
                     {label}
                   </li>
                 ))}
