@@ -51,10 +51,11 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
   - If fields can't be read, the contact is still saved and every answer stays in the note.
   - Tested locally in mock mode: the survey is sent correctly from all five questionnaires.
 - **Field 3 "Overdue Returns Details":** stays empty; the personal flow no longer asks which years are overdue.
-- **Next (Step 4, owner):**
-  - Add the "View Custom Fields" permission to the Private Integration token.
-  - Confirm `GHL_PRIVATE_TOKEN`, `GHL_LOCATION_ID` and `MOCK_GHL=false` are in Vercel.
-  - Redeploy, then send a live test submission.
+- **Live test passed (10 Oct, late evening):**
+  - A test lead from /ad-1 reached the sub-account: contact created, Website Survey fields filled, tags and note present.
+  - The test used reserved details: TEST Please-Ignore, test@example.com, 0491 570 006 (ACMA fiction range).
+  - The owner can delete that contact.
+- **Optional next:** show the Website Survey folder on the contact page; workflow on the `yam-lead` tag to assign the accountant and notify.
 - **Site went live on Vercel (10 Oct, evening):**
   - Crazy Domains: `@` A record `216.198.79.1`; `www` CNAME `f2e89ad9aac058b5.vercel-dns-017.com`.
   - www is the main domain; the bare domain redirects to it.
