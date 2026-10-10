@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { QUESTIONNAIRE_URL } from "@/config/site.config";
 import { HOME_WHY, HOME_WHY_SERVICES } from "@/content/home-why-specialist";
 
 /**
@@ -68,16 +66,7 @@ export default function HomeWhySpecialist() {
             </li>
           ))}
         </ul>
-
-        <div className="whys-cta">
-          <Link href={QUESTIONNAIRE_URL} className="btn btn-primary min-w-[16rem] rounded-full px-8 text-[1.05rem] btn-fluid lg:min-w-[clamp(16rem,20vw,30rem)]">
-            Find My Specialist
-            <svg aria-hidden width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="h-[1.1em] w-[1.1em]">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </Link>
-          <p className="whys-cta-note fs-xs">Free matching <span aria-hidden className="mx-1.5">&bull;</span> No obligation</p>
-        </div>
+        {/* ("Find My Specialist" button and "Free matching • No obligation" removed, owner 10 Oct 2026: the navy bar below has a button) */}
       </div>
     </section>
   );

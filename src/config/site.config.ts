@@ -65,7 +65,9 @@ export const homePageHeroPicture = { src: "/images/hero/home-v31-1983.webp", wid
  *  the same way (scripts/make-home-hero-z.cjs; without the lighter view, whose mask fits only the old photo). */
 /** (owner, 10 Oct 2026, noc): now the owner's "hero pic 123.png" from "hero section/ad landing pages/home" (Perth skyline
  *  over the suburbs), sky trimmed from the top (scripts/make-home-hero-123.cjs). */
-export const homeHeroLightPicture = { src: "/images/hero/home-123-v1-1983.webp", width: 1983, height: 793 };
+/** (owner, 10 Oct 2026): now the owner's super high quality "hero.png" from the same folder, the same view, kept at twice the hero
+ *  size so it stays sharp (scripts/make-home-hero-hq.cjs). Also the city pages' hero (same picture as the home page). */
+export const homeHeroLightPicture = { src: "/images/hero/home-hq-v1-3966.webp", width: 3966, height: 1586 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 

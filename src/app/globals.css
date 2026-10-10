@@ -2150,9 +2150,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .whys-point-title { font-size: clamp(0.98rem, 0.98vw, 1.45rem); }
   .whys-point-text { font-size: clamp(0.88rem, 0.86vw, 1.3rem); }
 }
-.whys-cta { margin-top: 2.25rem; display: flex; flex-direction: column; align-items: center; }
-.whys-cta-note { margin-top: 0.6rem; font-size: 0.82rem; color: rgb(7 50 101 / 0.8); }
-@media (min-width: 1024px) { .whys-cta { margin-top: clamp(2.25rem, 2.6vw, 4rem); } }
 
 /* Home page "What we can help you with" straight under the hero (owner, 10 Oct 2026, noc; HomeServices.tsx): the ad
    pages' services section scaled back to the four services. Uses the ".whys-" heading, intro, card grid and icon; its own
@@ -2211,15 +2208,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
   .whof-check { width: clamp(1.6rem, 1.6vw, 2.4rem); height: clamp(1.6rem, 1.6vw, 2.4rem); }
 }
 
-/* Home page hero: the picture (with its handwritten tagline and arrow) 5cm further down on laptops and desktops (owner, 10 Oct 2026, noc).
-   "main.home-v2 >" keeps it to the home page; the ad pages' "home-v2" is a div. Phones keep theirs: there it would slide behind the
-   match box. The photo loses its bottom 5cm so it still ends at the top of the blue bar (nothing shows below the bar). */
-@media (min-width: 1024px) {
-  main.home-v2 > .desk-hero .desk-hero-picture { translate: 0 5cm; }
-  main.home-v2 > .desk-hero .desk-hero-photo { clip-path: inset(0 0 5cm 0); }
-  /* its top edge now sits under the words instead of under the header, so it fades into the white page over 3cm */
-  main.home-v2 > .desk-hero .desk-hero-photo img.desk-hero-img { -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 3cm); mask-image: linear-gradient(to bottom, transparent 0, #000 3cm); }
-}
+/* (Home page hero picture: the 5cm move down was taken back, owner 10 Oct 2026, noc: "move home hero pic up 5 cm".) */
 
 /* Home page: the navy bars between "What we can help you with", "Why Use a Specialist Accountant?", "Who we help" and "How it works"
    (owner, 10 Oct 2026). Each bar's gap to the last words above it and to the first words below it is the gap the same bar has on
@@ -2227,7 +2216,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
    those two widths). Mint, as the sections around them (padding where the gap grows, so no white shows; a negative margin where it shrinks). */
 .home-bar-gap { position: relative; z-index: 1; background: #f1f8f4; }
 .home-bar-gap--ideal { margin-top: clamp(-22px, calc(-8.3px - 0.952vw), -12px); padding-bottom: clamp(32px, calc(60.8px - 2vw), 53px); }
-.home-bar-gap--fit { padding-top: clamp(5px, calc(14.6px - 0.667vw), 12px); padding-bottom: clamp(53px, calc(35.2px + 4.571vw), 101px); }
+.home-bar-gap--fit { margin-top: clamp(-12px, calc(-2.4px - 0.667vw), -5px); /* 17px less since the "Find My Specialist" button went */ padding-bottom: clamp(53px, calc(35.2px + 4.571vw), 101px); }
 .home-bar-gap--how { padding-top: clamp(23px, calc(16.3px + 1.714vw), 41px); padding-bottom: clamp(39px, calc(44.5px - 0.381vw), 43px); }
 .home-bar-gap :is(.sb-title, .sb-sub) { text-wrap: balance; }
 @media (min-width: 1200px) { .home-bar-gap--fit :is(.sb-title, .sb-sub) { white-space: nowrap; } } /* one line, as the same bar on /ad-2 */
