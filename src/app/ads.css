@@ -1636,3 +1636,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* /ad-2 and /ad-3, laptops and desktops: their box is centred against taller words beside it, so the extra 4mm moved its top up
    by up to 2mm; the 4mm comes out of the space kept under the box instead, so its top stays exactly where it was */
 @media (min-width: 1100px) { .pz-page:not(.pz-biz):not(.pz-reg) .pps-why-card { margin-bottom: calc(7mm + 1cm - 4mm); } }
+
+/* /ad-4 desktops (owner, 10 Oct 2026: the fade "goes into Registration Services, also into cta"): the headline and the button sit
+   above the fades. Moved with "translate", the line under the headline and the points' box each draw their own fade over the
+   words before them (the bottom of the headline, the bottom of the button); lifting the headline and button over them fixes it. */
+@media (min-width: 1200px) { .pz-reg :is(.pth-h1, .pth-cta) { z-index: 1; } .pz-reg .pth-text { position: relative; z-index: 1; } }
