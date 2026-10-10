@@ -29,10 +29,10 @@ const SKYLINE = [0.588, 0.606, 0.613, 0.619, 0.637, 0.644, 0.644, 0.65, 0.662, 0
   0.706, 0.719, 0.719, 0.725, 0.725];
 
 /**
- * Home page, laptops and desktops (owner, 10 Oct 2026, noc): one even white glow behind the hero's words (headline, line,
- * points, steps), as the owner's "example" picture: from the photo's left edge and top, fading gradually to the right into
- * the match box's edge and, at the bottom, over the steps line to just above the highest building beneath it (SKYLINE), so
- * neither the city nor the box is touched. Placed on the photo's wash layer (".desk-hero-wash::before" in globals.css).
+ * Home page, laptops and desktops (owner, 10 Oct 2026, noc; it replaced every earlier fade in the hero): one even white fade
+ * at full strength behind all the hero's words (headline, line, points, steps: exactly the box they fill), easing out
+ * gradually on every side, but only over open sky: it is gone before the match box on the right, just above the highest
+ * building below (SKYLINE), and at the top of the sky. Placed on the photo's wash layer (".desk-hero-wash::before").
  */
 function placeWordsGlow(box: Element) {
   const wash = document.querySelector<HTMLElement>(".desk-hero .desk-hero-wash");
@@ -42,35 +42,28 @@ function placeWordsGlow(box: Element) {
   const rs = textRects(words);
   if (!rs.length) return;
   const w = wash.getBoundingClientRect(), p = photo.getBoundingClientRect();
-  const left = Math.min(...rs.map((r) => r.left));
+  const left = Math.min(...rs.map((r) => r.left)), top = Math.min(...rs.map((r) => r.top));
   const right = Math.max(...rs.map((r) => r.right)), bottom = Math.max(...rs.map((r) => r.bottom));
-  const lastLine = rs.reduce((a, r) => (r.bottom > a.bottom ? r : a));
-  // the owner's "example" (10 Oct 2026): a broad haze from the photo's left edge (no edge of its own there) and from the top
-  // of the photo, strong behind the words, fading gradually to the right from their right end to the match box
-  const fl = 0, ft = 0;
   // the sky carried up above the photo (its ::before, globals.css) counts as photo too
   const sky = photo instanceof HTMLElement ? parseFloat(getComputedStyle(photo, "::before").height) || 0 : 0;
-  const l = Math.min(p.left, w.left), t = Math.max(p.top - sky, w.top);
-  const r = Math.max(right, box.getBoundingClientRect().left - 8);
-  // full strength across every line of words, as behind the headline (owner, 10 Oct 2026; it used to start fading about
-  // halfway across them), then fading to the match box
-  const fr = r - Math.min(r - 8, right + 0.25 * CM);
-  // the highest building under the words and the fade to their right (the far-left strip, beyond the words, is left out)
+  const skyTop = Math.max(p.top - sky, w.top);
+  const FADE = 4.5 * CM; // how far the fade eases out where there is room (long, so it has no visible edge)
+  const fr = Math.max(0, Math.min(FADE, box.getBoundingClientRect().left - 10 - right));
+  // the highest building under the fade, from its left edge to its right edge
   const strip = (x: number) => Math.min(SKYLINE.length - 1, Math.max(0, Math.floor(((x - p.left) / p.width) * SKYLINE.length)));
-  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - 2 * CM), strip(r) + 1));
-  // full strength through the whole steps line, fading from just below it (owner, 10 Oct 2026, noc; was from its middle)
-  const fadeFrom = lastLine.bottom + 0.3 * CM;
-  // (the photo moved down by the added sky, owner 10 Oct 2026: the glow still fades out just above the buildings, over the
-  // extra sky too, so it has no edge of its own in open sky)
-  const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM + sky));
+  const fl = Math.max(0, Math.min(FADE, left - Math.max(p.left, w.left)));
+  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - fl), strip(right + fr) + 1));
+  const fb = Math.max(0, Math.min(FADE, city - 3 - bottom));
+  const ft = Math.max(0, Math.min(FADE, top - skyTop));
+  const l = left - fl, t = top - ft, r = right + fr, b = bottom + fb;
   wash.style.setProperty("--glow-l", `${l - w.left}px`);
   wash.style.setProperty("--glow-t", `${t - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);
   wash.style.setProperty("--glow-h", `${b - t}px`);
-  wash.style.setProperty("--glow-fl", `${fl}px`);
-  wash.style.setProperty("--glow-ft", `${ft}px`);
-  wash.style.setProperty("--glow-fr", `${Math.max(8, fr)}px`);
-  wash.style.setProperty("--glow-fb", `${Math.max(10, b - fadeFrom)}px`);
+  wash.style.setProperty("--glow-fl", `${Math.max(1, fl)}px`);
+  wash.style.setProperty("--glow-ft", `${Math.max(1, ft)}px`);
+  wash.style.setProperty("--glow-fr", `${Math.max(1, fr)}px`);
+  wash.style.setProperty("--glow-fb", `${Math.max(1, fb)}px`);
 }
 
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
