@@ -2326,3 +2326,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 /* Home "What we can help you with" (owner, 10 Oct 2026): the four arrow lines in each service card 4mm lower under the card's
    heading; each card 4mm taller (its top space unchanged) and everything below moves down with it. Not "Who we help". */
 section.hsv .hsv-list { margin-top: 4mm; }
+
+/* Home "Why Use a Specialist Accountant?" (owner, 10 Oct 2026): the ticked points in each of the four service boxes 4mm lower
+   under the box's navy title bar; each box 4mm taller (its top space unchanged), everything below moves down with it. */
+.whys-points { margin-top: 4mm; }

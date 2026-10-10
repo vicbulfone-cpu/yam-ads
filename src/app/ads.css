@@ -1615,3 +1615,10 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 .mc-full-rows .mc-rows { min-inline-size: 0; grid-template-columns: minmax(0, 1fr); }
 .mc-full-rows .mc-row { min-width: 0; }
 .mc-full-rows .mc-row-title, .mc-full-rows .mc-row-desc { white-space: normal; overflow: visible; }
+
+/* Ad pages' "An experienced … can help you:" box (owner, 10 Oct 2026, as the home page's "Why Use a Specialist Accountant?" boxes):
+   the ticked points 4mm lower under the navy title bar; the box 4mm taller, its top unchanged, everything below moves down. */
+.pps-why-card .pps-helps { margin-top: calc(0.5rem + 1cm - 3mm + 4mm); }
+/* /ad-2 and /ad-3, laptops and desktops: their box is centred against taller words beside it, so the extra 4mm moved its top up
+   by up to 2mm; the 4mm comes out of the space kept under the box instead, so its top stays exactly where it was */
+@media (min-width: 1100px) { .pz-page:not(.pz-biz):not(.pz-reg) .pps-why-card { margin-bottom: calc(7mm + 1cm - 4mm); } }
