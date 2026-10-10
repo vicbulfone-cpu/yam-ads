@@ -2258,19 +2258,6 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .sel-eyebrow-rule { flex-shrink: 1; min-width: 1.5rem; }
 @media (min-width: 1024px) and (max-width: 1279px) { .sel-eyebrow { letter-spacing: 0.06em !important; } .sel-eyebrow-rule { display: none; } } /* narrowest column: tighter, no rule */
 
-/* Home hero photo (owner, 10 Oct 2026): the city and suburbs a little less noticeable. A soft veil over the lower part of the
-   photo only (it starts just above the skyline and is full strength where the buildings begin): slightly less colour and
-   contrast and a faint white wash, so the landscape sits back behind the words and the match box. The sky is unchanged. */
-.desk-hero.is-home .desk-hero-photo:not(.hero-arrow-layer)::after {
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  /* owner 10 Oct 2026: "a little less", then "make landscape detail less noticeable": a very light blur softens the fine
-     detail (roofs, trees, windows) as well as the colour and contrast */
-  background: rgba(255,255,255,.05); /* then a little more noticeable again (owner, 10 Oct 2026; was .07, blur 1.2px, saturate .85, contrast .9) */
-  -webkit-backdrop-filter: blur(0.8px) saturate(.9) contrast(.94); backdrop-filter: blur(0.8px) saturate(.9) contrast(.94);
-  /* from above the tallest towers (owner, 10 Oct 2026: they looked too sharp when the softening began below their tops; was 55%-66%) */
-  -webkit-mask-image: linear-gradient(180deg, transparent 49%, #000 57%); mask-image: linear-gradient(180deg, transparent 49%, #000 57%);
-}
-
 /* Home page match box (owner, 10 Oct 2026): the map of Australia 40% larger, centred top to bottom in the navy panel and a
    little closer to its right edge */
 .desk-hero.is-home .mc-head .mc-map {
@@ -2296,12 +2283,15 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .mc-row.is-on .mc-radio svg { display: none; }
 
 /* Home hero (owner, 10 Oct 2026: "remove all fade effect from hero home pic"): no fade over the photo on any screen size: no white
-   wash, no soft patches behind the words, no glow. (The landscape softening on the city, and the phones' photo edge blending into
-   the white page above it, are not fades over the picture and stay.) */
+   wash, no soft patches behind the words, no glow. */
 main.home-v2 > .desk-hero .desk-hero-wash { background: none !important; -webkit-mask-image: none !important; mask-image: none !important; }
 main.home-v2 > .desk-hero .hero-words-glow::before,
 main.home-v2 > .desk-hero .desk-hero-sub::before,
 main.home-v2 > .desk-hero .hero-veil::before { content: none !important; }
+/* ...and again (owner, 10 Oct 2026, "remove all fade effect from home hero pic"): the photo itself is not faded at all: its top
+   edge no longer melts into the white (phones, tablets, laptops and desktops), the white fade behind the words on laptops and
+   desktops and the softening veil over the city are gone. */
+main.home-v2 > .desk-hero .desk-hero-photo img.desk-hero-img { -webkit-mask-image: none !important; mask-image: none !important; }
 
 /* Home "What we can help you with" (owner, 10 Oct 2026): the four arrow lines in each service card 4mm lower under the card's
    heading; each card 4mm taller (its top space unchanged) and everything below moves down with it. Not "Who we help". */
@@ -2320,25 +2310,6 @@ main.home-v2 > .desk-hero .desk-hero-card .mc { border: 0; }
    of the arrows; the "Who we help" labels in regular weight, not bold. */
 .whof-item .whys-tick { margin-top: 0; }
 .whof-item { font-weight: 400; }
-
-/* Home hero, laptops and desktops (owner, 10 Oct 2026): a white fade behind the hero words so they read clearly, sized and placed
-   by HeroGap.tsx (placeWordsGlow): full strength behind the words, each edge easing out in a smooth curve, over open sky only
-   (never the landscape or the match box). The wash layer itself has no background (rule above); only this shows. */
-@media (min-width: 1024px) {
-  main.home-v2 > .desk-hero .desk-hero-wash { display: block !important; bottom: -2cm; }
-  main.home-v2 > .desk-hero .desk-hero-wash::before {
-    content: ""; position: absolute; pointer-events: none;
-    left: var(--glow-l, 0); top: var(--glow-t, 0); width: var(--glow-w, 0); height: var(--glow-h, 0);
-    background: rgba(255,255,255,.5);
-    /* each edge fades in a smooth (cosine) curve over its own distance (--glow-fl/ft/fr/fb, HeroGap.tsx) */
-    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) calc(var(--glow-fl) * 0), rgba(0,0,0,0.024) calc(var(--glow-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-fl) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-fl) * 0.9), rgba(0,0,0,1) calc(var(--glow-fl) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fr) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fr) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fr) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fr) * 0)),
-      linear-gradient(180deg, rgba(0,0,0,0) calc(var(--glow-ft) * 0), rgba(0,0,0,0.024) calc(var(--glow-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-ft) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-ft) * 0.9), rgba(0,0,0,1) calc(var(--glow-ft) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fb) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fb) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fb) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fb) * 0));
-    -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(90deg, rgba(0,0,0,0) calc(var(--glow-fl) * 0), rgba(0,0,0,0.024) calc(var(--glow-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-fl) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-fl) * 0.9), rgba(0,0,0,1) calc(var(--glow-fl) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fr) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fr) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fr) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fr) * 0)),
-      linear-gradient(180deg, rgba(0,0,0,0) calc(var(--glow-ft) * 0), rgba(0,0,0,0.024) calc(var(--glow-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-ft) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-ft) * 0.9), rgba(0,0,0,1) calc(var(--glow-ft) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fb) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fb) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fb) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fb) * 0));
-    mask-composite: intersect;
-  }
-}
 
 /* Home "How it works" (owner, 10 Oct 2026): the three steps and the "Ready to meet your accountant?" bar under them 1.7cm higher
    (less space under the heading); everything below moves up with them. Home page only (the ad pages' "How it works" sits in a div). */

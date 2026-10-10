@@ -75,7 +75,7 @@ export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", 
  *  and the phone/tablet photo (sky over the skyline). Built by scripts/make-personal-hero.mjs from the owner's files in
  *  "hero section/ad landing pages/personal tax". */
 export const personalHeroPictures = {
-  desktop: { src: "/images/hero/personal-desk-v6-1983.webp", width: 1983, height: 793 },
+  desktop: { src: "/images/hero/personal-desk-v7-3966.webp", width: 3966, height: 1586 }, // full size of the owner's upscaled photo (10 Oct 2026: "a lot more clear")
   mobile: { src: "/images/hero/personal-mobile-941.webp", width: 941, height: 1672 },
 };
 /** Business ad page (/ad-1) desktop hero photo (owner, 9 Oct 2026: "home hero desktop" in "hero section/ad landing

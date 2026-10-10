@@ -22,7 +22,7 @@ const STEPS = ["Tell us your needs", "Enter your postcode", "Get matched with on
 export default function PersonalHero({ desktopPicture, hero }: { desktopPicture?: { src: string; width: number; height: number; /** its own image quality (business: 92) */ quality?: number }; hero?: { h1: string[]; sub: string } }) {
   const H = { ...PERSONAL_HERO, ...hero };
   const common = { alt: "", sizes: "100vw" };
-  const { props: { srcSet: desktop } } = getImageProps({ ...common, ...P.desktop, quality: 80 });
+  const { props: { srcSet: desktop } } = getImageProps({ ...common, ...P.desktop, quality: 92 });
   const { props: { srcSet: mobile, ...img } } = getImageProps({ ...common, ...P.mobile, quality: 75 });
   const wide = desktopPicture && getImageProps({ ...common, quality: 80, ...desktopPicture }).props.srcSet;
 
