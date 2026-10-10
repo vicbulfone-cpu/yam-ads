@@ -56,8 +56,8 @@ function placeWordsGlow(box: Element) {
   // the highest building under the words and the fade to their right (the far-left strip, beyond the words, is left out)
   const strip = (x: number) => Math.min(SKYLINE.length - 1, Math.max(0, Math.floor(((x - p.left) / p.width) * SKYLINE.length)));
   const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - 2 * CM), strip(r) + 1));
-  // full strength down to the middle of the steps line, then fading out just above the buildings (at most 2cm)
-  const fadeFrom = lastLine.top + lastLine.height / 2;
+  // full strength through the whole steps line, fading from just below it (owner, 10 Oct 2026, noc; was from its middle)
+  const fadeFrom = lastLine.bottom + 0.3 * CM;
   // (the photo moved down by the added sky, owner 10 Oct 2026: the glow still fades out just above the buildings, over the
   // extra sky too, so it has no edge of its own in open sky)
   const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM + sky));
