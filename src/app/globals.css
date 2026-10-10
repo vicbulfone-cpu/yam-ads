@@ -2224,7 +2224,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 /* Home hero, laptops and desktops (owner, 10 Oct 2026): the ad pages' gradual white fade (".pth::before" in ads.css), running from
    the left edge of the photo to the left edge of the match box, over the sky only (--hero-box-left, measured by HeroGap.tsx; 55% until then), laid
    over the soft tint above. The ad pages' stops, scaled so the fade is gone exactly at the box; about 60% as strong as
-   theirs (owner, 10 Oct 2026: "less intense fade"). */
+   theirs (owner, 10 Oct 2026: "less intense fade"); it keeps its strength until close to the box (owner, 10 Oct 2026). */
 @media (min-width: 1024px) {
   main.home-v2 > .desk-hero.zz-phone .desk-hero-wash {
     /* the blue sky only, not the city and suburbs (owner, 10 Oct 2026): full strength down the sky, gone just above the tallest
@@ -2232,8 +2232,22 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
     -webkit-mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
     mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
     background:
-      linear-gradient(90deg, rgba(255,255,255,.5) 0, rgba(255,255,255,.44) calc(var(--hero-box-left, 55vw) * 0.552),
-        rgba(255,255,255,.24) calc(var(--hero-box-left, 55vw) * 0.793), rgba(255,255,255,0) var(--hero-box-left, 55vw)),
+      linear-gradient(90deg, rgba(255,255,255,.5) 0, rgba(255,255,255,.44) calc(var(--hero-box-left, 55vw) * 0.8),
+        rgba(255,255,255,.24) calc(var(--hero-box-left, 55vw) * 0.93), rgba(255,255,255,0) var(--hero-box-left, 55vw)),
       linear-gradient(180deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.34) 44%, rgba(255,255,255,0) 62%);
   }
+}
+
+/* Home hero headline the same size as the ad pages' (".pth-h1" in ads.css) on laptops and desktops 1200px+ (owner, 10 Oct 2026) */
+@media (min-width: 1200px) {
+  main.home-v2 .desk-hero-h1.is-home > span { font-size: calc(clamp(2.592rem, 3.744vw, 3.888rem) * 1.2 * 0.92); } /* then 92% (owner, 10 Oct 2026) */
+  /* at that size "accountant near you?" ran under the match box, so three lines as on phones (and the ad pages):
+     "Looking for an" / "accountant" / "near you?" */
+  main.home-v2 .desk-hero-h1.is-home .text-green-700 { display: block; }
+}
+/* 1200-1399px: with the three-line headline the steps reached the city towers, as the three points used two rows there; on the
+   home page they now use one row (owner, 10 Oct 2026), drawn smaller below 1350px so they fit, as at 1024-1149px */
+@media (min-width: 1200px) and (max-width: 1399px) { main.home-v2 .desk-hero.is-home .desk-hero-points { grid-template-columns: repeat(3, max-content); } }
+@media (min-width: 1200px) and (max-width: 1349px) {
+  .desk-hero.is-home .desk-hero-points { zoom: calc(0.8 * 0.9); translate: 0 calc(-3mm + (12mm - 3.5mm) / 0.72); }
 }
