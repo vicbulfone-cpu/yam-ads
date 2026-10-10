@@ -24,6 +24,8 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       bar?.style.removeProperty("--hb-clear");
       bar?.classList.remove("hb-mid");
       if (window.innerWidth < 1024 || !pic || !box) return;
+      // the white fade over the photo ends at the match box's left edge (owner, 10 Oct 2026: ".desk-hero-wash" in globals.css)
+      document.querySelector<HTMLElement>(".desk-hero")?.style.setProperty("--hero-box-left", `${box.getBoundingClientRect().left}px`);
       // the bar's words are centred across the whole bar, so they start below the match box where it overlaps the bar
       if (bar) bar.style.setProperty("--hb-clear", `${Math.max(0, box.getBoundingClientRect().bottom - bar.getBoundingClientRect().top)}px`);
       // "We don't just list accountants, we match you." sits centred under the match box (owner, 6 Oct 2026):
