@@ -30,9 +30,9 @@ const SKYLINE = [0.588, 0.606, 0.613, 0.619, 0.637, 0.644, 0.644, 0.65, 0.662, 0
 
 /**
  * Home page, laptops and desktops (owner, 10 Oct 2026, noc): one even white glow behind the hero's words (headline, line,
- * points, steps), its edges fading out gradually. Sized to the words themselves and placed on the photo's wash layer
- * (".desk-hero-wash::before" in globals.css). It reaches down over the steps line and fades out just above the highest
- * building beneath it (SKYLINE), and stops short of the match box on the right, so neither the city nor the box is touched.
+ * points, steps), as the owner's "example" picture: from the photo's left edge and top, fading gradually to the right into
+ * the match box's edge and, at the bottom, over the steps line to just above the highest building beneath it (SKYLINE), so
+ * neither the city nor the box is touched. Placed on the photo's wash layer (".desk-hero-wash::before" in globals.css).
  */
 function placeWordsGlow(box: Element) {
   const wash = document.querySelector<HTMLElement>(".desk-hero .desk-hero-wash");
@@ -42,15 +42,18 @@ function placeWordsGlow(box: Element) {
   const rs = textRects(words);
   if (!rs.length) return;
   const w = wash.getBoundingClientRect(), p = photo.getBoundingClientRect();
-  const left = Math.min(...rs.map((r) => r.left)), top = Math.min(...rs.map((r) => r.top));
+  const left = Math.min(...rs.map((r) => r.left));
   const right = Math.max(...rs.map((r) => r.right)), bottom = Math.max(...rs.map((r) => r.bottom));
   const lastLine = rs.reduce((a, r) => (r.bottom > a.bottom ? r : a));
-  const fl = 2.5 * CM, ft = 2 * CM; // left and top fades (the left reaches a little further out)
-  const l = left - fl, t = top - ft;
-  const r = right + Math.max(0, Math.min(2 * CM, box.getBoundingClientRect().left - 12 - right));
-  // the highest building under the glow, from its left edge to its right edge
+  // the owner's "example" (10 Oct 2026): a broad haze from the photo's left edge (no edge of its own there) and from the top
+  // of the photo, strong behind the words, fading gradually to the right from about halfway across them to the match box
+  const fl = 0, ft = 0;
+  const l = Math.min(p.left, w.left), t = Math.max(p.top, w.top);
+  const r = Math.max(right, box.getBoundingClientRect().left - 8);
+  const fr = r - (left + (right - left) * 0.55);
+  // the highest building under the words and the fade to their right (the far-left strip, beyond the words, is left out)
   const strip = (x: number) => Math.min(SKYLINE.length - 1, Math.max(0, Math.floor(((x - p.left) / p.width) * SKYLINE.length)));
-  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(l), strip(r) + 1));
+  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - 2 * CM), strip(r) + 1));
   // full strength down to the middle of the steps line, then fading out just above the buildings (at most 2cm)
   const fadeFrom = lastLine.top + lastLine.height / 2;
   const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM));
@@ -60,7 +63,7 @@ function placeWordsGlow(box: Element) {
   wash.style.setProperty("--glow-h", `${b - t}px`);
   wash.style.setProperty("--glow-fl", `${fl}px`);
   wash.style.setProperty("--glow-ft", `${ft}px`);
-  wash.style.setProperty("--glow-fr", `${Math.max(8, r - right)}px`);
+  wash.style.setProperty("--glow-fr", `${Math.max(8, fr)}px`);
   wash.style.setProperty("--glow-fb", `${Math.max(10, b - fadeFrom)}px`);
 }
 
