@@ -37,9 +37,10 @@ export default function HomeWhoWeHelp() {
               <ul className="whof-list">
                 {HOME_WHO_TILES[s.key].map((label) => (
                   <li key={label} className="whof-item">
-                    <span className="whof-check" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 12.5 4 4 8-9" /></svg>
-                    </span>
+                    {/* the green arrow of "What we can help you with" (HomeServices.tsx) in place of the round tick (owner, 10 Oct 2026) */}
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="hsv-arrow">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
                     {label}
                   </li>
                 ))}

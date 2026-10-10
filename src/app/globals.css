@@ -2201,11 +2201,8 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .whof-item { display: flex; align-items: center; gap: 0.7rem; padding-block: 0.7rem; border-bottom: 1px solid rgba(7, 50, 101, 0.07);
   font-family: var(--font-sans); font-weight: 700; font-size: 0.98rem; line-height: 1.3; letter-spacing: -0.005em; color: var(--navy-900); }
 .whof-item:last-child { border-bottom: 0; }
-.whof-check { flex: none; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 999px; background: #e3f4e9; color: var(--green-700); }
-.whof-check svg { width: 62%; height: 62%; }
 @media (min-width: 1280px) {
   .whof-item { gap: clamp(0.7rem, 0.7vw, 1.05rem); padding-block: clamp(0.7rem, 0.7vw, 1.05rem); font-size: clamp(0.98rem, 0.98vw, 1.45rem); }
-  .whof-check { width: clamp(1.6rem, 1.6vw, 2.4rem); height: clamp(1.6rem, 1.6vw, 2.4rem); }
 }
 
 /* (Home page hero picture: the 5cm move down was taken back, owner 10 Oct 2026, noc: "move home hero pic up 5 cm".) */
@@ -2300,28 +2297,13 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .mc-row.is-on .mc-radio { background: #fff url("/images/ad-personal/help/tick.webp") 52% 55% / 64% auto no-repeat; box-shadow: inset 0 0 0 2px var(--green-600); }
 .mc-row.is-on .mc-radio svg { display: none; }
 
-/* Home hero, laptops and desktops (owner, 10 Oct 2026): every earlier fade in the hero is taken out and the business ad page's
-   (/ad-1) fade is used instead, as there (ads.css, ".pz-biz .pth::before", ".pth-veil::before", ".pth-sub::before"):
-   - a white wash across the hero from the left: 42% at the left edge, 36% a third of the way, 20% just under halfway, gone by 58%;
-   - a rounded, softly blurred white patch (70%) behind the line under the headline, and one behind the three points and the
-     steps, each sized to its words (fit-content) so it stays clear of the match box. None behind the headline, as there.
-   The steps line is drawn about 4mm under its box (its own translate), so that patch reaches 4mm lower. The landscape softening
-   on the photo is not a fade and stays. Phones keep their own look. */
-@media (min-width: 1024px) {
-  /* bottom: down past the photo's foot (the photo is 1.5cm lower than the frame), so no unwashed strip shows above the blue bar */
-  main.home-v2 > .desk-hero.zz-phone .desk-hero-wash { display: block; bottom: -2cm; -webkit-mask-image: none; mask-image: none;
-    background: linear-gradient(90deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.36) 32%, rgba(255,255,255,.2) 46%, rgba(255,255,255,0) 58%); }
-  main.home-v2 > .desk-hero .hero-words-glow::before { content: none; }
-  /* no stacking context of their own (isolation: auto), so both patches sit behind ALL the words (the wrapper ".hero-words-glow"
-     isolates), not over the line above them */
-  main.home-v2 > .desk-hero .desk-hero-sub, main.home-v2 > .desk-hero .hero-veil { width: fit-content; position: relative; isolation: auto; }
-  main.home-v2 > .desk-hero .desk-hero-sub::before, main.home-v2 > .desk-hero.is-home .hero-words-glow .hero-veil::before {
-    content: ""; position: absolute; z-index: -1; pointer-events: none; -webkit-mask-image: none; mask-image: none;
-    border-radius: 2.5rem; filter: blur(22px); background: rgba(255,255,255,.7);
-  }
-  main.home-v2 > .desk-hero .desk-hero-sub::before { inset: -1rem -2rem; }
-  main.home-v2 > .desk-hero.is-home .hero-words-glow .hero-veil::before { inset: -1.2rem -2rem calc(-1.4rem - 4mm) -2rem; }
-}
+/* Home hero (owner, 10 Oct 2026: "remove all fade effect from hero home pic"): no fade over the photo on any screen size: no white
+   wash, no soft patches behind the words, no glow. (The landscape softening on the city, and the phones' photo edge blending into
+   the white page above it, are not fades over the picture and stay.) */
+main.home-v2 > .desk-hero .desk-hero-wash { display: none !important; }
+main.home-v2 > .desk-hero .hero-words-glow::before,
+main.home-v2 > .desk-hero .desk-hero-sub::before,
+main.home-v2 > .desk-hero .hero-veil::before { content: none !important; }
 
 /* Home "What we can help you with" (owner, 10 Oct 2026): the four arrow lines in each service card 4mm lower under the card's
    heading; each card 4mm taller (its top space unchanged) and everything below moves down with it. Not "Who we help". */
@@ -2330,3 +2312,10 @@ section.hsv .hsv-list { margin-top: 4mm; }
 /* Home "Why Use a Specialist Accountant?" (owner, 10 Oct 2026): the ticked points in each of the four service boxes 4mm lower
    under the box's navy title bar; each box 4mm taller (its top space unchanged), everything below moves down with it. */
 .whys-points { margin-top: 4mm; }
+
+/* "Who we help": the arrow sits centred on its one-line label (the services list aligns it to the first line of two) */
+.whof-item .hsv-arrow { margin-top: 0; }
+
+/* Home hero match box (owner, 10 Oct 2026: "faint white line around edge of match box"): its light grey 1.5px border showed as a
+   pale outline against the blue sky (and round the navy top); none here, the shadow alone sets the box off the photo. */
+main.home-v2 > .desk-hero .desk-hero-card .mc { border: 0; }
