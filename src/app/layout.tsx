@@ -14,9 +14,11 @@ import "./globals.css";
 import "./ads.css";
 
 // Headings: Fraunces (elegant serif). Body/UI: Plus Jakarta Sans. Same families the old site used.
-const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", axes: ["opsz"], display: "swap" });
+// Page speed (owner, 11 Oct 2026): only Plus Jakarta Sans is preloaded. Every page's first screen uses it alone;
+// Fraunces (About page, some popups) and Caveat (popup handwriting) are fetched only when a page shows them.
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", axes: ["opsz"], display: "swap", preload: false });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
-const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat", display: "swap" });
+const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat", display: "swap", preload: false });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

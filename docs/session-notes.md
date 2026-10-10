@@ -15,6 +15,7 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
 - **Page speed** (Lighthouse on the live site): desktop home 99. Mobile 81 to 85, because the hero photo appears after about 4 s.
   - Fixes: AVIF images site-wide plus a 2560px image width (`next.config.ts`), and the ad pages' phone hero photo preloaded first (`PersonalHero.tsx`).
   - Slowness the owner saw was largely their own internet connection at the time.
+  - Fonts: only Plus Jakarta Sans is preloaded now. Fraunces (About, popups) and Caveat (popups) load only when used (`layout.tsx`).
 
 ### Owner decisions
 - Old GHL site addresses: let Google clear them out (no redirects).
