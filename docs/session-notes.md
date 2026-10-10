@@ -3,6 +3,19 @@
 Running record of each working session (owner rule, 10 Oct 2026: after every edit, save the session context, then
 commit and push). Newest first. No secrets here: tokens, keys and IDs live only in Vercel environment variables.
 
+## 11 Oct 2026
+
+### Changes made (committed and pushed)
+- **Match page (/match) is now an honest "Enquiry sent" confirmation** (`EnquirySentPage.tsx`, wording in `src/content/enquiry-sent.ts`):
+  - "Thanks {first}, your enquiry has been sent." and "A local accountant who covers {suburb} will contact you, usually within 2 hours."
+  - What happens next (3 steps), their selected services and details, and "We'll also email a copy…" when they ticked it.
+  - Header pill "Enquiry sent". The sample accountant is no longer shown; `BizMatchPage.tsx` is kept for when GHL sends the real match back.
+- **Contact time is "within 2 hours" site-wide** (owner): the FAQ answer (home and ad pages) and the home "how it works" step 3. "Call for immediate assistance" removed (no phone number is shown).
+
+### Owner decisions
+- Old GHL site addresses: let Google clear them out (no redirects).
+- Promised contact time: usually within 2 hours. GHL workflows should match this, and send the copy email when "email me" is ticked.
+
 ## 10 Oct 2026
 
 ### Changes made (all committed and pushed)
@@ -77,7 +90,7 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
 1. **Vercel**
    - Add `GHL_PRIVATE_TOKEN`, `GHL_LOCATION_ID`, `MOCK_GHL=false` (and optional `GHL_PIPELINE_ID`) and redeploy.
    - Then send a test lead and check GHL Contacts.
-2. **Match page still shows the sample accountant** (fact-check item 1).
+2. ~~Match page still shows the sample accountant~~: fixed 11 Oct.
    - Replace it with an honest "your enquiry has been sent" screen before real customers use the live site.
 3. **Fact-check fixes** (full list given 10 Oct; wording suggestions per item), none made yet:
    - Fake 11-second "searching / found your match" screen.

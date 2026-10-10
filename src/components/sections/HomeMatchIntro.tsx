@@ -35,7 +35,7 @@ export const HOME_STEPS: { title: string; text: string; image: string; alt: stri
   },
   {
     title: "Connect and get started",
-    text: "Your match calls you, or you call for immediate assistance.",
+    text: "Your match contacts you, usually within 2 hours.", // was "…or you call for immediate assistance" (owner, 11 Oct 2026: no phone number is shown yet)
     image: "/images/home/step-3-accountant-client-desk.webp", // owner's new photo, 7 Oct 2026 ("hero section/11.png")
     alt: "Accountant talking through paperwork with a new client at his desk",
     position: "50% 16%", // portrait photo: framed on both faces

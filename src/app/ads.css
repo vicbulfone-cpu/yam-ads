@@ -1741,3 +1741,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
    (5mm - 2.5mm = 9.45px) to keep it where it was. */
 .pz-smsf .pth-points { translate: 0 calc(5mm + 2mm); } /* then 2mm more (owner, 10 Oct 2026, noc) */
 @media (max-width: 767px), (min-width: 1200px) { .pz-smsf .pth-cta { --cta-nudge: 5.67px; } } /* 5mm - 7mm / 2 = 1.5mm */
+
+/* "Enquiry sent" page (/match, EnquirySentPage.tsx; owner, 11 Oct 2026): the "What happens next" steps carry numbers in the
+   green circles the match page uses for its ticks */
+.mp-step-no { font-weight: 800; font-size: 0.85rem; line-height: 1; color: #fff; }

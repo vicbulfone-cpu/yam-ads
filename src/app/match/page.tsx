@@ -1,26 +1,24 @@
 import type { Metadata } from "next";
 import { AdHeader } from "@/components/ads/AdChrome";
 import AdInfoPopup from "@/components/ads/AdInfoPopup";
-import { BIZ_MATCH } from "@/content/business-questionnaire";
-import BizMatchPage from "@/components/ads/BizMatchPage";
-import { SAMPLE_MATCH } from "@/content/sample-match";
+import EnquirySentPage from "@/components/ads/EnquirySentPage";
+import { ENQUIRY_SENT } from "@/content/enquiry-sent";
 
-// The customer's match page (owner, 6 Oct 2026). Every questionnaire (the site match box and the
-// four ad questionnaires) finishes here with ?lead=<leadId>. Never indexed or followed: also an X-Robots-Tag header
-// (next.config.ts), blocked in robots.txt and left out of the sitemap and llms.txt.
+// The page every questionnaire (the site match box and the four ad questionnaires) finishes on, with ?lead=<leadId>.
+// Owner, 11 Oct 2026: an honest "your enquiry has been sent" confirmation (EnquirySentPage) in place of the sample
+// accountant, until GoHighLevel sends the real match back; BizMatchPage.tsx (the accountant's card) is kept for that.
+// Never indexed or followed: also an X-Robots-Tag header (next.config.ts), blocked in robots.txt and left out of the
+// sitemap and llms.txt.
 export const metadata: Metadata = {
-  title: { absolute: "Your Accountant Match | Your Match Details" },
+  title: { absolute: "Your Accountant Match | Enquiry Sent" },
   robots: { index: false, follow: false },
 };
 
 export default function MatchPage() {
-  // the sample accountant shows until GoHighLevel is connected (Stage 5 replaces it with the real match)
-  const isSample = !process.env.GHL_INBOUND_WEBHOOK_URL || process.env.MOCK_GHL === "true";
   return (
     <div className="bz-page">
-      {/* owner's "match page" design: a "Match complete" pill in the header and a slim footer line (inside BizMatchPage) */}
-      <AdHeader complete={BIZ_MATCH.complete} />
-      <BizMatchPage match={SAMPLE_MATCH} isSample={isSample} />
+      <AdHeader complete={ENQUIRY_SENT.pill} />
+      <EnquirySentPage />
       <AdInfoPopup />
     </div>
   );
