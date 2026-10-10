@@ -35,6 +35,11 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
   - It opens an opportunity if `GHL_PIPELINE_ID` is set. The inbound webhook remains as a fallback.
   - `scripts/ghl-check.mjs` checks the connection.
 
+### Owner rules added
+- After every edit: update this file, then commit and push (CLAUDE.md "SAVE SESSION CONTEXT").
+- Every new thread: first read all project context, then ask the owner what to continue, before any work
+  (CLAUDE.md "FIRST STEP IN EVERY NEW THREAD").
+
 ### Owner decisions
 - GHL token and Location ID are stored **only in Vercel** environment variables (not in `.env.local`).
 - Keep the domain youraccountantmatch.com.au and keep using the word "match".
