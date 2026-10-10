@@ -2221,23 +2221,6 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .home-bar-gap :is(.sb-title, .sb-sub) { text-wrap: balance; }
 @media (min-width: 1200px) { .home-bar-gap--fit :is(.sb-title, .sb-sub) { white-space: nowrap; } } /* one line, as the same bar on /ad-2 */
 
-/* Home hero, laptops and desktops (owner, 10 Oct 2026): the ad pages' gradual white fade (".pth::before" in ads.css), running from
-   the left edge of the photo to the left edge of the match box, over the sky only (--hero-box-left, measured by HeroGap.tsx; 55% until then), laid
-   over the soft tint above. The ad pages' stops, scaled so the fade is gone exactly at the box; about 60% as strong as
-   theirs (owner, 10 Oct 2026: "less intense fade"); it keeps its strength until close to the box (owner, 10 Oct 2026). */
-@media (min-width: 1024px) {
-  main.home-v2 > .desk-hero.zz-phone .desk-hero-wash {
-    /* the blue sky only, not the city and suburbs (owner, 10 Oct 2026): full strength down the sky, gone just above the tallest
-       towers. The photo's top sits 5.2cm + 2.2vw down this frame and it is 39.99vw tall; the towers start 60% down it. */
-    -webkit-mask-image: linear-gradient(180deg, #000 calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.58));
-    mask-image: linear-gradient(180deg, #000 calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.58)); /* + 1.5cm: the photo is 1.5cm lower (below) */
-    background:
-      linear-gradient(90deg, rgba(255,255,255,.5) 0, rgba(255,255,255,.44) calc(var(--hero-box-left, 55vw) * 0.8),
-        rgba(255,255,255,.24) calc(var(--hero-box-left, 55vw) * 0.93), rgba(255,255,255,0) var(--hero-box-left, 55vw)),
-      linear-gradient(180deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.34) 44%, rgba(255,255,255,0) 62%);
-  }
-}
-
 /* Home hero headline the same size as the ad pages' (".pth-h1" in ads.css) on laptops and desktops 1200px+ (owner, 10 Oct 2026) */
 @media (min-width: 1200px) {
   main.home-v2 .desk-hero-h1.is-home > span { font-size: calc(clamp(2.592rem, 3.744vw, 3.888rem) * 1.2 * 0.92); } /* then 92% (owner, 10 Oct 2026) */
@@ -2280,26 +2263,6 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .sel-eyebrow-rule { flex-shrink: 1; min-width: 1.5rem; }
 @media (min-width: 1024px) and (max-width: 1279px) { .sel-eyebrow { letter-spacing: 0.06em !important; } .sel-eyebrow-rule { display: none; } } /* narrowest column: tighter, no rule */
 
-/* Home hero, laptops and desktops (owner, 10 Oct 2026, noc): the glow behind the words is now one even white panel sized to the
-   words by HeroGap.tsx (--glow-l/t/w/h on the wash layer), every edge fading out smoothly (eased stops): 1.5cm on the left and
-   top, and on the right and bottom only as far as there is room before the match box and the tallest towers (--glow-fr/fb),
-   so neither is touched. It replaces the round glow there (phones keep that). */
-@media (min-width: 1024px) {
-  .desk-hero.is-home .hero-words-glow::before { content: none; }
-  main.home-v2 > .desk-hero .desk-hero-wash::before {
-    content: ""; position: absolute; pointer-events: none;
-    left: var(--glow-l, 0); top: var(--glow-t, 0); width: var(--glow-w, 0); height: var(--glow-h, 0);
-    background: rgba(255,255,255,.45); /* was .62 (owner, 10 Oct 2026: "decrease fade strength") */
-    /* each edge fades in a smooth (cosine) curve over its own distance (--glow-fl/ft/fr/fb, HeroGap.tsx) */
-    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) calc(var(--glow-fl) * 0), rgba(0,0,0,0.024) calc(var(--glow-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-fl) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-fl) * 0.9), rgba(0,0,0,1) calc(var(--glow-fl) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fr) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fr) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fr) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fr) * 0)),
-      linear-gradient(180deg, rgba(0,0,0,0) calc(var(--glow-ft) * 0), rgba(0,0,0,0.024) calc(var(--glow-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-ft) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-ft) * 0.9), rgba(0,0,0,1) calc(var(--glow-ft) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fb) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fb) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fb) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fb) * 0));
-    -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(90deg, rgba(0,0,0,0) calc(var(--glow-fl) * 0), rgba(0,0,0,0.024) calc(var(--glow-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-fl) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-fl) * 0.9), rgba(0,0,0,1) calc(var(--glow-fl) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fr) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fr) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fr) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fr) * 0)),
-      linear-gradient(180deg, rgba(0,0,0,0) calc(var(--glow-ft) * 0), rgba(0,0,0,0.024) calc(var(--glow-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--glow-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--glow-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--glow-ft) * 0.4), rgba(0,0,0,0.5) calc(var(--glow-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--glow-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--glow-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--glow-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--glow-ft) * 0.9), rgba(0,0,0,1) calc(var(--glow-ft) * 1), rgba(0,0,0,1) calc(100% - var(--glow-fb) * 1), rgba(0,0,0,0.976) calc(100% - var(--glow-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--glow-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--glow-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--glow-fb) * 0.6), rgba(0,0,0,0.5) calc(100% - var(--glow-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--glow-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--glow-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--glow-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--glow-fb) * 0.1), rgba(0,0,0,0) calc(100% - var(--glow-fb) * 0));
-    mask-composite: intersect;
-  }
-}
-
 /* Home hero photo (owner, 10 Oct 2026): the city and suburbs a little less noticeable. A soft veil over the lower part of the
    photo only (it starts just above the skyline and is full strength where the buildings begin): slightly less colour and
    contrast and a faint white wash, so the landscape sits back behind the words and the match box. The sky is unchanged. */
@@ -2322,7 +2285,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 
 /* Home hero photo 1.5cm lower on laptops and desktops (owner, 10 Oct 2026), the sky carried up over the 1.5cm it leaves above it:
    a thin strip of the photo's own top sky (scripts/make-home-hero-sky.cjs) stretched to fill it. Its bottom 1.5cm goes behind the
-   blue bar. The sky fade above follows it down; the glow behind the words follows it by itself (HeroGap.tsx). */
+   blue bar. */
 @media (min-width: 1024px) {
   main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer) { translate: 0 1.5cm; }
   main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer)::before {
@@ -2331,15 +2294,31 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
   }
 }
 
-/* Home hero, laptops and desktops (owner, 10 Oct 2026, noc): every earlier fade in the hero is taken out (the left-to-right sky
-   fade and the soft top tint on the wash layer), leaving only the one even fade behind the words (".desk-hero-wash::before",
-   placed by HeroGap.tsx). The landscape softening on the photo itself is not a fade and stays. */
-@media (min-width: 1024px) {
-  main.home-v2 > .desk-hero.zz-phone .desk-hero-wash { background: none; -webkit-mask-image: none; mask-image: none; }
-}
-
 /* Every match box's service rows, site-wide, popups included (owner, 10 Oct 2026): a selected row shows the green tick used in the
    "Why Use…" lists (e.g. "Lodge on time with the ATO", /images/ad-personal/help/tick.webp) in place of the white drawn tick; the
    circle stays white with a green outline so the green tick shows. */
 .mc-row.is-on .mc-radio { background: #fff url("/images/ad-personal/help/tick.webp") 52% 55% / 64% auto no-repeat; box-shadow: inset 0 0 0 2px var(--green-600); }
 .mc-row.is-on .mc-radio svg { display: none; }
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026): every earlier fade in the hero is taken out and the business ad page's
+   (/ad-1) fade is used instead, as there (ads.css, ".pz-biz .pth::before", ".pth-veil::before", ".pth-sub::before"):
+   - a white wash across the hero from the left: 42% at the left edge, 36% a third of the way, 20% just under halfway, gone by 58%;
+   - a rounded, softly blurred white patch (70%) behind the line under the headline, and one behind the three points and the
+     steps, each sized to its words (fit-content) so it stays clear of the match box. None behind the headline, as there.
+   The steps line is drawn about 4mm under its box (its own translate), so that patch reaches 4mm lower. The landscape softening
+   on the photo is not a fade and stays. Phones keep their own look. */
+@media (min-width: 1024px) {
+  /* bottom: down past the photo's foot (the photo is 1.5cm lower than the frame), so no unwashed strip shows above the blue bar */
+  main.home-v2 > .desk-hero.zz-phone .desk-hero-wash { display: block; bottom: -2cm; -webkit-mask-image: none; mask-image: none;
+    background: linear-gradient(90deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.36) 32%, rgba(255,255,255,.2) 46%, rgba(255,255,255,0) 58%); }
+  main.home-v2 > .desk-hero .hero-words-glow::before { content: none; }
+  /* no stacking context of their own (isolation: auto), so both patches sit behind ALL the words (the wrapper ".hero-words-glow"
+     isolates), not over the line above them */
+  main.home-v2 > .desk-hero .desk-hero-sub, main.home-v2 > .desk-hero .hero-veil { width: fit-content; position: relative; isolation: auto; }
+  main.home-v2 > .desk-hero .desk-hero-sub::before, main.home-v2 > .desk-hero.is-home .hero-words-glow .hero-veil::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none; -webkit-mask-image: none; mask-image: none;
+    border-radius: 2.5rem; filter: blur(22px); background: rgba(255,255,255,.7);
+  }
+  main.home-v2 > .desk-hero .desk-hero-sub::before { inset: -1rem -2rem; }
+  main.home-v2 > .desk-hero.is-home .hero-words-glow .hero-veil::before { inset: -1.2rem -2rem calc(-1.4rem - 4mm) -2rem; }
+}
