@@ -1590,22 +1590,22 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* /ad-2 only (the page with the icon steps): "Meet Your Accountant Match" (and all under it) 5mm higher, closer to the
    navy bar above it (owner, 9 Oct 2026); the home page is unchanged. Taken from its own top space, not a negative
    margin: that slid its white over the bar's bottom 5mm, so the bar's words looked off-centre. */
-.home-v2:has(.phs) .hmi-meet { padding-top: calc(2.5rem + 1.85cm - 5mm); }
-@media (min-width: 1024px) { .home-v2:has(.phs) .hmi-meet { padding-top: calc(2vw + 1.85cm - 5mm); } }
+.pz-page .home-v2:has(.phs) .hmi-meet { padding-top: calc(2.5rem + 1.85cm - 5mm); }
+@media (min-width: 1024px) { .pz-page .home-v2:has(.phs) .hmi-meet { padding-top: calc(2vw + 1.85cm - 5mm); } }
 /* /ad-2 only: the tradie photo (and its left-side white fade) 2cm higher, nothing else moved: the note, the navy
    badge, the words and everything below stay put (owner, 9 Oct 2026, noc). Tablets and up; on phones the picture
    already sits up under the words. */
 @media (min-width: 768px) {
-  .home-v2:has(.phs) .hmi-meet { --tradie-up: calc(2cm - 5mm - 5mm); } /* 2cm up, then 5mm back down, twice */
-  .home-v2:has(.phs) .hmi-meet :is(.intro-photo-tall, .intro-photo-veil) { margin-top: calc(-1 * var(--tradie-up)); }
+  .pz-page .home-v2:has(.phs) .hmi-meet { --tradie-up: calc(2cm - 5mm - 5mm); } /* 2cm up, then 5mm back down, twice */
+  .pz-page .home-v2:has(.phs) .hmi-meet :is(.intro-photo-tall, .intro-photo-veil) { margin-top: calc(-1 * var(--tradie-up)); }
   /* the navy bar under it (and everything below) up by the same amount, touching the photo again (owner, 9 Oct 2026) */
-  .home-v2:has(.phs) .hmi-meet { margin-bottom: calc(-1 * var(--tradie-up)); }
+  .pz-page .home-v2:has(.phs) .hmi-meet { margin-bottom: calc(-1 * var(--tradie-up)); }
 }
 /* /ad-2: the network map (the home page's "Meet Your Accountant Match", owner 10 Oct 2026, noc) lifted by the same amount
    as the navy bar under it, so the bar stays where it was and never covers the map's bottom. Tablets and up. (The
    /ad-2-only hidden tagline and the founder paragraphs' 2.5mm nudge were removed with it, so the words match the home page.) */
 @media (min-width: 768px) {
-  .home-v2:has(.phs) .hmi-map { top: calc(-1 * var(--tradie-up)); bottom: var(--tradie-up); }
+  .pz-page .home-v2:has(.phs) .hmi-map { top: calc(-1 * var(--tradie-up)); bottom: var(--tradie-up); }
 }
 /* /ad-1 popup (owner, 10 Oct 2026): the business match box always shows its four rows' full names and lines */
 .mc-full-rows .bz-long { display: inline; }
