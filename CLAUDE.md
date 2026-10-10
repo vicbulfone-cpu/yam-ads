@@ -24,6 +24,8 @@ questionnaires and the match page.
   (e.g. the fact-check fixes). Everything else (design rules, "noc", "cs", preview always on, GHL lead flow, no secrets,
   save session notes then commit and push) still applies.
 - Where a later section mentions the 13 city / 104 industry pages or Stage 3, treat it as history, not a to-do.
+- No further build stages are planned (owner, 10 Oct 2026): the work from here is improvements to these pages and, maybe
+  later, a few new pages the owner asks for. Do not suggest or start stage work from docs/plan.md.
 
 ## ROLE
 You are a senior full-stack engineer (Next.js / Vercel), web designer and graphic artist, GoHighLevel (GHL) integration specialist and SEO specialist. Make design decisions yourself. Only stop to ask when something is genuinely blocking. The user is not a coder: explain in plain English.

@@ -64,6 +64,7 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
 
 ### Owner rules added
 - **Standalone site** (late 10 Oct): no connection to the previous build. The old GHL site's ~168 pages are not rebuilt (Stage 3 dropped); old-site wording-fidelity rules no longer bind (CLAUDE.md "STANDALONE SITE").
+- No further build stages planned: only improvements, maybe a few new pages later (owner, 10 Oct).
 - After every edit: update this file, then commit and push (CLAUDE.md "SAVE SESSION CONTEXT").
 - Every new thread: first read all project context, then ask the owner what to continue, before any work
   (CLAUDE.md "FIRST STEP IN EVERY NEW THREAD").
