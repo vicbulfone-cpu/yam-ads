@@ -21,7 +21,7 @@ export default function HomeWhoWeHelp() {
             </h2>
           </div>
           <div className="whys-intro">
-            <p><strong className="whof-lead">{HOME_WHO.lead}</strong> {HOME_WHO.text}</p>
+            <p><strong className="whof-lead"><span className="text-green-700">{HOME_WHO.leadGreen}</span>{HOME_WHO.lead.slice(HOME_WHO.leadGreen.length)}</strong> {HOME_WHO.text}</p>
           </div>
         </div>
 

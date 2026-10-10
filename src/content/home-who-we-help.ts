@@ -13,6 +13,8 @@ export const HOME_WHO = {
   h2: "Find the Right Accountant for Your Needs",
   h2Accent: "Your Needs",
   lead: "Not every tax or accounting need is the same.",
+  /** the start of the lead shown in green (owner, 10 Oct 2026) */
+  leadGreen: "Not every tax or accounting need",
   text: "Whether you're an employee or investor, a sole trader or company director, an SMSF trustee or starting a new business, Your Accountant Match helps you find a specialist suited to your circumstances.",
 };
 
