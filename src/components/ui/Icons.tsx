@@ -10,6 +10,7 @@ export const ArrowRight = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><pa
 export const ArrowUp = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M12 19V5M6 11l6-6 6 6" /></svg>);
 // ticks: the same line thickness as the tradie arrow everywhere (".ico-tick" in globals.css, owner 8 Oct 2026)
 export const Check = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)} className={`ico-tick ${p.className ?? ""}`}><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>);
+export const Pencil = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 3L8 18.5 4 20z" /><path d="M13.5 7l3 3M4 20h5" /></svg>);
 export const Plus = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M12 5v14M5 12h14" /></svg>);
 export const Menu = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M4 7h16M4 12h16M4 17h16" /></svg>);
 export const Close = (p: SVGProps<SVGSVGElement>) => (<svg {...base(p)}><path d="M6 6l12 12M18 6L6 18" /></svg>);

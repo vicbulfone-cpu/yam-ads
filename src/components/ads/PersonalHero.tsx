@@ -12,6 +12,7 @@ import { PERSONAL_HERO } from "@/content/personal-questionnaire";
 import { HERO_COPY } from "@/content/hero-copy";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import { ArrowRight } from "../ui/Icons";
+import HeroCtaCentre from "../sections/HeroCtaCentre";
 
 /** the steps line under the three points (owner, 9 Oct 2026: its last step names the partner network; the business and
  *  registration ad pages keep "Get matched with one accountant") */
@@ -87,6 +88,8 @@ export default function PersonalHero({ desktopPicture, hero }: { desktopPicture?
           </ol>
         </div>
       </div>
+      {/* the button centred between the words above and the points below (owner, 10 Oct 2026) */}
+      <HeroCtaCentre />
     </section>
   );
 }

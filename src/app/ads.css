@@ -1656,3 +1656,74 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* /ad-4 desktops (owner, 10 Oct 2026: "still a little fade on the man's shoulder"): the fade behind the line under the headline
    stops at the end of the words (its soft blur reaches only just past them), so none of it lies on his shoulder */
 @media (min-width: 1200px) { .pz-reg .pth-sub::before { right: 1.2rem; } }
+
+/* /ad-2 (personal tax) hero (owner, 10 Oct 2026: "darken fade just a little throughout evenly"): the white wash over the photo and
+   the white tints behind the words all drawn at 88% of their strength, so the photo shows a little more everywhere, evenly; then 80% ("make fade a little weaker"). */
+.pz-page:not(.pz-biz):not(.pz-reg):not(.pz-smsf) :is(.pth, .pth-veil, .pth-sub)::before { opacity: 0.8; }
+
+/* /ad-1 (business) hero (owner, 10 Oct 2026: "a little weaker business hero as well"): the white wash over the photo and the white
+   tints behind the words all drawn at 88% of their strength, evenly. */
+.pz-biz :is(.pth, .pth-veil, .pth-sub)::before { opacity: 0.88; }
+
+/* /ad-4 (registration) hero, laptops/desktops (owner, 10 Oct 2026): the line under the headline 1cm narrower, so it ends 1cm further
+   from the man; words that no longer fit carry over to the third line (the text size is unchanged). */
+@media (min-width: 1200px) { .pz-reg .pth-sub { width: calc(var(--pad-w) * 1.2 - 1cm); } }
+
+/* /ad-4 (registration) hero, laptops/desktops (owner, 10 Oct 2026, noc): the line under the headline 2.5mm lower (it was 1cm up
+   with the headline and button; they stay where they are). */
+@media (min-width: 1200px) { .pz-reg .pth-sub { translate: 0 calc(-1cm + 2.5mm); } }
+
+/* /ad-2 (personal tax) hero, laptops/desktops (owner, 10 Oct 2026): the "Find My Tax Accountant" button 2.5mm lower. */
+@media (min-width: 1200px) { .pz-page:not(.pz-biz):not(.pz-reg):not(.pz-smsf) .pth-cta { translate: 0 2.5mm; } }
+
+/* ===== "Your selections, at a glance": the summary page of every questionnaire (site popup and the four ad pages; owner,
+   10 Oct 2026, from the owner's "Untitled" picture). SelectionsSummary.tsx; wording src/content/selections-summary.ts. ===== */
+/* plain white page: no photo, border or shadow round this step */
+.bq-box:has(> .sel-sum) { border: 0; box-shadow: none; background: transparent; padding: 0.5rem 0 0; }
+.bq-box:has(> .sel-sum)::before, .bq-box:has(> .sel-sum)::after { display: none; }
+.sel-sum { max-width: 60rem; margin: 0 auto; color: var(--navy-900); }
+.sel-sum-title { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.9rem); color: var(--navy-900); }
+.sel-sum-text { margin-top: 0.55rem; font-size: clamp(1.02rem, 0.9rem + 0.5vw, 1.4rem); color: #4b5b70; }
+.sel-sum-list { display: grid; gap: 1.1rem; margin-top: 1.6rem; }
+.sel-card { overflow: hidden; border-radius: 0.9rem; border: 1px solid #d6dee9; background: #fff; box-shadow: 0 14px 34px -24px rgba(7, 50, 101, 0.4); }
+.sel-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; background: #062c62; color: #fff; padding: 1.15rem 1.25rem 1.2rem; }
+@media (min-width: 640px) { .sel-card-head { padding: 1.4rem 2.1rem 1.3rem; } }
+.sel-card-eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+@media (min-width: 640px) { .sel-card-eyebrow { font-size: 1.05rem; } }
+.sel-card-service { margin-top: 0.4rem; font-size: 1rem; color: rgba(255, 255, 255, 0.92); }
+@media (min-width: 640px) { .sel-card-service { font-size: 1.3rem; } }
+.sel-card-title { margin-top: 0.1rem; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; font-size: clamp(1.45rem, 1rem + 2vw, 2.75rem); }
+.sel-card-change { display: inline-flex; flex: none; align-items: center; gap: 0.6rem; min-height: 2.75rem; padding: 0 0.4rem; margin: -0.35rem -0.4rem 0 0; border-radius: 0.6rem; font-weight: 600; font-size: 1.05rem; color: #fff; }
+@media (min-width: 640px) { .sel-card-change { font-size: 1.35rem; } }
+.sel-card-change:hover { background: rgba(255, 255, 255, 0.12); }
+.sel-card-body { padding: 1.1rem 1.25rem 1.2rem; }
+@media (min-width: 640px) { .sel-card-body { padding: 1.35rem 2.1rem 1.4rem; } }
+.sel-card-body + .sel-card-body { border-top: 1px solid #e6ecf3; }
+.sel-card-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.sel-card-heading { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.02em; font-size: clamp(1.1rem, 0.95rem + 0.7vw, 1.6rem); color: var(--navy-900); }
+.sel-card-edit { display: inline-flex; flex: none; align-items: center; gap: 0.55rem; min-height: 2.75rem; padding: 0 0.4rem; margin-right: -0.4rem; border-radius: 0.6rem; font-weight: 700; font-size: 1.05rem; color: #0e7a32; }
+@media (min-width: 640px) { .sel-card-edit { font-size: 1.3rem; } }
+.sel-card-edit:hover { background: #e9fbf1; }
+.sel-card-items { display: grid; gap: 0.55rem; margin-top: 0.75rem; }
+.sel-card-items li { display: flex; align-items: center; gap: 1.1rem; font-size: clamp(1rem, 0.9rem + 0.45vw, 1.35rem); color: var(--navy-900); }
+.sel-note { display: block; margin-top: 1.8rem; }
+.sel-note-title { display: block; font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.02em; font-size: clamp(1.15rem, 1rem + 0.7vw, 1.65rem); color: var(--navy-900); }
+.sel-note-optional { font-family: var(--font-body, inherit); font-weight: 400; letter-spacing: 0; font-size: 0.72em; color: #4b5b70; }
+.sel-note-hint { display: block; margin-top: 0.3rem; font-size: clamp(0.98rem, 0.9rem + 0.35vw, 1.25rem); color: #4b5b70; }
+.sel-note-field { display: block; width: 100%; margin-top: 0.75rem; padding: 0.85rem 1.1rem; border: 1.5px solid #d6dee9; border-radius: 0.75rem; background: #fff; font-size: 1.05rem; color: var(--navy-900); resize: vertical; }
+.sel-note-field::placeholder { color: #8a97a8; }
+.sel-note-field:focus { outline: none; border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18); }
+.sel-confirm-note { max-width: 56rem; margin: 0.45rem auto 0; text-align: right; font-size: 0.82rem; color: #4b5b70; }
+
+/* /ad-2 (personal tax) hero, laptops/desktops (owner, 10 Oct 2026: "do not reduce fade left of" the headline and the line under
+   it, "all the way vertically down"): the white wash over the photo is back at its full strength from the left edge to where the
+   words start (--tx, the words' left edge), over the whole height of the hero; from there it eases into the weaker wash
+   (80%, owner's earlier "make fade a little weaker") across the rest. */
+@media (min-width: 1200px) {
+  .pz-page:not(.pz-biz):not(.pz-reg):not(.pz-smsf) .pth::before {
+    --tx: calc(max((100% - 1320px) / 2, 0px) + clamp(32px, 4.5vw, 72px));
+    opacity: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.82) var(--tx),
+      rgba(255, 255, 255, 0.592) 32%, rgba(255, 255, 255, 0.336) 46%, rgba(255, 255, 255, 0) 58%);
+  }
+}

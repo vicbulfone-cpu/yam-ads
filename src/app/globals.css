@@ -2351,3 +2351,122 @@ main.home-v2 > .desk-hero .desk-hero-card .mc { border: 0; }
    (less space under the heading); everything below moves up with them. Home page only (the ad pages' "How it works" sits in a div). */
 main.home-v2 > section .phs { margin-top: calc(2rem + 5mm + 6mm + 5mm + 1cm - 1.7cm); }
 @media (min-width: 1024px) { main.home-v2 > section .phs { margin-top: calc(1.4vw + 5mm + 6mm + 5mm + 1cm - 1.7cm); } }
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026, noc): the headline, the line under it, the three points and the steps
+   drawn at 115% of their size and 2cm further left. The words' box is already drawn 112.5% wide (".desk-hero-text"'s
+   scaleX), so the 2cm is divided by that to land 2cm on screen. Nothing around them moves. */
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .hero-words-glow { transform-origin: left top; scale: 1.15; translate: calc(-2cm / 1.125) 0; }
+}
+
+
+/* Home hero (owner, 10 Oct 2026: "remove all fade effect on home hero pic and then once finished, apply the same fade style"):
+   1. every fade removed: the light glow behind the words (.desk-hero-wash::before, placed by HeroGap.tsx) is off too, so the photo
+      has no fade at all on any screen size (phones and tablets stay that way).
+   2. laptops and desktops: the business hero's (/ad-1) fade style at its strength there (88%): a soft white wash from the left
+      edge easing out by 58% of the width (".pz-biz .pth::before" in ads.css), and one even white tint behind the line under the
+      headline and the three points, each edge easing out in a long smooth curve (".pth-sub::before" in ads.css). The tint's sizes
+      are divided by the line's 80% zoom so they come out as on /ad-1. */
+main.home-v2 > .desk-hero .desk-hero-wash::before { content: none !important; }
+@media (min-width: 1024px) {
+  /* (owner, 10 Oct 2026: "remove any fade that touches landscape, extend fade up to 1 cm above 'Looking for an'"): the wash runs
+     from 6cm above the headline ("make fade go higher by 5cm": was 1cm) to just above the highest building left of the match box (--hf-top/--hf-h, HeroGap.tsx), easing
+     in over its top 1.5cm and out over its bottom 2cm; nothing shows until it is placed */
+  main.home-v2 > .desk-hero .desk-hero-wash { display: block !important; top: var(--hf-top, 0); bottom: auto; height: var(--hf-h, 0); opacity: 0.88;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 1.5cm, #000 calc(100% - var(--hf-wfb, 2cm)), transparent 100%) !important;
+    mask-image: linear-gradient(180deg, transparent 0, #000 1.5cm, #000 calc(100% - var(--hf-wfb, 2cm)), transparent 100%) !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.36) 32%, rgba(255, 255, 255, 0.2) 46%, rgba(255, 255, 255, 0) 58%) !important; }
+  main.home-v2 > .desk-hero .desk-hero-sub { position: relative; isolation: isolate; }
+  main.home-v2 > .desk-hero .desk-hero-h1 { position: relative; z-index: 1; } /* the headline over the tint, as on /ad-1 */
+  main.home-v2 > .desk-hero .desk-hero-sub::before {
+    content: "" !important; position: absolute; z-index: -1; pointer-events: none; opacity: 0.88; background: rgba(255, 255, 255, 0.7);
+    --f-l: calc(8rem / 0.8); --f-r: calc(13rem / 0.8); --f-t: calc(5.5rem / 0.8); --f-b: calc(4.5rem / 0.8);
+    inset: calc(-5.5rem / 0.8) calc(-14rem / 0.8) calc((-4.7rem - 12.8rem + 5mm) / 0.8) calc(-8.6rem / 0.8);
+    bottom: var(--hf-tint-b, calc((-4.7rem - 12.8rem + 5mm) / 0.8)); /* ends just above the city (HeroGap.tsx) */
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0.000) calc(var(--f-l) * 0.0), rgba(0,0,0,0.024) calc(var(--f-l) * 0.1), rgba(0,0,0,0.095) calc(var(--f-l) * 0.2), rgba(0,0,0,0.206) calc(var(--f-l) * 0.3), rgba(0,0,0,0.345) calc(var(--f-l) * 0.4), rgba(0,0,0,0.500) calc(var(--f-l) * 0.5), rgba(0,0,0,0.655) calc(var(--f-l) * 0.6), rgba(0,0,0,0.794) calc(var(--f-l) * 0.7), rgba(0,0,0,0.905) calc(var(--f-l) * 0.8), rgba(0,0,0,0.976) calc(var(--f-l) * 0.9), rgba(0,0,0,1.000) calc(var(--f-l) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--f-r) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--f-r) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--f-r) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--f-r) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--f-r) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--f-r) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--f-r) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--f-r) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--f-r) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--f-r) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--f-r) * 0.0)), linear-gradient(180deg, rgba(0,0,0,0.000) calc(var(--f-t) * 0.0), rgba(0,0,0,0.024) calc(var(--f-t) * 0.1), rgba(0,0,0,0.095) calc(var(--f-t) * 0.2), rgba(0,0,0,0.206) calc(var(--f-t) * 0.3), rgba(0,0,0,0.345) calc(var(--f-t) * 0.4), rgba(0,0,0,0.500) calc(var(--f-t) * 0.5), rgba(0,0,0,0.655) calc(var(--f-t) * 0.6), rgba(0,0,0,0.794) calc(var(--f-t) * 0.7), rgba(0,0,0,0.905) calc(var(--f-t) * 0.8), rgba(0,0,0,0.976) calc(var(--f-t) * 0.9), rgba(0,0,0,1.000) calc(var(--f-t) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--f-b) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--f-b) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--f-b) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--f-b) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--f-b) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--f-b) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--f-b) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--f-b) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--f-b) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--f-b) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--f-b) * 0.0));
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0.000) calc(var(--f-l) * 0.0), rgba(0,0,0,0.024) calc(var(--f-l) * 0.1), rgba(0,0,0,0.095) calc(var(--f-l) * 0.2), rgba(0,0,0,0.206) calc(var(--f-l) * 0.3), rgba(0,0,0,0.345) calc(var(--f-l) * 0.4), rgba(0,0,0,0.500) calc(var(--f-l) * 0.5), rgba(0,0,0,0.655) calc(var(--f-l) * 0.6), rgba(0,0,0,0.794) calc(var(--f-l) * 0.7), rgba(0,0,0,0.905) calc(var(--f-l) * 0.8), rgba(0,0,0,0.976) calc(var(--f-l) * 0.9), rgba(0,0,0,1.000) calc(var(--f-l) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--f-r) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--f-r) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--f-r) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--f-r) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--f-r) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--f-r) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--f-r) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--f-r) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--f-r) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--f-r) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--f-r) * 0.0)), linear-gradient(180deg, rgba(0,0,0,0.000) calc(var(--f-t) * 0.0), rgba(0,0,0,0.024) calc(var(--f-t) * 0.1), rgba(0,0,0,0.095) calc(var(--f-t) * 0.2), rgba(0,0,0,0.206) calc(var(--f-t) * 0.3), rgba(0,0,0,0.345) calc(var(--f-t) * 0.4), rgba(0,0,0,0.500) calc(var(--f-t) * 0.5), rgba(0,0,0,0.655) calc(var(--f-t) * 0.6), rgba(0,0,0,0.794) calc(var(--f-t) * 0.7), rgba(0,0,0,0.905) calc(var(--f-t) * 0.8), rgba(0,0,0,0.976) calc(var(--f-t) * 0.9), rgba(0,0,0,1.000) calc(var(--f-t) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--f-b) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--f-b) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--f-b) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--f-b) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--f-b) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--f-b) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--f-b) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--f-b) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--f-b) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--f-b) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--f-b) * 0.0));
+    mask-composite: intersect;
+  }
+}
+
+/* Every match box popup, site-wide (owner, 10 Oct 2026, noc): no green line under "60 seconds" in "Your match is about 60 seconds
+   away.", and the line under it and the three ticked points 3mm higher. */
+.start-here-swoosh { display: none; }
+:is(.start-here-line, .start-here-points) { translate: 0 -3mm; }
+
+/* Every match box's service rows, site-wide, popups included (owner, 10 Oct 2026): the green tick on a selected row at 120% of its
+   size, grown from its centre so it stays in the same place; then 120% of that again (1.2 x 1.2 = 1.44). */
+.mc-row.is-on .mc-radio::after { scale: 1.44; }
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026): behind "Looking for an accountant near you?" the same fade as behind the
+   line under the registration page's headline (/ad-4, ".pth-sub::before" in ads.css): one soft, rounded, blurred patch of white
+   at 70%, reaching 1rem above and below the words and 2rem past each end. The headline's box is fitted to its words (it is
+   left-aligned, so nothing moves) so the patch follows the words rather than the empty width beside them. (Its later stretch
+   into the steps line was reverted, owner 10 Oct 2026: back to exactly this.) */
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .desk-hero-h1 { width: fit-content; }
+  main.home-v2 > .desk-hero .desk-hero-h1::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none; inset: -1rem -2rem;
+    border-radius: 2.5rem; filter: blur(22px); background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* Home hero, every screen size (owner, 10 Oct 2026): "Let us do the heavy lifting and find your perfect match." in bold. */
+main.home-v2 > .desk-hero .desk-hero-sub { font-weight: 700; }
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026: "extend same look fade that is behind" the three points "make look
+   exactly the same behind" the steps line): the tint behind the line under the headline and the points (".desk-hero-sub::before"
+   above) stays at full strength down through the steps, then eases out between the steps and the skyline (--hf-tint-fb,
+   HeroGap.tsx). The separate blurred patch that was behind the steps is gone. */
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .desk-hero-sub::before { --f-b: var(--hf-tint-fb, calc(4.5rem / 0.8)); }
+}
+
+/* Every questionnaire's tick boxes, site-wide (owner, 10 Oct 2026: "change tick in all questionnaire boxes to same in match
+   boxes"): a ticked option shows the match boxes' green tick picture (".mc-row.is-on .mc-radio::after" above, at its 144% size)
+   on a white circle with a green outline, in place of the white tick on a green circle. ".q-tick" in QuestionnaireParts.tsx and
+   SiteQuestionnaire.tsx. */
+.q-tick.is-on { position: relative; background: #fff !important; border-color: var(--green-600) !important; }
+.q-tick.is-on svg { display: none; }
+.q-tick.is-on::after {
+  content: ""; position: absolute; left: 27%; top: 6%; width: 64%; aspect-ratio: 146 / 118; pointer-events: none; scale: 1.44;
+  background: url("/images/ad-personal/help/tick.webp") center / contain no-repeat;
+}
+
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026: "make sure no fade effect under" the steps line "touches landscape and
+   buildings"). Both fades now sit on the wash layer over the photo and are drawn through a mask of the photo's sky, so they lighten
+   only the sky (between the towers too) and never the city, trees or houses:
+   - the wash: its own fade top and bottom (first mask layer), within the sky (the sky mask laid exactly over the photo, plus
+     everything above the photo, which is sky too);
+   - the tint behind the line under the headline, the three points and the steps (".desk-hero-wash::after"): the same look the
+     line under the headline had (white at 70%, easing out in a long smooth curve on every side), now through the steps.
+   All places and sizes ("--hf-", "--sky-", "--tn-") come from HeroGap.tsx. The old tint on the line itself is off. */
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .desk-hero-wash {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 1.5cm, #000 calc(100% - var(--hf-wfb, 2cm)), transparent 100%), url("/images/hero/home-sky-mask.png"), linear-gradient(#000, #000) !important;
+    mask-image: linear-gradient(180deg, transparent 0, #000 1.5cm, #000 calc(100% - var(--hf-wfb, 2cm)), transparent 100%), url("/images/hero/home-sky-mask.png"), linear-gradient(#000, #000) !important;
+    -webkit-mask-size: 100% 100%, var(--sky-w, 0px) var(--sky-h, 0px), 100% max(0px, var(--sky-y, 0px)) !important;
+    mask-size: 100% 100%, var(--sky-w, 0px) var(--sky-h, 0px), 100% max(0px, var(--sky-y, 0px)) !important;
+    -webkit-mask-position: 0 0, var(--sky-x, 0px) var(--sky-y, 0px), 0 0 !important;
+    mask-position: 0 0, var(--sky-x, 0px) var(--sky-y, 0px), 0 0 !important;
+    -webkit-mask-repeat: no-repeat !important; mask-repeat: no-repeat !important;
+    -webkit-mask-composite: source-in, source-over !important;
+    mask-composite: intersect, add !important;
+  }
+  main.home-v2 > .desk-hero .desk-hero-wash::after {
+    content: ""; position: absolute; pointer-events: none; background: rgba(255, 255, 255, 0.7);
+    left: var(--tn-l, 0px); top: var(--tn-t, 0px); width: var(--tn-w, 0px); height: var(--tn-h, 0px);
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0.000) calc(var(--tn-fl) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-fl) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-fl) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-fl) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fr) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fr) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fr) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fr) * 0.0)), linear-gradient(180deg, rgba(0,0,0,0.000) calc(var(--tn-ft) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-ft) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-ft) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-ft) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fb) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fb) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fb) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fb) * 0.0));
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0.000) calc(var(--tn-fl) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-fl) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-fl) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-fl) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fr) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fr) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fr) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fr) * 0.0)), linear-gradient(180deg, rgba(0,0,0,0.000) calc(var(--tn-ft) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-ft) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-ft) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-ft) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fb) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fb) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fb) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fb) * 0.0));
+    mask-composite: intersect;
+  }
+  main.home-v2 > .desk-hero .desk-hero-sub::before { content: none !important; }
+}
+
+/* Home hero, laptops and desktops (owner, 10 Oct 2026: "make sure letters colour is not affected by fade"): the headline is no
+   longer lifted above the words after it, so its soft patch (".desk-hero-h1::before") sits behind every hero word instead of
+   spilling over the top of "Let us do the heavy lifting…". (The tint it was lifted over is now on the photo's wash layer.) */
+@media (min-width: 1024px) { main.home-v2 > .desk-hero .desk-hero-h1 { z-index: auto; } }

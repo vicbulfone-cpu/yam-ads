@@ -124,7 +124,7 @@ export function OptionCard({ checked, onToggle, label, warn }: { checked: boolea
         : warn ? "border-amber-300 bg-white hover:border-amber-400"
           : "border-line bg-white/95 hover:-translate-y-0.5 hover:border-green-400 hover:bg-green-50/40 hover:shadow-[0_8px_20px_-10px_rgba(7,50,101,.3)]"}`}>
       <input type="checkbox" checked={checked} onChange={onToggle} className="peer sr-only" />
-      <span aria-hidden className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
+      <span aria-hidden className={`q-tick${checked ? " is-on" : ""} grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
         <Check width={13} height={13} strokeWidth={3.4} />
       </span>
       <span className={`text-[0.95rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-medium text-ink/85"}`}>{label}</span>
@@ -145,7 +145,7 @@ export function ChoiceCard({ checked, onSelect, label, desc, warn, multi = false
           : warn ? "border-amber-300 bg-white hover:border-amber-400"
             : "border-line bg-white/95 hover:-translate-y-0.5 hover:border-green-400 hover:bg-green-50/40 hover:shadow-[0_8px_20px_-10px_rgba(7,50,101,.3)]"}`}
     >
-      <span aria-hidden className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent"}`}>
+      <span aria-hidden className={`q-tick${checked ? " is-on" : ""} grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent"}`}>
         <Check width={13} height={13} strokeWidth={3.4} />
       </span>
       <span className="min-w-0">

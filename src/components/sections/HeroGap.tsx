@@ -71,6 +71,52 @@ function placeWordsGlow() {
   wash.style.setProperty("--glow-fb", `${Math.max(ob, BOTTOM)}px`);
 }
 
+/**
+ * Home page, laptops and desktops (owner, 10 Oct 2026). The hero's fades: the white wash from the left (".desk-hero-wash") and
+ * the even white tint behind the line under the headline, the three points and the steps line (".desk-hero-wash::after", the
+ * same look the line under the headline had). Both run from 6cm above "Looking for an" ("make fade go higher by 5cm") down past
+ * the steps, at full strength through the steps ("make look exactly the same" behind them as behind the points), then ease out
+ * over FADE_OUT. They are drawn through a mask of the photo's sky ("make sure no fade effect … touches landscape and
+ * buildings"; public/images/hero/home-sky-mask.png, scripts/make-home-sky-mask.mjs), so they lighten only the sky, never the
+ * city, trees or houses. Everything is placed here in the wash's own pixels ("--hf-" and "--sky-" values; globals.css).
+ */
+function placeHomeFade() {
+  const wash = document.querySelector<HTMLElement>("main.home-v2 > .desk-hero .desk-hero-wash");
+  const sub = document.querySelector<HTMLElement>("main.home-v2 > .desk-hero .desk-hero-sub");
+  const h1 = document.querySelector<HTMLElement>("main.home-v2 > .desk-hero .desk-hero-h1");
+  const img = document.querySelector("main.home-v2 > .desk-hero .desk-hero-img");
+  if (!wash || !sub || !h1 || !img) return;
+  const VARS = ["--hf-top", "--hf-h", "--hf-wfb", "--sky-x", "--sky-y", "--sky-w", "--sky-h",
+    "--tn-l", "--tn-t", "--tn-w", "--tn-h", "--tn-fl", "--tn-fr", "--tn-ft", "--tn-fb"];
+  for (const v of VARS) wash.style.removeProperty(v);
+  if (window.innerWidth < 1024) return;
+  const rs = textRects(h1);
+  if (!rs.length) return;
+  const FADE_OUT = 2 * CM;
+  const top = Math.min(...rs.map((r) => r.top)) - 6 * CM; // 6cm above "Looking for an"
+  const s = sub.getBoundingClientRect(), cs = getComputedStyle(sub);
+  const kx = s.width / (parseFloat(cs.width) || s.width), ky = s.height / (parseFloat(cs.height) || s.height); // the line's scale
+  const steps = document.querySelector("main.home-v2 > .desk-hero .home-steps");
+  const ws = steps ? textRects(steps) : [];
+  const stepsBottom = ws.length ? Math.max(...ws.map((r) => r.bottom)) + 4 : s.bottom;
+  const end = stepsBottom + FADE_OUT;
+  const base = (wash.offsetParent ?? wash.parentElement)!.getBoundingClientRect();
+  const set = (k: string, v: number) => wash.style.setProperty(k, `${v}px`);
+  // the wash's place and fade; the wash's own top-left corner is (base.left, top) from here on
+  set("--hf-top", top - base.top);
+  set("--hf-h", Math.max(0, end - top));
+  set("--hf-wfb", FADE_OUT);
+  // the sky mask over the photo
+  const p = img.getBoundingClientRect();
+  set("--sky-x", p.left - base.left); set("--sky-y", p.top - top); set("--sky-w", p.width); set("--sky-h", p.height);
+  // the tint: as it was round the line under the headline (8.6rem left, 14rem right, 5.5rem above, in the line's own units,
+  // easing over 8rem, 13rem and 5.5rem), now reaching down past the steps
+  const R = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, u = R / 0.8;
+  const l = s.left - 8.6 * u * kx, r = s.right + 14 * u * kx, t = s.top - 5.5 * u * ky;
+  set("--tn-l", l - base.left); set("--tn-t", t - top); set("--tn-w", r - l); set("--tn-h", end - t);
+  set("--tn-fl", 8 * u * kx); set("--tn-fr", 13 * u * kx); set("--tn-ft", 5.5 * u * ky); set("--tn-fb", FADE_OUT);
+}
+
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
   const GAP = cm * CM;
   const ref = useRef<HTMLSpanElement>(null);
@@ -87,6 +133,7 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
       bar?.style.removeProperty("--hb-clear");
       bar?.classList.remove("hb-mid");
       placeWordsGlow(); // the light tint behind the hero words, every screen size (owner, 10 Oct 2026)
+      placeHomeFade(); // the home hero's fade kept off the city (owner, 10 Oct 2026)
       if (window.innerWidth < 1024 || !pic || !box) return;
       // the bar's words are centred across the whole bar, so they start below the match box where it overlaps the bar
       if (bar) bar.style.setProperty("--hb-clear", `${Math.max(0, box.getBoundingClientRect().bottom - bar.getBoundingClientRect().top)}px`);
@@ -105,6 +152,7 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
     // after the match box has scaled itself to the window
     const run = () => requestAnimationFrame(() => requestAnimationFrame(place));
     run();
+    document.fonts?.ready.then(run); // again once the fonts are in (the steps line is sized to them)
     window.addEventListener("resize", run);
     return () => window.removeEventListener("resize", run);
   }, [GAP]);

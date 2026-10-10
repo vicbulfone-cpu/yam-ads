@@ -13,6 +13,8 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 import { SMSF_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
+import SelectionsSummary, { SummaryConfirmNote } from "./SelectionsSummary";
+import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 
 /**
  * The SMSF & wealth questionnaire (SMSF ad page /ad-3). Same popup, progress header and option cards as the business
@@ -65,6 +67,7 @@ export default function SmsfQuestionnaire() {
   const [open, setOpen] = useState(false);
   const [cats, setCats] = useState<string[]>([]);
   const [answers, setAnswers] = useState<Record<string, CatAnswer>>({});
+  const [note, setNote] = useState(""); // the summary's optional note for the accountant (owner, 10 Oct 2026)
   const [stepIdx, setStepIdx] = useState(0);
   const [backToSummary, setBackToSummary] = useState(false);
   const [mode, setMode] = useState<string | null>(null);
@@ -92,6 +95,7 @@ export default function SmsfQuestionnaire() {
   const show = useCallback((ids: string[]) => {
     setCats(ids);
     setAnswers({});
+    setNote("");
     setStepIdx(0);
     setBackToSummary(false);
     setMode(null);
@@ -219,6 +223,7 @@ export default function SmsfQuestionnaire() {
     router.prefetch(MATCH_PAGE);
     const services = [
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
+      ...(note.trim() ? [`${SELECTIONS_SUMMARY.note.label}: ${note.trim()}`] : []),
     ];
     const modeLabel = SMSF_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
@@ -230,7 +235,7 @@ export default function SmsfQuestionnaire() {
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
-          answers,
+          answers: { ...answers, ...(note.trim() ? { notes: note.trim() } : {}) },
           workMode: modeLabel,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
@@ -246,6 +251,7 @@ export default function SmsfQuestionnaire() {
         adType: "smsf", leadId: data.leadId, name: name.trim(), email: email.trim(), emailMe: emailMe === true, mode: modeLabel, place,
         services: [
           ...cats.map((id) => ({ category: catById(id).title, items: chosenLabels(catById(id), answers[id]) })),
+          ...(note.trim() ? [{ category: SELECTIONS_SUMMARY.note.label, items: [note.trim()] }] : []),
         ],
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "smsf" });
@@ -270,7 +276,7 @@ export default function SmsfQuestionnaire() {
               : step.kind === "name" ? name.trim().length >= 2
                 : step.kind === "emailMe" ? emailMe !== null
                   : step.kind === "summary";
-  const nextLabel = step.kind === "summary" ? Q.summary.confirm : step.kind === "location" ? Q.location.find : step.kind === "phone" ? Q.emailMe.submit : Q.next;
+  const nextLabel = step.kind === "summary" ? SELECTIONS_SUMMARY.confirm : step.kind === "location" ? Q.location.find : step.kind === "phone" ? Q.emailMe.submit : Q.next;
   // the postcode step stays on screen behind the email box
   const bodyKind = step.kind === "email" ? "location" : step.kind;
 
@@ -305,8 +311,12 @@ export default function SmsfQuestionnaire() {
                   <CategoryStep cat={cur} index={stepIdx} total={cats.length} sel={sel} toggle={toggle} patch={patch} error={error} />
                 )}
                 {bodyKind === "summary" && (
-                  <SummaryStep cats={cats} answers={answers} personalise={p}
-                    onEdit={(k) => { setBackToSummary(true); goTo(k); }} />
+                  <SelectionsSummary firstName={firstName} note={note} onNote={setNote}
+                    blocks={cats.map((id, i) => {
+                      const cat = catById(id), change = () => { setBackToSummary(true); goTo(i); };
+                      return { key: id, service: SELECTIONS_SUMMARY.services.smsf, title: cat.title, onChange: change,
+                        sections: [{ heading: SELECTIONS_SUMMARY.chosen, items: chosenLabels(cat, answers[id]), onEdit: change }] };
+                    })} />
                 )}
                 {bodyKind === "mode" && (
                   <StepHead eyebrow={Q.mode.eyebrow} title={p(Q.mode.title)} icon={<Sparkle width={26} height={26} />}>
@@ -360,6 +370,7 @@ export default function SmsfQuestionnaire() {
                 <span className="btn-arrow"><ArrowRight width={16} height={16} strokeWidth={2.5} /></span>
               </button>
             </div>
+            {step.kind === "summary" && <SummaryConfirmNote />}
           </div>
 
           {/* 11-second search after the postcode */}
@@ -451,38 +462,3 @@ function CategoryStep({ cat, index, total, sel, toggle, patch, error }: {
   );
 }
 
-function SummaryStep({ cats, answers, onEdit, personalise: p }: {
-  cats: string[]; answers: Record<string, CatAnswer>;
-  onEdit: (stepIndex: number) => void; personalise: (t: string) => string;
-}) {
-  const card = "rounded-2xl border border-line bg-white/95 p-4 shadow-[0_10px_28px_-18px_rgba(7,50,101,.35)]";
-  const editBtn = "min-h-10 rounded-full px-3 text-sm font-semibold text-green-700 underline-offset-2 hover:bg-green-50 hover:underline";
-  return (
-    <StepHead eyebrow={Q.summary.eyebrow} title={p(Q.summary.title)} icon={<Check width={26} height={26} strokeWidth={3} />}>
-      <p className="text-[0.98rem] leading-snug text-ink/80">{p(Q.summary.text)}</p>
-      <ul className="grid gap-3 sm:grid-cols-2">
-        {cats.map((id, i) => {
-          const cat = catById(id);
-          return (
-            <li key={id} className={card}>
-              <div className="mb-2 flex items-center gap-3">
-                <span aria-hidden className={`bz-tile is-${cat.tone} !w-10 shrink-0`}><svg viewBox="0 0 24 24">{SMSF_CATEGORY_ICONS[id]}</svg></span>
-                <p className="flex-1 font-bold leading-tight text-navy-900">{cat.title}</p>
-                <button type="button" onClick={() => onEdit(i)} className={editBtn}>
-                  {Q.summary.edit}<span className="sr-only"> {cat.title}</span>
-                </button>
-              </div>
-              <ul className="space-y-1.5">
-                {chosenLabels(cat, answers[id]).map((l) => (
-                  <li key={l} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">
-                    <Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />{l}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          );
-        })}
-      </ul>
-    </StepHead>
-  );
-}

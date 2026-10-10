@@ -15,6 +15,8 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
+import SelectionsSummary, { SummaryConfirmNote } from "./SelectionsSummary";
+import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 
 /**
@@ -285,7 +287,7 @@ export default function PersonalQuestionnaire() {
       `Need: ${title}`,
       ...details.map((d) => `${d.label}: ${d.value}`),
       ...inc.map((i) => `${Q.summaryLabels.income}: ${i}`),
-      ...(notes.trim() ? [`${Q.summaryLabels.notes}: ${notes.trim()}`] : []),
+      ...(notes.trim() ? [`${SELECTIONS_SUMMARY.note.label}: ${notes.trim()}`] : []),
     ];
     const modeLabel = PERSONAL_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
@@ -315,7 +317,7 @@ export default function PersonalQuestionnaire() {
         services: [
           { category: title, items: details.map((d) => `${d.label}: ${d.value}`) },
           ...(inc.length ? [{ category: Q.summaryLabels.income, items: inc }] : []),
-          ...(notes.trim() ? [{ category: Q.summaryLabels.notes, items: [notes.trim()] }] : []),
+          ...(notes.trim() ? [{ category: SELECTIONS_SUMMARY.note.label, items: [notes.trim()] }] : []),
         ].filter((g) => g.items.length || g.category === title),
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "personal" });
@@ -342,7 +344,7 @@ export default function PersonalQuestionnaire() {
                 : kind === "name" ? name.trim().length >= 2
                   : kind === "emailMe" ? emailMe !== null
                     : kind === "summary";
-  const nextLabel = kind === "summary" ? Q.summary.confirm : kind === "location" ? Q.location.find : kind === "phone" ? Q.emailMe.submit : Q.next;
+  const nextLabel = kind === "summary" ? SELECTIONS_SUMMARY.confirm : kind === "location" ? Q.location.find : kind === "phone" ? Q.emailMe.submit : Q.next;
   // the postcode step stays on screen behind the email box
   const bodyKind = kind === "email" ? "location" : kind;
   const picture = STEP_PICTURES[bodyKind];
@@ -438,33 +440,17 @@ export default function PersonalQuestionnaire() {
                 )}
 
                 {bodyKind === "summary" && firstNeed && (
-                  <StepHead eyebrow={Q.summary.eyebrow} title={p(Q.summary.title)} icon={<Check width={26} height={26} strokeWidth={3} />}>
-                    <p className="text-[0.98rem] leading-snug text-ink/80">{p(Q.summary.text)}</p>
-                    <ul className="grid gap-3 sm:grid-cols-2">
-                      <SummaryCard title={Q.summaryLabels.need} onEdit={() => edit("choose")} need={firstNeed}>
-                        {needs.map((n) => <li key={n} className="font-bold text-navy-900">{needTitle(n)}</li>)}
-                        {detailLines().map((d) => (
-                          <li key={d.label} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">
-                            <Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />
-                            <span><span className="font-semibold">{d.label}:</span> {d.value}</span>
-                          </li>
-                        ))}
-                        {(needs.includes("amend") || needs.includes("planning")) && (
-                          <li><button type="button" onClick={() => edit(needs.includes("amend") ? "amend" : "planning")} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {Q.summaryLabels.details.toLowerCase()}</button></li>
-                        )}
-                      </SummaryCard>
-                      {hasReturn && (
-                        <SummaryCard title={Q.summaryLabels.income} onEdit={() => edit("income")}>
-                          {incomeLabels().map((l) => (
-                            <li key={l} className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">
-                              <Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />{l}
-                            </li>
-                          ))}
-                        </SummaryCard>
-                      )}
-                    </ul>
-                    <NoteField label={Q.notes.label} value={notes} onChange={setNotes} placeholder={Q.notes.placeholder} rows={3} />
-                  </StepHead>
+                  // one card per ticked reason, with what was chosen for it underneath; "Your return includes" on the first tax
+                  // return reason (owner, 10 Oct 2026, "Your selections, at a glance")
+                  <SelectionsSummary firstName={firstName} note={notes} onNote={setNotes}
+                    blocks={needs.map((n) => ({
+                      key: n, service: SELECTIONS_SUMMARY.services.personal, title: needTitle(n), onChange: () => edit("choose"),
+                      sections: [
+                        ...(n === "amend" && amendNote.trim() ? [{ heading: Q.summaryLabels.correcting, items: [amendNote.trim()], onEdit: () => edit("amend") }] : []),
+                        ...(n === "planning" ? [{ heading: Q.summaryLabels.advice, items: ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)), onEdit: () => edit("planning") }] : []),
+                        ...(n === needs.find((x) => RETURN_NEEDS.includes(x)) ? [{ heading: Q.summaryLabels.income, items: incomeLabels(), onEdit: () => edit("income") }] : []),
+                      ],
+                    }))} />
                 )}
 
                 {bodyKind === "mode" && (
@@ -514,6 +500,7 @@ export default function PersonalQuestionnaire() {
                 <span className="btn-arrow"><ArrowRight width={16} height={16} strokeWidth={2.5} /></span>
               </button>
             </div>
+            {kind === "summary" && <SummaryConfirmNote />}
           </div>
 
           {/* 11-second search after the postcode */}
@@ -602,18 +589,3 @@ function ChoiceGroup({ label, hideLabel, options, value, onChange, warn, cols }:
   );
 }
 
-function SummaryCard({ title, onEdit, need, children }: { title: string; onEdit: () => void; need?: NeedId; children: React.ReactNode }) {
-  const tone = PERSONAL_NEEDS.find((n) => n.id === need)?.tone ?? "green";
-  return (
-    <li className="rounded-2xl border border-line bg-white/95 p-4 shadow-[0_10px_28px_-18px_rgba(7,50,101,.35)]">
-      <div className="mb-2 flex items-center gap-3">
-        <span aria-hidden className={`bz-tile is-${tone} !w-10 shrink-0`}><svg viewBox="0 0 24 24">{PERSONAL_NEED_ICONS[need ?? "this_year"]}</svg></span>
-        <p className="flex-1 font-bold leading-tight text-navy-900">{title}</p>
-        <button type="button" onClick={onEdit} className="min-h-10 rounded-full px-3 text-sm font-semibold text-green-700 underline-offset-2 hover:bg-green-50 hover:underline">
-          {Q.summary.edit}<span className="sr-only"> {title}</span>
-        </button>
-      </div>
-      <ul className="space-y-1.5">{children}</ul>
-    </li>
-  );
-}

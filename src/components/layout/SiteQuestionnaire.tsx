@@ -22,6 +22,8 @@ import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import FitBox from "../ui/FitBox";
 import StartHere from "../ui/StartHere";
+import SelectionsSummary, { SummaryConfirmNote, type SummaryBlock } from "../ads/SelectionsSummary";
+import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
 /**
@@ -323,6 +325,35 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   const aboutLines = (s: "smsf" | "registration") => s === "smsf"
     ? []
     : [{ label: REG_Q.summaryLabels.stage, value: labelOf(REG_STAGE, stage) }, ...(regNotes.trim() ? [{ label: REG_Q.summaryLabels.notes, value: regNotes.trim() }] : [])];
+  /** The summary page (owner, 10 Oct 2026, "Your selections, at a glance"): one card per choice, in the box's order, with what
+   *  was chosen for it underneath. "Change" goes back to that service's choices; "Edit" to the page of ticked options. */
+  const summaryBlocks = (): SummaryBlock[] => services.flatMap((s): SummaryBlock[] => {
+    const name = SELECTIONS_SUMMARY.services[s];
+    if (s === "personal") {
+      const L = PERSONAL_Q.summaryLabels, firstReturn = needs.find((x) => RETURN_NEEDS.includes(x));
+      return needs.map((n) => ({
+        key: n, service: name, title: needTitle(n), onChange: () => editPick("personal"),
+        sections: [
+          ...personalLines(n).map((d) => ({ heading: d.label, items: n === "planning" ? d.value.split(", ") : [d.value],
+            onEdit: () => editPage(indexOf((x) => x.kind === "pfollow" && x.n === n)) })),
+          ...(n === firstReturn ? [{ heading: L.income, items: incomeLabels(), onEdit: () => editPage(indexOf((x) => x.kind === "pincome")) }] : []),
+        ],
+      }));
+    }
+    const about = s === "registration" ? aboutLines(s) : [];
+    return picks[s].map((id, i) => {
+      const cat = catOf(s, id);
+      return {
+        key: `${s}-${id}`, service: name, title: cat.title, onChange: () => editPick(s),
+        sections: [
+          { heading: SELECTIONS_SUMMARY.chosen, items: chosenLabels(cat, answers[id]), onEdit: () => editPage(indexOf((x) => x.kind === "cat" && x.id === id)) },
+          ...(about.length && i === picks[s].length - 1
+            ? [{ heading: REG_Q.summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`), onEdit: () => editPage(indexOf((x) => x.kind === "qualify" && x.s === s)) }]
+            : []),
+        ],
+      };
+    });
+  });
 
   // ---------- moving on ----------
   /** After a page is answered: straight back to the summary when changing one page; when changing a sub-section
@@ -422,9 +453,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
           groups.push({ category: needTitle(n), items: [needTitle(n), ...details] });
         }
         const inc = needs.some((n) => RETURN_NEEDS.includes(n)) ? incomeLabels() : [];
-        lines.push(...inc.map((i) => `${PERSONAL_Q.summaryLabels.income}: ${i}`), ...(personalNotes.trim() ? [`${PERSONAL_Q.summaryLabels.notes}: ${personalNotes.trim()}`] : []));
+        lines.push(...inc.map((i) => `${PERSONAL_Q.summaryLabels.income}: ${i}`));
         if (inc.length) groups.push({ category: PERSONAL_Q.summaryLabels.income, items: inc });
-        if (personalNotes.trim()) groups.push({ category: PERSONAL_Q.summaryLabels.notes, items: [personalNotes.trim()] });
         leadAnswers.personal = { needs, amend: needs.includes("amend") ? { note: amendNote.trim() } : null, adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: personalNotes.trim() };
         continue;
       }
@@ -444,6 +474,12 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
           ? catAnswers
           : { ...catAnswers, businessStage: stage, notes: regNotes.trim() };
       }
+    }
+    // the summary's note for the accountant (every service; owner, 10 Oct 2026)
+    if (personalNotes.trim()) {
+      lines.push(`${SELECTIONS_SUMMARY.note.label}: ${personalNotes.trim()}`);
+      groups.push({ category: SELECTIONS_SUMMARY.note.label, items: [personalNotes.trim()] });
+      leadAnswers.notes = personalNotes.trim();
     }
     const modeLabel = BIZ_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
@@ -494,7 +530,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                     : step.kind === "name" ? name.trim().length >= 2
                       : step.kind === "emailMe" ? emailMe !== null
                         : step.kind === "summary";
-  const nextLabel = step.kind === "summary" ? Q.summary.confirm : step.kind === "location" ? Q.location.find : step.kind === "phone" ? Q.emailMe.submit : Q.next;
+  const nextLabel = step.kind === "summary" ? SELECTIONS_SUMMARY.confirm : step.kind === "location" ? Q.location.find : step.kind === "phone" ? Q.emailMe.submit : Q.next;
   // the postcode step stays on screen behind the email box
   const body: Step = step.kind === "email" ? { kind: "location" } : step;
   const picture =
@@ -627,58 +663,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                     )}
 
                     {body.kind === "summary" && (
-                      <StepHead eyebrow={Q.summary.eyebrow} title={p(Q.summary.title)} icon={<Check width={26} height={26} strokeWidth={3} />}>
-                        <p className="text-[0.98rem] leading-snug text-ink/80">{p(Q.summary.text)}</p>
-                        {services.map((s) => (
-                          <div key={s} className="space-y-2.5">
-                            <div className="flex items-center justify-between gap-3">
-                              <h4 className="text-[0.75rem] font-bold uppercase tracking-[0.14em] text-green-700">{SERVICE_PICK[s].name}</h4>
-                              {/* change which sub-sections were ticked (personal: the reason card's own Change) */}
-                              {s !== "personal" && (
-                                <button type="button" onClick={() => editPick(s)} className="min-h-10 rounded-full px-3 text-sm font-semibold text-green-700 underline-offset-2 hover:bg-green-50 hover:underline">
-                                  {Q.summary.edit}<span className="sr-only"> {SERVICE_PICK[s].name}</span>
-                                </button>
-                              )}
-                            </div>
-                            <ul className="grid gap-3 sm:grid-cols-2">
-                              {s === "personal" && needs.length > 0 && (
-                                <>
-                                  {needs.map((need) => (
-                                    <SummaryCard key={need} title={PERSONAL_Q.summaryLabels.need} tone={PERSONAL_NEEDS.find((n) => n.id === need)?.tone ?? "green"} icon={PERSONAL_NEED_ICONS[need]} onEdit={() => editPick("personal")}>
-                                      <li className="font-bold text-navy-900">{needTitle(need)}</li>
-                                      {personalLines(need).map((d) => <Line key={d.label}><span className="font-semibold">{d.label}:</span> {d.value}</Line>)}
-                                      {(FOLLOW_UPS as NeedId[]).includes(need) && (
-                                        <li><button type="button" onClick={() => editPage(indexOf((x) => x.kind === "pfollow" && x.n === need))} className="text-sm font-semibold text-green-700 underline underline-offset-2 hover:text-green-800">{Q.summary.edit} {PERSONAL_Q.summaryLabels.details.toLowerCase()}</button></li>
-                                      )}
-                                    </SummaryCard>
-                                  ))}
-                                  {needs.some((n) => RETURN_NEEDS.includes(n)) && (
-                                    <SummaryCard title={PERSONAL_Q.summaryLabels.income} tone="green" icon={PERSONAL_NEED_ICONS.this_year} onEdit={() => editPage(indexOf((x) => x.kind === "pincome"))}>
-                                      {incomeLabels().map((l) => <Line key={l}>{l}</Line>)}
-                                    </SummaryCard>
-                                  )}
-                                </>
-                              )}
-                              {s !== "personal" && picks[s].map((id) => {
-                                const cat = catOf(s, id);
-                                return (
-                                  <SummaryCard key={id} title={cat.title} tone={cat.tone} icon={CAT_ICONS[s][id]} onEdit={() => editPage(indexOf((x) => x.kind === "cat" && x.id === id))}>
-                                    {chosenLabels(cat, answers[id]).map((l) => <Line key={l}>{l}</Line>)}
-                                  </SummaryCard>
-                                );
-                              })}
-                              {(s === "smsf" || s === "registration") && aboutLines(s).length > 0 && (
-                                <SummaryCard title={CAT_Q[s].summaryLabels.about} onEdit={() => editPage(indexOf((x) => x.kind === "qualify" && x.s === s))}>
-                                  {aboutLines(s).map((a) => <Line key={a.label}><span className="font-semibold">{a.label}:</span> {a.value}</Line>)}
-                                </SummaryCard>
-                              )}
-                            </ul>
-                          </div>
-                        ))}
-                        {services.includes("personal") && (
-                          <NoteField label={PERSONAL_Q.notes.label} value={personalNotes} onChange={setPersonalNotes} placeholder={PERSONAL_Q.notes.placeholder} rows={3} />
-                        )}
-                      </StepHead>
+                      <SelectionsSummary firstName={firstName} note={personalNotes} onNote={setPersonalNotes} blocks={summaryBlocks()} />
                     )}
 
                     {body.kind === "mode" && (
@@ -726,6 +711,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                     <span className="btn-arrow"><ArrowRight width={16} height={16} strokeWidth={2.5} /></span>
                   </button>
                 </div>
+                {step.kind === "summary" && <SummaryConfirmNote />}
               </div>
             </>
           )}
@@ -803,7 +789,7 @@ function PickCard({ checked, onToggle, radio, warn, tone, icon, title, desc }: {
         <span className={`block text-[1rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-semibold text-ink/90"}`}>{title}</span>
         <span className="mt-0.5 block text-[0.85rem] leading-snug text-muted">{desc}</span>
       </span>
-      <span aria-hidden className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
+      <span aria-hidden className={`q-tick${checked ? " is-on" : ""} grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
         <Check width={13} height={13} strokeWidth={3.4} />
       </span>
     </label>
@@ -870,28 +856,4 @@ function NeedHead({ need, eyebrow, title }: { need: Exclude<NeedId, "unsure">; e
   );
 }
 
-function SummaryCard({ title, tone, icon, onEdit, children }: { title: string; tone?: string; icon?: ReactNode; onEdit: () => void; children: ReactNode }) {
-  return (
-    <li className="rounded-2xl border border-line bg-white/95 p-4 shadow-[0_10px_28px_-18px_rgba(7,50,101,.35)]">
-      <div className="mb-2 flex items-center gap-3">
-        {icon && tone
-          ? <span aria-hidden className={`bz-tile is-${tone} !w-10 shrink-0`}><svg viewBox="0 0 24 24">{icon}</svg></span>
-          : <span aria-hidden className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.8rem] bg-green-50 text-green-700"><Doc width={22} height={22} /></span>}
-        <p className="flex-1 font-bold leading-tight text-navy-900">{title}</p>
-        <button type="button" onClick={onEdit} className="min-h-10 rounded-full px-3 text-sm font-semibold text-green-700 underline-offset-2 hover:bg-green-50 hover:underline">
-          {Q.summary.edit}<span className="sr-only"> {title}</span>
-        </button>
-      </div>
-      <ul className="space-y-1.5">{children}</ul>
-    </li>
-  );
-}
 
-function Line({ children }: { children: ReactNode }) {
-  return (
-    <li className="flex gap-2 text-[0.93rem] leading-snug text-ink/85">
-      <Check aria-hidden width={16} height={16} strokeWidth={3} className="mt-0.5 shrink-0 text-green-600" />
-      <span className="min-w-0 break-words">{children}</span>
-    </li>
-  );
-}

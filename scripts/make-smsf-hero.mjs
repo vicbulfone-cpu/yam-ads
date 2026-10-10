@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v28-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v30-1983.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
@@ -144,6 +144,21 @@ for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
   const a8 = Buffer.from(alpha.map((v) => Math.round(v * 255)));
   const soft = await sharp(a8, { raw: { width: W, height: H, channels: 1 } }).blur(EDGE_SOFT).extractChannel(0).raw().toBuffer();
   for (let i = 0; i < W * H; i++) { const x = i % W, y = (i / W) | 0; if (x >= hullLeft[y]) continue; alpha[i] = Math.max(alpha[i], Math.min(1, (soft[i] / 255) * 1.15)); }
+}
+// "-v29"/"-v30" (owner, 10 Oct 2026: "make entire sky in smsf hero pic same colour as sky in home hero pic, before fade"): before the fade,
+// the whole sky (everything above the horizon, row 554; the sea is unchanged) is made the home hero's flat sky blue (HOME_SKY,
+// measured from home-hq-v6). Each pixel moves by (HOME_SKY - its sky colour) times its share of sky (ALPHA), so the clouds keep
+// their shading, and the hair, mast and ropes keep their outline over the new blue. The fade then works from that blue.
+const HOME_SKY = [117, 204, 247];
+for (let y = 0; y <= HORIZON; y++) {
+  const share = y < HORIZON ? 1 : 0.5; // the horizon row is half sky, half sea
+  for (let x = 0; x < W; x++) {
+    const i = y * W + x, a = alpha[i] * share;
+    for (let c = 0; c < 3; c++) {
+      if (a > 0) px[i * 3 + c] = Math.max(0, Math.min(255, Math.round(px[i * 3 + c] + (HOME_SKY[c] - skyC[i * 3 + c]) * a)));
+      skyC[i * 3 + c] += (HOME_SKY[c] - skyC[i * 3 + c]) * share;
+    }
+  }
 }
 if (process.env.SHOW_MASK) await sharp(Buffer.from(alpha.map((v) => Math.round(v * 255))), { raw: { width: W, height: H, channels: 1 } }).png().toFile(process.env.SHOW_MASK);
 // the fade: nothing at the right margin, building evenly to LEFT at the left margin (strength = LEFT * (1 - x) ^ CURVE)

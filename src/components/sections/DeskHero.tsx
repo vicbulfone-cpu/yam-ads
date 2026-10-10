@@ -14,6 +14,7 @@ import MatchCard, { type MatchCardData } from "./MatchCard";
 import MatchFitScript from "./MatchFitScript";
 import HeroPoints from "./HeroPoints";
 import HomeStepsFit from "./HomeStepsFit";
+import HeroCtaCentre from "./HeroCtaCentre";
 import { ArrowRight } from "../ui/Icons";
 
 export type DeskHeroHeadline = { before: string; green: string; after?: string; sub?: string; greenOnOwnLine?: boolean };
@@ -168,6 +169,8 @@ export default function DeskHero({
         )}
       </div>
       {bar && <div className="hero-bar">{bar}</div>}
+      {/* phones (home page): the button and its note centred between the headline and the line under it (owner, 10 Oct 2026) */}
+      {phoneCta && <HeroCtaCentre />}
     </section>
   );
 }
