@@ -5,6 +5,7 @@ import { ArrowRight as ArrowRightIcon } from "../ui/Icons";
 import { ABOUT_POPUP } from "@/content/about-popup";
 import HeroGap from "./HeroGap";
 import StartBar from "./StartBar";
+import MapPinPulse from "./MapPinPulse";
 
 /**
  * Home page, straight under the hero (owner's "example 1" picture, 5 Oct 2026):
@@ -62,7 +63,8 @@ const Eyebrow = ({ children }: { children: string }) => (
 /** `startHref`: where the Start buttons go (ad pages pass their own match box, so ad leads stay with the ad questionnaire). */
 /** `bar`: own words for the navy bar under the steps (owner, 9 Oct 2026: the personal tax ad page has its own) */
 /** `steps`: own steps in place of the photo steps (owner, 9 Oct 2026: the personal tax ad page's icon steps) */
-export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false, steps }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean; steps?: React.ReactNode }) {
+/** `mapPicture`: the network map (with its "lights up" animation) in place of the tradie photo (owner, 10 Oct 2026: home page only) */
+export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false, steps, mapPicture = false }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean; steps?: React.ReactNode; mapPicture?: boolean }) {
   return (
     <section aria-labelledby="home-match-intro" className="relative overflow-hidden bg-white pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]">
       {/* starts 0.5cm lower than the usual 2.5cm under the hero (owner, 5 Oct 2026: 2cm lower, then 1.5cm back up);
@@ -165,26 +167,49 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
           {/* owner, 6 Oct 2026: photo (and the bar on it) 1cm lower; everything below follows */}
           {/* owner, 7 Oct 2026: laptops/desktops get a taller frame (1.5:1 instead of 1.95:1) so the photo is as tall as the longer words */}
           {/* phones (owner, 8 Oct 2026): the tradie picture 3cm higher (1cm space, now -2cm), closing the gap above it; the words stay in front */}
-          <div className="relative -mx-[var(--gutter)] mt-[1cm] max-md:mt-[-2cm] aspect-[941/1672] md:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:-mr-[7.5vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm]">
-            {/* phones (owner, 7 Oct 2026): the owner's "home page tradie" picture, tall, with the handwriting and the navy
-                badge already drawn into it (so the page's own note and badge below are hidden on phones) */}
-            <Image
-              src="/images/home/tradie-mobile-v2.webp"
-              alt="Real people. Local accountants. One local accountant, matched to your needs: a smiling tradesman holding a drill and tool bag beside his ute"
-              fill
-              sizes="100vw"
-              className="object-cover md:hidden"
-            />
-            {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo, 3cm to the right (1.8cm, then 1.2cm more; the note and badge stay put) */}
-            <Image
-              src="/images/home/tradie-ute-driveway.webp"
-              alt="Smiling tradesman holding a drill and tool bag beside his ute in front of his garage workshop"
-              fill
-              sizes="(min-width: 1024px) 60vw, 100vw"
-              className="intro-photo intro-photo-tall hidden object-cover object-[50%_6%] md:block md:translate-x-[3cm] lg:object-contain lg:object-right"
-            />
-            {/* laptops/desktops: the white veil that fades the photo's left side into the words (globals.css .intro-photo-veil) */}
-            <div aria-hidden className="intro-photo-veil hidden lg:block md:translate-x-[3cm]" />
+          <div className={`relative -mx-[var(--gutter)] mt-[1cm] md:aspect-[3/2] lg:self-end lg:-ml-[6vw] lg:aspect-[1.5/1] lg:-translate-x-[0.5cm] ${mapPicture ? "hmi-map-frame aspect-[4697/3548] lg:mr-0" : "max-md:mt-[-2cm] aspect-[941/1672] lg:-mr-[7.5vw]"}`}>
+            {mapPicture ? (
+              /* home page (owner, 10 Oct 2026): the network map in place of the tradie, on every screen size. It sits in a box of
+                 its own shape, kept to the right, so the animation's pins (globals.css .hmi-map) line up with the map's pins;
+                 its white background runs into the page's white */
+              <div className="hmi-map absolute inset-y-0 right-0 aspect-[4697/3548] max-w-full">
+                <Image
+                  src="/images/home/network-map-1600.webp"
+                  alt="Map of Australia joined by a green network of local accountants, with a green tick pin marking your match"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-contain"
+                />
+                {/* only the green tick pin lights up (owner, 10 Oct 2026): once the whole map is on screen it pulses once
+                    (1s), then stops (MapPinPulse.tsx); its place is % of the map */}
+                <MapPinPulse x={61.1} y={38.5} />
+              </div>
+            ) : (
+              <>
+                {/* phones (owner, 7 Oct 2026): the owner's "home page tradie" picture, tall, with the handwriting and the navy
+                    badge already drawn into it (so the page's own note and badge below are hidden on phones) */}
+                <Image
+                  src="/images/home/tradie-mobile-v2.webp"
+                  alt="Real people. Local accountants. One local accountant, matched to your needs: a smiling tradesman holding a drill and tool bag beside his ute"
+                  fill
+                  sizes="100vw"
+                  className="object-cover md:hidden"
+                />
+                {/* tablets and up (owner, 7 Oct 2026): the owner's new "tradie" photo, 3cm to the right (1.8cm, then 1.2cm more; the note and badge stay put) */}
+                <Image
+                  src="/images/home/tradie-ute-driveway-v2.webp"
+                  alt="Smiling tradesman holding a drill and tool bag beside his ute in front of his garage workshop"
+                  fill
+                  sizes="(min-width: 1024px) 60vw, 100vw"
+                  className="intro-photo intro-photo-tall hidden object-cover object-[50%_6%] md:block md:translate-x-[3cm] lg:object-contain lg:object-right"
+                />
+                {/* laptops/desktops: the white veil that fades the photo's left side into the words (globals.css .intro-photo-veil) */}
+                <div aria-hidden className="intro-photo-veil hidden lg:block md:translate-x-[3cm]" />
+              </>
+            )}
+            {/* the handwritten note, its arrow and the navy badge go with the tradie only: the home page's map has none
+                (owner, 10 Oct 2026) */}
+            {!mapPicture && <>
             {/* handwritten note with a curved arrow pointing at the badge */}
             {/* laptops/desktops: nudged 0.5cm right and 0.5cm down (owner, 5 Oct 2026) */}
             {/* owner, 7 Oct 2026: the note, its arrow and the navy badge a further 5mm right; then (tablets and up) all three
@@ -219,6 +244,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
                 </span>
               </p>
             </div>
+            </>}
           </div>
         </div>
 

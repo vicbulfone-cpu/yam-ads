@@ -865,7 +865,9 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* city pages: two lines at 86% of the home size, so "Find a Vetted Accountant" is as wide as the home page's longest line */
 .desk-hero-h1.is-city { font-size: calc(clamp(1.9rem, 8.6vw, 3.4rem) * 0.86); padding-bottom: 0.32em; }
 /* home headline drawn at 80% of its size at every screen width (owner, 8 Oct 2026) */
-.desk-hero-h1.is-home > span { font-size: 0.8em; }
+.desk-hero-h1.is-home > span { font-size: calc(0.8em * 1.2); } /* then 120% of that (owner, 10 Oct 2026) */
+/* ...but on big screens no larger than 60px, so "near you?" always ends before the match box (owner, 10 Oct 2026) */
+@media (min-width: 1700px) { .desk-hero-h1.is-home > span { font-size: min(calc(0.8em * 1.2), 60px); } }
 /* home hero: supporting line and the match box heading drawn at 80% of their size (owner, 8 Oct 2026) */
 .desk-hero.is-home :is(.desk-hero-sub, .mc-head) { zoom: 0.8; }
 /* the three points: 80%, then 120% of that, then 90% of that (owner, 8 Oct 2026) */
@@ -1554,8 +1556,7 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* home page hero: the three steps 3mm higher on every screen size (owner, 8 Oct 2026); "translate" adds to the transforms above */
 .home-steps { translate: 0 -3mm; }
 /* home page: the steps line 8mm lower at every screen size (owner, 8 Oct 2026); divided by its 0.88 zoom so it moves a true 8mm */
-.desk-hero.is-home .home-steps { translate: 0 calc(-3mm + 8mm / 0.88); }
-/* home page hero: the three trust points 3mm higher on every screen size (owner, 8 Oct 2026) */
+.desk-hero.is-home .home-steps { translate: 0 calc(-3mm + 8mm / 0.88); }/* home page hero: the three trust points 3mm higher on every screen size (owner, 8 Oct 2026) */
 .zz-phone .desk-hero-points { translate: 0 -3mm; }
 /* home page: the three points 1.2cm lower, then 3.5mm back up (owner, 8 Oct 2026); divided by their zoom so the move is true to size */
 .desk-hero.is-home .desk-hero-points { translate: 0 calc(-3mm + (12mm - 3.5mm) / 0.864); }
@@ -1886,6 +1887,10 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .sel-cell:hover .si-tick { animation: si-draw2 .5s ease-out 1s both !important; }
   .sel-cell:hover .si-dot { animation: si-dot2 .9s ease-in-out calc(var(--k) * 150ms) 2 both !important; }
 }
+/* ...all of that switched off (owner, 10 Oct 2026: no animation on the "Vetted partner network" icons, site wide): the
+   icons stay still on arrival and on hover, and no longer lift, grow or tilt on hover; the tile's hover colours stay */
+.sel-checks .si, .sel-checks .si *, .sel-checks .sel-cell:hover .si, .sel-checks .sel-cell:hover .si * { animation: none !important; }
+.sel-checks .sel-cell:not(.sel-cell-cta):hover .sel-icon { transform: none !important; }
 @keyframes si-scan { 0% { opacity: 0; transform: translateY(0); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(11px); } }
 @keyframes si-scan2 { 0% { opacity: 0; transform: translateY(0); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(11px); } }
 @keyframes si-turn { from { transform: rotate(-120deg) scale(.6); opacity: 0; } to { transform: none; opacity: 1; } }
@@ -2071,3 +2076,18 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 @media (max-width: 767px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 21px); } }
 @media (min-width: 768px) and (max-width: 1023px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 37px); } }
 @media (min-width: 1024px) and (max-width: 1279px) { .hero-veil { --veil-inset: -1.1rem -1.4rem calc(-1.6rem - 17px); } }
+
+/* Home page "Meet Your Accountant Match": the network map in place of the tradie (owner, 10 Oct 2026; HomeMatchIntro
+   mapPicture). Only the green tick pin lights up, once the whole map is on screen (MapPinPulse.tsx adds .is-on): a green
+   ring grows out of the pin and fades, one 1s pulse, then it stops (owner, 10 Oct 2026: was pulse, wait, pulse). Nothing moves at all for visitors who ask for reduced motion. */
+.hmi-map-anim { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.hmi-map-pulse {
+  position: absolute; width: 7%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; opacity: 0;
+  border: 3px solid #22d36b; box-shadow: 0 0 12px rgba(34, 211, 107, 0.8), inset 0 0 8px rgba(34, 211, 107, 0.6);
+}
+.hmi-map-pulse.is-on { animation: hmi-map-pulse 1s ease-out forwards; }
+@keyframes hmi-map-pulse { 0% { transform: scale(0.5); opacity: 1; } 55% { opacity: 0.85; } 100% { transform: scale(2.6); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hmi-map-anim { display: none; } }
+/* the map 2cm higher and 1.5cm to the right on laptops and desktops (owner, 10 Oct 2026, noc); moved on its own, so the
+   words, the navy bar and the space around them stay put */
+@media (min-width: 1024px) { .hmi-map { translate: 1.5cm -2cm; } }

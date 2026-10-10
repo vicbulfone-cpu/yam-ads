@@ -61,7 +61,9 @@ export const homeDeskHeroNoArrowPicture = { src: "/images/hero/hero-no-arrow.png
 export const homePageHeroPicture = { src: "/images/hero/home-v31-1983.webp", width: 1983, height: 793 };
 /** The same picture with the view through the window (sky, skyline, trees) slightly lighter — home page only (owner, 8 Oct 2026).
  *  Built by scripts/make-home-hero.cjs; the ad pages keep homePageHeroPicture. */
-export const homeHeroLightPicture = { src: "/images/hero/home-light-v5-1983.webp", width: 1983, height: 793 };
+/** (owner, 10 Oct 2026, noc): now the owner's "heorz.png" from "hero section/ad landing pages/personal tax", framed
+ *  the same way (scripts/make-home-hero-z.cjs; without the lighter view, whose mask fits only the old photo). */
+export const homeHeroLightPicture = { src: "/images/hero/home-z-v1-1983.webp", width: 1983, height: 793 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
@@ -69,15 +71,18 @@ export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", 
  *  and the phone/tablet photo (sky over the skyline). Built by scripts/make-personal-hero.mjs from the owner's files in
  *  "hero section/ad landing pages/personal tax". */
 export const personalHeroPictures = {
-  desktop: { src: "/images/hero/personal-desk-v5-1983.webp", width: 1983, height: 793 },
+  desktop: { src: "/images/hero/personal-desk-v6-1983.webp", width: 1983, height: 793 },
   mobile: { src: "/images/hero/personal-mobile-941.webp", width: 941, height: 1672 },
 };
 /** Business ad page (/ad-1) desktop hero photo (owner, 9 Oct 2026: "home hero desktop" in "hero section/ad landing
  *  pages/business tax"; built by scripts/make-business-hero.mjs). Desktops (1200px+) only. */
-export const businessHeroDesktop = { src: "/images/hero/business-desk-1902.webp", width: 1902, height: 827 };
-/** SMSF ad page (/ad-3) desktop hero photo (owner, 9 Oct 2026: "Untitled" in "hero section/ad landing pages/smsf";
+export const businessHeroDesktop = { src: "/images/hero/business-desk-v2-1902.webp", width: 1902, height: 827 };
+/** SMSF ad page (/ad-3) desktop hero photo (owner, 10 Oct 2026: "smsf hero1.png" in "hero section/ad landing pages/smsf";
  *  built by scripts/make-smsf-hero.mjs). Desktops (1200px+) only. */
-export const smsfHeroDesktop = { src: "/images/hero/smsf-desk-v3-1024.webp", width: 1024, height: 496 };
+export const smsfHeroDesktop = { src: "/images/hero/smsf-desk-v16-1983.webp", width: 1983, height: 793 };
+/** Registration ad page (/ad-4) desktop hero photo (owner, 10 Oct 2026: "registration hero" in "hero section/ad
+ *  landing pages/registration"; built by scripts/make-registration-hero.mjs). Desktops (1200px+) only. */
+export const registrationHeroDesktop = { src: "/images/hero/registration-desk-v5-1983.webp", width: 1983, height: 793 };
 
 /** Earlier hero pictures (no longer shown on the home or city pages; kept so they can be reused). */
 export const heroPicture = heroByNumber(3);
