@@ -48,7 +48,9 @@ function placeWordsGlow(box: Element) {
   // the owner's "example" (10 Oct 2026): a broad haze from the photo's left edge (no edge of its own there) and from the top
   // of the photo, strong behind the words, fading gradually to the right from about halfway across them to the match box
   const fl = 0, ft = 0;
-  const l = Math.min(p.left, w.left), t = Math.max(p.top, w.top);
+  // the sky carried up above the photo (its ::before, globals.css) counts as photo too
+  const sky = photo instanceof HTMLElement ? parseFloat(getComputedStyle(photo, "::before").height) || 0 : 0;
+  const l = Math.min(p.left, w.left), t = Math.max(p.top - sky, w.top);
   const r = Math.max(right, box.getBoundingClientRect().left - 8);
   const fr = r - (left + (right - left) * 0.55);
   // the highest building under the words and the fade to their right (the far-left strip, beyond the words, is left out)
@@ -56,7 +58,9 @@ function placeWordsGlow(box: Element) {
   const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - 2 * CM), strip(r) + 1));
   // full strength down to the middle of the steps line, then fading out just above the buildings (at most 2cm)
   const fadeFrom = lastLine.top + lastLine.height / 2;
-  const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM));
+  // (the photo moved down by the added sky, owner 10 Oct 2026: the glow still fades out just above the buildings, over the
+  // extra sky too, so it has no edge of its own in open sky)
+  const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM + sky));
   wash.style.setProperty("--glow-l", `${l - w.left}px`);
   wash.style.setProperty("--glow-t", `${t - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);

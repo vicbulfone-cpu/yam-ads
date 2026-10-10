@@ -2229,8 +2229,8 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
   main.home-v2 > .desk-hero.zz-phone .desk-hero-wash {
     /* the blue sky only, not the city and suburbs (owner, 10 Oct 2026): full strength down the sky, gone just above the tallest
        towers. The photo's top sits 5.2cm + 2.2vw down this frame and it is 39.99vw tall; the towers start 60% down it. */
-    -webkit-mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
-    mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
+    -webkit-mask-image: linear-gradient(180deg, #000 calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.58));
+    mask-image: linear-gradient(180deg, #000 calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 1.5cm + 2.2vw + 39.99vw * 0.58)); /* + 1.5cm: the photo is 1.5cm lower (below) */
     background:
       linear-gradient(90deg, rgba(255,255,255,.5) 0, rgba(255,255,255,.44) calc(var(--hero-box-left, 55vw) * 0.8),
         rgba(255,255,255,.24) calc(var(--hero-box-left, 55vw) * 0.93), rgba(255,255,255,0) var(--hero-box-left, 55vw)),
@@ -2317,4 +2317,15 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 .desk-hero.is-home .mc-head .mc-map {
   width: calc(clamp(4.2rem, calc(var(--u) * 15), 7rem) * 1.4);
   right: calc(clamp(0.7rem, calc(var(--u) * 3.2), 1.5rem) + 1cm); top: 50%; translate: 0 -50%; /* then 1cm to the left (owner, 10 Oct 2026) */
+}
+
+/* Home hero photo 1.5cm lower on laptops and desktops (owner, 10 Oct 2026), the sky carried up over the 1.5cm it leaves above it:
+   a thin strip of the photo's own top sky (scripts/make-home-hero-sky.cjs) stretched to fill it. Its bottom 1.5cm goes behind the
+   blue bar. The sky fade above follows it down; the glow behind the words follows it by itself (HeroGap.tsx). */
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer) { translate: 0 1.5cm; }
+  main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer)::before {
+    content: ""; position: absolute; left: 0; right: 0; bottom: calc(100% - 1px); height: calc(1.5cm + 1px); pointer-events: none;
+    background: url("/images/hero/home-hq-sky-strip.webp?v=2") center / 100% 100% no-repeat;
+  }
 }
