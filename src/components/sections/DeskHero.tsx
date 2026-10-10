@@ -110,6 +110,9 @@ export default function DeskHero({
               ))}
             </nav>
           )}
+          {/* home page: one slow, gradual white glow around the headline, line, points and steps (owner, 10 Oct 2026, noc;
+              ".hero-words-glow" in globals.css); other pages' heroes are unchanged */}
+          <div className={steps ? "hero-words-glow" : "contents"}>
           <h1 className={`desk-hero-h1${headline.greenOnOwnLine ? " is-city" : " is-home"}`}>
             {headline.greenOnOwnLine ? (
               <>
@@ -139,6 +142,7 @@ export default function DeskHero({
               <HomeStepsFit />
             </div>
           )}
+          </div>
         </div>
 
         {/* 2 — the match box (desktop: right column, running over the white strip) */}

@@ -2251,3 +2251,14 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 @media (min-width: 1200px) and (max-width: 1349px) {
   .desk-hero.is-home .desk-hero-points { zoom: calc(0.8 * 0.9); translate: 0 calc(-3mm + (12mm - 3.5mm) / 0.72); }
 }
+
+/* Home hero (owner, 10 Oct 2026, noc): a slow, gradual white glow around the headline, the line under it, the three points and
+   the steps (DeskHero.tsx wraps them in ".hero-words-glow"; not ".hero-glow", an older animated class), strongest behind the words and fading out softly well past them on every
+   side. It reaches lower than the block because the points and steps are drawn lower than their place (their translate rules).
+   It takes over from the boxy veil behind the points and steps. */
+.hero-words-glow { position: relative; isolation: isolate; }
+.hero-words-glow::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; inset: -3.5rem -6rem -5.5rem -6rem;
+  background: radial-gradient(closest-side, rgba(255,255,255,.72) 0%, rgba(255,255,255,.6) 40%, rgba(255,255,255,.32) 70%, rgba(255,255,255,.1) 88%, rgba(255,255,255,0) 100%);
+}
+.desk-hero.is-home .hero-words-glow .hero-veil::before { content: none; }
