@@ -1,6 +1,8 @@
-// Receives a finished questionnaire, checks it, gives it a leadId and passes it to GoHighLevel's inbound webhook
-// (GHL_INBOUND_WEBHOOK_URL). With no webhook set, or MOCK_GHL=true, it only logs the lead so the flow works locally.
+// Receives a finished questionnaire, checks it, gives it a leadId and passes it to GoHighLevel: through the sub-account's
+// Private Integration token (GHL_PRIVATE_TOKEN + GHL_LOCATION_ID, src/lib/ghl.ts) when set, otherwise its inbound webhook
+// (GHL_INBOUND_WEBHOOK_URL). With neither, or MOCK_GHL=true, it only logs the lead so the flow works locally.
 // Spam protection: a hidden "website" field that people never fill in, plus a per-visitor limit per minute.
+import { ghlConfigured, sendLeadToGhl } from "@/lib/ghl";
 
 const LIMIT = Number(process.env.LEAD_RATE_LIMIT_PER_MINUTE || 5);
 const hits = new Map<string, number[]>(); // visitor address → times of recent submissions (per server instance)
@@ -58,7 +60,7 @@ export async function POST(request: Request) {
     workMode: str(body.workMode, 40),
     emailMatchDetails: body.emailMatchDetails === true,
     matchPageUrl: str(body.matchPageUrl, 300),
-    leadSource: paid ? "Paid" : "Organic",
+    leadSource: (paid ? "Paid" : "Organic") as "Paid" | "Organic",
     adType: str(body.adType, 40),
     // which questionnaire was filled in (business, personal, smsf, registration), whether from an ad page or the main site
     questionnaire: str(body.questionnaire, 40),
@@ -71,6 +73,18 @@ export async function POST(request: Request) {
     visitor: body.visitor ?? null,
     submittedAt: new Date().toISOString(),
   };
+
+  // GHL sub-account through its Private Integration token (owner, 10 Oct 2026); the inbound webhook below stays as a fallback
+  if (ghlConfigured() && process.env.MOCK_GHL !== "true") {
+    try {
+      const { contactId, opportunityId } = await sendLeadToGhl(lead);
+      console.log("[lead] sent to GHL:", JSON.stringify({ leadId, contactId, opportunityId, leadSource: lead.leadSource }));
+    } catch (err) {
+      console.error("[lead] could not send to GHL:", err);
+      return Response.json({ ok: false, error: "upstream" }, { status: 502 });
+    }
+    return Response.json({ ok: true, leadId });
+  }
 
   const webhook = process.env.GHL_INBOUND_WEBHOOK_URL;
   if (!webhook || process.env.MOCK_GHL === "true") {
