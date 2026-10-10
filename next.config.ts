@@ -12,7 +12,14 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["192.168.*.*", "10.*.*.*"],
 
   // Picture quality levels the site may serve: 75 for ordinary pictures, 85 for the phone hero, 92 for the hero photograph (kept sharp).
-  images: { qualities: [75, 85, 92] },
+  // Page speed (owner, 11 Oct 2026, Lighthouse): AVIF first (much smaller at the same look; WebP for browsers without
+  // it), and a 2560px width between 2048 and 3840 so phones showing the home hero at twice the screen width no longer
+  // jump to the 3840px file (337 KB) when 2560px is plenty.
+  images: {
+    qualities: [75, 85, 92],
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 2560, 3840],
+  },
 
   // Removed pages keep their old address working with a permanent redirect (listed in docs/plan.md).
   async redirects() {

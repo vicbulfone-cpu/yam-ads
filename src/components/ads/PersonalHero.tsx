@@ -29,6 +29,9 @@ export default function PersonalHero({ desktopPicture, hero }: { desktopPicture?
 
   return (
     <section className="pth" aria-labelledby="pth-title">
+      {/* page speed (owner, 11 Oct 2026, Lighthouse): phones fetch the hero photo first. The img's fetchPriority below is
+          lost in the production build, so a preload for phones only (desktop photos are not wasted on phones) */}
+      <link rel="preload" as="image" imageSrcSet={mobile} imageSizes="100vw" media="(max-width: 767px)" fetchPriority="high" />
       <picture className="pth-pic">
         {wide && <source media="(min-width: 1200px)" srcSet={wide} />}
         <source media="(min-width: 768px)" srcSet={desktop} />

@@ -12,6 +12,10 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
   - Header pill "Enquiry sent". The sample accountant is no longer shown; `BizMatchPage.tsx` is kept for when GHL sends the real match back.
 - **Contact time is "within 2 hours" site-wide** (owner): the FAQ answer (home and ad pages) and the home "how it works" step 3. "Call for immediate assistance" removed (no phone number is shown).
 
+- **Page speed** (Lighthouse on the live site): desktop home 99. Mobile 81 to 85, because the hero photo appears after about 4 s.
+  - Fixes: AVIF images site-wide plus a 2560px image width (`next.config.ts`), and the ad pages' phone hero photo preloaded first (`PersonalHero.tsx`).
+  - Slowness the owner saw was largely their own internet connection at the time.
+
 ### Owner decisions
 - Old GHL site addresses: let Google clear them out (no redirects).
 - Promised contact time: usually within 2 hours. GHL workflows should match this, and send the copy email when "email me" is ticked.
