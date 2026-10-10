@@ -6,7 +6,7 @@
 // rim shows round the skyline. Everything below the sky is untouched. Safe to re-run.
 //   node scripts/make-home-hero-flat-sky.cjs
 const sharp = require('sharp');
-const SRC = 'public/images/hero/home-hq-v3-3966.webp', OUT = 'public/images/hero/home-hq-v5-3966.webp';
+const SRC = 'public/images/hero/home-hq-v3-3966.webp', OUT = 'public/images/hero/home-hq-v6-3966.webp';
 const TARGET = [117, 203, 247];
 const STEP = 7; // largest colour change between neighbouring sky pixels (sum of R, G, B differences, slightly smoothed copy)
 const LOW = Math.round(0.76 * 1586); // never below this row (just under the lowest point of the horizon)
@@ -53,6 +53,30 @@ const LOW = Math.round(0.76 * 1586); // never below this row (just under the low
     for (const [p, s] of next) {
       has[p] = 1;
       for (let c = 0; c < 3; c++) { shift[p * 3 + c] = s[c]; out[p * 3 + c] = Math.max(0, Math.min(255, Math.round(img[p * 3 + c] + s[c] * weight))); }
+    }
+  }
+  // "-v6" (owner, 10 Oct 2026: the city towers above "Enter your postcode" and "Get matched…" had "very square tops"): against the
+  // flat sky their outlines were hard, cut-out edges. Distant buildings soften into the haze at their edges, so every building
+  // pixel within EDGE px of the sky (above the river, y < RIVER) is blended a little toward the sky colour, most right at the
+  // edge and easing to nothing EDGE px in (strength EDGE_MIX at the edge, smooth curve), and the very edge row is softened.
+  const EDGE = 9, EDGE_MIX = 0.5, RIVER = 1185;
+  const dist = new Uint8Array(N).fill(255);
+  let front = [];
+  for (let p = 0; p < N; p++) if (sky[p]) { dist[p] = 0; front.push(p); }
+  for (let d = 1; d <= EDGE && front.length; d++) {
+    const next = [];
+    for (const p of front) { const x = p % W; for (const q of [p - W, p + W, x > 0 ? p - 1 : -1, x < W - 1 ? p + 1 : -1]) if (q >= 0 && q < N && dist[q] === 255) { dist[q] = d; next.push(q); } }
+    front = next;
+  }
+  const edgeSoft = await sharp(out, { raw: { width: W, height: H, channels: 3 } }).blur(1.4).raw().toBuffer();
+  for (let p = 0; p < N; p++) {
+    const d = dist[p];
+    if (d === 0 || d > EDGE || Math.floor(p / W) >= RIVER) continue;
+    const t = 1 - (d - 1) / EDGE, k = EDGE_MIX * t * t * (3 - 2 * t);
+    const soft = d <= 2 ? 0.5 : 0; // the outermost pixels also take some of a softened copy, so the outline is not a hard cut
+    for (let c = 0; c < 3; c++) {
+      const v = out[p * 3 + c] * (1 - soft) + edgeSoft[p * 3 + c] * soft;
+      out[p * 3 + c] = Math.max(0, Math.min(255, Math.round(v + (TARGET[c] - v) * k)));
     }
   }
   let count = 0, lowest = 0;
