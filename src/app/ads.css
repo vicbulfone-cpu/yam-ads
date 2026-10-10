@@ -1375,7 +1375,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* /ad-1 desktops: its longer business line 3.5% smaller, just enough to stay on two lines (owner, 9 Oct 2026) */
 @media (min-width: 1200px) { .pz-biz .pth-sub { font-size: calc(var(--pad-w) / 37.5 * 1.2 * 0.965); } }
 /* /ad-1 desktops: the three trust points 5mm lower than on the other ad pages (owner, 9 Oct 2026, noc) */
-@media (min-width: 1200px) { .pz-biz .pth-veil .pth-points { top: calc(2mm + 3mm + 5mm); } }
+@media (min-width: 1200px) { .pz-biz .pth-veil .pth-points { top: calc(2mm + 3mm); } } /* back up 5mm, level with /ad-2 (owner, 10 Oct 2026) */
 /* /ad-1 desktops: a lighter white wash on the left (owner, 10 Oct 2026). The business photo is already pale on its left
    (sun haze), so the /ad-2 wash turned it almost white; this one leaves it looking like /ad-2, with the detail showing.
    The fades behind the words (.pth-veil, .pth-sub) are unchanged. */
@@ -1649,7 +1649,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
    Here they are one: the line's fade carries straight on down past the points (12.8rem lower: the gap between the two, the same
    at every desktop width) with the same long soft edges, and the points' own fade is not drawn. */
 @media (min-width: 1200px) {
-  .pz-page.pz-biz .pth-sub::before { bottom: calc(-4.7rem - 12.8rem); }
+  .pz-page.pz-biz .pth-sub::before { bottom: calc(-4.7rem - 12.8rem + 5mm); } /* the points 5mm higher since (owner, 10 Oct 2026) */
   .pz-page.pz-biz .pth-veil::before { content: none; }
   .pz-page.pz-biz .pth-veil { z-index: 2; } /* the points above that fade (the text block it belongs to sits over the photo, 1) */
 }
