@@ -2222,12 +2222,15 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 @media (min-width: 1200px) { .home-bar-gap--fit :is(.sb-title, .sb-sub) { white-space: nowrap; } } /* one line, as the same bar on /ad-2 */
 
 /* Home hero, laptops and desktops (owner, 10 Oct 2026): the ad pages' gradual white fade (".pth::before" in ads.css), running from
-   the left edge of the photo to the left edge of the match box (--hero-box-left, measured by HeroGap.tsx; 55% until then), laid
+   the left edge of the photo to the left edge of the match box, over the sky only (--hero-box-left, measured by HeroGap.tsx; 55% until then), laid
    over the soft tint above. The ad pages' stops, scaled so the fade is gone exactly at the box; about 60% as strong as
    theirs (owner, 10 Oct 2026: "less intense fade"). */
 @media (min-width: 1024px) {
   main.home-v2 > .desk-hero.zz-phone .desk-hero-wash {
-    bottom: -2cm; /* down past the photo's foot (the frame stops a few pixels short of it); the blue bar covers the rest */
+    /* the blue sky only, not the city and suburbs (owner, 10 Oct 2026): full strength down the sky, gone just above the tallest
+       towers. The photo's top sits 5.2cm + 2.2vw down this frame and it is 39.99vw tall; the towers start 60% down it. */
+    -webkit-mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
+    mask-image: linear-gradient(180deg, #000 calc(5.2cm + 2.2vw + 39.99vw * 0.42), transparent calc(5.2cm + 2.2vw + 39.99vw * 0.58));
     background:
       linear-gradient(90deg, rgba(255,255,255,.5) 0, rgba(255,255,255,.44) calc(var(--hero-box-left, 55vw) * 0.552),
         rgba(255,255,255,.24) calc(var(--hero-box-left, 55vw) * 0.793), rgba(255,255,255,0) var(--hero-box-left, 55vw)),
