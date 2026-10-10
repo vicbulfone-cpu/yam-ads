@@ -67,10 +67,14 @@ function placeWordsGlow(box: Element) {
   wash.style.setProperty("--glow-t", `${tp - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);
   wash.style.setProperty("--glow-h", `${b - tp}px`);
-  wash.style.setProperty("--glow-fl", `${ol - pl}px`);
-  wash.style.setProperty("--glow-ft", `${ot - pt}px`);
-  wash.style.setProperty("--glow-fr", `${Math.max(8, r - right - pr)}px`);
-  wash.style.setProperty("--glow-fb", `${Math.max(8, b - bottom - pb)}px`);
+  // owner, 10 Oct 2026 ("fade stops abruptly, more gradual in all areas"): each edge's fade also carries on inwards over the
+  // words (up to 2.5cm, never more than 40% of the words' width/height), so where the room outside is short (the match box,
+  // the top of the sky, the buildings) the fade is still long and gentle
+  const inX = Math.min(2.5 * CM, (right - left) * 0.4), inY = Math.min(2.5 * CM, (bottom - top) * 0.4);
+  wash.style.setProperty("--glow-fl", `${ol - pl + inX}px`);
+  wash.style.setProperty("--glow-ft", `${ot - pt + inY}px`);
+  wash.style.setProperty("--glow-fr", `${Math.max(8, r - right - pr) + inX}px`);
+  wash.style.setProperty("--glow-fb", `${Math.max(8, b - bottom - pb) + inY}px`);
 }
 
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
