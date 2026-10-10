@@ -1363,7 +1363,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 /* /ad-3 desktops: the headline and the line under it 5mm higher than on the other ad pages (owner, 9 Oct 2026, noc) */
 @media (min-width: 1200px) { .pz-smsf .pth-h1, .pz-smsf .pth-sub { translate: 0 -5mm; } }
 /* /ad-3 desktops: the hero button 3mm lower than on the other ad pages (owner, 9 Oct 2026) */
-@media (min-width: 1200px) { .pz-smsf .pth-cta { translate: 0 3mm; } }
+@media (min-width: 1200px) { .pz-smsf .pth-cta { translate: 0 calc(3mm + 4mm); } } /* then 4mm lower again (owner, 10 Oct 2026) */
 /* /ad-3 desktops: no fades at all over the photo (owner, 10 Oct 2026): no white wash on the left, and none of the soft
    white patches behind the words (the line under the headline, the points, the steps line and its last word) */
 @media (min-width: 1200px) {

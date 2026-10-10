@@ -1,5 +1,5 @@
 // SMSF ad page (/ad-3) desktop hero picture (owner, 9 Oct 2026; replaced twice the same day, "-v3"; 10 Oct 2026 "smsf hero"
-// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges); "-v23" rising faster from the right edge; "-v24"/"-v25" soft, exact edges round the people, mast and ropes: the owner's
+// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges); "-v23" rising faster from the right edge; "-v24"/"-v25" soft, exact edges round the people, mast and ropes; "-v26"/"-v27" made at full size (3966 x 1586) so the hair keeps its own detail, the couple's sharpening kept off their outline (it drew a dark ring round the heads): the owner's
 // picture from "hero section/ad landing pages/smsf". When the photo is taller than the hero frame, a 2.5:1 band is cut
 // from it (TOP: its top edge in the photo's pixels, just above the couple's heads; their feet stay in), then scaled to
 // 1983 x 793 and made into a WebP file in public/images/hero. The original is only read, never changed. Safe to re-run.
@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v25-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v27-3966.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
@@ -131,11 +131,30 @@ for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
   alpha[i] = al;
 }
 if (process.env.SHOW_MASK) await sharp(Buffer.from(alpha.map((v) => Math.round(v * 255))), { raw: { width: W, height: H, channels: 1 } }).png().toFile(process.env.SHOW_MASK);
-// the fade: nothing at the right margin, building evenly to LEFT at the left margin (strength = LEFT * (1 - x) ^ CURVE)
-const out = Buffer.from(px);
-for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
-  const i = y * W + x, k = LEFT * Math.pow(1 - x / (W - 1), CURVE) * alpha[i];
-  for (let c = 0; c < 3; c++) out[i * 3 + c] = Math.max(0, Math.min(255, Math.round(px[i * 3 + c] + (255 - skyC[i * 3 + c]) * k)));
+// "-v26" (owner, 10 Oct 2026: the tops of the heads looked "too smooth"): the picture itself is made at twice the frame's size
+// (S x 1983 by S x 793, from the original; next to its own 3884px width) so the hair keeps its fine natural edge, and the sharpening
+// of the couple is only blended in away from the sky (where ALPHA is 0), so it no longer draws a dark ring round their heads. The
+// fade worked out above (ALPHA and the clear-sky colour, in the 1983 x 793 frame) is scaled up smoothly to match.
+const S = 2, WS = W * S, HS = H * S;
+const hiBase = await sharp(src).extract({ left: 0, top: TOP, width: meta.width, height: bandH }).resize(WS, HS, { kernel: "lanczos3" }).removeAlpha().raw().toBuffer();
+// (sharp hands a one-channel picture back as three channels unless told otherwise, so one channel is taken back out)
+const up = async (buf, ch) => { const r = sharp(Buffer.from(buf), { raw: { width: W, height: H, channels: ch } }).resize(WS, HS, { kernel: "cubic" }); return (ch === 1 ? r.extractChannel(0) : r).raw().toBuffer(); };
+const alphaHi = await up(Uint8Array.from(alpha, (v) => Math.round(v * 255)), 1);
+const skyHi = await up(Uint8Array.from(skyC, (v) => Math.max(0, Math.min(255, Math.round(v)))), 3);
+const sharpHi = await sharp(hiBase, { raw: { width: WS, height: HS, channels: 3 } }).sharpen({ sigma: 1.1 * S, m1: 0.6, m2: 2.5 }).raw().toBuffer();
+// where the couple's sharpening may go: the COUPLE box (feathered), and only where there is no sky at all within a few pixels
+const keep = await sharp(Buffer.from(alphaHi), { raw: { width: WS, height: HS, channels: 1 } }).blur(3 * S).extractChannel(0).raw().toBuffer();
+const C = { l: COUPLE.left * S, t: COUPLE.top * S, r: (COUPLE.left + COUPLE.width) * S, b: (COUPLE.top + COUPLE.height) * S }, F = FEATHER * S;
+const out = Buffer.alloc(WS * HS * 3);
+for (let y = 0; y < HS; y++) for (let x = 0; x < WS; x++) {
+  const i = y * WS + x;
+  const edge = Math.max(0, Math.min(1, Math.min(x - C.l, C.r - x, y - C.t, C.b - y) / F));
+  const sh = AMOUNT * edge * edge * (3 - 2 * edge) * Math.max(0, 1 - keep[i] / 40);
+  const k = LEFT * Math.pow(1 - x / (WS - 1), CURVE) * (alphaHi[i] / 255);
+  for (let c = 0; c < 3; c++) {
+    const v = hiBase[i * 3 + c] + (sharpHi[i * 3 + c] - hiBase[i * 3 + c]) * sh;
+    out[i * 3 + c] = Math.max(0, Math.min(255, Math.round(v + (255 - skyHi[i * 3 + c]) * k)));
+  }
 }
-await sharp(out, { raw: { width: W, height: H, channels: 3 } }).webp({ quality: 80, effort: 6 }).toFile(dest);
+await sharp(out, { raw: { width: WS, height: HS, channels: 3 } }).webp({ quality: 90, smartSubsample: true, effort: 6 }).toFile(dest);
 console.log(path.relative(ROOT, dest), `${meta.width}x${meta.height}, band ${TOP}-${TOP + bandH}`, (fs.statSync(dest).size / 1024).toFixed(0) + " KB");

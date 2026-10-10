@@ -182,8 +182,8 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-contain"
                 />
-                {/* only the green tick pin lights up (owner, 10 Oct 2026): once the whole map is on screen it pulses once
-                    (1s), then stops (MapPinPulse.tsx); its place is % of the map */}
+                {/* only the green tick pin lights up (owner, 10 Oct 2026): once the whole map is on screen it pulses twice, 2s apart
+                    (1s each), then stops (MapPinPulse.tsx); its place is % of the map */}
                 <MapPinPulse x={61.1} y={38.5} />
               </div>
             ) : (

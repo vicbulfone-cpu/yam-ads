@@ -2075,8 +2075,18 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   position: absolute; width: 7%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; opacity: 0;
   border: 3px solid #22d36b; box-shadow: 0 0 12px rgba(34, 211, 107, 0.8), inset 0 0 8px rgba(34, 211, 107, 0.6);
 }
-.hmi-map-pulse.is-on { animation: hmi-map-pulse 1s ease-out forwards; }
-@keyframes hmi-map-pulse { 0% { transform: scale(0.5); opacity: 1; } 55% { opacity: 0.85; } 100% { transform: scale(2.6); opacity: 0; } }
+/* the tick pin pulses twice, 2 seconds apart (owner, 10 Oct 2026: "animate 2 times 2 seconds apart"; was once): each pulse is
+   the same 1s ring as before, the first at 0s and the second at 2s, then it stops */
+.hmi-map-pulse.is-on { animation: hmi-map-pulse 3s linear forwards; }
+@keyframes hmi-map-pulse {
+  0% { transform: scale(0.5); opacity: 1; animation-timing-function: ease-out; }
+  18.33% { opacity: 0.85; }
+  33.33% { transform: scale(2.6); opacity: 0; }
+  66.66% { transform: scale(0.5); opacity: 0; }
+  66.67% { transform: scale(0.5); opacity: 1; animation-timing-function: ease-out; }
+  85% { opacity: 0.85; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
 @media (prefers-reduced-motion: reduce) { .hmi-map-anim { display: none; } }
 /* the map 2cm higher and 1.5cm to the right on laptops and desktops (owner, 10 Oct 2026, noc); moved on its own, so the
    words, the navy bar and the space around them stay put */

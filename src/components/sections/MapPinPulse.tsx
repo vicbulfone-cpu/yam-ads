@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 /**
  * Home page network map (owner, 10 Oct 2026): the green ring on the map's tick pin. It starts once the whole map is on
- * screen (or fills the screen, if it is taller than it): one 1s pulse, then it stops
+ * screen (or fills the screen, if it is taller than it): two 1s pulses, 2 seconds apart, then it stops
  * (globals.css .hmi-map-pulse.is-on). It plays only once per page visit. `x`/`y`: the pin's place as % of the map.
  */
 export default function MapPinPulse({ x, y }: { x: number; y: number }) {
