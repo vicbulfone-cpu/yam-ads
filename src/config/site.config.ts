@@ -69,8 +69,9 @@ export const homePageHeroPicture = { src: "/images/hero/home-v31-1983.webp", wid
  *  size so it stays sharp (scripts/make-home-hero-hq.cjs). Also the city pages' hero (same picture as the home page). */
 export const homeHeroLightPicture = { src: "/images/hero/home-hq-v3-3966.webp", width: 3966, height: 1586 };
 /** Home page only: the same photo with the whole sky one flat colour, the one behind "Local accountants in your area" (owner,
- *  10 Oct 2026; scripts/make-home-hero-flat-sky.cjs). City pages keep homeHeroLightPicture. */
-export const homeHeroFlatSkyPicture = { src: "/images/hero/home-hq-v4-3966.webp", width: 3966, height: 1586 };
+ *  10 Oct 2026; scripts/make-home-hero-flat-sky.cjs; "-v5": the two very square suburb buildings toned down, owner 10 Oct 2026).
+ *  City pages keep homeHeroLightPicture. */
+export const homeHeroFlatSkyPicture = { src: "/images/hero/home-hq-v5-3966.webp", width: 3966, height: 1586 };
 export const homeDeskHeroArrow = { src: "/images/hero/hero-arrow.png", width: 176, height: 57, left: 721, top: 516 };
 export const homeMobileHeroPicture = { src: "/images/hero/mobile-v1-1536.webp", width: 1536, height: 1024 };
 
