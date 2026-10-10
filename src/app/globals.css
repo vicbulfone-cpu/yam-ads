@@ -2339,3 +2339,8 @@ main.home-v2 > .desk-hero .desk-hero-card .mc { border: 0; }
     mask-composite: intersect;
   }
 }
+
+/* Home "How it works" (owner, 10 Oct 2026): the three steps and the "Ready to meet your accountant?" bar under them 1.7cm higher
+   (less space under the heading); everything below moves up with them. Home page only (the ad pages' "How it works" sits in a div). */
+main.home-v2 > section .phs { margin-top: calc(2rem + 5mm + 6mm + 5mm + 1cm - 1.7cm); }
+@media (min-width: 1024px) { main.home-v2 > section .phs { margin-top: calc(1.4vw + 5mm + 6mm + 5mm + 1cm - 1.7cm); } }

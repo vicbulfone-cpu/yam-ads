@@ -50,23 +50,27 @@ function placeWordsGlow(box: Element) {
   const skyTop = Math.max(p.top - sky, w.top);
   const FADE = 4 * CM; // how far the fade eases out where there is room
   const MIN = 1.2 * CM; // the shortest fade, so no edge ever shows
-  const fr = Math.max(MIN, Math.min(FADE, box.getBoundingClientRect().left - 10 - right));
-  const fl = Math.max(MIN, Math.min(FADE, left - Math.max(p.left, w.left)));
-  const ft = Math.max(MIN, Math.min(FADE, top - skyTop));
-  // the highest building under the fade, from its left edge to its right edge
+  // full strength to 5mm past the words on every side, then easing back to the blue sky (owner, 10 Oct 2026); where the room
+  // runs out (the match box, the top of the sky, the buildings) the 5mm and the fade share what room there is
+  const PAD = 0.5 * CM;
+  const boxLeft = box.getBoundingClientRect().left - 10;
   const strip = (x: number) => Math.min(SKYLINE.length - 1, Math.max(0, Math.floor(((x - p.left) / p.width) * SKYLINE.length)));
-  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - fl), strip(right + fr) + 1));
-  const b = Math.min(city - 3, bottom + FADE); // gone just above the buildings
-  const fadeFrom = Math.min(bottom, b - MIN); // full strength to here
-  const l = left - fl, tp = top - ft, r = Math.min(right + fr, box.getBoundingClientRect().left - 4);
+  // [where full strength ends, where the fade is gone], from an edge of the words outwards, given the room on that side
+  const side = (room: number) => { const out = Math.max(MIN, Math.min(PAD + FADE, room)); return [Math.min(PAD, Math.max(0, out - MIN)), out]; };
+  const [pl, ol] = side(left - Math.max(p.left, w.left));
+  const [pt, ot] = side(top - skyTop);
+  const [pr, or] = side(boxLeft - right);
+  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - ol), strip(right + or) + 1)); // highest building under it
+  const [pb, ob] = side(city - 3 - bottom);
+  const l = left - ol, tp = top - ot, r = Math.min(right + or, boxLeft + 6), b = Math.min(bottom + ob, city - 3);
   wash.style.setProperty("--glow-l", `${l - w.left}px`);
   wash.style.setProperty("--glow-t", `${tp - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);
   wash.style.setProperty("--glow-h", `${b - tp}px`);
-  wash.style.setProperty("--glow-fl", `${fl}px`);
-  wash.style.setProperty("--glow-ft", `${ft}px`);
-  wash.style.setProperty("--glow-fr", `${Math.max(8, r - right)}px`);
-  wash.style.setProperty("--glow-fb", `${b - fadeFrom}px`);
+  wash.style.setProperty("--glow-fl", `${ol - pl}px`);
+  wash.style.setProperty("--glow-ft", `${ot - pt}px`);
+  wash.style.setProperty("--glow-fr", `${Math.max(8, r - right - pr)}px`);
+  wash.style.setProperty("--glow-fb", `${Math.max(8, b - bottom - pb)}px`);
 }
 
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
