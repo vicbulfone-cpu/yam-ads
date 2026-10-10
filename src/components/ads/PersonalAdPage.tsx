@@ -26,7 +26,7 @@ export default function PersonalAdPage({ desktopHeroPicture, hero, services, why
   /** another ad page's own match box in the popup, the questionnaire it opens and that questionnaire's open event
    *  (owner, 10 Oct 2026: the business page /ad-1 uses the business box and questions) */
   box?: { card: React.ReactNode; questionnaire: React.ReactNode; openEvent: string };
-  desktopHeroPicture?: { src: string; width: number; height: number };
+  desktopHeroPicture?: { src: string; width: number; height: number; quality?: number };
   hero?: React.ComponentProps<typeof PersonalHero>["hero"];
   services?: React.ComponentProps<typeof PersonalSections>["services"];
   why?: React.ComponentProps<typeof PersonalSections>["why"];

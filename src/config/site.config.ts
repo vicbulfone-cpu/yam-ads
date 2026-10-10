@@ -78,7 +78,7 @@ export const personalHeroPictures = {
 };
 /** Business ad page (/ad-1) desktop hero photo (owner, 9 Oct 2026: "home hero desktop" in "hero section/ad landing
  *  pages/business tax"; built by scripts/make-business-hero.mjs). Desktops (1200px+) only. */
-export const businessHeroDesktop = { src: "/images/hero/business-desk-v2-1902.webp", width: 1902, height: 827 };
+export const businessHeroDesktop = { src: "/images/hero/business-desk-v3-3804.webp", width: 3804, height: 1654, quality: 92 }; // full size, best quality (owner, 10 Oct 2026: "more crisp")
 /** SMSF ad page (/ad-3) desktop hero photo (owner, 10 Oct 2026: "smsf hero1.png" in "hero section/ad landing pages/smsf";
  *  built by scripts/make-smsf-hero.mjs). Desktops (1200px+) only. */
 export const smsfHeroDesktop = { src: "/images/hero/smsf-desk-v16-1983.webp", width: 1983, height: 793 };
