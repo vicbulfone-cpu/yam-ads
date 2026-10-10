@@ -242,3 +242,13 @@ causes a side effect (e.g. words now sit over the photo), report it and offer a 
 ## "CS" = CURRENT SIZE (owner rule, 9 Oct 2026; this project only)
 When the owner writes **"cs"** in a request, it means **"current size"**: the size the item has on screen right now,
 before this change (e.g. "make the headline 120% cs" = 1.2 x its present size).
+
+## SAVE SESSION CONTEXT, THEN COMMIT AND PUSH (owner rule, 10 Oct 2026; this project only)
+After every edit to the site, before finishing the reply:
+1. Update `docs/session-notes.md` with the session's context: what the owner asked for, what was changed and where
+   (files), decisions and owner rules given, open items and anything still waiting on the owner. Keep it current (newest
+   at the top, dated); short plain English.
+2. Commit everything changed (message written to a file and passed with `-F`; the repo's own author) and push to
+   `origin main`.
+Never put secrets in the notes or a commit: no tokens, keys, passwords, webhook addresses or customer details (the GHL
+Private Integration token and Location ID live only in Vercel environment variables). Questions with no edit need no commit.
