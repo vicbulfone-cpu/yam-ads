@@ -35,6 +35,7 @@ import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
 import StartBar from "./sections/StartBar";
+import AlignBarButtons from "./ads/AlignBarButtons";
 import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
 import { ONE_MATCH_BUTTON, ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS, STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT, STEP1_FROM, STEP1_TO } from "@/content/how-it-works";
 
@@ -194,6 +195,8 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
           {/* (mid-page "Ready to find your accountant?" banner removed, owner 6 Oct 2026) */}
           {/* "One quick match…" now sits at the top of the closing band (owner, 6 Oct 2026) */}
           <HomeClosingCta tagline={TAGLINES[8]} />
+          {/* every navy bar's button lines up with the one above "Who we help" (owner, 10 Oct 2026) */}
+          <AlignBarButtons />
         </main>
         <SiteFooter nodes={nodes} variant="home" showAds />
       </>

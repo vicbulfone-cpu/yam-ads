@@ -51,7 +51,7 @@ export default function PersonalAdPage({ desktopHeroPicture, hero, services, why
       {/* the page's CTA buttons open this box in a popup; phones too, as the page has no box of its own any more */}
       <AdBoxPopup openEvent={box?.openEvent ?? OPEN_PERSONAL_QUESTIONNAIRE} phones>{box?.card ?? <PersonalMatchCard />}</AdBoxPopup>
       {box?.questionnaire ?? <LazyPersonalQuestionnaire />}
-      {/* every navy bar button lines up with the hero bar's (owner, 9 Oct 2026) */}
+      {/* every navy bar button lines up with the home page's bar above "Who we help" (owner, 10 Oct 2026; was the hero bar's) */}
       <AlignBarButtons />
       {/* the hero's steps line 4mm above the bottom of the hero photo, just above the navy bar (owner, 9 Oct 2026) */}
       <PlaceHeroSteps />
