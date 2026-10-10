@@ -2,7 +2,7 @@
  * REGISTRATION AD QUESTIONNAIRE — wording for the registration ad landing page (/ad-4) and its own questionnaire.
  * Owner's wording (6 Oct 2026) and the owner's "registration" ad design picture. Edit the words here.
  *
- * Flow: one page per ticked category (match box) → new or existing business? (+ optional note) → name → summary (confirm)
+ * Flow: one page per ticked category (match box) → name → summary (confirm)
  * → in person or remote → postcode/suburb → short pause → "great news" box with email → mobile → email the match
  * details? → match page (/match). Each page counts as one step in the progress bar (max 5 milestones).
  */

@@ -112,9 +112,17 @@ function placeHomeFade() {
   // the tint: as it was round the line under the headline (8.6rem left, 14rem right, 5.5rem above, in the line's own units,
   // easing over 8rem, 13rem and 5.5rem), now reaching down past the steps
   const R = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, u = R / 0.8;
-  const l = s.left - 8.6 * u * kx, r = s.right + 14 * u * kx, t = s.top - 5.5 * u * ky;
+  // (owner, 10 Oct 2026: "tone down fade above free and no obligation and between the match box, keep fade gradual and
+  // blended"): the right side stops 0.5cm short of the match box and eases out all the way from the end of the words to
+  // there; the top eases in over twice the distance, so the white builds up slowly above the points
+  const card = document.querySelector("main.home-v2 > .desk-hero .desk-hero-card .mc")?.getBoundingClientRect();
+  const pts = document.querySelector("main.home-v2 > .desk-hero .desk-hero-points");
+  const wordsRight = Math.max(s.right, ...ws.map((x) => x.right), ...(pts ? textRects(pts) : []).map((x) => x.right));
+  const l = s.left - 8.6 * u * kx, t = s.top - 5.5 * u * ky;
+  const r = card ? Math.min(s.right + 14 * u * kx, card.left - 0.5 * CM) : s.right + 14 * u * kx;
+  const fr = Math.min(r - l, Math.max(2 * CM, r - wordsRight + 1 * CM));
   set("--tn-l", l - base.left); set("--tn-t", t - top); set("--tn-w", r - l); set("--tn-h", end - t);
-  set("--tn-fl", 8 * u * kx); set("--tn-fr", 13 * u * kx); set("--tn-ft", 5.5 * u * ky); set("--tn-fb", FADE_OUT);
+  set("--tn-fl", 8 * u * kx); set("--tn-fr", fr); set("--tn-ft", 11 * u * ky); set("--tn-fb", FADE_OUT);
 }
 
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {

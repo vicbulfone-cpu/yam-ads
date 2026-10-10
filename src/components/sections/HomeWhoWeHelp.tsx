@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HOME_WHO, HOME_WHO_TILES } from "@/content/home-who-we-help";
 import { HOME_WHY_SERVICES } from "@/content/home-why-specialist";
 import { SERVICE_ICONS } from "./HomeWhySpecialist";
+import IconSequence from "../ui/IconSequence";
 
 /**
  * Home page, above "How it works" (owner, 10 Oct 2026, noc): "Who we help", the ad pages' "Find the Right Accountant…"
@@ -47,6 +48,9 @@ export default function HomeWhoWeHelp() {
             </li>
           ))}
         </ul>
+        {/* the icons animate as in "What we can help you with": one by one, 1 second after the page is scrolled to them, 2 seconds
+            in all (owner, 10 Oct 2026) */}
+        <IconSequence list=".hsv-cards" item=".hsv-card" slot={600} />
       </div>
     </section>
   );

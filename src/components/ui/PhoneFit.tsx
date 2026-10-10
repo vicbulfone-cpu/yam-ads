@@ -15,7 +15,7 @@ import { useEffect, useRef, type ReactNode } from "react";
 const PHONE = "(max-width: 767px)";
 const DESKTOP = "(min-width: 1024px)";
 
-/** `desktop={false}`: no laptop/desktop fit for this page (the summary page scrolls as before; owner, 7 Oct 2026). */
+/** `desktop={false}`: no laptop/desktop fit for this page (no longer used: since 10 Oct 2026 the summary page fits too, owner). */
 export default function PhoneFit({ children, className = "", desktop = true }: { children: ReactNode; className?: string; desktop?: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const desktopRef = useRef(desktop);

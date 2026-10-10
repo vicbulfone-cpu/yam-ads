@@ -8,6 +8,7 @@ import Image from "next/image";
 import { AD_MATCH_BOX_ID } from "@/lib/ad-match-box";
 import StartBar from "../sections/StartBar";
 import PpsCardsReveal from "./PpsCardsReveal";
+import IconSequence from "../ui/IconSequence";
 import { SERVICE_ICONS, PersonIcon, ChartIcon, HouseIcon, BriefcaseIcon, ScreenIcon } from "./PersonalServiceIcons";
 
 /** "Who we help" cards: the owner's "r" folder icons (owner, 9 Oct 2026) */
@@ -51,6 +52,8 @@ export default function PersonalSections({ services: S = PERSONAL_SERVICES, why:
             })}
           </ul>
           <PpsCardsReveal />
+          {/* the icons then animate one by one, 1 second after the page is scrolled to them, 2 seconds in all (owner, 10 Oct 2026) */}
+          <IconSequence list=".pps-cards" item=".pps-card" />
         </div>
       </section>
 
@@ -119,6 +122,9 @@ export default function PersonalSections({ services: S = PERSONAL_SERVICES, why:
           </ul>
           {/* the same animation as the services cards, as they scroll into view (owner, 9 Oct 2026) */}
           <PpsCardsReveal list=".pps-tiles" item=".pps-tile" />
+          {/* the icons then animate as in "What we can help you with": one by one, 1 second after the page is scrolled to them,
+              2 seconds in all (owner, 10 Oct 2026) */}
+          <IconSequence list=".pps-tiles" item=".pps-tile" />
         </div>
       </section>
 

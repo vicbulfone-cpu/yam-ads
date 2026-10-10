@@ -12,7 +12,7 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 import { BIZ_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
-import SelectionsSummary, { SummaryConfirmNote } from "./SelectionsSummary";
+import { SummaryConfirmNote, SummaryPage } from "./SelectionsSummary";
 import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 
 /**
@@ -83,6 +83,8 @@ export default function BusinessQuestionnaire() {
   const [sending, setSending] = useState(false);
   const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
+  // the summary: one screen per choice (owner, 10 Oct 2026), this is the one showing
+  const [sumPage, setSumPage] = useState(0);
 
   const steps: Step[] = useMemo(() => [
     ...cats.map((id) => ({ kind: "cat" as const, id })),
@@ -96,7 +98,7 @@ export default function BusinessQuestionnaire() {
     setCats(ids);
     setAnswers({});
     setNote("");
-    setStepIdx(0);
+    setStepIdx(0); setSumPage(0);
     setBackToSummary(false);
     setMode(null);
     setPlace(null);
@@ -184,8 +186,11 @@ export default function BusinessQuestionnaire() {
         return goTo(stepIdx + 1);
       }
       case "summary":
+        // the next choice's screen, then on (owner, 10 Oct 2026: a separate screen for each service and sub-service)
+        if (sumPage < cats.length - 1) { setError(null); scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage + 1); }
+        return goTo(stepIdx + 1);
       case "mode":
-        if (step.kind === "mode" && !mode) return setError(Q.errors.mode);
+        if (!mode) return setError(Q.errors.mode);
         return goTo(stepIdx + 1);
       case "location":
         if (!place) return setError(Q.errors.location);
@@ -202,6 +207,7 @@ export default function BusinessQuestionnaire() {
         return void submit(); // straight to the match page, no step in between (owner, 10 Oct 2026)
       case "name":
         if (name.trim().length < 2) return setError(Q.errors.name);
+        setSumPage(0);
         return goTo(stepIdx + 1);
       case "emailMe":
         if (emailMe === null) return setError(Q.errors.emailMe);
@@ -214,6 +220,9 @@ export default function BusinessQuestionnaire() {
     setError(null);
     if (stepIdx === 0) return setConfirmLeave(true);
     if (backToSummary) { setBackToSummary(false); return goTo(summaryIdx); }
+    // the summary's screens go back one at a time; coming back to the summary lands on its last screen
+    if (step.kind === "summary" && sumPage > 0) { scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage - 1); }
+    if (steps[stepIdx - 1]?.kind === "summary") setSumPage(cats.length - 1);
     goTo(stepIdx - 1);
   };
 
@@ -301,7 +310,7 @@ export default function BusinessQuestionnaire() {
           </div>
 
           <div ref={scrollRef} data-bg="biz" className={`q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain${step.kind === "summary" ? " q-scroll" : ""}`}>
-            <PhoneFit desktop={step.kind !== "summary"}>
+            <PhoneFit>
             <AdProgress stepNumber={stepNumber} total={total} badge={Q.badge} stepOf={Q.stepOf} kind={step.kind} />
             <form
               className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
@@ -315,7 +324,7 @@ export default function BusinessQuestionnaire() {
                   <CategoryStep cat={cur} index={stepIdx} total={cats.length} sel={sel} toggle={toggle} patch={patch} error={error} />
                 )}
                 {bodyKind === "summary" && (
-                  <SelectionsSummary firstName={firstName} note={note} onNote={setNote}
+                  <SummaryPage page={sumPage} firstName={firstName} note={note} onNote={setNote}
                     blocks={cats.map((id, i) => {
                       const cat = catById(id), change = () => { setBackToSummary(true); goTo(i); };
                       return { key: id, service: SELECTIONS_SUMMARY.services.business, title: cat.title, onChange: change,

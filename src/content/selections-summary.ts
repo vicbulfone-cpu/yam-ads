@@ -7,6 +7,8 @@ export const SELECTIONS_SUMMARY = {
   title: "Your selections, at a glance",
   /** {name}: the customer's first name */
   text: "Thanks, {name}. Does everything look right?",
+  /** one screen per choice (owner, 10 Oct 2026): where there are several, this shows under the title; {n} of {total} */
+  pageOf: "{n} of {total}",
   /** small label at the top of each service's card */
   serviceSelected: "Service selected",
   /** each service's name on its card */

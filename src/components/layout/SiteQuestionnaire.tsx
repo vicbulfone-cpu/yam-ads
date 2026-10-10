@@ -22,7 +22,7 @@ import MatchCardView, { type MatchCardData } from "../sections/MatchCardView";
 import PhoneFit from "../ui/PhoneFit";
 import FitBox from "../ui/FitBox";
 import StartHere from "../ui/StartHere";
-import SelectionsSummary, { SummaryConfirmNote, type SummaryBlock } from "../ads/SelectionsSummary";
+import { SummaryConfirmNote, SummaryPage, type SummaryBlock } from "../ads/SelectionsSummary";
 import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
 
@@ -35,8 +35,8 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
  *     Personal (Ad 2): main reason → its follow-up page → "Does your return include any of these?" (returns only)
  *     Business (Ad 1): one page per ticked category
  *     SMSF (Ad 3): one page per ticked category (no "quick questions" page, owner 8 Oct 2026)
- *     Registrations (Ad 4): one page per ticked category → new or existing business?
- *   → name → summary (Change links) → in person or remote → postcode/suburb → 11-second search → email → mobile →
+ *     Registrations (Ad 4): one page per ticked category (no "new or existing business?" page, owner 10 Oct 2026)
+ *   → name → summary, one screen per choice (Change links) → in person or remote → postcode/suburb → 11-second search → email → mobile →
  *   email my match details? → match page (/match).
  * Leads from here send no adType, so they stay "Organic" (the postcode owner gets them).
  * Links carrying ?service=… (the site box's Start) skip the box; other CTAs show the box first.
@@ -160,6 +160,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   // shared steps
   const [stepIdx, setStepIdx] = useState(0);
   const [edit, setEdit] = useState<Edit>(null);
+  // the summary: one screen per choice (owner, 10 Oct 2026), this is the one showing
+  const [sumPage, setSumPage] = useState(0);
   const [mode, setMode] = useState<string | null>(null);
   const [place, setPlace] = useState<Place | null>(null);
   const [searching, setSearching] = useState(false);
@@ -191,7 +193,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         if (ns.some((n) => RETURN_NEEDS.includes(n))) out.push({ kind: "pincome" });
       } else {
         out.push(...picks[s].map((id) => ({ kind: "cat" as const, s, id })));
-        if (s === "registration") out.push({ kind: "qualify", s }); // (SMSF "quick questions" page removed site-wide, owner 8 Oct 2026)
+        // (SMSF "quick questions" page removed site-wide, owner 8 Oct 2026; registration "Is this a new or existing business?"
+        // removed site-wide, owner 10 Oct 2026)
       }
     }
     // the name comes straight after the service questions, so every later question can use it
@@ -208,7 +211,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     setPicks({ business: [], smsf: [], registration: [] }); setAnswers({});
     setNeeds([]); setYear(null); setFirst(null); setAmendYear(null); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setPersonalNotes("");
     setStage(null); setRegNotes("");
-    setStepIdx(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
+    setStepIdx(0); setSumPage(0); setEdit(null); setMode(null); setPlace(null); setSearching(false);
     setEmail(""); setPhone(""); setName(""); setEmailMe(null); setError(null); setSending(false); setMatching(false); setConfirmLeave(false);
     setServices(keys);
     setPhase(keys.length ? "questions" : "box");
@@ -322,9 +325,8 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
   };
   const incomeLabels = () => RETURN_ITEMS.filter((o) => income.includes(o.id)).map((o) => o.label);
   // ("Do you currently have an SMSF?" removed site-wide, owner 8 Oct 2026)
-  const aboutLines = (s: "smsf" | "registration") => s === "smsf"
-    ? []
-    : [{ label: REG_Q.summaryLabels.stage, value: labelOf(REG_STAGE, stage) }, ...(regNotes.trim() ? [{ label: REG_Q.summaryLabels.notes, value: regNotes.trim() }] : [])];
+  // ("Is this a new or existing business?" removed site-wide, owner 10 Oct 2026: nothing to add for registration either)
+  const aboutLines = (): { label: string; value: string }[] => [];
   /** The summary page (owner, 10 Oct 2026, "Your selections, at a glance"): one card per choice, in the box's order, with what
    *  was chosen for it underneath. "Change" goes back to that service's choices; "Edit" to the page of ticked options. */
   const summaryBlocks = (): SummaryBlock[] => services.flatMap((s): SummaryBlock[] => {
@@ -340,7 +342,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         ],
       }));
     }
-    const about = s === "registration" ? aboutLines(s) : [];
+    const about = s === "registration" ? aboutLines() : [];
     return picks[s].map((id, i) => {
       const cat = catOf(s, id);
       return {
@@ -394,8 +396,11 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
         return advance();
       case "name":
         if (name.trim().length < 2) return setError(Q.errors.name);
+        setSumPage(0);
         return goTo(stepIdx + 1);
       case "summary":
+        // the next choice's screen, then on (owner, 10 Oct 2026: a separate screen for each service and sub-service)
+        if (sumPage < summaryBlocks().length - 1) { clear(); scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage + 1); }
         return goTo(stepIdx + 1);
       case "mode":
         if (!mode) return setError(Q.errors.mode);
@@ -425,6 +430,9 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
     if (edit) { setEdit(null); return goTo(summaryIdx); }
     // first page: back to the match box (ticks kept) to change the services
     if (stepIdx === 0) return setPhase("box");
+    // the summary's screens go back one at a time; coming back to the summary lands on its last screen
+    if (step.kind === "summary" && sumPage > 0) { scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage - 1); }
+    if (steps[stepIdx - 1]?.kind === "summary") setSumPage(summaryBlocks().length - 1);
     goTo(stepIdx - 1);
   };
 
@@ -467,7 +475,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       const catAnswers = Object.fromEntries(picks[s].map((id) => [id, answers[id]]));
       if (s === "business") leadAnswers.business = catAnswers;
       else {
-        const about = aboutLines(s);
+        const about = aboutLines();
         lines.push(...about.map((a) => `${a.label}: ${a.value}`));
         if (about.length) groups.push({ category: CAT_Q[s].summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) });
         leadAnswers[s] = s === "smsf"
@@ -572,7 +580,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
           ) : (
             <>
               <div ref={scrollRef} data-bg="biz" className={`q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain${step.kind === "summary" ? " q-scroll" : ""}`}>
-                <PhoneFit desktop={step.kind !== "summary"}>
+                <PhoneFit>
                 <AdProgress stepNumber={stepIdx + 1} total={steps.length} badge={Q.badge} stepOf={Q.stepOf} kind={step.kind} />
                 <form className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5" onSubmit={(e) => { e.preventDefault(); next(); }} noValidate>
                   {/* spam trap: hidden from people, bots fill it in */}
@@ -663,7 +671,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
                     )}
 
                     {body.kind === "summary" && (
-                      <SelectionsSummary firstName={firstName} note={personalNotes} onNote={setPersonalNotes} blocks={summaryBlocks()} />
+                      <SummaryPage firstName={firstName} note={personalNotes} onNote={setPersonalNotes} blocks={summaryBlocks()} page={sumPage} />
                     )}
 
                     {body.kind === "mode" && (
@@ -786,8 +794,8 @@ function PickCard({ checked, onToggle, radio, warn, tone, icon, title, desc }: {
       <input type={radio ? "radio" : "checkbox"} name={radio ? "sq-pick" : undefined} checked={checked} onChange={onToggle} className="peer sr-only" />
       <span aria-hidden className={`bz-tile is-${tone} !w-11 shrink-0`}><svg viewBox="0 0 24 24">{icon}</svg></span>
       <span className="min-w-0 flex-1">
-        <span className={`block text-[1rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-semibold text-ink/90"}`}>{title}</span>
-        <span className="mt-0.5 block text-[0.85rem] leading-snug text-muted">{desc}</span>
+        <span className={`q-opt-text block text-[1rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-semibold text-ink/90"}`}>{title}</span>
+        <span className="q-opt-desc mt-0.5 block text-[0.85rem] leading-snug text-muted">{desc}</span>
       </span>
       <span aria-hidden className={`q-tick${checked ? " is-on" : ""} grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
         <Check width={13} height={13} strokeWidth={3.4} />

@@ -3,6 +3,7 @@ import { HOME_SERVICES, HOME_SERVICE_CARDS } from "@/content/home-services";
 import { HOME_WHY_SERVICES } from "@/content/home-why-specialist";
 import { SERVICE_ICONS } from "./HomeWhySpecialist";
 import HeroGap from "./HeroGap";
+import IconSequence from "../ui/IconSequence";
 
 /**
  * Home page, straight under the hero (owner, 10 Oct 2026, noc): "What we can help you with", the ad pages' services
@@ -57,6 +58,8 @@ export default function HomeServices() {
             </li>
           ))}
         </ul>
+        {/* the four icons pop in one by one, 1 second after the page is scrolled to them, 2 seconds in all (owner, 10 Oct 2026) */}
+        <IconSequence list=".hsv-cards" item=".hsv-card" slot={600} />
       </div>
     </section>
   );

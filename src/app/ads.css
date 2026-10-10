@@ -1675,6 +1675,9 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 
 /* /ad-2 (personal tax) hero, laptops/desktops (owner, 10 Oct 2026): the "Find My Tax Accountant" button 2.5mm lower. */
 @media (min-width: 1200px) { .pz-page:not(.pz-biz):not(.pz-reg):not(.pz-smsf) .pth-cta { translate: 0 2.5mm; } }
+/* /ad-2 (personal tax) hero, every screen size (owner, 10 Oct 2026): the button 1mm lower than where it is placed (centred between
+   the words above and below it by HeroCtaCentre.tsx, which adds this nudge; 1mm = 3.78px) */
+.pz-page:not(.pz-biz):not(.pz-reg):not(.pz-smsf) .pth-cta { --cta-nudge: 3.78px; }
 
 /* ===== "Your selections, at a glance": the summary page of every questionnaire (site popup and the four ad pages; owner,
    10 Oct 2026, from the owner's "Untitled" picture). SelectionsSummary.tsx; wording src/content/selections-summary.ts. ===== */
@@ -1727,3 +1730,14 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
       rgba(255, 255, 255, 0.592) 32%, rgba(255, 255, 255, 0.336) 46%, rgba(255, 255, 255, 0) 58%);
   }
 }
+
+/* "Your selections, at a glance" one choice per screen (owner, 10 Oct 2026): "2 of 3" after the line under the title */
+.sel-sum-count { margin-left: 0.6rem; padding: 0.1rem 0.6rem; border-radius: 999px; background: #e9fbf1; color: #0e7a32; font-size: 0.8em; font-weight: 700; white-space: nowrap; }
+/* /ad-3 (SMSF) hero, every screen size (owner, 10 Oct 2026, noc): the button 5mm lower than where it is placed (HeroCtaCentre.tsx
+   adds this nudge; 5mm = 18.9px) */
+.pz-smsf .pth-cta { --cta-nudge: 18.9px; }
+/* /ad-3 (SMSF) hero, every screen size (owner, 10 Oct 2026, noc): the three trust icons 5mm lower. The button is centred between
+   the words above it and these icons (HeroCtaCentre.tsx) on phones and laptops/desktops, so its nudge there is 2.5mm less
+   (5mm - 2.5mm = 9.45px) to keep it where it was. */
+.pz-smsf .pth-points { translate: 0 calc(5mm + 2mm); } /* then 2mm more (owner, 10 Oct 2026, noc) */
+@media (max-width: 767px), (min-width: 1200px) { .pz-smsf .pth-cta { --cta-nudge: 5.67px; } } /* 5mm - 7mm / 2 = 1.5mm */

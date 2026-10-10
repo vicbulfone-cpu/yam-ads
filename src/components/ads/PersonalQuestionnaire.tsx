@@ -15,7 +15,7 @@ import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from 
 import { PERSONAL_NEED_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
-import SelectionsSummary, { SummaryConfirmNote } from "./SelectionsSummary";
+import { SummaryConfirmNote, SummaryPage } from "./SelectionsSummary";
 import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, NoteField, OptionCard, openMatchPage, readTracking, startSearchTimer, StepHead, TextField } from "./QuestionnaireParts";
 
@@ -102,6 +102,8 @@ export default function PersonalQuestionnaire() {
   const [sending, setSending] = useState(false);
   const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
+  // the summary: one screen per choice (owner, 10 Oct 2026), this is the one showing
+  const [sumPage, setSumPage] = useState(0);
 
   // financial years are worked out from today's date (the newest completed year first)
   const fy = useMemo(() => financialYears(5), []);
@@ -131,7 +133,7 @@ export default function PersonalQuestionnaire() {
     setShowChoose(!chosen.length);
     setNeeds(chosen);
     setYear(null); setFirst(null); setYears([]); setAmendNote(""); setTopics([]); setTopicOther(""); setIncome([]); setNotes("");
-    setStepIdx(0);
+    setStepIdx(0); setSumPage(0);
     setBackToSummary(false);
     setMode(null);
     setPlace(null);
@@ -228,8 +230,11 @@ export default function PersonalQuestionnaire() {
         return goTo(stepIdx + 1);
       case "name":
         if (name.trim().length < 2) return setError(Q.errors.name);
+        setSumPage(0);
         return goTo(stepIdx + 1);
       case "summary":
+        // the next choice's screen, then on (owner, 10 Oct 2026: a separate screen for each service and sub-service)
+        if (sumPage < needs.length - 1) { setError(null); scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage + 1); }
         return goTo(stepIdx + 1);
       case "mode":
         if (!mode) return setError(Q.errors.mode);
@@ -258,6 +263,9 @@ export default function PersonalQuestionnaire() {
     setError(null);
     if (stepIdx === 0) return setConfirmLeave(true);
     if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
+    // the summary's screens go back one at a time; coming back to the summary lands on its last screen
+    if (kind === "summary" && sumPage > 0) { scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage - 1); }
+    if (steps[stepIdx - 1] === "summary") setSumPage(needs.length - 1);
     goTo(stepIdx - 1);
   };
 
@@ -367,7 +375,7 @@ export default function PersonalQuestionnaire() {
           </div>
 
           <div ref={scrollRef} data-bg="biz" className={`q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain${kind === "summary" ? " q-scroll" : ""}`}>
-            <PhoneFit desktop={kind !== "summary"}>
+            <PhoneFit>
             <AdProgress stepNumber={stepIdx + 1} total={total} badge={Q.badge} stepOf={Q.stepOf} kind={kind} />
             <form
               className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
@@ -442,7 +450,7 @@ export default function PersonalQuestionnaire() {
                 {bodyKind === "summary" && firstNeed && (
                   // one card per ticked reason, with what was chosen for it underneath; "Your return includes" on the first tax
                   // return reason (owner, 10 Oct 2026, "Your selections, at a glance")
-                  <SelectionsSummary firstName={firstName} note={notes} onNote={setNotes}
+                  <SummaryPage page={sumPage} firstName={firstName} note={notes} onNote={setNotes}
                     blocks={needs.map((n) => ({
                       key: n, service: SELECTIONS_SUMMARY.services.personal, title: needTitle(n), onChange: () => edit("choose"),
                       sections: [

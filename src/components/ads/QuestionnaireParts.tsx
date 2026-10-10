@@ -127,7 +127,7 @@ export function OptionCard({ checked, onToggle, label, warn }: { checked: boolea
       <span aria-hidden className={`q-tick${checked ? " is-on" : ""} grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 transition-all duration-200 peer-focus-visible:ring-2 peer-focus-visible:ring-green-600 peer-focus-visible:ring-offset-2 ${checked ? "scale-110 border-green-600 bg-green-600 text-white" : "border-slate-300 bg-white text-transparent group-hover:border-green-500"}`}>
         <Check width={13} height={13} strokeWidth={3.4} />
       </span>
-      <span className={`text-[0.95rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-medium text-ink/85"}`}>{label}</span>
+      <span className={`q-opt-text text-[0.95rem] leading-snug ${checked ? "font-bold text-navy-900" : "font-medium text-ink/85"}`}>{label}</span>
     </label>
   );
 }

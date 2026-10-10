@@ -13,13 +13,13 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
 import { REG_CATEGORY_ICONS } from "./BizIcons";
 import PostcodeBox, { type Place } from "./PostcodeBox";
 import PhoneFit from "../ui/PhoneFit";
-import SelectionsSummary, { SummaryConfirmNote } from "./SelectionsSummary";
+import { SummaryConfirmNote, SummaryPage } from "./SelectionsSummary";
 import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 
 /**
  * The registration questionnaire (registration ad page /ad-4). Same popup, progress header and option cards as the
  * business and SMSF questionnaires, with the owner's registration questions (6 Oct 2026):
- *   one page per ticked category (exact requirements) → new or existing business? (+ optional note) → name →
+ *   one page per ticked category (exact requirements) → name →
  *   summary (confirm) → in person or remote → postcode/suburb → 11-second search → "great news" box asking for email →
  *   mobile → email the match details? → match page (/match).
  * Each page counts as one step in the progress bar (max 5 milestones). Opened by the registration match box (OPEN_REG_QUESTIONNAIRE).
@@ -82,11 +82,14 @@ export default function RegistrationQuestionnaire() {
   const [sending, setSending] = useState(false);
   const [matching, setMatching] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
+  // the summary: one screen per choice (owner, 10 Oct 2026), this is the one showing
+  const [sumPage, setSumPage] = useState(0);
 
   const steps: Step[] = useMemo(() => [
     ...cats.map((id) => ({ kind: "cat" as const, id })),
-    // new or existing business, then the name, so every later question can use it
-    { kind: "qualify" }, { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" },
+    // then the name, so every later question can use it ("Is this a new or existing business?" removed site-wide, owner
+    // 10 Oct 2026)
+    { kind: "name" }, { kind: "summary" }, { kind: "mode" }, { kind: "location" }, { kind: "email" }, { kind: "phone" },
   ], [cats]);
   const step = steps[Math.min(stepIdx, steps.length - 1)];
   const stepKey = step.kind === "cat" ? step.id : step.kind;
@@ -96,7 +99,7 @@ export default function RegistrationQuestionnaire() {
     setCats(ids);
     setAnswers({});
     setStage(null); setNotes("");
-    setStepIdx(0);
+    setStepIdx(0); setSumPage(0);
     setBackToSummary(false);
     setMode(null);
     setPlace(null);
@@ -167,11 +170,8 @@ export default function RegistrationQuestionnaire() {
     patch({ ids: sel.ids.includes(id) ? sel.ids.filter((x) => x !== id) : [...sel.ids, id] });
   };
 
-  /** About-the-business lines (new/existing and the note) for the summary, the lead and the match page. */
-  const aboutLines = () => [
-    { label: Q.summaryLabels.stage, value: labelOf(REG_STAGE, stage) },
-    ...(notes.trim() ? [{ label: Q.summaryLabels.notes, value: notes.trim() }] : []),
-  ];
+  /** About-the-business lines (the summary's note) for the lead and the match page. */
+  const aboutLines = () => (notes.trim() ? [{ label: Q.summaryLabels.notes, value: notes.trim() }] : []);
 
   // ---------- moving on ----------
   const next = () => {
@@ -188,8 +188,11 @@ export default function RegistrationQuestionnaire() {
         return goTo(stepIdx + 1);
       case "name":
         if (name.trim().length < 2) return setError(Q.errors.name);
+        setSumPage(0);
         return goTo(stepIdx + 1);
       case "summary":
+        // the next choice's screen, then on (owner, 10 Oct 2026: a separate screen for each service and sub-service)
+        if (sumPage < cats.length - 1) { setError(null); scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage + 1); }
         return goTo(stepIdx + 1);
       case "mode":
         if (!mode) return setError(Q.errors.mode);
@@ -218,6 +221,9 @@ export default function RegistrationQuestionnaire() {
     setError(null);
     if (stepIdx === 0) return setConfirmLeave(true);
     if (backToSummary) { setBackToSummary(false); return goTo(idxOf("summary")); }
+    // the summary's screens go back one at a time; coming back to the summary lands on its last screen
+    if (step.kind === "summary" && sumPage > 0) { scrollRef.current?.scrollTo({ top: 0 }); return setSumPage(sumPage - 1); }
+    if (steps[stepIdx - 1]?.kind === "summary") setSumPage(cats.length - 1);
     goTo(stepIdx - 1);
   };
 
@@ -260,7 +266,7 @@ export default function RegistrationQuestionnaire() {
         adType: "registration", leadId: data.leadId, name: name.trim(), email: email.trim(), emailMe: emailMe === true, mode: modeLabel, place,
         services: [
           ...cats.map((id) => ({ category: catById(id).title, items: chosenLabels(catById(id), answers[id]) })),
-          { category: Q.summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) },
+          ...(about.length ? [{ category: Q.summaryLabels.about, items: about.map((a) => `${a.label}: ${a.value}`) }] : []),
         ],
       }));
       (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "questionnaire_complete", { questionnaire: "registration" });
@@ -307,7 +313,7 @@ export default function RegistrationQuestionnaire() {
           </div>
 
           <div ref={scrollRef} data-bg="biz" className={`q-modal-body min-h-0 flex-1 overflow-y-auto overscroll-contain${step.kind === "summary" ? " q-scroll" : ""}`}>
-            <PhoneFit desktop={step.kind !== "summary"}>
+            <PhoneFit>
             <AdProgress stepNumber={stepNumber} total={total} badge={Q.badge} stepOf={Q.stepOf} kind={step.kind} />
             <form
               className="q-form mx-auto w-full max-w-4xl px-4 pb-6 pt-6 sm:px-8 lg:pb-4 lg:pt-5"
@@ -331,15 +337,13 @@ export default function RegistrationQuestionnaire() {
                   </StepHead>
                 )}
                 {bodyKind === "summary" && (
-                  // the summary's note is the same note as on the "new or existing business" page (one note, owner 10 Oct 2026)
-                  <SelectionsSummary firstName={firstName} note={notes} onNote={setNotes}
+                  // one screen per choice (owner, 10 Oct 2026), the note on the last
+                  <SummaryPage firstName={firstName} note={notes} onNote={setNotes} page={sumPage}
                     blocks={cats.map((id, i) => {
                       const cat = catById(id), change = () => { setBackToSummary(true); goTo(i); };
                       return { key: id, service: SELECTIONS_SUMMARY.services.registration, title: cat.title, onChange: change,
                         sections: [
                           { heading: SELECTIONS_SUMMARY.chosen, items: chosenLabels(cat, answers[id]), onEdit: change },
-                          // "new or existing" on the last card
-                          ...(i === cats.length - 1 ? [{ heading: Q.summaryLabels.about, items: [labelOf(REG_STAGE, stage)].filter(Boolean), onEdit: () => { setBackToSummary(true); goTo(idxOf("qualify")); } }] : []),
                         ] };
                     })} />
                 )}

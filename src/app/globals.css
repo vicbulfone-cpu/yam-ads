@@ -2456,7 +2456,7 @@ main.home-v2 > .desk-hero .desk-hero-sub { font-weight: 700; }
     mask-composite: intersect, add !important;
   }
   main.home-v2 > .desk-hero .desk-hero-wash::after {
-    content: ""; position: absolute; pointer-events: none; background: rgba(255, 255, 255, 0.7);
+    content: ""; position: absolute; pointer-events: none; background: rgba(255, 255, 255, 0.55); /* was 0.7 (owner, 10 Oct 2026: "tone down") */
     left: var(--tn-l, 0px); top: var(--tn-t, 0px); width: var(--tn-w, 0px); height: var(--tn-h, 0px);
     -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0.000) calc(var(--tn-fl) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-fl) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-fl) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-fl) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-fl) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-fl) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-fl) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-fl) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-fl) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-fl) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-fl) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fr) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fr) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fr) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fr) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fr) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fr) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fr) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fr) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fr) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fr) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fr) * 0.0)), linear-gradient(180deg, rgba(0,0,0,0.000) calc(var(--tn-ft) * 0.0), rgba(0,0,0,0.024) calc(var(--tn-ft) * 0.1), rgba(0,0,0,0.095) calc(var(--tn-ft) * 0.2), rgba(0,0,0,0.206) calc(var(--tn-ft) * 0.3), rgba(0,0,0,0.345) calc(var(--tn-ft) * 0.4), rgba(0,0,0,0.500) calc(var(--tn-ft) * 0.5), rgba(0,0,0,0.655) calc(var(--tn-ft) * 0.6), rgba(0,0,0,0.794) calc(var(--tn-ft) * 0.7), rgba(0,0,0,0.905) calc(var(--tn-ft) * 0.8), rgba(0,0,0,0.976) calc(var(--tn-ft) * 0.9), rgba(0,0,0,1.000) calc(var(--tn-ft) * 1.0), rgba(0,0,0,1.000) calc(100% - var(--tn-fb) * 1.0), rgba(0,0,0,0.976) calc(100% - var(--tn-fb) * 0.9), rgba(0,0,0,0.905) calc(100% - var(--tn-fb) * 0.8), rgba(0,0,0,0.794) calc(100% - var(--tn-fb) * 0.7), rgba(0,0,0,0.655) calc(100% - var(--tn-fb) * 0.6), rgba(0,0,0,0.500) calc(100% - var(--tn-fb) * 0.5), rgba(0,0,0,0.345) calc(100% - var(--tn-fb) * 0.4), rgba(0,0,0,0.206) calc(100% - var(--tn-fb) * 0.3), rgba(0,0,0,0.095) calc(100% - var(--tn-fb) * 0.2), rgba(0,0,0,0.024) calc(100% - var(--tn-fb) * 0.1), rgba(0,0,0,0.000) calc(100% - var(--tn-fb) * 0.0));
     -webkit-mask-composite: source-in;
@@ -2470,3 +2470,110 @@ main.home-v2 > .desk-hero .desk-hero-sub { font-weight: 700; }
    longer lifted above the words after it, so its soft patch (".desk-hero-h1::before") sits behind every hero word instead of
    spilling over the top of "Let us do the heavy lifting…". (The tint it was lifted over is now on the photo's wash layer.) */
 @media (min-width: 1024px) { main.home-v2 > .desk-hero .desk-hero-h1 { z-index: auto; } }
+
+/* Every questionnaire, site-wide (owner, 10 Oct 2026: "make text in all 'select all that apply' boxes same size, the largest …
+   whilst maintaining nice even looking spacing"): the words in every tick box (".q-opt-text": OptionCard in QuestionnaireParts.tsx
+   and the service cards in SiteQuestionnaire.tsx) one size on each screen size, with the same padding, height and gaps. The
+   service cards' short description line under it stays smaller. */
+.q-modal .q-opt .q-opt-text { font-size: 1.125rem; line-height: 1.25; }
+.q-modal .q-opt .q-opt-desc { font-size: 0.9rem; line-height: 1.3; }
+.q-modal .q-opt { min-height: 3.5rem; padding: 0.6rem 1rem; gap: 0.8rem; }
+.q-modal fieldset:has(> .q-opt) { gap: 0.65rem; }
+@media (min-width: 768px) and (max-width: 1023px) { .q-modal .q-opt .q-opt-text { font-size: 1.0625rem; } }
+@media (max-width: 767px) {
+  .q-modal .q-opt .q-opt-text { font-size: 0.98rem; }
+  .q-modal .q-opt .q-opt-desc { font-size: 0.8rem; }
+  .q-modal .q-opt { min-height: 2.9rem; padding: 0.4rem 0.8rem; gap: 0.65rem; }
+  .q-modal fieldset:has(> .q-opt) { gap: 0.45rem; }
+}
+
+/* the tick boxes in one list all the same height (the tallest one's), so a two-line option does not make its row uneven */
+.q-modal fieldset:has(> .q-opt) { grid-auto-rows: 1fr; }
+
+/* "What we can help you with" icons, site-wide (owner, 10 Oct 2026: "start animation 1 sec after page scroll, animate all one
+   by one top left to top right then bottom left to bottom right, total animation time 2 seconds"). IconSequence.tsx adds
+   "icseq" (icons wait hidden), then "icseq-go" with each card's place (--k) and the gap between icons (--icseq-step).
+   Home page (".hsv-cards"): each round icon pops in (0.6s). Ad pages (".pps-cards"): each icon pops in, then makes its own
+   move once (1s per icon in all); the cards still rise in as they arrive (PpsCardsReveal), only the icons wait. */
+@media (prefers-reduced-motion: no-preference) {
+  .hsv-cards.icseq .whys-card-icon { opacity: 0; transform: scale(.6); }
+  .hsv-cards.icseq.icseq-go .whys-card-icon { opacity: 1; transform: none;
+    animation: wim-pop .6s cubic-bezier(.3,1.5,.5,1) backwards; animation-delay: calc(var(--k, 0) * var(--icseq-step, 0ms)); }
+
+  .pps-sec.pps-services .pps-cards.icseq .pps-card .pps-svc-icon { opacity: 0; transform: scale(.6); animation: none; }
+  .pps-cards.icseq:not(.icseq-go) .pps-svc-icon * { animation: none !important; }
+  .pps-sec.pps-services .pps-cards.icseq.icseq-go .pps-card .pps-svc-icon { opacity: 1; transform: none;
+    animation: wim-pop .45s cubic-bezier(.3,1.5,.5,1) backwards; animation-delay: calc(var(--k, 0) * var(--icseq-step, 0ms)); }
+  .pps-cards.icseq.icseq-go .pps-card.is-in { --d: calc(var(--k, 0) * var(--icseq-step, 0ms) + 300ms); }
+  .pps-cards.icseq.icseq-go .pps-svc-icon * { animation-duration: .7s !important; animation-iteration-count: 1 !important; }
+}
+
+/* "Your selections, at a glance", every questionnaire (owner, 10 Oct 2026: "all questionnaire confirmation boxes to have all same
+   size text, re-design the confirmation boxes accordingly, the text in some boxes is too small"). One screen per choice; every
+   card is laid out in the same spot with only the current one showing (SelectionsSummary.tsx), and the note keeps its space, so
+   all the screens are the same height and are drawn at the same size. Four text sizes only: the page title, the choice's name,
+   the headings ("You need help with", "Add a note") and everything else (the service, the ticked items, Change/Edit, the
+   lines under the title and the note's heading). Long lists of ticked items run in two columns. */
+.sel-sum-list.is-paged { display: grid; }
+.sel-sum-list.is-paged > .sel-card { grid-area: 1 / 1; }
+.sel-sum .is-off { visibility: hidden; }
+.sel-sum { --ss-body: 1.1rem; --ss-head: 1.25rem; --ss-name: 1.8rem; --ss-title: 2.1rem; }
+@media (max-width: 639px) { .sel-sum { --ss-body: 1rem; --ss-head: 1.1rem; --ss-name: 1.4rem; --ss-title: 1.6rem; } }
+.sel-sum .sel-sum-title { font-size: var(--ss-title); }
+.sel-sum .sel-sum-text { margin-top: 0.35rem; font-size: var(--ss-body); }
+.sel-sum .sel-sum-count { font-size: 0.85em; }
+.sel-sum .sel-sum-list { margin-top: 1.1rem; }
+.sel-sum .sel-card-head { padding: 1rem 1.4rem 1.1rem; }
+.sel-sum .sel-card-eyebrow { font-size: calc(var(--ss-body) * 0.72); }
+.sel-sum .sel-card-service { margin-top: 0.3rem; font-size: var(--ss-body); }
+.sel-sum .sel-card-title { margin-top: 0.15rem; font-size: var(--ss-name); line-height: 1.12; }
+.sel-sum :is(.sel-card-change, .sel-card-edit) { min-height: 2.5rem; gap: 0.45rem; font-size: var(--ss-body); }
+.sel-sum :is(.sel-card-change, .sel-card-edit) svg { width: 1em; height: 1em; }
+.sel-sum .sel-card-body { padding: 0.9rem 1.4rem 1rem; }
+.sel-sum .sel-card-heading { font-size: var(--ss-head); }
+.sel-sum .sel-card-items { gap: 0.45rem 1.5rem; margin-top: 0.4rem; }
+.sel-sum .sel-card-items li { gap: 0.6rem; font-size: var(--ss-body); line-height: 1.3; }
+.sel-sum .sel-card-items svg { width: 1.05em; height: 1.05em; }
+@media (min-width: 640px) { .sel-sum .sel-card-items:has(> li:nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sel-sum .sel-note { margin-top: 1.1rem; }
+.sel-sum .sel-note-title { font-size: var(--ss-head); }
+.sel-sum .sel-note-optional { font-size: 0.8em; }
+.sel-sum .sel-note-hint { margin-top: 0.2rem; font-size: var(--ss-body); }
+.sel-sum .sel-note-field { margin-top: 0.5rem; padding: 0.6rem 0.9rem; font-size: max(16px, var(--ss-body)); }
+@media (max-width: 639px) {
+  .sel-sum .sel-card-head { padding: 0.8rem 1rem 0.9rem; }
+  .sel-sum .sel-card-body { padding: 0.75rem 1rem 0.85rem; }
+}
+/* larger on tablets and again on laptops/desktops, where the popup has the room (still one size for every screen) */
+@media (min-width: 768px) { .sel-sum { --ss-body: 1.2rem; --ss-head: 1.35rem; --ss-name: 2rem; --ss-title: 2.3rem; } }
+@media (min-width: 1024px) { .sel-sum { --ss-body: 1.3rem; --ss-head: 1.5rem; --ss-name: 2.25rem; --ss-title: 2.6rem; } }
+
+/* "Who we help", site-wide (owner, 10 Oct 2026: "same animation as What we can help you with"): the home page's section uses the
+   same cards (".hsv-cards", rules above); the ad pages' tiles get the same sequence as their services cards. */
+@media (prefers-reduced-motion: no-preference) {
+  .pps-sec.pps-fit .pps-tiles.icseq .pps-tile .pps-tile-icon { opacity: 0; transform: scale(.6); animation: none; }
+  .pps-tiles.icseq:not(.icseq-go) .pps-tile-icon * { animation: none !important; }
+  .pps-sec.pps-fit .pps-tiles.icseq.icseq-go .pps-tile .pps-tile-icon { opacity: 1; transform: none;
+    animation: wim-pop .45s cubic-bezier(.3,1.5,.5,1) backwards; animation-delay: calc(var(--k, 0) * var(--icseq-step, 0ms)); }
+  .pps-tiles.icseq.icseq-go .pps-tile.is-in { --d: calc(var(--k, 0) * var(--icseq-step, 0ms) + 300ms); }
+  .pps-tiles.icseq.icseq-go .pps-tile-icon * { animation-duration: .7s !important; animation-iteration-count: 1 !important; }
+}
+
+/* Home hero (owner, 10 Oct 2026): "Let us do the heavy lifting and find your perfect match." the same size and look as the line
+   under the registration page's headline ("Get your ABN, TFN, business name…", ".pz-reg .pth-sub" in ads.css): its on-screen
+   size (--sub-t), weight and colour on every screen size. The home line is drawn at 80% (its zoom), and on laptops/desktops also
+   at 115% with the words around it, so its font size is divided by that; the 112.5% sideways stretch of the hero words is taken
+   off this line so its letters are not widened. */
+main.home-v2 > .desk-hero .desk-hero-sub {
+  --sub-t: calc(clamp(1.02rem, 4.3vw, 1.125rem) * 1.2);
+  font-size: calc(var(--sub-t) / 0.8) !important; font-weight: 400 !important; line-height: 1.38 !important; color: var(--navy-900) !important;
+}
+@media (min-width: 768px) { main.home-v2 > .desk-hero .desk-hero-sub { --sub-t: calc(1.3rem * 1.2); line-height: 1.45 !important; } }
+@media (min-width: 1024px) {
+  main.home-v2 > .desk-hero .desk-hero-sub { font-size: calc(var(--sub-t) / 0.92) !important; scale: calc(1 / 1.125) 1; transform-origin: left; }
+}
+@media (min-width: 1200px) {
+  main.home-v2 > .desk-hero .desk-hero-sub { --sub-t: clamp(20.16px, 15.36px + 0.4vw, 21.6px); font-weight: 500 !important; }
+}
+/* 1024-1199px: at that size the line no longer fits beside the match box on one line, so it wraps before the box */
+@media (min-width: 1024px) and (max-width: 1199px) { main.home-v2 > .desk-hero .desk-hero-sub { max-width: calc(51.3vw - 34px); } }
