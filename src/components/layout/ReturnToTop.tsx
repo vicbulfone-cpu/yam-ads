@@ -39,7 +39,7 @@ export default function ReturnToTop() {
         event.currentTarget.blur();
         window.scrollTo({ top: 0, behavior });
       }}
-      className={`fixed bottom-7 right-7 z-40 hidden h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-navy-700 via-navy-900 to-green-700 text-white shadow-[0_10px_28px_rgba(7,50,101,.3)] ring-1 ring-white/70 transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(7,50,101,.4)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300 lg:grid ${
+      className={`fixed bottom-7 right-7 z-40 hidden h-14 w-14 place-items-center rounded-full bg-[linear-gradient(135deg,#00ae41_0%,#0b9a5c_35%,#127a8a_65%,#1a5aa6_100%)] text-white shadow-[0_10px_28px_rgba(16,110,120,.32)] ring-1 ring-white/70 transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(16,110,120,.42)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300 lg:grid ${
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0"
       }`}
     >
