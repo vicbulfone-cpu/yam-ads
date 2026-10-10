@@ -86,7 +86,7 @@ export const businessHeroDesktop = { src: "/images/hero/business-desk-v3-3804.we
 export const smsfHeroDesktop = { src: "/images/hero/smsf-desk-v16-1983.webp", width: 1983, height: 793 };
 /** Registration ad page (/ad-4) desktop hero photo (owner, 10 Oct 2026: "registration hero" in "hero section/ad
  *  landing pages/registration"; built by scripts/make-registration-hero.mjs). Desktops (1200px+) only. */
-export const registrationHeroDesktop = { src: "/images/hero/registration-desk-v5-1983.webp", width: 1983, height: 793 };
+export const registrationHeroDesktop = { src: "/images/hero/registration-desk-v6-3966.webp", width: 3966, height: 1586, quality: 92 }; // full size, best quality (owner, 10 Oct 2026: "a lot more clear")
 
 /** Earlier hero pictures (no longer shown on the home or city pages; kept so they can be reused). */
 export const heroPicture = heroByNumber(3);
