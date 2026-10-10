@@ -1,5 +1,5 @@
 // SMSF ad page (/ad-3) desktop hero picture (owner, 9 Oct 2026; replaced twice the same day, "-v3"; 10 Oct 2026 "smsf hero"
-// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges): the owner's
+// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges); "-v23" rising faster from the right edge: the owner's
 // picture from "hero section/ad landing pages/smsf". When the photo is taller than the hero frame, a 2.5:1 band is cut
 // from it (TOP: its top edge in the photo's pixels, just above the couple's heads; their feet stay in), then scaled to
 // 1983 x 793 and made into a WebP file in public/images/hero. The original is only read, never changed. Safe to re-run.
@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v22-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v23-1983.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
@@ -43,7 +43,9 @@ const base = await sharp(framed).composite([{ input: couple, left: COUPLE.left, 
 // "-v17" (owner, 10 Oct 2026: "smsf hero pic remove all fade"): no white fade was laid over the photo.
 // "-v18" (owner, 10 Oct 2026: "apply a fade, starts from right margin and moves all the way to left margin, apply no fade effect
 // to boat or people etc, only sky, water, clouds"): the v14 curve again, but only on the sky, sea and clouds (see SCENE below).
-const LEFT = 0.76, CURVE = 1.25; // "-v13": slightly stronger (was 0.62), "-v14": a little more (was 0.7; owner, 10 Oct 2026)
+// "-v23" (owner, 10 Oct 2026: "the fade from the very right edge to the very left edge to increase more quickly ... evenly"): the
+// same strength at the left edge, rising faster from the right edge (CURVE below 1: at the middle 0.45, was 0.32).
+const LEFT = 0.76, CURVE = 0.75; // "-v13": slightly stronger (was 0.62), "-v14": a little more (was 0.7; owner, 10 Oct 2026)
 // Where the fade may go (SCENE; "-v20", owner 10 Oct 2026: v19 missed a lot of sky and sea round the boat; "-v21": v20 still
 // left strips of sky beside the mast and a wedge of sea along the bow): every pixel that is sky or sea blue, right up to the
 // edges of the boat, mast, ropes and people (and everything left of x = 1150, where there is only sky, clouds and sea).
