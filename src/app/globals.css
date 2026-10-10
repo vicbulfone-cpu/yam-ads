@@ -1250,7 +1250,8 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 }
 @media (min-width: 1024px) { .cov { padding-block: clamp(4rem, 5.3vw, 8rem) clamp(2.5rem, 3vw, 4.5rem); } }
 .cov-grid { display: grid; gap: 2rem; }
-@media (min-width: 1024px) { .cov-grid { grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 3vw, 4.5rem); } }
+/* one column on every screen: the map that sat on the right was removed (owner, 10 Oct 2026, noc) */
+@media (min-width: 1024px) { .cov-grid { grid-template-columns: minmax(0, 1fr); align-items: center; gap: clamp(2rem, 3vw, 4.5rem); } }
 .cov-eyebrow {
   display: inline-flex; border-radius: 0.6rem; background: rgba(61, 220, 132, 0.12); color: var(--cov-green);
   padding: 0.5rem 1rem; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
@@ -1303,16 +1304,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
   .cov-chip-pin { width: clamp(1.05rem, 1.15vw, 1.7rem); height: clamp(1.05rem, 1.15vw, 1.7rem); }
 }
 
-/* the map: the match box's Australia outline drawn large in steel blue, a green pin and "Australia wide" in its middle */
-.cov-map-wrap { position: relative; width: min(100%, 22rem); margin-inline: auto; }
-@media (min-width: 1024px) { .cov-map-wrap { width: 100%; } }
-.cov-map {
-  display: block; aspect-ratio: 654 / 624; background: linear-gradient(165deg, #6a97cc 0%, #4b7bb6 45%, #3c69a3 100%);
-  -webkit-mask: url("/images/ui/australia-map-v3.webp") center / contain no-repeat; mask: url("/images/ui/australia-map-v3.webp") center / contain no-repeat;
-}
-.cov-map-mark { position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
-.cov-map-pin { width: clamp(2.4rem, 3.4vw, 5rem); height: clamp(2.4rem, 3.4vw, 5rem); color: var(--cov-green); filter: drop-shadow(0 6px 10px rgba(4, 30, 64, 0.35)); }
-.cov-map-text { color: #fff; font-weight: 800; letter-spacing: 0.32em; text-transform: uppercase; white-space: nowrap; font-size: clamp(0.78rem, 1vw, 1.5rem); padding-left: 0.32em; }
 
 .cov-note {
   margin-top: 2.25rem; padding-top: 1.75rem; border-top: 1px solid var(--cov-line);
@@ -1325,7 +1316,6 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 .cov-chip { font-size: min(0.92rem, 4.4cqi); }
 @media (min-width: 640px) { .cov-chip { font-size: min(0.92rem, 2.25cqi); padding-inline: 0.75rem; } }
 @media (min-width: 1024px) {
-  .cov-grid { grid-template-columns: minmax(0, 2.45fr) minmax(0, 1fr); }
   .cov-panel { grid-template-columns: clamp(11rem, 14vw, 21rem) minmax(0, 1fr); }
   .cov-chip { font-size: min(clamp(0.9rem, 1.02vw, 1.5rem), 2.25cqi); padding-inline: clamp(0.75rem, 1vw, 1.5rem); }
   .cov-h2 { letter-spacing: -0.025em !important; }
@@ -2091,3 +2081,115 @@ html.q-modal-open, html.q-modal-open body { overflow: hidden; overscroll-behavio
 /* the map 2cm higher and 1.5cm to the right on laptops and desktops (owner, 10 Oct 2026, noc); moved on its own, so the
    words, the navy bar and the space around them stay put */
 @media (min-width: 1024px) { .hmi-map { translate: 1.5cm -2cm; } }
+/* the map at 85% of its size on every screen (owner, 10 Oct 2026, noc): scaled about its centre, so it shrinks in place
+   with its pin pulse; its frame, the words and the navy bar stay put */
+.hmi-map { scale: 0.85; }
+/* laptops/desktops, home page only (owner, 10 Oct 2026, noc): the founder's paragraphs reach 1cm further right. The words
+   column is 1cm wider (was 0.95fr : 1.05fr, gap 0, so 47.5%) and the map's frame reaches 1cm further left under the words,
+   so the map keeps its size and place */
+@media (min-width: 1024px) {
+  .hmi-meet:has(.hmi-map-frame) { grid-template-columns: calc(47.5% + 1cm) 1fr; }
+  .hmi-meet:has(.hmi-map-frame) .hmi-founder { max-width: calc(38vw + 1cm); }
+  .hmi-map-frame { margin-left: calc(-6vw - 1cm); }
+}
+
+/* Home page "Why Use a Specialist Accountant?" straight under the hero (owner, 10 Oct 2026, noc; HomeWhySpecialist.tsx):
+   the ad pages' "Why Use…" look (mint band, plain green label, navy heading ending in green, white cards with a navy
+   title bar and the green tick). Heading left and intro right behind a thin divider on laptops/desktops (as "How it
+   works"); the four service cards four across from 1280px, two from 768px, one on phones. Sizes grow with the screen
+   on laptops and desktops like the rest of the home page. */
+.whys { position: relative; background: #f1f8f4; padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 6vw, 5rem); }
+/* (the 3cm hero-gap top space moved to .hsv, which now sits straight under the hero) */
+@media (min-width: 1024px) { .whys { padding-top: clamp(3.5rem, 4.5vw, 7rem); padding-bottom: clamp(3.5rem, 4.5vw, 7rem); } }
+.whys-head { display: grid; gap: 1rem; }
+@media (min-width: 1024px) { .whys-head { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 4vw; align-items: center; } }
+.whys-eyebrow { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--green-700); }
+.whys-h2 { margin-top: 0.6rem; font-family: var(--font-sans); font-weight: 800; font-size: 2.1rem; line-height: 1.04; letter-spacing: -0.04em; color: var(--navy-900); text-wrap: balance; }
+@media (min-width: 640px) { .whys-h2 { font-size: 2.6rem; } }
+.whys-accent { color: var(--green-700); }
+.whys-intro p { font-size: 1rem; line-height: 1.55; color: rgb(7 50 101 / 0.85); }
+.whys-intro p + p { margin-top: 0.75rem; }
+@media (min-width: 1024px) {
+  .whys-eyebrow { font-size: clamp(0.72rem, 0.68vw, 1rem); }
+  .whys-h2 { margin-top: clamp(0.6rem, 0.8vw, 1.2rem); font-size: clamp(2.6rem, 3.4vw, 5.2rem); }
+  .whys-intro { border-left: 1px solid rgb(7 50 101 / 0.25); padding-left: 3.5vw; padding-block: 0.4vw; }
+  .whys-intro p { font-size: clamp(1rem, 1.1vw, 1.65rem); }
+  .whys-intro p + p { margin-top: clamp(0.75rem, 0.8vw, 1.2rem); }
+}
+.whys-lead { margin-top: 2.25rem; font-size: 0.95rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy-900); }
+@media (min-width: 1024px) { .whys-lead { margin-top: clamp(2.25rem, 3vw, 4.5rem); font-size: clamp(0.95rem, 0.95vw, 1.4rem); } }
+.whys-cards { margin-top: 1rem; display: grid; gap: 1.25rem; }
+@media (min-width: 768px) { .whys-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1280px) { .whys-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(1rem, 1.2vw, 1.8rem); } }
+@media (min-width: 1024px) { .whys-cards { margin-top: clamp(1rem, 1.1vw, 1.6rem); } }
+.whys-card { display: flex; flex-direction: column; padding: 0.7rem 0.7rem 0.4rem; border-radius: 1.25rem; background: #fff;
+  border: 1px solid rgba(14, 122, 50, 0.1);
+  box-shadow: 0 1px 2px rgba(7, 50, 101, 0.06), 0 6px 16px -6px rgba(7, 50, 101, 0.1), 0 24px 48px -20px rgba(7, 50, 101, 0.16); }
+.whys-card-bar { display: flex; align-items: center; gap: 0.85rem; padding: 0.75rem 1rem 0.75rem 0.75rem; border-radius: 0.9rem;
+  background: linear-gradient(180deg, #0b3f7d 0%, var(--navy-900) 100%); box-shadow: 0 10px 22px -14px rgba(7, 50, 101, 0.8); }
+.whys-card-icon { flex: none; display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: 999px; color: #fff;
+  background: linear-gradient(135deg, #16a34a 0%, #0e7a32 100%); box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.28); }
+.whys-card-icon svg { width: 58%; height: 58%; }
+.whys-card-h { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; color: #fff; }
+.whys-card-who { margin-top: 0.15rem; font-size: 0.8rem; font-weight: 600; line-height: 1.3; color: #5fd38a; }
+.whys-points { padding: 0.35rem 0.5rem 0; }
+.whys-point { display: flex; align-items: flex-start; gap: 0.75rem; padding-block: 0.8rem; border-bottom: 1px solid rgba(7, 50, 101, 0.1); }
+.whys-point:last-child { border-bottom: 0; }
+.whys-tick { flex: none; width: 1.55rem; height: auto; margin-top: 0.1rem; }
+.whys-point-title { display: block; font-weight: 700; font-size: 0.98rem; line-height: 1.3; letter-spacing: -0.005em; color: var(--navy-900); }
+.whys-point-text { display: block; margin-top: 0.2rem; font-size: 0.88rem; line-height: 1.45; color: rgb(7 50 101 / 0.72); }
+@media (min-width: 1280px) {
+  .whys-card { padding: clamp(0.7rem, 0.6vw, 1rem) clamp(0.7rem, 0.6vw, 1rem) 0.4rem; border-radius: clamp(1.25rem, 1.1vw, 1.7rem); }
+  .whys-card-bar { gap: clamp(0.85rem, 0.8vw, 1.2rem); padding: clamp(0.75rem, 0.7vw, 1.1rem); border-radius: clamp(0.9rem, 0.8vw, 1.2rem); }
+  .whys-card-icon { width: clamp(2.9rem, 2.9vw, 4.3rem); height: clamp(2.9rem, 2.9vw, 4.3rem); }
+  .whys-card-h { font-size: clamp(1.1rem, 1.2vw, 1.8rem); }
+  .whys-card-who { font-size: clamp(0.8rem, 0.8vw, 1.2rem); }
+  .whys-points { padding-inline: clamp(0.4rem, 0.4vw, 0.7rem); }
+  .whys-point { gap: clamp(0.75rem, 0.7vw, 1.1rem); padding-block: clamp(0.8rem, 0.8vw, 1.2rem); }
+  .whys-tick { width: clamp(1.55rem, 1.5vw, 2.3rem); }
+  .whys-point-title { font-size: clamp(0.98rem, 0.98vw, 1.45rem); }
+  .whys-point-text { font-size: clamp(0.88rem, 0.86vw, 1.3rem); }
+}
+.whys-cta { margin-top: 2.25rem; display: flex; flex-direction: column; align-items: center; }
+.whys-cta-note { margin-top: 0.6rem; font-size: 0.82rem; color: rgb(7 50 101 / 0.8); }
+@media (min-width: 1024px) { .whys-cta { margin-top: clamp(2.25rem, 2.6vw, 4rem); } }
+
+/* Home page "What we can help you with" straight under the hero (owner, 10 Oct 2026, noc; HomeServices.tsx): the ad
+   pages' services section scaled back to the four services. Uses the ".whys-" heading, intro, card grid and icon; its own
+   lighter cards: white band, white cards with a green top edge, four services each with a small green arrow. */
+.hsv { position: relative; background: #f1f8f4; /* mint like the ad pages (owner, 10 Oct 2026, noc) */ padding-top: calc(3rem + 0.5cm); padding-bottom: clamp(3rem, 6vw, 5rem); }
+/* laptops/desktops: top space = the 3cm hero gap, so with HeroGap the band starts right under the hero bar */
+@media (min-width: 1024px) { .hsv { padding-top: 3cm; padding-bottom: clamp(3.5rem, 4.5vw, 7rem); } }
+.whys-cards.hsv-cards { margin-top: 2rem; }
+@media (min-width: 1024px) { .whys-cards.hsv-cards { margin-top: clamp(2rem, 2.6vw, 4rem); } }
+.hsv-card { padding: 1.25rem 1.25rem 0.6rem; border-radius: 1.25rem; background: #fff; border: 1px solid rgba(7, 50, 101, 0.1);
+  border-top: 4px solid var(--green-700); box-shadow: 0 1px 2px rgba(7, 50, 101, 0.05), 0 18px 40px -24px rgba(7, 50, 101, 0.28); }
+.hsv-card-head { display: flex; align-items: center; gap: 0.85rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(7, 50, 101, 0.1); }
+.hsv-card-h { font-family: var(--font-sans); font-size: 1.15rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; color: var(--navy-900); }
+.hsv-card-who { margin-top: 0.15rem; font-size: 0.8rem; font-weight: 600; line-height: 1.3; color: var(--green-700); }
+.hsv-item { display: flex; align-items: flex-start; gap: 0.7rem; padding-block: 0.8rem; border-bottom: 1px solid rgba(7, 50, 101, 0.07); }
+.hsv-item:last-child { border-bottom: 0; }
+.hsv-arrow { flex: none; width: 1.05rem; height: 1.05rem; margin-top: 0.2rem; color: var(--green-700); }
+.hsv-item-title { font-family: var(--font-sans); font-weight: 700; font-size: 0.98rem; line-height: 1.3; letter-spacing: -0.005em; color: var(--navy-900); }
+.hsv-item-text { margin-top: 0.2rem; font-size: 0.88rem; line-height: 1.45; color: rgb(7 50 101 / 0.72); }
+@media (min-width: 1280px) {
+  .hsv-card { padding: clamp(1.25rem, 1.2vw, 1.8rem) clamp(1.25rem, 1.2vw, 1.8rem) 0.6rem; border-radius: clamp(1.25rem, 1.1vw, 1.7rem); }
+  .hsv-card-head { gap: clamp(0.85rem, 0.8vw, 1.2rem); padding-bottom: clamp(1rem, 1vw, 1.5rem); }
+  .hsv-card-h { font-size: clamp(1.15rem, 1.2vw, 1.8rem); }
+  .hsv-card-who { font-size: clamp(0.8rem, 0.8vw, 1.2rem); }
+  .hsv-item { gap: clamp(0.7rem, 0.7vw, 1.05rem); padding-block: clamp(0.8rem, 0.8vw, 1.2rem); }
+  .hsv-arrow { width: clamp(1.05rem, 1vw, 1.5rem); height: clamp(1.05rem, 1vw, 1.5rem); }
+  .hsv-item-title { font-size: clamp(0.98rem, 0.98vw, 1.45rem); }
+  .hsv-item-text { font-size: clamp(0.88rem, 0.86vw, 1.3rem); }
+}
+/* "Accounting, made easier / Why Use a Specialist Accountant?" 1cm higher (owner, 10 Oct 2026, noc). Laptops/desktops:
+   the label and heading only (the intro beside them and the cards stay put); phones/tablets, where everything is
+   stacked: 1cm less space above it, so all below follows */
+@media (min-width: 1024px) { .whys .whys-head > div:first-child { position: relative; top: -1cm; } }
+@media (max-width: 1023px) { .whys { padding-top: calc(clamp(3rem, 6vw, 5rem) - 1cm); } }
+/* Home page background green like the ad pages (owner, 10 Oct 2026, noc): the ad pages' mint (#f1f8f4, ads.css .pps-why
+   and /ad-2's "How it works") from under the hero down to the navy bar under "How it works" (.hsv and .whys above, and
+   here "How it works"); from that bar down stays white, as on the ad pages, so the network map's white runs into the page */
+main.home-v2 section[aria-labelledby="home-match-intro"] { background: #f1f8f4; }
+main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page:not(:first-child) {
+  background: #fff; box-shadow: 0 0 0 100vmax #fff; clip-path: inset(0 -100vmax -100vmax); }

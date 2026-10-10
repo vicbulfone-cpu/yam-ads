@@ -23,6 +23,8 @@ import Tagline from "./sections/Tagline";
 import { HOME_HERO_TAGLINE, TAGLINES, taglineFor } from "@/content/taglines";
 import { BIZ_LANDING } from "@/content/business-questionnaire";
 import HomeMatchIntro from "./sections/HomeMatchIntro";
+import HomeWhySpecialist from "./sections/HomeWhySpecialist";
+import HomeServices from "./sections/HomeServices";
 import PhoneMatchCta from "./sections/PhoneMatchCta";
 import { MATCH_CARD_COPY } from "@/content/match-card-copy";
 import WhyItMatters from "./sections/WhyItMatters";
@@ -166,7 +168,9 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
       <>
         <main className="home-v2">
           <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroLightPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
-          <HomeMatchIntro mapPicture /> {/* the network map in place of the tradie, home page only (owner, 10 Oct 2026) */}
+          <HomeServices /> {/* "What we can help you with" straight under the hero (owner, 10 Oct 2026, noc) */}
+          <HomeWhySpecialist /> {/* "Why Use a Specialist Accountant?" (owner, 10 Oct 2026, noc) */}
+          <HomeMatchIntro mapPicture heroGap={false} /> {/* the network map in place of the tradie, home page only (owner, 10 Oct 2026) */}
           <HeroTrustStrip />
           <WhyItMatters />
           <HomeSelection /> {/* trust: how we select accountants (owner, 6 Oct 2026) */}

@@ -1601,11 +1601,12 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   /* the navy bar under it (and everything below) up by the same amount, touching the photo again (owner, 9 Oct 2026) */
   .home-v2:has(.phs) .hmi-meet { margin-bottom: calc(-1 * var(--tradie-up)); }
 }
-/* /ad-2 only: the founder's two paragraphs under "Your needs. Your area. Your accountant." 2.5mm higher; nothing else
-   moves (owner, 9 Oct 2026) */
-.home-v2:has(.phs) .hmi-founder { position: relative; top: -2.5mm; }
-/* /ad-2 only: "Your needs. Your area. Your accountant." under the heading removed (owner, 9 Oct 2026) */
-.home-v2:has(.phs) .hmi-tagline { display: none; }
+/* /ad-2: the network map (the home page's "Meet Your Accountant Match", owner 10 Oct 2026, noc) lifted by the same amount
+   as the navy bar under it, so the bar stays where it was and never covers the map's bottom. Tablets and up. (The
+   /ad-2-only hidden tagline and the founder paragraphs' 2.5mm nudge were removed with it, so the words match the home page.) */
+@media (min-width: 768px) {
+  .home-v2:has(.phs) .hmi-map { top: calc(-1 * var(--tradie-up)); bottom: var(--tradie-up); }
+}
 /* /ad-1 popup (owner, 10 Oct 2026): the business match box always shows its four rows' full names and lines */
 .mc-full-rows .bz-long { display: inline; }
 .mc-full-rows .bz-short { display: none; }

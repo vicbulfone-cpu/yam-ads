@@ -15,7 +15,8 @@ export default function AdHomeSections({ extraFaqs, stepsBar, closingButton, ste
   const startHref = `#${AD_MATCH_BOX_ID}`;
   return (
     <div className="home-v2">
-      <HomeMatchIntro startHref={startHref} bar={stepsBar} closingButton={closingButton} steps={steps} />
+      {/* "Meet Your Accountant Match" as on the home page, with the network map in place of the tradie (owner, 10 Oct 2026, noc) */}
+      <HomeMatchIntro startHref={startHref} bar={stepsBar} closingButton={closingButton} steps={steps} mapPicture />
       {/* the three trust icons in the white band, as on the home page */}
       <HeroTrustStrip />
       <WhyItMatters />

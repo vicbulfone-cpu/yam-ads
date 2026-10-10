@@ -2,7 +2,6 @@ import Link from "next/link";
 import { howWeSelect } from "@/content/how-we-select";
 import { CREDENTIAL } from "@/content/wording";
 import { SELECT_ICONS } from "./SelectIcons";
-import WimReveal from "./WimReveal";
 
 /**
  * Home page trust section (owner, 6 Oct 2026: "for SEO trust ... make look professional"): points to
@@ -35,7 +34,7 @@ export default function HomeSelection() {
         </div>
 
         <div className="sel-right">
-          <WimReveal list=".sel-checks" />
+          {/* (no scroll reveal: the icons never animate, site wide; owner, 10 Oct 2026, noc) */}
           <ul className="sel-checks">
             {howWeSelect.checks.map((k, i) => (
               <li key={k.n} className="sel-cell" style={{ "--i": i } as React.CSSProperties}>

@@ -39,7 +39,9 @@ export default function HomeClosingCta({ tagline, startHref = QUESTIONNAIRE_URL 
                 {first}
                 {rest && <> <span className="text-[#4ee28f] max-sm:block">{rest}</span></>}
               </p>
-              <span aria-hidden className="mb-6 mt-5 block h-[3px] w-14 rounded-full bg-[#4ee28f]/80 lg:mb-[1.6vw] lg:mt-[1.3vw] lg:w-[clamp(3.5rem,4vw,6rem)]" />
+              {/* the short green line under the tagline removed, site wide (owner, 10 Oct 2026, noc); its space is kept so
+                  the heading below stays where it was */}
+              <span aria-hidden className="mb-6 mt-5 block h-[3px] lg:mb-[1.6vw] lg:mt-[1.3vw]" />
             </>
           )}
           <h2 id="home-closing-cta" className="text-[1.65rem] leading-tight! text-white! sm:text-[2rem] lg:text-[clamp(2rem,2.4vw,3.6rem)]">

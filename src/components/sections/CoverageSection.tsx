@@ -2,8 +2,8 @@
  * Home page: "Connecting Australians with local accountants" (our coverage).
  * Laid out as the owner's "australia wide" picture (hero section/ad landing pages/australia wide.png, 6 Oct 2026):
  * a navy band; on the left the eyebrow, two-line heading, the line under it and two framed panels (capital cities,
- * regional centres) of place chips; on the right a large map of Australia with a green pin and "Australia wide";
- * a full-width rule, then the one-accountant-per-area note. Phones and tablets stack everything, map last.
+ * regional centres) of place chips (the map of Australia on the right was removed, owner 10 Oct 2026);
+ * a full-width rule, then the one-accountant-per-area note. Phones and tablets stack everything.
  * None of the places has its own page on this site (the Melbourne page was removed, owner 6 Oct 2026), so none is a link.
  * Styles: ".cov-" in globals.css.
  */
@@ -49,15 +49,7 @@ export default function CoverageSection() {
               ))}
             </div>
           </div>
-
-          {/* map of Australia (the match box's outline, drawn large) with a pin and "Australia wide" */}
-          <div className="cov-map-wrap" aria-hidden="true">
-            <span className="cov-map" />
-            <span className="cov-map-mark">
-              <Pin className="cov-map-pin" />
-              <span className="cov-map-text">Australia wide</span>
-            </span>
-          </div>
+          {/* (the map of Australia with its pin and "Australia wide" removed, site wide: owner, 10 Oct 2026, noc) */}
         </div>
 
         <p className="cov-note">

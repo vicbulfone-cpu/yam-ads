@@ -64,12 +64,12 @@ const Eyebrow = ({ children }: { children: string }) => (
 /** `bar`: own words for the navy bar under the steps (owner, 9 Oct 2026: the personal tax ad page has its own) */
 /** `steps`: own steps in place of the photo steps (owner, 9 Oct 2026: the personal tax ad page's icon steps) */
 /** `mapPicture`: the network map (with its "lights up" animation) in place of the tradie photo (owner, 10 Oct 2026: home page only) */
-export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false, steps, mapPicture = false }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean; steps?: React.ReactNode; mapPicture?: boolean }) {
+export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, closingButton = false, steps, mapPicture = false, heroGap = true }: { startHref?: string; bar?: { title: string; sub: string }; /** the closing "Less searching, a better match." bar laid out like the others, with its button (owner, 9 Oct 2026: personal tax ad page) */ closingButton?: boolean; steps?: React.ReactNode; mapPicture?: boolean; /** false: not straight under the hero (home page: "Why Use a Specialist Accountant?" sits between, owner 10 Oct 2026), so ordinary top space and no hero gap */ heroGap?: boolean }) {
   return (
-    <section aria-labelledby="home-match-intro" className="relative overflow-hidden bg-white pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]">
+    <section aria-labelledby="home-match-intro" className={`relative overflow-hidden bg-white ${heroGap ? "pt-[calc(3rem+0.5cm)] lg:pt-[clamp(2.5rem,2.6vw,4rem)]" : "pt-[clamp(3rem,6vw,5rem)] lg:pt-[clamp(3.5rem,4.5vw,7rem)]"}`}>
       {/* starts 0.5cm lower than the usual 2.5cm under the hero (owner, 5 Oct 2026: 2cm lower, then 1.5cm back up);
           phones/tablets get the 0.5cm in the padding above */}
-      <HeroGap cm={3} />
+      {heroGap && <HeroGap cm={3} />}
       <div>
 
         {/* 1 — how it works (owner, 6 Oct 2026: swapped with "Meet your accountant match", which now follows it;
@@ -143,7 +143,9 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
             {/* lined up with the heading on every screen size (owner, 7 Oct 2026: the earlier 1cm nudge right removed) */}
             {/* removed on /ad-2 only (owner, 9 Oct 2026; ads.css .hmi-tagline) */}
             <p className="hmi-tagline mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-navy-900 lg:mt-[0.9vw] lg:text-[clamp(1.25rem,1.75vw,2.6rem)]">
-              Your needs. Your area. Your accountant.
+              {/* each "Your" green, like "A better match." (owner, 10 Oct 2026, noc) */}
+              <span className="text-green-700">Your</span> needs. <span className="text-green-700">Your</span> area.{" "}
+              <span className="text-green-700">Your</span> accountant.
             </p>
             {/* owner, 7 Oct 2026: the founder's background (same words as the ad pages' About popup, src/content/about-popup.ts), 7mm lower */}
             {ABOUT_POPUP.expertise.paragraphs.map((p, i) => (
