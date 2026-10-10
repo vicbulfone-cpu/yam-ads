@@ -34,7 +34,9 @@ export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
         bar.style.setProperty("--hb-box-mid", `${b.left + b.width / 2 - words.getBoundingClientRect().left}px`);
         bar.classList.add("hb-mid");
       }
-      const heroBottom = Math.max(pic.getBoundingClientRect().bottom, box.getBoundingClientRect().bottom, bar ? bar.getBoundingClientRect().bottom : 0);
+      // the photo never shows below the bar (its foot is clipped off there since it moved 5cm down: owner, 10 Oct 2026)
+      const picBottom = bar ? Math.min(pic.getBoundingClientRect().bottom, bar.getBoundingClientRect().bottom) : pic.getBoundingClientRect().bottom;
+      const heroBottom = Math.max(picBottom, box.getBoundingClientRect().bottom, bar ? bar.getBoundingClientRect().bottom : 0);
       const pull = content.getBoundingClientRect().top - heroBottom - GAP;
       if (pull !== 0) section.style.marginTop = `${-pull}px`;
     };

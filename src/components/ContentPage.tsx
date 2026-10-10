@@ -34,6 +34,7 @@ import HomeSelection from "./sections/HomeSelection";
 import FAQSection from "./sections/FAQSection";
 import CoverageSection from "./sections/CoverageSection";
 import HomeClosingCta from "./sections/HomeClosingCta";
+import StartBar from "./sections/StartBar";
 import HowItWorksSteps, { type HowStep } from "./sections/HowItWorksSteps";
 import { ONE_MATCH_BUTTON, ONE_MATCH_OLD_START, ONE_MATCH_PARAGRAPHS, STEP2_OLD_START, STEP2_TEXT, STEP3_OLD_START, STEP3_TEXT, STEP1_FROM, STEP1_TO } from "@/content/how-it-works";
 
@@ -171,8 +172,17 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
         <main className="home-v2">
           <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroLightPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
           <HomeServices /> {/* "What we can help you with" straight under the hero (owner, 10 Oct 2026, noc) */}
+          {/* navy bars between the sections in the same places as on the ad pages (owner, 10 Oct 2026), with the same gaps
+              above and below them as there (".home-bar-gap" in globals.css). Words from the /ad-2 bars, "Tax" taken out of the
+              second one as the home page covers every service. */}
+          <div className="home-bar-gap home-bar-gap--ideal"><StartBar buttonOnPhone={false} className="bar-align-how-row"
+            title="Your Ideal Accountant Awaits" sub="Less searching. Better matching. Less hassle." buttonLabel="Find My Match" /></div>
           <HomeWhySpecialist /> {/* "Why Use a Specialist Accountant?" (owner, 10 Oct 2026, noc) */}
+          <div className="home-bar-gap home-bar-gap--fit"><StartBar buttonOnPhone={false} className="bar-align-how-row"
+            title="Your Accountant Is One Match Away." sub="Save time. Skip the guesswork. Find your match." /></div>
           <HomeWhoWeHelp /> {/* "Who we help", above "How it works" (owner, 10 Oct 2026, noc) */}
+          <div className="home-bar-gap home-bar-gap--how"><StartBar buttonOnPhone={false} className="bar-align-how-row"
+            title="Make Tax Time Easier." sub="The right expertise. Your area. Less hassle." /></div>
           {/* the network map in place of the tradie, home page only (owner, 10 Oct 2026); "How it works" with the ad pages' icon steps
               in place of the photo steps (owner, 10 Oct 2026, noc) */}
           <HomeMatchIntro mapPicture heroGap={false} steps={<PersonalHowSteps />} />
