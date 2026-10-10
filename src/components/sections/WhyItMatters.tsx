@@ -105,10 +105,10 @@ export default function WhyItMatters() {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_80%_at_85%_0%,rgba(26,90,166,0.45),transparent_70%),radial-gradient(50%_70%_at_0%_100%,rgba(3,26,61,0.6),transparent_70%)]"
       />
       <div className="container-page home-wide relative">
-        <p className="mb-5 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-green-200 fs-eyebrow">
+        <p className="mb-5 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-green-200 fs-eyebrow sec-eyebrow">
           Why it matters
         </p>
-        <h2 className="mb-10 max-w-3xl font-sans! text-[1.85rem] leading-[1.12]! font-extrabold tracking-tight! text-white! sm:text-4xl md:mb-12 lg:mb-[3vw] lg:max-w-none lg:text-[2.75rem] fs-h2">
+        <h2 className="mb-10 max-w-3xl font-sans! text-[1.85rem] leading-[1.12]! font-extrabold tracking-tight! text-white! sm:text-4xl md:mb-12 lg:mb-[3vw] lg:max-w-none lg:text-[2.75rem] fs-h2 sec-h2">
           Choosing the right accountant <br className="hidden sm:inline" />
           saves you <span className="text-[#4fd06a]">time, money and stress.</span>
         </h2>

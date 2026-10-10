@@ -54,7 +54,7 @@ const StepArrow = () => <ArrowRightIcon aria-hidden strokeWidth={2.4} className=
 
 /** Eyebrow with a short rule after it */
 const Eyebrow = ({ children }: { children: string }) => (
-  <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow">
+  <p className="flex items-center gap-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-green-700 fs-eyebrow sec-eyebrow">
     {children}
     <span aria-hidden className="h-px w-16 bg-green-700 lg:w-[clamp(4rem,6vw,9rem)]" />
   </p>
@@ -78,7 +78,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
           <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-[4vw]">
             <div>
               <Eyebrow>How it works</Eyebrow>
-              <h2 className="mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
+              <h2 className="sec-h2 mt-2 font-sans text-[2.1rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[2.6rem] lg:text-[clamp(2.6rem,3.75vw,5.7rem)]">
                 <span className="block text-navy-900">Finding your accountant,</span>
                 <span className="block text-green-700">made simple.</span>
               </h2>
@@ -135,7 +135,7 @@ export default function HomeMatchIntro({ startHref = QUESTIONNAIRE_URL, bar, clo
             <Eyebrow>Meet Your Accountant Match</Eyebrow>
             <h2
               id="home-match-intro"
-              className="mt-3 font-sans text-[2.35rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[3rem] lg:mt-[0.9vw] lg:whitespace-nowrap lg:text-[clamp(2.8rem,3.9vw,6rem)]"
+              className="sec-h2 mt-3 font-sans text-[2.35rem] font-extrabold leading-[1.02]! tracking-[-0.04em] sm:text-[3rem] lg:mt-[0.9vw] lg:whitespace-nowrap lg:text-[clamp(2.8rem,3.9vw,6rem)]"
             >
               <span className="block text-navy-900">A local accountant.</span>
               <span className="block text-green-700">A better match.</span>
