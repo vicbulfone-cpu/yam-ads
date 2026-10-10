@@ -2279,8 +2279,14 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
 /* Every match box's service rows, site-wide, popups included (owner, 10 Oct 2026): a selected row shows the green tick used in the
    "Why Use…" lists (e.g. "Lodge on time with the ATO", /images/ad-personal/help/tick.webp) in place of the white drawn tick; the
    circle stays white with a green outline so the green tick shows. */
-.mc-row.is-on .mc-radio { background: #fff url("/images/ad-personal/help/tick.webp") 52% 55% / 64% auto no-repeat; box-shadow: inset 0 0 0 2px var(--green-600); }
+.mc-row.is-on .mc-radio { position: relative; background: #fff; box-shadow: inset 0 0 0 2px var(--green-600); }
 .mc-row.is-on .mc-radio svg { display: none; }
+/* the tick (same size) drawn on its own layer over the circle, nudged up and right so its long tail runs out past the circle's
+   top-right edge (owner, 10 Oct 2026, noc) */
+.mc-row.is-on .mc-radio::after {
+  content: ""; position: absolute; left: 27%; top: 6%; width: 64%; aspect-ratio: 146 / 118; pointer-events: none;
+  background: url("/images/ad-personal/help/tick.webp") center / contain no-repeat;
+}
 
 /* Home hero (owner, 10 Oct 2026: "remove all fade effect from hero home pic"): no fade over the photo on any screen size: no white
    wash, no soft patches behind the words, no glow. */

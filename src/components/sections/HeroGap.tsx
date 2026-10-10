@@ -34,7 +34,7 @@ const SKYLINE = [0.588, 0.606, 0.613, 0.619, 0.637, 0.644, 0.644, 0.65, 0.662, 0
  * sit on the photo (on phones the headline sits on the white page above it, so only the points and steps count), easing out
  * gradually on every side over open sky only: it is gone before the match box, the top of the photo (or the sky carried up
  * above it), the screen's edges, and just above the highest building below (SKYLINE). Each edge's fade also carries on inwards
- * over the words (up to 2.5cm), so it stays long and gentle where the room outside is short. Placed on the photo's wash layer
+ * over the words (up to 4cm), so it stays long and gentle where the room outside is short. Placed on the photo's wash layer
  * (".desk-hero-wash::before" in globals.css).
  */
 function placeWordsGlow(box: Element | null) {
@@ -50,9 +50,9 @@ function placeWordsGlow(box: Element | null) {
   if (!rs.length) { wash.style.setProperty("--glow-w", "0px"); return; }
   const left = Math.min(...rs.map((r) => r.left)), top = Math.min(...rs.map((r) => r.top));
   const right = Math.max(...rs.map((r) => r.right)), bottom = Math.max(...rs.map((r) => r.bottom));
-  const FADE = 4 * CM; // how far the fade eases out where there is room
+  const FADE = 7 * CM; // how far the fade eases out where there is room (owner, 10 Oct 2026: "more gradual fade out"; was 4cm)
   const MIN = 1.2 * CM; // the shortest fade outside the words
-  const PAD = 0.5 * CM; // full strength this far past the words, where there is room
+  const PAD = 0; // the fade starts right at the edge of the words (was 0.5cm at full strength first)
   const screenL = Math.max(p.left, w.left, 0), screenR = Math.min(p.right, w.right, document.documentElement.clientWidth);
   // the match box sits beside the words on laptops and desktops; on phones and tablets it is below the photo
   const b0 = box?.getBoundingClientRect();
@@ -66,7 +66,7 @@ function placeWordsGlow(box: Element | null) {
   const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(left - ol), strip(right + or) + 1)); // highest building under it
   const [pb, ob] = side(city - 3 - bottom);
   const l = left - ol, tp = top - ot, r = Math.min(right + or, boxLeft), b = Math.min(bottom + ob, city - 3);
-  const inX = Math.min(2.5 * CM, (right - left) * 0.4), inY = Math.min(2.5 * CM, (bottom - top) * 0.4);
+  const inX = Math.min(4 * CM, (right - left) * 0.45), inY = Math.min(4 * CM, (bottom - top) * 0.45);
   wash.style.setProperty("--glow-l", `${l - w.left}px`);
   wash.style.setProperty("--glow-t", `${tp - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);
