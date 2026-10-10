@@ -59,10 +59,11 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
 - **Site went live on Vercel (10 Oct, evening):**
   - Crazy Domains: `@` A record `216.198.79.1`; `www` CNAME `f2e89ad9aac058b5.vercel-dns-017.com`.
   - www is the main domain; the bare domain redirects to it.
-  - Known gaps: 168 old GHL pages now show "not found" until Stage 3, and the match page still shows the sample
-    accountant.
+  - The old GHL site's ~168 addresses now show "not found" (owner: standalone site, not rebuilt; redirects offered).
+  - The match page still shows the sample accountant.
 
 ### Owner rules added
+- **Standalone site** (late 10 Oct): no connection to the previous build. The old GHL site's ~168 pages are not rebuilt (Stage 3 dropped); old-site wording-fidelity rules no longer bind (CLAUDE.md "STANDALONE SITE").
 - After every edit: update this file, then commit and push (CLAUDE.md "SAVE SESSION CONTEXT").
 - Every new thread: first read all project context, then ask the owner what to continue, before any work
   (CLAUDE.md "FIRST STEP IN EVERY NEW THREAD").

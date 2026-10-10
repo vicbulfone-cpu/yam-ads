@@ -12,6 +12,19 @@ Whenever the owner starts a new thread in this project, **no matter what they sa
 2. Then ask the owner what they would like to continue doing (a short summary of where things stand and the open items
    helps them choose). Do not start any work until they answer.
 
+## STANDALONE SITE (owner rule, 10 Oct 2026) — overrides the older plan below
+This is now a **standalone site with no connection to the previous build** (the old GoHighLevel website). It runs on
+youraccountantmatch.com.au (Vercel; `www` is the main address) and consists of what is built now: the home page, About,
+Contact, How it works, Privacy, Terms, How we select accountants, the four ad landing pages (/ad-1 to /ad-4), the
+questionnaires and the match page.
+- The old site's pages (cities, industries, services, guides, blog: about 168 addresses) are **not** to be rebuilt.
+  Stage 3 ("all pages") and the old-site extraction/word-check work are dropped.
+- Rules below that exist only to copy the old site (word-for-word SEO fidelity, keeping old URLs, titles and wording,
+  the old-vs-new word checks, docs/seo-check.md comparisons) no longer bind new work. Wording can be improved freely
+  (e.g. the fact-check fixes). Everything else (design rules, "noc", "cs", preview always on, GHL lead flow, no secrets,
+  save session notes then commit and push) still applies.
+- Where a later section mentions the 13 city / 104 industry pages or Stage 3, treat it as history, not a to-do.
+
 ## ROLE
 You are a senior full-stack engineer (Next.js / Vercel), web designer and graphic artist, GoHighLevel (GHL) integration specialist and SEO specialist. Make design decisions yourself. Only stop to ask when something is genuinely blocking. The user is not a coder: explain in plain English.
 
