@@ -26,6 +26,7 @@ import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
  */
 
 import { OPEN_REG_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import { categorySurvey, personalSurvey, SERVICE_VALUE, SF, type Survey } from "@/lib/survey-fields";
 const MATCH_PAGE = "/match";
 
 type CatAnswer = { ids: string[]; other: string };
@@ -240,6 +241,8 @@ export default function RegistrationQuestionnaire() {
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
       ...about.map((a) => `${a.label}: ${a.value}`),
     ];
+    // every answer for its own HighLevel custom field (src/lib/survey-fields.ts; owner, 10 Oct 2026)
+    const survey: Survey = { [SF.services]: [SERVICE_VALUE.registration], ...categorySurvey("registration", cats.map(catById), (c) => chosenLabels(catById(c.id), answers[c.id]), answers as Record<string, { software?: string | null } | undefined>), ...(notes.trim() ? { [SF.note]: notes.trim() } : {}) };
     const modeLabel = REG_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
       const res = await fetch("/api/lead", {
@@ -251,7 +254,7 @@ export default function RegistrationQuestionnaire() {
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
           answers: { ...answers, businessStage: stage, notes: notes.trim() },
-          workMode: modeLabel,
+          workMode: modeLabel, survey,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
           tracking: readTracking(),

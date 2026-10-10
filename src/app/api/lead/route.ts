@@ -3,6 +3,7 @@
 // (GHL_INBOUND_WEBHOOK_URL). With neither, or MOCK_GHL=true, it only logs the lead so the flow works locally.
 // Spam protection: a hidden "website" field that people never fill in, plus a per-visitor limit per minute.
 import { ghlConfigured, sendLeadToGhl } from "@/lib/ghl";
+import { SF, type Survey } from "@/lib/survey-fields";
 
 const LIMIT = Number(process.env.LEAD_RATE_LIMIT_PER_MINUTE || 5);
 const hits = new Map<string, number[]>(); // visitor address → times of recent submissions (per server instance)
@@ -16,6 +17,19 @@ function rateLimited(ip: string) {
 }
 
 const str = (v: unknown, max = 500) => (typeof v === "string" ? v.trim().slice(0, max) : "");
+
+// the survey answers for HighLevel's custom fields (src/lib/survey-fields.ts): only the known field names, text only
+const SURVEY_NAMES = new Set<string>(Object.values(SF));
+function surveyOf(v: unknown): Survey {
+  if (!v || typeof v !== "object" || Array.isArray(v)) return {};
+  const out: Survey = {};
+  for (const [k, val] of Object.entries(v as Record<string, unknown>)) {
+    if (!SURVEY_NAMES.has(k)) continue;
+    if (Array.isArray(val)) out[k] = val.map((x) => str(x, 300)).filter(Boolean).slice(0, 30);
+    else if (typeof val === "string") out[k] = str(val, 3000);
+  }
+  return out;
+}
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const MOBILE = /^(?:\+?61|0)4\d{8}$/;
 
@@ -72,6 +86,7 @@ export async function POST(request: Request) {
     utm: Object.fromEntries(Object.entries(tracking).filter(([k]) => k.startsWith("utm_")).map(([k, v]) => [k, str(v, 200)])),
     visitor: body.visitor ?? null,
     submittedAt: new Date().toISOString(),
+    survey: surveyOf(body.survey),
   };
 
   // GHL sub-account through its Private Integration token (owner, 10 Oct 2026); the inbound webhook below stays as a fallback

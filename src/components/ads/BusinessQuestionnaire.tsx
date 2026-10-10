@@ -24,6 +24,7 @@ import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
  */
 
 import { OPEN_BIZ_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import { categorySurvey, personalSurvey, SERVICE_VALUE, SF, type Survey } from "@/lib/survey-fields";
 export { OPEN_BIZ_QUESTIONNAIRE };
 const MATCH_PAGE = "/match";
 
@@ -239,6 +240,8 @@ export default function BusinessQuestionnaire() {
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
       ...(note.trim() ? [`${noteLabel}: ${note.trim()}`] : []),
     ];
+    // every answer for its own HighLevel custom field (src/lib/survey-fields.ts; owner, 10 Oct 2026)
+    const survey: Survey = { [SF.services]: [SERVICE_VALUE.business], ...categorySurvey("business", cats.map(catById), (c) => chosenLabels(catById(c.id), answers[c.id]), answers as Record<string, { software?: string | null } | undefined>), ...(note.trim() ? { [SF.note]: note.trim() } : {}) };
     const modeLabel = BIZ_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
       const res = await fetch("/api/lead", {
@@ -248,7 +251,7 @@ export default function BusinessQuestionnaire() {
           adType: "business",
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
-          services, answers: { ...answers, ...(note.trim() ? { notes: note.trim() } : {}) }, workMode: modeLabel,
+          services, answers: { ...answers, ...(note.trim() ? { notes: note.trim() } : {}) }, workMode: modeLabel, survey,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
           tracking: readTracking(),

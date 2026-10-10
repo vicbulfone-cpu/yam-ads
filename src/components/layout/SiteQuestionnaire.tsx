@@ -25,6 +25,7 @@ import StartHere from "../ui/StartHere";
 import { SummaryConfirmNote, SummaryPage, type SummaryBlock } from "../ads/SelectionsSummary";
 import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
 import { ArrowRight, Check, Clock, Close, Doc, Mail, Phone, Pin, Sparkle } from "../ui/Icons";
+import { categorySurvey, personalSurvey, SERVICE_VALUE, SF, type Survey } from "@/lib/survey-fields";
 
 /**
  * The site questionnaire popup (owner, 6 Oct 2026): every link to the questionnaire address and every site match box
@@ -489,6 +490,21 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
       groups.push({ category: SELECTIONS_SUMMARY.note.label, items: [personalNotes.trim()] });
       leadAnswers.notes = personalNotes.trim();
     }
+    // every answer for its own HighLevel custom field (src/lib/survey-fields.ts; owner, 10 Oct 2026)
+    const survey: Survey = { [SF.services]: services.map((s) => SERVICE_VALUE[s]) };
+    for (const s of services) {
+      if (s === "personal") {
+        Object.assign(survey, personalSurvey({
+          needs: needs.map(needTitle),
+          amendNote: needs.includes("amend") ? amendNote : "",
+          adviceTopics: needs.includes("planning") ? ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)) : [],
+          returnIncludes: needs.some((n) => RETURN_NEEDS.includes(n)) ? incomeLabels() : [],
+        }));
+      } else {
+        Object.assign(survey, categorySurvey(s, picks[s].map((id) => catOf(s, id)), (c) => chosenLabels(catOf(s, c.id), answers[c.id]), answers as Record<string, { software?: string | null } | undefined>));
+      }
+    }
+    if (personalNotes.trim()) survey[SF.note] = personalNotes.trim();
     const modeLabel = BIZ_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
       const res = await fetch("/api/lead", {
@@ -499,7 +515,7 @@ export default function SiteQuestionnaire({ card }: { card: MatchCardData }) {
           questionnaire: "site",
           name: name.trim(), email: email.trim(), phone: cleanPhone(phone),
           postcode: place.postcode, suburb: place.suburb, state: place.state,
-          services: lines, answers: leadAnswers, workMode: modeLabel,
+          services: lines, answers: leadAnswers, workMode: modeLabel, survey,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
           tracking: readTracking(),

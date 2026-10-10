@@ -35,6 +35,32 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
   - It opens an opportunity if `GHL_PIPELINE_ID` is set. The inbound webhook remains as a fallback.
   - `scripts/ghl-check.mjs` checks the connection.
 
+### Survey → HighLevel custom fields (in progress, step by step with the owner)
+- **Done by the owner:**
+  - Step 1: field list agreed.
+  - Step 2: 5 checkbox fields.
+  - Step 3: 19 more fields.
+  - All 24 are in the sub-account's Contacts custom fields, folder "Website Survey".
+- **Done in code:**
+  - Every questionnaire (site popup and /ad-1 to /ad-4) sends a `survey` object (field name → answer;
+    `src/lib/survey-fields.ts`).
+  - `src/lib/ghl.ts` reads the sub-account's contact custom fields by name (cached 10 minutes) and fills them on the
+    contact upsert. Tick-box and radio fields take matching options; text fields take plain text.
+  - Lead Source, Survey Type, Website Lead ID, Ad Campaign, Google Click ID, UTM Source / Medium, Referral Code,
+    Preferred Way to Meet and Email Match Details are filled from the lead itself.
+  - If fields can't be read, the contact is still saved and every answer stays in the note.
+  - Tested locally in mock mode: the survey is sent correctly from all five questionnaires.
+- **Field 3 "Overdue Returns Details":** stays empty; the personal flow no longer asks which years are overdue.
+- **Next (Step 4, owner):**
+  - Add the "View Custom Fields" permission to the Private Integration token.
+  - Confirm `GHL_PRIVATE_TOKEN`, `GHL_LOCATION_ID` and `MOCK_GHL=false` are in Vercel.
+  - Redeploy, then send a live test submission.
+- **Site went live on Vercel (10 Oct, evening):**
+  - Crazy Domains: `@` A record `216.198.79.1`; `www` CNAME `f2e89ad9aac058b5.vercel-dns-017.com`.
+  - www is the main domain; the bare domain redirects to it.
+  - Known gaps: 168 old GHL pages now show "not found" until Stage 3, and the match page still shows the sample
+    accountant.
+
 ### Owner rules added
 - After every edit: update this file, then commit and push (CLAUDE.md "SAVE SESSION CONTEXT").
 - Every new thread: first read all project context, then ask the owner what to continue, before any work

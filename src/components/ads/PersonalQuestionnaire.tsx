@@ -32,6 +32,7 @@ import { AdProgress, ChoiceCard, cleanPhone, EMAIL, MatchSearching, MOBILE, Note
  */
 
 import { OPEN_PERSONAL_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import { categorySurvey, personalSurvey, SERVICE_VALUE, SF, type Survey } from "@/lib/survey-fields";
 export { OPEN_PERSONAL_QUESTIONNAIRE };
 const MATCH_PAGE = "/match";
 
@@ -297,6 +298,17 @@ export default function PersonalQuestionnaire() {
       ...inc.map((i) => `${Q.summaryLabels.income}: ${i}`),
       ...(notes.trim() ? [`${SELECTIONS_SUMMARY.note.label}: ${notes.trim()}`] : []),
     ];
+    // every answer for its own HighLevel custom field (src/lib/survey-fields.ts; owner, 10 Oct 2026)
+    const survey: Survey = {
+      [SF.services]: [SERVICE_VALUE.personal],
+      ...personalSurvey({
+        needs: needs.map(needTitle),
+        amendNote: needs.includes("amend") ? amendNote : "",
+        adviceTopics: needs.includes("planning") ? ADVICE_TOPICS.filter((o) => topics.includes(o.id)).map((o) => (o.id === "other" && topicOther.trim() ? `Other: ${topicOther.trim()}` : o.label)) : [],
+        returnIncludes: inc,
+      }),
+      ...(notes.trim() ? { [SF.note]: notes.trim() } : {}),
+    };
     const modeLabel = PERSONAL_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
       const res = await fetch("/api/lead", {
@@ -309,7 +321,7 @@ export default function PersonalQuestionnaire() {
           services,
           // need: the ticked reasons, comma separated (one or more since 10 Oct 2026); needs: the same as a list
           answers: { need: needs.join(","), needs, amendNote: amendNote.trim(), adviceTopics: topics, adviceOther: topicOther.trim(), returnIncludes: income, notes: notes.trim() },
-          workMode: modeLabel,
+          workMode: modeLabel, survey,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
           tracking: readTracking(),

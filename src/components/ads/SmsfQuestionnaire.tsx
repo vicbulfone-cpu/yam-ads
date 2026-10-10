@@ -26,6 +26,7 @@ import { SELECTIONS_SUMMARY } from "@/content/selections-summary";
  */
 
 import { OPEN_SMSF_QUESTIONNAIRE } from "@/lib/questionnaire-events";
+import { categorySurvey, personalSurvey, SERVICE_VALUE, SF, type Survey } from "@/lib/survey-fields";
 export { OPEN_SMSF_QUESTIONNAIRE };
 const MATCH_PAGE = "/match";
 
@@ -233,6 +234,8 @@ export default function SmsfQuestionnaire() {
       ...cats.flatMap((id) => chosenLabels(catById(id), answers[id]).map((l) => `${catById(id).title}: ${l}`)),
       ...(note.trim() ? [`${SELECTIONS_SUMMARY.note.label}: ${note.trim()}`] : []),
     ];
+    // every answer for its own HighLevel custom field (src/lib/survey-fields.ts; owner, 10 Oct 2026)
+    const survey: Survey = { [SF.services]: [SERVICE_VALUE.smsf], ...categorySurvey("smsf", cats.map(catById), (c) => chosenLabels(catById(c.id), answers[c.id]), answers as Record<string, { software?: string | null } | undefined>), ...(note.trim() ? { [SF.note]: note.trim() } : {}) };
     const modeLabel = SMSF_MODES.find((m) => m.id === mode)?.label ?? "";
     try {
       const res = await fetch("/api/lead", {
@@ -244,7 +247,7 @@ export default function SmsfQuestionnaire() {
           postcode: place.postcode, suburb: place.suburb, state: place.state,
           services,
           answers: { ...answers, ...(note.trim() ? { notes: note.trim() } : {}) },
-          workMode: modeLabel,
+          workMode: modeLabel, survey,
           emailMatchDetails: emailMe === true,
           matchPageUrl: `${window.location.origin}${MATCH_PAGE}`,
           tracking: readTracking(),
