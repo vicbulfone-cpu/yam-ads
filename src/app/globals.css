@@ -2322,3 +2322,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
   main.home-v2 > .desk-hero .desk-hero-sub::before { inset: -1rem -2rem; }
   main.home-v2 > .desk-hero.is-home .hero-words-glow .hero-veil::before { inset: -1.2rem -2rem calc(-1.4rem - 4mm) -2rem; }
 }
+
+/* Home "What we can help you with" (owner, 10 Oct 2026): the four arrow lines in each service card 4mm lower under the card's
+   heading; each card 4mm taller (its top space unchanged) and everything below moves down with it. Not "Who we help". */
+section.hsv .hsv-list { margin-top: 4mm; }
