@@ -1373,6 +1373,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 }
 /* /ad-4 desktops: the headline, the line under it and the hero button 1cm higher (owner, 10 Oct 2026, noc) */
 @media (min-width: 1200px) { .pz-reg .pth-h1, .pz-reg .pth-sub, .pz-reg .pth-cta { translate: 0 -1cm; } }
+/* /ad-4 desktops: the hero button 1.3cm lower than that (owner, 10 Oct 2026) */
+@media (min-width: 1200px) { .pz-reg .pth-cta { translate: 0 calc(-1cm + 1.3cm); } }
 
 /* /ad-2 bar under "How it works" ("Less Searching. More Confidence."): heading and line on one line each from 1200px,
    which fits before the lined-up button (owner, 9 Oct 2026) */
