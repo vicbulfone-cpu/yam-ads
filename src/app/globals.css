@@ -2309,7 +2309,8 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
      detail (roofs, trees, windows) as well as the colour and contrast */
   background: rgba(255,255,255,.05); /* then a little more noticeable again (owner, 10 Oct 2026; was .07, blur 1.2px, saturate .85, contrast .9) */
   -webkit-backdrop-filter: blur(0.8px) saturate(.9) contrast(.94); backdrop-filter: blur(0.8px) saturate(.9) contrast(.94);
-  -webkit-mask-image: linear-gradient(180deg, transparent 55%, #000 66%); mask-image: linear-gradient(180deg, transparent 55%, #000 66%);
+  /* from above the tallest towers (owner, 10 Oct 2026: they looked too sharp when the softening began below their tops; was 55%-66%) */
+  -webkit-mask-image: linear-gradient(180deg, transparent 49%, #000 57%); mask-image: linear-gradient(180deg, transparent 49%, #000 57%);
 }
 
 /* Home page match box (owner, 10 Oct 2026): the map of Australia 40% larger, centred top to bottom in the navy panel and a
