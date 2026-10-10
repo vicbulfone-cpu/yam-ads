@@ -21,11 +21,18 @@ function textRects(el: Element) {
   return rects;
 }
 
+/** The top of the city skyline in the home hero photo ("hero.png"), as a fraction of the photo's height, in 40 equal
+ *  strips across its width (the highest building or tree in each strip; measured from the photo, 10 Oct 2026). Re-measure if
+ *  the home hero photo changes. */
+const SKYLINE = [0.588, 0.606, 0.613, 0.619, 0.637, 0.644, 0.644, 0.65, 0.662, 0.65, 0.619, 0.637, 0.656, 0.669, 0.669, 0.656,
+  0.688, 0.688, 0.681, 0.681, 0.7, 0.688, 0.7, 0.7, 0.669, 0.688, 0.7, 0.706, 0.713, 0.719, 0.681, 0.681, 0.694, 0.694, 0.706,
+  0.706, 0.719, 0.719, 0.725, 0.725];
+
 /**
  * Home page, laptops and desktops (owner, 10 Oct 2026, noc): one even white glow behind the hero's words (headline, line,
- * points, steps), its edges fading out smoothly. Sized to the words themselves and placed on the photo's wash layer
- * (".desk-hero-wash::before" in globals.css): it stops short of the match box on the right and of the tallest towers in
- * the photo at the bottom, so neither the landscape nor the box is touched.
+ * points, steps), its edges fading out gradually. Sized to the words themselves and placed on the photo's wash layer
+ * (".desk-hero-wash::before" in globals.css). It reaches down over the steps line and fades out just above the highest
+ * building beneath it (SKYLINE), and stops short of the match box on the right, so neither the city nor the box is touched.
  */
 function placeWordsGlow(box: Element) {
   const wash = document.querySelector<HTMLElement>(".desk-hero .desk-hero-wash");
@@ -34,22 +41,27 @@ function placeWordsGlow(box: Element) {
   if (!wash || !words || !photo) return;
   const rs = textRects(words);
   if (!rs.length) return;
-  const FEATHER = 1.5 * CM;
   const w = wash.getBoundingClientRect(), p = photo.getBoundingClientRect();
   const left = Math.min(...rs.map((r) => r.left)), top = Math.min(...rs.map((r) => r.top));
   const right = Math.max(...rs.map((r) => r.right)), bottom = Math.max(...rs.map((r) => r.bottom));
-  const towers = p.top + p.height * 0.6; // the tallest towers start about 60% down the photo
-  const room = (space: number) => Math.max(0, Math.min(FEATHER, space));
-  const l = left - FEATHER, t = top - FEATHER;
-  const r = right + room(box.getBoundingClientRect().left - 12 - right), b = bottom + room(towers - 4 - bottom);
+  const lastLine = rs.reduce((a, r) => (r.bottom > a.bottom ? r : a));
+  const fl = 2.5 * CM, ft = 2 * CM; // left and top fades (the left reaches a little further out)
+  const l = left - fl, t = top - ft;
+  const r = right + Math.max(0, Math.min(2 * CM, box.getBoundingClientRect().left - 12 - right));
+  // the highest building under the glow, from its left edge to its right edge
+  const strip = (x: number) => Math.min(SKYLINE.length - 1, Math.max(0, Math.floor(((x - p.left) / p.width) * SKYLINE.length)));
+  const city = p.top + p.height * Math.min(...SKYLINE.slice(strip(l), strip(r) + 1));
+  // full strength down to the middle of the steps line, then fading out just above the buildings (at most 2cm)
+  const fadeFrom = lastLine.top + lastLine.height / 2;
+  const b = Math.max(bottom, Math.min(city - 3, bottom + 2 * CM));
   wash.style.setProperty("--glow-l", `${l - w.left}px`);
   wash.style.setProperty("--glow-t", `${t - w.top}px`);
   wash.style.setProperty("--glow-w", `${r - l}px`);
   wash.style.setProperty("--glow-h", `${b - t}px`);
-  // how far each edge can fade (the right and bottom edges have less room before the box and the towers)
+  wash.style.setProperty("--glow-fl", `${fl}px`);
+  wash.style.setProperty("--glow-ft", `${ft}px`);
   wash.style.setProperty("--glow-fr", `${Math.max(8, r - right)}px`);
-  // the bottom edge always fades over 1cm, starting a little above the steps where the towers are close below them
-  wash.style.setProperty("--glow-fb", `${Math.max(CM, b - bottom)}px`);
+  wash.style.setProperty("--glow-fb", `${Math.max(10, b - fadeFrom)}px`);
 }
 
 export default function HeroGap({ cm = 2.5 }: { cm?: number }) {
