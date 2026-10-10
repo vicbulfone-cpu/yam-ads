@@ -16,6 +16,7 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
   - Fixes: AVIF images site-wide plus a 2560px image width (`next.config.ts`), and the ad pages' phone hero photo preloaded first (`PersonalHero.tsx`).
   - Slowness the owner saw was largely their own internet connection at the time.
   - Fonts: only Plus Jakarta Sans is preloaded now. Fraunces (About, popups) and Caveat (popups) load only when used (`layout.tsx`).
+  - Result (Lighthouse, live): mobile home 81 → 87; ad pages 81–85 → 90–94; desktop home 100. Page weight about 590–680 KB → 400–450 KB.
 
 ### Owner decisions
 - Old GHL site addresses: let Google clear them out (no redirects).
