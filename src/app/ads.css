@@ -1653,3 +1653,6 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
   .pz-page.pz-biz .pth-veil::before { content: none; }
   .pz-page.pz-biz .pth-veil { z-index: 2; } /* the points above that fade (the text block it belongs to sits over the photo, 1) */
 }
+/* /ad-4 desktops (owner, 10 Oct 2026: "still a little fade on the man's shoulder"): the fade behind the line under the headline
+   stops at the end of the words (its soft blur reaches only just past them), so none of it lies on his shoulder */
+@media (min-width: 1200px) { .pz-reg .pth-sub::before { right: 1.2rem; } }
