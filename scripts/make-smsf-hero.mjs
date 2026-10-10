@@ -1,5 +1,5 @@
 // SMSF ad page (/ad-3) desktop hero picture (owner, 9 Oct 2026; replaced twice the same day, "-v3"; 10 Oct 2026 "smsf hero"
-// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges); "-v23" rising faster from the right edge: the owner's
+// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"; "-v18"/"-v19" the fade back over the sky, sea and clouds only; "-v20"/"-v21"/"-v22" right up to the boat's edges); "-v23" rising faster from the right edge; "-v24"/"-v25" soft, exact edges round the people, mast and ropes: the owner's
 // picture from "hero section/ad landing pages/smsf". When the photo is taller than the hero frame, a 2.5:1 band is cut
 // from it (TOP: its top edge in the photo's pixels, just above the couple's heads; their feet stay in), then scaled to
 // 1983 x 793 and made into a WebP file in public/images/hero. The original is only read, never changed. Safe to re-run.
@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v23-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v25-1983.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
@@ -90,13 +90,52 @@ for (let y = 1; y < 440; y++) for (let x = Math.round(mastX(y)) - 34; x < mastX(
   if (scene[i] && (!scene[i - 1] || !scene[i + 1] || !scene[i - W] || !scene[i + W])) grown[i] = 0;
 }
 scene.set(grown);
-const sceneSoft = await sharp(scene, { raw: { width: W, height: H, channels: 1 } }).blur(0.8).extractChannel(0).raw().toBuffer();
-if (process.env.SHOW_MASK) await sharp(sceneSoft, { raw: { width: W, height: H, channels: 1 } }).png().toFile(process.env.SHOW_MASK);
+// "-v24" (owner, 10 Oct 2026: the tops of the heads looked "too straight" and there were still small flaws round the woman, the
+// mast and the man; "I want it to look 100% perfect"): the mask above (SCENE) is no longer used as an on/off edge. It only marks
+// the sure sky and sea, from which the colour of the clear sky/sea is worked out at every point, behind the people and the mast
+// too (SKY: the sure sky smoothly spread inwards). Each pixel then counts as sky in proportion to how close it is to that colour
+// (ALPHA: fully when within NEAR of it, not at all from FAR), so wisps of hair, the soft edge of the mast and the ropes take
+// just their share of the fade and keep their natural outline. A pixel is lightened by its share of sky only:
+// out = pixel + ALPHA * strength * (255 - SKY), so edges stay exactly as in the photo, just over a lighter sky. Inside the
+// hull (hullLeft) nothing is faded; inside WOMAN_TOP and JEANS only pixels the colour of the sky beside them are.
+const sure = Buffer.alloc(W * H);
+for (let y = 2; y < H - 2; y++) for (let x = 2; x < W - 2; x++) { // sure sky/sea: SCENE, two pixels in from any edge of it
+  const i = y * W + x;
+  let ok = scene[i] > 0;
+  for (let d = 1; ok && d <= 2; d++) ok = scene[i - d] && scene[i + d] && scene[i - d * W] && scene[i + d * W];
+  sure[i] = ok ? 255 : 0;
+}
+const masked = Buffer.alloc(W * H * 3);
+for (let i = 0; i < W * H; i++) if (sure[i]) for (let c = 0; c < 3; c++) masked[i * 3 + c] = px[i * 3 + c];
+const SPREAD = 14; // how far (blur sigma, px) the sure sky's colour is carried in behind things
+const sumC = await sharp(masked, { raw: { width: W, height: H, channels: 3 } }).blur(SPREAD).raw().toBuffer();
+const sumW = await sharp(sure, { raw: { width: W, height: H, channels: 1 } }).blur(SPREAD).extractChannel(0).raw().toBuffer();
+const HORIZON = 554; // the sea's ripples vary more from their average colour than the sky does
+const inShape = (pts, x, y) => { let c = false; for (let j = 0, k = pts.length - 1; j < pts.length; k = j++) { const [xi, yi] = pts[j], [xk, yk] = pts[k]; if ((yi > y) !== (yk > y) && x < ((xk - xi) * (y - yi)) / (yk - yi) + xi) c = !c; } return c; };
+const alpha = new Float32Array(W * H), skyC = new Float32Array(W * H * 3);
+for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+  const i = y * W + x, wgt = sumW[i] / 255;
+  for (let c = 0; c < 3; c++) skyC[i * 3 + c] = wgt > 0.01 ? sumC[i * 3 + c] / wgt : px[i * 3 + c];
+  if (x < 1250) { alpha[i] = 1; continue; } // only sky, clouds and sea out here
+  if (x >= hullLeft[y] || wgt < 0.02) { alpha[i] = 0; continue; }
+  const dr = px[i * 3] - skyC[i * 3], dg = px[i * 3 + 1] - skyC[i * 3 + 1], db = px[i * 3 + 2] - skyC[i * 3 + 2];
+  // a pixel the same blue as the sky but darker (the mast's shaded edge, the shadow under the anchor) counts nearly as sky, so no
+  // dark line is left beside things once the sky is lighter; lighter pixels (hair, the pale mast, ropes) are measured in full
+  const darker = dr + dg + db < 0;
+  const d = Math.sqrt(dr * dr + dg * dg + db * db) * (darker ? 0.45 : 1);
+  const sea = y > HORIZON + 4, NEAR = sea ? 45 : 12, FAR = sea ? 120 : 42; // the sea's ripples are all sea
+  let al = d <= NEAR ? 1 : d >= FAR ? 0 : (FAR - d) / (FAR - NEAR);
+  al = al * al * (3 - 2 * al); // smooth
+  if (x < 1290) al = Math.max(al, (1290 - x) / 40); // blend into the open water and sky on the left
+  if ((inShape(WOMAN_TOP, x, y) || inShape(JEANS, x, y)) && d > NEAR) al = 0; // her cyan top, his jeans: only true sky inside
+  alpha[i] = al;
+}
+if (process.env.SHOW_MASK) await sharp(Buffer.from(alpha.map((v) => Math.round(v * 255))), { raw: { width: W, height: H, channels: 1 } }).png().toFile(process.env.SHOW_MASK);
 // the fade: nothing at the right margin, building evenly to LEFT at the left margin (strength = LEFT * (1 - x) ^ CURVE)
 const out = Buffer.from(px);
 for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
-  const i = y * W + x, k = LEFT * Math.pow(1 - x / (W - 1), CURVE) * (sceneSoft[i] / 255);
-  for (let c = 0; c < 3; c++) out[i * 3 + c] = Math.round(px[i * 3 + c] + (255 - px[i * 3 + c]) * k);
+  const i = y * W + x, k = LEFT * Math.pow(1 - x / (W - 1), CURVE) * alpha[i];
+  for (let c = 0; c < 3; c++) out[i * 3 + c] = Math.max(0, Math.min(255, Math.round(px[i * 3 + c] + (255 - skyC[i * 3 + c]) * k)));
 }
 await sharp(out, { raw: { width: W, height: H, channels: 3 } }).webp({ quality: 80, effort: 6 }).toFile(dest);
 console.log(path.relative(ROOT, dest), `${meta.width}x${meta.height}, band ${TOP}-${TOP + bandH}`, (fs.statSync(dest).size / 1024).toFixed(0) + " KB");
