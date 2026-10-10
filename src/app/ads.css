@@ -1369,15 +1369,7 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (min-width: 1200px) {
   .pz-smsf .pth::before { content: none; }
   .pz-smsf :is(.pth-veil, .pth-sub, .pth-steps, .pth-steps-last)::before { content: none; }
-  /* ...then one soft, evenly blended white glow behind the headline and the line under it (owner, 10 Oct 2026; then a
-     little stronger, 0.5 to 0.6 in the middle): a wide
-     ellipse centred on those words (they start at the text column's left edge, --tx, and run about 770px), strongest in
-     the middle and fading out smoothly well past them, so it has no edges; it lies over the photo's own even fade */
-  .pz-smsf .pth::after {
-    --tx: calc(max((100vw - 1320px) / 2, 0px) + clamp(32px, 4.5vw, 72px));
-    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background: radial-gradient(640px 310px at calc(var(--tx) + 385px) 38%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.48) 28%, rgba(255, 255, 255, 0.27) 55%, rgba(255, 255, 255, 0.09) 78%, rgba(255, 255, 255, 0) 100%);
-  }
+  /* (the soft white glow that followed behind the headline is gone too: owner, 10 Oct 2026, "smsf hero pic remove all fade") */
 }
 /* /ad-4 desktops: the headline, the line under it and the hero button 1cm higher (owner, 10 Oct 2026, noc) */
 @media (min-width: 1200px) { .pz-reg .pth-h1, .pz-reg .pth-sub, .pz-reg .pth-cta { translate: 0 -1cm; } }

@@ -1,5 +1,5 @@
 // SMSF ad page (/ad-3) desktop hero picture (owner, 9 Oct 2026; replaced twice the same day, "-v3"; 10 Oct 2026 "smsf hero"
-// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only): the owner's
+// "-v4", then "smsf hero1" "-v5" and "-v6"; then the new "Untitled.jpg" (5140 x 3399, saved 10:44) "-v7"; then the re-saved "smsf hero1.png" (3884 x 1618, saved 11:00) "-v8"; "-v9" adds a very gradual fade over the sky only; "-v17" has no fade at all, owner 10 Oct 2026: "smsf hero pic remove all fade"): the owner's
 // picture from "hero section/ad landing pages/smsf". When the photo is taller than the hero frame, a 2.5:1 band is cut
 // from it (TOP: its top edge in the photo's pixels, just above the couple's heads; their feet stay in), then scaled to
 // 1983 x 793 and made into a WebP file in public/images/hero. The original is only read, never changed. Safe to re-run.
@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v16-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v17-1983.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
@@ -40,7 +40,8 @@ const base = await sharp(framed).composite([{ input: couple, left: COUPLE.left, 
 // the right margin, building evenly to LEFT at the left margin (strength = LEFT * (1 - x) ^ CURVE).
 // "-v12" (owner, 10 Oct 2026): the water faded evenly to match the sky: the same curve over the whole height, so sky and
 // sea fade alike (no sky-only mask any more).
-const LEFT = 0.76, CURVE = 1.25; // "-v13": slightly stronger (was 0.62), "-v14": a little more (was 0.7; owner, 10 Oct 2026)
+// "-v17" (owner, 10 Oct 2026: "smsf hero pic remove all fade"): LEFT = 0, so no white fade is laid over the photo.
+const LEFT = 0, CURVE = 1.25; // "-v13": slightly stronger (was 0.62), "-v14": a little more (was 0.7; owner, 10 Oct 2026)
 const EASE = Array.from({ length: 11 }, (_, i) => [i / 10, Math.pow(1 - i / 10, CURVE)]);
 const stops = EASE.map(([x, a]) => `<stop offset="${x}" stop-color="#fff" stop-opacity="${(a * LEFT).toFixed(3)}"/>`).join("");
 const fade = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs>
