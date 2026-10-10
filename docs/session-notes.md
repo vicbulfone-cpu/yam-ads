@@ -5,6 +5,29 @@ commit and push). Newest first. No secrets here: tokens, keys and IDs live only 
 
 ## 11 Oct 2026
 
+### Where we're up to (continue next session)
+- **HighLevel / Vercel: working.**
+  - Site live on Vercel, token connected, 24 Website Survey fields filled on every lead.
+  - Live test passed, and the "Enquiry sent" page is live.
+- **Next: build the HighLevel workflow on the `yam-lead` tag**, step by step with the owner:
+  - send the email verification link and wait for the click;
+  - assign the accountant (organic: postcode owner; paid: the advertiser);
+  - notify the accountant;
+  - send the "copy of your enquiry" email when ticked;
+  - optional reminder if the link isn't clicked.
+- **Email verification (owner, 11 Oct): will exist through GHL.** When the workflow goes live, switch the website
+  wording on the same day:
+  - Privacy page: "Your enquiry is only sent to an accountant after you click that link" (the contact itself is
+    created in GHL straight away).
+  - "Enquiry sent" page: becomes "Please confirm your email", with 3 steps (confirm → goes to one accountant →
+    contact within 2 hours).
+  - Owner to choose: build the workflow first (A), or prepare the wording now behind a switch (B).
+- **Owner asked for a rule** to remind them of the email verification item every new session until they say it's
+  resolved. Not added yet (interrupted); confirm with the owner.
+- **Optional:** `GHL_PIPELINE_ID` in Vercel (an opportunity per lead); show the Website Survey folder on the contact
+  page.
+- **Still open:** the fact-check wording fixes.
+
 ### Changes made (committed and pushed)
 - **Match page (/match) is now an honest "Enquiry sent" confirmation** (`EnquirySentPage.tsx`, wording in `src/content/enquiry-sent.ts`):
   - "Thanks {first}, your enquiry has been sent." and "A local accountant who covers {suburb} will contact you, usually within 2 hours."
