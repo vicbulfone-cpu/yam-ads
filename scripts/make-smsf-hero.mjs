@@ -11,23 +11,28 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(ROOT, "hero section", "ad landing pages", "smsf", "smsf hero1.png");
-const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v25-1983.webp");
+const dest = path.join(ROOT, "public", "images", "hero", "smsf-desk-v28-1983.webp");
 const W = 1983, H = 793, TOP = 32; // smsf hero1 is nearly the frame's shape: 32px off the top, the same off the bottom
 const meta = await sharp(src).metadata();
 const bandH = Math.round(meta.width * H / W);
-const framed = await sharp(src).extract({ left: 0, top: TOP, width: meta.width, height: bandH }).resize(W, H).png().toBuffer();
+// "-v28": shrunk with the gentle "mitchell" method; the default (lanczos3) drew a thin dark overshoot line where the light hair
+// meets the blue sky (owner, 10 Oct 2026: the heads "look different")
+const framed = await sharp(src).extract({ left: 0, top: TOP, width: meta.width, height: bandH }).resize(W, H, { kernel: "mitchell" }).png().toBuffer();
 
 // "-v15" (owner, 10 Oct 2026): the man and woman sharpened. Only the couple (COUPLE: their box in the 1983 x 793 frame)
 // is sharpened, blended in through a feathered mask (FEATHER px) so there is no visible edge; the rest is untouched.
 // AMOUNT: how much of the sharpening is blended in ("-v16": 0.5, half of v15; owner, 10 Oct 2026).
-const COUPLE = { left: 1500, top: 140, width: 440, height: 500 }, FEATHER = 30, AMOUNT = 0.5;
+// "-v28" (owner, 10 Oct 2026): no sharpening (AMOUNT 0). It drew a dark ring round the heads and made the faces harsh, which
+// the lighter sky made more noticeable; the couple now look exactly as in the original photo.
+const COUPLE = { left: 1500, top: 140, width: 440, height: 500 }, FEATHER = 30, AMOUNT = 0;
 const sharpened = await sharp(framed).sharpen({ sigma: 1.1, m1: 0.6, m2: 2.5 })
   .extract(COUPLE).png().toBuffer();
 const featherMask = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${COUPLE.width}" height="${COUPLE.height}">
   <rect x="${FEATHER}" y="${FEATHER}" width="${COUPLE.width - 2 * FEATHER}" height="${COUPLE.height - 2 * FEATHER}" rx="${FEATHER}" fill="#fff"/></svg>`);
 const mask = await sharp(featherMask).blur(FEATHER / 2).extractChannel("red").linear(AMOUNT, 0).toBuffer();
 const couple = await sharp(sharpened).removeAlpha().joinChannel(mask).png().toBuffer();
-const base = await sharp(framed).composite([{ input: couple, left: COUPLE.left, top: COUPLE.top }]).png().toBuffer();
+// (with AMOUNT 0 the sharpening is skipped altogether: the image tool reads linear(0, 0) as "no change", which left it at full strength)
+const base = AMOUNT > 0 ? await sharp(framed).composite([{ input: couple, left: COUPLE.left, top: COUPLE.top }]).png().toBuffer() : framed;
 
 // Sky fade (owner, 10 Oct 2026, "-v9"): white over the sky only, strongest at the left edge and easing very gradually to
 // nothing at the right edge (almost none near the mast and the couple). Full strength down to SKY_SOLID (rows of the
@@ -129,6 +134,16 @@ for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
   if (x < 1290) al = Math.max(al, (1290 - x) / 40); // blend into the open water and sky on the left
   if ((inShape(WOMAN_TOP, x, y) || inShape(JEANS, x, y)) && d > NEAR) al = 0; // her cyan top, his jeans: only true sky inside
   alpha[i] = al;
+}
+// "-v28" (owner, 10 Oct 2026: the heads "look different"): the pixels right on an outline are part hair (or mast, rope) and part
+// sky, so they measured as "not sky" and kept the old, darker blue while the sky round them was lightened: a thin dark ring round
+// the heads. Each pixel now takes at least the lightening of its close neighbours (ALPHA softened by EDGE_SOFT px), so the edge
+// pixels lighten with the sky and the outline looks as it does in the original photo.
+{
+  const EDGE_SOFT = 1.6;
+  const a8 = Buffer.from(alpha.map((v) => Math.round(v * 255)));
+  const soft = await sharp(a8, { raw: { width: W, height: H, channels: 1 } }).blur(EDGE_SOFT).extractChannel(0).raw().toBuffer();
+  for (let i = 0; i < W * H; i++) { const x = i % W, y = (i / W) | 0; if (x >= hullLeft[y]) continue; alpha[i] = Math.max(alpha[i], Math.min(1, (soft[i] / 255) * 1.15)); }
 }
 if (process.env.SHOW_MASK) await sharp(Buffer.from(alpha.map((v) => Math.round(v * 255))), { raw: { width: W, height: H, channels: 1 } }).png().toFile(process.env.SHOW_MASK);
 // the fade: nothing at the right margin, building evenly to LEFT at the left margin (strength = LEFT * (1 - x) ^ CURVE)
