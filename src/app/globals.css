@@ -2272,7 +2272,7 @@ main.home-v2 section[aria-labelledby="home-match-intro"] > div > .container-page
   main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer) { translate: 0 1.5cm; }
   main.home-v2 > .desk-hero .desk-hero-photo:not(.hero-arrow-layer)::before {
     content: ""; position: absolute; left: 0; right: 0; bottom: calc(100% - 1px); height: calc(1.5cm + 1px); pointer-events: none;
-    background: url("/images/hero/home-hq-sky-strip.webp?v=2") center / 100% 100% no-repeat;
+    background: rgb(117, 203, 247); /* the flat sky colour of the photo (owner, 10 Oct 2026: all the sky one colour; make-home-hero-flat-sky.cjs) */
   }
 }
 

@@ -1,6 +1,6 @@
 // Builds a whole page from the old site's extracted content: hero, body sections, call-to-action band, footer.
 import type { ReactNode } from "react";
-import { cityPicture, homeHeroLightPicture } from "@/config/site.config";
+import { cityPicture, homeHeroFlatSkyPicture, homeHeroLightPicture } from "@/config/site.config";
 import { explodeLinkGroups, loadContent, mergeViews, splitOnHeadings, toSections, type Node, type Section } from "@/lib/content";
 import { cityOf, isLivePage, typeOf } from "@/lib/pages";
 import { copyFor } from "@/lib/seo";
@@ -171,7 +171,7 @@ export default function ContentPage({ path, afterBody }: { path: string; afterBo
     return (
       <>
         <main className="home-v2">
-          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroLightPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
+          <DeskHero headline={{ ...HERO_COPY.home.h1, sub: HERO_COPY.home.sub }} card={card} cardTitleTag={pageCard ? "h2" : "p"} desktopPicture={homeHeroFlatSkyPicture} showTrust={false} phoneStack steps={BIZ_LANDING.steps} bar={<HomeHeroBar />} phoneCta={card ? <PhoneMatchCta href="#hero-match-box" label={card.startLabel} note={MATCH_CARD_COPY.note} /> : undefined} />
           <HomeServices /> {/* "What we can help you with" straight under the hero (owner, 10 Oct 2026, noc) */}
           {/* navy bars between the sections in the same places as on the ad pages (owner, 10 Oct 2026), with the same gaps
               above and below them as there (".home-bar-gap" in globals.css). Words from the /ad-2 bars, "Tax" taken out of the
