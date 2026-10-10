@@ -1641,6 +1641,8 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
    above the fades. Moved with "translate", the line under the headline and the points' box each draw their own fade over the
    words before them (the bottom of the headline, the bottom of the button); lifting the headline and button over them fixes it. */
 @media (min-width: 1200px) { .pz-reg :is(.pth-h1, .pth-cta) { z-index: 1; } .pz-reg .pth-text { position: relative; z-index: 1; } }
+/* ...and the same on /ad-2 and /ad-1 (owner, 10 Oct 2026: "personal and business tax hero fade effect over CTAs, apply") */
+@media (min-width: 1200px) { :is(.pz-biz, .pz-page:not(.pz-reg):not(.pz-smsf)) :is(.pth-h1, .pth-cta) { position: relative; z-index: 1; } :is(.pz-biz, .pz-page:not(.pz-reg):not(.pz-smsf)) .pth-text { position: relative; z-index: 1; } }
 
 /* /ad-1 desktops (owner, 10 Oct 2026: "even fade between 'right professional' and the trust icons under"): the fade behind the line
    under the headline and the one behind the points met in the gap round the button, each easing out, so the tint dipped there.
@@ -1649,4 +1651,5 @@ h1.about-title { font-weight: 800; letter-spacing: -0.02em; }
 @media (min-width: 1200px) {
   .pz-page.pz-biz .pth-sub::before { bottom: calc(-4.7rem - 12.8rem); }
   .pz-page.pz-biz .pth-veil::before { content: none; }
+  .pz-page.pz-biz .pth-veil { z-index: 2; } /* the points above that fade (the text block it belongs to sits over the photo, 1) */
 }
