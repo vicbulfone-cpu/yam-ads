@@ -65,6 +65,7 @@ Cities (13): Sydney, Newcastle - Maitland, Melbourne, Geelong, Brisbane, Gold Co
 2. Testimonials removed. **Finding:** the old site has testimonial components (`Testimonials.tsx`, `RealMatch.tsx`, ad-page testimonials) but none is used on any page, and none of the 190 rendered pages contains testimonial text. Nothing needs deleting from the live pages.
 3. Wording specified in `CLAUDE.md` for the hidden accountants page and the match screen.
 4. No consent tick-box; no language switcher (both dropped by the user).
+5. SMSF licensing lines (owner, 10 Oct 2026), `SMSF_LICENCE` and `SMSF_AUDITOR` in `src/content/wording.ts`: "Where SMSF advice is involved, we also check the accountant holds an Australian Financial Services Licence (AFSL), or is authorised under one, as ASIC requires." (home page, "How we select accountants", after the credential claim; SMSF ad page, "Why Use an Accountant for Your SMSF?") and "Your fund's yearly independent audit is carried out by an ASIC-registered SMSF auditor." (SMSF ad page). Based on ASIC INFO 216 (AFSL for SMSF advice since 1 July 2016) and ASIC RG 243 (registered SMSF auditors). The owner must actually make the AFSL check (ASIC Professional Registers) before an accountant who gives SMSF advice joins.
 
 Any new wording a design element needs will be reused from the old site where possible and listed here.
 

@@ -7,6 +7,13 @@
 
 export const CREDENTIAL = "Every accountant in our network is TPB-registered and a member of CA ANZ, CPA Australia or the IPA.";
 
+/** SMSF licensing (owner, 10 Oct 2026): since 1 July 2016 an accountant giving SMSF advice must hold an Australian Financial
+ *  Services Licence (AFSL, limited or full) or be an authorised representative of a licensee (ASIC, INFO 216), and every SMSF
+ *  audit must be done by an ASIC-registered SMSF auditor (SIS Act; ASIC RG 243). Shown on the home page ("How we select
+ *  accountants") and the SMSF ad page. The owner checks these before an accountant joins (ASIC's Professional Registers). */
+export const SMSF_LICENCE = "Where SMSF advice is involved, we also check the accountant holds an Australian Financial Services Licence (AFSL), or is authorised under one, as ASIC requires.";
+export const SMSF_AUDITOR = "Your fund's yearly independent audit is carried out by an ASIC-registered SMSF auditor.";
+
 type Rule = [RegExp, string];
 
 export const RULES: Rule[] = [

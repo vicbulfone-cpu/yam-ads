@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { howWeSelect } from "@/content/how-we-select";
-import { CREDENTIAL } from "@/content/wording";
+import { CREDENTIAL, SMSF_LICENCE } from "@/content/wording";
 import { SELECT_ICONS } from "./SelectIcons";
 
 /**
@@ -30,7 +30,8 @@ export default function HomeSelection() {
             <span className="block text-navy-900">How we select</span>
             <span className="block text-green-700">accountants</span>
           </h2>
-          <p className="sel-lead">{CREDENTIAL}</p>
+          {/* with the SMSF licence line (owner, 10 Oct 2026) */}
+          <p className="sel-lead">{CREDENTIAL} {SMSF_LICENCE}</p>
         </div>
 
         <div className="sel-right">

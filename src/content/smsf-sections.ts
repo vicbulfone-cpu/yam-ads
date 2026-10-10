@@ -3,6 +3,7 @@
  * section at a time. Shown via SmsfAdPage.tsx.
  */
 import { PERSONAL_RIGHT_FIT, PERSONAL_SERVICES, PERSONAL_WHY } from "./personal-sections";
+import { SMSF_AUDITOR, SMSF_LICENCE } from "./wording";
 
 /** hero headline (two lines: navy, then green) and the line under it (owner, 9 Oct 2026) */
 export const SMSF_HERO = {
@@ -47,6 +48,8 @@ export const SMSF_WHY = {
   intro: [
     "Finding the right SMSF accountant should be simple, fast and hassle-free. Your Accountant Match takes the guesswork out of choosing an accountant by connecting you with a professional suited to your fund's specific accounting and compliance needs. Skip the endless directory searches and get matched with an accountant who understands superannuation rules and ATO reporting requirements.",
     "Get expert help maintaining fund compliance, managing annual reporting, avoiding costly penalties and making SMSF administration easier. Less searching, less stress and more confidence that your super fund is in the right hands.",
+    // the licences the law requires for SMSF work (owner, 10 Oct 2026)
+    `${SMSF_LICENCE} ${SMSF_AUDITOR}`,
   ],
   lead: "An experienced SMSF accountant can help you:",
   points: PERSONAL_WHY.points.map((p, i) => ({ ...p, ...WHY_POINTS[i] })),
